@@ -13,30 +13,30 @@ website:
     contents:
       - section: "Øvelser"
         contents:
-          - exercises/tø_01_i_gang_med_pymol.qmd
-          - exercises/tø_02_introduktion_til_tø.qmd
-          - exercises/tø_03_pymol_scripting.qmd
-          - exercises/tø_04_proteinstruktur_1.qmd
-          - exercises/tø_05_proteinstruktur_2.qmd
-          - exercises/tø_06_nukleinsyrestruktur_1.qmd
-          - exercises/tø_07_nukleinsyrestruktur_2.qmd
-          - exercises/tø_08_evolution_og_bioinformatik.qmd
-          - exercises/tø_09_lø_forberedelse_1.qmd
-          - exercises/tø_10_lø_forberedelse_2.qmd
-          - exercises/tø_11_binding_og_genkendelse.qmd
-          - exercises/tø_12_enzymmekanismer.qmd
-          - exercises/tø_13_enzymregulering.qmd
-          - exercises/tø_14_strukturmetoder.qmd
-          - exercises/tø_15_ai_og_modellering.qmd
-          - exercises/tø_16_kulhydrater_og_glykosylering_af_proteiner.qmd
-          - exercises/tø_17_lipider_og_cellemembraner.qmd
-          - exercises/tø_18_membranpumper.qmd
-          - exercises/tø_19_kanaler_og_porer.qmd
-          - exercises/tø_20_signaltransduktion.qmd
-          - exercises/tø_21_eksamensopgaver.qmd
-          - exercises/tø_22_eksamensopgaver.qmd
-          - exercises/tø_23_eksamensopgaver.qmd
-          - exercises/tø_24_eksamensopgaver.qmd
+          - exercises/te_01_i_gang_med_pymol.qmd
+          - exercises/te_02_introduktion_til_tø.qmd
+          - exercises/te_03_pymol_scripting.qmd
+          - exercises/te_04_proteinstruktur_1.qmd
+          - exercises/te_05_proteinstruktur_2.qmd
+          - exercises/te_06_nukleinsyrestruktur_1.qmd
+          - exercises/te_07_nukleinsyrestruktur_2.qmd
+          - exercises/te_08_evolution_og_bioinformatik.qmd
+          - exercises/te_09_lø_forberedelse_1.qmd
+          - exercises/te_10_lø_forberedelse_2.qmd
+          - exercises/te_11_binding_og_genkendelse.qmd
+          - exercises/te_12_enzymmekanismer.qmd
+          - exercises/te_13_enzymregulering.qmd
+          - exercises/te_14_strukturmetoder.qmd
+          - exercises/te_15_ai_og_modellering.qmd
+          - exercises/te_16_kulhydrater_og_glykosylering_af_proteiner.qmd
+          - exercises/te_17_lipider_og_cellemembraner.qmd
+          - exercises/te_18_membranpumper.qmd
+          - exercises/te_19_kanaler_og_porer.qmd
+          - exercises/te_20_signaltransduktion.qmd
+          - exercises/te_21_eksamensopgaver.qmd
+          - exercises/te_22_eksamensopgaver.qmd
+          - exercises/te_23_eksamensopgaver.qmd
+          - exercises/te_24_eksamensopgaver.qmd
 
 filters:
   - filters/wrap-plain-code.lua

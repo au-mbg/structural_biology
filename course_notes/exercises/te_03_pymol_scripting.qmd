@@ -49,7 +49,8 @@ objekter - bruges til at arbejde uafhængigt med en del af stukturen samt i viss
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 
 ## Officielt svar
 
@@ -83,6 +84,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
 6.  \-
 :::
+::::
 
 ## Opgave 2. Kæder, residues og atomer i PyMOL
 
@@ -201,7 +203,8 @@ Informationen fortæller os at i objektet 1BL8, segment A, kæde A klikkede vi p
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 
 ## Officielt svar
 
@@ -325,6 +328,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 13. Cartoon-farven styres af CA-atomerne, så hvis man farver dem ændrer cartoonen også farve. Løsningen, hvis man vil vise CA og sidekæde i én farve og cartoon i en anden, er at oprettet et nyt objekt (ikke en selektion) med de udvalgte residues. Dette trick benyttes meget ofte til figurer.
 
 :::
+::::
 
 
 ## Opgave 3. Avancerede selektioner og boolsk algebra i PyMOL
@@ -414,7 +418,8 @@ Disse kan kombineres med de boolske operatorer OR, AND og NOT, hvor OR giver for
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 
 ## Officielt svar
 
@@ -470,6 +475,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
     ```
 
 ::: 
+::::
 
 ## Opgave 4. Scripting i PyMOL
 
@@ -617,7 +623,8 @@ fra PyMOL og indsæt det nederst i dit script.
 
 17. Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan skifte i mellem.
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 
 ## Officielt svar
 
@@ -679,6 +686,7 @@ scene filter, store
 scene overview, recall
 ```
 :::
+::::
 
 ## Opgave 5. Strukturel analyse i PyMOL
 
@@ -764,7 +772,8 @@ PyMOL er udstyret med en funktion til interaktivt at måle afstanden mellem to a
 
 11. Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome P450 og camphor/heme. Hvilke typer interaktioner findes der? Hint: Brug `Wizard -> Measurement` til at måle afstande. 
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 
 ## Officielt svar
 
@@ -835,6 +844,7 @@ scene overview, recall
 11\. 2.7 Å H-binding mellem camphors carbonylgruppe og OH-gruppen på Tyr96, hydrofobe interaktioner mellem Leu244, Val247 og den hydrofobe ring i camphor, 2.7 Å H-binding mellem den ene carboxylgruppe på heme og Asp297.
 
 :::
+::::
 
 ## Opgave 6. Mission Impossible i PyMOL
 
@@ -871,7 +881,8 @@ Enzymet lysozyme (PDB-ID: 148L) findes i mange organismer, hvor det bruges til a
 3.  Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
 
 
-::: {.callout-important solution="true"}
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
 ## Officielt svar
 
 1.  Interaktionerne er ikke meget specifikke, så der er flere muligheder. Et svar kunne være resterne 104, 70, 11, 145, 106, 26, 35, 166, 114 og 137.
@@ -946,4 +957,4 @@ scene cellwall, store
 ```
 
 3.  Adskillige både hydrofobe og H-bindingsinteraktioner. Glu26 binder kovalent til sukkerdelen.
-:::
+:::::::

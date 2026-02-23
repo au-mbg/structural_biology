@@ -1,3 +1,4 @@
-# Profile active when rendering exercise handouts (strips solution blocks)
-filters:
-  - filters/strip-solution.lua
+# Profile active when rendering exercise handouts
+project:
+  output-dir: _site
+

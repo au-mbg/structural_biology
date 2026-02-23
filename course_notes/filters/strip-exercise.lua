@@ -1,12 +1,7 @@
 function Div(div)
-  local attr = div.attributes or {}
-  local ex = attr["exercise"]
-  if ex ~= nil then
-    ex = string.lower(ex)    
-    if ex == "true" or ex == "1" then
-      return pandoc.Null()
-    end
+  local ex = div.attributes["exercise"]
+  if ex ~= nil and string.lower(ex) == "true" then
+    return {}
   end
-
   return nil
 end
