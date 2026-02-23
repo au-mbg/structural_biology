@@ -1,0 +1,161 @@
+{
+  "index.qmd": {
+    "index.html": "326856f2",
+    "index.typ": "f342c7d3"
+  },
+  "exercises/tø_04_proteinstruktur_1.md": {
+    "tø_04_proteinstruktur_1.html": "aa09fdcc"
+  },
+  "exercises/tø_14_strukturmetoder.md": {
+    "tø_14_strukturmetoder.html": "35838f2b"
+  },
+  "exercises/tø_07_nukleinsyrestruktur_2.md": {
+    "tø_07_nukleinsyrestruktur_2.html": "b823d211"
+  },
+  "exercises/tø_03_pymol_scripting.md": {
+    "tø_03_pymol_scripting.html": "0677365b",
+    "tø_03_pymol_scripting.typ": "28eeca64"
+  },
+  "exercises/tø_17_lipider_og_cellemembraner.md": {
+    "tø_17_lipider_og_cellemembraner.html": "436cf1b4"
+  },
+  "exercises/tø_11_binding_og_genkendelse.md": {
+    "tø_11_binding_og_genkendelse.html": "4ec35bc1"
+  },
+  "exercises/tø_23_eksamensopgaver.md": {
+    "tø_23_eksamensopgaver.html": "98d0469f"
+  },
+  "exercises/tø_10_lø_forberedelse_2.md": {
+    "tø_10_lø_forberedelse_2.html": "fef588c7"
+  },
+  "exercises/tø_16_kulhydrater_og_glykosylering_af_proteiner.md": {
+    "tø_16_kulhydrater_og_glykosylering_af_proteiner.html": "64e76ca1"
+  },
+  "exercises/tø_22_eksamensopgaver.md": {
+    "tø_22_eksamensopgaver.html": "3858616a"
+  },
+  "exercises/tø_02_introduktion_til_tø.md": {
+    "tø_02_introduktion_til_tø.html": "0e2cb4c8"
+  },
+  "exercises/tø_15_ai_og_modellering.md": {
+    "tø_15_ai_og_modellering.html": "c638ece7"
+  },
+  "exercises/tø_08_evolution_og_bioinformatik.md": {
+    "tø_08_evolution_og_bioinformatik.html": "cec565b4"
+  },
+  "exercises/tø_18_membranpumper.md": {
+    "tø_18_membranpumper.html": "cae76f59"
+  },
+  "exercises/tø_19_kanaler_og_porer.md": {
+    "tø_19_kanaler_og_porer.html": "54d1e3d0"
+  },
+  "exercises/tø_12_enzymmekanismer.md": {
+    "tø_12_enzymmekanismer.html": "f2c1ae66"
+  },
+  "exercises/tø_21_eksamensopgaver.md": {
+    "tø_21_eksamensopgaver.html": "e2370a88"
+  },
+  "exercises/tø_20_signaltransduktion.md": {
+    "tø_20_signaltransduktion.html": "f7a90e0e"
+  },
+  "exercises/tø_06_nukleinsyrestruktur_1.md": {
+    "tø_06_nukleinsyrestruktur_1.html": "ef237d69"
+  },
+  "exercises/tø_05_proteinstruktur_2.md": {
+    "tø_05_proteinstruktur_2.html": "1896093e"
+  },
+  "exercises/tø_13_enzymregulering.md": {
+    "tø_13_enzymregulering.html": "08a5fd5f"
+  },
+  "exercises/tø_01_i_gang_med_pymol.md": {
+    "tø_01_i_gang_med_pymol.html": "ae2bbdec"
+  },
+  "exercises/tø_24_eksamensopgaver.md": {
+    "tø_24_eksamensopgaver.html": "63ba531e"
+  },
+  "exercises/tø_09_lø_forberedelse_1.md": {
+    "tø_09_lø_forberedelse_1.html": "b0a4cbde"
+  },
+  "exercises/tø_13_enzymregulering.qmd": {
+    "tø_13_enzymregulering.html": "347e6035"
+  },
+  "exercises/tø_03_pymol_scripting.qmd": {
+    "tø_03_pymol_scripting.html": "fa23d4fc",
+    "tø_03_pymol_scripting.typ": "37999b4b"
+  },
+  "exercises/tø_06_nukleinsyrestruktur_1.qmd": {
+    "tø_06_nukleinsyrestruktur_1.html": "8e845b48"
+  },
+  "exercises/tø_01_i_gang_med_pymol.qmd": {
+    "tø_01_i_gang_med_pymol.html": "7a1854d0",
+    "tø_01_i_gang_med_pymol.typ": "4b6463c5"
+  },
+  "exercises/tø_08_evolution_og_bioinformatik.qmd": {
+    "tø_08_evolution_og_bioinformatik.html": "3271e3ba"
+  },
+  "exercises/tø_04_proteinstruktur_1.qmd": {
+    "tø_04_proteinstruktur_1.html": "b36f1e4a",
+    "tø_04_proteinstruktur_1.typ": "f88366a3"
+  },
+  "exercises/tø_15_ai_og_modellering.qmd": {
+    "tø_15_ai_og_modellering.html": "9e9a2832"
+  },
+  "exercises/tø_09_lø_forberedelse_1.qmd": {
+    "tø_09_lø_forberedelse_1.html": "b1b292bb"
+  },
+  "exercises/tø_12_enzymmekanismer.qmd": {
+    "tø_12_enzymmekanismer.html": "f18140e5"
+  },
+  "exercises/tø_24_eksamensopgaver.qmd": {
+    "tø_24_eksamensopgaver.html": "68ccc89b"
+  },
+  "exercises/tø_18_membranpumper.qmd": {
+    "tø_18_membranpumper.html": "867cde7d"
+  },
+  "exercises/tø_10_lø_forberedelse_2.qmd": {
+    "tø_10_lø_forberedelse_2.html": "fe08acb3",
+    "tø_10_lø_forberedelse_2.typ": "6b549acf"
+  },
+  "exercises/tø_21_eksamensopgaver.qmd": {
+    "tø_21_eksamensopgaver.html": "a15c96d9"
+  },
+  "exercises/tø_17_lipider_og_cellemembraner.qmd": {
+    "tø_17_lipider_og_cellemembraner.html": "a0b1a7a6"
+  },
+  "exercises/tø_22_eksamensopgaver.qmd": {
+    "tø_22_eksamensopgaver.html": "e1030022"
+  },
+  "exercises/tø_23_eksamensopgaver.qmd": {
+    "tø_23_eksamensopgaver.html": "a7342f15"
+  },
+  "exercises/tø_19_kanaler_og_porer.qmd": {
+    "tø_19_kanaler_og_porer.html": "b793c5a1"
+  },
+  "exercises/tø_16_kulhydrater_og_glykosylering_af_proteiner.qmd": {
+    "tø_16_kulhydrater_og_glykosylering_af_proteiner.html": "f4ff9311"
+  },
+  "exercises/tø_14_strukturmetoder.qmd": {
+    "tø_14_strukturmetoder.html": "f55c8e61"
+  },
+  "exercises/tø_07_nukleinsyrestruktur_2.qmd": {
+    "tø_07_nukleinsyrestruktur_2.html": "82f1dc75"
+  },
+  "exercises/tø_05_proteinstruktur_2.qmd": {
+    "tø_05_proteinstruktur_2.html": "66b28e9b",
+    "tø_05_proteinstruktur_2.typ": "82d91f84"
+  },
+  "exercises/tø_02_introduktion_til_tø.qmd": {
+    "tø_02_introduktion_til_tø.html": "3330c633",
+    "tø_02_introduktion_til_tø.typ": "4faa0723"
+  },
+  "exercises/tø_20_signaltransduktion.qmd": {
+    "tø_20_signaltransduktion.html": "87b6742c"
+  },
+  "exercises/tø_11_binding_og_genkendelse.qmd": {
+    "tø_11_binding_og_genkendelse.html": "8046827a"
+  },
+  "test_code.qmd": {
+    "test_code.html": "70a95ced",
+    "test_code.typ": "13eb74e8"
+  }
+}

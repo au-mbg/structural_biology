@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Strukturbiologi TØ"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Øvelser"
+        contents:
+          - exercises/tø_01_i_gang_med_pymol.qmd
+          - exercises/tø_02_introduktion_til_tø.qmd
+          - exercises/tø_03_pymol_scripting.qmd
+          - exercises/tø_04_proteinstruktur_1.qmd
+          - exercises/tø_05_proteinstruktur_2.qmd
+          - exercises/tø_06_nukleinsyrestruktur_1.qmd
+          - exercises/tø_07_nukleinsyrestruktur_2.qmd
+          - exercises/tø_08_evolution_og_bioinformatik.qmd
+          - exercises/tø_09_lø_forberedelse_1.qmd
+          - exercises/tø_10_lø_forberedelse_2.qmd
+          - exercises/tø_11_binding_og_genkendelse.qmd
+          - exercises/tø_12_enzymmekanismer.qmd
+          - exercises/tø_13_enzymregulering.qmd
+          - exercises/tø_14_strukturmetoder.qmd
+          - exercises/tø_15_ai_og_modellering.qmd
+          - exercises/tø_16_kulhydrater_og_glykosylering_af_proteiner.qmd
+          - exercises/tø_17_lipider_og_cellemembraner.qmd
+          - exercises/tø_18_membranpumper.qmd
+          - exercises/tø_19_kanaler_og_porer.qmd
+          - exercises/tø_20_signaltransduktion.qmd
+          - exercises/tø_21_eksamensopgaver.qmd
+          - exercises/tø_22_eksamensopgaver.qmd
+          - exercises/tø_23_eksamensopgaver.qmd
+          - exercises/tø_24_eksamensopgaver.qmd
+
+filters:
+  - filters/wrap-plain-code.lua
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    css: styles.css
+  typst: 
+    number-sections: false
+    toc: true
+    toc-depth: 2
+    margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}
+
+format-links:
+  - format: typst
+    text: PDF

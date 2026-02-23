@@ -1,0 +1,225 @@
+---
+title: "TØ 15 -- AI og modellering"
+---
+
+## Opgave 1. AlphaFold vs. Eksperimentel struktur - Confidence og fleksibilitet
+
+I denne opgave skal I lave en AlphaFold-forudsigelse selv og sammenligne den med en eksperimentel krystalstruktur af det samme protein.
+
+**Protein:** Humant Parkin er et 465 residue protein med 5 domæner:
+
+**Ubl (Ubiquitin-like) domain:** residues 1-76
+
+**RING0 domain:** residues 142-237
+
+**RING1 domain:** residues 238-293
+
+**IBR (In-Between-RING) domain:** residues 294-378
+
+**RING2 domain:** residues 389-449
+
+**Strukturforudsigelse med Alphafold 3**
+
+1.  Gå til AlphaFold3 serveren: https://alphafoldserver.com/
+
+2.  Opret en bruger eller log ind
+
+3.  Indsæt sekvensen for humant Parkin (UniProt: O60260)
+
+4.  Kør forudsigelsen, det tager et par minutter (hold vinduet åbent og start på næste del)
+
+**Hent krystalstruktur af Parkin (1.8Å opløsning)**
+
+Åben krystalstrukturen af Parkin i PyMOL: **PDB-kode** 5C1Z (fetch 5c1z, type=pdb1 for at hente den biologiske enhed). Farv strukturen efter B-factor.
+
+***Brug:** spectrum b, blue_cyan_green_yellow_orange_red, 5c1z, minimum=20, maximum=100*
+
+1.  Hvad siger B-faktoren om strukturen? Hvilke regioner af strukturen have lav versus høj B-faktor? Giver det mening? (*Hint: klik på enkelte atomer i PyMOL for at se B-faktoren, eller load .cif filen i en tekst editor og find søjlen med B-faktorer*)
+
+Nu skulle AF modellen være klar, download, pak ud og load den første ud af de 5 AF modeller i PyMOL (XXX_model_0.cif).
+
+Align AF modelen og den experimentelle struktur.
+
+2.  Hvad er RMSD? Er der regioner af proteinet der aligner bedre end andre?
+
+Farv AF-modellen efter pLDDT (som ligger i B-faktor kolonnen i PDB/CIF filen): spectrum b, orange_yellow_green_cyan_blue, **model_0**, minimum=50, maximum=90
+
+(udskift model_0 med jeres objekt navn)
+
+3.  Hvad siger pLDDT om den forudsagte struktur? Hvilket områder af strukturen har høj pLDDT og hvilke har lave værdier? Hvad betyder en pLDDT\<50?
+
+4.  Sammenlign nu B-factor for krystalstrukturen og pLDDT for AF-modellen. Er der en korrelation mellem B-factor og pLDDT?
+
+Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) og align dem alle til model_0. Fokusér på det lange fleksible loop (residues 84-143).
+
+5.  Har loopet samme konformation i alle 5 modeller? Hvad fortæller det om AlphaFolds sikkerhed på denne regions struktur? Passer det med pLDDT værdierne I kiggede på i spørgsmål 3?
+
+6.  Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen (hvor residue 83 og 144 er forbundet). Hvorfor mon krystallograferne har gjort det?
+
+Officielt svar
+
+1.  B-faktoren viser atomernes termiske bevægelse og positionel usikkerhed i krystallet.\
+    \
+    **Lav B-faktor (blå/cyan):** Stabile, velordnede regioner - typisk kernen af foldede domæner (RING0, RING1, IBR, RING2 domænerne)\
+    \
+    **Høj B-faktor (orange/rød):** Fleksible regioner - typisk loops, termini, og eksponerede sidekæder på overfladen\
+    \
+    Dette giver mening biologisk - domæne-kerner er rigide mens loops og overflader er dynamiske.
+
+2.  RMSD = 1.2 Å (meget god overensstemmelse)\
+    \
+    Regioner der aligner bedst: De strukturerede domæner (RING0-RING2).\
+    \
+    Regioner med dårligere alignment: Termini og loops.
+
+3.  pLDDT viser AlphaFolds confidence i strukturforudsigelsen:\
+    \
+    **Høj pLDDT (\>90, blå/cyan):** Meget sikker forudsigelse - de strukturerede domæner\
+    **Medium pLDDT (70-90, grøn/gul):** Moderat sikker - nogle loops\
+    **Lav pLDDT (\<50, orange/rød):** Meget usikker - intrinsically disordered regioner\
+    \
+    **pLDDT \< 50** betyder at regionen sandsynligvis er **intrinsically disordered**. AlphaFold er meget usikker på den forudsagte struktur her.
+
+4.  Der er en **omvendt korrelation** mellem B-faktor og pLDDT:\
+    \
+    Høj B-faktor (fleksibel) → lav pLDDT (usikker)\
+    Lav B-faktor (velordnet) → høj pLDDT (sikker)\
+    \
+    Men korrelationen er ikke perfekt - nogle regioner kan have høj B-faktor (fleksible i krystallet) men stadig høj pLDDT (veldefineret struktur).
+
+5.  Nej, loopet (residues 84-143) har **meget forskellige konformationer** i de 5 modeller. Dette viser at AlphaFold er **meget usikker** på denne regions struktur. Dette passer med meget lav pLDDT (\<50).
+
+6.  Den lange fleksible linker (residues 84-143) blev fjernet fra konstruktet pga. fleksibilitet, hvilket ofte hindrer krystallisation.
+
+## **Opgave 2. Hvad fortæller PAE (Predicted Aligned Error) om domæne-orientering**
+
+1.  Fortolk PAE-plottet for jeres Parkin model:\
+    \
+    Se på PAE-plottet i AlphaFold browser vinduet (findes også i jeres downloaded mappe som JSON-fil til databehandling).
+
+- Hvad betyder en mørk grøn firkant? (lav PAE = \~0-5 Å)
+
+- Hvad betyder en lys/hvid firkant? (høj PAE = \~20-30 Å)
+
+- Hvorfor er hele diagonalen mørk grøn?
+
+2.  Identificér domæne-grænser i PAE-plottet. Find de 5 domæner i plottet (se domæne-residue numre fra Opgave 1). Hvilke domæner har lav PAE (grøn) mellem hinanden, og hvilke har høj PAE (lys/hvid)? *Hint: Find Ubl-domænet (residues 1-76) i PAE-plottet. Kig på firkanten fra (1,1) til (76,76) - altså Ubl mod sig selv.* Hvilken farve har denne firkant?*\*
+
+3.  Hvad fortæller PAE om Parkins struktur? Baseret på PAE-plottet - hvilke dele af Parkin har en veldefineret relativ orientering, og hvilke dele er fleksibelt forbundet? Relaterer dette til pLDDT-værdierne I så i Opgave 1?
+
+4.  Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dette loop veldefineret i forhold til resten af Parkin strukturen ifølge PAE-plottet?
+
+Officielt svar
+
+1.  **Mørk grøn firkant (lav PAE \~0-5 Å):** Når man aligner strukturen på én af de to regioner, er positionen af den anden region meget præcis bestemt. Dette betyder veldefineret relativ orientering.\
+    \
+    **Lys/hvid firkant (høj PAE \~20-30 Å):** Når man aligner på én region, er positionen af den anden region meget usikker. Dette betyder fleksibel forbindelse eller ingen fast relativ orientering.\
+    \
+    **Diagonalen er mørk grøn:** Fordi PAE måler afstanden fra hver rest til sig selv, hvilket altid er 0 Å. Desuden er rester tæt på hinanden i sekvensen typisk også tæt i 3D-strukturen.
+
+2.  **RING0-RING1 domænerne:** En stor mørk grøn blok - disse domæner har fremragende intern struktur og fast relativ orientering til hinanden. RING2 har også lave PAE værdier til både RING0 og RING1. Ring domænerne danner altså en stabil vel-orienteret kerne af proteinet.\
+    \
+    **IBR-RING:** Selvom de begge er del af core-regionen, kan man se lysere områder mellem IBR (294-378) og RING domænerne, hvilket viser betydelig usikkerhed i deres relative orientering.\
+    \
+    **Ubl-domænet (1-76) mod sig selv:** Mørk grøn firkant - Ubl har en veldefineret intern struktur. Dog viser de Lyse/hvide områder en meget høj PAE mellem Ubl og andre domæner, hvilket antyder at Ubl kan bevæge sig frit relativt til disse.\
+    \
+    **Linker-regionen:** Bred hvid/lys `korridor` både vandret og lodret gennem plottet - ekstremt høj PAE mod alle andre regioner.
+
+3.  PAE viser at Parkin består af to strukturelle enheder:\
+    \
+    **RING0-RING2 `core` (residues 142-449):** Fast, veldefineret struktur med alle RING domæner i fast orientering, dog med det mere flexible IBR domæne fra 294-378.\
+    \
+    **Ubl-domæne (1-76):** Fleksibelt forbundet til core via den lange linker (ca. 84-141)\
+    \
+    Dette passer perfekt med pLDDT:\
+    RING-domænerne har høj pLDDT (veldefineret struktur)\
+    Linkeren (84-143) har lav pLDDT (disordered)\
+    Ubl har høj pLDDT internt (struktureret domæne) men usikker position relativt til resten
+
+4.  Nej, det fleksible loop (84-141) har **meget høj PAE** (lys/hvid) i forhold til resten af strukturen. Dette betyder at loopets position er meget usikker relativt til både Ubl og RING-domænerne. PAE bekræfter at denne region fungerer som en fleksibel linker der tillader Ubl-domænet at bevæge sig frit.
+
+## **Opgave 3. Modellering af et protein-kompleks med ligand og ioner**
+
+I denne opgave skal I bruge AlphaFold-serveren til at forudsige strukturen af en hetero-dimer mellem HsIFT25 (UniProt ID: Q9Y547) og HsIFT27 (UniProt ID: Q9BW83-1). IFT25 er et calcium-bindende protein, og IFT27 er en lille GTPase. Tilføj begge proteiner samt relevante ligander/ioner til en strukturforudsigelse på AlphaFold-serveren. Download den resulterende model.
+
+1.  Hvad fortæller henholdsvis pTM- og iPTM-værdierne om kvaliteten af den forudsagte model?
+
+2.  Analyser pLDDT- og PAE-værdierne for jeres model. Baseret på disse metrics, kan man have tillid til kvaliteten af den forudsagte struktur af protein-komplekset? Er orienteringen af IFT25 og IFT27 veldefineret? Begrund jeres svar.
+
+3.  Hvor er nukleotidet placeret i strukturen? Find en GTPase struktur i PDB med nukleotid bundet, og align denne med IFT27. Binder nukleotidet på samme måde i begge strukturer?
+
+4.  Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminosyrerester der deltager i koordinationen)
+
+Officielt svar
+
+1.  pTM-værdien måler den overordnede kvalitet af strukturforudsigelsen. En værdi over 0.5 indikerer at AlphaFold har tilstrækkelig tillid til at de forudsagte folds er korrekte, mens værdier over 0.7 generelt betragtes som meget gode forudsigelser. For dette kompleks vil pTM fortælle om både IFT25 og IFT27 er blevet foldet rigtigt og om den samlede model er troværdig.\
+    \
+    iPTM-værdien er særlig relevant for komplekser, da den specifikt måler AlphaFolds tillid til interaktionen mellem de to proteiner. Værdier over 0.8 indikerer høj tillid til at den relative position og orientering mellem IFT25 og IFT27 er korrekt forudsagt. Værdier mellem 0.6 og 0.8 er usikre og kan indikere enten korrekt eller forkert forudsigelse, mens værdier under 0.6 typisk betyder at modellen er upålidelig og at proteinerne måske ikke interagerer som foreslået. Den konkrete iPTM-værdi for jeres model vil altså afsløre om IFT25 og IFT27 faktisk danner et kompleks eller om AlphaFold er usikker på deres interaktion.
+
+2.  Ligesom I så med Parkin, viser pLDDT-værdierne AlphaFolds tillid til hvert atoms position. Når I ser på jeres IFT25/27 model, skal I bemærke hvilke regioner der har høje værdier (blå/cyan) og hvilke der har lavere værdier (gul/orange/rød). Hvis begge proteiner har høje pLDDT-værdier i størstedelen af deres struktur, indikerer det at AlphaFold er sikker på hvordan de er foldet individuelt. Vær særlig opmærksom på om der er regioner med meget lav pLDDT (under 50), hvilket kunne indikere disordered regioner eller loops hvor modellen er usikker.\
+
+    ```python
+    For at vurdere om orienteringen mellem de to proteiner er veldefineret, er PAE-plottet afgørende. I kender allerede fra Parkin-opgaven hvordan man læser dette plot. Kig på de off-diagonale regioner hvor IFT25 og IFT27 krydser hinanden. Hvis disse områder er mørke med lave PAE-værdier (under 5 Å), betyder det at når man aligner på det ene protein, kan man præcist forudsige positionen af det andet. Dette ville indikere en rigid interface med veldefineret orientering. Hvis I derimod ser lyse farver (gule, orange eller hvide områder) med høje PAE-værdier (over 15-20 Å) mellem de to proteiner, ville det indikere usikkerhed i deres relative position, ligesom I så for Ubl-domænet og RING-core i Parkin.
+    ```
+
+    Jeres konklusion skal baseres på kombinationen af disse observationer. Høj pLDDT i begge proteiner kombineret med lav PAE mellem dem ville indikere et veldefineret kompleks med præcis orientering. Høj PAE mellem dem ville derimod indikere at de måske ikke danner et stabilt kompleks, eller at deres relative orientering er fleksibel eller usikker.
+
+3.  I AlphaFold modellen sidder GTP-nukleotidet i en lomme på overfladen af IFT27. Nukleotidet er omgivet af flere loops og sekundære strukturelementer der tilsammen danner bindingslommen. Guanin-basen sidder dybt i lommen, mens ribose-delen og fosfatgrupperne er mere eksponerede.\
+
+    ```python
+    For at sammenligne nukleotid-bindingen fandt jeg en GTPase struktur i PDB med bundet nukleotid (f.eks. en Rab-GTPase) og alignerede denne med IFT27 i PyMOL. Efter alignment kan man se at nukleotidet binder på samme overordnede måde i begge strukturer. Guanin-basen har samme orientering og sidder i en tilsvarende lomme, ribosen har lignende position, og fosfatgrupperne interagerer med sammenlignelige regioner af proteinet. Dette er forventeligt da alle GTPaser deler den samme grundlæggende mekanisme for nukleotid-binding.
+    ```
+
+    Der er dog visse forskelle i detaljer omkring bindingsstedet. Nogle af de loops har lidt forskellige konformationer, og ikke alle aminosyrer i bindingslommen er identiske mellem IFT27 og reference-strukturen. Dette indikerer at mens IFT27 klart er en GTPase med samme nukleotid-bindingsmåde, har den også sine egne særegenheder.
+
+4.  Calcium-ionen er placeret i IFT25. Den sidder i en lomme der er dannet af et loop mellem to beta-strands i proteinets struktur. Ved at zoome ind på denne region i PyMOL kan man se at calcium-ionen er omgivet af flere oxygen-atomer i en afstand på cirka 2.3-2.5 Å, hvilket er typisk for calcium-koordination.\
+    \
+    Koordinationen involverer både sidekæder fra specifikke aminosyrer og backbone-atomer. Der er mindst én aspartat-rest hvis carboxylat-gruppe koordinerer calcium-ionen. Aspartat er meget almindeligt i calcium-bindingssteder fordi den negativt ladede carboxylat-gruppe med to oxygen-atomer er ideel til at stabilisere den positivt ladede calcium-ion. Derudover deltager en threonin-rest gennem sin hydroxyl-gruppe.\
+    \
+    Vigtigt er det også at flere backbone carbonyl-grupper fra residuer i loopet bidrager til koordinationen. I alt er calcium koordineret af 6-7 oxygen-atomer i en cirka oktahedral geometri, hvilket er standard for calcium-binding i proteiner. Denne type metal-binding kan være vigtig for at stabilisere IFT25's struktur eller have en regulatorisk funktion.
+
+## Opgave 4. Protein-interaktion med Alphafold
+
+Et affinity pull-down MS eksperiment med tagged UniProt: Q3Y8L7 (ODA16, bait protein) gav følgende to hits: UniProt: A2T2X4 (IFT46) og UniProt: A8JA42 (IFT56).
+
+1.  Brug AlphaFold til at dissekere hvordan de 3 proteiner interagerer. Binder begge `hits` direkte til ODA16?
+
+2.  Hvad er arkitekturen af komplekset og hvilke residues af IFT46 interagerer med ODA16 og IFT56? Hvilke dele er velforudsagte? Kan I stole på de forudsagte strukturelle modeller for interaktionerne mellem proteinerne?
+
+3.  Hvad er pTM og iPTM værdierne? Hvorfor er de mon lavere end for IFT25/27 i opgave 3?
+
+4.  Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner eller om de lokale interfaces faktisk er dårligt forudsagte. Beskriv hvilke AlphaFold kørsler I ville lave og hvad I ville forvente at se hvis problemet primært er disordered regioner. Hvis der er tid så kør gerne AlphaFold forudsigelserne.
+
+Officielt svar
+
+1.  Baseret på PAE-plottet kan vi se at ODA16 interagerer direkte med IFT46, hvilket fremgår af lave PAE-værdier (mørk grøn) mellem disse to proteiner i de off-diagonale regioner. Interaktionen mellem ODA16 og IFT56 er derimod indirekte, hvilket ses ved høje PAE-værdier (lys/hvis) mellem disse to proteiner i PAE-plottet. IFT56 binder altså ikke direkte til ODA16, men er i stedet medieret gennem IFT46, som fungerer som bro mellem de to proteiner. Dette forklarer hvorfor begge proteiner blev identificeret i pull-down eksperimentet selvom kun den ene binder direkte til bait-proteinet.
+
+2.  **Arkitektur og modelkvalitet:** Kompleksets overordnede arkitektur består af ODA16 der binder til N-terminale regioner af IFT46, som igen interagerer med IFT56. De strukturelle metrics viser dog varierende kvalitet i forskellige dele af modellen.\
+    \
+    **Velforudsagte regioner:** N-terminus af IFT46 som binder til ODA16 har høj pLDDT (blå/cyan farve) og lav PAE mellem disse proteiner, hvilket indikerer at denne interface er korrekt modelleret og kan have tillid til. Ligeledes har den centrale del af IFT46 der interagerer med IFT56 gode pLDDT- og PAE-værdier, hvilket tyder på en veldefineret interface her.\
+    \
+    **Problematiske regioner:** Der er betydelige dele af komplekset med lav pLDDT (\<50, orange/gule regioner), særligt i IFT46, som sandsynligvis repræsenterer intrinsically disordered regioner eller fleksible linkers. Disse regioner kan ikke modelleres præcist af AlphaFold.
+
+3.  For ODA16-IFT46-IFT56 komplekset er pTM = 0.49 og ipTM = 0.51. Disse værdier er betydeligt lavere end for IFT25/27 komplekset i opgave 3. ipTM-værdien på 0.51 placerer modellen i gråzonen, mens pTM \< 0.5 indikerer usikkerhed om det overordnede fold.\
+    \
+    Den primære årsag til de lave værdier er at IFT46 har store regioner med meget lav pLDDT (\<50), hvilket indikerer at proteinet er predominantly disordered eller har lange fleksible linkers. iPTM-scoren påvirkes negativt af disordered regioner, selv når disse ikke danner strukturerede interfaces. Fordi IFT46 har lange disordered regioner i nærheden af både ODA16 og IFT56, bidrager disse til iPTM-beregningen med høje PAE-værdier, hvilket trækker den samlede score ned betydeligt. Det er et kendt problem at proteiner med store disordered regioner eller accessory-domæner får lavere iPTM-scores, selvom de faktisk har veldefinierede lokale interfaces.\
+    \
+    I modsætning hertil består IFT25/27 formentlig af to velstrukturerede proteiner uden store disordered regioner, hvilket giver højere og mere pålidelige scores. De lave værdier for ODA16-IFT46-IFT56 betyder at selvom lokale strukturerede interfaces (som N-terminus af IFT46 med ODA16) kan være velforudsagte, skal den samlede tredimensionelle organisation tolkes med forsigtighed. Dette illustrerer en vigtig begrænsning ved iPTM som metric for komplekser der indeholder disordered proteiner.
+
+4.  For at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner, ville vi køre separate AlphaFold forudsigelser med kun de strukturerede dele af IFT46.\
+    \
+    Først inspicerer vi pLDDT-værdierne for IFT46 i den fulde model og identificerer regioner med høj pLDDT (blå/cyan farver) som er strukturerede. Fra PAE-plottet kan vi se hvilke dele af IFT46 der har lav PAE (og derfor interagerer) med henholdsvis ODA16 og IFT56.\
+    \
+    **Foreslåede AlphaFold kørsler:**\
+    \
+    **N-terminus af IFT46 (ca. residues 25-60) sammen med full-length ODA16**\
+    Denne region har høj pLDDT og lav PAE med ODA16 i PAE-plottet\
+    \
+    **Central del af IFT46 (ca. residues 120-180) sammen med full-length IFT56**\
+    Denne region har høj pLDDT og lav PAE med IFT56 i PAE-plottet\
+    \
+    **Forventede resultater:**\
+    \
+    Hvis problemet primært er IFT46's disordered regioner, ville vi forvente at disse sub-komplekser får betydeligt højere pTM og iPTM værdier (\>0.7-0.8). Dette ville bekræfte at de lokale interfaces faktisk er velforudsagte og pålidelige, men at de disordered linker-regioner i full-length IFT46 kunstigt sænker scoren for det fulde kompleks.\
+    \
+    Hvis derimod scoren stadig er lav (\<0.6) for disse sub-komplekser, ville det indikere at AlphaFold faktisk er usikker på selve interface-strukturerne, og at interaktionerne muligvis ikke er korrekt forudsagt.
