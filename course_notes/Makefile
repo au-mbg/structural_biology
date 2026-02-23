@@ -1,5 +1,8 @@
 .PHONY: all exercise solution clean preview-exercise preview-solution
 
+# exercise → _site/  (student-facing, no solutions)
+# solution → _site/instructor/  (instructor-facing, with solutions)
+
 all: exercise solution
 
 exercise:

@@ -1,6 +1,6 @@
 # Profile active when rendering solution handouts (strips exercise-only blocks)
 project:
-  output-dir: _site/solution
+  output-dir: _site/instructor
 
 filters:
   - filters/strip-exercise.lua
