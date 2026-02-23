@@ -46,12 +46,12 @@ format:
     theme: cosmo
     toc: true
     css: styles.css
-  typst: 
-    number-sections: false
-    toc: true
-    toc-depth: 2
-    margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}
+#   typst: 
+#     number-sections: false
+#     toc: true
+#     toc-depth: 2
+#     margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}
 
-format-links:
-  - format: typst
-    text: PDF
+# format-links:
+#   - format: typst
+#     text: PDF
