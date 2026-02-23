@@ -2,3 +2,10 @@
 
 # Quarto stuff: 
 course_notes/_site
+course_notes/.quarto
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+
