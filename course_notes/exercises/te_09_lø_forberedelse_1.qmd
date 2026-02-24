@@ -198,7 +198,7 @@ scene F3, store, RNase A's svovlbroer
 
 3.  RNase A er ekstremt stabilt overfor både kemisk og termisk denaturering. Selv om enzymet denatureres ved høj temperatur, så genopstår aktiviteten når det køles af. Dette skyldes i høj grad den stabile tertiære struktur og disulfidbroerne.
 
-4.  Hvis proteinet denatureres under reducerende betingelser brydes disulfidbroerne. Lader man derefter disse oxidere før man fjerner denaturant eller sænker temperaturen vil der dannes forkerte S-S bindinger og proteinet vil ikke kunne refoldes korrekt. Dette var essensen i Anfinsens forsøg, hvor han fandt at denne proces kun gav ca. 1% aktivt enzym, omtrent svarende til den statistiske sandsynlighed for at disulfidbroerne dannes korrekt. Lader man der i mod enzymet refolde samtidig med at det oxideres, finder alle de rette S-S broer sted og man får \>90% aktivt enzym.
+4.  Hvis proteinet denatureres under reducerende betingelser brydes disulfidbroerne. Lader man derefter disse oxidere før man fjerner denaturant eller sænker temperaturen vil der dannes forkerte S-S bindinger og proteinet vil ikke kunne refoldes korrekt. Dette var essensen i Anfinsens forsøg, hvor han fandt at denne proces kun gav ca. 1% aktivt enzym, omtrent svarende til den statistiske sandsynlighed for at disulfidbroerne dannes korrekt. Lader man der i mod enzymet refolde samtidig med at det oxideres, finder alle de rette S-S broer sted og man får >90% aktivt enzym.
 :::
 ::::
 

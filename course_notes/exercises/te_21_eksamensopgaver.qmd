@@ -48,7 +48,7 @@ orient 6diidim
 
 ![](media/image107.png){width="4.332909011373578in" height="2.43209864391951in"}RMSD =    0.464 (1076 to 1076 atoms)
 
-Fedtsyreamidaser indeholder en katalytisk triade, der til forskel fra serinproteaser, består af 2x Ser og 1x Lys. Nedenfor ses sekvensen for en del af fedtsyreamidasen med positioner, der er fuldstændigt bevarede i et alignment af \>800 relaterede sekvenser, fremhævet i blåt:
+Fedtsyreamidaser indeholder en katalytisk triade, der til forskel fra serinproteaser, består af 2x Ser og 1x Lys. Nedenfor ses sekvensen for en del af fedtsyreamidasen med positioner, der er fuldstændigt bevarede i et alignment af >800 relaterede sekvenser, fremhævet i blåt:
 
 200 - IFVTI[KD]{.mark}DID CLPHPTNGGT TWLHEDRSVE KDSAVVSKLR SCGAILLG[K]{.mark}A
 
@@ -130,7 +130,7 @@ Human Immunodeficiency Virus (HIV) er en retrovirus med et diploidt (dobbelt) RN
 
 **Spørgsmål 1.** Angiv kovariationer mellem basepar i både stem-regionen og i den palindrome sekvens i loop-regionen.
 
-Svar: Hairpin kovariation: UA -\> UG, Palindrom kovariation: CG -\> UA, GC -\> GU
+Svar: Hairpin kovariation: UA -> UG, Palindrom kovariation: CG -> UA, GC -> GU
 
 Strukturen af HIV KL-komplekset er blevet bestemt med både røntgenkrystallografi (PDB 2B8R) og NMR (PDB 2D1B).
 

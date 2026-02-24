@@ -14,7 +14,7 @@ Basalt set er,
 
 Et objekt kan altså godt eksistere uden en selektion, men en selektion kan ikke findes uden et objekt (i hvert fald ikke med indhold).
 
-1. Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen `fetch 1BL8`. Kommandoer kan enten tastes øverst eller nederst i vinduet hvor der står "PyMOL\>". I denne og følgende opgaver på kurset vil følgende angive en kommando, der skal skrives i PyMOL (eller stå i et script):
+1. Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen `fetch 1BL8`. Kommandoer kan enten tastes øverst eller nederst i vinduet hvor der står "PyMOL>". I denne og følgende opgaver på kurset vil følgende angive en kommando, der skal skrives i PyMOL (eller stå i et script):
 
     ```pymol
     fetch 1BL8
@@ -90,7 +90,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
 Nu hvor du forstår forskellen på selektioner og objekter, skal vi tale om PyMOL's generelle selektion kaldet **sele**. Denne opstår når man klikker med musen på en struktur eller vælger en del af sekvensen ud. 
 
-1.  Hent strukturen af Streptomyces K+-kanalen som i de forrige opgaver (fetch 1BL8). Har man allerede startet PyMOL og vil slette alt, kan man skrive kommandoen reinit (reinitialize), eller vælge File-\>Reinitialize-\>Everything fra menuen.
+1.  Hent strukturen af Streptomyces K+-kanalen som i de forrige opgaver (fetch 1BL8). Har man allerede startet PyMOL og vil slette alt, kan man skrive kommandoen reinit (reinitialize), eller vælge File->Reinitialize->Everything fra menuen.
 
 2.  Vis 1BL8 som sticks og zoom lidt ind med musen (huske at skjule cartoon-repræsentationen først). Farv den med atomfarver med carbon i gult.
 
@@ -121,7 +121,7 @@ Informationen fortæller os at i objektet 1BL8, segment A, kæde A klikkede vi p
 
 4.  Cα hedder altså CA, Oγ hedder OG og så fremdeles. Nogle gange (f.eks. i Asp) kan der være to ens atomer på samme position, hvorved de navngives 1 og 2, f.eks. hedder de to carboxylatatomer i Asp OD1 og OD2.
 
-5.  Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på ét atom. Dette styres i menuen Mouse \> Selection Mode. Skift selection mode til "Chains" og brug dette til at vælge hele kæde A. Nu kan vi omdøbe den generelle selektion til noget andet, så vælge "rename selection" i Action-menuen for sele og navngiv den `select_A`. Skift tilbage til selection mode `Residues` og vælg Phe103 i kæde A igen. Bemærk at der nu kommer en ny sele-selektion. På denne måde kan man opbygge selektioner uden brug af kommandoer.
+5.  Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på ét atom. Dette styres i menuen Mouse > Selection Mode. Skift selection mode til "Chains" og brug dette til at vælge hele kæde A. Nu kan vi omdøbe den generelle selektion til noget andet, så vælge "rename selection" i Action-menuen for sele og navngiv den `select_A`. Skift tilbage til selection mode `Residues` og vælg Phe103 i kæde A igen. Bemærk at der nu kommer en ny sele-selektion. På denne måde kan man opbygge selektioner uden brug af kommandoer.
 
 6.  Vi kan også bruge nomenklaturen ovenfor til at danne en selektion med CG-atomet fra Phe 103:\
 
@@ -187,7 +187,7 @@ Informationen fortæller os at i objektet 1BL8, segment A, kæde A klikkede vi p
 
     vælge residues 103-105 i kæde A.
 
-10. Endelig kan man vælge residues i proteinsekvensen. Vælg Display-\>Sequence fra menuen og træk fra residue Arg27-Leu36 i sekvensen for at vælge det. Find selv ud af hvordan man vælger i de andre kæder (Hint: Sæt først kæderne til forskellige farver, da de vises i sekvensen).
+10. Endelig kan man vælge residues i proteinsekvensen. Vælg Display->Sequence fra menuen og træk fra residue Arg27-Leu36 i sekvensen for at vælge det. Find selv ud af hvordan man vælger i de andre kæder (Hint: Sæt først kæderne til forskellige farver, da de vises i sekvensen).
 
 11. Brug nu select-statements og nomenklaturen ovenfor til at lave følgende selektioner. Brug forskellige, fornuftige navne til dem alle:
     - Residues 110-120 i kæde B.\
@@ -211,7 +211,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 1.  Log fra PyMOL:
 
     ```    
-    PyMOL\>fetch 1BL8\
+    PyMOL>fetch 1BL8\
     TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
     ExecutiveLoad-Detail: Detected mmCIF\
     CmdLoad: loaded as `1BL8`.
@@ -307,21 +307,21 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
     ```
     PyMOL>hide all
-    PyMOL\>show cartoon, 1BL8
-    PyMOL\>color limegreen, 1BL8
+    PyMOL>show cartoon, 1BL8
+    PyMOL>color limegreen, 1BL8
      Executive: Colored 2824 atoms and 1 object.
-    PyMOL\>color forest, chainD
+    PyMOL>color forest, chainD
      Executive: Colored 705 atoms.
-    PyMOL\>color red, Phe
+    PyMOL>color red, Phe
      Executive: Colored 88 atoms.
-    PyMOL\>show sticks, TrpD87
-    PyMOL\>show nb_spheres, TrpD87NE1
-    PyMOL\>color tv_blue, TrpD87NE1
+    PyMOL>show sticks, TrpD87
+    PyMOL>show nb_spheres, TrpD87NE1
+    PyMOL>color tv_blue, TrpD87NE1
      Executive: Colored 1 atom.
-    PyMOL\>show nb_spheres, chainA_CA
-    PyMOL\>color red, chainA_CA
+    PyMOL>show nb_spheres, chainA_CA
+    PyMOL>color red, chainA_CA
      Executive: Colored 97 atoms.
-    PyMOL\>color yellow, resiB110-120
+    PyMOL>color yellow, resiB110-120
      Executive: Colored 82 atoms.
     ```
 
@@ -858,7 +858,7 @@ Enzymet lysozyme (PDB-ID: 148L) findes i mange organismer, hvor det bruges til a
 
     1.  Brug den indledende visning til at finde ud af hvilke kædenavne, der er brugt for lysozym og de to substratfragmenter. Tjek dette med hjemmesiden for at se om det stemmer overens.
 
-    2.  Vælg **H-\>water** og **S-\>lines** for at vise detaljer for hele strukturen og skjule vand. Brug dette til at identificere (og nedskrive) en liste af aminosyrerester, der interagerer med substraterne.
+    2.  Vælg **H->water** og **S->lines** for at vise detaljer for hele strukturen og skjule vand. Brug dette til at identificere (og nedskrive) en liste af aminosyrerester, der interagerer med substraterne.
 
 2.  Opret et PyMOL-script, der gør følgende:
 

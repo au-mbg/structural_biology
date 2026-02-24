@@ -111,14 +111,14 @@ Heparin er en højt sulfateret glycosaminoglycan polymer, der bnder til mange a
 
 4.  Hvilken type af sidekæder vil du forvente at heparin binder til. 
 
-***PyMOL-info**: Vi skal nu visualisere den elektrostatiske overflade. Når man bruge PyMOL-interface tastes; A\>generate\>vacuum electrostatics\>protein contact potential (local). Se figuren forneden.*![](media/image63.png){width="6.383720472440945in" height="3.9663101487314085in"}\
+***PyMOL-info**: Vi skal nu visualisere den elektrostatiske overflade. Når man bruge PyMOL-interface tastes; A>generate>vacuum electrostatics>protein contact potential (local). Se figuren forneden.*![](media/image63.png){width="6.383720472440945in" height="3.9663101487314085in"}\
 \
 *Men vi vil ikke bare gøre det i vores PyMOL session. Vi vil have det ind i vores script.*\
 *Når man skal bestemme kommandoen for en mere kompliceret funktion vil det ofte være smart åbne en logfil. Det gør man som illustreret for neden ved at gå ind på undermenuen `File`, derefter på `Log File` og til sidst "Open\...". Så gemmer du det under det ønskede navn, f.eks. `Log-file.pml`.*
 
 ![](media/image64.png){width="3.0187193788276465in" height="2.4394575678040247in"}![](media/image65.png){width="3.2905610236220473in" height="1.590559930008749in"}
 
-*Herefter bruger du A\>generate\>vacuum electrostatics\>protein contact potential (local) igen. Herefter går du ind og lukker logfilen som du ser i figuren forneden.*
+*Herefter bruger du A>generate>vacuum electrostatics>protein contact potential (local) igen. Herefter går du ind og lukker logfilen som du ser i figuren forneden.*
 
 ![](media/image66.png){width="6.268055555555556in" height="4.5368055555555555in"}
 

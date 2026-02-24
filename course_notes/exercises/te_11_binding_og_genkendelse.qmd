@@ -38,7 +38,7 @@ Et rødt blodlegeme har et rumfang på 87 µm^3^ og et gennemsnitligt hæmoglob
 
 ## Officielt svar
 
-1.  70 kg =\> 4900 ml blod og et Hb indhold på 160 g/L x 4,9 L = 784 g. Molekylvægt per Hb monomer er 16.25 kDa, dvs. 784 g/16,25 x 10^3^ g/mol = 48,2 x 10^-3^ mol. Fe har en molekylvægt på 56 g/mol, dvs. 2,7 g.
+1.  70 kg => 4900 ml blod og et Hb indhold på 160 g/L x 4,9 L = 784 g. Molekylvægt per Hb monomer er 16.25 kDa, dvs. 784 g/16,25 x 10^3^ g/mol = 48,2 x 10^-3^ mol. Fe har en molekylvægt på 56 g/mol, dvs. 2,7 g.
 
 2.  Myoglobin har en molekylvægt på 16.7 kDa. 8 g myoglobin svarer til 0,48 x 10^-3^ mol.  Dvs. der kan bindes 0.48 x 10^-3^ mol x 32 g/mol ilt = 15,3 x 10^-3^ g ilt per kg menneske muskel og tilsvarende 153 x 10^-3^ g ilt per kg hvalmuskel.
 

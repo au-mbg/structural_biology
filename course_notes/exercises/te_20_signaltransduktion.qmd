@@ -53,7 +53,7 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I Lys
 ![](media/image98.emf){width="4.333421916010499in" height="1.0028794838145232in"}\
 Figur 2: Aminosyrene der definerer grænserne mellem domænerne er vist. TJ=transmembrane og juxa-membrane domæner. KD = kinase domæne
 
-6.  Forudse ud fra strukturen af CERK6 hvad effekten af de to mutationer vil have på ligandbinding og forklar hvorfor kan disse mutanter bruges til at forstå hvor liganden binder? *Bonusopgave: prøv at bruge Wizard-\>Mutagenesis-\>Protein til at undersøge punktmutationens i strukturen.*
+6.  Forudse ud fra strukturen af CERK6 hvad effekten af de to mutationer vil have på ligandbinding og forklar hvorfor kan disse mutanter bruges til at forstå hvor liganden binder? *Bonusopgave: prøv at bruge Wizard->Mutagenesis->Protein til at undersøge punktmutationens i strukturen.*
 
 ***PyMOL hint**: Når man bruger align er det også muligt at overlejre enkelte selektioner af et objekt. På den måde bestemmer man også hvilken del af molekylet der skal overlejret mest eksakt.*
 

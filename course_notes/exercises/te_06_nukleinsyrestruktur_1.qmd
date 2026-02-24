@@ -126,7 +126,7 @@ Tryk **F6** for at se hvordan genkendelses-helixer i Mad-Max interagerer med D
 
 4.  Beskriv hydrogen-bindingerne for de tre aminosyrer (His, Glu, Arg) i genkendelses-helixer i Myc-Max ved at specificere hvilke baser og hvilke atomer på baserne, der indgår i bindingen. Er der andre interaktioner end med baserne? Er interaktionerne symmetriske i Myc-Max, Max-Max og Mad-Max og hvorfor?
 
-***PyMOL hint**: Brug menuen "Mouse \> Selection mode \> Atoms", så du bedre kan identificere de individuelle atomer, der indgår i hydrogen-bindingerne.*
+***PyMOL hint**: Brug menuen "Mouse > Selection mode > Atoms", så du bedre kan identificere de individuelle atomer, der indgår i hydrogen-bindingerne.*
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

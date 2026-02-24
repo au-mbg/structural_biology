@@ -11,6 +11,9 @@ website:
   sidebar:
     style: "docked"
     contents:
+      - section: "Installation og opsætning"
+        contents:
+          - other_notes/installation.qmd
       - section: "Øvelser"
         contents:
           - exercises/te_01_i_gang_med_pymol.qmd

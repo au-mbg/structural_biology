@@ -61,7 +61,7 @@ Expandér klasserne og kig efter arkitekturer der betegnes som "barrel".
 
 2.  Barrels findes (måske overraskende) blandt både de rene α-domæner, de rene β-domæner men og også de blandede αβ-domæner.
 
-3.  Den klassiske β-barrel indeholder flest domæner (\>20.000) efterfulgt af de blandede αβ-domæner (\~13.000) og de rene α-barrels (\~760 domæner).
+3.  Den klassiske β-barrel indeholder flest domæner (>20.000) efterfulgt af de blandede αβ-domæner (\~13.000) og de rene α-barrels (\~760 domæner).
 
 4.  Den klassiske β-barrel består af en række β-kæder, der folder sammen så den første hydrogenbinder til den sidste og de dermed danner en tønde-struktur. β-kæderne er antiparallelle og kræver derfor ikke helixer ind i mellem.
 

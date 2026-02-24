@@ -135,7 +135,7 @@ Man fremstiller nu et hybridenzym bestående af en MHETase og en PETase forbunde
 
 2.  MHETasen har et domæne, der fungerer som et slags låg, der omkapsler det aktive site og dermed substratet. PETasen arbejder med uopløseligt materiale så det skal ikke indkapsles. Derimod er MHET lille og skal tilbageholdes i det aktive site eftersom den langsomme reaktionsrate gør MHET tilbøjelig til at diffundere væk før det når at blive nedbrudt.
 
-3.  PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA =\> MHET =\> TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
+3.  PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA => MHET => TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
 :::
 ::::
 

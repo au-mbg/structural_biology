@@ -124,15 +124,15 @@ I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige
 3.  5000 gange
 
 4.  Dette virker:\
-    10 μL (5 mg/mL) + 490 μL buffer -\> 0.1 mg/mL = 100 μg/mL\
-    10 μL (100 μg/μL) + 990 μL buffer -\>  1 μg/mL\
+    10 μL (5 mg/mL) + 490 μL buffer -> 0.1 mg/mL = 100 μg/mL\
+    10 μL (100 μg/μL) + 990 μL buffer ->  1 μg/mL\
     \
     Dette virker også:\
-    10 μL (5 mg/mL) + 990 μL buffer -\> 0.05 mg/mL = 50 μg/mL\
-    10 μL (50 μg/μL) + 490 μL buffer -\> 1 μg/mL\
+    10 μL (5 mg/mL) + 990 μL buffer -> 0.05 mg/mL = 50 μg/mL\
+    10 μL (50 μg/μL) + 490 μL buffer -> 1 μg/mL\
     \
     Dette virker ikke:\
-    1 μL (5 mg/mL) + 4999 μL buffer -\> 0.001 mg/mL = 1 μg/mL
+    1 μL (5 mg/mL) + 4999 μL buffer -> 0.001 mg/mL = 1 μg/mL
 
 5.  Se ovenfor.
 :::

@@ -77,7 +77,7 @@ Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) o
 
 3.  pLDDT viser AlphaFolds confidence i strukturforudsigelsen:\
     \
-    **Høj pLDDT (\>90, blå/cyan):** Meget sikker forudsigelse - de strukturerede domæner\
+    **Høj pLDDT (>90, blå/cyan):** Meget sikker forudsigelse - de strukturerede domæner\
     **Medium pLDDT (70-90, grøn/gul):** Moderat sikker - nogle loops\
     **Lav pLDDT (\<50, orange/rød):** Meget usikker - intrinsically disordered regioner\
     \
@@ -238,7 +238,7 @@ Et affinity pull-down MS eksperiment med tagged UniProt: Q3Y8L7 (ODA16, bait pro
     \
     **Forventede resultater:**\
     \
-    Hvis problemet primært er IFT46's disordered regioner, ville vi forvente at disse sub-komplekser får betydeligt højere pTM og iPTM værdier (\>0.7-0.8). Dette ville bekræfte at de lokale interfaces faktisk er velforudsagte og pålidelige, men at de disordered linker-regioner i full-length IFT46 kunstigt sænker scoren for det fulde kompleks.\
+    Hvis problemet primært er IFT46's disordered regioner, ville vi forvente at disse sub-komplekser får betydeligt højere pTM og iPTM værdier (>0.7-0.8). Dette ville bekræfte at de lokale interfaces faktisk er velforudsagte og pålidelige, men at de disordered linker-regioner i full-length IFT46 kunstigt sænker scoren for det fulde kompleks.\
     \
     Hvis derimod scoren stadig er lav (\<0.6) for disse sub-komplekser, ville det indikere at AlphaFold faktisk er usikker på selve interface-strukturerne, og at interaktionerne muligvis ikke er korrekt forudsagt.
 :::

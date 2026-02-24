@@ -14,7 +14,7 @@ Et kromogent substrat med ekstinktionskoefficient, ε~460~ = 67.000 M^-1^cm^-1^ 
 
 **Spørgsmål 2.** Til forsøget startes en reaktion med 1 nM enzym og 1 mM substrat. Hvor mange sekunder vil det tage for substratkoncentrationen at falde til 95% af startkoncentrationen? For beregningen kan reaktionshastigheden antages at være uændret.
 
-Svar: Forsøget udføres ved mættende betingelser da \[substrat\]\>\>K~M~. Derfor forløber reaktionen ved Vmax = kcat\*\[enzym\] = 50 s-1 \* 1 nM = 50 nM/s. Vi antager at reaktionshastigheden er konstant indtil \[substrat\]= 0.95 mM, dvs. at der er forbrugt 0.05 mM substrat, og reaktion vil derfor være konstant i: t = 0.05\*10^-3^ M / 50\*10^-9^ M/s = 1000 s
+Svar: Forsøget udføres ved mættende betingelser da \[substrat\]>>K~M~. Derfor forløber reaktionen ved Vmax = kcat\*\[enzym\] = 50 s-1 \* 1 nM = 50 nM/s. Vi antager at reaktionshastigheden er konstant indtil \[substrat\]= 0.95 mM, dvs. at der er forbrugt 0.05 mM substrat, og reaktion vil derfor være konstant i: t = 0.05\*10^-3^ M / 50\*10^-9^ M/s = 1000 s
 
 Absorbansen måles med et spektrofotometer med en lysvej på 1 cm, der kan måle præcise absorbanser fra 0.05 til 1.5.
 
@@ -50,7 +50,7 @@ Efterfølgende oprensede man en muteret udgave af proteasen fra en patient og m�
 
 **Spørgsmål 4.** Bestem K~M~ og k~cat~ for mutanten. Kommenter forskellene mellem patientens enzym og vildtype enzymet.
 
-Svar: K~M~ = 583 µM, k~cat~ = 27.9 s^-1^ (se vedhæftede svar i Excel). Patientens enzym har primært lavere affinitet for substratet (K~M~ er øget \> 10 gange) mens den katalytiske aktivitet *k*~cat~ er kun faldet ca. 2 gange.
+Svar: K~M~ = 583 µM, k~cat~ = 27.9 s^-1^ (se vedhæftede svar i Excel). Patientens enzym har primært lavere affinitet for substratet (K~M~ er øget > 10 gange) mens den katalytiske aktivitet *k*~cat~ er kun faldet ca. 2 gange.
 
 ## Opgave 2
 

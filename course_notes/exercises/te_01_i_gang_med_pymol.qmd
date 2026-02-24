@@ -119,7 +119,7 @@ Menuen **S** (Show) bruges til at vise objekter/selektioner med forskellige graf
 
 Bemærk at et objekt/selektion kan have flere repræsentationer samtidig, hvorfor det er nødvendigt at skjule eksisterende repræsentationer når andre vælges (medmindre man selvfølgelig ønsker begge samtidig). Dette gøres vha. Hide-menuen. I version 3 af PyMOL vises alle nye strukturer, der åbnes, som en flot cartoon-repræsentation med ligander i sticks og ioner i spheres.
 
-5.  Benyt Hide-menuen udfor det globale `all`-objekt til at fjerne alt (H-\>Hide: everything).
+5.  Benyt Hide-menuen udfor det globale `all`-objekt til at fjerne alt (H->Hide: everything).
 
 6.  Eksperimentér med de forskellige repræsentationer af 1BL8 vha. Show-menuen. Brug Hide-menuen til at fjerne en repræsentation før en ny vises.
 
