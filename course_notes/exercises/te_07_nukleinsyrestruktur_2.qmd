@@ -16,7 +16,10 @@ Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Åben pm
 
 ***PyMOL hint:** For at identificere deep eller shallow groove af en RNA-dobbelthelix selekteres et WC-basepar med henblik på nærmere undersøgelse. For at zoome ind på et basepar vælges det først med musen og herefter bruges kommandoen **[zoom](https://www.pymolwiki.org/index.php/Zoom)** f.eks. zoom sele. Dernæst kan andre elementer fjernes med hide (not sele). Alternativt kan du bruge musehjul til at justere clipping plane omkring din selektion. Deep eller shallow groove kan nu identificeres på baseparret vha. placeringen af beta-glykosid-bindingerne. Du kan så trykke funktionstast for at komme tilbage til udgangspunktet.*
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  AU cWW, UA cWH
 
@@ -25,6 +28,8 @@ Officielt svar
 3.  A20-G6 tHS, A7-G19 tHS
 
 4.  L7 proteinet binder i deep groove på kink-turn motivet.
+:::
+::::
 
 ## Opgave 2. tRNA og syntetase
 
@@ -46,7 +51,10 @@ tRNA har en kompleks tertiær struktur med mange non-Watson-Crick basepar. Her s
 
 6.  Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  tWH
 
@@ -59,6 +67,8 @@ Officielt svar
 5.  Menuen "to other atoms in object" fremhæver H-bindingerne. Q517, R341 og R520.
 
 6.  Energi til Gln charging.
+:::
+::::
 
 ## Opgave 3. 5S rRNA og L25
 
@@ -86,7 +96,10 @@ Tryk **F9** for at se RNA-dobbelthelixen vist som kuglemodel, hvor H-bindingsacc
 
 5.  Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** og **F12**. Svaret skal indeholde angivelse af interaktioner til specifikke atomer på baseparret. Hvilke interaktioner bidrager generelt til sekvensspecifik binding af RNA-bindende proteiner?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Helix 1,2,3,4,5 er stammer med buler eller interne loops. \
     Loop C er hairpin med 13-nt loop.\
@@ -114,6 +127,8 @@ Officielt svar
     Lys14 binder O6 på Hogsteen side af G279\
     \
     Sekvens-specifik binding opnås via H-bindinger, form komplementaritet og hydrofobe interaktioner.
+:::
+::::
 
 ## Opgave 4. CRISPR-Cas9 
 
@@ -129,7 +144,10 @@ Cas9-proteinet binder til et guide RNA, som dirigerer komplekset til binding af 
 
 4.  **F4** viser den del af recognition (REC) domænet, der binder til RNA hairpin. **F5** viser RECs interaktion med baser i deep groove og **F6** viser RECs interaktion med baser i shallow groove af RNA helix. Beskriv de specifikke hydrogenbindings-interaktioner mellem baser og aminosyrer.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  4 hairpins. A-form, da RNA-strengen inducerer A-form pga. 2'OH og C3'-endo konformation.
 
@@ -139,6 +157,8 @@ Officielt svar
 
 4.  F5: Phe351 og Asp364 interagerer med G43, der er uparret base.\
     F6: Ser104 og Phe105 interagerer med U24 og A47 i minor groove.
+:::
+::::
 
 ## Opgave 5. Argonaut 
 
@@ -167,7 +187,10 @@ Brug nu dit script til at svare på følgende spørgsmål:
 
 5.  Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. Hvilke domæner er involveret i bindingen? Er interaktionerne med baserne eller backbone og hvad fortæller det om bindingen?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Se vedhæftede script.
 
@@ -286,3 +309,5 @@ scene F1
 4.  T1-base H-binder til Met413. G2-base H-binder til Asn449. Mg^2+ ^koordinerer fosfater i backbone.
 
 5.  Ago H-binder til sukker-fosfat-rygrad af DNA og RNA streng, hvilket betyder at det er en sekvens-uspecifik binding. Alle domæner er involveret i binding.
+:::
+::::

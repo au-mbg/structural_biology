@@ -18,7 +18,10 @@ I Stryer betegnes to former af LDH som henholdsvis H og M form.
 
 4.  Hvor mange splejsningsvarianter kendes for LDH-M?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Der findes 3 isozymer af LDH i mennesker (A chain, B chain or C chain).
 
@@ -27,6 +30,8 @@ Officielt svar
 3.  Genet for LDH-M ("A chain") findes på kromosom 11 (står under "Names and taxonomy"), mens genet for LDH-H ("B chain") findes på kromosom 12.
 
 4.  LDH-M ("A chain") udviser 5 splejsningsvarianter (`isoform 1`\...`isoform 5`). 
+:::
+::::
 
 ## Opgave 2. Aspartat
 
@@ -44,7 +49,10 @@ En *E. coli*-mutant indeholdende en enzymdefekt relevant for biosyntesen af thr
 
 3.  Hvilken anden pathway kunne være influeret af mutationen og hvorfor? Hint: Kig på reaktionspathwayen for threonin, isoleucin og methionin.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  PALA er en bisubstrat analog og bør derfor inhibere [kompetitivt]{.underline}. 10 nM er en stærk binding, så PALA er en stærk inhibitor.
 
@@ -55,6 +63,8 @@ Officielt svar
 ![Regulation_of_Homoserine_Dehydrogenase_and_Aspartate_Kinase](media/image61.jpeg){width="5.444444444444445in" height="6.154589895013124in"}
 
 Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin sidekæde (Lys-84) koordinerer carboxylsyregruppen i substratet (Asp). Hvis substratanalogen ASA er bundet vil aldehyden danne en Schiff's base med Lys-84 og dermed inaktivere enzymet irreversibelt gennem kovalent modifikation. 
+:::
+::::
 
 ## Opgave 3. ATCase
 
@@ -68,7 +78,10 @@ ATCase er et eksempel på et vigtigt allosterisk reguleret enzym. Åben filen A
 
 4.  Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  De katalytiske subunits roterer i forhold til hinanden og skilles ad i R-tilstanden i forhold til T-tilstanden.
 
@@ -77,6 +90,8 @@ Officielt svar
 3.  PALA er et bisubstrat samt transition state analog, har illustreret de konformationelle ændringer, der finder sted.
 
 4.  PALA promoverer T til R transitionen og fungerer dermed som en aktivator af enzymet. Men PALA er også en transition state-analog, der inhiberer enzymet.
+:::
+::::
 
 ## Opgave 4. Thrombin og Antithrombin (PyMOL)
 
@@ -121,7 +136,10 @@ Strukturen af thrombin i kompleks med inhibitor og et heparin fragment findes i�
 6.  Lav en scene, kaldet F3, som viser heparins binding til thrombin (PDB-ID: 3UTU). Hint: Brug align og util.protein_vacuum_esp.\
     Stemmer heparins placering overens med det forventede bindingsite?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 \## Script til opgave 4. Thrombin og Antithrombin
 
@@ -204,6 +222,8 @@ scene F3, store
 5.  Et sammenhængende blåt område vil sandsynligvis binde heparin da de negative ladninger på heparin vil vekselvirke favorabelt med den positivt ladede overflade.
 
 6.  Ja
+:::
+::::
 
 ## Opgave 5. Antithrombin 
 
@@ -230,7 +250,10 @@ Strukturen af factor XIa findes i PDB-ID: 3SOR. Lav en overlejring af 3SOR på t
 4.  Lav en scene, kaldet F6, der viser XIa's interaktion med heparin.\
     Vil man forvente at heparin binder på samme måde til Factor XIa som til thrombin?
 
-**Officielt svar** 
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Kræves for at stoppe størkningsprocessen af blod igen. Se Stryer s. 328-331.
 
@@ -321,6 +344,8 @@ set_view (\\
 161.061279297, 247.512329102, -20.000000000 )
 
 scene F6, store
+:::
+::::
 
 ## Opgave 6. Kløvning af thrombin med factor Xa
 
@@ -378,10 +403,15 @@ Factor Xa aktiverer prothombin til thrombin ved kløvning af peptidbindingerne e
 
 3.  Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Factor Xa kløver naturligt efter peptidet IEGR. 409 er His (H), 465 er Asp (D) og 571 er Ser (S) og udgør den katalytiske triade i serinproteasen. I prothrombin er konfigurationen forkert, så det aktive site ikke er samlet.
 
 2.  1-43 fjernes under processering, 44-317 frigøres ved aktivering men sidder stadig fast, 318-366 og 367-625 er bundet sammen af disulfidbroer. I en reducerende gel separeres de tre fragmenter i stykkerne 44-317 = 274 aa = 30 kDa, 318-366 = 49 aa = 5.4 kDa og 367-625 = 259 aa = 28.5 kDa.
 
 3.  Stryer s. 328 mm.
+:::
+::::

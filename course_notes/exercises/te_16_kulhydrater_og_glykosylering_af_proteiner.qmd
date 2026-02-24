@@ -36,7 +36,10 @@ Sammensætningen af glykosyleringer er afhængig ikke kun af den organisme prote
 
 6.  Foreslå to metoder til identificering af exogent EPO og forklar hvorfor de kan anvendes.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Svaret skal indeholde en beskrivelse og sammenligning af syntesen af både N-bundne og O-bundne oligosaccharider, herunder information om at N-bundne molekyler dannes på bærermolekylet [dolicholphosphate]{.underline}, hvorefter det overføres som én samlet enhed til target-proteinet, der herefter modificeres. Dette står i kontrast til de O-bundne oligosaccharider, som opbygges sekventielt på target-molekylet. AB0-blodtypesystemet fremkommer som et resultat af O-bunden modifikation af proteiner og lipider på erythrocytternes overflade. O-bundne oligosaccharider findes, i modsætning til de N-bundne oligosaccharider, som modifikationer både på proteiner og på lipider.
 
@@ -49,6 +52,8 @@ Officielt svar
 5.  De tre N-glykosyleringer er korrekte medens kun den ene af O-glykosyleringerne er korrekt. Forskellen i kvalitet af forudsigelsen skyldes at der findes et veldefineret sekvensmotiv for N-glykosyleringer: NX(S/T) hvor X ikke må være prolin. Et sådant simpelt motiv findes ikke for O-glykosyleringer.
 
 6.   Isoelektrisk fokusering (se Stryer) fordi der vil være forskel i masse og/eller ladning. Masse spec da der vil være forskel i masse.
+:::
+::::
 
 ## Opgave 2. Serine carboxypeptidase Y
 
@@ -86,7 +91,10 @@ Aminosyreresterne 1-20 udgør signalsekvensen i pre-pro CPY, hvorefter 21-111 er
 4.  Beskriv ud fra de givne oplysninger, hvordan modningen af CPY i cellen kunne foregå.\
      
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  N-glycosyleringer, NXT/S. N124 (NVT), N198 (NAT), N279 (NLT) og N479 (NWT).
 
@@ -95,6 +103,8 @@ Officielt svar
 3.  N-koblede oligosaccharider spaltes fra peptidet (proteinet) af peptide N-glycosidase F (Fig. 11.29, s. 333). Andre specifikke glycosidaser bruges til spaltning af oligosaccharidet (f.eks. spalter neuamidase ved sialsyre og b-1,4-galactosidase). Oftest kan oligosaccharide-strukturen kun bestemmes delvist.
 
 4.  Serine carboxypeptidase Y er et glycoprotein, der syntetiseres og processeres via ER- og Golgi-membransystemerne. Den modne N-terminal (QRPL) indeholder det vakuolære sorting signal. Eventuelle O-glycosyleringer sker i Golgi ligesom de N-bundne oligosaccharider kan blive trimmet til komplekse former. Carboxypeptidasen pakkes i en vesikel i den terminale del af Golgi, hvorefter denne frigives og transporteres til vakuolen. 
+:::
+::::
 
 ## Opgave 3. Mannosidase I
 
@@ -124,7 +134,10 @@ I billedet nedenfor er vist kifunensin bundet i en lomme i mannosidase I. Kifune
 
  ![kifcomplex](media/image72.png){width="3.2235290901137357in" height="2.3786931321084865in"}
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Den fælles stub er angivet med gråt i figur 11.16A i Stryer
 
@@ -137,6 +150,8 @@ Officielt svar
 5.  Man vil forvente at kifunensin er en kompetitiv inhibitor, idet den har strukturel lighed med alpha-D-Mannose.
 
 6.  Nitrogenet til venstre på figuren svarer til placeringen af oxygen på det anomere carbon. Hvis mannosen indgik i en beta-glycosid binding ville bindingen pege opad og der ville være sterisk hindring for binding til mannosidase I.
+:::
+::::
 
 ## Opgave 4. Glykosyleringer i sortilin
 
@@ -171,7 +186,10 @@ I et forsøg på at fjerne alle glykosyleringer blev alle asparaginer, der var f
 
 8.  Giv en mulig forklaring på denne observation.  
 
-**Officielt svar**
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Script findes på Brightspace.
 
@@ -190,6 +208,8 @@ Script findes på Brightspace.
 7.  Den inderste N-acetyl-glucosamin danner hydrogen bindinger fra O6 (acceptor) til Nζ (donor) i Lys119 . Der er også en mulig H-binding fra O6 (H donor) til hovedkæde carbonyl oxygen (acceptor) i Asp116, men afstanden er så lang (3,3Å) at man normalt ikke vil regne den medog den vises derfor heller ikke hvis man har sat cutoff til 3.2Å. Desuden er der en hydrogenbinding fra oxygen (acceptor) i acetyl-gruppen til guanidinium gruppen i Arg622 (donor).
 
 8.  Der kan egentlig være to forklaringer. Enten kan Asn-sidekæderne selv være vigtige for proteinets foldning og mutationerne kan derfor betyde at proteinet ikke folder korrekt og dermed er uopløseligt. En anden mulighed er at glycosyleringerne er vigtige for foldning af proteinet i cellen eller for opløselighed under foldningsprocessen i Golgi/SR. Glycosyleringer tjener ofte til at forøge stabilitet og opløselighed af proteiner. I spørgsmål6 så vi at glykosyleringen på Asp549 forbandt det første β-sheet med det sidste i propelstrukturen via hydrogenbinginger.  Glykosyleringen kan derfor tænkes at være med til at stabilisere den 10-bladede propelstruktur. 
+:::
+::::
 
 ## Opgave 5. (Rhod-)opsin (PyMOL)
 
@@ -209,7 +229,10 @@ Beskriv den overordnede foldningsklasse og struktur af rhodopsin.
 
 5.  Hent strukturen af opsin (PDB-ID: 3CAP) og på samme måde som før; dan et objekt med kæderne A, C og D. Foretag dernæst en overlejring af opsin på rhodopsin. Gem dette som scene F3. Hvad er forskellen på opbygningen af opsin og rhodopsin? Giver denne forskel anledning til strukturelle ændringer? Hvilke?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Brug rcsb.org for at finde ligander etc:\
     \
@@ -288,3 +311,5 @@ Officielt svar
     orient 1u19_acd\
     \
     Opsin er selve proteinet uden den prostetiske gruppe (11-*cis* retinal). Strukturerne er nær identiske, men der er nogle små justeringer i den ene ende af de transmembrane helicer i opsin ift. rhodopsin. Det kunne godt tyde på, at det er tilstedeværelsen af 11-*cis* retinal, der forårsager ændringerne, selvom de er et stykke væk.
+:::
+::::

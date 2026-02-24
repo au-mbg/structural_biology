@@ -32,7 +32,10 @@ ProtParam beregner også aminosyresammensætning for sekvensen.
 
 (Hint. Klik på "Structure" til venstre på UniProt-siden)
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  245 aminosyrer.
 
@@ -47,6 +50,8 @@ Officielt svar
     Højt antal Cys skyldes at det er et ekstracellulært, kløvet enzym, der holdes sammen af disulphidbroer. De andre kan være svære at forklare, men der er også et ret lille antal aminosyrer at vurdere det på.
 
 5.  Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
+:::
+::::
 
 ## Opgave 2. Ramachandran-plottet
 
@@ -56,11 +61,16 @@ På figuren nedenfor er vist fordelingen af phi og psi vinkler for aminosyrerest
 
 2.  På figuren for alle aminosyrer er der tre områder med høj forekomst af aminosyrerester. Hvor finder man typisk disse områder i proteiners sekundærstruktur![fig1-6-Williamson-adapted](media/image7.png){width="6.268055555555556in" height="3.192361111111111in"}
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. Med andre ord er mængden af mulige kombinationer af ψ- og φ-vinkler væsentlige større. Prolins sidekæde er ringsluttet med hovedkæden og dets φ-vinkel er derfor bundet omkring -65°.
 
 2.  Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
+:::
+::::
 
 ## Opgave 3. C-alpha diagram
 
@@ -78,7 +88,10 @@ HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 
 4.  Er β-kæderne parallelle eller anti-parallelle?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
 
@@ -90,6 +103,8 @@ Officielt svar
     Kæde 4: Rest 42-50
 
 4.  Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
+:::
+::::
 
 ## Opgave 4. Cartoons
 
@@ -109,7 +124,10 @@ Hvilken struktur hører til hvilket plot?
 
 Forklar dit svar.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 A er Fab-fragmentet
 
@@ -120,6 +138,8 @@ C er myoglobin
 Dette ses bl.a. ved at myoglobin kun indeholder α-helixer og Fab-fragmentet næsten kun består af β-plader mens β-galactosidase er blandet. Man kan også kigge på antallet af rester og få en idé udfra det (β-galactosidase er et meget stort protein).
 
 Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn og nummer), der antyder at strukturen kan være dårligt forfinet. 
+:::
+::::
 
 ## Opgave 5. Afstand mellem C-alpha atomer
 
@@ -131,7 +151,10 @@ Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn 
 
 4.  Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  ![](media/image13.png){width="5.761013779527559in" height="3.375165135608049in"}
 
@@ -140,6 +163,8 @@ Officielt svar
 3.  \~3.8 Å
 
 4.  \~2.8 Å
+:::
+::::
 
 ## Opgave 6. Binding af guanine
 
@@ -175,7 +200,10 @@ En mutation af aspartat til asparagin i sekvensmotivet for guaninbinding medfør
 
 4.  Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Cys137
 
@@ -201,6 +229,8 @@ Officielt svar
     D138 udgør altså hele grundlaget for denne skelnen mellem nukleotider.
 
 4.  Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
+:::
+::::
 
 ## Opgave 7. Nukleotid binding
 
@@ -228,7 +258,10 @@ Denne ville altså finde afstanden mellem alfa-carbon i aminosyrerest 13 i kæde
 
 2.  Skriv et nyt script, der laver en visning af samme figur som før, men med GDPNP (en analog til GTP) i stedet for GDP og stadigvæk med angivelse af hydrogenbindinger. Hint: Der kan hentes meget inspiration i scriptet fra før. 
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1\)
 
@@ -283,3 +316,5 @@ set_view (\\\
     21.348415375,  106.749801636,  -20.000000000 )
 
 ![GDPNP-EFtu](media/image16.png){width="6.259720034995626in" height="4.065277777777778in"}
+:::
+::::

@@ -28,7 +28,10 @@ Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som 
 
 5.  Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
 
@@ -39,6 +42,8 @@ Officielt svar
 4.  Først vil der være en kraftig absorption omkring 680 nm, der så aftager efterhånden som RNA nedbrydes.
 
 5.  688 nm.
+:::
+::::
 
 ## Opgave 2. Støkiometriske beregninger
 
@@ -62,7 +67,10 @@ SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS K
 
 3.  Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  H6-Ubi-S15: 11607.11 Da\
     S-protein: 11541.96 Da
@@ -86,6 +94,8 @@ Officielt svar
     Den molære masse af det samlede RNase S er derfor 13254.84 Da\
     \
     Den molære koncentration svarer altså til 0.215 mmol/L \* 13254.83 g/mol = 2.87 g/L = **2.87 mg/mL**
+:::
+::::
 
 ## Opgave 3. Øvelse i fortyndingsrækker
 
@@ -101,7 +111,10 @@ I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige
 
 5.  Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  5 μg/μL og 5000 ng/μL
 
@@ -122,6 +135,8 @@ Officielt svar
     1 μL (5 mg/mL) + 4999 μL buffer -\> 0.001 mg/mL = 1 μg/mL
 
 5.  Se ovenfor.
+:::
+::::
 
 ## Opgave 4. Opsætning af dataark til LØ
 
@@ -143,9 +158,14 @@ I denne opgave skal vi opstille et eksperimentelt dataark i Excel til brug i LØ
 
 8.  Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Intet svar angivet.
+:::
+::::
 
 ## Opgave 5. Flowchart til LØ
 
@@ -161,7 +181,10 @@ Dette er en åben opgave, der tjener til forberedelse til LØ. For hvert eksperi
 
 5.  Eksperiment 5 - Kemisk krydsbinding af RNase S
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Få inspiration fra LØ-vejledningens side 7:
 
@@ -183,3 +206,5 @@ Experiment 4: Isolation of H6-Ubi-S15 fusion protein and demonstration of purif
 Experiment 5: Chemical cross-linking of hybrid S protein.
 
 The instructors recommend: As you will be busy doing three separate experiments on day 2, you should start out by focusing on Experiment 4, as collecting samples for SDS-PAGE from the columns will be the bottleneck for completing all experiments. While the columns are running, you should also start the crosslinking reactions for Experiment 5, as these also produce samples to go onto the gel. Finally, initiate Experiment 3 when the crosslinking is running, as you will have time to measure the activities of the complexes while your SDS-PAGE gel is running.
+:::
+::::

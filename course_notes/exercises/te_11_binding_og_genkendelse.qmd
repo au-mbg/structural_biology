@@ -12,13 +12,18 @@ Et rødt blodlegeme har et rumfang på 87 µm^3^ og et gennemsnitligt hæmoglob
 
 3.  Hvor meget Hb ville der være per blodlegeme hvis Hb var krystallinsk pakket heri (hver molekyle en terning med 65Å lange sider).
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Masse: 340 x 10^-3^g/10^-3^L x 87 x (10^-6^)^3^m^3^ x 10^3^L/m^3^ = 29,580 x 10^-18^ x 10^3^ g = 29,58 x 10^-12 ^g.
 
 2.  Antal molekyler: 29,58 x 10^-12^ g/(65 x 10^3^ g/mol) x 6,02 x 10^23^ molekyler/mol = 2,73 x 10^8^ molekyler.
 
 3.  Hvert Hb molekyle fylder (65 x 10^-10^m)^3^ = 274 x 10^-27^m. Hver celle fylder 87 x 10^-18^m^3^. Dvs. der er plads til 3,1 x 10^8^ molekyler. Det fås ikke meget tættere!
+:::
+::::
 
 ## Opgave 2. Jern, ilt og hæm
 
@@ -28,13 +33,18 @@ Officielt svar
 
 3.  Ilt koncentrationen i vævsvæske ved 37^o^C er ca. 35 µM. Hvor meget mere (eller mindre) er bundet til Mb i forhold til i vand i hhv menneske og hval?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  70 kg =\> 4900 ml blod og et Hb indhold på 160 g/L x 4,9 L = 784 g. Molekylvægt per Hb monomer er 16.25 kDa, dvs. 784 g/16,25 x 10^3^ g/mol = 48,2 x 10^-3^ mol. Fe har en molekylvægt på 56 g/mol, dvs. 2,7 g.
 
 2.  Myoglobin har en molekylvægt på 16.7 kDa. 8 g myoglobin svarer til 0,48 x 10^-3^ mol.  Dvs. der kan bindes 0.48 x 10^-3^ mol x 32 g/mol ilt = 15,3 x 10^-3^ g ilt per kg menneske muskel og tilsvarende 153 x 10^-3^ g ilt per kg hvalmuskel.
 
 3.  Der er jo bundet ilt svarende til en koncentration på 0,48 x 10^-3^ mol/kg = 480 µM i menneskemuskel (ca. 14 gange mere end i vævsvædske) og yderligere 10 gange i hval. God kapacitet!
+:::
+::::
 
 ## Opgave 3. Kooperativitetsopgave
 
@@ -71,7 +81,10 @@ c.  Stigning i pH.
 
 d.  Tab af kvarternær struktur.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Dette følger af det simple sammenhæng ![](media/image46.png){width="1.4791666666666667in" height="0.6051137357830271in"}
 
@@ -81,6 +94,8 @@ Officielt svar
     Man ser godt kooperativiteten ved de lave ilt koncentrationer.
 
 3.  Kurve 1: d. Kurve 2: a eller c. Kurve 4: b.
+:::
+::::
 
 ## Opgave 4. Lampret-fiskens iltbinding
 
@@ -152,7 +167,10 @@ Lampretfisk er primitive dyr, hvis stamfædre (og ditto mødre!) forgrenede sig 
 
 3.  Yderligere studier viser at lampret Hb danner primært dimerer når det ikke er bundet til ilt. Foreslå en model til at forklare den observerede kooperativitet i lampret Hb's ilt binding.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Plot Y (brøken af lampret Hb der har bundet ilt) versus p(O~2~) i Excel ark:\
     ![TØ uge 43 excel 1](media/image48.png){width="5.507042869641295in" height="3.3063003062117233in"}\
@@ -167,6 +185,8 @@ Officielt svar
     \
     \
     ![TØ uge 43 lampret](media/image50.png){width="5.516056430446194in" height="1.9904494750656168in"}
+:::
+::::
 
 ## Opgave 5. Allosterispørgsmål
 
@@ -190,7 +210,10 @@ En anden ATCase-hybrid blev lavet til at undersøge effekt af allosteriske aktiv
 
 6.  Hvad er betydningen af disse ændringer i absorbtionen af reporter-sidekæderne?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Hvis T/R ændres fra 300/1 til 1/300, betyder det at allerede i fravær af substrat er der nærmest ingen lav-aktivitets tilstand (T), kun høj-aktivitet (R); denne situation forstærkes bare jo mere substrat binder. Dvs. ingen allosteri, kun simpel Michaelis-menten kinetik.
 
@@ -203,6 +226,8 @@ Officielt svar
 5.  Substrat kan ikke binde til den modificerede trimer, så derfor må absorptionsændringen skyldes at binding af substrat til den ikke-modificerede trimer transmitterer en strukturel ændring til den modificerede trimer (dvs. den begynder at forskyde ligevægten over mod R tilstanden). Denne strukturelle ændring registreres af nitrotyrosin gruppen, da miljøet omkring den ændres ved at ATCasen går fra T til R.
 
 6.  I denne ATCase er det slet ikke muligt at binde substrat (begge katalytiske trimerer er blokerede fra at binde). Men der er stadig mulighed for at allosteriske regulatorerer kan binde, da de binder til de regulatoriske subunits som jo ikke er modificerede. ATP har samme strukturtransmissionsegenskab som substrat, dvs. trækker i samme (aktiverende) retning (fra T til R), mens CTP trækker i modsatte retning (inhibitor - altså forskyder ligevægten endnu mere over mod T). Dette måles igen udfra nitrotyrosin farven som altså er følsom overfor T-til-R overgangen (uanset om det sker ved at binde noget til en katalytisk subunit eller en regulatorisk subunit).
+:::
+::::
 
 ## Opgave 6. PyMOL API introduktion (OPTIONAL)
 
@@ -223,7 +248,10 @@ Skriv en ny funktion til PyMOL, count_amino_acid(amino_acid), der tæller, hvor 
 
 *Hint: Brug cmd.iterate() til at lave en liste over dem, sørg for at der ikke er duplikater i listen og find længden på listen.*
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Opgaven kan f.eks. løses således:
 
@@ -244,3 +272,5 @@ Opgaven kan f.eks. løses således:
     ```
 
     return print(len(amino_acid_space\["amino_acids"\]))
+:::
+::::

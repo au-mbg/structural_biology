@@ -12,7 +12,10 @@ title: "TØ 20 -- Signaltransduktion"
 
 3.  Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen. Hvordan kan det være?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 X er cAMP og dets produktion stimuleres af adrenalin.
 
@@ -21,6 +24,8 @@ X er cAMP og dets produktion stimuleres af adrenalin.
 2.  Tilsætning af cAMP stimulerer glycogen phosphorylase.
 
 3.  cAMP er varmestabilt i modsætning til et protein som normalt denaturerer ved varmebehandling.
+:::
+::::
 
 ## Opgave 2. Signalgenkendelse
 
@@ -54,7 +59,10 @@ Figur 2: Aminosyrene der definerer grænserne mellem domænerne er vist. TJ=tran
 
 7.  Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kaldet F4, der viser chitin i LysM1 for CERK6 og undersøg om der er sterisk plads til binding af chitin her. .
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Bakterielle overflade-sukkermolekyler genkendes af plante receptorer (LysM receptorer) som sidder i cellemembranen.\
     \
@@ -74,6 +82,8 @@ Officielt svar
 6.  Introduktion af en stor aminosyre som tryptophan vil blokere for chitin bindingstedet og man kan derved undersøge om det er LysM1 eller LysM2 (eller begge) som binder liganden.
 
 7.  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM1 og der er umiddelbart ingen steriske clashes med liganden. Brug "super" frem for "align", da der ikke er så høj sekvensbevarelse.
+:::
+::::
 
 ## Opgave 3. Beta-blokkere
 
@@ -91,7 +101,10 @@ Officielt svar
 
         ![5](media/image102.png){width="2.703999343832021in" height="1.2268143044619422in"}            ![6](media/image103.png){width="2.584000437445319in" height="1.429446631671041in"}
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Adrenalin binding medfører konformationel ændring i receptoren som forplantes videre i Gα som derved mister affinitet for GDP (1. amplifikation). Gα binder nu GTP og frigøres fra Gβγ og kan nu aktivere adenylate cyclase (2. amplifikation). Adenylate cyclase katalyserer dannelsen af cAMP (3. amplifikation) som kan diffundere og aktivere PKA (4. amplifikation).
 
@@ -100,6 +113,8 @@ Officielt svar
 3.  Propranolon binder kompetetivt (blokerer) til beta-adrenergicreceptors (beta) og forhindrer adrenalins binding deraf navnet beta-blokker.
 
 4.  Man vil forvente lavere koncentration af cAMP og højere koncentration af ATP da receptoren ikke kan aktivere G proteinet som derved ikke kan aktivere adenylat cyklasen (som omdanner ATP til cAMP).**\**
+:::
+::::
 
 ## Opgave 4. Mutationer/sygdomme 
 
@@ -109,7 +124,10 @@ Officielt svar
 
 3.  Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-protein Ras. Forklare hvorfor Q61 ofte ses muteret i mange former for kræft"?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Ligandbinding medfører dimerisering/oligomerisering af receptoren eller konformationelle ændringer som aktiverer intracelulære kinaser (f.eks via kryds-fosforylering).
 
@@ -118,6 +136,8 @@ Officielt svar
 ![7](media/image104.png){width="3.875in" height="2.25in"}
 
 3.  Mutationen i Q61 som stabiliserer transition state gør Ras GTP-hydrolyse langsom. Mutationen holder derved Ras på aktiveret GTP-form og derved stimuleres celledeling ukontrolleret.
+:::
+::::
 
 ## Opgave 5. GPCR signallering
 
@@ -133,7 +153,10 @@ Ved studier af signaltransduktion via G-koblede receptorer (GPCRs) har man ident
 
 4.  Ved mutation af konserverede serine- og theronine-rester i den C-terminale del af GPCR-1 til alanine ses en øget og længevarende receptor-signalering. Giv en forklaring på den øgede aktivitet.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Et korrekt svar skal indeholde at tilsætning at ligand aktiverer GPCR-1, som aktiverer G-proteinet, som øger aktiviteten af adenylate cyclase som katalysere dannelsen af cAMP fra ATP.
 
@@ -142,3 +165,5 @@ Officielt svar
 3.  Et korrekt svar skal indeholde at strukturen viser en GTP analog (5'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke hydrolyseres ligesom GTP. Gα vil ikke kunne hydrolysere GDPCP og dermed være aktiveret og det vil øge fosforylerings-aktiviteten af Protein kinase A via adenylate cyclase.
 
 4.  Et korrekt svar skal indeholde at når serin/threonin aminosyerene muteres kan receptoren ikke fosforyleres og dermed ikke rekruttere arrestin som normalt vil terminere signalering (derfor den øgede og længerevarende signallering). De konserverede serin/thronin aminosyrer bliver sandsynligvis fosforyleret og dermed skaber docking-sites for arrestin binding som normalt dæmper receptor aktiviteten.
+:::
+::::

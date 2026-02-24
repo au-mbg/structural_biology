@@ -10,13 +10,18 @@ Højtopløste strukturer i Protein Data Bank blev gennemsøgt for *cis*-peptidbi
 
 2.  Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3. Derfor vil et protein med 270 aa indeholde 270 x 2.5\*10-3 eller ca. 0.7 af disse. Med andre ord, ca. 2/3 af alle proteiner vil forventes at indeholde én cis Xaa-Pro binding.
 
 2.  Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x 0.952, hvis du fraregner prolinerne), så frekvensen per 270-aa protein er altså 2.9\*10-4 x 0.952 x 270 = 0.075 eller én cis-peptidbinding per 13 proteiner.
 
 Bonusinfo: I artiklen (A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\]), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
+:::
+::::
 
 ## Opgave 2. CATH
 
@@ -47,7 +52,10 @@ Expandér klasserne og kig efter arkitekturer der betegnes som "barrel".
 
 5.  Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest domæner. Det er uvidst hvorfor det forholder sig sådan, men man kan betragte det ud fra flere vinkler: Rent kombinatorisk giver det måske mening, at et stort domæne vil have lidt af hvert og måske er blandede αβ-domæner mere stabile? Endelig kan der være en bias i de eksperimentelle data hvis det f.eks. viser sig generelt at være lettere at krystallisere domæner med blandet αβ-indhold.
 
@@ -58,6 +66,8 @@ Officielt svar
 4.  Den klassiske β-barrel består af en række β-kæder, der folder sammen så den første hydrogenbinder til den sidste og de dermed danner en tønde-struktur. β-kæderne er antiparallelle og kræver derfor ikke helixer ind i mellem.
 
 5.  CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
+:::
+::::
 
 ## Opgave 3. Proteinfoldning 
 
@@ -83,7 +93,10 @@ Tryk **F1** for at få et overblik over strukturen.
 
 7.  Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  "dss defines secondary structure based on backbone geometry and hydrogen bonding patterns." - (PyMOLwiki)
 
@@ -98,6 +111,8 @@ Officielt svar
 6.  Det indeholder en β-barrel.
 
 7.  Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
+:::
+::::
 
 ## Opgave 4. Sekvens og struktur
 
@@ -131,7 +146,10 @@ Lokaliser helixen i strukturen og vis kun den i surface repræsentation og farve
 
 7.  Diskuter placeringen af den katalytiske triade i forhold til "switch point" og det forventede substrat bindingssite. Lav en ny scene, F3, som viser active site og dens placering ift. Switchpoint.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Protomeren har kun et domæne. Domænet tilhører αβ klassen.
 
@@ -221,6 +239,8 @@ set_view (\\
 45.805042267, 64.068885803, -20.000000000 )
 
 scene F3, store
+:::
+::::
 
 ## Opgave 5. Skattejagt
 
@@ -255,7 +275,10 @@ Brug dit kendskab til online databaser til at besvare følgende spørgsmål
 
 11. Find allosteriske effektorer af expression for β-galactosidase.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Der søges efter "human myoglobin" i Uniprot databasen.\
     \
@@ -291,3 +314,5 @@ Officielt svar
 10. 6512 lignende sekvenser - Under "Similar Proteins" klikkes på fanen "50% identity"
 
 11. Ses under "Expression". Ekspressionen af β-galactosidase induceres af allolactose.
+:::
+::::

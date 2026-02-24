@@ -20,13 +20,18 @@ Groove-koden kan være lidt svært at få øje på når man analyserer en DNA do
 
 3.  Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Major groove har flere grupper eksponeret (4 i forhold til 3). Desuden kan man se forskel på A-T/T-A og C-G/G-C, hvilket man ikke kan i minor groove. Desuden er der mere plads i major groove.
 
 2.  Aminosyrer der indeholder H-bindings-donorer og acceptorer f.eks. Lys, Arg, Asn, Gln, Asp, Glu, His.
 
 3.  Groove-kode-mønstret er symmetrisk, hvilket skyldes at sekvensen i DNA dobbelthelixen er et palindrom.
+:::
+::::
 
 ## Opgave 2. Der skal to til tango
 
@@ -46,7 +51,10 @@ Binding af en ligand til et DNA-bindende protein kan regulere DNA-bindingen.
 
 4.  Hvad er mekanismen hvormed ligand-binding kan påvirke proteinets evne til at binde DNA? Nævn et par eksempler på regulering med denne mekanisme.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  5'-GCGCGCGC-3'\
     3'-CGCGCGCG-5'\
@@ -60,6 +68,8 @@ Officielt svar
 3.  Giver flere muligheder for bindingssites, da sekvensen nu ikke behøver være en palindrom-sekvens. Desuden giver det mulighed for regulering ved at begge proteiner skal være udtrykt på samme tid for at bindingen kan forekomme.
 
 4.  Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f.eks. går fra en konformation hvor det ikke kan binde til en anden konformation hvor det kan binde. Det kan f.eks. være at afstanden mellem to genkendelses-helicer justeres så de passer i afstand til binding i major groove (eksempel er Trp repressor der binder Trp, CAP-protein der binder cAMP, og *lac* repressor, der binder allolactose).
+:::
+::::
 
 ## Opgave 3. TATA-box
 
@@ -81,7 +91,10 @@ Tryk **F3/F4** for at se et vigtigt element i DNA-protein bindingen, hvor t
 
 4.  Hvordan er de to basepar påvirket af interaktionen med de to phenylalaniner? Hvilken standardparameter for den relative orientation af baser (Textbook of Structural Biology, figur 5.16) beskriver bedst konformationen af disse to basepar?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Minor groove.
 
@@ -90,6 +103,8 @@ Officielt svar
 3.  Beta sheets interagerer med minor groove.
 
 4.  Phenylalaninerne indsætter sig mellem basepar og hjælper til at forankre TBP i minor groove. Roll parameter.
+:::
+::::
 
 ## Opgave 4. Mad-Max
 
@@ -113,7 +128,10 @@ Tryk **F6** for at se hvordan genkendelses-helixer i Mad-Max interagerer med D
 
 ***PyMOL hint**: Brug menuen "Mouse \> Selection mode \> Atoms", så du bedre kan identificere de individuelle atomer, der indgår i hydrogen-bindingerne.*
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Dimeriseringsdomænet består af en leucine-zipper og et helix-loop-helix. α-helicerne, der binder til DNA, er basiske.
 
@@ -125,6 +143,8 @@ Officielt svar
     Der er også interaktion med P backbone.\
     Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er heterodimer og dermed er protein-sekvenserne lidt forskellige, hvilket giver små forskelle i konformation.\
     Max-Max H-bindinger er symmetriske, da det er homodimer.
+:::
+::::
 
 ## Opgave 5. At TALE med DNA
 
@@ -142,13 +162,18 @@ Man kan designe TALE-proteiner, så de binder til unikke DNA-sekvenser, ved at o
 
 ![BER_11467_05_F38](media/image23.png){width="6.263888888888889in" height="3.4in"}
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Major groove. Man kan observere major groove på afstanden mellem beta-glykosid bindingerne. Alternativt ved at se på DNA-dobbelthelixen alene og observere, at det er i den major groove proteinet binder - dette kan man dog ikke være helt sikker på, da protein-bindingen kan have deformeret DNA-dobbelthelixen.
 
 2.  Fire par og deres interaktionstype: Asparaginsyre-Cytosin (H-bond), Glycin-Thymin (ingen sterisk hindring), Asparagin-Guanin (H-bond), Isoleucin-Adenin (hydrofob). Det er Hoogsteen-siden af basen, der interageres med, da interaktionen foregår i major groove. TALE genkender chain B, hvilket man kan se i PyMOL (5'-3' retningen af strengen genkendes af N-term til C-term rækkefølge af TALE-repeats).
 
 3.  Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-redigering. Transkriptionsfaktor-domæne kan aktivere RNA polymerase ved promoter. Der er flere andre muligheder.
+:::
+::::
 
 ## Opgave 6. Trp trap træsko 
 
@@ -207,7 +232,10 @@ Brug nu dit script til at svare på følgende spørgsmål:
 
 5.  Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af interaktioner bidrager til bindingsspecificitet?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  PyMOL script:
 
@@ -258,3 +286,5 @@ scene F4, store
 4.  Ca. 3,4 nm. Afstand for fuldt turn = 10.44 bp/turn x 3.4 Å rise/bp = 35,5 Å. Helix parameter kaldes `pitch`.
 
 5.  Asn11 og Gln9. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
+:::
+::::

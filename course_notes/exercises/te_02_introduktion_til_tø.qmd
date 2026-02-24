@@ -18,9 +18,14 @@ En forsker forbereder en buffer af eddikesyre og natriumacetat med en pH-værdi 
     \
     Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.
+:::
+::::
 
 ## Opgave 2. Aminosyrers pKa
 
@@ -32,7 +37,10 @@ Denne opgave er repetition af Berg Biochemistry kapitel 2.
 
 3.  Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa ændres?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.\
     \
@@ -43,6 +51,8 @@ Officielt svar
 2.  Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
 
 3.  pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
+:::
+::::
 
 ## Opgave 3. Glutathione
 
@@ -68,7 +78,10 @@ Hvilke af følgende udsagn om molekylet er korrekte?
 
 Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 5 tilfælde, både dem, du mener er korrekte og dem, du mener er forkerte.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Korrekt, denne ses øverst til venstre i strukturen.
 
@@ -79,6 +92,8 @@ Officielt svar
 4.  Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
 
 5.  Forkert, se svaret til 2.
+:::
+::::
 
 ## Opgave 4. Bereging af enzymkinetik
 
@@ -92,9 +107,14 @@ Hydrolysen af pyrofosfat til orthofosfat driver biosyntetiske reaktioner såsom 
 
 3.  Hvad er enzymets omsætningstal i s^-1^?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achieve.
+:::
+::::
 
 ## Opgave 5. Analyse af Chymotrypsin i PyMOL
 
@@ -110,7 +130,10 @@ I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, 
 
 OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, F3 osv, da disse taster også bruges til at styre skærmens lysstyrke etc. på MacBooks.
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
 
@@ -121,3 +144,5 @@ Officielt svar
 ![Totalssymmetri](media/image4.jpg){width="5.28125in" height="1.5625in"}
 
 4.  Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive site og er med til at danne det såkaldte "oxyanionhul".
+:::
+::::

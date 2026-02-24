@@ -29,7 +29,10 @@ Walker B motivet har konsensussekvensen hhhhDE, hvor h er hydrophob.
 
 6.  Brug Findseq til at finde Walker-B sekvensen i msbA og lav en scene kaldet F6, som viser dette. Hvilken sekvens skal sættes ind i funktionen? Hvad er sekvensen her sammenlignet med konsensus? Hvad er den næstsidste sidekæde i motivets rolle?
 
-**Officielt svar**
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Multidrug resistance protein (MRP1a) viser den indadvendte konformation og Permease protein (msbA) viser den udadvendte konformation. De to proteiner er homologer, har samme mekanisme og kan derfor bruges til at sammenligne og forstå konformationsændringerne under transport.
 
@@ -44,6 +47,8 @@ Walker B motivet har konsensussekvensen hhhhDE, hvor h er hydrophob.
 6.  I MRP1a-strukturen er sekvensen af Walker B-motivet ILILDE. Konsensussekvensen er hhhhDE, hvor h angiver en hydrofob sidekæde. Den næstsidste sidekæde (Asp505) danner en H-binding med Ser383 i det aktive site, hvilket kan tænkes at orientere serinen (fra Walker A, konserveret) som herved binder stærkere til ATP's beta-phosphate.\
     \
     "\[A/V/I/L/M/F/Y/W\]\[A/V/I/L/M/F/Y/W\]\[A/V/I/L/M/F/Y/W\]\[A/V/I/L/M/F/Y/W\]DE"
+:::
+::::
 
 ## Opgave 2. Melatonin
 
@@ -63,13 +68,18 @@ De to kanaler er modsat regulerede, således at PKA-phosphorylering aktiverer BK
 
 3.  Hvad må der ske med Ca2+-koncentrationen i muskelceller under vasokonstriktion og hvordan hænger det sammen med ovenstående pathway?
 
-**Officielt svar**
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  cAMP aktiverer PKA via løsrivelse af pseudosubstratet som beskrevet i Stryer. Aktivering af PKA leder til phosphorylering af en lang række cellulære proteiner og dermed har mange forskelligartede effekter rundt i metabolismen.
 
 2.  De normale, intracellulære koncentrationer af K^+^ og Ca^2+^ er sådan at kalium findes i en relativt høj koncentration (ca. 150 mM) mens calcium findes i meget lav koncentration (0.1 μM). Når kanalerne åbnes vil K+ derfor flyde ud og Ca2+ ind.
 
 3.  Ca2+-koncentrationen må stige for at musklerne kan kontrahere under vasokonstriktion, dermed må VDCC være aktiv (åben). Binding til receptoren inhiberer syntesen af cAMP og dermed inaktiverer PKA (indirekte). Dette leder til at BKCaikke phosphoryleres og dermed ikke aktiveres. Da aktiviteten af BKCa har en negativ effekt på VDCC må denne derfor (indirekte) aktiveres.
+:::
+::::
 
 ## Opgave 3. Ionkanaler 
 
@@ -85,7 +95,10 @@ Hent strukturen af ionkanalen (PDB-ID: 2A79) i PyMOL og udfør kommandoen: symex
 
 4.  Analyser strukturen, identificér og opskriv de aminosyrer som binder kalium. Hvilken rolle har disse aminosyrer for kanalens funktion?
 
-**Officielt svar**
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  S4 vil være positivt ladet ved fysiologiske betingelser (ca. pH 7.4). S4 er en positiv ladet helix som gør kanalen spændingstyret. S4 er en del af kanal padlerne som skifter konformation når membranen depolariseres og åbner kanalen.
 
@@ -96,6 +109,8 @@ Hent strukturen af ionkanalen (PDB-ID: 2A79) i PyMOL og udfør kommandoen: symex
 ![page6image27938048](media/image93.jpeg){width="1.7027023184601924in" height="1.7124321959755031in"}
 
 4.  Disse aminosyere udgør selektivitetsfilter (TVGYG) som gør kanalen selektiv for kun kalium.
+:::
+::::
 
 ## Opgave 4. Strukturbestemmelse af en kanal
 
@@ -115,7 +130,10 @@ Strukturen indeholdt i **1K4C** repræsenterer kun en del af en intakt K^+^-kana
 
 4.  Forklar hvordan strukturen af den intakte K^+^-kanal relaterer sig til **1K4C**, herunder den oligomere tilstand af K+-kanalen. Angiv desuden en PyMOL-kommando, der kan bruges til at generere strukturen af den komplette kanal.
 
-**Officielt svar**
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Røntgenkrystallografi er velegnet til at bestemme atomare detaljer, herunder atompositioner og bindinger, men kræver meget rent protein og krystaller, hvilket kan være udfordrende at opnå for nogle proteiner. Oftest opnås kun strukturen af den mest almindelige tilstand af proteinet.\
     \
@@ -132,3 +150,5 @@ Strukturen indeholdt i **1K4C** repræsenterer kun en del af en intakt K^+^-kana
     ```
 
     til a generere den intakte kanal. Cut-off-værdien 1 kan justeres så der ikke kommer for mange symmetrirelaterede molekyler frem.
+:::
+::::

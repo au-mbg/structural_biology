@@ -71,7 +71,10 @@ GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCG-UGCCGGUUCAAGUCCGGC
 
 4.  Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med "fetch 3a3a". Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Struktur er mere bevaret end sekvens.
 
@@ -82,6 +85,8 @@ Officielt svar
     Ja, der er covariationer i stem.
 
 4.  Hairpin er indsat mellem anticodon loop og T-psi-C loop.
+:::
+::::
 
 ## Opgave 2. Den forsvundne RNA replikase
 
@@ -112,7 +117,10 @@ I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt me
 
 ![](media/image33.png){width="6.263888888888889in" height="7.958333333333333in"}
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  4^N^ = 4^220^ mulige sekvenser. M(ribonukleotid) = 330 g/mol. M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
     m(bibliotek 1) = n \* M = (antal/N~A~) \* 72.600 g/mol = 3,42 \* 10^113^ g\
@@ -130,6 +138,8 @@ Officielt svar
     RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algoritme, der kun kan forudsige sekundær struktur.
 
 5.  C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
+:::
+::::
 
 ## Opgave 3. Globin sekvensalignment 
 
@@ -162,7 +172,10 @@ Protein alignment programmer som MUSCLE bruger Blossum-62 matricen til at score 
 
 6.  Hvilke aminosyreegenskaber er involveret i Blossum-62 score?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
 
@@ -252,6 +265,8 @@ MUSCLE identitetsmatrix:
 2: HGA 15.71 100.00 26.95
 
 3: MYG 17.57 26.95 100.00
+:::
+::::
 
 ## Opgave 4. Globin strukturalignment
 
@@ -269,7 +284,10 @@ MUSCLE identitetsmatrix:
 
 4.  Beskriv overordnet hvor de bevarede aminosyrer er placeret i globin-strukturen som vist i **F2**. Hvad er afstanden af bindingen mellem Histidin-87 og jern-atomet? Hvorfor vises denne vigtige binding ikke i PyMOL? Hvordan passer denne længde med en kovalent binding overfor en hydrogen-binding?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Super aligner udelukkende på grundlag af struktur.\
     Super RMSD beregnes med kommandoerne:\
@@ -286,6 +304,8 @@ Officielt svar
 3.  Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
 
 4.  De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
+:::
+::::
 
 ## Opgave 5. Globin strukturbevarelse
 
@@ -348,7 +368,10 @@ color_cons('1gdj','globin-aln-fasta.txt',2,1,0.5,1.0,'rain','yellow','red','BLOS
 
 6.  Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmoglobin (1GDJ)?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
 
@@ -361,6 +384,8 @@ Officielt svar
 5.  Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
 
 6.  Alfa helix 4 er forlænget i C-terminal.
+:::
+::::
 
 ## Opgave 6. Heat shock protein 70 evolution
 
@@ -392,7 +417,10 @@ Officielt svar
 
 5.  Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den overordnede struktur af domæner med beta sheets og alfa helices. Er actin og Hsp70 homologe proteiner når de har en forskellig funktion?
 
-Officielt svar
+:::: {.content-hidden when-profile="exercise"}
+::: {.callout-important}
+
+## Officielt svar
 
 1.  Stort insert omkring position 550.
 
@@ -512,3 +540,5 @@ scene F1
 
 5.  Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
     Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
+:::
+::::
