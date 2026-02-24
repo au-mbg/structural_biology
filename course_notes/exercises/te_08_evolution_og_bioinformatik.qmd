@@ -10,64 +10,66 @@ Vi skal nu kigge på den bredere evolution af tRNA ved at finde en alignment af 
 
 2.  Kig nu på "Rchie" plottet, der vises i boksen herunder. Plottet viser sekvenser (blok med farver, hvor hver vandrette linje repræsenterer en sekvens) og deres sekundær struktur (buer vist på toppen, der forbinder baser der danner basepar). Hvilke stems indeholder mest covariation? Kig ned gennem alignmenten -- hvad adskiller nogle tRNA sekvenser fra andre? Hint: Læs om Rchie plots i boksen herunder.
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Rchie-plots**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra [e-RNA.org](https://www.e-rna.org/r-chie/faq.cgi))                                                                                                                                                                                                                                                                                                                                                                                 |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ![](media/image27.png){width="2.3194291338582675in" height="2.63670384951881in"} ![](media/image27.png){width="1.7529768153980751in" height="2.5084284776902885in"} |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Covariation** (correlated variation): refererer til ethvert validt basepar (A:U, G:C, G:U) som adskiller sig fra det mest gængse observerede valide basepar. Det vil sige at der er kompensatoriske baseparændringer (mutationer), som stadig muliggør baseparring samt sekundær struktur.                                                                                                                                                                                                        |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| - **One-sided covariation:** Den ene base i baseparret skifter, men baseparret kan stadig dannes, hvilket er muligt grundet GU wobble. Altså vi har en ændring fra G:C til G:U, fra A:U til G:U eller vice versa.                                                                                                                                                                                                                                                                                   |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| - **Two-sided covariation:** Begge baser i baseparret adskiller sig fra det mest gængse observerede basepar på denne position. Her er der mange muligheder. Kan både være transitioner og transversioner.                                                                                                                                                                                                                                                                                           |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Invalid:** alle basepar der ikke er enten A:U, G:C eller G:U                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Ambiguous:** Enhver base, som ikke er A, C, G, T eller U.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Unpaired:** De uparrede. Loops eller bulges.                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-+=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+::: {.callout-note title="Rchie-plots"}
+
+Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra [e-RNA.org](https://www.e-rna.org/r-chie/faq.cgi))
+
+![](media/image27.png){width="65%" fig-align="center"} 
+
+**Covariation** (correlated variation): refererer til ethvert validt basepar (A:U, G:C, G:U) som adskiller sig fra det mest gængse observerede valide basepar. Det vil sige at der er kompensatoriske baseparændringer (mutationer), som stadig muliggør baseparring samt sekundær struktur.
+
+- **One-sided covariation:** Den ene base i baseparret skifter, men baseparret kan stadig dannes, hvilket er muligt grundet GU wobble. Altså vi har en ændring fra G:C til G:U, fra A:U til G:U eller vice versa.
+
+- **Two-sided covariation:** Begge baser i baseparret adskiller sig fra det mest gængse observerede basepar på denne position. Her er der mange muligheder. Kan både være transitioner og transversioner.
+
+**Invalid:** alle basepar der ikke er enten A:U, G:C eller G:U
+
+**Ambiguous:** Enhver base, som ikke er A, C, G, T eller U.
+
+**Unpaired:** De uparrede. Loops eller bulges.
+
+:::
 
 Vi skal nu undersøge de tRNA sekvenser der adskiller sig. Følgende tRNA-sekvenser er downloadet fra Rfam: 
 
-\>AB017063.1/58819-58900     \
-GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU\--GCCCG-CGCAGGUUCGAAUCCUGCCGUUCACG\
-\>AB027572.1/4261-4342       \
-GGGUCGAUGCCCGAGU-GGUUAAUGGGGACGGACUGUAAAUUCGUUGAC\--AAU\-\--GUCUACGCUGGUUCAAAUCCAGCUCGGCCCA\
-\>AB031211.1/7799-7884       \
+```
+>AB017063.1/58819-58900
+GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU--GCCCG-CGCAGGUUCGAAUCCUGCCGUUCACG
+>AB027572.1/4261-4342
+GGGUCGAUGCCCGAGU-GGUUAAUGGGGACGGACUGUAAAUUCGUUGAC--AAU---GUCUACGCUGGUUCAAAUCCAGCUCGGCCCA
+>AB031211.1/7799-7884
 GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCG-UGCCGGUUCAAGUCCGGCCCUCGGCA
+```
 
 3.  Prøv at folde dem i [**RNAalifold server**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi). Hvordan adskiller strukturen sig fra tRNA? Er denne struktur understøttet af co-variationer? Hint: Der ses en masse undermenuer, hvor man kan vælge foldningsalgoritme mm. Disse skal bare ignoreres. De sorte basepar betyder mismatches i alle sekvenser. Læs om RNAalifold output i boksen herunder.
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **RNAalifold output**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Én ting der her er værd at bemærke, er at sekvensen, der vises i sekundærstrukturen, er et gennemsnit af de tre alignede, hvor den mest forekomne base typisk er den der vises.\                                                                                                                                                                                                                                                                                                                                               |
-| Dette er også grunden til at der ses nogle atypiske basepar (f.eks. C:A, G:G og C:C), men se bort fra det.                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| >seq1 GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU\--GCCCGCGCAGGUUCGAAUCCUGCCGUUCACG-                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| >seq2 GGGUCGAUGCCCGAGU-GGUUAAUGGGGACGGACUGUAAAUUCGUUGAC\--AAU\-\--GUCUACGCUGGUUCAAAUCCAGCUCGGCCCA                                                                                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| >seq3 GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCGUGCCGGUUCAAGUCCGGCCCUCGGCA-\                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| >output GCGGAGGUGCCGGAGU-GGUU-AUCGGGCAGGACUAAAAAUCCUGUGGC\--AUU\-\--ACCGAGCCGGUUCAAAUCCCGCCCUCGACA-\                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| (((((((..((((\...\...\....))))((((((\...\....))))))(((((\....)))))..(((((\...\....))))))))))))..                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](media/image28.png){width="6.044407261592301in" height="3.281363735783027in"}De sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.                                    |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](media/image29.png){width="2.1418788276465444in" height="2.3409733158355204in"}\                                                                                                                                                                                                                                                                             |
-| En bedre og mere detaljeret præsentation af tRNA-femkløveren kan ses ved at vælge PDF under **Download options** ud for '*structure drawing with conservation annotation'* under **Image description**, som det ses herunder:                                                                                                                                                                                                                                                                                                  |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](media/image30.png){width="2.4730708661417324in" height="3.0030139982502186in"} ![](media/image31.png){width="2.1795833333333334in" height="1.0123567366579178in"} |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Herved fås en repræsentation med farvning efter antal af forskellige basepar på hver position samt en graduering i gennemsigtighed efter antallet af inkompatible basepar.                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-bracket notation ved at vælge PDF ud for **structure annotated alignment**.                                                                                                                                                                                                                                                                                                                                                                         |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ![](media/image32.png){width="6.362213473315835in" height="1.7086187664041994in"}                                                                                                                                                                                                                                                        |
-+================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+::: {.callout-note title="RNAalifold output"}
+
+Én ting der her er værd at bemærke, er at sekvensen, der vises i sekundærstrukturen, er et gennemsnit af de tre alignede, hvor den mest forekomne base typisk er den der vises.\
+Dette er også grunden til at der ses nogle atypiske basepar (f.eks. C:A, G:G og C:C), men se bort fra det.
+
+```
+>seq1 GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU--GCCCGCGCAGGUUCGAAUCCUGCCGUUCACG-
+>seq2 GGGUCGAUGCCCGAGU-GGUUAAUGGGGACGGACUGUAAAUUCGUUGAC--AAU---GUCUACGCUGGUUCAAAUCCAGCUCGGCCCA
+>seq3 GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCGUGCCGGUUCAAGUCCGGCCCUCGGCA-
+>output GCGGAGGUGCCGGAGU-GGUU-AUCGGGCAGGACUAAAAAUCCUGUGGC--AUU---ACCGAGCCGGUUCAAAUCCCGCCCUCGACA-
+(((((((..((((..........))))((((((.......))))))(((((....)))))..(((((.......))))))))))))..
+```
+
+![](media/image28.png){width="6.044407261592301in" height="3.281363735783027in"}De sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.
+
+![](media/image29.png){width="2.1418788276465444in" height="2.3409733158355204in"}\
+En bedre og mere detaljeret præsentation af tRNA-femkløveren kan ses ved at vælge PDF under **Download options** ud for '*structure drawing with conservation annotation'* under **Image description**, som det ses herunder:
+
+![](media/image30.png){width="2.4730708661417324in" height="3.0030139982502186in"} ![](media/image31.png){width="2.1795833333333334in" height="1.0123567366579178in"}
+
+Herved fås en repræsentation med farvning efter antal af forskellige basepar på hver position samt en graduering i gennemsigtighed efter antallet af inkompatible basepar.
+
+Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-bracket notation ved at vælge PDF ud for **structure annotated alignment**.
+
+![](media/image32.png){width="6.362213473315835in" height="1.7086187664041994in"}
+
+:::
 
 4.  Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med "fetch 3a3a". Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
 
@@ -96,12 +98,14 @@ For at sandsynliggøre "RNA world" hypotesen prøvede forskere omkring 1993 at s
 
 Efter ti runder af selektion og amplifikation blev biblioteket sekventeret og der blev fundet flere forskellige familier af sekvenser med ligaseaktivitet. En af familierne (klasse I), der havde god ligeringsaktivitet, er vist herunder som en sekvensaligment. 
 
-\>b1-10\
-GGAACACUAUCCGACUGGCACCGUAGAAUACAAAUGUGCCCUCAGAGCUUGGGAAGAUCCUUGCAGGAUCCAGGGGAGGCACCCCCCGGUGGCUUUAACGCCAACGUUCUCAACAAUAGUGGA\-\--\
-\>b1-105\
-GGAACACUCUACGACUGGAACCGAAAAAUACAAAUGUGCCCUUAGAGCUUGAUAAGAUCCUCGCAGGAUCCAGGGGAGGCACCUCCCGGUGGCUUUAACGCCAACGUUAUCAACAAGAGUGAGAAU\
-\>b1-116\
+```
+>b1-10
+GGAACACUAUCCGACUGGCACCGUAGAAUACAAAUGUGCCCUCAGAGCUUGGGAAGAUCCUUGCAGGAUCCAGGGGAGGCACCCCCCGGUGGCUUUAACGCCAACGUUCUCAACAAUAGUGGA---
+>b1-105
+GGAACACUCUACGACUGGAACCGAAAAAUACAAAUGUGCCCUUAGAGCUUGAUAAGAUCCUCGCAGGAUCCAGGGGAGGCACCUCCCGGUGGCUUUAACGCCAACGUUAUCAACAAGAGUGAGAAU
+>b1-116
 GGAAGACCAUACGACUGGCACCGUACAAUACAAAUGUGCCCUCAGAGCUUGAGAAGAUCCUUGCAGGAUAAAGGGGAGGCACCCCCCGGUAGCUUAAAAGCCAACGUUCUCAACAAUGGUC-ACAA
+```
 
 2.  Brug [**RNAalifold**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi) webserver til at forudsige konsensus sekundær struktur for RNA ligase klasse I. Sammenlign den forudsagte sekundær struktur med strukturen som forskerne kom frem til (Figur B). Hvilke stem-regioner (P) er forudsagt korrekt? Hvorfor tror du pseudoknuden P3 ikke er forudsagt?
 
@@ -145,18 +149,20 @@ I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt me
 
 Hæmoglobin alpha (HGA) og Myoglobin (MYG) fra menneske og Leghæmoglobin-1 (LHG) fra blomsten [**Lupin**](https://en.wikipedia.org/wiki/Lupinus) er fremhævet som eksempel i Berg `Biochemistry`, udgave 10, kapitel 10. Følgende sekvenser er hentet fra UniProt i fasta-format.  
 
-\>HGA\
-VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAV\
-AHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKY\
-R\
-\>MYG\
-MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASEDLKKHGATVL\
-TALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQVLQSKHPGDFGADAQGAMNKALELFR\
-KDMASNYKELGFQG\
-\>LHG\
-MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSFLKGSSEVPQNNPDLQAHAGKVFK\
-LTYEAAIQLQVNGAVASDATLKSLGSVHVSKGVVDAHFPVVKEAILKTIKEVVGDKWSEELNTAWTIAYD\
+```
+>HGA
+VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAV
+AHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKY
+R
+>MYG
+MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASEDLKKHGATVL
+TALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQVLQSKHPGDFGADAQGAMNKALELFR
+KDMASNYKELGFQG
+>LHG
+MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSFLKGSSEVPQNNPDLQAHAGKVFK
+LTYEAAIQLQVNGAVASDATLKSLGSVHVSKGVVDAHFPVVKEAILKTIKEVVGDKWSEELNTAWTIAYD
 ELAIIIKKEMKDAA
+```
 
 1.  Brug [**ClustalO**](https://www.ebi.ac.uk/jdispatcher/msa/clustalo) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
 
@@ -196,75 +202,59 @@ Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare s
 
 ClustalO output:
 
+```
 CLUSTAL O(1.2.4) multiple sequence alignment
 
-LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSF\-\--LKGSSEVPQN 57
-
-HGA \--VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHG\-\-\-\-\-\-- 51
-
+LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSF---LKGSSEVPQN 57
+HGA --VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHG------- 51
 MYG -MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEM-KA 58
-
-\*: : \* : :. \*. . : :: \* : \* :.
+*: : * : :. *. . : :: * : * :.
 
 LHG NPDLQAHAGKVFKLTYEAAIQLQVNGAVASDATLKSLGSVHVSKGVVDA-HFPVVKEAIL 116
+HGA SAQVKGHGKKVADALTN-----AVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLL 106
+MYG SEDLKKHGATVLTALGG-----ILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECII 113
+. ::: *. .* : :. *.. *. * : : .:...::
 
-HGA SAQVKGHGKKVADALTN\-\-\-\--AVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLL 106
-
-MYG SEDLKKHGATVLTALGG\-\-\-\--ILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECII 113
-
-. ::: \*. .\* : :. \*.. \*. \* : : .:\...::
-
-LHG KTIKEVVGDKWSEE\-\-\-\-\-\-\-\-\-\--LNTAWTIAYDELAIIIKKEMKDAA 154
-
-HGA VTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR\-\-\-\-\-\-\-\-\-\-\-\-\-- 141
-
-MYG QVLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG\-\-\-\-\-\-\-- 154
-
-.: .: . . : \*
-
+LHG KTIKEVVGDKWSEE-----------LNTAWTIAYDELAIIIKKEMKDAA 154
+HGA VTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR-------------- 141
+MYG QVLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG-------- 154
+.: .: . . : *
+```
 MUSCLE output:
 
+```
 CLUSTAL multiple sequence alignment by MUSCLE (3.8)
 
-LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSFLK\--GSSEVPQNN
-
-HGA \--VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF\-\-\-\-\--DLSHGS
-
+LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSFLK--GSSEVPQNN
+HGA --VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF------DLSHGS
 MYG -MGLSDGEWQLVLNVWGKVEADIPGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKAS
-
-\*: : \* : :. \* : :: \* : \* : : : .
+*: : * : :. * : :: * : * : : : .
 
 LHG PDLQAHAGKVFKLTYEAAIQLQVNGAVASDATLKSLGSVHVSKGVVDA-HFPVVKEAILK
+HGA AQVKGHGKKVA-----DALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLV
+MYG EDLKKHGATVL-----TALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQ
+::: *. .* *: : :..*.. *. * : : .:. .::
 
-HGA AQVKGHGKKVA\-\-\-\--DALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLV
-
-MYG EDLKKHGATVL\-\-\-\--TALGGILKKKGHHEAEIKPLAQSHATKHKIPVKYLEFISECIIQ
-
-::: \*. .\* \*: : :..\*.. \*. \* : : .:. .::
-
-LHG TIKEVVGDKWSEELNTAWTIAYDELAIIIKKEMKDAA\-\--
-
-HGA TLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR\-\-\-\-\--
-
+LHG TIKEVVGDKWSEELNTAWTIAYDELAIIIKKEMKDAA---
+HGA TLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR------
 MYG VLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG
-
 .: .: : : . : .: .
-
+```
 ClustalO identitetsmatrix:
 
+```
 1: LHG 100.00 19.84 18.71
-
 2: HGA 19.84 100.00 26.24
-
 3: MYG 18.71 26.24 100.00
+```
 
 MUSCLE identitetsmatrix:
 
+```
 1: LHG 100.00 15.71 17.57
-
 2: HGA 15.71 100.00 26.95
-
 3: MYG 17.57 26.95 100.00
+```
 :::
 ::::
 
@@ -426,7 +416,8 @@ color_cons('1gdj','globin-aln-fasta.txt',2,1,0.5,1.0,'rain','yellow','red','BLOS
 
 2.  Script:
 
-\## Script til opgave 6. Heat shock protein 70 evolution
+```pymol
+## Script til opgave 6. Heat shock protein 70 evolution
 
 reinit
 
@@ -444,18 +435,12 @@ color green, ss l+''
 
 zoom 2qxl
 
-set_view (\\
-
-0.199747995, 0.212087438, 0.956618607,\\
-
-0.376789302, 0.884598374, -0.274796277,\\
-
--0.904504299, 0.415335208, 0.096784934,\\
-
-0.000000000, 0.000000000, -305.530761719,\\
-
-78.327835083, 88.848686218, -11.949821472,\\
-
+set_view (\
+0.199747995, 0.212087438, 0.956618607,\
+0.376789302, 0.884598374, -0.274796277,\
+-0.904504299, 0.415335208, 0.096784934,\
+0.000000000, 0.000000000, -305.530761719,\
+78.327835083, 88.848686218, -11.949821472,\
 240.882781982, 370.178741455, -20.000000000 )
 
 scene F1, store
@@ -478,23 +463,17 @@ color green, ss l+''
 
 zoom 2qxl
 
-set_view (\\
-
-0.199747995, 0.212087438, 0.956618607,\\
-
-0.376789302, 0.884598374, -0.274796277,\\
-
--0.904504299, 0.415335208, 0.096784934,\\
-
-0.000000000, 0.000000000, -305.530761719,\\
-
-78.327835083, 88.848686218, -11.949821472,\\
-
+set_view (\
+0.199747995, 0.212087438, 0.956618607,\
+0.376789302, 0.884598374, -0.274796277,\
+-0.904504299, 0.415335208, 0.096784934,\
+0.000000000, 0.000000000, -305.530761719,\
+78.327835083, 88.848686218, -11.949821472,\
 240.882781982, 370.178741455, -20.000000000 )
 
 scene F2, store
 
-\# Sammenlign HSP og actin
+# Sammenlign HSP og actin
 
 hide everything
 
@@ -516,24 +495,18 @@ color green, ss l+''
 
 zoom 1atr
 
-set_view (\\
-
-0.958695173, -0.196217537, 0.205921307,\\
-
--0.060286976, 0.567336917, 0.821276307,\\
-
--0.277975500, -0.799767375, 0.532072842,\\
-
-0.000000000, 0.000000000, -204.769836426,\\
-
-94.304534912, 50.986602783, 71.455520630,\\
-
+set_view (\
+0.958695173, -0.196217537, 0.205921307,\
+-0.060286976, 0.567336917, 0.821276307,\
+-0.277975500, -0.799767375, 0.532072842,\
+0.000000000, 0.000000000, -204.769836426,\
+94.304534912, 50.986602783, 71.455520630,\
 161.442108154, 248.097564697, -20.000000000 )
 
 scene F3, store
 
 scene F1
-
+```
 3.  Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
 
 4.  Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet position.

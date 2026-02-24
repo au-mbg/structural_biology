@@ -880,7 +880,6 @@ Enzymet lysozyme (PDB-ID: 148L) findes i mange organismer, hvor det bruges til a
 
 3.  Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
 
-
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
 ## Officielt svar
@@ -957,4 +956,5 @@ scene cellwall, store
 ```
 
 3.  Adskillige både hydrofobe og H-bindingsinteraktioner. Glu26 binder kovalent til sukkerdelen.
-:::::::
+:::
+::::
