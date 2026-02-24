@@ -1,0 +1,7 @@
+---
+title: Videor 
+---
+
+## Eksempel på videor
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}

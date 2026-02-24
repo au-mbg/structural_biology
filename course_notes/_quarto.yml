@@ -8,12 +8,13 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: other_notes/installation.qmd
+        text: Installation og opsætning
+      - href: other_notes/videor.qmd
+        text: Videor
   sidebar:
     style: "docked"
     contents:
-      - section: "Installation og opsætning"
-        contents:
-          - other_notes/installation.qmd
       - section: "Øvelser"
         contents:
           - exercises/te_01_i_gang_med_pymol.qmd
