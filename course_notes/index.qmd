@@ -3,3 +3,21 @@ title: "Strukturbiologi TØ"
 ---
 
 Velkomst til øvelsessiderne for strukturbiologi. Brug sidebaren til at navigere mellem de enkelte øvelsessæt.
+
+## Semesterkalender
+
+| Week number | Lectures | Theoretical exercise | Reading material | Videos |
+|---|---|---|---|---|
+| 1 | — | [TØ 01: I gang med PyMOL](exercises/te_01_i_gang_med_pymol.qmd)<br>[TØ 02: Introduktion til TØ](exercises/te_02_introduktion_til_tø.qmd) | — | — |
+| 2 | — | [TØ 03: PyMOL scripting](exercises/te_03_pymol_scripting.qmd)<br>[TØ 04: Proteinstruktur 1](exercises/te_04_proteinstruktur_1.qmd) | — | — |
+| 3 | — | [TØ 05: Proteinstruktur 2](exercises/te_05_proteinstruktur_2.qmd)<br>[TØ 06: Nukleinsyrestruktur 1](exercises/te_06_nukleinsyrestruktur_1.qmd) | — | — |
+| 4 | — | [TØ 07: Nukleinsyrestruktur 2](exercises/te_07_nukleinsyrestruktur_2.qmd)<br>[TØ 08: Evolution og bioinformatik](exercises/te_08_evolution_og_bioinformatik.qmd) | — | — |
+| 5 | — | [TØ 09: LØ forberedelse 1](exercises/te_09_lø_forberedelse_1.qmd)<br>[TØ 10: LØ forberedelse 2](exercises/te_10_lø_forberedelse_2.qmd) | — | — |
+| 6 | — | [TØ 11: Binding og genkendelse](exercises/te_11_binding_og_genkendelse.qmd)<br>[TØ 12: Enzymmekanismer](exercises/te_12_enzymmekanismer.qmd) | — | — |
+| 7 | — | [TØ 13: Enzymregulering](exercises/te_13_enzymregulering.qmd)<br>[TØ 14: Strukturmetoder](exercises/te_14_strukturmetoder.qmd) | — | — |
+| 8 | — | [TØ 15: AI og modellering](exercises/te_15_ai_og_modellering.qmd)<br>[TØ 16: Kulhydrater og glykosylering af proteiner](exercises/te_16_kulhydrater_og_glykosylering_af_proteiner.qmd) | — | — |
+| 9 | — | [TØ 17: Lipider og cellemembraner](exercises/te_17_lipider_og_cellemembraner.qmd)<br>[TØ 18: Membranpumper](exercises/te_18_membranpumper.qmd) | — | — |
+| 10 | — | [TØ 19: Kanaler og porer](exercises/te_19_kanaler_og_porer.qmd)<br>[TØ 20: Signaltransduktion](exercises/te_20_signaltransduktion.qmd) | — | — |
+| 11 | — | [TØ 21: Eksamensopgaver](exercises/te_21_eksamensopgaver.qmd)<br>[TØ 22: Eksamensopgaver](exercises/te_22_eksamensopgaver.qmd) | — | — |
+| 12 | — | [TØ 23: Eksamensopgaver](exercises/te_23_eksamensopgaver.qmd)<br>[TØ 24: Eksamensopgaver](exercises/te_24_eksamensopgaver.qmd) | — | — |
+

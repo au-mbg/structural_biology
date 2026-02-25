@@ -8,10 +8,13 @@ website:
     left:
       - href: index.qmd
         text: Home
+        icon: house
       - href: other_notes/installation.qmd
         text: Installation og opsætning
+        icon: gear-fill
       - href: other_notes/videor.qmd
         text: Videor
+        icon: youtube
   sidebar:
     style: "docked"
     contents:
