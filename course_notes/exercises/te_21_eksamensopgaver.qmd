@@ -160,9 +160,9 @@ Svar: Na^+^ strømmer ind.
 
 Svar:
 
-![](media/image112.emf){width="3.185751312335958in" height="0.5696369203849518in"}
+<!-- ![](media/image112.emf){width="3.185751312335958in" height="0.5696369203849518in"} -->
 
-![](media/image113.emf){width="1.293056649168854in" height="0.1560586176727909in"}
+<!-- ![](media/image113.emf){width="1.293056649168854in" height="0.1560586176727909in"} -->
 
 **Spørgsmål 3.** I et laboratorieforsøg med Na^+^-kanalen fandt man en variant, L32D, som forblev permeabel overfor Na^+^ efter aktivering. I hvilket domæne af Na^+^-kanalen sidder varianten? Giv en mulig biologisk forklaring på hvorfor mutantkanalen forbliver permeabel overfor Na^+^.
 

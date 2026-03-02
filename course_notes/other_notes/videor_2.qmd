@@ -1,0 +1,6 @@
+---
+title: "Video 2: PDB-ID og property selectors"
+sidebar: videor-sidebar
+---
+
+{{< video videos/video2.mp4 >}}

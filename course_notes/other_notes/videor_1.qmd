@@ -1,0 +1,6 @@
+---
+title: "Video 1: Introduktion to PyMOL"
+sidebar: videor-sidebar
+---
+
+{{< video videos/video1.mp4 >}}

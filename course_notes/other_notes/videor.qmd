@@ -1,7 +1,12 @@
 ---
-title: Videor 
+title: "Videor"
+sidebar: videor-sidebar
 ---
 
-## Eksempel på videor
+Videoer til brug i øvelserne.
 
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+| Video | Beskrivelse |
+|---|---|
+| [Introduktion to PyMOL](videor_1.qmd) | En introduktion til PyMOL-interfacet og grundlæggende molekylærvisualisering. |
+| [PDB-ID og property selectors](videor_2.qmd) | Brug af PDB-ID'er og property selectors i PyMOL. |
+

@@ -66,6 +66,13 @@ website:
             - other_notes/installation_pixi.qmd
             - other_notes/installation_pymol.qmd
             - other_notes/installation_vscode.qmd
+    - id: videor-sidebar
+      style: "docked"
+      contents:
+        - section: "Videor"
+          contents:
+            - other_notes/videor_1.qmd
+            - other_notes/videor_2.qmd
 
 filters:
   - filters/wrap-plain-code.lua
@@ -79,11 +86,11 @@ format:
       dark: [darkly, styling/theme-dark.scss]
     respect-user-color-scheme: true
 
-#   typst: 
-#     number-sections: false
-#     toc: true
-#     toc-depth: 2
-#     margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}
+  # typst: 
+  #   number-sections: false
+  #   toc: true
+  #   toc-depth: 2
+  #   margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}
 
 # format-links:
 #   - format: typst

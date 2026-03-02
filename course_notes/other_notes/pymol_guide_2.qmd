@@ -210,301 +210,214 @@ color blue, mtx and elem N
 
 # Pymol Reference Card
 
+
 ## Modes
 
-> Pymol supports two modes of input: point and click mode, and command
-> line mode. The point and click allows you to quickly rotate the
-> molecule(s) zoom in and out and change the clipping planes. The
-> command line mode where commands are entered into the external GUI
-> window supports all of the commands in the point and click mode but is
-> more flexible and possibly useful for complex selection and command
-> issuing. Commands entered on the command line are executed when you
-> press the return key.
+Pymol supports two modes of input: point and click mode, and command
+line mode. The point and click allows you to quickly rotate the
+molecule(s) zoom in and out and change the clipping planes. The
+command line mode where commands are entered into the external GUI
+window supports all of the commands in the point and click mode but is
+more flexible and possibly useful for complex selection and command
+issuing. Commands entered on the command line are executed when you
+press the return key {{< kbd ⏎ >}}.
 
+| Description | Code |
+|---|---|
+| Command help | `help <keyword>` |
 
-- command help help *keyword*
 
 ## Loading Files
 
-- file loading load data/test/pept.pdb
+| Description | Code |
+|---|---|
+| File loading | `load data/test/pept.pdb` |
+| Loading from terminal | `pymol data/test/pept.pdb` |
+| Toggle between text and graphics | <kbd>Esc</kbd> |
+| Toggle Y axis rocking | `rock` |
+| Stereo view | `stereo on/off` |
+| Stereo type | `stereo crosseye / walleye / quadbuffer` |
+| Undo action | `undo` |
+| Reset view | `reset` |
+| Reinitialize PyMOL | `reinitialize` |
+| Quit (force, even if unsaved) | `quit` |
 
-- loading from terminal pymol data/test/pept.pdb
-
-- toggle between text and graphics *Esc*
-
-- toggle Y axis rocking rock
-
-- stereo view stereo on/off
-
-- stereo type stereo crosseye / walleye / quadbuffer
-
-- undo action undo
-
-- reset view reset
-
-- reinitialize Pymol reinitialize
-
-- quit (force, even if unsaved) quit
 
 ## Mouse Control
 
-- set the center of rotation origin *selection*
+| Description | Code |
+|---|---|
+| Set the center of rotation | `origin <selection>` |
+
 
 ## Atom Selection
 
-```pymol
-object-name/segi-id/chain-id/resi-id/name-id
-```
+| Description | Code |
+|---|---|
+| General selection syntax | `object-name/segi-id/chain-id/resi-id/name-id` |
+| Molecular system selection | `/pept` |
+| Molecule selection | `/pept/lig` |
+| Chain selection | `/pept/lig/a` |
+| Residue selection | `/pept/lig/a/10` |
+| Atom selection | `/pept/lig/a/10/ca` |
+| Ranges | `lig/a/10-12/ca` |
+| Ranges (multiple) | `a/6+8/c+o` |
+| Missing selections | `/pept//a` |
+| Naming a selection | `select bb, name c+o+n+ca` |
+| Count atoms in a selection | `count atoms bb` |
+| Remove atoms from a selection | `remove resi 5` |
+| General selections | `all`, `none`, `hydro`, `hetatm`, `visible`, `present` |
+| Atoms not in a selection | `select sidechains, ! bb` |
+| Atoms with a vdW gap < 3 Å | `resi 6 around 3` |
+| Atom centers with a gap < 1.0 Å | `all near 1 of resi 6` |
+| Atom centers within < 4.0 Å | `all within 4 of resi 6` |
 
-
-- molecular system selection /pept
-
-- molecule selection /pept/lig
-
-- chain selection /pept/lig/a
-
-- residue selection /pept/lig/a/10
-
-- atom /pept/lig/a/10/ca
-
-- ranges lig/a/10-12/ca
-
-- ranges a/6+8/c+o
-
-- missing selections /pept//a
-
-- naming a selection select bb, name c+o+n+ca
-
-- count atoms in a selection count atoms bb
-
-- remove atoms from a selection remove resi 5
-
-- general all, none, hydro, hetatm, visible, present
-
-- atoms not in a selection select sidechains, ! bb
-
-- atoms with a vdW gap \< 3 Å resi 6 around 3
-
-- atom centers with a gap \< 1.0 Å all near 1 of resi 6
-
-- atom centers within \< 4.0 Å all within 4 of resi 6
 
 ## Basic Commands
 
-> Some commands used with atoms selections. If you are unsure about the
-> selection, click on the molecule part that you want in the viewing
-> window and then look at the output line to see the selection.
+Some commands used with atom selections. If you are unsure about the
+selection, click on the molecule part that you want in the viewing
+window and then look at the output line to see the selection.
 
+| Description | Code |
+|---|---|
+| Fill viewer with selection | `zoom /pept//a` |
+| Center a selection | `center /pept//a` |
+| Colour a selection | `colour pink, /pept//a` |
+| Force PyMOL to reapply colours | `recolor` |
+| Set background colour | `bg color white` |
+| vdW representation of selection | `show spheres, 156/ca` |
+| Stick representation of selection | `show sticks, a//` |
+| Line representation of selection | `show lines, /pept` |
+| Ribbon representation of selection | `show ribbon, /pept` |
+| Dot representation of selection | `show dots, /pept` |
+| Mesh representation of selection | `show mesh, /pept` |
+| Surface representation of selection | `show surface, /pept` |
+| Nonbonded representation of selection | `show nonbonded, /pept` |
+| Nonbonded sphere representation of selection | `show nb spheres, /pept` |
+| Cartoon representation of selection | `show cartoon, a//` |
+| Clear all | `hide all` |
+| Rotate a selection | `rotate <axis>, angle, <selection>` |
+| Translate a selection | `translate [x,y,z], <selection>` |
 
-- fill viewer with selection zoom /pept//a
-
-- center a selection center /pept//a
-
-- colour a selection colour pink, /pept//a
-
-- force Pymol to reapply colours recolor
-
-- set background colour bg color white
-
-- vdW representation of selection show spheres, 156/ca
-
-- stick representation of selection show sticks, a//
-
-- line representation of selection show lines, /pept
-
-- ribbon representation of selection show ribbon, /pept
-
-- dot representation of selection show dots, /pept
-
-- mesh representation of selection show mesh, /pept
-
-- surface representation of selection show surface, /pept
-
-- nonbonded representation of selection show nonbonded, /pept
-
-- nonbonded sphere representation of selection show nb spheres, /pept
-
-- cartoon representation of selection show cartoon, a//
-
-- clear all hide all
-
-- rotate a selection rotate *axis*, angle, *selection*
-
-- translate a selection translate \[x,y,z\], *selection*
 
 ## Cartoon Settings
 
-Setting the value at the end to 0 forces the secondary structure to go
-though the CA position.
+Setting the value at the end to 0 forces the secondary structure to go through the CA position.
 
-- cylindrical helices set cartoon cylindrical helices,1
+| Description | Code |
+|---|---|
+| Cylindrical helices | `set cartoon cylindrical helices,1` |
+| Fancy helices [tubular edge] | `set cartoon fancy helices,1` |
+| Flat sheets | `set cartoon flat sheets,1` |
+| Smooth loops | `set cartoon smooth loops,1` |
+| Find rings for cartoon | `set cartoon ring finder,[1,2,3,4]` |
+| Ring mode | `set cartoon ring mode,[1,2,3]` |
+| Nucleic acid mode | `set nucleic acid mode,[0,1,2,3,4]` |
+| Cartoon sidechains | `set cartoon side chain helper; rebuild` |
+| Primary colour | `set cartoon color,blue` |
+| Secondary colour | `set cartoon highlight color,grey` |
+| Limit colour to ss | `set cartoon discrete colors,on` |
+| Cartoon transparency | `set cartoon transparency,0.5` |
+| Cartoon loop | `cartoon loop, a//` |
+| Cartoon rectangular | `cartoon rect, a//` |
+| Cartoon oval | `cartoon oval, a//` |
+| Cartoon tubular | `cartoon tube, a//` |
+| Cartoon arrow | `cartoon arrow, a//` |
+| Cartoon dumbell | `cartoon dumbell, a//` |
+| B-factor sausage | `cartoon putty, a//` |
 
-- fancy helices \[tubular edge\] set cartoon fancy helices,1
-
-- flat sheets set cartoon flat sheets,1
-
-- smooth loops set cartoon smooth loops,1
-
-- find rings for cartoon set cartoon ring finder,\[1,2,3,4\]
-
-- ring mode set cartoon ring mode,\[1,2,3\]
-
-- nucleic acid mode set nucleic acid mode,\[0,1,2,3,4\]
-
-- cartoon sidechains set cartoon side chain helper; rebuild
-
-- primary colour set cartoon color,blue
-
-- secondary colour set cartoon highlight color,grey
-
-- limit colour to ss set cartoon discrete colors,on
-
-- cartoon transparency set cartoon transparency,0.5
-
-- cartoon loop cartoon loop, a//
-
-- cartoon loop cartoon loop, a//
-
-- cartoon rectangular cartoon rect, a//
-
-- cartoon oval cartoon oval, a//
-
-- cartoon tubular cartoon tube, a//
-
-- cartoon arrow cartoon arrow, a//
-
-- cartoon dumbell cartoon dumbell, a//
-
-- b-factor sausage cartoon putty, a//
 
 ## Image Output
 
-- low resolution ray
+| Description | Code |
+|---|---|
+| Low resolution | `ray` |
+| High resolution | `ray 2000,2000` |
+| Ultra-high resolution | `ray 5000,5000` |
+| Change the default size [pts] | `viewport 640,480` |
+| Image shadow control | `set ray shadow,0` |
+| Image fog control | `set ray trace fog,0` |
+| Image depth cue control | `set depth cue,0` |
+| Image antialiasing control | `set antialias,1` |
+| Export image as .png | `png <image>.png` |
 
-- high resolution ray 2000,2000
-
-- ultra-high resolution ray 5000,5000
-
-- change the default size \[pts\] viewport 640,480
-
-- image shadow control set ray shadow,0
-
-- image fog control set ray trace fog,0
-
-- image depth cue control set depth cue,0
-
-- image antialiasing control set antialias,1
-
-- export image as .png png *image*.png
 
 ## Hydrogen Bonding
 
-> Draw bonds between atoms and label the residues that are involved.
+Draw bonds between atoms and label the residues that are involved.
 
+| Description | Code |
+|---|---|
+| Draw a line between atoms | `distance 542/oe1,538/ne` |
+| Set the line dash gap | `set dash gap,0.09` |
+| Set the line dash width | `set dash width,3.0` |
+| Set the line dash radius | `set dash radius,0.0` |
+| Set the line dash length | `set dash length,0.15` |
+| Set round dash ends | `set dash round ends,on` |
+| Hide a label | `hide labels, dist01` |
+| Label a residue | `label (542/oe1), "%s" %("E542")` |
+| Set label font | `set label font id,4` |
+| Set label colour | `set label color,white` |
 
-- draw a line between atoms distance 542/oe1,538/ne
-
-- set the line dash gap set dash gap,0.09
-
-- set the line dash width set dash width,3.0
-
-- set the line dash radius set dash radius,0.0
-
-- set the line dash length set dash length,0.15
-
-- set round dash ends set dash round ends,on
-
-- hide a label hide labels, dist01
-
-- label a reside label (542/oe1), \"%s\" %(\"E542\")
-
-- set label font set label font id,4
-
-- set label colour set label color,white
 
 ## Electrostatics
 
-> There are a number of ways to apply electrostatics in Pymol. The user
-> can use GRASP to generate a map and then import it. Alternatively the
-> user can use the APBS Pymol plugin. Pymol also has a built in function
-> that is quick and dirty.
+There are a number of ways to apply electrostatics in Pymol. The user
+can use GRASP to generate a map and then import it. Alternatively the
+user can use the APBS Pymol plugin. Pymol also has a built in function
+that is quick and dirty.
 
-```pymol
-generate electrostatic surface action \> generate \> vacuum
-electrostatics \> protein contact potential
-```
+Generate electrostatic surface (built-in) 
+
+> generate electrostatic surface action > generate > vacuum electrostatics > protein contact potential 
+
 
 
 ## Pymol Movies (mac)
 
-- move the camera move x,10
+| Description | Code |
+|---|---|
+| Move the camera | `move x,10` |
+| Turn the camera | `turn x,90` |
+| Play the movie | `mplay` |
+| Stop the movie | `mstop` |
+| Write out png files | `mpng <prefix> [, first [, last]]` |
+| Show a particular frame | `frame <number>` |
+| Move forward one frame | `forward` |
+| Move back one frame | `backwards` |
+| Go to the start of the movie | `rewind` |
+| Go to the middle of the movie | `middle` |
+| Go to the movie end | `ending` |
+| Determine the current frame | `get frame` |
+| Clear the movie cache | `mclear` |
+| Execute a command in a frame | `mdo 1, turn x,5; turn y,5;` |
+| Dump current movie commands | `mdump` |
+| Reset the number of frames per second | `meter_reset` |
 
-- turn the camera turn x,90
-
-- play the movie mplay
-
-- stop the movie mstop
-
-- writeout png files mpng *prefix* \[, first \[, last\]\]
-
-- show a particular frame frame *number*
-
-- move forward on frame forward
-
-- move back one frame backwards
-
-- go to the start of the movie rewind
-
-- go to the middle of the movie middle
-
-- go to the movie end ending
-
-- determine the current frame get frame
-
-- clear the movie cache mclear
-
-- execute a command in a frame mdo 1, turn x,5; turn y,5;
-
-- dump current movie commands mdump
-
-- reset the number of frames per second meter_reset
 
 ## Miscellaneous
 
-- add hydrogens in to a molecule selection h add
+| Description | Code |
+|---|---|
+| Add hydrogens to a molecule selection | `h add` |
+| Alias a set of commands | `alias go,load 1hpv.pdb; zoom 200/; show sticks, 200/ around 8` |
+| Structurally align | `align prot1////CA, prot2, object=alignment` |
+| Fit one molecule to another | `fit <selection>, <target>` |
+| Copy at selection | `copy <target>, <source>` |
+| Create a new selection | `create <target>, <selection>` |
+| Delete a selection | `delete <selection>` |
+| Save file | `save <filename>, <selection>` |
+| Protect or deprotect a selection | `[de]protect <selection>` |
+| Mask or demask to allow/stop selection | `[un]mask <selection>` |
+| Align coordinates with axis | `orient <selection>` |
+| Get the current rotation matrix | `get_view` |
+| Input a rotation matrix | `set_view` |
+| Safely refresh the scene | `refresh` |
+| Store a scene | `view <name>, store, <description>` |
+| Restore a view | `view <name>, [recall]` |
+| Set a new colour | `set_color <name>, <rgb>` |
 
-- alias a set of commands separated by ";" alias go,load 1hpv.pdb; zoom
-  200/; show sticks, 200/ around 8
-
-- structurally align align prot1////CA, prot2, object=alignment
-
-- fit one molelcule to another fit *selection*, *target*
-
-- copy at selection copy *target*, *source*
-
-- create a new selection create *target*, *selection*
-
-- delete a selection delete *selection*
-
-- save file save *filename*, *selection*
-
-- protect or deprotect a selection \[de\]protect *selection*
-
-- mask or demask to allow/stop selection \[un\]mask *selection*
-
-- align coordinates with axis orient *selection*
-
-- get the current rotation matrix get_view
-
-- input a rotation matrix set_view
-
-- safely refresh the scene refresh
-
-- store a scene view *name*, store, *description*
-
-- restore a view view *name*, \[recall\]
-
-- set a new colour set_color *name*, *rgb*
 
 ## Secondary Structures
 
@@ -512,72 +425,68 @@ Pymol has a secondary structure determination algorithm called dss,
 however it is better to use the DSSP algorithm and then define the
 limits manually.
 
-- to run dss dss *selection*
+| Description | Code |
+|---|---|
+| Run dss | `dss <selection>` |
+| Define helical structure | `alter 11-40/, ss='H'` |
+| Define loop regions | `alter 40-50/, ss='L'` |
+| Define strand structure | `alter 50-60/, ss='S'` |
+| Rebuild the cartoon after alteration | `rebuild` |
+| Get dihedral angle | `get dihedral 4/n,4/c,4/ca,4/cb` |
 
-- to define helical structure alter 11-40/, ss='H'
-
-- to define loop regions alter 40-50/, ss='L'
-
-- to define strand structure alter 50-60/, ss='S'
-
-- rebuild the cartoon after alteration rebuild
-
-- get dihedral angle get dihedral 4/n,4/c,4/ca,4/cb
 
 ## Files
 
-- change the working directory cd \<path\>
+| Description | Code |
+|---|---|
+| Change the working directory | `cd <path>` |
+| List contents of current directory | `ls` |
+| Print current working directory | `pwd` |
 
-- list contents of current directory ls
-
-- print current working directory pwd
 
 ## Crystal Structures
 
-To recreate crystal packing of molelcules within 5 Å of pept in the
-pept.pdb (which must contain CRYST date), use the symexp command. symexp
-sym,pept,(pept),5.0
+To recreate crystal packing of molecules within 5 Å of pept in the pept.pdb (which must contain CRYST data), use the symexp command.
+
+| Description | Code |
+|---|---|
+| Crystal packing within 5 Å | `symexp sym,pept,(pept),5.0` |
+
 
 ## NMR Structures
 
-NMR models should be loaded into the same object, but should have
-diﬀerent states.
+NMR models should be loaded into the same object, but should have different states.
 
-- load a model into an object load *file*.pdb, *object*
+| Description | Code |
+|---|---|
+| Load a model into an object | `load <file>.pdb, <object>` |
+| Show all models in an object | `set all states,1` |
+| Show only one object model | `set all states,0` |
+| Show a particular model | `frame <model_number>` |
+| Determine which model | `get_model` |
+| Fit two structures to one another | `fit <selection>` |
+| Fit and calculate the rms | `rms <selection>` |
+| RMS without fitting | `rms_cur <selection>` |
+| Fit ensemble structures | `intra_fit <selection>,1` |
+| Calculate rms | `intra_rms <selection>,<state>` |
+| Ensemble rms without fitting | `intra_rms_cur <selection>,<state>` |
 
-- show all models in an object set all states,1
-
-- show only one object model set all states,0
-
-- show a particular model frame *model_number*
-
-- determine which model get_model
-
-- fit two structures to one another fit *selection*
-
-- fit and calculate the rms rms *selection*
-
-- rms without fitting rms_cur *selection*
-
-- fit ensemble structures intra fit *selection*,1
-
-- calculate rms intra_rms *selection*,*state*
-
-- ensemble rms without fitting intra_rms cur *selection*,*state*
 
 ## Changing Structures
 
-- add a bond bond atom1, atom2
+| Description | Code |
+|---|---|
+| Add a bond | `bond atom1, atom2` |
+| Remove bonds | `unbond atom1,atom2` |
+| Join two molecules together | `fuse [atom1, atom2]` |
 
-- remove bonds unbond atom1,atom2
-
-- join to molecules together fuse \[atom1, atom2\]
 
 ## Old School Images
 
-- Load a .pdb and make a cartoon view. Then change the background colour
-  to white and change the ray mode to 2. set ray trace mode,2
+Load a `.pdb`, make cartoon view, set background to white then
 
-- make the lines thinner set antialias,2
-
-- raytrace the image ray
+| Description | Code |
+|---|---|
+| Change the ray mode to 2 | `set ray trace mode,2` |
+| Make the lines thinner | `set antialias,2` | 
+| Raytrace the image | `ray` |

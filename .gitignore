@@ -9,4 +9,6 @@ course_notes/.quarto
 .pixi/*
 !.pixi/config.toml
 
+# Avoid videos for now
+course_notes/other_notes/videos/
 

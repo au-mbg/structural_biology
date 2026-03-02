@@ -219,7 +219,8 @@ AXE inhiberes af visse organiske fosfatforbindelser ved at der dannes en kovalen
 
 Ved binding af paraoxon-ethyl fraspaltes en del af inhibitoren og nedenfor ses et udsnit af strukturen af det inhiberede enzym. Til venstre ses den kovalent bundne diethyl-phosphatidyl gruppe (DEP) på overfladen af enzymet og på figuren til højre viser de stiplede linjer afstande (ikke hydrogenbindinger) mellem udvalgte carbon-atomer i henholdsvis AXE og DEP, ligesom bindingsvinklen for den kovalente binding mellem Ser Cβ, Oγ og P er vist.
 
-![](media/image142.png){width="2.9320253718285216in" height="2.15625in"} ![](media/image143.emf){width="2.847014435695538in" height="2.160117016622922in"}
+![](media/image142.png){width="2.9320253718285216in" height="2.15625in"} 
+<!-- ![](media/image143.emf){width="2.847014435695538in" height="2.160117016622922in"} -->
 
 **Spørgsmål 4.** Angiv først en liste med de tre inhibitorer (DIPF, paraoxon-ethyl og paraoxon-methyl) fra svagest til stærkest inhibitor. Kom herefter med en mulig strukturel forklaring på de forskelle i inhiberingsgrad, der ses.
 
