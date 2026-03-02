@@ -1,0 +1,43 @@
+---
+title: "PyMOL 3"
+---
+
+**Mac:**
+
+1.  Opret en mappe på din computer dedikeret til BMSF-kurset. Lad os sige, at du kalder den `BMSF` og lægger den i din mappe `Dokumenter`.
+
+2.  Åbn din Terminal-applikation, og naviger til den mappe ved hjælp af cd (noget i retning af cd Dokumenter og derefter cd BMSF).
+
+3.  Når du er i mappen 'BMSF', skal du indsætte kommandoen i Terminalvinduet og trykke på Enter. Du vil blive bedt om at angive enten din brugeradgangskode eller tilladelser til de installerede apps flere gange.
+
+```sh
+pixi init --platform osx-64 -c conda-forge -c anaconda -c schrodinger && pixi config set --local run-post-link-scripts insecure && pixi add pyqt "pymol-bundle=3.1" "vtk-m=1.8"
+```
+
+**Windows:**
+
+1.  Opret en mappe på din computer dedikeret til BMSF-kurset. Lad os sige, at du kalder den `BMSF` og lægger den i din mappe `Dokumenter`.
+
+2.  Åbn din PowerShell-applikation, og naviger til den mappe ved hjælp af cd (noget i retning af cd Dokumenter og derefter cd BMSF).
+
+3.  Når du er i mappen 'BMSF', skal du indsætte kommandoen i PowerShell-vinduet og trykke på Enter. Du vil blive bedt flere gange om at tillade appen at foretage ændringer på din computer.
+
+```sh
+pixi init -c conda-forge -c anaconda -c schrodinger ; pixi config set --local run-post-link-scripts insecure ; pixi add pyqt "pymol-bundle=3.1" "vtk-m=1.8"
+```
+
+For at køre PyMOL i din BMSF-mappe skal du bruge denne kommando:
+
+```sh
+pixi run pymol
+```
+
+PyMOL 3 burde nu åbne og præsentere dig for en dialogboks, der beder dig om at aktivere det ved hjælp af en licens.
+
+Du kan hente licensen til PyMOL under Materialer/PyMOL på Brightspace.
+
+Gem licensen på din computer.
+
+Åben den fra PyMOL dialogboks.
+
+Hurra, du er igang.

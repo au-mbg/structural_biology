@@ -1,0 +1,33 @@
+---
+title: "Pixi"
+---
+
+Denne installationsvejledning er baseret på <https://munch-group.org/bioinformatics/chapters/python/appendix_bsf.html>
+
+Start med at installere pixi:
+
+**Mac:**
+
+1.  Kopier kommandoen nedenfor.
+
+2.  Åbn din Terminal-applikation.
+
+3.  Indsæt kommandoen i Terminalvinduet, og tryk på Enter. Du vil blive bedt om at angive enten din brugeradgangskode eller tilladelser til de installerede apps flere gange.
+
+```sh
+curl -fsSL https://pixi.sh/install.sh | sh
+```
+
+**Windows:**
+
+1.  Kopier kommandoen nedenfor
+
+2.  Åbn din PowerShell-applikation.
+
+3.  Indsæt kommandoen i PowerShell-vinduet, og tryk på Enter. Du vil blive bedt flere gange om at tillade appen at foretage ændringer på din computer.
+
+```sh
+powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"
+```
+
+Hvis det ikke virker, så kan du [downloade denne interaktive installer](https://github.com/prefix-dev/pixi/releases/latest/download/pixi-x86_64-pc-windows-msvc.msi) og køre den.

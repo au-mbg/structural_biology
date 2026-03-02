@@ -9,6 +9,12 @@ website:
       - href: index.qmd
         text: Home
         icon: house
+      - href: exercises/index.qmd
+        text: Øvelser
+        icon: pencil
+      - href: other_notes/pymol_guides.qmd
+        text: PyMOL Guides
+        icon: book
       - href: other_notes/installation.qmd
         text: Installation og opsætning
         icon: gear-fill
@@ -16,43 +22,63 @@ website:
         text: Videor
         icon: youtube
   sidebar:
-    style: "docked"
-    contents:
-      - section: "Øvelser"
-        contents:
-          - exercises/te_01_i_gang_med_pymol.qmd
-          - exercises/te_02_introduktion_til_tø.qmd
-          - exercises/te_03_pymol_scripting.qmd
-          - exercises/te_04_proteinstruktur_1.qmd
-          - exercises/te_05_proteinstruktur_2.qmd
-          - exercises/te_06_nukleinsyrestruktur_1.qmd
-          - exercises/te_07_nukleinsyrestruktur_2.qmd
-          - exercises/te_08_evolution_og_bioinformatik.qmd
-          - exercises/te_09_lø_forberedelse_1.qmd
-          - exercises/te_10_lø_forberedelse_2.qmd
-          - exercises/te_11_binding_og_genkendelse.qmd
-          - exercises/te_12_enzymmekanismer.qmd
-          - exercises/te_13_enzymregulering.qmd
-          - exercises/te_14_strukturmetoder.qmd
-          - exercises/te_15_ai_og_modellering.qmd
-          - exercises/te_16_kulhydrater_og_glykosylering_af_proteiner.qmd
-          - exercises/te_17_lipider_og_cellemembraner.qmd
-          - exercises/te_18_membranpumper.qmd
-          - exercises/te_19_kanaler_og_porer.qmd
-          - exercises/te_20_signaltransduktion.qmd
-          - exercises/te_21_eksamensopgaver.qmd
-          - exercises/te_22_eksamensopgaver.qmd
-          - exercises/te_23_eksamensopgaver.qmd
-          - exercises/te_24_eksamensopgaver.qmd
+    - id: exercises-sidebar
+      style: "docked"
+      contents:
+        - section: "Øvelser"
+          contents:
+            - exercises/te_01_i_gang_med_pymol.qmd
+            - exercises/te_02_introduktion_til_tø.qmd
+            - exercises/te_03_pymol_scripting.qmd
+            - exercises/te_04_proteinstruktur_1.qmd
+            - exercises/te_05_proteinstruktur_2.qmd
+            - exercises/te_06_nukleinsyrestruktur_1.qmd
+            - exercises/te_07_nukleinsyrestruktur_2.qmd
+            - exercises/te_08_evolution_og_bioinformatik.qmd
+            - exercises/te_09_lø_forberedelse_1.qmd
+            - exercises/te_10_lø_forberedelse_2.qmd
+            - exercises/te_11_binding_og_genkendelse.qmd
+            - exercises/te_12_enzymmekanismer.qmd
+            - exercises/te_13_enzymregulering.qmd
+            - exercises/te_14_strukturmetoder.qmd
+            - exercises/te_15_ai_og_modellering.qmd
+            - exercises/te_16_kulhydrater_og_glykosylering_af_proteiner.qmd
+            - exercises/te_17_lipider_og_cellemembraner.qmd
+            - exercises/te_18_membranpumper.qmd
+            - exercises/te_19_kanaler_og_porer.qmd
+            - exercises/te_20_signaltransduktion.qmd
+            - exercises/te_21_eksamensopgaver.qmd
+            - exercises/te_22_eksamensopgaver.qmd
+            - exercises/te_23_eksamensopgaver.qmd
+            - exercises/te_24_eksamensopgaver.qmd
+    - id: pymol-sidebar
+      style: "docked"
+      contents:
+        - section: "PyMOL Guides"
+          contents:
+            - other_notes/pymol_guide_1.qmd
+            - other_notes/pymol_guide_2.qmd
+    - id: installation-sidebar
+      style: "docked"
+      contents:
+        - section: "Installation og opsætning"
+          contents:
+            - other_notes/installation_pixi.qmd
+            - other_notes/installation_pymol.qmd
+            - other_notes/installation_vscode.qmd
 
 filters:
   - filters/wrap-plain-code.lua
 
 format:
   html:
-    theme: cosmo
     toc: true
-    css: styles.css
+    css: styling/styles.css
+    theme:
+      light: cosmo
+      dark: [darkly, styling/theme-dark.scss]
+    respect-user-color-scheme: true
+
 #   typst: 
 #     number-sections: false
 #     toc: true

@@ -1,0 +1,7 @@
+---
+title: "VS Code"
+---
+
+Til redigering af scripts skal du bruge en plain text-editor. Det er ikke godt at bruge Word eller andre tekstbehandlingsprogrammer, da de har svært ved at undlade at indsætte koder i teksten. På samme måde som på Bioinformatik-kurset benytter vi Microsoft VS Code, der er en fremragende teksteditor, der fås til både Windows, Mac og Linux:
+
+**<https://code.visualstudio.com/download>**

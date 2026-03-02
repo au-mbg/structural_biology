@@ -1,0 +1,11 @@
+---
+title: "PyMOL Guides"
+sidebar: pymol-sidebar
+---
+
+These guides provide an introduction to molecular visualization and scripting with PyMOL 3.
+
+| Guide | Description |
+|---|---|
+| [Biomolecular visualization with PyMOL 3](pymol_guide_1.qmd) | Introduction to the PyMOL GUI, molecular representations, atom selections, and making publication-quality figures. |
+| [Commands and scripting in PyMOL 3](pymol_guide_2.qmd) | Using the PyMOL command line and scripts for advanced visualization, including a full reference card. |
