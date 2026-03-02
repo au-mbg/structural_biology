@@ -18,7 +18,7 @@ website:
       - href: other_notes/installation.qmd
         text: Installation og opsætning
         icon: gear-fill
-      - href: other_notes/videor.qmd
+      - href: videos/videor.qmd
         text: Videor
         icon: youtube
   sidebar:
@@ -71,8 +71,8 @@ website:
       contents:
         - section: "Videor"
           contents:
-            - other_notes/videor_1.qmd
-            - other_notes/videor_2.qmd
+            - videos/videor_1.qmd
+            - videos/videor_2.qmd
 
 filters:
   - filters/wrap-plain-code.lua
