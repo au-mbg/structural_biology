@@ -3,6 +3,16 @@ title: "Commands and scripting in PyMOL 3"
 author: "Ebbe S. Andersen and Johan N. Vinther"
 ---
 
+```{=html}
+<style>
+  .display-panel { color: #e6c01dff; font-weight: bold; }
+  .editor { color: #2c6b2aff; font-weight: bold; }
+  .command-line { color: #1693daff; font-weight: bold; }
+  .log-window { color: #ea1111ff; font-weight: bold; }
+  .button-menu { color: #c96906ff; font-weight: bold; }
+</style>
+```
+
 ## Overview 
 
 To be an advanced user of PyMOL, who need to use commands and scripting.
@@ -17,21 +27,19 @@ used to look up useful commands.
 
 To work with commands and scripting you need to focus on the following
 windows and panels as shown in **Figure 1**. You need to think in input
-(the command/script) and output (the visualization). The **command
-line** is located at the bottom of the window and if you want a
-repository of commands, you can have them stored in a **text editor** on
-the side. The output visualization is seen in the main **display**
-**panel**. The **log window** contains log of which commands have been
-executed and details of selections. Note also the **\"\>\_\" button** to
-hide/show the log window. A script is a list of commands in a text file
+(the command/script) and output (the visualization). The [command
+line]{.command-line} is located at the bottom of the window and if you want a
+repository of commands, you can have them stored in a [text editor]{.editor} on
+the side. The output visualization is seen in the main [display
+ panel]{.display-panel}. The [log window]{.log-window} contains log of which commands have been
+executed and details of selections. Note also the [**\"\>\_\" button**]{.button-menu} to
+hide/show the [log window]{.log-window}. A script is a list of commands in a text file
 that can be executed on the command line. A script helps you build up
 complex visualization and analysis pipelines that can be modified and
 reused.
 
-![](pymol_guide_2_media/media/image1.png)
+![**Figure 1**: The PyMOL graphical user interface with PDB ID **1tg7** loaded](pymol_guide_2_media/media/image1_annotated.png){fig-align="center" width="80%" .lightbox}
 
-> **Figure 1**: The PyMOL graphical user interface with PDB ID **1tg7**
-> loaded.
 
 
 ## Introducing the command line 
@@ -41,15 +49,13 @@ PyMOL command line console. You might find this complicated at first,
 but once you master it, you will find this very useful (if not
 essential).
 
-> To load a structure into PyMOL use the fetch command on the command
-> line:
+To load a structure into PyMOL use the fetch command on the command line:
 
 ```pymol
 fetch 1rg7
 ```
 
-> You can also load a PDB file from your own file system using the load
-> command:
+You can also load a PDB file from your own file system using the load command:
 
 ```pymol
 load 1rg7.pdb
@@ -71,7 +77,6 @@ To hide a representation use
 hide lines
 ```
 
-
 You can also choose to show only one particular representation with the
 as command:
 
@@ -79,7 +84,6 @@ as command:
 as cartoon
 as ribbon
 ```
-
 
 The zoom and orient commands are the equivalent to the zoom and orient
 buttons, respectively:
@@ -89,7 +93,6 @@ zoom
 orient
 ```
 
-
 We will come back to more useful commands through the tutorial. Make
 sure you use
 
@@ -97,119 +100,93 @@ sure you use
 as lines
 ```
 
-
 before you continue to the next section.
 
 ## Atom selections with the command line 
 
-> Using the command line enables more versatile and specific atom
-> selections. The "select" command enables atom selection through the
-> command line. The command can be combined with various keywords
-> specifying which atoms, residues, or chains to select. Here are some
-> examples:
->
-> **select resname** selects the residue(s) by name. e.g. select residue
-> with name MTX:
+Using the command line enables more versatile and specific atom
+selections. The "select" command enables atom selection through the
+command line. The command can be combined with various keywords
+specifying which atoms, residues, or chains to select. Here are some
+examples:
 
-```pymol
-select resname MTX
-```
+| Command | Description | Example |
+|---|---|---|
+| `select resname` | Selects the residue(s) by name. e.g. select residue with name MTX. | `select resname MTX` |
+| `select resid` | Selects the residue(s) by identifier. e.g. select residue with ID 161. | `select resid 161` |
+| `select chain` | Selects atoms in the specified chain. e.g. select chain with ID A | `select chain A` |
+| `select name` | Selects atoms with the specified name. e.g. select all CA atoms | `select name CA` |
 
-> **select resid** selects the residue(s) by identifier. e.g. select
-> residue with ID 161:
+The selection commands above will generate a selection with the
+default name **(sele)**. You can specify another name by adding it to
+the command like this:
 
-```pymol
-select resid 161
-```
-
-> **select chain** selects atoms in the specified chain. e.g. select
-> chain with ID A:
-
-```pymol
-select chain A
-```
-
-> **select name** selects atoms with the specified name. e.g. select all
-> CA atoms:
-
-```pymol
-select name CA
-```
-
-> The selection commands above will generate a selection with the
-> default name **(sele)**. You can specify another name by adding it to
-> the command like this:
->
-> Create a new selection called **(mtx)**:
+Create a new selection called **mtx**:
 
 ```pymol
 select mtx, resname MTX
 ```
 
-> Create a new selection called **(protein)**:
+Create a new selection called **protein**:
 
 ```pymol
 select protein, resid 1-160
 ```
 
-> Similarly to using the in range (-) symbol, you can use the addition
-> (+) syntax. The following command will select the residues in rage 15
-> to 20 as well as residue number 25:
+Similarly to using the in range (-) symbol, you can use the addition
+(+) syntax. The following command will select the residues in rage 15
+to 20 as well as residue number 25:
 
 ```pymol
 select resid 15-20+25
 ```
 
-> You can also combine selection statements using the **AND** and **OR**
-> operator. AND will select the atoms present in both the first and the
-> second statement (intersection) while OR will select the atoms present
-> in the first or the second statement (union). The following example
-> will select 5 atoms corresponding to the CA (c-alph) atoms in the
-> residues 15-20:
+You can also combine selection statements using the `AND` and `or`
+operator. `and` will select the atoms present in both the first and the
+second statement (intersection) while `or` will select the atoms present
+in the first or the second statement (union). The following example
+will select 5 atoms corresponding to the CA (c-alph) atoms in the
+residues 15-20:
 
 ```pymol
 select resid 15-20 and name CA
 ```
 
+Read more about atom selection in PyMOL [here](http://pymolwiki.org/index.php/Property_Selectors).
 
-Read more about atom selection in PyMOL
-[~\--~[here]{.underline}~-~](http://pymolwiki.org/index.php/Property_Selectors)
-.
+### Exercise 
 
-**Task**: Create a selection with name "bsite" consisting of residues
+Create a selection with name "bsite" consisting of residues
 with IDs 27, 31, and 94. Display the selection sticks representation on
 zoom on it.
 
 ## Colour the atom selections 
+Now that we have a few selection entries (protein, mtx, bsite) we can
+easily color these to contrast the different elements in the
+structure.
 
-> Now that we have a few selection entries (protein, mtx, bsite) we can
-> easily color these to contrast the different elements in the
-> structure.
->
-> Coloring can be done using the command line. Below we color the mtx
-> selection red and the protein blue:
+Coloring can be done using the command line. Below we color the mtx
+selection red and the protein blue:
 
 ```pymol
 color red, mtx
 color blue, protein
 ```
 
-> Note that it is often useful to color by atom elements, i.e. to keep
-> oxygens red, nitrogens blue, sulphurs yellow etc, and only adjust the
-> colors of carbon atoms. In the command line it can be carried out with
-> combining the color command with selection statements:
+Note that it is often useful to color by atom elements, i.e. to keep
+oxygens red, nitrogens blue, sulphurs yellow etc, and only adjust the
+colors of carbon atoms. In the command line it can be carried out with
+combining the color command with selection statements:
 
 ```pymol
 color green, mtx and elem C color red, mtx and elem O
 color blue, mtx and elem N
 ```
 
-> Now we have coloured all carbon elements of the mtx selection green;
-> oxygens red; and nitrogens blue.
-
+Now we have coloured all carbon elements of the mtx selection green;
+oxygens red; and nitrogens blue.
 
 # Pymol Reference Card
-
 
 ## Modes
 
