@@ -8,9 +8,13 @@ I denne opgave skal I lære hvordan proteiner genkender DNA (eller omvendt) for 
 
 ![Rende-kode1x](media/image21.png){width="5.691358267716535in" height="2.1454330708661415in"}![Rende-kode2](media/image22.png){width="6.263888888888889in" height="2.6590277777777778in"}
 
-1.  Forklar hvorfor der er mere specificitet i binding til major groove end til minor groove.
+### Forklar specificitet i major groove
 
-2.  Hvilke aminosyrer vil du tro ofte bruges til sekvensspecifik genkendelse og hvorfor?
+Forklar hvorfor der er mere specificitet i binding til major groove end til minor groove.
+
+### Identificer aminosyrer til sekvensspecifik genkendelse
+
+Hvilke aminosyrer vil du tro ofte bruges til sekvensspecifik genkendelse og hvorfor?
 
 Groove-koden kan være lidt svært at få øje på når man analyserer en DNA dobbelthelix i PyMOL, men med den rette repræsentation bliver den mere tydelig: **DNA-groove.pml** scriptet, som findes under denne uge på Brightspace, viser DNA-dobbelthelixen som en kuglemodel (spheres), hvor H-bindingsacceptorer er farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule.
 
@@ -18,7 +22,9 @@ Groove-koden kan være lidt svært at få øje på når man analyserer en DNA do
 
 Åben DNA dobbelthelix med PDB-ID: 1BNA i PyMOL og fjern vand-molekyler med PyMOL kommandoen "remove solvent". Brug nu **DNA-groove.pml** script til at ændre på repræsentationen og farvelægge donorer- og acceptorer i grooves. Rotér molekylet, så du ser ned i major groove (så symmetrien bliver tydelig).
 
-3.  Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
+### Undersøg groove-mønster for 1BNA
+
+Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -37,19 +43,27 @@ Groove-koden kan være lidt svært at få øje på når man analyserer en DNA do
 
 Det er vigtigt for DNA-bindende proteiner at kunne gribe fat om DNA-dobbelthelixen og interagere med specifikke base-sekvenser. DNA-molekylet bindes ofte af homodimeriske DNA-bindende proteiner i områder med såkaldte "basepar-palindromer".
 
-1.  Giv et eksempel på et "basepar-palindrom" og forklar hvilke geometriske egenskaber det har og hvorfor homodimeriske proteiner kan lide at binde der.
+### Giv eksempel på et basepar-palindrom
+
+Giv et eksempel på et "basepar-palindrom" og forklar hvilke geometriske egenskaber det har og hvorfor homodimeriske proteiner kan lide at binde der.
 
 Som det ses i Tabel 10.1 i Liljas "Textbook of Structural Biology" findes der flere forskellige familier/typer af DNA-bindende proteiner, der via forskellige DNA-bindingsdomæner interagerer med DNA dobbelthelixen.
 
-2.  Beskriv hovedtyperne af DNA-bindingsdomæner og hvordan de interagerer med DNA.
+### Beskriv DNA-bindingsdomæner
+
+Beskriv hovedtyperne af DNA-bindingsdomæner og hvordan de interagerer med DNA.
 
 DNA-bindende proteiner har en vigtig rolle som gen-specifikke transskriptionsfaktorer, der kan aktivere eller hæmme mRNA syntese. I eukaryoter findes der flere heterodimeriske transkriptionsfaktorer.
 
-3.  Hvad er de mulige fordele ved DNA-binding af en heterodimer?
+### Diskuter fordele ved heterodimer-binding
+
+Hvad er de mulige fordele ved DNA-binding af en heterodimer?
 
 Binding af en ligand til et DNA-bindende protein kan regulere DNA-bindingen.
 
-4.  Hvad er mekanismen hvormed ligand-binding kan påvirke proteinets evne til at binde DNA? Nævn et par eksempler på regulering med denne mekanisme.
+### Beskriv ligand-binding regulering af DNA
+
+Hvad er mekanismen hvormed ligand-binding kan påvirke proteinets evne til at binde DNA? Nævn et par eksempler på regulering med denne mekanisme.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -77,19 +91,27 @@ Det TATA-box bindende protein (TBP) er involveret i promoter-genkendelse mht. at
 
 Åben **TATA.pml** scriptet i PyMOL. **F1** viser bindingen af TBP langs den heliske akse for DNA-dobbelthelix.
 
-1.  I hvilken groove af DNA-dobbelthelix binder TBP?
+### Find TBP-bindingsgroove
+
+I hvilken groove af DNA-dobbelthelix binder TBP?
 
 ***PyMOL hint**: Groove kan identificeres ved at zoome ind på basepar og identificere Högsteen- og sukker-side. Vis f.eks. et basepar med kommandoen "show sticks, resi 7+23" og zoom ind for at undersøge dette med kommandoerne `zoom resi 7+23` og juster dybden med musehjulet, så der fokuseres på baseparret. Rotér derefter så du ser baseparret fra siden. Tryk **F2** for at vise den ønskede visning.*
 
 Tryk **F1** og brug groove-kode scriptet (**DNA-groove.pml**) til at vise DNA-dobbelthelixen som kuglemodel, hvor H-bindingsacceptorer er farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule. Skjul TBP for bedre at kunne se groove-mønster.
 
-2.  Hvad karakteriserer mønsteret i groove, hvor TBP binder? 
+### Beskriv groove-mønstret ved TBP-bindingssted
 
-3.  Hvad karakteriserer TBPs sekundære struktur, der binder til DNA groove? 
+Hvad karakteriserer mønsteret i groove, hvor TBP binder? 
+
+### Beskriv TBPs sekundære DNA-bindingsstruktur
+
+Hvad karakteriserer TBPs sekundære struktur, der binder til DNA groove? 
 
 Tryk **F3/F4** for at se et vigtigt element i DNA-protein bindingen, hvor to phenylalaniner interkalerer mellem to basepar. 
 
-4.  Hvordan er de to basepar påvirket af interaktionen med de to phenylalaniner? Hvilken standardparameter for den relative orientation af baser (Textbook of Structural Biology, figur 5.16) beskriver bedst konformationen af disse to basepar?
+### Undersøg phenylalanin-interkalering
+
+Hvordan er de to basepar påvirket af interaktionen med de to phenylalaniner? Hvilken standardparameter for den relative orientation af baser (Textbook of Structural Biology, figur 5.16) beskriver bedst konformationen af disse to basepar?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -110,13 +132,19 @@ Tryk **F3/F4** for at se et vigtigt element i DNA-protein bindingen, hvor t
 
 Max-Myc-Mad er et heterodimerisk transkriptionsfaktor system, der binder specifikt til DNA segmentet CACGTG som tre forskellige komplekser: Myc-Max, Max-Max og Mad-Max. Ifølge forfatterne til den oprindelige artikel om Max-Myc-Mad systemet har navngivningen af Mad (det andet protein i Mad-Max heterodimer) ikke noget at gøre med filmen af samme navn ([**Youtube link**](https://youtu.be/hEJnMQG9ev8)), men kommer fra forkortelsen af "Max dimerization". Copy/Paste PyMOL-scriptet **Mad-Max.pml** og kør det i PyMOL. Tryk **F1** for at se Myc-Max komplekset, tryk **F2** for at se Max-Max komplekset, og **F3** for at se Mad-Max komplekset.
 
-1.  Beskriv sammensætningen af dimeriseringsdomænet og hvilken egenskab α-helicerne, der binder DNA, har.
+### Beskriv dimeriseringsdomænet
 
-2.  I hvilken groove binder Myc-Max, Max-Max og Mad-Max?
+Beskriv sammensætningen af dimeriseringsdomænet og hvilken egenskab α-helicerne, der binder DNA, har.
+
+### Find bindingsgroove for de tre komplekser
+
+I hvilken groove binder Myc-Max, Max-Max og Mad-Max?
 
 Orientér molekylet i PyMOL, så du ser ned langs pseudosymmetri aksen af Myc-Max og gem derefter Myc-Max, så kun DNA-dobbelthelixen er synlig. Brug groove-kode scriptet (**DNA-groove.pml**) til at vise helixgroove-mønsteret.
 
-3.  Hvad er karakteristisk ved mønsteret af H-bindings-donor og -acceptorer?
+### Beskriv mønster af H-bindings-donor-acceptorer
+
+Hvad er karakteristisk ved mønsteret af H-bindings-donor og -acceptorer?
 
 Tryk **F4** for at se hvordan genkendelses-helixer i Myc-Max interagerer med DNA segmentet.
 
@@ -124,7 +152,9 @@ Tryk **F5** for at se hvordan genkendelses-helixer i Max-Max interagerer med D
 
 Tryk **F6** for at se hvordan genkendelses-helixer i Mad-Max interagerer med DNA segmentet.
 
-4.  Beskriv hydrogen-bindingerne for de tre aminosyrer (His, Glu, Arg) i genkendelses-helixer i Myc-Max ved at specificere hvilke baser og hvilke atomer på baserne, der indgår i bindingen. Er der andre interaktioner end med baserne? Er interaktionerne symmetriske i Myc-Max, Max-Max og Mad-Max og hvorfor?
+### Beskriv hydrogenbindinger for aminosyrerne
+
+Beskriv hydrogen-bindingerne for de tre aminosyrer (His, Glu, Arg) i genkendelses-helixer i Myc-Max ved at specificere hvilke baser og hvilke atomer på baserne, der indgår i bindingen. Er der andre interaktioner end med baserne? Er interaktionerne symmetriske i Myc-Max, Max-Max og Mad-Max og hvorfor?
 
 ***PyMOL hint**: Brug menuen "Mouse > Selection mode > Atoms", så du bedre kan identificere de individuelle atomer, der indgår i hydrogen-bindingerne.*
 
@@ -150,15 +180,21 @@ Tryk **F6** for at se hvordan genkendelses-helixer i Mad-Max interagerer med D
 
 Transskriptionsfaktor-lignende effector nukleaser (TALENs) binder specifikke DNA-sekvenser vha. en række DNA-bindende domæner kaldet TALE-repeats. TALEN-proteiner kan designes til at genkende og kløve specifikke DNA-sekvenser og kan dermed anvendes til genom-redigering (genome editing). TALE-proteiner er omtalt i Berg Biochemistry, udgave 10, side 292, og opbygningen kan ses i figur 9.37 (se nedenstående figur).
 
-1.  Åben det vedhæftede script **TALE.pml** i PyMOL. Tryk **F1** og **F2** for at se DNA-protein komplekset hhv. fra siden og langs helix aksen. Tryk **F3** for at se sphere-repræsentation, hvor man lettere kan se repeat-strukturen. Tryk **F4** for at se en specifik interaktion mellem protein og DNA. I hvilken groove af DNA-dobbelthelixen binder TALE-proteinet? Forklar hvordan du observerer dette.
+### Find TALE-proteinets bindingsgroove
+
+Åben det vedhæftede script **TALE.pml** i PyMOL. Tryk **F1** og **F2** for at se DNA-protein komplekset hhv. fra siden og langs helix aksen. Tryk **F3** for at se sphere-repræsentation, hvor man lettere kan se repeat-strukturen. Tryk **F4** for at se en specifik interaktion mellem protein og DNA. I hvilken groove af DNA-dobbelthelixen binder TALE-proteinet? Forklar hvordan du observerer dette.
 
 Hvert TALE-repeat indeholder 34 aminosyrer og to alfa-helicer, men kun to aminosyre-rester er ansvarlige for unik genkendelse af et enkelt nukleotid i DNA-dobbelthelixen.
 
-2.  Tryk **F4-F7** for at se hvordan TALE-repeats genkender specifikke nukleotider. Beskriv hvilke aminosyrer, der interagerer med hvilke baser og hvilken type interaktion der er tale om. Hvilken kant af baserne er involveret i interaktionen og hvilken af DNA-strengene genkendes?
+### Beskriv TALE-repeat genkendelse af nukleotider
+
+Tryk **F4-F7** for at se hvordan TALE-repeats genkender specifikke nukleotider. Beskriv hvilke aminosyrer, der interagerer med hvilke baser og hvilken type interaktion der er tale om. Hvilken kant af baserne er involveret i interaktionen og hvilken af DNA-strengene genkendes?
 
 Man kan designe TALE-proteiner, så de binder til unikke DNA-sekvenser, ved at organisere rækkefølgen af TALE-repeats ihht. DNA-sekvensen.
 
-3.  Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-proteindomæne og beskriv hvilke biologiske effekter det kan have og/eller hvilke teknologiske muligheder det kan give.
+### Forslå protein-funktionaliteter for TALE
+
+Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-proteindomæne og beskriv hvilke biologiske effekter det kan have og/eller hvilke teknologiske muligheder det kan give.
 
 ![BER_11467_05_F38](media/image23.png){width="6.263888888888889in" height="3.4in"}
 
@@ -179,15 +215,23 @@ Man kan designe TALE-proteiner, så de binder til unikke DNA-sekvenser, ved at o
 
 I *E. coli* binder Trp-repressor en specifik DNA-sekvens under tilstedeværelse af aminosyren tryptofan (Trp) og hæmmer dermed udtryk af fem gener i *trp-*operon. Trp-repressor danner en homodimer, der binder til DNA-dobbelthelix via to alpha-helicer (kaldet "genkendelseshelicer"). Åben PyMOL-scriptet **Trp.pml** i PyMOL, der laver en strukturel alignment af Trp-repressor (bundet til Trp og DNA) med *apo*-formen af proteinet (ikke bundet til Trp eller DNA). **F1** viser denne alignment.
 
-1.  I hvilken groove af DNA binder Trp-repressor med de to genkendelseshelicer? Mål afstanden mellem de to genkendelseshelicer i 1TRO. Hvilken DNA-helix-parameter svarer denne afstand til og hvorfor observeres denne afstand typisk for transkriptionsfaktorer?
+### Bestem Trp-repressors bindingsgroove
 
-2.  Hvilken del af proteinet påvirkes mest af binding til Tryptofan? Mål afstanden mellem de to genkendelseshelicer for *apo*-repressoren og beskriv hvilken effekt ændringen må forventes at have på binding af DNA.
+I hvilken groove af DNA binder Trp-repressor med de to genkendelseshelicer? Mål afstanden mellem de to genkendelseshelicer i 1TRO. Hvilken DNA-helix-parameter svarer denne afstand til og hvorfor observeres denne afstand typisk for transkriptionsfaktorer?
+
+### Undersøg Trp-bindings effekt på repressor
+
+Hvilken del af proteinet påvirkes mest af binding til Tryptofan? Mål afstanden mellem de to genkendelseshelicer for *apo*-repressoren og beskriv hvilken effekt ændringen må forventes at have på binding af DNA.
 
 Brug groove-kode scriptet (**DNA-groove.pml**) til at vise DNA-dobbelthelixen som kuglemodel, hvor H-bindingsacceptorer er farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule. Skjul Trp repressor, så kun DNA dobbelthelix ses.
 
-3.  Hvad er karakteristisk ved mønsteret af H-bindingsdonorer og -acceptorer og hvad fortæller det om bindingen af Trp repressor?
+### Beskriv groove-mønstret for Trp-repressor
 
-4.  Tryk **F2** for kun at se polære kontakter mellem genkendelseshelicer og DNA-dobbelthelix. Hvilken kant af basen interagerer Arginin-69 med? Hvilke typer af interaktioner ser man typisk bidrage til bindingsspecificitet mellem DNA og protein?
+Hvad er karakteristisk ved mønsteret af H-bindingsdonorer og -acceptorer og hvad fortæller det om bindingen af Trp repressor?
+
+### Identificer Arg69's base-interaktion
+
+Tryk **F2** for kun at se polære kontakter mellem genkendelseshelicer og DNA-dobbelthelix. Hvilken kant af basen interagerer Arginin-69 med? Hvilke typer af interaktioner ser man typisk bidrage til bindingsspecificitet mellem DNA og protein?
 
  Officielt svar
 
@@ -208,15 +252,17 @@ Arc-repressor (PDB-ID: 1BDT) er en transskriptionsfaktor fra bakteriofag P22, de
 5'-ATAGTAGAGTGCTTCTATCAT-3'\
 3'-TATCATCTCACGAAGATAGTA-5'
 
-1.  Lav et script, der gør følgende:
+### Lav script til Arc-repressor-analyse
 
-    a.  Henter Arc-repressoren og viser DNA-protein komplekset med pseudosymmetri-akse langs PyMOLs y-akse. Gem scenen med navnet **F1** (scene F1, store).
+Lav et script, der gør følgende:
 
-    b.  Lav en scene kaldet **F2**, der farver sekundær struktur (se nedenstående PyMOL info).
+a.  Henter Arc-repressoren og viser DNA-protein komplekset med pseudosymmetri-akse langs PyMOLs y-akse. Gem scenen med navnet **F1** (scene F1, store).
 
-    c.  Lav en scene kaldet **F3**, der viser afstanden mellem de to bindingselementer. Hint: Brug distance-funktionen mellem to atom selektioner på aminosyrer i bindingselementerne og brug mode=0, se nedenstående PyMOL info.
+b.  Lav en scene kaldet **F2**, der farver sekundær struktur (se nedenstående PyMOL info).
 
-    d.  Lav en scene kaldet **F4**, der viser DNAs interaktion med proteinet. Vis genkendelses-element (rest 8-14) og DNA (chain E+F) som sticks med element farver. Find nu hydrogenbindinger mellem genkendelses-element (rest 8-14) og DNA. Hint: Brug distance-funktionen mellem genkendelses-element og DNA med mode=2, se nedenstående PyMOL info.
+c.  Lav en scene kaldet **F3**, der viser afstanden mellem de to bindingselementer. Hint: Brug distance-funktionen mellem to atom selektioner på aminosyrer i bindingselementerne og brug mode=0, se nedenstående PyMOL info.
+
+d.  Lav en scene kaldet **F4**, der viser DNAs interaktion med proteinet. Vis genkendelses-element (rest 8-14) og DNA (chain E+F) som sticks med element farver. Find nu hydrogenbindinger mellem genkendelses-element (rest 8-14) og DNA. Hint: Brug distance-funktionen mellem genkendelses-element og DNA med mode=2, se nedenstående PyMOL info.
 
 ***PyMOL info**: Når man farver proteiner efter sekundær struktur er der ikke en samlet kommando, der gør det. Man er nødsaget til at farve hver type, altså alphahelicer, betastrands og loops, enkeltvis. Loops indeholder alle sekundære strukturer, der ikke er betastrands eller alphahelicer. I har tidligere lært at property selektoren for sekundær struktur er `ss`. PyMOLs navn for alphahelicer, betastands og loops er hhv. `h`, `s` og `l+`"". Man ville altså farve loops hvide med kommandoen* color white, ss l+""*.*
 
@@ -224,13 +270,21 @@ Arc-repressor (PDB-ID: 1BDT) er en transskriptionsfaktor fra bakteriofag P22, de
 
 Brug nu dit script til at svare på følgende spørgsmål:
 
-2.  Tryk **F1**. Bindingen af Arc-repressor påvirker DNA-dobbelthelixen og fører til en bøjning. Hvilken basestak-parameter (Liljas figur 5.16) beskriver bedst bøjning?
+### Beskriv DNA-bøjning ved Arc-binding
 
-3.  Tryk **F2**. Beskriv bindingen af Arc-proteinet til DNA. Hvilken type protein-sekundær struktur binder til hvilken groove på DNA dobbelthelixen? Beskriv hvordan du observerer hvilken groove der bindes.
+Tryk **F1**. Bindingen af Arc-repressor påvirker DNA-dobbelthelixen og fører til en bøjning. Hvilken basestak-parameter (Liljas figur 5.16) beskriver bedst bøjning?
 
-4.  Tryk **F3**. Hvilken DNA-helix parameter svarer denne afstand til?
+### Beskriv sekundær struktur i DNA-binding
 
-5.  Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af interaktioner bidrager til bindingsspecificitet?
+Tryk **F2**. Beskriv bindingen af Arc-proteinet til DNA. Hvilken type protein-sekundær struktur binder til hvilken groove på DNA dobbelthelixen? Beskriv hvordan du observerer hvilken groove der bindes.
+
+### Find DNA-helixparameter for afstanden
+
+Tryk **F3**. Hvilken DNA-helix parameter svarer denne afstand til?
+
+### Identificer H-bindingspartnere i active site
+
+Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af interaktioner bidrager til bindingsspecificitet?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -241,7 +295,7 @@ Brug nu dit script til at svare på følgende spørgsmål:
 
 \# Script til opgave 7. Arc repressor
 
-reinit fetch 1BDT, type=pdb1, async=0 remove solvent set_view (\\
+reinitfetch 1BDT, type=pdb1, async=0remove solventset_view (\\
 
 0.729630232, -0.663575828, -0.165245384,\\
 
@@ -257,7 +311,7 @@ reinit fetch 1BDT, type=pdb1, async=0 remove solvent set_view (\\
 
 scene F1, store
 
-color purple, ss h & chain A+B+C+D color yellow, ss s & chain A+B+C+D color cyan, ss l+'' & chain A+B+C+D
+color purple, ss h & chain A+B+C+Dcolor yellow, ss s & chain A+B+C+Dcolor cyan, ss l+'' & chain A+B+C+D
 
 scene F2, store
 
@@ -271,7 +325,7 @@ show sticks, chain E+F
 
 util.cbaw chain E+F
 
-show sticks, resi 8-14 and chain A+B+C+D util.cbac resi 8-14 and chain A+B+C+D
+show sticks, resi 8-14 and chain A+B+C+Dutil.cbac resi 8-14 and chain A+B+C+D
 
 dist H-bond, resi 8-14 and chain A+B+C+D, chain E+F, mode=2
 

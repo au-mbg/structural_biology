@@ -8,15 +8,23 @@ Søg efter "LDH human" på [**www.uniprot.org**](http://www.uniprot.org).
 
 Undersøg de relevante resultater. Se under overskriften "Sequences" og følg evt. link til Ensembl eller GeneID under overskriften "Genome Annotation Databases"
 
-1.  Hvor mange isoformer findes for LDH i menneske?
+### Find antal LDH-isoformer i UniProt
+
+Hvor mange isoformer findes for LDH i menneske?
 
 I Stryer betegnes to former af LDH som henholdsvis H og M form.
 
-2.  Hvordan betegnes disse to varianter i Uniprot?
+### Find betegnelser for LDH-varianter
 
-3.  På hvilke kromosomer finder man generne for de to former?
+Hvordan betegnes disse to varianter i Uniprot?
 
-4.  Hvor mange splejsningsvarianter kendes for LDH-M?
+### Find kromosomer for LDH-generne
+
+På hvilke kromosomer finder man generne for de to former?
+
+### Tæl splejsningsvarianter af LDH-M
+
+Hvor mange splejsningsvarianter kendes for LDH-M?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -37,17 +45,23 @@ I Stryer betegnes to former af LDH som henholdsvis H og M form.
 
 Aspartat er substrat for enzymet, aspartat transcarbamoylase (ATCase), og enzymet kan inhiberes ved tilsætning af phosphonacetyl-L-aspartat (PALA; K~i~ = 10 nM).
 
-1.  Hvilken type inhibering udøver PALA? Er PALA en svag, medium eller stærk inhibitor?
+### Bestem PALA's inhibitionstype og styrke
+
+Hvilken type inhibering udøver PALA? Er PALA en svag, medium eller stærk inhibitor?
 
 Stimulering af ATCase-aktiviteten kan observeres under visse eksperimentelle betingelser, som vist nedenfor.\
 \
 ![](media/image60.png){width="4.092971347331583in" height="2.341176727909011in"}
 
-2.  Beskriv kurven og forklar hvad der foregår.
+### Beskriv aktiveringseffekt ved PALA
+
+Beskriv kurven og forklar hvad der foregår.
 
 En *E. coli*-mutant indeholdende en enzymdefekt relevant for biosyntesen af threonin, isoleucin og methionin kan kun gro hvis vækstmediet suppleres med de tre aminosyrer. Selv under disse betingelse er væksten reduceret, hvilket formodentlig skyldes akkumulering af et mellemprodukt. Hvis man derimod tilsætter uracil, ses en normal vækstrate. (Hint: Læs om homoserine dehydrogenase på wikipedia)
 
-3.  Hvilken anden pathway kunne være influeret af mutationen og hvorfor? Hint: Kig på reaktionspathwayen for threonin, isoleucin og methionin.
+### Identificer pathway påvirket af mutationen
+
+Hvilken anden pathway kunne være influeret af mutationen og hvorfor? Hint: Kig på reaktionspathwayen for threonin, isoleucin og methionin.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -70,13 +84,21 @@ Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin sidekæde (L
 
 ATCase er et eksempel på et vigtigt allosterisk reguleret enzym. Åben filen ATCase.pml, der findes i mappen for denne uge i Brightspace. Knapperne T_trimer1, T_trimer2, T_dimer1, T_dimer2, and T_dimer3 kan bruges til at tænde og slukke for enkelte subunits i T-tilstanden (F1). Tryk på F2 for at skifte til R-tilstanden. F3 og F4 er side-views af hver tilstand. F5 og F6 viser backbone i T- og R-tilstanden. F7 er et overlay af T- og R-trimer backbone.
 
-1.  Beskriv de strukturelle ændringer, der finder sted i ATCase når enzymet skifter mellem T- og R-tilstanden.
+### Beskriv ATCases T-til-R-overgang
 
-2.  T-tilstanden er bundet til ATP i denne struktur, mens R-tilstanden binder N-(phosphonacetyl)-L-aspartate (PALA). Hvilken type subunit binder ATP hhv. PALA til?
+Beskriv de strukturelle ændringer, der finder sted i ATCase når enzymet skifter mellem T- og R-tilstanden.
 
-3.  Hvorfor har PALA været specielt nyttig i forhold til at forstå ATCases egenskaber?
+### Identificer hvilke subunits binder ligander
 
-4.  Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
+T-tilstanden er bundet til ATP i denne struktur, mens R-tilstanden binder N-(phosphonacetyl)-L-aspartate (PALA). Hvilken type subunit binder ATP hhv. PALA til?
+
+### Forklar PALA's analytiske anvendelighed
+
+Hvorfor har PALA været specielt nyttig i forhold til at forstå ATCases egenskaber?
+
+### Forklar PALA som aktivator og inhibitor
+
+Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -99,17 +121,25 @@ ATCase er et eksempel på et vigtigt allosterisk reguleret enzym. Åben filen A
 
 Selv om thrombin har mange egenskaber til fælles med trypsin, så er omdannelsen af prothrombin til thrombin ikke autokatalytisk som set for aktiveringen af trypsin. Både thrombin og trypsin er serinproteaser, der er i stand til at kløve peptidbindingen på carboxylsiden af arginin. Thrombin er dog specifik for Arg-Gly bindinger. 
 
-1.  Hvorfor er aktiveringen af prothrombin til thrombin ikke autokatalytisk. 
+### Forklar ikke-autokatalytisk aktivering
 
-2.  Beskriv ligheder og forskelle mellem den måde de to enzymer genkender deres substrat på. 
+Hvorfor er aktiveringen af prothrombin til thrombin ikke autokatalytisk.
+
+### Sammenlign thrombins og trypsins substratgenkendelse
+
+Beskriv ligheder og forskelle mellem den måde de to enzymer genkender deres substrat på.
 
 Heparin er en højt sulfateret glycosaminoglycan polymer, der bnder til mange af proteinerne i koagulationskaskaden og påvirker aktiviteten af serpiner som antithrombin. Det bruges indenfor lægevidenskaben til at behandle bl.a. thrombose (dannelse af blodklumper i blodet) og som et additiv til donorblod, for at modvirke koagulation under oplagring. Den kemiske struktur af en heparinenhed er vist nedenfor. 
 
 ![](media/image62.png){width="3.0987653105861765in" height="1.8850174978127734in"} 
 
-3.  Hvilken gruppe af stoffer tilhører heparin og hvilke funktionelle grupper indeholder det? 
+### Identificer heparins kemiske gruppe
 
-4.  Hvilken type af sidekæder vil du forvente at heparin binder til. 
+Hvilken gruppe af stoffer tilhører heparin og hvilke funktionelle grupper indeholder det?
+
+### Forudsig heparins bindingspartnere
+
+Hvilken type af sidekæder vil du forvente at heparin binder til.
 
 ***PyMOL-info**: Vi skal nu visualisere den elektrostatiske overflade. Når man bruge PyMOL-interface tastes; A>generate>vacuum electrostatics>protein contact potential (local). Se figuren forneden.*![](media/image63.png){width="6.383720472440945in" height="3.9663101487314085in"}\
 \
@@ -128,13 +158,15 @@ Heparin er en højt sulfateret glycosaminoglycan polymer, der bnder til mange a
 
 *Positionen af den elektrostatiske overflade beregnes ligesom den vand-tilgængelige overflade og så farves den efter elektrostatisk potentiale. Potentialet beregnes som den tiltrækning (blå) eller frastødning (rød) en negativ punktladning vil opleve hvis den blev placeret på overfladen af proteinet. Beregningen foretages for neutralt pH. *
 
-5.  Lav en scene, kaldet F1, som henter thrombin (PDB-ID: 3UTU). Lav så en scene, kaldet F2, som viser den elektrostatiske overflade af thrombin.\
-    Foreslå et bindingsite for heparin på overfladen af thrombin.
+### Visualiser thrombins elektrostatiske overflade
+
+Lav en scene, kaldet F1, som henter thrombin (PDB-ID: 3UTU). Lav så en scene, kaldet F2, som viser den elektrostatiske overflade af thrombin. Foreslå et bindingsite for heparin på overfladen af thrombin.
 
 Strukturen af thrombin i kompleks med inhibitor og et heparin fragment findes i PDB-ID: 1XMN.
 
-6.  Lav en scene, kaldet F3, som viser heparins binding til thrombin (PDB-ID: 3UTU). Hint: Brug align og util.protein_vacuum_esp.\
-    Stemmer heparins placering overens med det forventede bindingsite?
+### Sammenlign heparins bindingssite i PyMOL
+
+Lav en scene, kaldet F3, som viser heparins binding til thrombin (PDB-ID: 3UTU). Hint: Brug align og util.protein_vacuum_esp. Stemmer heparins placering overens med det forventede bindingsite?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -229,8 +261,9 @@ scene F3, store
 
 En anden faktor, der deltager i koagulationskaskaden er factor XIa. Som andre proteaser i blodet reguleres factor XIa af en inhibitor, antithrombin III, der er medlem af familien af serineproteaseinhibitorer (serpiner). 
 
-1.  Hvorfor har kroppen brug for en inhibitor som antithrombin? \
-     
+### Forklar behovet for antithrombin
+
+Hvorfor har kroppen brug for en inhibitor som antithrombin?
 
 Figuren nedenfor viser resultaterne fra et eksperiment, hvor effekten af antithrombin III på factor XIa's proteolytiske funktion blev målt, med og uden heparin tilstede. 
 
@@ -238,17 +271,21 @@ Figuren nedenfor viser resultaterne fra et eksperiment, hvor effekten af antithr
 
 *Effekten af antithrombin III (x-aksen, µM) på factor XIa's proteolytiske aktivitet (ved 8 nM) er angivet langs y-aksen i arbitrære enheder under tilstedeværelse samt uden heparin (0.28 µM).* 
 
-2.  Hvordan  påvirker heparin serpinens aktivitet ? 
+### Analyser heparins effekt på serpinaktivitet
+
+Hvordan  påvirker heparin serpinens aktivitet ?
 
 Mange af faktorerne i koagulationskaskaden har samme foldning. Det gælder for thrombin og factor XIa. Strukturen af et kompleks mellem antithrombin, Thrombin og en heparin-analog findes i PDB-ID: 1TB6.
 
-3.  Fortsæt scriptet fra opgave 4. Lav en scene, kaldet F4, som nedhenter komplekset og viser antithrombin og thrombin i forskellige farver. Lav så en scene, kaldet F5, som viser heparins binding til antithrombin/thrombin-kompleksets overflade.\
-    Forklarer denne struktur effekten af heparin?
+### Visualiser antithrombin-thrombin-komplekset
+
+Fortsæt scriptet fra opgave 4. Lav en scene, kaldet F4, som nedhenter komplekset og viser antithrombin og thrombin i forskellige farver. Lav så en scene, kaldet F5, som viser heparins binding til antithrombin/thrombin-kompleksets overflade. Forklarer denne struktur effekten af heparin?
 
 Strukturen af factor XIa findes i PDB-ID: 3SOR. Lav en overlejring af 3SOR på thrombin i 1TB6.
 
-4.  Lav en scene, kaldet F6, der viser XIa's interaktion med heparin.\
-    Vil man forvente at heparin binder på samme måde til Factor XIa som til thrombin?
+### Sammenlign heparinbinding på factor XIa
+
+Lav en scene, kaldet F6, der viser XIa's interaktion med heparin. Vil man forvente at heparin binder på samme måde til Factor XIa som til thrombin?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -397,11 +434,17 @@ GKYGFYTHVF RLKKWIQKVI DRLGS
 
 Factor Xa aktiverer prothombin til thrombin ved kløvning af peptidbindingerne efter Arg317 og Arg366.
 
-1.  Hvad er factor Xa's substratspecificitet? Resterne 409, 465 og 571 er vist med fed skrift i sekvensen ovenfor. Hvilke aminosyrer er der tale om og hvilken rolle spiller de i henholdsvis prothrombin og thrombin?
+### Bestem factor Xa's substratspecificitet
 
-2.  Skitsér hvorledes prothrombin ville løbe i en SDS polyacrylamide gel under reducerende betingelser, før og efter aktivering med factor Xa. Forestil dig, at gelen farves med Coomassie Blue og markér hvert bånd med den forventede molekylemasse.
+Hvad er factor Xa's substratspecificitet? Resterne 409, 465 og 571 er vist med fed skrift i sekvensen ovenfor. Hvilke aminosyrer er der tale om og hvilken rolle spiller de i henholdsvis prothrombin og thrombin?
 
-3.  Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
+### Skitsér SDS-PAGE af prothrombin-aktivering
+
+Skitsér hvorledes prothrombin ville løbe i en SDS polyacrylamide gel under reducerende betingelser, før og efter aktivering med factor Xa. Forestil dig, at gelen farves med Coomassie Blue og markér hvert bånd med den forventede molekylemasse.
+
+### Forklar factor XIIIa's stabilisering af blodklump
+
+Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

@@ -76,10 +76,12 @@ website:
 
 filters:
   - filters/wrap-plain-code.lua
-
+  - filters/solution-callout.lua
+  
 format:
   html:
     toc: true
+    number-sections: true
     css: styling/styles.css
     theme:
       light: cosmo

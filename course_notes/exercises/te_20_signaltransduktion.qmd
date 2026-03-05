@@ -6,11 +6,17 @@ title: "TØ 20 -- Signaltransduktion"
 
 Ét af de første eksperimenter, der påviste sammenhængen mellem adrenalin og glykogen blev udført tilbage i 1950 af Earl W. Sutherland. Analysér og fortolk de eksperimenter, Earl foretog og identificér X:
 
-1.  Da Earl tilsatte adrenalin til et homogenat af lever blev resultatet øget aktivitet af enzymet glykogen phosphorylase, men hvis homogenatet først blev centrifugeret og adrenalin og glykogen blev tilsat til supernatant-fraktionen var der ingen øget aktivitet af glykogen phosphorylase. Forklar hvordan dette kan være.
+### Fortolk adrenalineksperiment med homogenat
 
-2.  Når homogenat blev behandlet med adrenalin blev stoffet X dannet. X blev oprenset og isoleret og i modsætning til adrenalin så kunne X aktivere glykogen phosphorylase, når det blev tilsat til supernatant-fraktionen af homogenatet. Forklar resultatet.
+Da Earl tilsatte adrenalin til et homogenat af lever blev resultatet øget aktivitet af enzymet glykogen phosphorylase, men hvis homogenatet først blev centrifugeret og adrenalin og glykogen blev tilsat til supernatant-fraktionen var der ingen øget aktivitet af glykogen phosphorylase. Forklar hvordan dette kan være.
 
-3.  Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen. Hvordan kan det være?
+### Forklar stof X's aktivering
+
+Når homogenat blev behandlet med adrenalin blev stoffet X dannet. X blev oprenset og isoleret og i modsætning til adrenalin så kunne X aktivere glykogen phosphorylase, når det blev tilsat til supernatant-fraktionen af homogenatet. Forklar resultatet.
+
+### Forklar X's varmeresistens
+
+Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen. Hvordan kan det være?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -31,33 +37,46 @@ X er cAMP og dets produktion stimuleres af adrenalin.
 
 Visse planter indgår i symbiose med nitratfikserende bakterier. Planten optager bakterier i såkaldte noduler, hvor bakterierne varetager opgaven at fiksere dinitrogen (N~2~) fra atmosfærisk luft til ammoniak (NH~4~^+^) som planten kan bruge til cellulære processer såsom aminosyresyntese. Til gengæld lever bakterierne beskyttet i nodulerne hvor de også forsynes med produkter fra plantens photosyntese som energikilde. For at planten optager bakterierne, genkendes sukkermolekyler placeret bakteriernes overflader.
 
-1.  Hvordan genkendes disse sukkermolekyler og hvorfor er det vigtigt at denne genkendelse er specifik?
+### Beskriv sukkermolekylernes genkendelse
 
-2.  Et forskerhold har identificeret nogle mulige signalmolekyler, som ses forneden - hvor er det mest sandsynligt at finde den specifikke receptor til disse to signaler og hvorfor?
+Hvordan genkendes disse sukkermolekyler og hvorfor er det vigtigt at denne genkendelse er specifik?
+
+### Find receptor for signalmolekylerne
+
+Et forskerhold har identificeret nogle mulige signalmolekyler, som ses forneden - hvor er det mest sandsynligt at finde den specifikke receptor til disse to signaler og hvorfor?
 
 ![](media/image96.png){width="1.3388429571303586in" height="0.8912642169728784in"} ![Penta-N-acetylchitopentaose ≥95% \| 36467-68-2](media/image97.png){width="2.4786329833770777in" height="1.8716699475065617in"}\
 Figur 1
 
 Den ekstracellulære del af LysM receptorer binder kulhydrat signalmolekyler og disse ectodomæner er opbygget af tre LysM moduler adskilt af svovlbroer. Ved hjælp af røntgenkrystallografi er strukturen af CERK1 ectodomænet fra *Arabidopsis* blevet bestemt i kompleks med liganden chitin (PDB-ID: 4EBZ). 
 
-3.  Undersøg strukturen af CERK1 i PyMOL og definer de tre bindingsdomæner (LysM1, LysM2 og LysM3) ud fra svovlbroerne og kald scenen F1. Vis svovlbroerne tydeligt. Undersøg receptoren og ligand-bindingsstedet og identificer CERK1's posttranskriptionelle modifikationer.
+### Vis CERK1-domæner i PyMOL
 
-4.  Hvordan genkender CERK1 chitin liganden specifikt? Undersøg desuden om der er vandmolekyler, der kan tænkes at interagere med både ligand og protein. Lav en scene, kaldet F2, der viser dette. Hint: brug ikke remove solvent, da vand også er en vigtig interaktion. Evt. bruge remove solvent til H2O, der ikke er involveret i interaktion med remove solvent and not resi X+..+X
+Undersøg strukturen af CERK1 i PyMOL og definer de tre bindingsdomæner (LysM1, LysM2 og LysM3) ud fra svovlbroerne og kald scenen F1. Vis svovlbroerne tydeligt. Undersøg receptoren og ligand-bindingsstedet og identificer CERK1's posttranskriptionelle modifikationer.
+
+### Analysér chitinbinding i CERK1
+
+Hvordan genkender CERK1 chitin liganden specifikt? Undersøg desuden om der er vandmolekyler, der kan tænkes at interagere med både ligand og protein. Lav en scene, kaldet F2, der viser dette. Hint: brug ikke remove solvent, da vand også er en vigtig interaktion. Evt. bruge remove solvent til H2O, der ikke er involveret i interaktion med remove solvent and not resi X+..+X
 
 Den homologe receptor CERK6 fra planten *Lotus* er ligeledes bestemt dog uden chitin ligand (PDB: 5LS2). For at forstå om CERK6 genkender chitin på samme måde og med samme bindingsdomæne som CERK1 sammenlignes de to strukturer.
 
-5.  Align de to receptorer og undersøg om CERK6 har plads sterisk til at binde chitin i det samme bindingsdomæne (LysM2) som CERK1. Vis dette med en scene kaldet F3.
+### Sammenlign chitin-bindingssted
+
+Align de to receptorer og undersøg om CERK6 har plads sterisk til at binde chitin i det samme bindingsdomæne (LysM2) som CERK1. Vis dette med en scene kaldet F3.
 
 Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I LysM1 muteres I79W og i LysM2 muteres I141W og det observeres at kun mutationen I79W ødelægger signalering i planter.
 
-<!-- ![](media/image98.emf){width="4.333421916010499in" height="1.0028794838145232in"}\ -->
-<!-- Figur 2: Aminosyrene der definerer grænserne mellem domænerne er vist. TJ=transmembrane og juxa-membrane domæner. KD = kinase domæne -->
+![Aminosyrene der definerer grænserne mellem domænerne er vist. TJ=transmembrane og juxa-membrane domæner.KD = kinase domæne](media/image98.png){width="80%" .lightbox fig-align="center"}
 
-6.  Forudse ud fra strukturen af CERK6 hvad effekten af de to mutationer vil have på ligandbinding og forklar hvorfor kan disse mutanter bruges til at forstå hvor liganden binder? *Bonusopgave: prøv at bruge Wizard->Mutagenesis->Protein til at undersøge punktmutationens i strukturen.*
+### Forudsig mutationseffekt på ligandbinding
+
+Forudse ud fra strukturen af CERK6 hvad effekten af de to mutationer vil have på ligandbinding og forklar hvorfor kan disse mutanter bruges til at forstå hvor liganden binder? *Bonusopgave: prøv at bruge Wizard->Mutagenesis->Protein til at undersøge punktmutationens i strukturen.*
 
 ***PyMOL hint**: Når man bruger align er det også muligt at overlejre enkelte selektioner af et objekt. På den måde bestemmer man også hvilken del af molekylet der skal overlejret mest eksakt.*
 
-7.  Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kaldet F4, der viser chitin i LysM1 for CERK6 og undersøg om der er sterisk plads til binding af chitin her. .
+### Vis chitin i CERK6 LysM1
+
+Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kaldet F4, der viser chitin i LysM1 for CERK6 og undersøg om der er sterisk plads til binding af chitin her. .
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -87,15 +106,23 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I Lys
 
 ## Opgave 3. Beta-blokkere
 
-1.  Redegør for de enkelte trin i signalleringen gennem den G-protein koblede receptorer for adrenalin og identificer de vigtige signal amplifikationer.
+### Beskriv GPCR-signalering med amplifikation
 
-2.  Strukturen af 5'-guanosine-imidotriphosphate er vist nedenfor. Hvilken effekt vil man forvente stoffet har på muskelcellers respons på adrenalin?
+Redegør for de enkelte trin i signalleringen gennem den G-protein koblede receptorer for adrenalin og identificer de vigtige signal amplifikationer.
+
+### Forudsig GTP-analogs effekt
+
+Strukturen af 5'-guanosine-imidotriphosphate er vist nedenfor. Hvilken effekt vil man forvente stoffet har på muskelcellers respons på adrenalin?
 
 ![4](media/image101.png){width="4.625in" height="2.15625in"}
 
-3.  Lægemidlet Propranolon binder beta-adrenergicreceptoren. Hvorfor kaldes denne klasse af lægemidler populært for "beta-blokkere"?
+### Forklar beta-blokkeres navn
 
-4.  Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil ske med de intracellulære niveauer af cAMP og ATP under behandling med Propranolon.
+Lægemidlet Propranolon binder beta-adrenergicreceptoren. Hvorfor kaldes denne klasse af lægemidler populært for "beta-blokkere"?
+
+### Analysér Propranolons virkningsmekanisme
+
+Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil ske med de intracellulære niveauer af cAMP og ATP under behandling med Propranolon.
 
         Propranolon                                             Adrenalin
 
@@ -118,11 +145,17 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I Lys
 
 ## Opgave 4. Mutationer/sygdomme 
 
-1.  Forklar de generelle principper bag signaltransduktion fra receptorkinaser.
+### Beskriv receptorkinase-signalering
 
-2.  Et forskerhold har identificeret en patient med en mutation i en meget konserveret del af selve kinasedomænet på en serine-kinasereceptor. Mutationen giver en serine til aspartate substitution og gør kinasen mere aktiv. Foreslå en sandsynlig forklaring.
+Forklar de generelle principper bag signaltransduktion fra receptorkinaser.
 
-3.  Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-protein Ras. Forklare hvorfor Q61 ofte ses muteret i mange former for kræft"?
+### Fortolk aktiverende kinasemutation
+
+Et forskerhold har identificeret en patient med en mutation i en meget konserveret del af selve kinasedomænet på en serine-kinasereceptor. Mutationen giver en serine til aspartate substitution og gør kinasen mere aktiv. Foreslå en sandsynlig forklaring.
+
+### Forklar Ras Q61-mutation i kræft
+
+Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-protein Ras. Forklare hvorfor Q61 ofte ses muteret i mange former for kræft"?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -143,15 +176,23 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I Lys
 
 Ved studier af signaltransduktion via G-koblede receptorer (GPCRs) har man identificeret en receptor, GPCR-1, som binder en lille ligand og aktiverer et hetero-trimeriske G-protein.
 
-1.  Ved måling af mængden af cAMP i cellen finder man at koncentrationen stiger når liganden tilsættes. Beskriv kort de enkelte trin i signaltransduktionen, herunder hvorfor cAMP-koncentrationen stiger.
+### Beskriv cAMP-stigning via GPCR
 
-2.  Det hetero-trimeriske G-protein har ingen transmembrane domæner men alligevel finder man at både Gα og Gβγ er membranbundne. Forklar hvad der kan ligge til grund for dette.
+Ved måling af mængden af cAMP i cellen finder man at koncentrationen stiger når liganden tilsættes. Beskriv kort de enkelte trin i signaltransduktionen, herunder hvorfor cAMP-koncentrationen stiger.
 
-3.  Stoffet nedenfor mikroinjiceres dernæst i celler, som udtrykker GPCR-1 receptoren og man måler aktiviteten af Protein kinase A. Forklar hvorfor stoffet stimulerer fosforylerings-aktiviteten af Protein kinase A.
+### Forklar G-proteins membranbinding
+
+Det hetero-trimeriske G-protein har ingen transmembrane domæner men alligevel finder man at både Gα og Gβγ er membranbundne. Forklar hvad der kan ligge til grund for dette.
+
+### Forklar GTP-analogs PKA-stimulering
+
+Stoffet nedenfor mikroinjiceres dernæst i celler, som udtrykker GPCR-1 receptoren og man måler aktiviteten af Protein kinase A. Forklar hvorfor stoffet stimulerer fosforylerings-aktiviteten af Protein kinase A.
 
 ![Picture1](media/image105.png){width="4.8157895888014in" height="2.2304713473315836in"}
 
-4.  Ved mutation af konserverede serine- og theronine-rester i den C-terminale del af GPCR-1 til alanine ses en øget og længevarende receptor-signalering. Giv en forklaring på den øgede aktivitet.
+### Forklar øget signalering ved mutation
+
+Ved mutation af konserverede serine- og theronine-rester i den C-terminale del af GPCR-1 til alanine ses en øget og længevarende receptor-signalering. Giv en forklaring på den øgede aktivitet.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

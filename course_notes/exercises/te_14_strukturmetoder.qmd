@@ -6,19 +6,33 @@ title: "TØ 14 -- Strukturmetoder"
 
 Åbn først den vedhæftede fil `pymol_template.pml`, som findes i TØ mappen, i Visual Studio Code. Denne indeholder et template-script, der henter to strukturer af den bakterielle leucine transporter, LeuT til objekterne LeuT1 og LeuT2. Brug scriptet til at besvare opgaven ved at fylde jeres egne kommandoer ind under hvert spørgsmål som angivet i scriptet. Scriptet opretter i alt 8 scener lagret i F1...F8 svarende til hvert spørgsmål. I hvert spørgsmål bygges der videre på scriptet ovenfor, så I skal ikke "reinitialize" på noget tidspunkt. Når I afleverer scriptet skal hver F-tast vise svaret på det pågældende spørgsmål.
 
-1.  Vis objektet [LeuT1]{.underline} som "cartoon" med farven `lime` og sæt en orientering, der viser hele strukturen.
+### Vis LeuT1 som cartoon
 
-2.  Opret en selektion med de to Na^+^-ioner med residue-numre 751 og 752 og vis de to atomer som `sphere` med farven `violetpurple`.
+Vis objektet [LeuT1]{.underline} som "cartoon" med farven `lime` og sæt en orientering, der viser hele strukturen.
 
-3.  Fremhæv resterne 112 og 179 med `sticks` og sæt farven sådan at kun carbon er `lime` mens andre atomer har deres respektive atomfarver.
+### Selektér Na⁺-ioner som spheres
 
-4.  Angiv den korteste afstand mellem de to rester som et `measure`-objekt.
+Opret en selektion med de to Na^+^-ioner med residue-numre 751 og 752 og vis de to atomer som `sphere` med farven `violetpurple`.
 
-5.  Opret en anden selektion med alle atomer indenfor 6 Å af de to Na^+^-ioner. Vis disse som sticks hvor alle atomer ud over carbon farves efter deres respektive atomfarver. Sørg for at intet er selekteret efter scriptet er kørt.
+### Fremhæv rester 112 og 179
 
-6.  Vis også strukturen af [LeuT2]{.underline} som "cartoon" og foretag et strukturelt alignment af denne over på LeuT1.
+Fremhæv resterne 112 og 179 med `sticks` og sæt farven sådan at kun carbon er `lime` mens andre atomer har deres respektive atomfarver.
 
-7.  Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
+### Mål afstand som measure-objekt
+
+Angiv den korteste afstand mellem de to rester som et `measure`-objekt.
+
+### Vis atomer indenfor 6 Å
+
+Opret en anden selektion med alle atomer indenfor 6 Å af de to Na^+^-ioner. Vis disse som sticks hvor alle atomer ud over carbon farves efter deres respektive atomfarver. Sørg for at intet er selekteret efter scriptet er kørt.
+
+### Align LeuT2 til LeuT1
+
+Vis også strukturen af [LeuT2]{.underline} som "cartoon" og foretag et strukturelt alignment af denne over på LeuT1.
+
+### Farv LeuT2 med elektrostatik
+
+Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -31,19 +45,27 @@ Se script i svar mappen.
 
 ## Opgave 2. Bragg's lov
 
-1.  Forklar med dine egne ord hvorfor kun bestemte vinkler giver konstruktiv interferens. Brug Braggs lov (2d·sinθ = λ) til at understøtte din forklaring.
+### Forklar konstruktiv interferens
 
-2.  Hvis du har to proteinkrystaller:\
-    • Krystal A med større enhedscelle (d = 100 Å mellem proteinlag)\
-    • Krystal B med mindre enhedscelle (d = 50 Å mellem proteinlag)\
-    Hvilken krystal vil give diffraktionspletter længere fra centrum på detektoren? Forklar hvorfor.
+Forklar med dine egne ord hvorfor kun bestemte vinkler giver konstruktiv interferens. Brug Braggs lov (2d·sinθ = λ) til at understøtte din forklaring.
 
-3.  Ved en bølgelængde af røntgenstrålen λ = 1.5 Å :\
-    Hvad er den mindste d-værdi (Bragg opløsning) du kan observere hvis din detektor maksimalt kan måle ved θ = 60°?
+### Sammenlign to proteinkrystaller
 
-4.  Forklar hvorfor højere opløsning kræver:\
-    • Enten kortere bølgelængde (λ)\
-    • Eller evnen til at måle ved større vinkler (θ)
+Hvis du har to proteinkrystaller:\
+• Krystal A med større enhedscelle (d = 100 Å mellem proteinlag)\
+• Krystal B med mindre enhedscelle (d = 50 Å mellem proteinlag)\
+Hvilken krystal vil give diffraktionspletter længere fra centrum på detektoren? Forklar hvorfor.
+
+### Beregn mindste d-værdi
+
+Ved en bølgelængde af røntgenstrålen λ = 1.5 Å :\
+Hvad er den mindste d-værdi (Bragg opløsning) du kan observere hvis din detektor maksimalt kan måle ved θ = 60°?
+
+### Forklar krav til høj opløsning
+
+Forklar hvorfor højere opløsning kræver:\
+• Enten kortere bølgelængde (λ)\
+• Eller evnen til at måle ved større vinkler (θ)
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -108,9 +130,13 @@ Se script i svar mappen.
 
 For hvert scenarie nedenfor skal du:
 
-1.  **Vælge** den mest velegnede metode (Røntgenkrystallografi eller Cryo-EM).
+### Vælg den bedste metode
 
-2.  **Begrunde** dit valg ved at diskutere fordele og ulemper ved **begge** metoder i den specifikke kontekst.
+**Vælge** den mest velegnede metode (Røntgenkrystallografi eller Cryo-EM).
+
+### Begrund dit metodeval
+
+**Begrunde** dit valg ved at diskutere fordele og ulemper ved **begge** metoder i den specifikke kontekst.
 
 **Scenarie 1: Lægemiddeludvikling mod en lille, stabil protease**
 
@@ -166,10 +192,14 @@ Vi skal kigge på et lille udsnit af elektrontætheden, som kan ses ved at åb
 
 Modelbygningen er påbegyndt ved at indsætte en såkaldt poly-Ala-model i tætheden, dvs. en præliminær struktur kun bestående af den mest simple aminosyrerest med en sidekæde, alanin. Modellen kan ses som en gul stick-struktur inde i elektrontæthedskortet, der er vist kontureret med et gitter i blåt.
 
-1.  Analysér tæthedskortet og poly-Ala modellen og find peptidkædens N- og C-terminaler. Hvilke to sekundære strukturelementer er dette lille peptidmotiv opbygget af?
+### Find N- og C-terminal i tætheden
 
-2.  Kig nærmere på kortet og se om du kan identificere sidekæder, carbonylgrupper og amidnitrogener i peptidet.\
-    Hint: Dette er lettest at se ved de store sidekæder.
+Analysér tæthedskortet og poly-Ala modellen og find peptidkædens N- og C-terminaler. Hvilke to sekundære strukturelementer er dette lille peptidmotiv opbygget af?
+
+### Identificér sidekæder i kortet
+
+Kig nærmere på kortet og se om du kan identificere sidekæder, carbonylgrupper og amidnitrogener i peptidet.\
+Hint: Dette er lettest at se ved de store sidekæder.
 
 Fra det forudgående molekylærbiologiske kloningsarbejde vides det at peptidsekvensen for fragmentet er følgende:
 
@@ -177,17 +207,23 @@ MNYKELEKMLDVIFENSEIKEIDLFFD
 
 Første trin i modelbygningen er at identificere de store, hydrofobe aminosyrer i sekvensen, da disse ofte er mest ordnede og derfor lettest at finde i tætheden.
 
-3.  Hvilke store, hydrofobe aminosyrer findes i sekvensen og hvor er de placeret? Er der et motiv blandt disse, der kunne tænkes at være let at identificere i kortet?
+### Find hydrofobe aminosyrer i sekvens
 
-4.  Find motivet i elektrontæthedskortet baseret på din viden om peptidkædens retning. Passer nogle af de andre aminosyresidekæder?
+Hvilke store, hydrofobe aminosyrer findes i sekvensen og hvor er de placeret? Er der et motiv blandt disse, der kunne tænkes at være let at identificere i kortet?
+
+### Placér motivet i elektrontæthedskort
+
+Find motivet i elektrontæthedskortet baseret på din viden om peptidkædens retning. Passer nogle af de andre aminosyresidekæder?
 
 ***PyMOL hint**: Man kan bruge wizard mutagensis for at redigere på aminosyrer i en peptidkæde. Det kan bruges f.eks. når man skal vurdere effekten af en mutation. Her er det selvfølgelig vigtigt at notere til at proteinet ikke altid vil folde sig præcis på samme måde med en mutation som i vildtypen. Det kan altså kun bruge kvalitativt.\
 Man trykker på protein under Wizard > mutagenesis, so ses på figuren forneden til venstre, hvorefter menuen på figuren forneden til højre vises. Man selekterer så en enkelt aminosyre, trykker "No mutation" og trykker så på den ønskede aminosyre. For hver aminosyre bruger man undermenuen rotamer > backbone dependant rotamer. Man trykker så på pilene og går igennem de forskellige konformationer. Når man har fundet en der passer ift. elektrondensitetet. En rød skive indikerer sterisk clash og en grøn skive indikerer stabiliserende interaktioner. Når du har fundet den rigtige, trykker du apply. Et godt tip for at spare tid er at indsætte én aminosyretype ad gangen og at starte med større hydrophobe aminosyrer og derefter større hydrofile aminosyrer. Tryk done når du har ændret alle aminosyrer.*\
 \
 ![](media/image69.png){width="5.936679790026247in" height="3.3984962817147855in"}
 
-5.  Kig alle aminosyreresterne igennem og find nogle, der ikke passer så godt i tætheden. Er der en fejl i sekvensen eller hvad kan dette mon skyldes?\
-    Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
+### Vurdér alle aminosyreresternes fit
+
+Kig alle aminosyreresterne igennem og find nogle, der ikke passer så godt i tætheden. Er der en fejl i sekvensen eller hvad kan dette mon skyldes?\
+Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

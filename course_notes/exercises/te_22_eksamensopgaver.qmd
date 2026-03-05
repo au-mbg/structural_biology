@@ -181,7 +181,7 @@ Selektion og efterfølgende sekventering af de udvalgte molekyler resulterede i 
 
 Svar: Strukturen består af en stem og 3 hairpins og danner en 4-way junction. De 3 hairpins har tetraloop. Hairpin 2 har G bulge. Hairpin 3 har asymmetrisk bulge med 3 nukleotider på 5' side og 2 nukleotider på 3' side.
 
-<!-- ![](media/image122.emf){width="5.763888888888889in" height="2.5430555555555556in"} -->
+![](media/image122.png){width="80%" .lightbox fig-align="center"}
 
 Højre side af figuren herover viser resultatet af et forsøg, hvor fluorescensen fra Spinach-DFHBI komplekset måltes som funktion af Mg^2+^-koncentrationen.
 

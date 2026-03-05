@@ -6,13 +6,21 @@ title: "TØ 7 -- Nukleinsyrestruktur 2"
 
 Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Åben pml filen **RNA-protein.pml, der findes under denne uge i Brightspace**. Tryk **F1** for at se TAR hårnål og **F2** for at se binding til Tat proteinet. Tryk **F3** for at se kink-turn motivet og **F4** for at se binding til L7 proteinet.
 
-1.  Tryk **F1**. Beskriv udfra Leontis-Westhof basepar klassifikationen (Liljas tabel 5.2) de basepar interaktioner, der er markeret med grøn på TAR hairpin.
+### Beskriv basepar i TAR hårnål
 
-2.  Tryk **F2**. Bestem hvilken groove (deep eller shallow) af TAR hårnål som Tat proteinet binder i.
+Tryk **F1**. Beskriv udfra Leontis-Westhof basepar klassifikationen (Liljas tabel 5.2) de basepar interaktioner, der er markeret med grøn på TAR hairpin.
 
-3.  Tryk **F3**. Beskriv udfra Leontis-Westhof basepar klassifikationen de non-Watson-Crick basepar, der er markeret med grøn på kink-turn motivet.
+### Find groove for Tat-binding
 
-4.  Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som L7 proteinet binder i.
+Tryk **F2**. Bestem hvilken groove (deep eller shallow) af TAR hårnål som Tat proteinet binder i.
+
+### Beskriv basepar i kink-turn motivet
+
+Tryk **F3**. Beskriv udfra Leontis-Westhof basepar klassifikationen de non-Watson-Crick basepar, der er markeret med grøn på kink-turn motivet.
+
+### Find groove for L7-binding
+
+Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som L7 proteinet binder i.
 
 ***PyMOL hint:** For at identificere deep eller shallow groove af en RNA-dobbelthelix selekteres et WC-basepar med henblik på nærmere undersøgelse. For at zoome ind på et basepar vælges det først med musen og herefter bruges kommandoen **[zoom](https://www.pymolwiki.org/index.php/Zoom)** f.eks. zoom sele. Dernæst kan andre elementer fjernes med hide (not sele). Alternativt kan du bruge musehjul til at justere clipping plane omkring din selektion. Deep eller shallow groove kan nu identificeres på baseparret vha. placeringen af beta-glykosid-bindingerne. Du kan så trykke funktionstast for at komme tilbage til udgangspunktet.*
 
@@ -35,21 +43,33 @@ Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Åben pm
 
 tRNA har en kompleks tertiær struktur med mange non-Watson-Crick basepar. Her skal vi kigge på et par af disse non-Watson-Crick basepar og hvordan tRNA bindes af sin syntetase. Åben pml scriptet **tRNA.pml** i PyMOL. **F1** viser tRNA-molekylet i cartoon-repræsentation med bundne Mg^2+^ og Mn^2+^ ioner.
 
-1.  **F2** viser et basepar i T-loop. Hvordan beskrives denne type basepar interaktion ifgl. Leontis-Westhof basepar klassifikationen?
+### Beskriv basepar i T-loop
 
-2.  **F3** viser pseudoknot baseparret G19-C56. Hvilke standard parametre for den relative orientation af baser (Liljas Fig. 5.16) beskriver bedst dette basepar?
+**F2** viser et basepar i T-loop. Hvordan beskrives denne type basepar interaktion ifgl. Leontis-Westhof basepar klassifikationen?
 
-3.  **F4** viser en base triple af C13:G22/G46. Hvilken interaktion dannes mellem de to G baser (brug Leontis-Westhof)? Hvordan er G46 modificeret?
+### Beskriv pseudoknot baseparret G19-C56
 
-4.  **F5** viser tRNA-Gln syntetase (PDB-ID: 1GTR). Hvilke dele af tRNAet interagerer base-specifikt med syntetasen? Brug nedenstående PyMOL info til at finde interaktioner mellem tRNA og syntetasen. Vis DNA helix som "lines" og undersøg nu hvor baser er involveret i hydrogenbindinger til proteinet.
+**F3** viser pseudoknot baseparret G19-C56. Hvilke standard parametre for den relative orientation af baser (Liljas Fig. 5.16) beskriver bedst dette basepar?
+
+### Beskriv base triple og G46 modifikation
+
+**F4** viser en base triple af C13:G22/G46. Hvilken interaktion dannes mellem de to G baser (brug Leontis-Westhof)? Hvordan er G46 modificeret?
+
+### Find base-specifikke interaktioner med syntetasen
+
+**F5** viser tRNA-Gln syntetase (PDB-ID: 1GTR). Hvilke dele af tRNAet interagerer base-specifikt med syntetasen? Brug nedenstående PyMOL info til at finde interaktioner mellem tRNA og syntetasen. Vis DNA helix som "lines" og undersøg nu hvor baser er involveret i hydrogenbindinger til proteinet.
 
 ***PyMOL info**: Under Actions findes en funktion kaldet "find", der gør det muligt at finde interaktioner mellem objekter og/eller selektioner. Funktionen har to undermenuer, men vi vil fokusere på undermenuen "polar contacts". Under "polar contacts" er der mange forskellige muligheder for at inkludere eller ekskludere interaktioner med f.eks. solvent, sidekæder og mainchain. De vigtigste at kende er dem markeret med en rød firkant på billedet forneden. I nogle situationer vil andre dog være bedre, så man må prøve sig frem, for at finde ud af hvilken funktion, der er bedst i den givne situation. Dette er den manuelle måde at gøre det samme, som det man kan med distance-kommandoen.\
 \*
 ![](media/image24.png){width="4.623655949256343in" height="3.107879483814523in"}
 
-5.  Identificer aminosyrer der binder til midterste position i anticodon (position 35). Hint: Selektér residue U35 og brug den "find"-funktion, der bedst viser interaktionerne mellem base og protein. Alternativt bruges dist funktionen, der blev introduceret i TØ6 opgave 7. Identificer nu interaktions-partnere. Hint: Gøres lettest ved at vise protein som "lines" og zoome ind på U35.
+### Identificer aminosyrer der binder position 35
 
-6.  Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
+Identificer aminosyrer der binder til midterste position i anticodon (position 35). Hint: Selektér residue U35 og brug den "find"-funktion, der bedst viser interaktionerne mellem base og protein. Alternativt bruges dist funktionen, der blev introduceret i TØ6 opgave 7. Identificer nu interaktions-partnere. Hint: Gøres lettest ved at vise protein som "lines" og zoome ind på U35.
+
+### Forklar ATP-molekylets rolle
+
+Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -76,25 +96,35 @@ tRNA har en kompleks tertiær struktur med mange non-Watson-Crick basepar. Her s
 
 ![5S rRNA 1](media/image25.png){width="6.263888888888889in" height="2.4743055555555555in"}
 
-1.  Beskriv de navngivne elementer i den sekundære struktur for 5S rRNA med angivelse af bulge-, loop- og junction-typer.
+### Beskriv sekundærstrukturelementerne i 5S rRNA
+
+Beskriv de navngivne elementer i den sekundære struktur for 5S rRNA med angivelse af bulge-, loop- og junction-typer.
 
 Loop E-motivet bindes af det ribosomale protein L25 og strukturen af komplekset er blevet bestemt med NMR. Åben scriptet **LoopE-L25.pml** i PyMOL. **F1** viser komplekset vist i cartoon-repræsentation, hvor et udvidet loop E-motiv er markeret i gul.
 
-2.  Beskriv hvilke protein-strukturelementer i L25, der interagerer med RNA-dobbelthelicen og i hvilke grooves. Hint: For at finde grooves skal man ikke kigge på loop E motivet (markeret i gul), men derimod på den mere regulære helix (markeret i blå), så man kan se hvad der er deep og shallow groove inde i loop E motivet.
+### Beskriv L25-protein interaktion med RNA
+
+Beskriv hvilke protein-strukturelementer i L25, der interagerer med RNA-dobbelthelicen og i hvilke grooves. Hint: For at finde grooves skal man ikke kigge på loop E motivet (markeret i gul), men derimod på den mere regulære helix (markeret i blå), så man kan se hvad der er deep og shallow groove inde i loop E motivet.
 
 **F2-F8 **viser de 7 non-Watson-Crick basepar i Loop E motivet.
 
-3.  Beskriv de tre non-Watson-Crick basepar der vises i **F2**, **F3** og **F8 **ihht. Leontis-Westhof-basepar klassifikationen.
+### Beskriv tre non-Watson-Crick basepar
+
+Beskriv de tre non-Watson-Crick basepar der vises i **F2**, **F3** og **F8 **ihht. Leontis-Westhof-basepar klassifikationen.
 
 Tryk **F9** for at se RNA-dobbelthelixen vist som kuglemodel, hvor H-bindingsacceptorer farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule. Proteinet kan fjernes ved at trykke **F10**.
 
 ![](media/image26.png){width="1.9525054680664917in" height="5.858803587051619in"}
 
-4.  Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i forhold til en normal A-form RNA helix (se ovenstående billede)? Hvordan adskiller mønsteret af H-bindingsdonorer og -acceptorer ved bindingsstedet i shallow groove fra en normal A-form RNA helix (farvekode: blå=donor, rød=acceptor, gul=non-bindende H)?
+### Sammenlign groove med normal A-form RNA
+
+Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i forhold til en normal A-form RNA helix (se ovenstående billede)? Hvordan adskiller mønsteret af H-bindingsdonorer og -acceptorer ved bindingsstedet i shallow groove fra en normal A-form RNA helix (farvekode: blå=donor, rød=acceptor, gul=non-bindende H)?
 
 **F11** viser de L25 aminosyrer i beta sheet, der H-binder til et centralt non-Watson-Crick basepar (G275-A301) i shallow groove af loop E. **F12** viser de L25 aminosyrer i alfa-helix, der H-binder til et centralt Watson-Crick basepar (G279-C297) i deep groove.
 
-5.  Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** og **F12**. Svaret skal indeholde angivelse af interaktioner til specifikke atomer på baseparret. Hvilke interaktioner bidrager generelt til sekvensspecifik binding af RNA-bindende proteiner?
+### Beskriv H-bindinger fra L25 aminosyrer
+
+Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** og **F12**. Svaret skal indeholde angivelse af interaktioner til specifikke atomer på baseparret. Hvilke interaktioner bidrager generelt til sekvensspecifik binding af RNA-bindende proteiner?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -136,13 +166,21 @@ Cas9-proteinet binder til et guide RNA, som dirigerer komplekset til binding af 
 
 Åben scriptet **CRISPR.pml** i PyMOL og svar på følgende spørgsmål:
 
-1.  Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix type danner DNA-RNA-hybriden?
+### Find guide RNA hairpins og helixtype
 
-2.  **F2** viser proteinet, hvor RuvC-domænet er cyan, REC-domænet grå, HNH-domænet lyserød, PI-domænet brun, og DNA-strengen rød. Beskriv hvilke protein-domæner der er i kontakt med hairpinet, der involverer nukleotiderne 82-96.
+Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix type danner DNA-RNA-hybriden?
 
-3.  **F3** zoomer ind på det kunstigt indsatte GAAA tetra-loop og viser H-bindinger mellem residue 33 og 36. Hvilken type non-Watson-Crick basepar dannes af nukleotid 33 og 36?
+### Find domæner i kontakt med hairpin
 
-4.  **F4** viser den del af recognition (REC) domænet, der binder til RNA hairpin. **F5** viser RECs interaktion med baser i deep groove og **F6** viser RECs interaktion med baser i shallow groove af RNA helix. Beskriv de specifikke hydrogenbindings-interaktioner mellem baser og aminosyrer.
+**F2** viser proteinet, hvor RuvC-domænet er cyan, REC-domænet grå, HNH-domænet lyserød, PI-domænet brun, og DNA-strengen rød. Beskriv hvilke protein-domæner der er i kontakt med hairpinet, der involverer nukleotiderne 82-96.
+
+### Identificer basepar ved nukleotid 33-36
+
+**F3** zoomer ind på det kunstigt indsatte GAAA tetra-loop og viser H-bindinger mellem residue 33 og 36. Hvilken type non-Watson-Crick basepar dannes af nukleotid 33 og 36?
+
+### Beskriv REC-domænets hydrogenbindinger
+
+**F4** viser den del af recognition (REC) domænet, der binder til RNA hairpin. **F5** viser RECs interaktion med baser i deep groove og **F6** viser RECs interaktion med baser i shallow groove af RNA helix. Beskriv de specifikke hydrogenbindings-interaktioner mellem baser og aminosyrer.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -166,26 +204,36 @@ Cas9-proteinet binder til et guide RNA, som dirigerer komplekset til binding af 
 
 Ago (PDB-ID: 3HK2) er en kerne-komponent i RNA-induceret silencing kompleks (RISC) og har en essentiel rolle i guide-streng-medieret target RNA genkendelse, kløvning og produkt-frigørelse. Ago består af domænerne PAZ, Mid og PIWI. PIWI-domænet har RNase-aktivitet, Mid-domænet binder 5'-fosfat af guide-streng, mens PAZ-domænet genkender et 2-nukleotid overhæng i 3'-enden af guide-strengen. Opgaven er baseret på informationer fra den oprindelige artikel ([**Wang-2009**](https://www.nature.com/articles/nature08434)). Se desuden Berg Biochemistry, udgave 10, side 294-295 for en beskrivelse af RNA interferens og side 971-972 for en beskrivelse af Ago.
 
-1.  Lav et PyMOL script der gør følgende:
+### Lav PyMOL-script til Ago-analyse
 
-    a.  Henter Ago. Hint: Brug "fetch 3HK2, type=pdb1, async=0" for at hente `the biological assembly`. Læs mere her: [https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies\
-        ](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies)
+Lav et PyMOL script der gør følgende:
 
-    b.  Farver, RNA, DNA, og Ago's 4 domæner (N-domæne: rest 1-100, PAZ-domæne: rest 177-272, Mid-domæne: rest 338-464, PIWI-domæne: rest 464-685) i forskellige farver. Gem det som scene **F1**. Hint: Find DNA strengen ved at finde strengen, der indeholder T.
+a.  Henter Ago. Hint: Brug "fetch 3HK2, type=pdb1, async=0" for at hente `the biological assembly`. Læs mere her: [https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies\
+    ](https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/biological-assemblies)
 
-    c.  Lav en ny scene, der viser interaktionerne mellem Ago og 5'-T på DNA-strengen. Gem det som scene **F2**.
+b.  Farver, RNA, DNA, og Ago's 4 domæner (N-domæne: rest 1-100, PAZ-domæne: rest 177-272, Mid-domæne: rest 338-464, PIWI-domæne: rest 464-685) i forskellige farver. Gem det som scene **F1**. Hint: Find DNA strengen ved at finde strengen, der indeholder T.
 
-    d.  Lav en ny scene, der viser hydrogenbindinger mellem Ago og DNA/RNA-strengen. Gem det som scene **F3**.
+c.  Lav en ny scene, der viser interaktionerne mellem Ago og 5'-T på DNA-strengen. Gem det som scene **F2**.
+
+d.  Lav en ny scene, der viser hydrogenbindinger mellem Ago og DNA/RNA-strengen. Gem det som scene **F3**.
 
 Brug nu dit script til at svare på følgende spørgsmål:
 
-2.  Tryk **F1**. Hvilket domæne binder 5'-T på DNA-strengen?
+### Find domæne der binder 5'-T
 
-3.  Er konformationen af DNA-RNA dobbelthelicen A- eller B-form?
+Tryk **F1**. Hvilket domæne binder 5'-T på DNA-strengen?
 
-4.  Tryk **F2**. Beskriv hydrogen-bindinger til de første nukleotider på DNA-strengen. Hvilken rolle spiller Mg^2+^-ion?
+### Bestem DNA-RNA helix konformation
 
-5.  Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. Hvilke domæner er involveret i bindingen? Er interaktionerne med baserne eller backbone og hvad fortæller det om bindingen?
+Er konformationen af DNA-RNA dobbelthelicen A- eller B-form?
+
+### Beskriv hydrogenbindinger til 5'-nukleotider
+
+Tryk **F2**. Beskriv hydrogen-bindinger til de første nukleotider på DNA-strengen. Hvilken rolle spiller Mg^2+^-ion?
+
+### Undersøg bindingsdomæner og specificitet
+
+Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. Hvilke domæner er involveret i bindingen? Er interaktionerne med baserne eller backbone og hvad fortæller det om bindingen?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

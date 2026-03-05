@@ -4,17 +4,25 @@ title: "TØ 17 -- Lipider og cellemembraner"
 
 ## Opgave 1. Membransammensætning
 
-1.  For to membransystemer, hvor den ene er sammensat af phospholipider med mættede acylkæder på 20 kulstofatomer og den anden af kæder af samme længde men med *cis*-dobbeltbindinger på både C-5, C-8, C-11 og C-14, hvilke forskelle i smeltetemperatur vil du så forvente?
+### Sammenlign membransmeltetemperaturer
+
+For to membransystemer, hvor den ene er sammensat af phospholipider med mættede acylkæder på 20 kulstofatomer og den anden af kæder af samme længde men med *cis*-dobbeltbindinger på både C-5, C-8, C-11 og C-14, hvilke forskelle i smeltetemperatur vil du så forvente?
 
 Bakterier med visse mutationer er ikke i stand til at syntetisere fedtsyrer og inkorporerer derfor fedtsyrer fra mediet i deres membraner.
 
-2.  Antag at du har to kulturer, der hver indeholder en blanding af forskellige typer lige-kædede fedtsyrer, nogle mættede og andre umættede og med varierende kædelængde fra 10-20 kulstofatomer. Hvis den ene kultur fastholdes ved 18°C og den anden ved 40°C over flere generationer, hvilke forskelle vil du så forvente at opleve i sammensætningen af de to kulturers cellemembraner?
+### Forudsig fedtsyresammensætning ved temperatur
 
-3.  Hopanoider er pentacykliske molekyler, der findes i bakterier og visse planter. En typisk hopanoidstruktur er vist nedenfor. Sammenlign strukturen med kolesterol.\
-    \
-    ![bacteriohopanetetrol](media/image77.png){width="3.46875in" height="2.2134831583552055in"}
+Antag at du har to kulturer, der hver indeholder en blanding af forskellige typer lige-kædede fedtsyrer, nogle mættede og andre umættede og med varierende kædelængde fra 10-20 kulstofatomer. Hvis den ene kultur fastholdes ved 18°C og den anden ved 40°C over flere generationer, hvilke forskelle vil du så forvente at opleve i sammensætningen af de to kulturers cellemembraner?
 
-4.  Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
+### Sammenlign hopanoider og kolesterol
+
+Hopanoider er pentacykliske molekyler, der findes i bakterier og visse planter. En typisk hopanoidstruktur er vist nedenfor. Sammenlign strukturen med kolesterol.\
+\
+![bacteriohopanetetrol](media/image77.png){width="3.46875in" height="2.2134831583552055in"}
+
+### Forudsig hopanoidernes membraneffekt
+
+Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -35,23 +43,35 @@ Bakterier med visse mutationer er ikke i stand til at syntetisere fedtsyrer og i
 
 Membranspændende helicer består typisk af 18 to 20 aminosyrer.
 
-1.  Beregn bredden af den hydrofobe del af cellemembranen baseret på dette.
+### Beregn hydrofob membranbredde
+
+Beregn bredden af den hydrofobe del af cellemembranen baseret på dette.
 
 Sekvensen af sådan en helix kan plottes i et såkaldt `helical wheel`, der viser positionen af hver aminosyrerest rundt om helicens akse.
 
-2.  Forklar hvilke egenskaber ved transmembrane helicer, der kan forudsiges på baggrund af et `helical wheel`-plot.
+### Fortolk helical wheel-plot
 
-3.  I eksemplet nedenfor, analysér positionen af de hydrofobe og hydrofile aminosyrerester. Hvordan stabiliseres de hydrofile sidekæder inde i membranen?
+Forklar hvilke egenskaber ved transmembrane helicer, der kan forudsiges på baggrund af et `helical wheel`-plot.
+
+### Analysér amfipatisk helix
+
+I eksemplet nedenfor, analysér positionen af de hydrofobe og hydrofile aminosyrerester. Hvordan stabiliseres de hydrofile sidekæder inde i membranen?
 
 **Ser-Val-Tyr-Asp-Ile-Leu-Glu-Arg-Phe-Asn-Glu-Thr-Met-Asn-His-Ala-Val-Ser-Gly**
 
 ![1](media/image78.png){width="5.378630796150481in" height="5.576470909886265in"}
 
-4.  Lav en scene, kaldet F1, der viser prostaglandin (PDB-ID: 1PTH). Hvilke ligander er bundet? Hvilke tror I findes i den native struktur og hvilke er produkt af krystalliseringsmetoden?
+### Vis prostaglandins ligander i PyMOL
 
-5.  Analyser den elektrostatiske overflade af prostaglandin. Lav en scene, kaldet F2, der viser dette. Hvordan er prostaglandin lokaliseret til membranen - forklar ud fra det beregnede elektrostatiske potentiale?
+Lav en scene, kaldet F1, der viser prostaglandin (PDB-ID: 1PTH). Hvilke ligander er bundet? Hvilke tror I findes i den native struktur og hvilke er produkt af krystalliseringsmetoden?
 
-6.  Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektrostatiske overflade. Hint: Lav alphahelicerne et objekt. Analyser de enkelte helicers ligesom I gjorde med helix-wheel plottet. Stemmer det overens med det forventede?
+### Analysér elektrostatisk membranlokalisering
+
+Analyser den elektrostatiske overflade af prostaglandin. Lav en scene, kaldet F2, der viser dette. Hvordan er prostaglandin lokaliseret til membranen - forklar ud fra det beregnede elektrostatiske potentiale?
+
+### Analysér TM-helicernes elektrostatik
+
+Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektrostatiske overflade. Hint: Lav alphahelicerne et objekt. Analyser de enkelte helicers ligesom I gjorde med helix-wheel plottet. Stemmer det overens med det forventede?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -80,13 +100,17 @@ Sekvensen af sådan en helix kan plottes i et såkaldt `helical wheel`, der vise
 
 ## Opgave 3. Hydropatiplot
 
-1.  Analysér nedenstående hydropatiplot for tilstedeværelse af transmembrane segmenter:\
-    \
-    ![hydropatiplot1](media/image80.png){width="5.1875in" height="2.5in"}\
-    ![hydropatiplot2](media/image81.png){width="5.125in" height="2.4375in"}\
-    ![hydropatiplot3](media/image82.png){width="5.0in" height="2.3125in"}
+### Identificér transmembrane segmenter
 
-2.  Hvilke usikkerheder ligger der i analysen?
+Analysér nedenstående hydropatiplot for tilstedeværelse af transmembrane segmenter:\
+\
+![hydropatiplot1](media/image80.png){width="5.1875in" height="2.5in"}\
+![hydropatiplot2](media/image81.png){width="5.125in" height="2.4375in"}\
+![hydropatiplot3](media/image82.png){width="5.0in" height="2.3125in"}
+
+### Vurdér analysens usikkerheder
+
+Hvilke usikkerheder ligger der i analysen?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -151,13 +175,19 @@ Hydrofobicitetsanalyse af BCRP giver desuden følgende resultat:
 
 ![2.1](media/image83.png){width="6.268055555555556in" height="2.2284722222222224in"}
 
-1.  Hvilke egenskaber af hydropatiplottet understøtter idéen om at BCRP indeholder transmembrane helicer? 
+### Identificér TM-helicer i BCRP-hydropatiplot
 
-2.  Anslå antallet og den omtrentlige placering af de transmembrane helicer i BCRP.
+Hvilke egenskaber af hydropatiplottet understøtter idéen om at BCRP indeholder transmembrane helicer? 
+
+### Anslå antal og placering af TM-helicer
+
+Anslå antallet og den omtrentlige placering af de transmembrane helicer i BCRP.
 
 ABC-transportere indeholder en såkaldt ATP-bindende kassette og benytter energien fra ATP til selve eksportprocessen.
 
-3.  Foreslå hvilken del af sekvensen ovenfor, der indeholder den ATP-bindende kassette.
+### Find ATP-bindende kassette i sekvens
+
+Foreslå hvilken del af sekvensen ovenfor, der indeholder den ATP-bindende kassette.
 
 For at forstå foldningen af membranproteinet indsatte man et peptid med sekvensen YPYDVPDYA på 12 forskellige positioner i BCRP-sekvensen. De resulterende konstrukter (samt vildtype BCRP og en negativ kontrol) blev herefter transfekteret i epithelceller og analyseret for evnen til at binde et radioaktivt mærket antistof rejst mod YPYDVPDYA-sekvensen. Resultatet af analysen er vist i tabellen nedenfor.
 
@@ -197,15 +227,21 @@ For at forstå foldningen af membranproteinet indsatte man et peptid med sekvens
 
 *Topologisk analyse af BCRP. ++ stærk, + medium og -- ingen mærkning.*    
 
-4.  Lav en skitse af BCRP som det er indlejret i cellemembranen. Er N- og C-terminalerne placeret på samme eller modsatte side af membranen?
+### Tegn BCRP-topologi i membran
 
-5.  Angiv mulige N-glykosyleringssites i sekvensen for BCRP.
+Lav en skitse af BCRP som det er indlejret i cellemembranen. Er N- og C-terminalerne placeret på samme eller modsatte side af membranen?
+
+### Angiv mulige N-glykosyleringssites
+
+Angiv mulige N-glykosyleringssites i sekvensen for BCRP.
 
 For at undersøge om BCRP er glykosyleret, muterede man desuden specifikke asparaginrester. Proteinekstrakter fra celler transfekteret med mutant BCRP blev derefter analyseret ved SDS-PAGE før og efter behandling med PNGase F. Resultatet af analysen vises nedenfor.
 
 ![2.2](media/image84.png){width="6.072222222222222in" height="3.1680555555555556in"}
 
-6.  Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
+### Fortolk glykosyleringsanalysen
+
+Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -231,7 +267,9 @@ For at undersøge om BCRP er glykosyleret, muterede man desuden specifikke aspar
 
 Enzymet 5'-nucleotidase (5'-ribonucleotide phosphohydrolase) er et glycoprotein, der findes associeret med plasmamembranen i mange celler. Enzymet kan forholdsvis let isoleres fra placenta ved brug af detergenter og har en masse på 71 kDa som bedømt med SDS-PAGE.
 
-1.  Hvilken type reaktion antyder navnet at 5'-nucleotidase udfører?
+### Beskriv 5'-nucleotidasens reaktion
+
+Hvilken type reaktion antyder navnet at 5'-nucleotidase udfører?
 
 Ved gelfiltrering af det ekstraherede enzym på Sephacryl S-300-søjle under tilstedeværelse af 0.1% Triton X-100 (en detergent), eluerer enzymet svarende til et 150 kDa protein. Uden detergent eluerer enzymet i void-volumen som vist nedenfor.
 
@@ -239,9 +277,13 @@ Ved gelfiltrering af det ekstraherede enzym på Sephacryl S-300-søjle under til
 
 *Gelfiltrering af 5'-nucleotidase med (fyldte cirkler) eller uden (hule cirkler) Triton X-100 til stede. Pilene angiver positionen af (a) thyroglobulin (670 KDa), (b) ferritin (440 KDa), (c) immunoglobulin G (160 KDa) og (d) serum albumin (68 KDa).  Vo er søjlens void-volumen.*
 
-2.  Beskriv den rolle, detergenten spiller i oprensningen.
+### Forklar detergentens rolle i oprensning
 
-3.  Hvad er den mest sandsynlige kvarternære struktur af enzymet, når det er bundet til cellemembranen?
+Beskriv den rolle, detergenten spiller i oprensningen.
+
+### Bestem kvarternær struktur
+
+Hvad er den mest sandsynlige kvarternære struktur af enzymet, når det er bundet til cellemembranen?
 
 Aminosyresekvensen af human placental 5'-nukleotidase afledt fra cDNA er vist nedenfor. Enzymet syntetiseres med et signalpeptid på 26 rester samt et stærkt hydrofobt område umiddelbart før stopkodon.
 
@@ -287,28 +329,40 @@ AVEGRIKFST GSHCHGSFSL IFLSLWAVIF VLYQ
 
 For at forstå enzymets associering med membranen blev det oprensede protein opløst i 45% myresyre og nedbrudt med CNBr i 20 timer, hvorefter reaktionsblandingen blev udrystet med hexan. Efter centrifugering observerede man tre lag, øverst et lag bestående af hexan, i bunden et lag af vandig myresyre og i interfasen mellem disse, et tyndt ugennemsigtigt lag. Dette tynde lag viste sig at indeholde et 3 kDa fragment, der efterfølgende blev behandlet med en endopeptidase specifik for lysinrester. Efter endnu en hexanekstraktion kunne man isolere et dipeptid fra interfasen.
 
-4.  Hvorfor findes 3 kDa-fragmentet og dipeptidet i interfasen mellem hexanfasen og den vandige fase?\
-    \
-    ![](media/image87.png){width="5.2647058180227475in" height="4.072103018372704in"}
+### Forklar interfaselokalisering
+
+Hvorfor findes 3 kDa-fragmentet og dipeptidet i interfasen mellem hexanfasen og den vandige fase?\
+\
+![](media/image87.png){width="5.2647058180227475in" height="4.072103018372704in"}
 
 ```sh
 ![](media/image88.png){width="5.617646544181977in" height="4.956792432195975in"}
 ```
 Aminosyresekvensen af CNBr-fragmentet og dipeptidet kan ses i Tabel 1 nedenfor mens sammensætningen af fragmenterne er vist i Tabel 2. Begge fragmenter indeholder et komplekst glykolipid og udover komponenterne listet i tabellerne indeholder fragmenterne også glycerol og phosphat. Glykosamine var desuden på formen N-acetyl glukosamine.
 
-5.  Lokalisér 3 kDa-fragmentet og dipeptidet i aminosyresekvensen. Hvilken rest udgør C-terminalen i det modne enzym?\
-     
+### Lokalisér fragmenter i sekvensen
 
-6.  Hvilken aminosyrerest er kovalent bundet til glykolipidet?\
-     
+Lokalisér 3 kDa-fragmentet og dipeptidet i aminosyresekvensen. Hvilken rest udgør C-terminalen i det modne enzym?\
+ 
 
-7.  Enzymet kan frigøres fra membranen ved behandling med en inositolspecifik phospholipase C. Hvordan kunne man forestille sig at det er forankret til membranen?\
-     
+### Find glykolipid-bindingsrest
 
-8.  Foreslå hvordan det hydrofobe område nær C-terminalen kan være involveret modifikation af enzymet. Hvor i cellen finder denne modifikation sted?\
-     
+Hvilken aminosyrerest er kovalent bundet til glykolipidet?\
+ 
 
-9.  På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mulige, biologiske roller for enzymet.
+### Identificér GPI-membrananker
+
+Enzymet kan frigøres fra membranen ved behandling med en inositolspecifik phospholipase C. Hvordan kunne man forestille sig at det er forankret til membranen?\
+ 
+
+### Beskriv GPI-ankermodifikation
+
+Foreslå hvordan det hydrofobe område nær C-terminalen kan være involveret modifikation af enzymet. Hvor i cellen finder denne modifikation sted?\
+ 
+
+### Bestem enzymets membranlokalisering
+
+På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mulige, biologiske roller for enzymet.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

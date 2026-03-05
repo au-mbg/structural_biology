@@ -76,9 +76,13 @@ Det ville kun være tilfældet hvis mutationerne var uafhængige af hinanden (ad
 
 Restriktionsendonukleaser (RE) er temmelig sløve enzymer med en *k*~cat~ på ca. 1 s^-1^. Hvis man øgede *k*~cat~ til ca. 10^6^ s^-1^, ville de blive endnu hurtigere end methylaser.
 
-1.  Ville det være godt eller skidt for værtscellen?
+### Vurder effekt af øget k_cat i RE
 
-2.  Hvad kunne der ske hvis et bakterium erhvervede en helt ny RE ved f.eks overførsel fra en anden bakterie art?
+Ville det være godt eller skidt for værtscellen?
+
+### Forudsig effekt af ny restriktionsenzym
+
+Hvad kunne der ske hvis et bakterium erhvervede en helt ny RE ved f.eks overførsel fra en anden bakterie art?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -108,7 +112,9 @@ Det binder divalente metal-ioner som Zn^2+^, Ca^2+^ og Mg^2+^ med meget høj a
 
 Gennem de sidste ca. 50-70 år er der sket en kolossal ophobning af syntetisk fremstillet plastik som affald i naturen. Noget af dette affald graves ned, andet brændes af. En stor del spredes dog i naturen, hvor det langsomt bliver fysisk nedbrudt til mindre partikler. Der finder meget lidt enzym-drevet nedbrydning af plastik sted. Strukturerne af de mest udbredte klasser af plastik er vist nedenunder. ![](media/image56.jpeg){width="6.44375in" height="3.1479166666666667in"}
 
-1.  Ud fra et kemisk perspektiv, hvorfor er det en udfordring for enzymer at nedbryde disse stoffer? Hvilke stofgrupper må forventes at være hhv. sværest og lettest at nedbryde og hvorfor?
+### Analyser kemiske udfordringer ved plastik-nedbrydning
+
+Ud fra et kemisk perspektiv, hvorfor er det en udfordring for enzymer at nedbryde disse stoffer? Hvilke stofgrupper må forventes at være hhv. sværest og lettest at nedbryde og hvorfor?
 
 Der er ikke desto mindre identificeret forskellige enzymer der (om end langsomt) nedbryder forskellige typer plastik. Nogle af disse produceres af mikroorganismer der vokser på en losseplads for primært PET-plastik. Et enzym (PETase) nedbryder PET til MHET, mens et andet enzym (en MHETase) nedbryder MHET til PTA og EG (se reaktionsskema nedenfor).
 
@@ -120,11 +126,15 @@ Strukturen af MHETase løses i nærvær af stoffet benzoat (se nedenfor).
 
 Det aktive site i MHETase virker ligesom flere proteaser mm. gennem en såkaldt katalytisk triade bestående af en histidin-, en aspartat- og en serin-rest. Skriv et kort script, der henter MHETase (PDB-ID: 6QGA) og PETase (PDB-ID: 5XH3) og fjerner overskydende versioner af proteinerne. Align de to strukturer med super.
 
-2.  ![](media/image59.jpeg){width="2.7159722222222222in" height="1.9479166666666667in"}Beskriv forskellen mellem de to strukturer, find det aktive site og kom med et bud på, hvorfor MHETasen har et domæne som PETasen ikke har, når det oplyses at MHETasen har en meget lav *k*~cat~.
+### Sammenlign MHETase og PETase i PyMOL
+
+![](media/image59.jpeg){width="2.7159722222222222in" height="1.9479166666666667in"}Beskriv forskellen mellem de to strukturer, find det aktive site og kom med et bud på, hvorfor MHETasen har et domæne som PETasen ikke har, når det oplyses at MHETasen har en meget lav *k*~cat~.
 
 Man fremstiller nu et hybridenzym bestående af en MHETase og en PETase forbundet med en 8-aminosyrerest linker. Dets evne til at danne TPA udfra PET måles og sammenlignes med (1) PETasen alene og (2) PETasen sammen med MHETasen (i forholdet 1:1). Det giver følgende resultat:
 
-3.  Forklar de tre enzymers forskellige aktivitetsniveauer.
+### Forklar hybridenzymets aktivitetsniveauer
+
+Forklar de tre enzymers forskellige aktivitetsniveauer.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -161,23 +171,31 @@ Test jeres udvidelse på nogle strukturer I ved indeholde en katalytisk triade b
 
 PyMOL er, som du sikkert ved, et python-baseret program og derfor er det ikke overraskende, at der eksisterer en indbygget [API](https://da.wikipedia.org/wiki/Application_programming_interface) (Application Programming Interface) i PyMOL til Python. Dette gør, at man kan skrive avancerede udvidelser af PyMOL, der benytter sig af alle Pythons funktioner. Man kan køre en python-fil fra PyMOL ved at sørge for at have python-filen i *working directory.* F.eks. kan filen python_fil.py, der ligger i mappen "slangefiler" køres ved først at skifte directory med kommandoen: **cd** users\\jens_jensen\\slangefiler\\ og dernæst skrive: run python_fil.py i PyMOLs kommandolinje. Nedenfor er en step-by-step guide, der kan hjælpe dig igennem opgaven.
 
-1.  Opret en ny python fil (.py), som du kan skrive i.
+### Opret Python-fil til PyMOL-udvidelse
 
-2.  Import PyMOL-APIen til Python: from pymol import cmd
+Opret en ny python fil (.py), som du kan skrive i.
 
-3.  Lav en ny kommando til PyMOL ved hjælp af `@cmd.extend` efterfulgt af en definering af en funktion på efterfølgende linjer:\
-    def min_pymol_funktion(selection='all'):\
-    Her indstilles ét argument (en parameter), som funktionen kaldes med, ved navn "selection". DEFAULT-argumentet indstilles ved at sætte argumentet lig en streng -- i dette tilfælde "all". Ideen er, at hvis man [ikke skriver en selektion efter kommandoen]{.underline} vil den blot lede gennem alle aminosyrer i strukturen, fordi det udeladte argument betragtes som "all".
+### Importér PyMOL API i Python
 
-4.  Som det første i funktionen bør der laves et såkaldt "space", hvor PyMOL kan tilgå data fra programmet. I praksis er dette blot et dictionary/et bibliotek. Heri kan oprettes lister, f.eks.: my_space={'asp_list':\[\],'his_list\_':\[\]} osv.\
-    Mange af PyMOLs API funktioner kan direkte tilgå disse dictionaries, som det også ses nedenfor.
+Import PyMOL-APIen til Python: from pymol import cmd
 
-5.  For at gå gennem atomer i strukturen kan PyMOL-kommandoen [iterate](https://pymolwiki.org/index.php/Iterate) benyttes. Denne kaldes i python ved at skrive: cmd.iterate(). Iterate funktionen itererer gennem alle atomer i strukturen og kører dernæst en kommando for alle de atomer, der er indeholdt i en selektion, som er første argument i funktionskaldet. I dette tilfælde vil vi gerne have numrene på alle Asp, His og Ser-rester **i selektionen** ("...({})".format(selection)), men kun én gang pr. aminosyrerest, hvorfor vi kun kigger på carbon-alpha (name CA):\
-    cmd.iterate("resn Asp and name CA and ({})".format(selection), "asp_list.append(resi)",space=my_space)
+### Definer ny PyMOL-kommando
+
+Lav en ny kommando til PyMOL ved hjælp af `@cmd.extend` efterfulgt af en definering af en funktion på efterfølgende linjer: def min_pymol_funktion(selection='all'): Her indstilles ét argument (en parameter), som funktionen kaldes med, ved navn "selection". DEFAULT-argumentet indstilles ved at sætte argumentet lig en streng -- i dette tilfælde "all". Ideen er, at hvis man [ikke skriver en selektion efter kommandoen]{.underline} vil den blot lede gennem alle aminosyrer i strukturen, fordi det udeladte argument betragtes som "all".
+
+### Opret space-dictionary i PyMOL
+
+Som det første i funktionen bør der laves et såkaldt "space", hvor PyMOL kan tilgå data fra programmet. I praksis er dette blot et dictionary/et bibliotek. Heri kan oprettes lister, f.eks.: my_space={'asp_list':\[\],'his_list\_':\[\]} osv. Mange af PyMOLs API funktioner kan direkte tilgå disse dictionaries, som det også ses nedenfor.
+
+### Brug iterate til at liste aminosyrer
+
+For at gå gennem atomer i strukturen kan PyMOL-kommandoen [iterate](https://pymolwiki.org/index.php/Iterate) benyttes. Denne kaldes i python ved at skrive: cmd.iterate(). Iterate funktionen itererer gennem alle atomer i strukturen og kører dernæst en kommando for alle de atomer, der er indeholdt i en selektion, som er første argument i funktionskaldet. I dette tilfælde vil vi gerne have numrene på alle Asp, His og Ser-rester **i selektionen** ("...({})".format(selection)), men kun én gang pr. aminosyrerest, hvorfor vi kun kigger på carbon-alpha (name CA): cmd.iterate("resn Asp and name CA and ({})".format(selection), "asp_list.append(resi)",space=my_space)
 
 Læg mærke til, at kommandoer fra APIen ofte kræver strenge svarende til, hvad man ville skrive i PyMOLs kommandolinje som argumenter. Dette gør pythons indbyggede .format funktion særdeles brugbar, da den tillader at indsætte variable i strenge. space viser, hvor "asp_list" findes, nemlig i vores dictionary/space.
 
-6.  Nu skal vi finde de trioer, der er tæt nok på hinanden til potentielt at være en katalytisk triade. Fordi vi er i Python kan vi benytte et ganske almindeligt for-loop til at iterere gennem de relevante lister. Herefter kan [cmd.get_distance(...)](https://pymolwiki.org/index.php/Get_Distance) benyttes til at finde afstanden mellem to atomer i spidsen af aminosyreresterne (husk, at du kan indsætte i strenge med .format). Hvis get_distance(..) giver en distance (i Ångstrøm), der er under en tærskelværdi, tilføjes nummeret til en ny liste. Til sidst kan alle potentielle tripletter af aminosyrer returneres.
+### Find katalytiske triader med afstandsberegning
+
+Nu skal vi finde de trioer, der er tæt nok på hinanden til potentielt at være en katalytisk triade. Fordi vi er i Python kan vi benytte et ganske almindeligt for-loop til at iterere gennem de relevante lister. Herefter kan [cmd.get_distance(...)](https://pymolwiki.org/index.php/Get_Distance) benyttes til at finde afstanden mellem to atomer i spidsen af aminosyreresterne (husk, at du kan indsætte i strenge med .format). Hvis get_distance(..) giver en distance (i Ångstrøm), der er under en tærskelværdi, tilføjes nummeret til en ny liste. Til sidst kan alle potentielle tripletter af aminosyrer returneres.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

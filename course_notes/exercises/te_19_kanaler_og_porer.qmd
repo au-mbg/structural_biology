@@ -10,24 +10,36 @@ ATP Binding Cassette (ABC)-transportere bruges til næringsimport i bakterier og
 
 For at vise konformationerne af ABC-transporteren kan man bruge Multidrug resistance protein 1a MRP1a (PDB-ID: 3G5U) og Permease protein msbA (PDB-ID: 3B60).
 
-1.  Lav to scener, kaldet F1 og F2, som viser hhv. den udadvendte og den indadvendte konformation af ABC-transporteren. Hvilken PDB-struktur viser hhv. den udadvendte og den indadvendte konformation? Hvorfor er det muligt at bruge to forskellige proteiner til at vise konformationerne?
+### Vis ABC-transporterens konformationer
 
-2.  Identificér det membranspændende område(r) samt de(t) ATP-bindende domæne(r). Angiv desuden hvilken del af transporteren, der peger ud af cellen og hvilken del, der peger indad.
+Lav to scener, kaldet F1 og F2, som viser hhv. den udadvendte og den indadvendte konformation af ABC-transporteren. Hvilken PDB-struktur viser hhv. den udadvendte og den indadvendte konformation? Hvorfor er det muligt at bruge to forskellige proteiner til at vise konformationerne?
+
+### Identificér domæner i ABC-transporter
+
+Identificér det membranspændende område(r) samt de(t) ATP-bindende domæne(r). Angiv desuden hvilken del af transporteren, der peger ud af cellen og hvilken del, der peger indad.
 
 **PyMOL info**: I tidligere TØer blev i introduceret for hvordan i selv kunne lave API'er i PyMOL. Det er der allerede mange, der har gjort og har efterfølgende offentliggjort deres kode på bl.a. PyMOL wiki. En af disse API'er er funktionen [Findseq](https://pymolwiki.org/index.php/Findseq). Findseq er en funktion, som gør det muligt at søge objekter og selektioner igennem for visse sekvenser. Funktionen importes til PyMOL sessionen med kommandoen run og man skal sørge for at man har sessionen åbnet i den mappe som API-scriptet befinder sig i. Kan man ikke huske, hvordan man gør dette er en god idé at se video 6 om PyMOL API igen og/eller kigge på beskrivelser af pwd, ls og cd-kommandoerne. Funktionen kaldes ved at man skriver Findseq \<sekvens i etbogstavsforkortelse>, \<objekt/selektion>. Kig nærmere på [PyMOL wiki](https://pymolwiki.org/index.php/Findseq), hvis det er svært at forstå. Findseq-funktionen har den smarte funktion, at man både kan vælge at søge efter fulde sekvenser, men man kan også søge efter hvad der kaldes en "regular expression". Der er mange forskellige tegn som for eksempel`.`, som betyder at enhver base er tilladt eller \[X/Y/Z\], som betyder at aminosyre X, Y eller Z er tilladt. På den måde kan man også søge i mere uspecifikke konsensussekvenser. Brug ikke selve funktion i dit script, men i stedet brug resultaterne til at finde relevante områder, som kan fremvises i dit script.\
 \
 Walker-A motivet, også kaldet P-loop eller Walker loop, er et konserveret motiv som findes i mange ATP og GTP bindende proteiner og det har konsensussekvensen GxxxxGK(S/T).
 
-3.  Brug Findseq-funktionen til at finde Walker-A motivet i begge strukturer. Lav to scener kaldet F3 og F4, som tydeligt viser de to sekvenser og deres interaktioner.\
-    Hvad er sekvenserne her? Hvilket domæne befinder de sig i? Hvad er det WalkerA motivet i msbA binder til? Hvorfor tror du denne ligand ikke ses i MRP1a?
+### Find Walker-A-motiv med Findseq
 
-4.  Kig nærmere på Tyr351 i msbA og lav en scene kaldet F5, som viser denne. Hvilken rolle kunne denne aminosyre have?
+Brug Findseq-funktionen til at finde Walker-A motivet i begge strukturer. Lav to scener kaldet F3 og F4, som tydeligt viser de to sekvenser og deres interaktioner.\
+Hvad er sekvenserne her? Hvilket domæne befinder de sig i? Hvad er det WalkerA motivet i msbA binder til? Hvorfor tror du denne ligand ikke ses i MRP1a?
 
-5.  Kig igen på scenerne F3 eller F4. Hvad er specielt ved Ser i Walker-A sekvensen og hvad kunne dens rolle tænkes at være?
+### Analysér Tyr351 i msbA
+
+Kig nærmere på Tyr351 i msbA og lav en scene kaldet F5, som viser denne. Hvilken rolle kunne denne aminosyre have?
+
+### Analysér Ser i Walker-A-motiv
+
+Kig igen på scenerne F3 eller F4. Hvad er specielt ved Ser i Walker-A sekvensen og hvad kunne dens rolle tænkes at være?
 
 Walker B motivet har konsensussekvensen hhhhDE, hvor h er hydrophob.
 
-6.  Brug Findseq til at finde Walker-B sekvensen i msbA og lav en scene kaldet F6, som viser dette. Hvilken sekvens skal sættes ind i funktionen? Hvad er sekvensen her sammenlignet med konsensus? Hvad er den næstsidste sidekæde i motivets rolle?
+### Find Walker-B-motiv med Findseq
+
+Brug Findseq til at finde Walker-B sekvensen i msbA og lav en scene kaldet F6, som viser dette. Hvilken sekvens skal sættes ind i funktionen? Hvad er sekvensen her sammenlignet med konsensus? Hvad er den næstsidste sidekæde i motivets rolle?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -58,15 +70,21 @@ Figuren nedenfor viser samspillet mellem MT1, en G-koblet melatoninreceptor, ad
 
 ![5.1](media/image92.png){width="5.84799978127734in" height="4.3131102362204725in"}
 
-1.  cAMP påvirker Protein Kinase A (PKA). Hvilken effekt har cAMP på PKA og hvad er normalt effekten på cellens metabolisme ved aktivering af PKA?
+### Beskriv cAMP's effekt på PKA
+
+cAMP påvirker Protein Kinase A (PKA). Hvilken effekt har cAMP på PKA og hvad er normalt effekten på cellens metabolisme ved aktivering af PKA?
 
 Når PKA aktiveres påvirkes to membranbundne kanaler, den calcium-sensitive K+-kanal BKCa og den strømstyrede (voltage-gated) Ca2+-kanal VDCC. 
 
-2.  I hvilken retning flyder K+- og Ca2+-ioner gennem BKCa og VDCC når de åbnes? Forklar.
+### Bestem ionflowretning
+
+I hvilken retning flyder K+- og Ca2+-ioner gennem BKCa og VDCC når de åbnes? Forklar.
 
 De to kanaler er modsat regulerede, således at PKA-phosphorylering aktiverer BKCa mens aktiviteten af denne inhiberer VDCC (se figuren). Én af effekterne af frigivelsen af melatonin er vasokonstriktion, dvs. en muskelafhængig sammentrækning af blodkar.
 
-3.  Hvad må der ske med Ca2+-koncentrationen i muskelceller under vasokonstriktion og hvordan hænger det sammen med ovenstående pathway?
+### Forklar calciums rolle i vasokonstriktion
+
+Hvad må der ske med Ca2+-koncentrationen i muskelceller under vasokonstriktion og hvordan hænger det sammen med ovenstående pathway?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -85,15 +103,23 @@ De to kanaler er modsat regulerede, således at PKA-phosphorylering aktiverer BK
 
 Ionkanalen KV1.2 er opbygget af 6 helicer (S1, S2, S3, S4, S5 og S6). Det isoelektriske punkt (pI) for helix S4 er 10,2 hvor imod de andre helicer har pI på mellem 6,7 og 7,9.
 
-1.  Hvilket fortegn har ladning af S4 have under fysiologiske betingelser og hvorfor er det vigtigt at S4 har en høj pI-værdi?
+### Bestem S4-heliksens ladning
 
-2.  De første 60 aminosyrer i N-terminalen af KV1.2 er ikke synlige i krystalstrukturen, men når disse trunkeres (KV1.2-delta60) lukker kanalen ikke som normalt. Hvad kan være forklaringen på at de første 60 aminosyrer ikke ses, og hvad er funktionen af disse aminosyrer i kanalen?
+Hvilket fortegn har ladning af S4 have under fysiologiske betingelser og hvorfor er det vigtigt at S4 har en høj pI-værdi?
+
+### Forklar N-terminal ball-and-chain
+
+De første 60 aminosyrer i N-terminalen af KV1.2 er ikke synlige i krystalstrukturen, men når disse trunkeres (KV1.2-delta60) lukker kanalen ikke som normalt. Hvad kan være forklaringen på at de første 60 aminosyrer ikke ses, og hvad er funktionen af disse aminosyrer i kanalen?
 
 Hent strukturen af ionkanalen (PDB-ID: 2A79) i PyMOL og udfør kommandoen: symexp sym, 2A79, (2A79), 50
 
-3.  Angiv som dit svar en PyMOL-figur, der viser de kæder, der udgør en funktionel kanal og angiv den kvaternære struktur.
+### Bestem kvarternær struktur af KV1.2
 
-4.  Analyser strukturen, identificér og opskriv de aminosyrer som binder kalium. Hvilken rolle har disse aminosyrer for kanalens funktion?
+Angiv som dit svar en PyMOL-figur, der viser de kæder, der udgør en funktionel kanal og angiv den kvaternære struktur.
+
+### Analysér selektivitetsfilter
+
+Analyser strukturen, identificér og opskriv de aminosyrer som binder kalium. Hvilken rolle har disse aminosyrer for kanalens funktion?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -114,21 +140,29 @@ Hent strukturen af ionkanalen (PDB-ID: 2A79) i PyMOL og udfør kommandoen: symex
 
 ## Opgave 4. Strukturbestemmelse af en kanal
 
-1.  Beskriv fordele og ulemper ved røntgenkrystallografi og cryo-elektronmikroskopi (cryo-EM) som metoder til at bestemme proteinstrukturer.
+### Sammenlign krystallografi og cryo-EM
+
+Beskriv fordele og ulemper ved røntgenkrystallografi og cryo-elektronmikroskopi (cryo-EM) som metoder til at bestemme proteinstrukturer.
 
 Til strukturbestemmelse af en bakteriel K^+^-kanal har forskere oprenset og krystalliseret proteinet, derefter indsamlet røntgendiffraktionsdata og beregnet et elektrontæthedskort, hvoraf et udsnit vises nedenfor.
 
 ![](media/image94.jpeg){width="2.8102187226596675in" height="2.6142672790901136in"}
 
-2.  Beskriv foldningen af peptidkæden, der observeres, herunder om der ses tegn på sekundær struktur og kom med forslag til hvilke fire aminosyrer, der ses på udsnittet. Forklar endeligt hvordan kædens retning (N- til C-terminal) kan bestemmes ud fra tætheden.
+### Beskriv peptidkæde i elektrontæthedskort
+
+Beskriv foldningen af peptidkæden, der observeres, herunder om der ses tegn på sekundær struktur og kom med forslag til hvilke fire aminosyrer, der ses på udsnittet. Forklar endeligt hvordan kædens retning (N- til C-terminal) kan bestemmes ud fra tætheden.
 
 For at løse strukturen har forskerne brugt et Fab-fragment til at stabilisere K^+^-kanalen under krystallisation. Strukturen indeholdende både Fab-fragment og K+-kanal findes i PDB med ID **1K4C**.
 
-3.  Forklar først hvad et Fab-fragment er og hvorfor det kan bruges til at stabilisere strukturen af K^+^-kanalen. Hent dernæst **1K4C** i PyMOL og gør rede for hvilke domæner Fab-fragmentet og K^+^-kanalen indeholder samt hvilke peptidkæder, der indgår i de to molekyler.
+### Beskriv Fab-fragmentets rolle
+
+Forklar først hvad et Fab-fragment er og hvorfor det kan bruges til at stabilisere strukturen af K^+^-kanalen. Hent dernæst **1K4C** i PyMOL og gør rede for hvilke domæner Fab-fragmentet og K^+^-kanalen indeholder samt hvilke peptidkæder, der indgår i de to molekyler.
 
 Strukturen indeholdt i **1K4C** repræsenterer kun en del af en intakt K^+^-kanal.
 
-4.  Forklar hvordan strukturen af den intakte K^+^-kanal relaterer sig til **1K4C**, herunder den oligomere tilstand af K+-kanalen. Angiv desuden en PyMOL-kommando, der kan bruges til at generere strukturen af den komplette kanal.
+### Beskriv intakt K⁺-kanals oligomertilstand
+
+Forklar hvordan strukturen af den intakte K^+^-kanal relaterer sig til **1K4C**, herunder den oligomere tilstand af K+-kanalen. Angiv desuden en PyMOL-kommando, der kan bruges til at generere strukturen af den komplette kanal.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

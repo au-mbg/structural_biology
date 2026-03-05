@@ -6,11 +6,17 @@ title: "TØ 11 -- Binding og genkendelse"
 
 Et rødt blodlegeme har et rumfang på 87 µm^3^ og et gennemsnitligt hæmoglobin (Hb) indhold på 340 mg/ml.
 
-1.  Hvad er massen af Hb per celle?
+### Beregn Hb-masse per blodlegeme
 
-2.  Hvor mange Hb molekyler er der per celle? (tetrameren har en molekylvægt på 65 kDa).
+Hvad er massen af Hb per celle?
 
-3.  Hvor meget Hb ville der være per blodlegeme hvis Hb var krystallinsk pakket heri (hver molekyle en terning med 65Å lange sider).
+### Beregn antal Hb-molekyler per celle
+
+Hvor mange Hb molekyler er der per celle? (tetrameren har en molekylvægt på 65 kDa).
+
+### Beregn krystallinsk pakket Hb-mængde
+
+Hvor meget Hb ville der være per blodlegeme hvis Hb var krystallinsk pakket heri (hver molekyle en terning med 65Å lange sider).
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -27,11 +33,17 @@ Et rødt blodlegeme har et rumfang på 87 µm^3^ og et gennemsnitligt hæmoglob
 
 ## Opgave 2. Jern, ilt og hæm
 
-1.  Hvor meget jern er der i en 70kg voksen person? Antag 70 ml blod per kg kropsvægt og et Hb indhold i blod på 160 mg/ml.
+### Beregn jernindhold i menneskekroppen
 
-2.  Menneskemuskel kan indeholde op til 8 g myoglobin (Mb) per kg mens kaskelothvalen har op til 80 g/kg. Hvor meget O~2~ kan bindes per kg menneske- og hval-muskel når Mb er mættet med ilt?
+Hvor meget jern er der i en 70kg voksen person? Antag 70 ml blod per kg kropsvægt og et Hb indhold i blod på 160 mg/ml.
 
-3.  Ilt koncentrationen i vævsvæske ved 37^o^C er ca. 35 µM. Hvor meget mere (eller mindre) er bundet til Mb i forhold til i vand i hhv menneske og hval?
+### Beregn O₂-binding per kg muskel
+
+Menneskemuskel kan indeholde op til 8 g myoglobin (Mb) per kg mens kaskelothvalen har op til 80 g/kg. Hvor meget O~2~ kan bindes per kg menneske- og hval-muskel når Mb er mættet med ilt?
+
+### Sammenlign iltbinding i Mb og vand
+
+Ilt koncentrationen i vævsvæske ved 37^o^C er ca. 35 µM. Hvor meget mere (eller mindre) er bundet til Mb i forhold til i vand i hhv menneske og hval?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -50,7 +62,9 @@ Et rødt blodlegeme har et rumfang på 87 µm^3^ og et gennemsnitligt hæmoglob
 
 Fremstilling af teoretiske bindingskurver.
 
-1.  Vi skal nu udlede og anvende en simpel matematisk funktion til at beskrive kooperativ binding, den såkaldte *Hill ligning* (ikke noget med bakker men derimod den gode *Archibald Hill*). Lad os tage udgangspunkt i en simpel binding af substrat S til protein X:
+### Udled Hill-ligningen for binding
+
+Vi skal nu udlede og anvende en simpel matematisk funktion til at beskrive kooperativ binding, den såkaldte *Hill ligning* (ikke noget med bakker men derimod den gode *Archibald Hill*). Lad os tage udgangspunkt i en simpel binding af substrat S til protein X:
 
 ![](media/image41.png){width="5.697915573053368in" height="0.78125in"}
 
@@ -64,12 +78,16 @@ Vi udvider nu denne simple bindingsmodel til at involvere binding af op til *n* 
 
 ![](media/image44.png){width="6.260415573053368in" height="0.7708333333333334in"}
 
-2.  Brug Hill ligningen til at plotte en ilt-bindings kurve for et hypotetisk two-subunit hemoglobin med kooperativitstallet *n* = 1.8 og p(O~2~) = 10 torr.
+### Plot iltbindingskurve med Hill-ligning
+
+Brug Hill ligningen til at plotte en ilt-bindings kurve for et hypotetisk two-subunit hemoglobin med kooperativitstallet *n* = 1.8 og p(O~2~) = 10 torr.
 
 Nedenstående kurve viser flere forskellige ilt-bindingskurver. Kurve 3 svarer til hemoglobin med fysiologiske koncentrationer af CO~2~ og 2,3-BPG ved pH 7.\
 ![17. Leaning to the left or to the right. The illustration below shows several oxygen-dissociation curves. Assume that curve 3 corresponds to hemoglobin with physiological con- centrations of C02 and 2,3-BPG at pH 7. XVhich curves represent each of the following perturbations? 2 3 4 p 02 (a) Decrease in C02 (b) Increase in -BPG (c) Increase in pH (d) Loss of quaternary structure ](media/image45.png){width="3.1399125109361328in" height="2.7017541557305336in"}
 
-3.  Hvilke kurver svarer til de følgende ændringer i bindingsbetingelserne:
+### Identificer kurver for bindingsbetingelser
+
+Hvilke kurver svarer til de følgende ændringer i bindingsbetingelserne:
 
 <!-- -->
 
@@ -161,11 +179,17 @@ Lampretfisk er primitive dyr, hvis stamfædre (og ditto mødre!) forgrenede sig 
   200     0.97
   ----------------
 
-1.  Lav en ilt-bindings kurve udfra disse data. Ved hvilket ilt tryk er Hb halvt mættet? Udfra kurvens udseende, virker ilt binding til at være kooperativ?
+### Tegn iltbindingskurve for lampret Hb
 
-2.  Lave et Hill plot udfra disse data. Angiver dette plot kooperativitet? Hvad er Hill koefficienten?
+Lav en ilt-bindings kurve udfra disse data. Ved hvilket ilt tryk er Hb halvt mættet? Udfra kurvens udseende, virker ilt binding til at være kooperativ?
 
-3.  Yderligere studier viser at lampret Hb danner primært dimerer når det ikke er bundet til ilt. Foreslå en model til at forklare den observerede kooperativitet i lampret Hb's ilt binding.
+### Lav Hill plot for lampret Hb
+
+Lave et Hill plot udfra disse data. Angiver dette plot kooperativitet? Hvad er Hill koefficienten?
+
+### Forklar kooperativitet via dimermodel
+
+Yderligere studier viser at lampret Hb danner primært dimerer når det ikke er bundet til ilt. Foreslå en model til at forklare den observerede kooperativitet i lampret Hb's ilt binding.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -190,11 +214,15 @@ Lampretfisk er primitive dyr, hvis stamfædre (og ditto mødre!) forgrenede sig 
 
 ## Opgave 5. Allosterispørgsmål
 
-1.  Et allosterisk enzym, som følger MWC (concerted) modellen, har en T/R ratio på 300 i fravær af substratet. Sæt nu at en mutation vender ratioen på hovedet. Hvordan ville denne mutation påvirke forholdet mellem reaktionshastigheden og substratkoncentrationen?  
+### Analyser effekt af T/R-ratio-mutation
+
+Et allosterisk enzym, som følger MWC (concerted) modellen, har en T/R ratio på 300 i fravær af substratet. Sæt nu at en mutation vender ratioen på hovedet. Hvordan ville denne mutation påvirke forholdet mellem reaktionshastigheden og substratkoncentrationen?
 
 <!-- -->
 
-2.  Nedenstående graf viser fraktionen af et allosterisk enzym i R-state (*f*~R~) samt fraktionen af aktive sites bundet til substrat (*Y*) som funktion af substratkoncentration. Hvilken model, MWC eller sekventiel, kan bedst forklare disse resultater?
+### Vælg model for kooperativ binding
+
+Nedenstående graf viser fraktionen af et allosterisk enzym i R-state (*f*~R~) samt fraktionen af aktive sites bundet til substrat (*Y*) som funktion af substratkoncentration. Hvilken model, MWC eller sekventiel, kan bedst forklare disse resultater?
 
 ![Y versus substrate](media/image51.png){width="5.319888451443569in" height="4.081333114610674in"}
 
@@ -202,13 +230,17 @@ ATCase blev reageret med tetra-nitromethan (TNM) for at danne en farvet nitrotyr
 
 ![succinate versus wavelength](media/image52.png){width="4.292507655293089in" height="2.8791207349081365in"}
 
-5.  Hvad er betydningen af ændringen i 430 nm signalet?
+### Fortolk 430 nm absorptionsændring
+
+Hvad er betydningen af ændringen i 430 nm signalet?
 
 En anden ATCase-hybrid blev lavet til at undersøge effekt af allosteriske aktivatorer og inhibitorer. Almindelige regulatoriske subunits var blandet med nitrotyrosin-indeholdende katalytiske subunits. Titrering af ATP i fravær af substrat øgede absorbansen ved 430 nm, på samme måde som succinate i forrige spørgsmål. Det modsatte observerede man for CTP, hvor titrering af stoffet i fravær af substrate forårsagede et fald i 430 nm absorption:
 
 ![ATP and CTP versus wavelength](media/image53.png){width="4.42321084864392in" height="2.9304997812773403in"}
 
-6.  Hvad er betydningen af disse ændringer i absorbtionen af reporter-sidekæderne?
+### Analyser ATP og CTP's effekt på ATCase
+
+Hvad er betydningen af disse ændringer i absorbtionen af reporter-sidekæderne?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

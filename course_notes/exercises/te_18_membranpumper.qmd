@@ -6,9 +6,13 @@ title: "TØ 18 -- Membranpumper"
 
 I skeletmuskulatur hos hunde er de ekstra- og intracellulære koncentrationer af Na^+^ henholdsvis 150 mM og 12 mM, hvor de for K^+^ er 2.7 mM og 140 mM.
 
-1.  Beregn ændringen i fri energi når tre Na^+^ transporteres ud og to K^+^ transporteres ind via Na-K-pumpen. Antag at temperaturen er 25°C og at membranpotentialet er -60 mV.
+### Beregn fri energi for Na/K-pumpe
 
-2.  Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi til at drive processen? Forklar.
+Beregn ændringen i fri energi når tre Na^+^ transporteres ud og to K^+^ transporteres ind via Na-K-pumpen. Antag at temperaturen er 25°C og at membranpotentialet er -60 mV.
+
+### Vurdér ATP-hydrolysens energi
+
+Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi til at drive processen? Forklar.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -27,7 +31,9 @@ I skeletmuskulatur hos hunde er de ekstra- og intracellulære koncentrationer af
 
 De såkaldte `fast twitch`-muskelceller fra kaniner indeholder store mængder af den sarco(endo)plasmatiske reticulum calcium ATPase (SERCA).
 
-1.  Forklar hvorledes modningen af SERCA må forventes at forløbe for at lokalisere pumpen i den korrekte membran
+### Forklar SERCA-modning i ER
+
+Forklar hvorledes modningen af SERCA må forventes at forløbe for at lokalisere pumpen i den korrekte membran
 
 ```sh
 (hint: Figur 30.34 i Berg).
@@ -36,11 +42,15 @@ Nedenfor vises et hydropatiplot for SERCA.
 
 ![3.1](media/image89.png){width="6.268055555555556in" height="2.247916666666667in"}
 
-2.  Estimér antallet af transmembrane helicer i SERCA og deres omtrentlige placering. Forklar hvordan du når frem til dette.
+### Estimér SERCA's transmembrane helicer
+
+Estimér antallet af transmembrane helicer i SERCA og deres omtrentlige placering. Forklar hvordan du når frem til dette.
 
 Koncentrationen af frit calcium i cytoplasma er omkring 0.15 μM, mens den inde i det sarcoplasmiske reticulum ligger på omkring 1.5 mM. Det er calcium ATPasen, der er ansvarlig for at opretholde denne gradient vha. hydrolyse af ATP. Der er derimod i praksis ingen elektrisk potentialeforskel på tværs af SR-membranen.
 
-3.  Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumioner transporteres fra cytoplasma til SR, dvs. svarende til én cyklus for SERCA.
+### Beregn energi for calciumtransport
+
+Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumioner transporteres fra cytoplasma til SR, dvs. svarende til én cyklus for SERCA.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -71,11 +81,15 @@ Koncentrationen af frit calcium i cytoplasma er omkring 0.15 μM, mens den inde 
   Mængden af SERCA1 i forhold til SERCA totalt set (%)   82.8 ± 4.6    83.4 ± 3.9
   ------------------------------------------------------------------------------------
 
-1.  Foreslå en biokemisk fortolkning af de målte data i tabellen. Brug herefter din viden om SERCA's fysiologiske funktion i muskelfibre til at foreslå hvilke symptomer, patienter med Brodys sygdom kunne tænkes at opleve.
+### Fortolk Brodys sygdoms kinetik
+
+Foreslå en biokemisk fortolkning af de målte data i tabellen. Brug herefter din viden om SERCA's fysiologiske funktion i muskelfibre til at foreslå hvilke symptomer, patienter med Brodys sygdom kunne tænkes at opleve.
 
 Et eksperiment blev udført med membranvesikler indeholdende både SERCA og membranproteinet bacteriorhodopsin. ATP blev tilsat til prøven i mørke, hvilket resulterede i målbar ATPase-aktivitet. Efter et stykke tid stoppede denne aktivitet dog selv om der stadig var ATP til stede i opløsningen. Tændte man derimod lyset, genoptoges ATPase-aktiviteten. (Hint: Når calcium flyttes, kotransporterer (antiporterer) SERCA protoner i den anden retning, og det vides at der i gennemsnit flyttes 1.5 proton per calciumion).
 
-2.  Forklar resultaterne i SERCA/bacteriorhodopsin-eksperimentet.    
+### Forklar bacteriorhodopsin-eksperiment
+
+Forklar resultaterne i SERCA/bacteriorhodopsin-eksperimentet.    
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -94,15 +108,25 @@ Calcium-pumpen fra sarcoplasmisk reticulum (SERCA) blev oprenset af danske forsk
 
 Identificér først det transmembrane område i SERCA. Hilken ende af strukturen vender ind mod SR og hvilken ende vender mod cytoplasma? Hvorfor skal pumpen vende på denne måde? 
 
-1.  I oversigtsstrukturen (F1) er SERCAs domæner vist med forskellige farver. Identificér domænerne og angiv kort deres funktion i pumpen.
+### Identificér SERCA-domæner
 
-2.  Brug F1-F5 til at skifte mellem fem forskellige tilstande. Hvilke tilstande er disse? (Hint: Benyt objektnavnene til højre i vinduet) Forklar kort hvad der sker i mellem hver tilstand.
+I oversigtsstrukturen (F1) er SERCAs domæner vist med forskellige farver. Identificér domænerne og angiv kort deres funktion i pumpen.
 
-3.  Tryk F6 for at zoome ind på en vigtig aminosyre for pumpen. Hvilken aminosyre er dette og hvilken rolle spiller den? 
+### Beskriv SERCAs konformationstilstande
 
-4.  Aminosyren bliver modificeret som led i enzymets funktion. Da modifikationen er ustabil har man i krystalstrukturen brugt en analog modifikation. Klik på modifikationens atomer og identifér den. Hvilken modifikation repræsenterer analogen og er det en god analog? Hvad interagerer modifikationen med og hvordan påvirker det enzymets struktur?
+Brug F1-F5 til at skifte mellem fem forskellige tilstande. Hvilke tilstande er disse? (Hint: Benyt objektnavnene til højre i vinduet) Forklar kort hvad der sker i mellem hver tilstand.
 
-5.  Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er dette og hvordan er enzymet forandret?
+### Identificér vigtig aminosyre
+
+Tryk F6 for at zoome ind på en vigtig aminosyre for pumpen. Hvilken aminosyre er dette og hvilken rolle spiller den? 
+
+### Beskriv aminosyrens modifikation
+
+Aminosyren bliver modificeret som led i enzymets funktion. Da modifikationen er ustabil har man i krystalstrukturen brugt en analog modifikation. Klik på modifikationens atomer og identifér den. Hvilken modifikation repræsenterer analogen og er det en god analog? Hvad interagerer modifikationen med og hvordan påvirker det enzymets struktur?
+
+### Analysér dephosphoryleret tilstand
+
+Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er dette og hvordan er enzymet forandret?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -133,13 +157,21 @@ Både spots A og B matchede aminosyresekvensen for Na+-K+-ATPasen, men en detalj
 
 For at identificere fragmentet på 1947.22 Da blev det oprenset og analyseret vha. Edman-degradering, hvilket gav følgende sekvens: Asn-Leu-Glu-Ala-Val-Glu-Thr-Leu-Gly-Ser-Thr-Ser-Thr-Ile-Cys-Ser-Xaa-Lys. Xaa kunne ikke identificeres.
 
-1.  Hvordan adskiller proteinet i spot A sig fra proteinet i spot B?
+### Sammenlign spot A og spot B
 
-2.  Hvad skyldes masseforskellen mellem de fundne, tryptiske fragmenter?
+Hvordan adskiller proteinet i spot A sig fra proteinet i spot B?
 
-3.  Hvilken aminosyrerest svarer Xaa i spot A til? Opskriv dens kemiske struktur.
+### Forklar masseforskel i peptider
 
-4.  Hvilken rolle spiller denne rest i Na+-K+-ATPasens funktion?
+Hvad skyldes masseforskellen mellem de fundne, tryptiske fragmenter?
+
+### Identificér modificeret aminosyre
+
+Hvilken aminosyrerest svarer Xaa i spot A til? Opskriv dens kemiske struktur.
+
+### Beskriv phosphoryleringsrestens rolle
+
+Hvilken rolle spiller denne rest i Na+-K+-ATPasens funktion?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

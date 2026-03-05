@@ -8,7 +8,7 @@ Velkomst til øvelsessiderne for strukturbiologi. Brug sidebaren til at navigere
 
 | Week number | Lectures | Theoretical exercise | Reading material | Videos |
 |---|---|---|---|---|
-| 1 | — | [TØ 01: I gang med PyMOL](exercises/te_01_i_gang_med_pymol.qmd)<br>[TØ 02: Introduktion til TØ](exercises/te_02_introduktion_til_tø.qmd) | — | [Introduktion to PyMOL](other_notes/videor.qmd) |
+| 1 | — | [TØ 01: I gang med PyMOL](exercises/te_01_i_gang_med_pymol.qmd)<br>[TØ 02: Introduktion til TØ](exercises/te_02_introduktion_til_tø.qmd) | — | [Introduktion to PyMOL](videos/videor_1.qmd) |
 | 2 | — | [TØ 03: PyMOL scripting](exercises/te_03_pymol_scripting.qmd)<br>[TØ 04: Proteinstruktur 1](exercises/te_04_proteinstruktur_1.qmd) | — | — |
 | 3 | — | [TØ 05: Proteinstruktur 2](exercises/te_05_proteinstruktur_2.qmd)<br>[TØ 06: Nukleinsyrestruktur 1](exercises/te_06_nukleinsyrestruktur_1.qmd) | — | — |
 | 4 | — | [TØ 07: Nukleinsyrestruktur 2](exercises/te_07_nukleinsyrestruktur_2.qmd)<br>[TØ 08: Evolution og bioinformatik](exercises/te_08_evolution_og_bioinformatik.qmd) | — | — |

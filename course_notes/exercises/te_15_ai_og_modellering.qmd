@@ -20,13 +20,21 @@ I denne opgave skal I lave en AlphaFold-forudsigelse selv og sammenligne den med
 
 **Strukturforudsigelse med Alphafold 3**
 
-1.  Gå til AlphaFold3 serveren: https://alphafoldserver.com/
+### Åbn AlphaFold3-serveren
 
-2.  Opret en bruger eller log ind
+Gå til AlphaFold3 serveren: https://alphafoldserver.com/
 
-3.  Indsæt sekvensen for humant Parkin (UniProt: O60260)
+### Opret bruger og log ind
 
-4.  Kør forudsigelsen, det tager et par minutter (hold vinduet åbent og start på næste del)
+Opret en bruger eller log ind
+
+### Indsæt Parkin-sekvensen
+
+Indsæt sekvensen for humant Parkin (UniProt: O60260)
+
+### Kør AlphaFold-forudsigelse
+
+Kør forudsigelsen, det tager et par minutter (hold vinduet åbent og start på næste del)
 
 **Hent krystalstruktur af Parkin (1.8Å opløsning)**
 
@@ -34,27 +42,39 @@ I denne opgave skal I lave en AlphaFold-forudsigelse selv og sammenligne den med
 
 ***Brug:** spectrum b, blue_cyan_green_yellow_orange_red, 5c1z, minimum=20, maximum=100*
 
-1.  Hvad siger B-faktoren om strukturen? Hvilke regioner af strukturen have lav versus høj B-faktor? Giver det mening? (*Hint: klik på enkelte atomer i PyMOL for at se B-faktoren, eller load .cif filen i en tekst editor og find søjlen med B-faktorer*)
+### Analysér B-faktorerne i strukturen
+
+Hvad siger B-faktoren om strukturen? Hvilke regioner af strukturen have lav versus høj B-faktor? Giver det mening? (*Hint: klik på enkelte atomer i PyMOL for at se B-faktoren, eller load .cif filen i en tekst editor og find søjlen med B-faktorer*)
 
 Nu skulle AF modellen være klar, download, pak ud og load den første ud af de 5 AF modeller i PyMOL (XXX_model_0.cif).
 
 Align AF modelen og den experimentelle struktur.
 
-2.  Hvad er RMSD? Er der regioner af proteinet der aligner bedre end andre?
+### Beregn RMSD og analysér alignment
+
+Hvad er RMSD? Er der regioner af proteinet der aligner bedre end andre?
 
 Farv AF-modellen efter pLDDT (som ligger i B-faktor kolonnen i PDB/CIF filen): spectrum b, orange_yellow_green_cyan_blue, **model_0**, minimum=50, maximum=90
 
 (udskift model_0 med jeres objekt navn)
 
-3.  Hvad siger pLDDT om den forudsagte struktur? Hvilket områder af strukturen har høj pLDDT og hvilke har lave værdier? Hvad betyder en pLDDT\<50?
+### Fortolk pLDDT-værdier
 
-4.  Sammenlign nu B-factor for krystalstrukturen og pLDDT for AF-modellen. Er der en korrelation mellem B-factor og pLDDT?
+Hvad siger pLDDT om den forudsagte struktur? Hvilket områder af strukturen har høj pLDDT og hvilke har lave værdier? Hvad betyder en pLDDT\<50?
+
+### Sammenlign B-factor og pLDDT
+
+Sammenlign nu B-factor for krystalstrukturen og pLDDT for AF-modellen. Er der en korrelation mellem B-factor og pLDDT?
 
 Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) og align dem alle til model_0. Fokusér på det lange fleksible loop (residues 84-143).
 
-5.  Har loopet samme konformation i alle 5 modeller? Hvad fortæller det om AlphaFolds sikkerhed på denne regions struktur? Passer det med pLDDT værdierne I kiggede på i spørgsmål 3?
+### Sammenlign loopkonformationer
 
-6.  Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen (hvor residue 83 og 144 er forbundet). Hvorfor mon krystallograferne har gjort det?
+Har loopet samme konformation i alle 5 modeller? Hvad fortæller det om AlphaFolds sikkerhed på denne regions struktur? Passer det med pLDDT værdierne I kiggede på i spørgsmål 3?
+
+### Forklar fjernelse af flexibelt loop
+
+Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen (hvor residue 83 og 144 er forbundet). Hvorfor mon krystallograferne har gjort det?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -98,9 +118,11 @@ Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) o
 
 ## **Opgave 2. Hvad fortæller PAE (Predicted Aligned Error) om domæne-orientering**
 
-1.  Fortolk PAE-plottet for jeres Parkin model:\
-    \
-    Se på PAE-plottet i AlphaFold browser vinduet (findes også i jeres downloaded mappe som JSON-fil til databehandling).
+### Fortolk PAE-plottet
+
+Fortolk PAE-plottet for jeres Parkin model:\
+\
+Se på PAE-plottet i AlphaFold browser vinduet (findes også i jeres downloaded mappe som JSON-fil til databehandling).
 
 - Hvad betyder en mørk grøn firkant? (lav PAE = \~0-5 Å)
 
@@ -108,11 +130,17 @@ Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) o
 
 - Hvorfor er hele diagonalen mørk grøn?
 
-2.  Identificér domæne-grænser i PAE-plottet. Find de 5 domæner i plottet (se domæne-residue numre fra Opgave 1). Hvilke domæner har lav PAE (grøn) mellem hinanden, og hvilke har høj PAE (lys/hvid)? *Hint: Find Ubl-domænet (residues 1-76) i PAE-plottet. Kig på firkanten fra (1,1) til (76,76) - altså Ubl mod sig selv.* Hvilken farve har denne firkant?*\*
+### Identificér domæner i PAE
 
-3.  Hvad fortæller PAE om Parkins struktur? Baseret på PAE-plottet - hvilke dele af Parkin har en veldefineret relativ orientering, og hvilke dele er fleksibelt forbundet? Relaterer dette til pLDDT-værdierne I så i Opgave 1?
+Identificér domæne-grænser i PAE-plottet. Find de 5 domæner i plottet (se domæne-residue numre fra Opgave 1). Hvilke domæner har lav PAE (grøn) mellem hinanden, og hvilke har høj PAE (lys/hvid)? *Hint: Find Ubl-domænet (residues 1-76) i PAE-plottet. Kig på firkanten fra (1,1) til (76,76) - altså Ubl mod sig selv.* Hvilken farve har denne firkant?*\*
 
-4.  Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dette loop veldefineret i forhold til resten af Parkin strukturen ifølge PAE-plottet?
+### Analysér Parkins domænestruktur
+
+Hvad fortæller PAE om Parkins struktur? Baseret på PAE-plottet - hvilke dele af Parkin har en veldefineret relativ orientering, og hvilke dele er fleksibelt forbundet? Relaterer dette til pLDDT-værdierne I så i Opgave 1?
+
+### Identificér det fleksible loop
+
+Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dette loop veldefineret i forhold til resten af Parkin strukturen ifølge PAE-plottet?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -152,13 +180,21 @@ Load de andre fire AF-modeller af Parkin (\*\_model_1.cif til \*\_model_4.cif) o
 
 I denne opgave skal I bruge AlphaFold-serveren til at forudsige strukturen af en hetero-dimer mellem HsIFT25 (UniProt ID: Q9Y547) og HsIFT27 (UniProt ID: Q9BW83-1). IFT25 er et calcium-bindende protein, og IFT27 er en lille GTPase. Tilføj begge proteiner samt relevante ligander/ioner til en strukturforudsigelse på AlphaFold-serveren. Download den resulterende model.
 
-1.  Hvad fortæller henholdsvis pTM- og iPTM-værdierne om kvaliteten af den forudsagte model?
+### Fortolk pTM- og iPTM-værdier
 
-2.  Analyser pLDDT- og PAE-værdierne for jeres model. Baseret på disse metrics, kan man have tillid til kvaliteten af den forudsagte struktur af protein-komplekset? Er orienteringen af IFT25 og IFT27 veldefineret? Begrund jeres svar.
+Hvad fortæller henholdsvis pTM- og iPTM-værdierne om kvaliteten af den forudsagte model?
 
-3.  Hvor er nukleotidet placeret i strukturen? Find en GTPase struktur i PDB med nukleotid bundet, og align denne med IFT27. Binder nukleotidet på samme måde i begge strukturer?
+### Analysér pLDDT og PAE i kompleks
 
-4.  Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminosyrerester der deltager i koordinationen)
+Analyser pLDDT- og PAE-værdierne for jeres model. Baseret på disse metrics, kan man have tillid til kvaliteten af den forudsagte struktur af protein-komplekset? Er orienteringen af IFT25 og IFT27 veldefineret? Begrund jeres svar.
+
+### Find og sammenlign nukleotidbinding
+
+Hvor er nukleotidet placeret i strukturen? Find en GTPase struktur i PDB med nukleotid bundet, og align denne med IFT27. Binder nukleotidet på samme måde i begge strukturer?
+
+### Analysér calciumions koordination
+
+Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminosyrerester der deltager i koordinationen)
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -197,13 +233,21 @@ I denne opgave skal I bruge AlphaFold-serveren til at forudsige strukturen af en
 
 Et affinity pull-down MS eksperiment med tagged UniProt: Q3Y8L7 (ODA16, bait protein) gav følgende to hits: UniProt: A2T2X4 (IFT46) og UniProt: A8JA42 (IFT56).
 
-1.  Brug AlphaFold til at dissekere hvordan de 3 proteiner interagerer. Binder begge `hits` direkte til ODA16?
+### Kortlæg interaktioner med AlphaFold
 
-2.  Hvad er arkitekturen af komplekset og hvilke residues af IFT46 interagerer med ODA16 og IFT56? Hvilke dele er velforudsagte? Kan I stole på de forudsagte strukturelle modeller for interaktionerne mellem proteinerne?
+Brug AlphaFold til at dissekere hvordan de 3 proteiner interagerer. Binder begge `hits` direkte til ODA16?
 
-3.  Hvad er pTM og iPTM værdierne? Hvorfor er de mon lavere end for IFT25/27 i opgave 3?
+### Beskriv kompleksets arkitektur
 
-4.  Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner eller om de lokale interfaces faktisk er dårligt forudsagte. Beskriv hvilke AlphaFold kørsler I ville lave og hvad I ville forvente at se hvis problemet primært er disordered regioner. Hvis der er tid så kør gerne AlphaFold forudsigelserne.
+Hvad er arkitekturen af komplekset og hvilke residues af IFT46 interagerer med ODA16 og IFT56? Hvilke dele er velforudsagte? Kan I stole på de forudsagte strukturelle modeller for interaktionerne mellem proteinerne?
+
+### Fortolk pTM og iPTM-scorer
+
+Hvad er pTM og iPTM værdierne? Hvorfor er de mon lavere end for IFT25/27 i opgave 3?
+
+### Design eksperiment med trunkerede konstrukter
+
+Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner eller om de lokale interfaces faktisk er dårligt forudsagte. Beskriv hvilke AlphaFold kørsler I ville lave og hvad I ville forvente at se hvis problemet primært er disordered regioner. Hvis der er tid så kør gerne AlphaFold forudsigelserne.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

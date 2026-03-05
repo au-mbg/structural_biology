@@ -8,23 +8,37 @@ RNase A er et fordøjelsesenzym, der udskilles af bugspytkirtlen. Det er et lill
 
 RNase A katalyserer hydrolyse af phosphodiesterbindinger i RNA-kæder, mellem phosphoratomet og 5'-oxygenatomet. Efter reaktionen har den ene af de to termini en fri 5'-OH gruppe.
 
-1.  Opskriv den reaktion, RNase A katalyserer. Start med at tegne et dinukleotid bestående af to 2'-oxy-riboseenheder koblet sammen med en phosphatgruppe. Baserne behøves ikke tegnet på, da de ikke indgår i reaktionen.
+### Opskriv RNase A-reaktionen
+
+Opskriv den reaktion, RNase A katalyserer. Start med at tegne et dinukleotid bestående af to 2'-oxy-riboseenheder koblet sammen med en phosphatgruppe. Baserne behøves ikke tegnet på, da de ikke indgår i reaktionen.
 
 Reaktionen foregår gennem et 2'-3'-cyklisk intermediat, dvs. at phosphatgruppen i intermediatet er bundet til både 2'- og 3'- gruppen på ene riboseenhed.
 
-2.  Tegn strukturformelen for det 2'-3'-cykliske intermediat. Hvilket oxygenatom må nødvendigvis agere som nukleofil i reaktionen for at dette kan opstå?
+### Tegn det cykliske intermediat
 
-3.  Hvad skal der ske for at danne produktet udfra det cykliske intermediat? Hint: Der indgår et meget almindeligt andet stof i 2. trin af reaktionen.
+Tegn strukturformelen for det 2'-3'-cykliske intermediat. Hvilket oxygenatom må nødvendigvis agere som nukleofil i reaktionen for at dette kan opstå?
 
-4.  Af de to delreaktioner er den ene reversibel mens den anden i praksis er irreversibel. Forklar dette.
+### Beskriv dannelse af produktet
 
-5.  På trods af dette er det muligt at isolere intermediatet til kemisk analyse. Forklar hvordan dette kan lade sig gøre. Hint: Det har noget med reaktionshastigheder at gøre.
+Hvad skal der ske for at danne produktet udfra det cykliske intermediat? Hint: Der indgår et meget almindeligt andet stof i 2. trin af reaktionen.
+
+### Forklar reversibilitet af delreaktioner
+
+Af de to delreaktioner er den ene reversibel mens den anden i praksis er irreversibel. Forklar dette.
+
+### Forklar isolation af reaktionsintermediat
+
+På trods af dette er det muligt at isolere intermediatet til kemisk analyse. Forklar hvordan dette kan lade sig gøre. Hint: Det har noget med reaktionshastigheder at gøre.
 
 RNase A kræver at nukleotidet, der sidder 5' (opstrøms) for kløvningsstedet, er en pyrimidine (C eller U), da bindingslommen ikke har plads til puriner. For resten af RNA-kæden er enzymet ligeglad med sekvensen.
 
-6.  Foreslå hvilken typer af interaktioner, der fastholder resten af RNA-kæden, herunder hvilke typer aminosyrer, der formentlig er involveret.
+### Foreslå interaktioner med RNA-kæden
 
-7.  Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
+Foreslå hvilken typer af interaktioner, der fastholder resten af RNA-kæden, herunder hvilke typer aminosyrer, der formentlig er involveret.
+
+### Forklar hvorfor DNA ikke kløves
+
+Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -53,21 +67,35 @@ RNase A kræver at nukleotidet, der sidder 5' (opstrøms) for kløvningsstedet, 
 
 I denne opgave skal vi kigge nærmere på strukturen af RNase A.
 
-1.  Skriv et PyMOL-script, der henter strukturen af den bovine RNase A bundet til en substratanalog (CPA) (PDB-ID: 1RPG), viser strukturen som cartoon uden vandmolekyler samt viser liganden og sidekæderne 12, 41 og 119 som sticks. Til dette skal du oprette et objekt med sidekæderne og en selektion med substratet. Gem visualiseringen som scenen **F1**. Hvilken funktion har disse aminosyrer? Hint: kig på [RCSB](https://www.rcsb.org/).
+### Skriv PyMOL-script til RNase A-struktur
+
+Skriv et PyMOL-script, der henter strukturen af den bovine RNase A bundet til en substratanalog (CPA) (PDB-ID: 1RPG), viser strukturen som cartoon uden vandmolekyler samt viser liganden og sidekæderne 12, 41 og 119 som sticks. Til dette skal du oprette et objekt med sidekæderne og en selektion med substratet. Gem visualiseringen som scenen **F1**. Hvilken funktion har disse aminosyrer? Hint: kig på [RCSB](https://www.rcsb.org/).
 
 ***PyMOL info**: Du kan sætte en titel og/eller beskrivelse på din scene ved at skrive scene F1, store, `titel/beskrivelse`.*
 
-2.  Lav en scene, kaldet **F2**, som fokuser på substratanalogen CPA. Kig på CPA og forklar først hvorfor det er muligt at binde dette molekyle til enzymet uden at det kløves. Hint: Der mangler en vigtig funktionel gruppe.
+### Analyser substratanalog CPA i PyMOL
 
-3.  Forestil dig at gruppen stadig sidder på substratet og fokusér nu på residue 12. Hvilken sidekæde er dette og hvilken funktion tror du den har i reaktionen? Hint: Dette residue er ansvarligt for dannelse af en stærk nukleofil, der skal bruges i 1. reaktionstrin.
+Lav en scene, kaldet **F2**, som fokuser på substratanalogen CPA. Kig på CPA og forklar først hvorfor det er muligt at binde dette molekyle til enzymet uden at det kløves. Hint: Der mangler en vigtig funktionel gruppe.
 
-4.  Efter det nukleofile angreb findes enzym-substrate-komplekset på et transition state, hvor phosphoratomet kortvarigt er bundet til 5 andre atomer, et såkaldt pentavalent transition state. Hvilke 5 atomer er der tale om?
+### Identificer His12's rolle i katalyse
 
-5.  Residue 41 spiller en vigtig rolle i stabiliseringen af dette transition state, forklar hvordan. Hvorfor tror du, at der er vist to sidekæder for denne residue?
+Forestil dig at gruppen stadig sidder på substratet og fokusér nu på residue 12. Hvilken sidekæde er dette og hvilken funktion tror du den har i reaktionen? Hint: Dette residue er ansvarligt for dannelse af en stærk nukleofil, der skal bruges i 1. reaktionstrin.
 
-6.  Den sidste involverede residue er 119, der fungerer i det næste trin, hvor det pentavalente transition state opløses og phosphoratomet igen er bundet til 4 andre atomer. Hvilken binding brydes og hvad kunne tænkes at være denne residues rolle?
+### Beskriv pentavalent transition state
 
-7.  Forklar til sidst hvorfor RNase A udviser en klokkeformet pH-afhængighed med maksimal aktivitet omkring pH 7.
+Efter det nukleofile angreb findes enzym-substrate-komplekset på et transition state, hvor phosphoratomet kortvarigt er bundet til 5 andre atomer, et såkaldt pentavalent transition state. Hvilke 5 atomer er der tale om?
+
+### Analyser Lys41's rolle i stabilisering
+
+Residue 41 spiller en vigtig rolle i stabiliseringen af dette transition state, forklar hvordan. Hvorfor tror du, at der er vist to sidekæder for denne residue?
+
+### Bestem His119's rolle i katalyse
+
+Den sidste involverede residue er 119, der fungerer i det næste trin, hvor det pentavalente transition state opløses og phosphoratomet igen er bundet til 4 andre atomer. Hvilken binding brydes og hvad kunne tænkes at være denne residues rolle?
+
+### Forklar RNase A's pH-afhængighed
+
+Forklar til sidst hvorfor RNase A udviser en klokkeformet pH-afhængighed med maksimal aktivitet omkring pH 7.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -150,14 +178,21 @@ scene F2, store, substratanalogen CPA
 
 I denne opgave skal vi kigge på den tertiære struktur af RNase A.
 
-1.  Tag udgangspunkt i scriptet fra forrige opgave. Lav en ny scene, kaldet **F3**, hvor der fokuseres på RNase A's svovlbroer. Hint: Lav en selektion med Cys-sidekæderne.\
-    Hvilken rolle spiller Cys-resterne for proteinets tertiære struktur? Kommentér på sidekædernes oxidationstilstand i forhold til proteinets lokalisering i kroppen. Hvorfor tror du enzymet har udviklet denne struktur?
+### Visualiser disulfidbroer i PyMOL
 
-2.  Opskriv interaktionerne mellem Cys-resterne (hvilke rester interagerer med hinanden).
+Tag udgangspunkt i scriptet fra forrige opgave. Lav en ny scene, kaldet **F3**, hvor der fokuseres på RNase A's svovlbroer. Hint: Lav en selektion med Cys-sidekæderne. Hvilken rolle spiller Cys-resterne for proteinets tertiære struktur? Kommentér på sidekædernes oxidationstilstand i forhold til proteinets lokalisering i kroppen. Hvorfor tror du enzymet har udviklet denne struktur?
 
-3.  Diskutér hvordan du tror enzymet påvirkes af Cys-resternes interaktioner ift. termisk og kemisk denaturering. Hvad tror du der vil ske, hvis enzymet denatureres ved høj temperatur (under stadigt oxiderede betingelser) og herefter køles af igen?
+### Opskriv Cys-Cys interaktioner
 
-4.  Hvad ville der ske, hvis man denaturerede proteinet under reducerende betingelser og fjernede reduktanten før proteinet blev refoldet (ved afkøling eller fjernelse af denaturant)? Forklar Anfinsens forsøg.
+Opskriv interaktionerne mellem Cys-resterne (hvilke rester interagerer med hinanden).
+
+### Diskutér disulfidbros effekt på stabilitet
+
+Diskutér hvordan du tror enzymet påvirkes af Cys-resternes interaktioner ift. termisk og kemisk denaturering. Hvad tror du der vil ske, hvis enzymet denatureres ved høj temperatur (under stadigt oxiderede betingelser) og herefter køles af igen?
+
+### Forklar Anfinsens refolding-forsøg
+
+Hvad ville der ske, hvis man denaturerede proteinet under reducerende betingelser og fjernede reduktanten før proteinet blev refoldet (ved afkøling eller fjernelse af denaturant)? Forklar Anfinsens forsøg.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -206,17 +241,23 @@ scene F3, store, RNase A's svovlbroer
 
 Selv om RNase A i dets native konformation er relativt bestandigt overfor proteolyse, så kan det kløves af den bakterielle protease *subtilisin* (fra *Bacillus subtilis*). Subtilisins substratspecificitet er ret bred, så det er ret interessant at enzymet i første omgang blot kløver RNase A ét enkelt sted nær aminosyre 20. Subtilisins præference for at kløve netop her er så stor at det er muligt at foretage en komplet fordøjelse af RNase A og stoppe reaktionen inden der kløves på sekundære steder. Ved denne proces opdeles RNase A i to fragmenter, det såkaldte `S-peptid` (residues 1-20) og "S-protein" (residues 21-124).
 
-1.  Lav en scene, kaldet **F4**, hvor du viser S-peptidet i en anden farve og aminosyrerest 20 som sticks. Hint: lav separate selektioner for S-peptid og S-protein.\
-    Diskutér placeringen af kløvningssitet i relation til aminosyrespecificitet (S1-lommen af subtilisin) og generel placering i substratproteinet.
+### Visualiser S-peptid og kløvningssite
 
-2.  Lav en scene, kaldet **F5**, der viser de polære interaktioner mellem S-peptidet og S-proteinet. Studér interaktionerne og foreslå hvad der sker med enzymets tertiære struktur efter kløvning. Det kløvede RNase A betegnes RNase S. Hint: Brug find-funktionen til at finde bindingerne og brug så distance-kommandoen til at få dem ind i scriptet. Du skulle gerne finde 13 bindinger. Vis sidekæderne, der er involveret i interaktioner med lines-repræsentationen.
+Lav en scene, kaldet **F4**, hvor du viser S-peptidet i en anden farve og aminosyrerest 20 som sticks. Hint: lav separate selektioner for S-peptid og S-protein. Diskutér placeringen af kløvningssitet i relation til aminosyrespecificitet (S1-lommen af subtilisin) og generel placering i substratproteinet.
 
-3.  Lav nu en scene, kaldet **F6**, der viser både S-protein og S-peptid i relation til active site. Inkluder også substratanalogen.\
-    Brug strukturel analyse til at afgøre hvilken rolle S-peptidet spiller for enzymets aktivitet? Tror du RNase S er aktivt som enzym? Hvad med det isolerede S-protein (eller for den sags skyld, S-peptid)?
+### Find polære interaktioner i PyMOL
+
+Lav en scene, kaldet **F5**, der viser de polære interaktioner mellem S-peptidet og S-proteinet. Studér interaktionerne og foreslå hvad der sker med enzymets tertiære struktur efter kløvning. Det kløvede RNase A betegnes RNase S. Hint: Brug find-funktionen til at finde bindingerne og brug så distance-kommandoen til at få dem ind i scriptet. Du skulle gerne finde 13 bindinger. Vis sidekæderne, der er involveret i interaktioner med lines-repræsentationen.
+
+### Analyser S-peptidets rolle i aktivt site
+
+Lav nu en scene, kaldet **F6**, der viser både S-protein og S-peptid i relation til active site. Inkluder også substratanalogen. Brug strukturel analyse til at afgøre hvilken rolle S-peptidet spiller for enzymets aktivitet? Tror du RNase S er aktivt som enzym? Hvad med det isolerede S-protein (eller for den sags skyld, S-peptid)?
 
 ***PyMOL info**: Du kan hurtigt gemme alle objekter med interaktioner ved at skrive hide everything, dist\*. "\*" er et wildcard, der gør at den vælger alle objekter, der starter med ordet dist, ligegyldigt hvad der står efter.*
 
-4.  Lav en ny scene kaldet **F7**, hvor du inkluderer visualisering af svovlbroerne, som i den tidligere opgave. Hvilken rolle spiller disse i interaktionen mellem S-protein og S-peptid? Foreslå hvordan S-peptid og S-protein kan adskilles.
+### Visualiser disulfidbroer i RNase S
+
+Lav en ny scene kaldet **F7**, hvor du inkluderer visualisering af svovlbroerne, som i den tidligere opgave. Hvilken rolle spiller disse i interaktionen mellem S-protein og S-peptid? Foreslå hvordan S-peptid og S-protein kan adskilles.
 
 Vi vil undersøge aktiviteten af RNase A, RNase S, S-peptid samt S-protein samt hvordan S-protein og S-peptid kan adskilles og bringes sammen igen ved laboratorieøvelserne.
 
@@ -360,18 +401,23 @@ scene F7, store, Active site og svovlbroer i relation til S-protein og S-peptid
 
 De stærke ikke-kovalente interaktioner mellem S-proteinet og S-peptidet i RNase S har været udnyttet til mange eksperimenter indenfor protein engineering helt op til 20 år før genetisk manipulation var opfundet, specielt fordi S-peptidet er lille nok til at kunne syntetiseres ved klassisk, kemisk peptidsyntese. Man har ligeledes været i stand til at løse krystalstrukturen af RNase S (PDB-ID: 2RNS). Gennem disse eksperimenter har man bl.a. identificeret et S-peptidfragment svarende til residues 1-15, der binder stabilt til S-proteinet.
 
-1.  Lav en scene, kaldet **F8**, som henter RNase S og overlejrer den med RNase A. Vis det med ribbon-repræsentation. Hint: Sæt `fetch`-kommandoen for RNaseS helt oppe i starten af scriptet og gem med hide everything indtil du skal bruge den. Husk align- og super-kommandoerne introduceret i en tidligere TØ.\
-    Beskriv forskelle og ligheder mellem de to strukturer og forklar hvorfor det rekombinante RNase S med S-peptidfragmentet 1-15 stadig er aktivt.
+### Overlejr RNase S og RNase A i PyMOL
+
+Lav en scene, kaldet **F8**, som henter RNase S og overlejrer den med RNase A. Vis det med ribbon-repræsentation. Hint: Sæt `fetch`-kommandoen for RNaseS helt oppe i starten af scriptet og gem med hide everything indtil du skal bruge den. Husk align- og super-kommandoerne introduceret i en tidligere TØ. Beskriv forskelle og ligheder mellem de to strukturer og forklar hvorfor det rekombinante RNase S med S-peptidfragmentet 1-15 stadig er aktivt.
 
 Senere fandt man ud af at det er muligt at sammenføje S-peptidfragmentet 1-15 til næsten ethvert andet protein som et fusionsprotein og at dette fint kan substituere for det naturlige S-peptid, dvs. at det binder med høj specificitet til S-proteinet og leder til en aktiv nuklease. Dette kan benyttes som et bioteknologisk værktøj til oprensning af S-protein vha. affinitetskromatografi.
 
-2.  Foreslå hvorledes man kan oprense S-protein via affinitetskromatografi vha. et rekombinant S-peptidfragment og herefter benytte et biokemisk assay til at analysere om eksperimentet har virket.
+### Foreslå affinitetsoprensningstrategi
+
+Foreslå hvorledes man kan oprense S-protein via affinitetskromatografi vha. et rekombinant S-peptidfragment og herefter benytte et biokemisk assay til at analysere om eksperimentet har virket.
 
 Ved kursets laboratorieøvelser vil I få udleveret et råt ekstrakt fra *E. coli*-celler, der er blevet modificerede til at udtrykke store mængder af et 3-komponent fusionsprotein bestående af et oligo-His affinitetstag (et såkaldt `His-tag`) sammenføjet med N-terminalen af proteinet ubiquitin efterfulgt af et 15-residue S-peptidderivat. Fusionsproteinet benævnes `H6-Ubi-S15`. Vi vil foretage en 1-trinsoprensning af H6-Ubi-S15 vha. en Ni^2+^-søjle, der binder stærkt til His-tagget og undersøge dannelsen af hybrid RNase S-enzym. Vi vil også undersøge en mutant af fusionsproteinet kaldet H6-Ubi-S15 F8G, hvor residue Phe8 er udskiftet med Gly.
 
 Skriv et PyMOL-script baseret på strukturen af RNase S i 2RNS til at foretage strukturel analyse med henblik på at finde ud af hvordan mutationen F8G kunne tænkes at påvirke enzymets aktivitet. 
 
-3.  Lav et sidste script, kaldet **F9**, som gør det muligt at lave en strukturel analyse af RNaseS med henblik på at finde ud af hvordan mutationen F8G kunne tænkes at påvirke enzymets aktivitet. 
+### Skriv script til strukturanalyse af RNase S
+
+Lav et sidste script, kaldet **F9**, som gør det muligt at lave en strukturel analyse af RNaseS med henblik på at finde ud af hvordan mutationen F8G kunne tænkes at påvirke enzymets aktivitet.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

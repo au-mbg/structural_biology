@@ -6,9 +6,13 @@ title: "TØ 5 -- Proteinstruktur 2"
 
 Højtopløste strukturer i Protein Data Bank blev gennemsøgt for *cis*-peptidbindinger. Her fandt man at det gennemsnitlige protein består af 270 aminosyrer samt at frekvensen af prolinrester er 4.8%. Man fandt desuden at frekvensen af *cis* Xaa-Pro (altså forekomsten af et *cis*-peptid lige før prolin ud af alle aminosyrer) er 5.2% og at frekvensen af *cis-*peptider for andre (ikke-proline) rester er 0.029%.
 
-1.  Baseret på ovenstående, hvor mange *cis *Xaa-Pro bindinger vil du i gennemsnit forvente at finde i hvert protein? Hvis mindre end én, hvor mange proteiner ville man skulle kigge i gennem før man fandt én *cis* Xaa-Pro?
+### Beregn cis Xaa-Pro frekvens per protein
 
-2.  Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
+Baseret på ovenstående, hvor mange *cis *Xaa-Pro bindinger vil du i gennemsnit forvente at finde i hvert protein? Hvis mindre end én, hvor mange proteiner ville man skulle kigge i gennem før man fandt én *cis* Xaa-Pro?
+
+### Beregn andre cis-peptidbindingers frekvens
+
+Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -37,20 +41,30 @@ I denne opgave vil vi bruge CATH, der klassificerer domæner i fire niveauer: Fo
 
 Gå til CATH hjemmesiden og vælg "Browse" i øverste linie.
 
-1.  Hvilken af de fire klasser indeholder flest domæner? Diskutér.
+### Identificer klassen med flest domæner
+
+Hvilken af de fire klasser indeholder flest domæner? Diskutér.
 
 Expandér klasserne og kig efter arkitekturer der betegnes som "barrel".
 
-2.  I hvor mange klasser og i hvilke klasser findes der barrel-arkitekturer?
+### Find barrel-arkitekturer i klasserne
 
-3.  Hvilken barrel-arkitektur indeholder flest domæner? 
+I hvor mange klasser og i hvilke klasser findes der barrel-arkitekturer?
+
+### Find barrel-arkitekturen med flest domæner
+
+Hvilken barrel-arkitektur indeholder flest domæner? 
 
 <!-- -->
 
-4.  Beskriv foldningen i den klassiske β-barrel.\
-    Hint: Se figur 1.58 i Petsko & Ringe.
+### Beskriv klassisk β-barrel foldning
 
-5.  Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
+Beskriv foldningen i den klassiske β-barrel.\
+Hint: Se figur 1.58 i Petsko & Ringe.
+
+### Sammenlign CATH:3.20.20 og CATH:2.40.10
+
+Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -75,23 +89,37 @@ I denne opgave skal vi bruge PyMOL til at kigge på strukturen af elongeringsfak
 \
 Kig på filen EF-Tu-folding.pml, som findes under denne uge på Brightspace. Nogle linier nede i scriptet vil du finde linjen; dss /1eft
 
-1.  Hvilken funktion har kommandoen `dss` (Hint: se [**https://pymolwiki.org/index.php/Category:Commands**](https://pymolwiki.org/index.php/Category:Commands))
+### Undersøg dss-kommandoen
+
+Hvilken funktion har kommandoen `dss` (Hint: se [**https://pymolwiki.org/index.php/Category:Commands**](https://pymolwiki.org/index.php/Category:Commands))
 
 Copy/Paste scriptet fra EF-Tu-folding.pml ind i PyMOL.
 
 Tryk **F1** for at få et overblik over strukturen.
 
-2.  Hvor mange domæner består proteinet af? Forklar hvordan det ses.
+### Tæl domæner i EF-Tu
 
-3.  Angiv foldningsklasse for hvert enkelt domæne.
+Hvor mange domæner består proteinet af? Forklar hvordan det ses.
 
-4.  Tryk **F2** for at undersøge domæne 1. Hvor mange β-α-β motiver består domæne 1 af?
+### Angiv foldningsklasse for hvert domæne
 
-5.  Tryk **F3** for at undersøge domæne 2. Hvor mange β-hairpins findes der i domæne 2?
+Angiv foldningsklasse for hvert enkelt domæne.
 
-6.  Tryk **F4** for at undersøge domæne 3. Beskriv foldningen af domæne 3.
+### Tæl β-α-β-motiver i domæne 1
 
-7.  Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
+Tryk **F2** for at undersøge domæne 1. Hvor mange β-α-β motiver består domæne 1 af?
+
+### Tæl β-hairpins i domæne 2
+
+Tryk **F3** for at undersøge domæne 2. Hvor mange β-hairpins findes der i domæne 2?
+
+### Beskriv foldning af domæne 3
+
+Tryk **F4** for at undersøge domæne 3. Beskriv foldningen af domæne 3.
+
+### Identificer nukleotidbindende domæne
+
+Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -122,9 +150,13 @@ Visse hormoner af peptidtypen har en pyroglutamylrest som N-terminal, hvorved ho
 
 Strukturen af *B.amyloliquefaciens* PGP-I (PDB-ID: 1AUG) kan findes i Protein Data Bank.
 
-1.  Hvilken foldningsklasse tilhører PGP-I og hvor mange domæner består protomeren af.
+### Bestem foldningsklasse for PGP-I
 
-2.  Beskriv PGP-I's kvaternære struktur og beskriv hvilke(n) symmetri(er) der er mellem de enkelte protomerer. (Hint: Petsko og Ringe, side 40-45)
+Hvilken foldningsklasse tilhører PGP-I og hvor mange domæner består protomeren af.
+
+### Beskriv PGP-I's kvaternære struktur
+
+Beskriv PGP-I's kvaternære struktur og beskriv hvilke(n) symmetri(er) der er mellem de enkelte protomerer. (Hint: Petsko og Ringe, side 40-45)
 
 Cysteine fra den katalytiske triade i PGP-I er N-terminal i en helix som har sekvensen
 
@@ -132,19 +164,29 @@ FVCNHLFYGLMDEISRHHP
 
 Anvend EMBOSS ( f.eks. på [**http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel**](http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel)) til at tegne et helix hjul.
 
-3.  Diskuter fordelingen af aminosyrer på hjulet med hensyn til deres fysisk/kemiske egenskaber.
+### Tegn et helix-hjul for helixen
 
-4.  Hvilken side af helixen forventer du vender ind mod kernen af proteinet ?
+Diskuter fordelingen af aminosyrer på hjulet med hensyn til deres fysisk/kemiske egenskaber.
+
+### Identificer helixens hydrofobe side
+
+Hvilken side af helixen forventer du vender ind mod kernen af proteinet ?
 
 ***PyMOL info**: Surface kommandoen bruges ofte i situationer, hvor man vil vise pasform interaktioner mellem ligand og protein. Funktionen viser Connelly overfladen, også kaldet den tilgængelige overflade, som viser alle de teoretisk mulige steder vand kan befinde sig omkring proteinet. Da afgrænsningen sættes ved vandets oxygenatoms centrum, vil det sige, at der godt kan ske overlap mellem ligandens og proteinets Connelly overflade, men kun svarende til oxygens radius. I kan læse mere om surface funktionen og Connelly overfladen på; [**https://en.wikipedia.org/wiki/Accessible_surface_area**](https://en.wikipedia.org/wiki/Accessible_surface_area).*\
 \
 Lokaliser helixen i strukturen og vis kun den i surface repræsentation og farvelæg efter atom type. Du vil bemærke, at hvis du har lavet en selektion, der omfatter helixen, er det stadigvæk kun overfladen mod solventet, der bliver vist. For at få vist overfladen af hele helixen er du nødt til at definere et nyt object kun bestående af helixen.
 
-5.  Lav et script, der definerer helicen som et nyt objekt, lav en passende visualisering og gem scenen som F1. Se nu på overfladen af helixen (show surface) og undersøg hvordan overfladen ind mod kernen af proteinet adskiller sig fra den side der vender mod solvent og sammenlign med helix hjulet fra tidligere. Vender helixen som forventet jvf spørgsmål 4.
+### Lav script med surface-visualisering
 
-6.  Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38-39). Lokaliser også switchpoint i PyMOL og lav en scene kaldet F2, der visualiserer dette. Hint: Brug specrum kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
+Lav et script, der definerer helicen som et nyt objekt, lav en passende visualisering og gem scenen som F1. Se nu på overfladen af helixen (show surface) og undersøg hvordan overfladen ind mod kernen af proteinet adskiller sig fra den side der vender mod solvent og sammenlign med helix hjulet fra tidligere. Vender helixen som forventet jvf spørgsmål 4.
 
-7.  Diskuter placeringen af den katalytiske triade i forhold til "switch point" og det forventede substrat bindingssite. Lav en ny scene, F3, som viser active site og dens placering ift. Switchpoint.
+### Tegn topologisk foldningsdiagram
+
+Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38-39). Lokaliser også switchpoint i PyMOL og lav en scene kaldet F2, der visualiserer dette. Hint: Brug specrum kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
+
+### Diskuter katalytisk triade og switchpoint
+
+Diskuter placeringen af den katalytiske triade i forhold til "switch point" og det forventede substrat bindingssite. Lav en ny scene, F3, som viser active site og dens placering ift. Switchpoint.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -252,28 +294,50 @@ Vi har i en tidligere opgave stiftet bekendtskab med følgende to proteiner:
 
 Brug dit kendskab til online databaser til at besvare følgende spørgsmål
 
-1.  Hvad er funktionen af de to proteiner i cellen og i hvilke sammenhænge optræder de?
+### Find de to proteiners funktion
 
-2.  Hvad er molekylevægten af β-galactosidase og hvor mange kæder består det aktive enzym af?
+Hvad er funktionen af de to proteiner i cellen og i hvilke sammenhænge optræder de?
 
-3.  Hvilken PDB-kode (struktur) og accessionsnummer er registreret for myoglobin?
+### Find β-galactosidasens molekylvægt
 
-4.  Hvilken subcellulære position findes myoglobin i?[\
-    ]{.mark}
+Hvad er molekylevægten af β-galactosidase og hvor mange kæder består det aktive enzym af?
 
-5.  Benævn chromosompositionen for proteinerne. Forklar hvorfor β-galactosidase er lidt anderledes.
+### Find PDB-kode og accessionsnummer
 
-6.  Beskriv de to proteiners posttranscriptionelle modifikationer.
+Hvilken PDB-kode (struktur) og accessionsnummer er registreret for myoglobin?
 
-7.  Hvad er K~M~-værdien for β-galactosidase overfor det stærkest bindende substrat, man har målt? Hvad er V~max~ for enzymet med dette substrat?
+### Find myoglobins subcellulære placering
 
-8.  Find aminosyrerne der er den del af active site for begge proteiner.
+Hvilken subcellulære position findes myoglobin i?[\
+]{.mark}
 
-9.  Hvad er det isoelektriske punkt (pI) for henholdsvis myoglobin og beta-galactosidase?
+### Find kromosomlokalisering for proteinerne
 
-10. Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galactosidase?
+Benævn chromosompositionen for proteinerne. Forklar hvorfor β-galactosidase er lidt anderledes.
 
-11. Find allosteriske effektorer af expression for β-galactosidase.
+### Beskriv posttranslationelle modifikationer
+
+Beskriv de to proteiners posttranscriptionelle modifikationer.
+
+### Find β-galactosidasens KM og Vmax
+
+Hvad er K~M~-værdien for β-galactosidase overfor det stærkest bindende substrat, man har målt? Hvad er V~max~ for enzymet med dette substrat?
+
+### Find active site aminosyrer
+
+Find aminosyrerne der er den del af active site for begge proteiner.
+
+### Find isoelektrisk punkt for proteinerne
+
+Hvad er det isoelektriske punkt (pI) for henholdsvis myoglobin og beta-galactosidase?
+
+### Find sekvenser med mere end 50 % identitet
+
+Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galactosidase?
+
+### Find allosteriske effektorer af expression
+
+Find allosteriske effektorer af expression for β-galactosidase.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

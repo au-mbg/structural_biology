@@ -14,38 +14,50 @@ Basalt set er,
 
 Et objekt kan altså godt eksistere uden en selektion, men en selektion kan ikke findes uden et objekt (i hvert fald ikke med indhold).
 
-1. Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen `fetch 1BL8`. Kommandoer kan enten tastes øverst eller nederst i vinduet hvor der står "PyMOL>". I denne og følgende opgaver på kurset vil følgende angive en kommando, der skal skrives i PyMOL (eller stå i et script):
+### Hent K^+^-kanalstrukturen 1BL8
 
-    ```pymol
-    fetch 1BL8
-    ```
+Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen `fetch 1BL8`. Kommandoer kan enten tastes øverst eller nederst i vinduet hvor der står "PyMOL>". I denne og følgende opgaver på kurset vil følgende angive en kommando, der skal skrives i PyMOL (eller stå i et script):
 
-2.  Dan en ny selection bestående af kæde A i strukturen:\
+```pymol
+fetch 1BL8
+```
 
-    ```pymol
-    select select_A, chain A
-    ```
+### Dan en selektion af kæde A
 
-    Her er `select_A` navnet på den nye selektion mens "chain A" fortæller PyMOL at selektionen skal bestå af kæde A. Bemærk at der kommer en ny selektion i listen til højre og at navnet står i parentes, hvilket angiver en selektion. PyMOL viser også selektionen med "selection handles" for hvert atom (små firkanter på strukturen). En selektion fungerer lidt som i andre programmer, du kender, f.eks. forsvinder "selection handles", hvis man klikker udenfor selektionen. De kommer tilbage ved at klikke på selektionens navn `(select_A)`. Man kan altså hhv. vælge og ikke vælge atomerne ved at klikke på navnet.
+Dan en ny selection bestående af kæde A i strukturen:\
 
-3.  Prøv at vælge selektionen så de små selection handles vises. Sluk nu for hovedobjektet `1BL8` og bemærk at hele strukturen forsvinder, mens selektionen stadig vises. Der er ingen atomer i selektionen, så hvis man slukker for hovedobjektet, ses strukturen ikke.
+```pymol
+select select_A, chain A
+```
 
-4.  Dan nu et nyt objekt bestående af kæde A i strukturen:\
+Her er `select_A` navnet på den nye selektion mens "chain A" fortæller PyMOL at selektionen skal bestå af kæde A. Bemærk at der kommer en ny selektion i listen til højre og at navnet står i parentes, hvilket angiver en selektion. PyMOL viser også selektionen med "selection handles" for hvert atom (små firkanter på strukturen). En selektion fungerer lidt som i andre programmer, du kender, f.eks. forsvinder "selection handles", hvis man klikker udenfor selektionen. De kommer tilbage ved at klikke på selektionens navn `(select_A)`. Man kan altså hhv. vælge og ikke vælge atomerne ved at klikke på navnet.
 
-    ```
-    create object_A, chain A
-    ```
+### Test selektion- og objektsynlighed
 
-    Her er `objekt_A` navnet på det nye objekt mens "chain A" fortæller PyMOL at objektet skal bestå af kæde A. Bemærk at der kommer et nyt objekt i listen til højre og at navnet står uden parentes (og har en 1/1 state), hvilket angiver et objekt. PyMOL centrerer også synsfeltet på det nye objekt.
+Prøv at vælge selektionen så de små selection handles vises. Sluk nu for hovedobjektet `1BL8` og bemærk at hele strukturen forsvinder, mens selektionen stadig vises. Der er ingen atomer i selektionen, så hvis man slukker for hovedobjektet, ses strukturen ikke.
 
-5.  Ved at oprette et nyt objekt har vi i praksis lavet en kopi af en del af strukturen (atompositioner etc.), så vi nu har to kæde A. Prøv at skjule det oprindelige objekt 1BL8 (klik på objektnavnet) og se at vi stadig kan se den ene kæde i chain_A. Vi har nu to strukturer af kæde A.
+### Dan et nyt objekt af kæde A
+
+Dan nu et nyt objekt bestående af kæde A i strukturen:\
+
+```
+create object_A, chain A
+```
+
+Her er `objekt_A` navnet på det nye objekt mens "chain A" fortæller PyMOL at objektet skal bestå af kæde A. Bemærk at der kommer et nyt objekt i listen til højre og at navnet står uden parentes (og har en 1/1 state), hvilket angiver et objekt. PyMOL centrerer også synsfeltet på det nye objekt.
+
+### Sammenlign objekt og selektion
+
+Ved at oprette et nyt objekt har vi i praksis lavet en kopi af en del af strukturen (atompositioner etc.), så vi nu har to kæde A. Prøv at skjule det oprindelige objekt 1BL8 (klik på objektnavnet) og se at vi stadig kan se den ene kæde i chain_A. Vi har nu to strukturer af kæde A.
 
 Forskellen på objekter og selektioner kan virke pedantisk og unødvendig, men det er vigtigt at du forstår ovenstående og er helt klar på forskellen mellem de to typer i PyMOL. Her er nogle eksempler på hvad de kan bruges til:
 
 selektioner - bruges ofte til at vælge en del af strukturen med henblik på at vise den i en anden repræsentation eller farve.\
 objekter - bruges til at arbejde uafhængigt med en del af stukturen samt i visse tilfælde hvor man vil vise en struktur i flere repræsentationer samtidig.
 
-6.  Prøv at farve selektionen select_A rød og objektet object_A blåt. Tænd og sluk nu for 1BL8 og object_A for at se hvad der er sket. Vi har nu de to kopier af kæde A i to forskellige farver. De er naturligvis perfekt overlejrede, så afhængig af hvilken der sidst har været vist, ses kæden enten som rød eller blå. Vi kan arbejde med de to kopier uafhængigt af hinanden, f.eks. overlejre object_A på en anden struktur, uden at det påvirker 1BL8. Overlejrer vi derimod selektionen select_A vil hele strukturen 1BL8 blive flyttet. Mere om det senere. 
+### Farv selektion og objekt forskelligt
+
+Prøv at farve selektionen select_A rød og objektet object_A blåt. Tænd og sluk nu for 1BL8 og object_A for at se hvad der er sket. Vi har nu de to kopier af kæde A i to forskellige farver. De er naturligvis perfekt overlejrede, så afhængig af hvilken der sidst har været vist, ses kæden enten som rød eller blå. Vi kan arbejde med de to kopier uafhængigt af hinanden, f.eks. overlejre object_A på en anden struktur, uden at det påvirker 1BL8. Overlejrer vi derimod selektionen select_A vil hele strukturen 1BL8 blive flyttet. Mere om det senere. 
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
@@ -90,11 +102,17 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
 Nu hvor du forstår forskellen på selektioner og objekter, skal vi tale om PyMOL's generelle selektion kaldet **sele**. Denne opstår når man klikker med musen på en struktur eller vælger en del af sekvensen ud. 
 
-1.  Hent strukturen af Streptomyces K+-kanalen som i de forrige opgaver (fetch 1BL8). Har man allerede startet PyMOL og vil slette alt, kan man skrive kommandoen reinit (reinitialize), eller vælge File->Reinitialize->Everything fra menuen.
+### Hent 1BL8 og ryd PyMOL
 
-2.  Vis 1BL8 som sticks og zoom lidt ind med musen (huske at skjule cartoon-repræsentationen først). Farv den med atomfarver med carbon i gult.
+Hent strukturen af Streptomyces K+-kanalen som i de forrige opgaver (fetch 1BL8). Har man allerede startet PyMOL og vil slette alt, kan man skrive kommandoen reinit (reinitialize), eller vælge File->Reinitialize->Everything fra menuen.
 
-3.  Midt i kanalen findes en stor hydrofob aminosyre, Phe 103, nær en kavitet. Phenylringen er rimelig tydelig. Klik med musen for at identificere aminosyren og vælge den i sele. Hvis du rammer forkert, klik da udenfor strukturen for at slette selektionen igen. Når man klikker på et atom, skriver PyMOL:
+### Vis 1BL8 som sticks med atomfarver
+
+Vis 1BL8 som sticks og zoom lidt ind med musen (huske at skjule cartoon-repræsentationen først). Farv den med atomfarver med carbon i gult.
+
+### Identificer Phe103 ved museklik
+
+Midt i kanalen findes en stor hydrofob aminosyre, Phe 103, nær en kavitet. Phenylringen er rimelig tydelig. Klik med musen for at identificere aminosyren og vælge den i sele. Hvis du rammer forkert, klik da udenfor strukturen for at slette selektionen igen. Når man klikker på et atom, skriver PyMOL:
 
 > You clicked /1BL8/A/A/PHE\`103/CG\
 > Selector: selection `sele` defined with 11 atoms.\
@@ -119,87 +137,107 @@ Informationen fortæller os at i objektet 1BL8, segment A, kæde A klikkede vi p
       η          H
   ---------------------
 
-4.  Cα hedder altså CA, Oγ hedder OG og så fremdeles. Nogle gange (f.eks. i Asp) kan der være to ens atomer på samme position, hvorved de navngives 1 og 2, f.eks. hedder de to carboxylatatomer i Asp OD1 og OD2.
+### Forstå PDB-atomnomenklatur
 
-5.  Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på ét atom. Dette styres i menuen Mouse > Selection Mode. Skift selection mode til "Chains" og brug dette til at vælge hele kæde A. Nu kan vi omdøbe den generelle selektion til noget andet, så vælge "rename selection" i Action-menuen for sele og navngiv den `select_A`. Skift tilbage til selection mode `Residues` og vælg Phe103 i kæde A igen. Bemærk at der nu kommer en ny sele-selektion. På denne måde kan man opbygge selektioner uden brug af kommandoer.
+Cα hedder altså CA, Oγ hedder OG og så fremdeles. Nogle gange (f.eks. i Asp) kan der være to ens atomer på samme position, hvorved de navngives 1 og 2, f.eks. hedder de to carboxylatatomer i Asp OD1 og OD2.
 
-6.  Vi kan også bruge nomenklaturen ovenfor til at danne en selektion med CG-atomet fra Phe 103:\
+### Skift selektionsmode og navngiv selektion
 
-    ```
-    select 103CG, /1BL8/A/A/PHE\`103/CG
-    ```
+Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på ét atom. Dette styres i menuen Mouse > Selection Mode. Skift selection mode til "Chains" og brug dette til at vælge hele kæde A. Nu kan vi omdøbe den generelle selektion til noget andet, så vælge "rename selection" i Action-menuen for sele og navngiv den `select_A`. Skift tilbage til selection mode `Residues` og vælg Phe103 i kæde A igen. Bemærk at der nu kommer en ny sele-selektion. På denne måde kan man opbygge selektioner uden brug af kommandoer.
 
-    Det lille `backquote` (\`) kan godt drille, men det behøves heldigvis heller ikke:\
+### Dan selektioner med PyMOL-nomenklatur
 
-    ```
-    select 103CG, /1BL8/A/A/103/CG
-    ```
+Vi kan også bruge nomenklaturen ovenfor til at danne en selektion med CG-atomet fra Phe 103:\
 
-    Man behøver heller ikke give alle felterne, hvis de ikke er nødvendige, f.eks. i dette tilfælde er der kun én struktur, så vi kan nøjes med\
+```
+select 103CG, /1BL8/A/A/PHE\`103/CG
+```
 
-    ```
-    select 103CG, A/103/CG
-    ```
+Det lille `backquote` (\`) kan godt drille, men det behøves heldigvis heller ikke:\
 
-    Når du laver selektioner, så husk at tjekke at det forventede antal atomer vælges ved at se hvad PyMOL skriver:
-    
-    > Selector: selection `103CG` defined with 1 atoms.
+```
+select 103CG, /1BL8/A/A/103/CG
+```
 
-7.  Hvis man kun benytter en del af felterne er reglen at hvis udsagnet starter med / så skal man have alt med fra venstre men må godt stoppe halvvejs. Starter udsagnet ikke med / fortolkes det som at starte fra højre. Eksempler:\
-    \
-    Vælg hele kæde A (fra venstre):\
+Man behøver heller ikke give alle felterne, hvis de ikke er nødvendige, f.eks. i dette tilfælde er der kun én struktur, så vi kan nøjes med\
 
-    ```
-    select chain_A, /1BL8/A/A
-    ```
+```
+select 103CG, A/103/CG
+```
 
-    Vælg hele residue 103 i kæde A (fra venstre):\
+Når du laver selektioner, så husk at tjekke at det forventede antal atomer vælges ved at se hvad PyMOL skriver:
 
-    ```
-    select A103, /1BL8/A/A/103
-    ```
+> Selector: selection `103CG` defined with 1 atoms.
 
-    Vælg kun CG i residue 103 (fra højre):\
+### Anvend delvise selektionsstier
 
-    ```
-    select 103CG, 103/CG
-    ```
+Hvis man kun benytter en del af felterne er reglen at hvis udsagnet starter med / så skal man have alt med fra venstre men må godt stoppe halvvejs. Starter udsagnet ikke med / fortolkes det som at starte fra højre. Eksempler:\
+\
+Vælg hele kæde A (fra venstre):\
 
-    Hvor mange atomer vælges i dette tilfælde? Hvorfor?
+```
+select chain_A, /1BL8/A/A
+```
 
-8.  En anden nyttig regel er at man kan udelade noget af informationen for at vælge alt, f.eks. vil \
+Vælg hele residue 103 i kæde A (fra venstre):\
 
-    ```
-    select res103, /1BL8///103
-    ```
+```
+select A103, /1BL8/A/A/103
+```
 
-    vælge alle residues i strukturen 1BL8 med residuenummer 103. Hvor mange atomer/residues er det?\
-    \
-    Da der kun er ét objekt, kunne vi endda bare sige,\
-    \
-    select res103, ////103
+Vælg kun CG i residue 103 (fra højre):\
 
-9.  Man kan også angive en range af residues vha. en bindestreg, f.eks. vil\
+```
+select 103CG, 103/CG
+```
 
-    ```
-    select A103-105, /1BL8//A/103-105
-    ```
+Hvor mange atomer vælges i dette tilfælde? Hvorfor?
 
-    vælge residues 103-105 i kæde A.
+### Vælg residues med udeladt information
 
-10. Endelig kan man vælge residues i proteinsekvensen. Vælg Display->Sequence fra menuen og træk fra residue Arg27-Leu36 i sekvensen for at vælge det. Find selv ud af hvordan man vælger i de andre kæder (Hint: Sæt først kæderne til forskellige farver, da de vises i sekvensen).
+En anden nyttig regel er at man kan udelade noget af informationen for at vælge alt, f.eks. vil \
 
-11. Brug nu select-statements og nomenklaturen ovenfor til at lave følgende selektioner. Brug forskellige, fornuftige navne til dem alle:
-    - Residues 110-120 i kæde B.\
-    - Alle residues i kæde D.\
-    - Alle Cα-atomer i kæde A.\
-    - Residue Trp87 i kæde D.\
-    - Atomet Nε1 i Trp87 i kæde D.\
-    - Alle Phe-residues i strukturen.
+```
+select res103, /1BL8///103
+```
 
-12. Brug dine selektioner til at vise hele strukturen i cartoon med en lys grøn farve, farv kæde D mørkegrøn, farv alle Phe-residues i strukturen røde, vis Trp87 i kæde D med sticks og atomet Nε1 med en blå sphere. Vis alle Cα-atomer i kæde A med røde spheres. Farv området 110-120 i kæde B gult.
+vælge alle residues i strukturen 1BL8 med residuenummer 103. Hvor mange atomer/residues er det?\
+\
+Da der kun er ét objekt, kunne vi endda bare sige,\
+\
+select res103, ////103
 
-13. Hvad skete der med cartoon-farven i kæde A, da du ændrede farven på Cα-atomerne? Diskutér.
+### Vælg residues i et interval
+
+Man kan også angive en range af residues vha. en bindestreg, f.eks. vil\
+
+```
+select A103-105, /1BL8//A/103-105
+```
+
+vælge residues 103-105 i kæde A.
+
+### Vælg residues fra proteinsekvensen
+
+Endelig kan man vælge residues i proteinsekvensen. Vælg Display->Sequence fra menuen og træk fra residue Arg27-Leu36 i sekvensen for at vælge det. Find selv ud af hvordan man vælger i de andre kæder (Hint: Sæt først kæderne til forskellige farver, da de vises i sekvensen).
+
+### Lav specifikke navngivne selektioner
+
+Brug nu select-statements og nomenklaturen ovenfor til at lave følgende selektioner. Brug forskellige, fornuftige navne til dem alle:
+- Residues 110-120 i kæde B.\
+- Alle residues i kæde D.\
+- Alle Cα-atomer i kæde A.\
+- Residue Trp87 i kæde D.\
+- Atomet Nε1 i Trp87 i kæde D.\
+- Alle Phe-residues i strukturen.
+
+### Visualiser strukturen med selektioner
+
+Brug dine selektioner til at vise hele strukturen i cartoon med en lys grøn farve, farv kæde D mørkegrøn, farv alle Phe-residues i strukturen røde, vis Trp87 i kæde D med sticks og atomet Nε1 med en blå sphere. Vis alle Cα-atomer i kæde A med røde spheres. Farv området 110-120 i kæde B gult.
+
+### Diskuter farveændring ved Cα-farve
+
+Hvad skete der med cartoon-farven i kæde A, da du ændrede farven på Cα-atomerne? Diskutér.
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
@@ -342,37 +380,43 @@ Nomenklaturen for atom-selektion, som vi arbejdede med i forrige opgave, er nytt
 
 Disse kan kombineres med de boolske operatorer OR, AND og NOT, hvor OR giver foreningsmængden af to selektioner og AND fællesmængden. 
 
-1.  Start PyMOL og hent strukturen af Streptomyces K+-kanalen i 1BL8. Lav en selektion af kæde A, som vi gjorde i opgave 1,\
+### Hent 1BL8 og lav kædeselektioner
 
-    ```
-    select chainA, chain A
-    ```
+Start PyMOL og hent strukturen af Streptomyces K+-kanalen i 1BL8. Lav en selektion af kæde A, som vi gjorde i opgave 1,\
 
-    Lav en anden selection med Trp87 i kæde D vha. AND-operatoren:\
+```
+select chainA, chain A
+```
 
-    ```
-    select D87, chain D and resi 87
-    ```
+Lav en anden selection med Trp87 i kæde D vha. AND-operatoren:\
 
-    Bemærk at "chain D" vælger alle atomer i kæde D mens `resi 87` vælger alle atomer med residuenummer 87. AND giver fællesmængden, hvilket er alle atomer, der både er i kæde D og i residue 87.\
-    \
-    Husk som altid at tjekke at du får det forventede antal atomer. PyMOL skriver,\
+```
+select D87, chain D and resi 87
+```
 
-    ```
-    Selector: selection `D87` defined with 14 atoms.
-    ```
+Bemærk at "chain D" vælger alle atomer i kæde D mens `resi 87` vælger alle atomer med residuenummer 87. AND giver fællesmængden, hvilket er alle atomer, der både er i kæde D og i residue 87.\
+\
+Husk som altid at tjekke at du får det forventede antal atomer. PyMOL skriver,\
 
-    14 atomer er som forventet antallet i én Trp. Fint.
+```
+Selector: selection `D87` defined with 14 atoms.
+```
 
-2.  Mange begyndere bliver ofte usikre på om de skal bruge AND eller OR. Hvad ville resultatet være ved at skrive,\
+14 atomer er som forventet antallet i én Trp. Fint.
 
-    ```
-    select D87, chain D or resi 87
-    ```
+### Sammenlign AND og OR operatorer
 
-    Prøv det og forklar resultatet. 
+Mange begyndere bliver ofte usikre på om de skal bruge AND eller OR. Hvad ville resultatet være ved at skrive,\
 
-3.  På samme måde kan man vælge atomer efter navn (se forrige opgave) med "name" og residues efter navn (f.eks. Trp) vha. "resn". Skriv nu kommandoer til at lave selektionerne fra før og giv dem fornuftige navne,
+```
+select D87, chain D or resi 87
+```
+
+Prøv det og forklar resultatet. 
+
+### Vælg atomer med name og resn
+
+På samme måde kan man vælge atomer efter navn (se forrige opgave) med "name" og residues efter navn (f.eks. Trp) vha. "resn". Skriv nu kommandoer til at lave selektionerne fra før og giv dem fornuftige navne,
    
     - Residues 110-120 i kæde B.\
     - Alle residues i kæde D.\
@@ -381,39 +425,49 @@ Disse kan kombineres med de boolske operatorer OR, AND og NOT, hvor OR giver for
     - Atomet Nε1 i Trp87 i kæde D.\
     - Alle Phe-residues i strukturen.
 
-4.  Foreningsmængde-operatoren OR benyttes når man skal vælge mere end én ting, f.eks. vælges både kæde A og B således,\
+### Kombiner selektioner med OR-operatoren
 
-    ```
-    select chainsAB, chain A or chain B
-    ```
+Foreningsmængde-operatoren OR benyttes når man skal vælge mere end én ting, f.eks. vælges både kæde A og B således,\
 
-    Skal man kombinere AND or OR bliver det vigtigt at benytte parenteser, f.eks. vil udsagnet\
+```
+select chainsAB, chain A or chain B
+```
 
-    ```
-    select my_res, (chain A and resi 87) or (chain B and resi 110-120)
-    ```
+Skal man kombinere AND or OR bliver det vigtigt at benytte parenteser, f.eks. vil udsagnet\
 
-    vælge både residue 87 i kæde A og residues 110-120 i kæde B i én selektion.
+```
+select my_res, (chain A and resi 87) or (chain B and resi 110-120)
+```
 
-5.  Brug nu ovenstående viden til at generere følgende selektioner,\
-    \
-    \* Residues 10-30 i kæde A og kæde B.\
-    \* Atomet Cα i residue 87 i kæde A samt samme atom i residue 86 i kæde B.\
-    \* Alle Cys-residues i kæde A og alle Met-residues in kæde B.
+vælge både residue 87 i kæde A og residues 110-120 i kæde B i én selektion.
 
-6.  Vis strukturen som ribbon for at lette identifikationen af Cα-atomer. Identificér start og slut residues for den lange, yderste helix i strukturen, der er én i hver kæde, så det er lige meget hvilken du bruger.\
-    \
-    Lav en selektion, der indeholder hele den lange helix i alle kæder og farv dem røde. 
+### Generer specifikke selektioner
 
-7.  Hvis man vil vælge det hele, men undlade en lille del, kan negationsoperatoren NOT være nyttig. F.eks. vil,\
+Brug nu ovenstående viden til at generere følgende selektioner,\
+\
+\* Residues 10-30 i kæde A og kæde B.\
+\* Atomet Cα i residue 87 i kæde A samt samme atom i residue 86 i kæde B.\
+\* Alle Cys-residues i kæde A og alle Met-residues in kæde B.
 
-    ```
-    select noNterm, 1BL8 and not resi 1-30
-    ```
+### Identificer og farv den lange helix
 
-    vælge hele strukturen pånær de N-terminale residues 1-30. Prøv at farve alt undtagen N-terminalen blå.
+Vis strukturen som ribbon for at lette identifikationen af Cα-atomer. Identificér start og slut residues for den lange, yderste helix i strukturen, der er én i hver kæde, så det er lige meget hvilken du bruger.\
+\
+Lav en selektion, der indeholder hele den lange helix i alle kæder og farv dem røde. 
 
-8.  Lav en selection, der vælger alle residues i kæde A, undtagen Cys-residues.
+### Farv strukturen undtagen N-terminalen
+
+Hvis man vil vælge det hele, men undlade en lille del, kan negationsoperatoren NOT være nyttig. F.eks. vil,\
+
+```
+select noNterm, 1BL8 and not resi 1-30
+```
+
+vælge hele strukturen pånær de N-terminale residues 1-30. Prøv at farve alt undtagen N-terminalen blå.
+
+### Vælg kæde A uden Cys-residues
+
+Lav en selection, der vælger alle residues i kæde A, undtagen Cys-residues.
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
@@ -500,128 +554,162 @@ PyMOL-scripts er typisk opbygget på følgende måde:
 
 Gør nu følgende
 
-1.  Opret et nyt script i din editor og gem det som k-channel.pml.
+### Opret scriptet k-channel.pml
 
-2.  Start scriptet med at reinitialisere. Dette er rart, da man næsten altid kører scriptet mange gange under udviklingen og gerne vil have en "ren tavle" uden at genstarte PyMOL:
-    ```
-    reinitialize
-    ```
+Opret et nyt script i din editor og gem det som k-channel.pml.
 
-3.  Skriv nu kommandoen til at hente PDB-filen:
+### Initialisér scriptet
 
-    ```
-    fetch 1BL8, kchannel, async=0
-    ```
+Start scriptet med at reinitialisere. Dette er rart, da man næsten altid kører scriptet mange gange under udviklingen og gerne vil have en "ren tavle" uden at genstarte PyMOL:
+```
+reinitialize
+```
 
-    Her vælger vi at omdøbe objektet med det samme, så det hedder "kchannel` i stedet for `1BL8". Det er en god idé, når man har mange strukturer og svært ved at huske dem fra hinanden. "async=0" sikrer at scriptet ikke kører videre før PDB-filen er helt indlæst.
+### Hent PDB-filen i scriptet
 
-4.  Vi ved at PDB-filen kommer ind som cartoon som standard, så lad os fjerne det hele, så vi kan starte på en frisk:
+Skriv nu kommandoen til at hente PDB-filen:
 
-    ```
-    hide all
-    ```
+```
+fetch 1BL8, kchannel, async=0
+```
 
-5.  Skriv kommandoer til oprettelse af selektioner for hver kæde kaldet "chainA`, `chainB`, `chainC` og `chainD".
+Her vælger vi at omdøbe objektet med det samme, så det hedder "kchannel` i stedet for `1BL8". Det er en god idé, når man har mange strukturer og svært ved at huske dem fra hinanden. "async=0" sikrer at scriptet ikke kører videre før PDB-filen er helt indlæst.
 
-6.  Skriv kommandoer til at farve kæderne i forskellige farver vha. selektionerne, hertil benyttes kommandoen `color`, f.eks. vil
+### Skjul standardvisning
 
-    ```
-    color tv_blue, my_selection
-    ```
+Vi ved at PDB-filen kommer ind som cartoon som standard, så lad os fjerne det hele, så vi kan starte på en frisk:
 
-    farve selektionen my_selection blå. Du kan få inspiration til farver i Color-menuen, eller [**på denne side**](https://pymolwiki.org/index.php/Color_Values). Det er en god regel ikke at bruge de primære farver (red, blue, green, yellow, magenta, cyan), da de ikke kan repræsenteres korrekt på både skærm og papir. Det ser også mere professionelt ud at vælge nogle mere raffinerede farver, som f.eks. `beryllium` eller "gadolinium". Du kan finde alle farver registret i PyMOL på følgende link; <https://pymolwiki.org/index.php/Color_Values>.
+```
+hide all
+```
 
-7.  Lad os nu vise hele strukturen som ribbon:
+### Opret selektioner for kæder
 
-    ```
-    show ribbon, kchannel
-    ```
+Skriv kommandoer til oprettelse af selektioner for hver kæde kaldet "chainA`, `chainB`, `chainC` og `chainD".
 
-    Bemærk at kommandoerne `show` og `hide` benyttes til at gribe ned i menuerne til højre uden at klikke på dem.
+### Farv kæderne med color-kommandoen
 
-8.  Orientér nu strukturen som du gerne vil have den skal se ud (zoom, centrering, rotation). Brug venstre museknap til at rotere,  højre museknap til at zoome og tryk på hjulet for at centrere. Skriv nu kommandoen (på kommandolinjen, ikke i scriptet):
+Skriv kommandoer til at farve kæderne i forskellige farver vha. selektionerne, hertil benyttes kommandoen `color`, f.eks. vil
 
-    ```
-    get_view
-    ```
+```
+color tv_blue, my_selection
+```
 
-    ```
-    ### cut below here and paste into script ###
-    set_view (\
-        0.649728715,   -0.607225955,    0.457305670,\
-        -0.557611287,    0.028152177,    0.829624295,\
-        -0.516643345,   -0.794027805,   -0.320305407,\
-        0.000000000,    0.000000000, -203.462997437,\
-        72.186561584,   26.599575043,   19.889984131,\
-    164.716903687,  242.209091187,  -20.000000000 )
-    ### cut above here and paste into script ###
-    ```
-    PyMOL giver os nu en 3x6 matrix, der fuldstændig definerer synsvinklen. Kopiér følgende,
+farve selektionen my_selection blå. Du kan få inspiration til farver i Color-menuen, eller [**på denne side**](https://pymolwiki.org/index.php/Color_Values). Det er en god regel ikke at bruge de primære farver (red, blue, green, yellow, magenta, cyan), da de ikke kan repræsenteres korrekt på både skærm og papir. Det ser også mere professionelt ud at vælge nogle mere raffinerede farver, som f.eks. `beryllium` eller "gadolinium". Du kan finde alle farver registret i PyMOL på følgende link; <https://pymolwiki.org/index.php/Color_Values>.
 
-    ```
-    set_view (\
-        0.649728715,   -0.607225955,    0.457305670,\
-        -0.557611287,    0.028152177,    0.829624295,\
-        -0.516643345,   -0.794027805,   -0.320305407,\
-        0.000000000,    0.000000000, -203.462997437,\
-        72.186561584,   26.599575043,   19.889984131,\
-    164.716903687,  242.209091187,  -20.000000000 )
-    ```
+### Vis strukturen som ribbon
+
+Lad os nu vise hele strukturen som ribbon:
+
+```
+show ribbon, kchannel
+```
+
+Bemærk at kommandoerne `show` og `hide` benyttes til at gribe ned i menuerne til højre uden at klikke på dem.
+
+### Hent og indsæt set_view
+
+Orientér nu strukturen som du gerne vil have den skal se ud (zoom, centrering, rotation). Brug venstre museknap til at rotere,  højre museknap til at zoome og tryk på hjulet for at centrere. Skriv nu kommandoen (på kommandolinjen, ikke i scriptet):
+
+```
+get_view
+```
+
+```
+### cut below here and paste into script ###
+set_view (\
+    0.649728715,   -0.607225955,    0.457305670,\
+    -0.557611287,    0.028152177,    0.829624295,\
+    -0.516643345,   -0.794027805,   -0.320305407,\
+    0.000000000,    0.000000000, -203.462997437,\
+    72.186561584,   26.599575043,   19.889984131,\
+164.716903687,  242.209091187,  -20.000000000 )
+### cut above here and paste into script ###
+```
+PyMOL giver os nu en 3x6 matrix, der fuldstændig definerer synsvinklen. Kopiér følgende,
+
+```
+set_view (\
+    0.649728715,   -0.607225955,    0.457305670,\
+    -0.557611287,    0.028152177,    0.829624295,\
+    -0.516643345,   -0.794027805,   -0.320305407,\
+    0.000000000,    0.000000000, -203.462997437,\
+    72.186561584,   26.599575043,   19.889984131,\
+164.716903687,  242.209091187,  -20.000000000 )
+```
 fra PyMOL og indsæt det nederst i dit script. 
 
-9.  Afhængig af hvordan, du har skrevet scriptet vil du muligvis opleve, at der vises en resterende selektion, når scriptet er kørt. For at undgå dette og fjerne den sidst valgte gruppe af atomer, indsæt kommandoen:
+### Fjern resterende selektion
 
-    ```
-    deselect
-    ```
+Afhængig af hvordan, du har skrevet scriptet vil du muligvis opleve, at der vises en resterende selektion, når scriptet er kørt. For at undgå dette og fjerne den sidst valgte gruppe af atomer, indsæt kommandoen:
 
-    Ifm. TØ kan det være smart at gemme flere forskellige views eller repræsentationer af strukturen i såkaldte "scenes", som let kan frembringes ved at klikke på knapperne nederst til venstre i PyMOL eller trykke F1, F2, F3\...\
-    For at gemme det nuværende view som en scene, bruges følgende kommando, som indsættes efter set_view-matricen ovenfor:
+```
+deselect
+```
 
-    ```
-    scene overview, store
-    ```
+Ifm. TØ kan det være smart at gemme flere forskellige views eller repræsentationer af strukturen i såkaldte "scenes", som let kan frembringes ved at klikke på knapperne nederst til venstre i PyMOL eller trykke F1, F2, F3\...\
+For at gemme det nuværende view som en scene, bruges følgende kommando, som indsættes efter set_view-matricen ovenfor:
 
-    Dette gemmer den nuværende visning i en scene kaldet `overview`. Bemærk at man ikke kan bruge F-tasterne for at frembringe denne scene, da den er navngivet noget andet end F`-`. Man kan derfor i stedet enten trykke på den lille firkant med navnet `overview` i nedre venstre hjørne eller man kan skrive kommandoen; scene overview, recall.
+```
+scene overview, store
+```
 
-10. Du har nu et komplet PyMOL-script, der først initialiserer, så henter PDB-filen, definerer selektioner og bruger dem og endelig sætter repræsentation og view. Test scriptet ved at kopiere hele teksten og indsætte den ind på PyMOL's kommandolinje, enten øverst eller nederst, som angivet nedenfor. Tryk Enter/Return for at køre scriptet.
-    ![Eksempel på brug af PyMOL kommandolinje](media/image5.png){width="80%" fig-align="center"}
+Dette gemmer den nuværende visning i en scene kaldet `overview`. Bemærk at man ikke kan bruge F-tasterne for at frembringe denne scene, da den er navngivet noget andet end F`-`. Man kan derfor i stedet enten trykke på den lille firkant med navnet `overview` i nedre venstre hjørne eller man kan skrive kommandoen; scene overview, recall.
 
-11. Prøv at orientere molekylet på en anden måde og tjek at du kommer tilbage til start ved at klikke `overview` nederst.
+### Kør og test scriptet
 
-12. Nu skal vi oprette et nyt view, der viser detaljer i K^+^-kanalens såkaldte selektivitetsfilter, der er med til at sikre, at kun K^+^-ioner kan passere. Denne del af scriptet skrives efter ovenstående og vil blive gemt i en ny scene. Opret først en ny selection med ionerne:\
+Du har nu et komplet PyMOL-script, der først initialiserer, så henter PDB-filen, definerer selektioner og bruger dem og endelig sætter repræsentation og view. Test scriptet ved at kopiere hele teksten og indsætte den ind på PyMOL's kommandolinje, enten øverst eller nederst, som angivet nedenfor. Tryk Enter/Return for at køre scriptet.
+![Eksempel på brug af PyMOL kommandolinje](media/image5.png){width="80%" fig-align="center"}
 
-    ```
-    select k_ions, elem K
-    ```
+### Orienter molekylet og test
 
-    Dette udvælger alle atomer med grundstof K.
+Prøv at orientere molekylet på en anden måde og tjek at du kommer tilbage til start ved at klikke `overview` nederst.
 
-13. Vis ionerne som non-bonded spheres (nb_spheres), der er mindre end alm. `spheres`, der viser VDW-radius:\
+### Opret K^+^-ion selektion
 
-    ```
-    show nb_spheres, k_ions
-    ```
+Nu skal vi oprette et nyt view, der viser detaljer i K^+^-kanalens såkaldte selektivitetsfilter, der er med til at sikre, at kun K^+^-ioner kan passere. Denne del af scriptet skrives efter ovenstående og vil blive gemt i en ny scene. Opret først en ny selection med ionerne:\
 
-    Sæt også en passende farve på objektet efter frit valg.
+```
+select k_ions, elem K
+```
 
-14. Opret nu en selektion med kanalens selektivitetsfilter. Dette ligger i residues 75-78 i alle kæder, så vi kan nøjes med at skrive:\
+Dette udvælger alle atomer med grundstof K.
 
-    ```
-    select filter, resi 75-78
-    ```
+### Vis ionerne som nb_spheres
 
-    Vis filteret som `sticks` og find en god orientering, der viser filteret og ionerne oppefra. Indsæt orienteringen i scriptet.
+Vis ionerne som non-bonded spheres (nb_spheres), der er mindre end alm. `spheres`, der viser VDW-radius:\
 
-15. Gem slutteligt den nye visning i scenen `filter`.
+```
+show nb_spheres, k_ions
+```
 
-16. Scriptet skal vise `overview` først, så afslut af med at hente den ind igen:
+Sæt også en passende farve på objektet efter frit valg.
 
-    ```
-    scene overview, recall
-    ```
+### Opret selektivitetsfilter selektion
 
-17. Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan skifte i mellem.
+Opret nu en selektion med kanalens selektivitetsfilter. Dette ligger i residues 75-78 i alle kæder, så vi kan nøjes med at skrive:\
+
+```
+select filter, resi 75-78
+```
+
+Vis filteret som `sticks` og find en god orientering, der viser filteret og ionerne oppefra. Indsæt orienteringen i scriptet.
+
+### Gem filter-scenen
+
+Gem slutteligt den nye visning i scenen `filter`.
+
+### Hent overview-scenen igen
+
+Scriptet skal vise `overview` først, så afslut af med at hente den ind igen:
+
+```
+scene overview, recall
+```
+
+### Kør og verificer scriptet
+
+Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan skifte i mellem.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -700,67 +788,87 @@ I denne opgave skal vi kigge på et eksempel, der er nævnt i kapitel 8 i Stryer
 
 Vi vil gerne lave et PyMOL-script, der sætter os i stand til at foretage en grundig, strukturel analyse af hvordan camphor binder til proteiner, herunder hvilke typer af interaktioner (H-bindinger, Van der Waals- og hydrofobe interaktioner), der findes.
 
-1.  Start et ny PyMOL-script i VS Code med at reinitialisere og hent dernæst strukturen ovenfor via PDB-koden 2CPP, kald objektet cytochrome og skjul alle repræsentationer:
+### Hent og initialiser P450 scriptet
 
-    ```pymol
-    reinitialize
-    fetch 2CPP, cytochrome, async=0
-    hide all
-    ```
+Start et ny PyMOL-script i VS Code med at reinitialisere og hent dernæst strukturen ovenfor via PDB-koden 2CPP, kald objektet cytochrome og skjul alle repræsentationer:
 
-2.  Vis hele strukturen i lyseblå cartoon (som ovenfor):
+```pymol
+reinitialize
+fetch 2CPP, cytochrome, async=0
+hide all
+```
 
-    ```pymol
-    show cartoon, cytochrome
-    color skyblue, cytochrome
-    ```
+### Vis strukturen som lyseblå cartoon
 
-3.  Nu skal vi lave en selection med substratet, men vi ved ikke hvad det er kaldet i PDB-filen. Et godt tip til at finde ud af dette er at slå strukturen op på RCSB: [https://www.rcsb.org/structure/2cpp](https://www.rcsb.org/structure/2cpp). Under `Small molecules` kan man se at der både findes en hæme prostetisk gruppe (kaldet HEM) og liganden camphor (CAM). Disse tre-bogstavsforkortelse henviser til det, der står ud for "residue name" i PDB-filen, dvs. at vi skal bruge kommandoen "resn" til at vælge dem:
+Vis hele strukturen i lyseblå cartoon (som ovenfor):
 
-    ```pymol
-    select heme, resn HEM
-    select camphor, resn CAM
-    ```
+```pymol
+show cartoon, cytochrome
+color skyblue, cytochrome
+```
 
-4.  Vi vil også gerne have en selektion med alle de sidekæder, der interagerer med substratet, hvilket kan ses af figuren fra lærebogen:
+### Lav selektioner for hæm og camphor
 
-    ```
-    select activesite, resi 87+96+297+247+244+295
-    ```
+Nu skal vi lave en selection med substratet, men vi ved ikke hvad det er kaldet i PDB-filen. Et godt tip til at finde ud af dette er at slå strukturen op på RCSB: [https://www.rcsb.org/structure/2cpp](https://www.rcsb.org/structure/2cpp). Under `Small molecules` kan man se at der både findes en hæme prostetisk gruppe (kaldet HEM) og liganden camphor (CAM). Disse tre-bogstavsforkortelse henviser til det, der står ud for "residue name" i PDB-filen, dvs. at vi skal bruge kommandoen "resn" til at vælge dem:
 
-5.  Nu viser vi alle tre selektioner som sticks:
+```pymol
+select heme, resn HEM
+select camphor, resn CAM
+```
 
-    ```
-    show sticks, heme or camphor or activesite
-    ```
+### Lav selektion for active site
 
-    Bemærk brugen af den boolske operator OR her, som betyder at vi ønsker foreningsmængden af de tre selektioner, altså alle atomer, der ENTEN er i heme, i camphor, eller activesite.
+Vi vil også gerne have en selektion med alle de sidekæder, der interagerer med substratet, hvilket kan ses af figuren fra lærebogen:
 
-6.  Klik på et par af de udvalgte aminosyrerester for at forsikre dig at nummereringen i strukturen passer med lærebogen.
+```
+select activesite, resi 87+96+297+247+244+295
+```
 
-7.  Kig nærmere på det aktive site, der er helt blåt. Bemærk at udover sidekæderne i det aktive site vises også hver aminosyres hovedkæde, hvilket vi ikke ønsker, da det forstyrrer når kun sidekæderne interagerer. For at fjerne disse må vi tilpasse udtrykket for activesite-selektionen. Ret derfor linjen ovenfor startende med `select` i dit script til følgende.
+### Vis selektioner som sticks
 
-    ```
-    select activesite, resi 87+96+297+247+244+295 and (sidechain or name CA)
-    ```
+Nu viser vi alle tre selektioner som sticks:
 
-    Det tilføjede siger at vi ønsker alle atomer der opfylder at de befinder sig i de nævnte residues OG enten er sidekæde eller C-alpha (CA). PyMOL regner CA med til hovedkæden, så hvis vi ikke ønsker at sidekæderne skal flyve i fri luft er den en god idé at have det med.
+```
+show sticks, heme or camphor or activesite
+```
 
-    Kør scriptet igen og tjek at alt fungerer som ønsket nu.
+Bemærk brugen af den boolske operator OR her, som betyder at vi ønsker foreningsmængden af de tre selektioner, altså alle atomer, der ENTEN er i heme, i camphor, eller activesite.
 
-8.  Nu vil vi gerne kigge på interaktioner, men de er lidt svære at se når alle atomer er blå. Vi kan dog ændre farverne for hæme og camphor samt benytte utility-funktionen CNC (Color Not Carbon), der farver alle atomer (pånær carbon) efter almindelige atomfarver. Den ligger i util-modulet og skal derfor kaldes på denne måde:
+### Verificer aminosyrenummerering
 
-    ```
-    color palegreen, camphor
-    color firebrick, heme
-    util.cnc
-    ```
+Klik på et par af de udvalgte aminosyrerester for at forsikre dig at nummereringen i strukturen passer med lærebogen.
 
-    Bemærk at kommandoen ikke ændrede farven på carbon-atomerne i objektet og disse dermed bibeholder deres oprindelige farve.
+### Tilpas activesite-selektionen
 
-9.  Indsæt nu en kommando så ingen atomer er valgt og find et passende view, der sætter dig i stand til at analysere interaktionerne i det aktive site. Husk at du kan bruge midterste museknap til at centrere, f.eks. på camphor, og hjulet til at skjule ikke-relevante dele af proteinet.
+Kig nærmere på det aktive site, der er helt blåt. Bemærk at udover sidekæderne i det aktive site vises også hver aminosyres hovedkæde, hvilket vi ikke ønsker, da det forstyrrer når kun sidekæderne interagerer. For at fjerne disse må vi tilpasse udtrykket for activesite-selektionen. Ret derfor linjen ovenfor startende med `select` i dit script til følgende.
 
-10. Find også en god oversigtsorientering og gem de to som scener under `overview` og `active site`.
+```
+select activesite, resi 87+96+297+247+244+295 and (sidechain or name CA)
+```
+
+Det tilføjede siger at vi ønsker alle atomer der opfylder at de befinder sig i de nævnte residues OG enten er sidekæde eller C-alpha (CA). PyMOL regner CA med til hovedkæden, så hvis vi ikke ønsker at sidekæderne skal flyve i fri luft er den en god idé at have det med.
+
+Kør scriptet igen og tjek at alt fungerer som ønsket nu.
+
+### Farv hæm og camphor i scriptet
+
+Nu vil vi gerne kigge på interaktioner, men de er lidt svære at se når alle atomer er blå. Vi kan dog ændre farverne for hæme og camphor samt benytte utility-funktionen CNC (Color Not Carbon), der farver alle atomer (pånær carbon) efter almindelige atomfarver. Den ligger i util-modulet og skal derfor kaldes på denne måde:
+
+```
+color palegreen, camphor
+color firebrick, heme
+util.cnc
+```
+
+Bemærk at kommandoen ikke ændrede farven på carbon-atomerne i objektet og disse dermed bibeholder deres oprindelige farve.
+
+### Find passende view til active site
+
+Indsæt nu en kommando så ingen atomer er valgt og find et passende view, der sætter dig i stand til at analysere interaktionerne i det aktive site. Husk at du kan bruge midterste museknap til at centrere, f.eks. på camphor, og hjulet til at skjule ikke-relevante dele af proteinet.
+
+### Gem oversigt og active site scener
+
+Find også en god oversigtsorientering og gem de to som scener under `overview` og `active site`.
 
 
 ::: {.callout-note}
@@ -770,7 +878,9 @@ Vi vil gerne lave et PyMOL-script, der sætter os i stand til at foretage en gru
 PyMOL er udstyret med en funktion til interaktivt at måle afstanden mellem to atomer i strukturen. Under fanebladet "Wizard" ligger værktøjet "Measurement", der tillader brugeren at finde afstanden mellem to atomer i 3D-strukturen blot ved at klikke på først det ene og så det andet atom. Når der klikkes på et atom, anføres dette i logbogen øverst og et objekt ved navn measure## i objektoversigten til højre (hvor \## er nummeret på målingen). For at afslutte brugen af værktøjet klikkes på "Done" i nederste højre hjørne.*
 :::
 
-11. Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome P450 og camphor/heme. Hvilke typer interaktioner findes der? Hint: Brug `Wizard -> Measurement` til at måle afstande. 
+### Analysér interaktioner i active site
+
+Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome P450 og camphor/heme. Hvilke typer interaktioner findes der? Hint: Brug `Wizard -> Measurement` til at måle afstande. 
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -854,31 +964,37 @@ Denne sidste opgave er jeres svendeprøve i PyMOL-brug, de kommandoer I har lær
 
 Enzymet lysozyme (PDB-ID: 148L) findes i mange organismer, hvor det bruges til at angribe bakterier ved at kløve sukkerstoffer i deres cellevæg. Til opgaven skal I bruge strukturen af lysozyme kovalent bundet til et fragtment af cellevæggen i *E. coli*.
 
-1.  Slå strukturen op på [**www.rcsb.org**](http://www.rcsb.org) og hent den ind i PyMOL.
+### Slå lysozym op og identificer interaktioner
 
-    1.  Brug den indledende visning til at finde ud af hvilke kædenavne, der er brugt for lysozym og de to substratfragmenter. Tjek dette med hjemmesiden for at se om det stemmer overens.
+Slå strukturen op på [**www.rcsb.org**](http://www.rcsb.org) og hent den ind i PyMOL.
 
-    2.  Vælg **H->water** og **S->lines** for at vise detaljer for hele strukturen og skjule vand. Brug dette til at identificere (og nedskrive) en liste af aminosyrerester, der interagerer med substraterne.
+1.  Brug den indledende visning til at finde ud af hvilke kædenavne, der er brugt for lysozym og de to substratfragmenter. Tjek dette med hjemmesiden for at se om det stemmer overens.
 
-2.  Opret et PyMOL-script, der gør følgende:
+2.  Vælg **H->water** og **S->lines** for at vise detaljer for hele strukturen og skjule vand. Brug dette til at identificere (og nedskrive) en liste af aminosyrerester, der interagerer med substraterne.
 
-    1.  Initialiserer og henter strukturen ind i programmet som `148L`.
+### Opret PyMOL-script til lysozym
 
-    2.  Skjuler alt.
+Opret et PyMOL-script, der gør følgende:
 
-    3.  Opretter selektioner for lysozym og de to substrater.
+1.  Initialiserer og henter strukturen ind i programmet som `148L`.
 
-    4.  Viser lysozym som cartoon i `violetpurple`.
+2.  Skjuler alt.
 
-    5.  Viser substraterne som sticks i to forskellige farver for kulstof og atomfarver for de andre atomer.
+3.  Opretter selektioner for lysozym og de to substrater.
 
-    6.  Opretter selektion for de rester, der interagerer og viser sidekæder for interaktionerne i violetpurple med atomfarver for andre end carbon.
+4.  Viser lysozym som cartoon i `violetpurple`.
 
-    7.  Sørger for at ingen atomer er valgt.
+5.  Viser substraterne som sticks i to forskellige farver for kulstof og atomfarver for de andre atomer.
 
-    8.  Gemmer både en oversigts- og to detaljevisninger i tre scenes, `overview` samt `cell wall` og `sugar`, der fokuserer hhv. på de to substratdele.
+6.  Opretter selektion for de rester, der interagerer og viser sidekæder for interaktionerne i violetpurple med atomfarver for andre end carbon.
 
-3.  Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
+7.  Sørger for at ingen atomer er valgt.
+
+8.  Gemmer både en oversigts- og to detaljevisninger i tre scenes, `overview` samt `cell wall` og `sugar`, der fokuserer hhv. på de to substratdele.
+
+### Analysér interaktioner med substraterne
+
+Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}

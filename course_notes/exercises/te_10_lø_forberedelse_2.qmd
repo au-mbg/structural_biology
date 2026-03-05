@@ -12,9 +12,13 @@ Strukturen af methylenblåt samt stoffets udseende er vist nedenfor.
 
  
 
-1.  Absorberer methylenblåt i det synlige område? Forklar baseret på stoffets kemiske struktur hvorfor/hvorfor ikke. Angiv, baseret på stoffets udseende, hvor det må forventes at absorbere.
+### Vurder methylenblåts absorption
 
-2.  Methylenblåt interagerer kraftigt med nukleinsyrer, men kun når disse er strukturerede. Forklar hvorfor og kom med et forslag til hvordan methylenblåt interagerer med RNA.
+Absorberer methylenblåt i det synlige område? Forklar baseret på stoffets kemiske struktur hvorfor/hvorfor ikke. Angiv, baseret på stoffets udseende, hvor det må forventes at absorbere.
+
+### Forklar methylenblåts RNA-interaktion
+
+Methylenblåt interagerer kraftigt med nukleinsyrer, men kun når disse er strukturerede. Forklar hvorfor og kom med et forslag til hvordan methylenblåt interagerer med RNA.
 
 Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som vist i figuren nedenfor, hvor den lille, indsatte figur viser spektre for RNA-bundet (II) og frit methylenblåt (I) og den store figur differensspektre for forskellige koncentrationer af RNA (tallene 1-8 på graferne angiver at der er tilsat mellem 0.1 og 0.8 mg/ml):
 
@@ -22,11 +26,17 @@ Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som 
 
  
 
-3.  Hvad sker der med methyleneblåts absorption, når RNA tilsættes? De tre bølgelængder A, B og C viser hhv. methyleneblåt dimer, methyleneblåt monomer og interaktionen med RNA. Hvad sker der med stoffet når RNA tilsættes? 
+### Beskriv absorptionsændring ved RNA
 
-4.  RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes. I starten af forsøges tilsættes methyleneblåt til intakt RNA. Hvordan vil du forvente at spektret løbende ændres efter RNase A tilsættes?
+Hvad sker der med methyleneblåts absorption, når RNA tilsættes? De tre bølgelængder A, B og C viser hhv. methyleneblåt dimer, methyleneblåt monomer og interaktionen med RNA. Hvad sker der med stoffet når RNA tilsættes?
 
-5.  Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
+### Forudsig spektrumændring under assayet
+
+RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes. I starten af forsøges tilsættes methyleneblåt til intakt RNA. Hvordan vil du forvente at spektret løbende ændres efter RNase A tilsættes?
+
+### Vælg optimal målebølgelængde
+
+Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -61,11 +71,17 @@ hvor sekvensen på blå baggrund er His-tagget, sekvensen på gul baggrund er ub
 
 SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS KYPNCAYKTT QANKHIIVAC EGNPYVPVHF DASV 
 
-1.  Beregn de præcise molekylære masser af H6-Ubi-S15 og S-proteinet, f.eks. vha. ProtParam-serveren.
+### Beregn molekylære masser med ProtParam
 
-2.  I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes for at danne et hybrid RNase S-enzym. Her starter man med 10 μl af en opløsning af S-protein, der er 5 mg/ml. Omregn denne værdi til en molær koncentration og beregn herefter hvor meget H6-Ubi-S15, der skal tilsættes fra en opløsning, der også er 5 mg/ml for at proteinerne er tilstede i et 1:1 molært forhold. Dette resultat skal bruges under LØ.
+Beregn de præcise molekylære masser af H6-Ubi-S15 og S-proteinet, f.eks. vha. ProtParam-serveren.
 
-3.  Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
+### Beregn mængde H6-Ubi-S15 til blanding
+
+I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes for at danne et hybrid RNase S-enzym. Her starter man med 10 μl af en opløsning af S-protein, der er 5 mg/ml. Omregn denne værdi til en molær koncentration og beregn herefter hvor meget H6-Ubi-S15, der skal tilsættes fra en opløsning, der også er 5 mg/ml for at proteinerne er tilstede i et 1:1 molært forhold. Dette resultat skal bruges under LØ.
+
+### Beregn endelig koncentration af RNase S
+
+Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -101,15 +117,25 @@ SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS K
 
 I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige prøver, både proteinprøver og andre opløsninger. Derfor er det vigtigt at I har helt styr på hvordan man opstiller fortyndingsrækker samt i praksis hvordan man blander opløsningerne.
 
-1.  De fleste enzymopløsninger leveres med en koncentration på 5 mg/mL ("stock-opløsningen"). Hvad er dette i μg/μL og ng/μL?
+### Omregn enheder for enzymkoncentration
 
-2.  Hvad er den molære koncentration af en opløsning af nativt bovine RNase A, der er 5 mg/mL? Hint: Sekvensen for bovine RNase A kan findes i LØ-manualens appendix.
+De fleste enzymopløsninger leveres med en koncentration på 5 mg/mL ("stock-opløsningen"). Hvad er dette i μg/μL og ng/μL?
 
-3.  I laboratorieøvelsen giver det praktisk mening at arbejde med en koncentration af RNase A på 1 ng/μL. Hvor mange gange skal stock-opløsningen fortyndes for at nå denne koncentration?
+### Beregn molær koncentration af RNase A
 
-4.  Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 100 μL RNase A ved 5 mg/mL samt 5 mL buffer, der er magen til den buffer, enzymet er opløst i, samt 10 mL rent vand. Efter fortyndingen skal enzymet være ved samme bufferbetingelser som før fortyndingen. Til rådighed har du 1.5 mL Eppendorfrør og Pipetman P2, P10, P200 og P1000. Beskriv hvordan du i praksis vil udføre fortyndingen af enzymet inden forsøget, herunder hvilket pipetter der skal bruges og hvordan de skal indstilles. 
+Hvad er den molære koncentration af en opløsning af nativt bovine RNase A, der er 5 mg/mL? Hint: Sekvensen for bovine RNase A kan findes i LØ-manualens appendix.
 
-5.  Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
+### Beregn nødvendig fortyndingsfaktor
+
+I laboratorieøvelsen giver det praktisk mening at arbejde med en koncentration af RNase A på 1 ng/μL. Hvor mange gange skal stock-opløsningen fortyndes for at nå denne koncentration?
+
+### Beskriv praktisk fortyndingsprocedure
+
+Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 100 μL RNase A ved 5 mg/mL samt 5 mL buffer, der er magen til den buffer, enzymet er opløst i, samt 10 mL rent vand. Efter fortyndingen skal enzymet være ved samme bufferbetingelser som før fortyndingen. Til rådighed har du 1.5 mL Eppendorfrør og Pipetman P2, P10, P200 og P1000. Beskriv hvordan du i praksis vil udføre fortyndingen af enzymet inden forsøget, herunder hvilket pipetter der skal bruges og hvordan de skal indstilles.
+
+### Overvej alternativer til fortyndingen
+
+Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -142,21 +168,37 @@ I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige
 
 I denne opgave skal vi opstille et eksperimentelt dataark i Excel til brug i LØ. I skal bruge dette ark til indsamling og behandling af data under laboratoriekurset.
 
-1.  Åbn en ny workbook i Excel og gem den med et beskrivende navn, f.eks. "LØ data analysis.xlsx".
+### Opret og gem Excel-workbook
 
-2.  Opstil nu en tabel på første faneblad, der har plads til 10 absorptionsmålepunkter (nedad) for hver af 10 prøver med stigende enzymkoncentration (henad). Første søjle skal angive tidsintervallerne for de 10 målepunkter, der er 0, 5, 10\...60 sekunder og for hver prøve skal man kunne angive enzymets koncentration øverst.
+Åbn en ny workbook i Excel og gem den med et beskrivende navn, f.eks. "LØ data analysis.xlsx".
 
-3.  Download dataark for LØ, som findes under denne uge i Brightspace. Kolonnerne i excelfilen er tilsvarende koncentrationerne 0, 5, 10, 20, 30, 40, 50, 60, 80, 100 ng tilsat RNase. Kopiér absorptionsmålingerne ind i din egen excelfil for at have noget at arbejde med under opbygningen af Excel-arket:
+### Opstil tabel til absorptionsmålinger
 
-4.  Opret nu en graf for hver af de 10 prøver, der viser absorptionen som funktion af tiden i sekunder. Hint: Brug command (Mac) eller CTRL-knappen (PC) til at vælge både x- og y-akseværdier på. Er graferne lineære? Hvad indikerer det? Hvordan er udviklingen i grafernes hældning når enzymkoncentrationen stiger? Kommentér.
+Opstil nu en tabel på første faneblad, der har plads til 10 absorptionsmålepunkter (nedad) for hver af 10 prøver med stigende enzymkoncentration (henad). Første søjle skal angive tidsintervallerne for de 10 målepunkter, der er 0, 5, 10\...60 sekunder og for hver prøve skal man kunne angive enzymets koncentration øverst.
 
-5.  Brug nu Excel-funktionen LINEST (LINREGR på dansk Excel) til at beregne hældningen for bedste rette linje for hver enzymkoncentration. Brug Excels hjælpefunktion samt internettet til at finde ud af hvordan funktionen bruges. Hældningerne skal stå i rækken under sidste målepunkt for hver enzymkoncentration. Hvordan udvikler hældningerne sig med højere enzymkoncentration? Er det forventeligt og hvorfor/hvorfor ikke? Hvad er enheden for disse hældninger?
+### Importér LØ-data til Excel
 
-6.  Opret nu en standardkurve ved at plotte hældningen for hver enzymkoncentration som funktion af enzymkoncentrationen (antal ng enzym tilsat). Kommentér på grafen. Er den lineær og i givet fald i hvilket område? Hvad ville du vælge som konfidensinterval for måling af enzymaktivitet, hvis dette var din målte standardkurve?
+Download dataark for LØ, som findes under denne uge i Brightspace. Kolonnerne i excelfilen er tilsvarende koncentrationerne 0, 5, 10, 20, 30, 40, 50, 60, 80, 100 ng tilsat RNase. Kopiér absorptionsmålingerne ind i din egen excelfil for at have noget at arbejde med under opbygningen af Excel-arket:
 
-7.  Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standardkurven. Disse vil blive erstattet med dine egne værdier i forsøgets eksperiment 1.
+### Opret grafer for absorptionsdata
 
-8.  Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
+Opret nu en graf for hver af de 10 prøver, der viser absorptionen som funktion af tiden i sekunder. Hint: Brug command (Mac) eller CTRL-knappen (PC) til at vælge både x- og y-akseværdier på. Er graferne lineære? Hvad indikerer det? Hvordan er udviklingen i grafernes hældning når enzymkoncentrationen stiger? Kommentér.
+
+### Beregn hældninger med LINEST-funktion
+
+Brug nu Excel-funktionen LINEST (LINREGR på dansk Excel) til at beregne hældningen for bedste rette linje for hver enzymkoncentration. Brug Excels hjælpefunktion samt internettet til at finde ud af hvordan funktionen bruges. Hældningerne skal stå i rækken under sidste målepunkt for hver enzymkoncentration. Hvordan udvikler hældningerne sig med højere enzymkoncentration? Er det forventeligt og hvorfor/hvorfor ikke? Hvad er enheden for disse hældninger?
+
+### Opret standardkurve i Excel
+
+Opret nu en standardkurve ved at plotte hældningen for hver enzymkoncentration som funktion af enzymkoncentrationen (antal ng enzym tilsat). Kommentér på grafen. Er den lineær og i givet fald i hvilket område? Hvad ville du vælge som konfidensinterval for måling af enzymaktivitet, hvis dette var din målte standardkurve?
+
+### Ryd testdata til forsøget
+
+Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standardkurven. Disse vil blive erstattet med dine egne værdier i forsøgets eksperiment 1.
+
+### Planlæg behandling af ukendte prøver
+
+Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
@@ -171,15 +213,25 @@ Intet svar angivet.
 
 Dette er en åben opgave, der tjener til forberedelse til LØ. For hvert eksperiment i LØ-vejledningen skal du tegne et flowchart, der angiver hvilke trin, der skal gennemføres og i hvilken rækkefølge samt hvilke resultater, der kommer ud. Husk at angive parallelle forsøg i dit flowchart.
 
-1.  Eksperiment 1 - Måling af standardkurve
+### Tegn flowchart for Eksperiment 1
 
-2.  Eksperiment 2 - Delvis proteolyse af RNase A
+Eksperiment 1 - Måling af standardkurve
 
-3.  Eksperiment 3 - Aktivitet af RNase S og varianter
+### Tegn flowchart for Eksperiment 2
 
-4.  Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-protein vha. immobiliseret H6-Ubi-S15
+Eksperiment 2 - Delvis proteolyse af RNase A
 
-5.  Eksperiment 5 - Kemisk krydsbinding af RNase S
+### Tegn flowchart for Eksperiment 3
+
+Eksperiment 3 - Aktivitet af RNase S og varianter
+
+### Tegn flowchart for Eksperiment 4
+
+Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-protein vha. immobiliseret H6-Ubi-S15
+
+### Tegn flowchart for Eksperiment 5
+
+Eksperiment 5 - Kemisk krydsbinding af RNase S
 
 :::: {.content-hidden when-profile="exercise"}
 ::: {.callout-important}
