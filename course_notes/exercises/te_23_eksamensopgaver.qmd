@@ -93,7 +93,7 @@ Kæde A er odorantreceptoren (grøn), kæde X er G-proteinet (G~olf~ eller G~α~
 
 Figuren nedenfor viser et såkaldt `heat map` over hvilke aminosyrerester i receptoren, der interagerer med hvilke atomer i odoranten (propionate) i et simuleringsforsøg.
 
-![](media/image126.png)
+![](media/image126_1.png){width="80%" .lightbox fig-align="center"}
 
 Brug strukturen til at forklare observationerne for R262 og H180 med speciel fokus på O^α^-, O^β^- og C^α^-atomernes interaktioner. Beskriv hvilken type af bindinger, de to aminosyrerester indgår i og hermed hvordan odoranten genkendes.
 
