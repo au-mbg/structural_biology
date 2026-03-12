@@ -2,7 +2,7 @@
 title: "TØ 7 -- Nukleinsyrestruktur 2"
 ---
 
-## Opgave 1. RNA-protein binding 
+## Opgave 1. RNA-protein binding
 
 Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Åben pml filen **RNA-protein.pml, der findes under denne uge i Brightspace**. Tryk **F1** for at se TAR hårnål og **F2** for at se binding til Tat proteinet. Tryk **F3** for at se kink-turn motivet og **F4** for at se binding til L7 proteinet.
 
@@ -26,13 +26,13 @@ Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som
 
 ::: {.solution-callout}
 
-1.  AU cWW, UA cWH
+**1.**  AU cWW, UA cWH
 
-2.  Tat proteinet binder i deep groove på TAR hårnål.
+**2.**  Tat proteinet binder i deep groove på TAR hårnål.
 
-3.  A20-G6 tHS, A7-G19 tHS
+**3.**  A20-G6 tHS, A7-G19 tHS
 
-4.  L7 proteinet binder i deep groove på kink-turn motivet.
+**4.**  L7 proteinet binder i deep groove på kink-turn motivet.
 :::
 
 ## Opgave 2. tRNA og syntetase
@@ -69,17 +69,17 @@ Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
 ::: {.solution-callout}
 
-1.  tWH
+**1.**  tWH
 
-2.  Propeller & buckle
+**2.**  Propeller & buckle
 
-3.  tWH (kig evt. på backbone retning, der er anti-parallel). Methyleret på position 7.
+**3.**  tWH (kig evt. på backbone retning, der er anti-parallel). Methyleret på position 7.
 
-4.  Hovedsageligt acceptor stem og anticodon loop.
+**4.**  Hovedsageligt acceptor stem og anticodon loop.
 
-5.  Menuen "to other atoms in object" fremhæver H-bindingerne. Q517, R341 og R520.
+**5.**  Menuen "to other atoms in object" fremhæver H-bindingerne. Q517, R341 og R520.
 
-6.  Energi til Gln charging.
+**6.**  Energi til Gln charging.
 :::
 
 ## Opgave 3. 5S rRNA og L25
@@ -106,7 +106,7 @@ Beskriv de tre non-Watson-Crick basepar der vises i **F2**, **F3** og **F8 **ih
 
 Tryk **F9** for at se RNA-dobbelthelixen vist som kuglemodel, hvor H-bindingsacceptorer farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule. Proteinet kan fjernes ved at trykke **F10**.
 
-![](media/image26.png){width="1.9525054680664917in" height="5.858803587051619in"}
+![](media/image26.png){width="90%" fig-align="center" .lightbox}
 
 ### Sammenlign groove med normal A-form RNA
 
@@ -120,23 +120,23 @@ Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** 
 
 ::: {.solution-callout}
 
-1.  Helix 1,2,3,4,5 er stammer med buler eller interne loops. \
+**1.**  Helix 1,2,3,4,5 er stammer med buler eller interne loops. \
     Loop C er hairpin med 13-nt loop.\
     Loop D er hairpin med tetra loop. \
     Loop B og E er et asymmetrisk internt loop. \
     Loop A er 3-stamme krydsning.
 
-2.  Beta-sheet interagerer med shallow groove.\
+**2.**  Beta-sheet interagerer med shallow groove.\
     Alfa-helix interagerer med deep groove.
 
-3.  F2: AG tHS\
+**3.**  F2: AG tHS\
     F3: UA tWH\
     F8: GA tSH.
 
-4.  Deep groove er meget smal. Shallow groove er større end normalt.\
+**4.**  Deep groove er meget smal. Shallow groove er større end normalt.\
     Loop E motivet har et meget mere komplekst mønster af H-bond donorer og acceptorer end der normalt er i shallow groove.
 
-5.  F11:\
+**5.**  F11:\
     Lys10 binder OP1 på fosfat af G275\
     His88 binder 2'OH af G275\
     Asp76 og Asp 90 binder begge N2 på G275\
@@ -172,13 +172,13 @@ Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix typ
 
 ::: {.solution-callout}
 
-1.  4 hairpins. A-form, da RNA-strengen inducerer A-form pga. 2'OH og C3'-endo konformation.
+**1.**  4 hairpins. A-form, da RNA-strengen inducerer A-form pga. 2'OH og C3'-endo konformation.
 
-2.  RuvC og PI.
+**2.**  RuvC og PI.
 
-3.  tHS.
+**3.**  tHS.
 
-4.  F5: Phe351 og Asp364 interagerer med G43, der er uparret base.\
+**4.**  F5: Phe351 og Asp364 interagerer med G43, der er uparret base.\
     F6: Ser104 og Phe105 interagerer med U24 og A47 i minor groove.
 :::
 
@@ -221,19 +221,20 @@ Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. H
 
 ::: {.solution-callout}
 
-1.  Se vedhæftede script.
+**1.**  Se scriptet nedenfor
 
-\# This script shows details of the Argonaute protein.
+```pymol
+# This script shows details of the Argonaute protein.
 
 reinit
 
-\# Get the Argonaute
+# Get the Argonaute
 
 fetch 3HK2, type=pdb1, async=0
 
 remove solvent
 
-\# Ago domains
+# Ago domains
 
 color red, chain C
 
@@ -243,47 +244,47 @@ hide cartoon, chain C+D
 
 show sticks, chain C+D
 
-\# N domain
+# N domain
 
 color cyan, chain A & resi 1-100
 
-\# Linker
+# Linker
 
 color grey, chain A & resi 100-177
 
-\# PAZ domain
+# PAZ domain
 
 color purple, chain A & resi 177-272
 
-\# Linker
+# Linker
 
 color grey, chain A & resi 272-338
 
-\# Mid domain
+# Mid domain
 
 color orange, chain A & resi 338-464
 
-\# PIWI domain
+# PIWI domain
 
 color green, chain A & resi 464-685
 
-set_view (\\
+set_view (\
 
-0.123950958, 0.990234137, 0.063794814,\\
+0.123950958, 0.990234137, 0.063794814,\
 
--0.704351246, 0.133084893, -0.697266936,\\
+-0.704351246, 0.133084893, -0.697266936,\
 
--0.698947906, 0.041492786, 0.713965237,\\
+-0.698947906, 0.041492786, 0.713965237,\
 
-0.000000000, 0.000000000, -259.055969238,\\
+0.000000000, 0.000000000, -259.055969238,\
 
-17.825553894, -17.785488129, -42.222160339,\\
+17.825553894, -17.785488129, -42.222160339,\
 
 204.241699219, 313.870239258, -20.000000000 )
 
 scene F1, store, Ago domain structure.
 
-\# Show binding of 3'U
+# Show binding of 3'U
 
 sele chain C
 
@@ -291,17 +292,17 @@ dist HB-DNA, sele, chain A, mode=2
 
 hide labels
 
-set_view (\\
+set_view (\
 
-0.399974555, 0.880695522, -0.253753275,\\
+0.399974555, 0.880695522, -0.253753275,\
 
-0.317198962, -0.392772764, -0.863202035,\\
+0.317198962, -0.392772764, -0.863202035,\
 
--0.859879613, 0.264764577, -0.436455190,\\
+-0.859879613, 0.264764577, -0.436455190,\
 
--0.000459167, 0.000010028, -54.133724213,\\
+-0.000459167, 0.000010028, -54.133724213,\
 
-38.587257385, -17.265007019, -34.962413788,\\
+38.587257385, -17.265007019, -34.962413788,\
 
 44.038654327, 64.241020203, -20.000000000 )
 
@@ -313,29 +314,30 @@ sele chain D
 
 dist HB-RNA, sele, chain A, mode=2
 
-set_view (\\
+set_view (\
 
-0.123950958, 0.990234137, 0.063794814,\\
+0.123950958, 0.990234137, 0.063794814,\
 
--0.704351246, 0.133084893, -0.697266936,\\
+-0.704351246, 0.133084893, -0.697266936,\
 
--0.698947906, 0.041492786, 0.713965237,\\
+-0.698947906, 0.041492786, 0.713965237,\
 
-0.000000000, 0.000000000, -259.055969238,\\
+0.000000000, 0.000000000, -259.055969238,\
 
-17.825553894, -17.785488129, -42.222160339,\\
+17.825553894, -17.785488129, -42.222160339,\
 
 204.241699219, 313.870239258, -20.000000000 )
 
 scene F3, store, Show binding of RNA strand
 
 scene F1
+```
 
-2.  Mid domænet.
+**2.**  Mid domænet.
 
-3.  Konformationen er A-form som det kan ses på C3'-endo sugar pucker. Man kan se det ved at zoome ind på nukleotid og se på sukkerens konformation.
+**3.**  Konformationen er A-form som det kan ses på C3'-endo sugar pucker. Man kan se det ved at zoome ind på nukleotid og se på sukkerens konformation.
 
-4.  T1-base H-binder til Met413. G2-base H-binder til Asn449. Mg^2+ ^koordinerer fosfater i backbone.
+**4.**  T1-base H-binder til Met413. G2-base H-binder til Asn449. Mg^2+ ^koordinerer fosfater i backbone.
 
-5.  Ago H-binder til sukker-fosfat-rygrad af DNA og RNA streng, hvilket betyder at det er en sekvens-uspecifik binding. Alle domæner er involveret i binding.
+**5.**  Ago H-binder til sukker-fosfat-rygrad af DNA og RNA streng, hvilket betyder at det er en sekvens-uspecifik binding. Alle domæner er involveret i binding.
 :::

@@ -42,21 +42,21 @@ Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
 ::: {.solution-callout}
 
-1.  ![RnaseA_simple_reaction](media/image35.png){width="4.1875in" height="3.625in"}
+**1.**  ![RnaseA_simple_reaction](media/image35.png){width="4.1875in" height="3.625in"}
 
-2.  2'-OH-gruppen agerer som nukleofil.\
+**2.**  2'-OH-gruppen agerer som nukleofil.\
     \
     ![RnaseA_cyclic_intermediate](media/image36.png){width="1.5625in" height="1.71875in"}
 
-3.  Et vandmolekyle opløser det cykliske intermediat ved at lave et nukleofilt angreb på phosphatatomet. Samme reaktion som i 1. trin, blot med vand som nukleofil.
+**3.**  Et vandmolekyle opløser det cykliske intermediat ved at lave et nukleofilt angreb på phosphatatomet. Samme reaktion som i 1. trin, blot med vand som nukleofil.
 
-4.  Den første delreaktion er reversibel, den anden (hvor vand hydrolyserer) er irreversibel. Dette skyldes at der blot flyttes rundt på bindingerne i en phosphat diester i første trin, hvorved energien bevares. I andet trin foretages en hydrolyse, der frigiver den bundne energi i diesteren. Den store forskel i fri energi gør i praksis reaktionen irreversibel.
+**4.**  Den første delreaktion er reversibel, den anden (hvor vand hydrolyserer) er irreversibel. Dette skyldes at der blot flyttes rundt på bindingerne i en phosphat diester i første trin, hvorved energien bevares. I andet trin foretages en hydrolyse, der frigiver den bundne energi i diesteren. Den store forskel i fri energi gør i praksis reaktionen irreversibel.
 
-5.  Hydrolysen foregår meget langsomt mens det nukleofile angreb af 2'-OH-gruppen er hurtigt (den sidder på det rigtige sted).
+**5.**  Hydrolysen foregår meget langsomt mens det nukleofile angreb af 2'-OH-gruppen er hurtigt (den sidder på det rigtige sted).
 
-6.  Uspecifikke, ioniske interaktioner med det negativt ladede RNA-backbone. Der er en række af 9 Lys/Arg residues, der tilsammen skaber dette positive miljø.
+**6.**  Uspecifikke, ioniske interaktioner med det negativt ladede RNA-backbone. Der er en række af 9 Lys/Arg residues, der tilsammen skaber dette positive miljø.
 
-7.  ssDNA binder, men kløves ikke da det ikke indeholder en 2'-OH-gruppe.
+**7.**  ssDNA binder, men kløves ikke da det ikke indeholder en 2'-OH-gruppe.
 :::
 
 ## Opgave 2. Strukturen af RNase A
@@ -95,7 +95,7 @@ Forklar til sidst hvorfor RNase A udviser en klokkeformet pH-afhængighed med ma
 
 ::: {.solution-callout}
 
-1.  Se det færdige script her under. Sidekæderne 12, 41 og 119 er en del af RNase's active site.
+**1.**  Se det færdige script her under. Sidekæderne 12, 41 og 119 er en del af RNase's active site.
 
 \## Script til opgave 2. Strukturen af RNase A
 
@@ -153,17 +153,17 @@ set_view (\\
 
 scene F2, store, substratanalogen CPA
 
-2.  Det er et deoxy-dinukleotid, så begge 2'-OH-grupper mangler. Disse er vigtige for reaktionsmekanismen, da den ene fungerer som nukleofil.
+**2.**  Det er et deoxy-dinukleotid, så begge 2'-OH-grupper mangler. Disse er vigtige for reaktionsmekanismen, da den ene fungerer som nukleofil.
 
-3.  Det er en His, der fungerer som general base ved at deprotonere (og dermed aktivere 2'-OH-gruppen).
+**3.**  Det er en His, der fungerer som general base ved at deprotonere (og dermed aktivere 2'-OH-gruppen).
 
-4.  2 phosphatoxygenatomer, 2'-OH, 3'-OH og 5'-OH fra det næste nukleotid.
+**4.**  2 phosphatoxygenatomer, 2'-OH, 3'-OH og 5'-OH fra det næste nukleotid.
 
-5.  Dette er en Lys, der er positivt ladet og både strukturelt og ladningsmæssigt stabiliserer det negative transition state. Sidekæden er uordnet og ses i to konformationer, hvilket måske skyldes at 2'-OH-grupperne mangler.
+**5.**  Dette er en Lys, der er positivt ladet og både strukturelt og ladningsmæssigt stabiliserer det negative transition state. Sidekæden er uordnet og ses i to konformationer, hvilket måske skyldes at 2'-OH-grupperne mangler.
 
-6.  Dette er også en His, der fungerer som generel syre ved at protonere leavinggruppen (5'-OH på det næste nukleotid).
+**6.**  Dette er også en His, der fungerer som generel syre ved at protonere leavinggruppen (5'-OH på det næste nukleotid).
 
-7.  Dette skyldes de to His i det aktive site, der skal være hhv. deprotoneret (His19) og protoneret (His119) for at enzymet er aktivt.
+**7.**  Dette skyldes de to His i det aktive site, der skal være hhv. deprotoneret (His19) og protoneret (His119) for at enzymet er aktivt.
 :::
 
 ## Opgave 3. Disulfidbroer i RNase A
@@ -188,7 +188,7 @@ Hvad ville der ske, hvis man denaturerede proteinet under reducerende betingels
 
 ::: {.solution-callout}
 
-1.  Se det færdige script på brightspace. De 8 Cys-rester i RNase A danner 4 disulfidbroer og bidrager dermed til kraftig stabilisering af proteinet. Cys-resterne er alle oxiderede (-S-S-, i modsætning til -SH), hvilket stemmer overens med enzymets ekstracellulære lokalisering. Den kraftige stabilisering er nødvendig fordi enzymet findes i maven, hvor der er ekstrem pH.
+**1.**  Se det færdige script på brightspace. De 8 Cys-rester i RNase A danner 4 disulfidbroer og bidrager dermed til kraftig stabilisering af proteinet. Cys-resterne er alle oxiderede (-S-S-, i modsætning til -SH), hvilket stemmer overens med enzymets ekstracellulære lokalisering. Den kraftige stabilisering er nødvendig fordi enzymet findes i maven, hvor der er ekstrem pH.
 
 \## Script til opgave 3. Disulfidbroer i RNase A
 
@@ -218,11 +218,11 @@ set_view (\\
 
 scene F3, store, RNase A's svovlbroer
 
-2.  Disulfidbroerne involverer resterne 26-84, 40-95, 58-110 og 65-72.
+**2.**  Disulfidbroerne involverer resterne 26-84, 40-95, 58-110 og 65-72.
 
-3.  RNase A er ekstremt stabilt overfor både kemisk og termisk denaturering. Selv om enzymet denatureres ved høj temperatur, så genopstår aktiviteten når det køles af. Dette skyldes i høj grad den stabile tertiære struktur og disulfidbroerne.
+**3.**  RNase A er ekstremt stabilt overfor både kemisk og termisk denaturering. Selv om enzymet denatureres ved høj temperatur, så genopstår aktiviteten når det køles af. Dette skyldes i høj grad den stabile tertiære struktur og disulfidbroerne.
 
-4.  Hvis proteinet denatureres under reducerende betingelser brydes disulfidbroerne. Lader man derefter disse oxidere før man fjerner denaturant eller sænker temperaturen vil der dannes forkerte S-S bindinger og proteinet vil ikke kunne refoldes korrekt. Dette var essensen i Anfinsens forsøg, hvor han fandt at denne proces kun gav ca. 1% aktivt enzym, omtrent svarende til den statistiske sandsynlighed for at disulfidbroerne dannes korrekt. Lader man der i mod enzymet refolde samtidig med at det oxideres, finder alle de rette S-S broer sted og man får >90% aktivt enzym.
+**4.**  Hvis proteinet denatureres under reducerende betingelser brydes disulfidbroerne. Lader man derefter disse oxidere før man fjerner denaturant eller sænker temperaturen vil der dannes forkerte S-S bindinger og proteinet vil ikke kunne refoldes korrekt. Dette var essensen i Anfinsens forsøg, hvor han fandt at denne proces kun gav ca. 1% aktivt enzym, omtrent svarende til den statistiske sandsynlighed for at disulfidbroerne dannes korrekt. Lader man der i mod enzymet refolde samtidig med at det oxideres, finder alle de rette S-S broer sted og man får >90% aktivt enzym.
 :::
 
 ## Opgave 4. Delvis proteolyse af RNase A
@@ -251,12 +251,12 @@ Vi vil undersøge aktiviteten af RNase A, RNase S, S-peptid samt S-protein samt 
 
 ::: {.solution-callout}
 
-1.  Se det færdige script på brightspace. Subtilisin kløver efter en Ala (residue 20), hvilket er usædvanligt, at proteasen normalt foretrækker store hydrofobe sidekæder i S1-lommen. Alanin er dog stadig hydrofob og da den er lille kan den stadig passe ind i subtilisins specificitetslomme. Kløvningssitet sidder yderligt på RNase A i et loop, der formentlig giver god adgang for proteasen. Det er dog bemærkelsesværdigt at subsilisin ikke kløver efter Ala19, der sidder lige før og er eksponeret på samme måde. Dette fremhæver hvor svært det kan være at forudsige proteasers kløvningssites, da de afhænger meget af den præcise strukturelle og sekvensmæssige kontekst, hvori den genkendte aminosyre indgår.
+**1.**  Se det færdige script på brightspace. Subtilisin kløver efter en Ala (residue 20), hvilket er usædvanligt, at proteasen normalt foretrækker store hydrofobe sidekæder i S1-lommen. Alanin er dog stadig hydrofob og da den er lille kan den stadig passe ind i subtilisins specificitetslomme. Kløvningssitet sidder yderligt på RNase A i et loop, der formentlig giver god adgang for proteasen. Det er dog bemærkelsesværdigt at subsilisin ikke kløver efter Ala19, der sidder lige før og er eksponeret på samme måde. Dette fremhæver hvor svært det kan være at forudsige proteasers kløvningssites, da de afhænger meget af den præcise strukturelle og sekvensmæssige kontekst, hvori den genkendte aminosyre indgår.
 
-2.  Der er flere kraftige, ikke-kovalente interaktioner mellem det røde S-peptid og det grønne S-protein og desuden er S-peptidets helix kilet fast mellem to dele af S-proteinet. Det er derfor sandsynligt at de to dele forbliver sammen efter kløvning, da S-peptidet i langt højere grad holdes fast af ikke-kovalente interaktioner end den enkelte kobling af hovedkæden efter residue 20.\
+**2.**  Der er flere kraftige, ikke-kovalente interaktioner mellem det røde S-peptid og det grønne S-protein og desuden er S-peptidets helix kilet fast mellem to dele af S-proteinet. Det er derfor sandsynligt at de to dele forbliver sammen efter kløvning, da S-peptidet i langt højere grad holdes fast af ikke-kovalente interaktioner end den enkelte kobling af hovedkæden efter residue 20.\
     ![S_protein_S_peptide_interactions](media/image37.png){width="3.46875in" height="2.78125in"}
 
-3.  Se det færdige script her under. S-peptidet indeholder His12, som vi ved er central for enzymets aktivitet. Derfor vil hverken S-peptid eller S-protein være aktivt i isoleret form, da ingen af dem indeholder et komplet aktivt site. Det kløvede RNase A, kaldet RNase S, er til gengæld ganske aktivt på trods af at det består af to kæder. 
+**3.**  Se det færdige script her under. S-peptidet indeholder His12, som vi ved er central for enzymets aktivitet. Derfor vil hverken S-peptid eller S-protein være aktivt i isoleret form, da ingen af dem indeholder et komplet aktivt site. Det kløvede RNase A, kaldet RNase S, er til gengæld ganske aktivt på trods af at det består af to kæder. 
 
 \## Script til opgave 4. Delvis proteolyse af RNase A
 
@@ -378,7 +378,7 @@ set_view (\\
 
 scene F7, store, Active site og svovlbroer i relation til S-protein og S-peptid
 
-4.  Alle disulfidbroer sidder internt i S-proteinet, så der er ingen kovalente koblinger til S-peptidet. Dvs. at de to dele af RNase S vil kunne adskilles uden brug af reduktionsmiddel. Formentlig kan de adskilles vha. termisk denaturering efterfulgt af separation vha. søjlekromatografi.
+**4.**  Alle disulfidbroer sidder internt i S-proteinet, så der er ingen kovalente koblinger til S-peptidet. Dvs. at de to dele af RNase S vil kunne adskilles uden brug af reduktionsmiddel. Formentlig kan de adskilles vha. termisk denaturering efterfulgt af separation vha. søjlekromatografi.
 :::
 
 ## Opgave 5. Rekombinant RNase S fusionsprotein
@@ -405,7 +405,7 @@ Lav et sidste script, kaldet **F9**, som gør det muligt at lave en strukturel a
 
 ::: {.solution-callout}
 
-1.  Se det færdige script her under. De to strukturer er i hovedsagen identiske, men RNase S mangler residues 16-23. Der er mindre justeringer af loop-områder, der dog kan skyldes krystalkontakter.
+**1.**  Se det færdige script her under. De to strukturer er i hovedsagen identiske, men RNase S mangler residues 16-23. Der er mindre justeringer af loop-områder, der dog kan skyldes krystalkontakter.
 
 \## Script til opgave 5. Recombinant RNase S fusionsprotein
 
@@ -469,7 +469,7 @@ deselect
 
 scene F1, recall
 
-2.  Det rekombinante S-peptidfragment bindes først på en Ni^2+^-søjle, hvorefter det er muligt at "fange" og oprense S-protein fra en anden prøve. Det samlede RNase S-enzym kan elueres vha. imidazol og aktiviteten analyseres vha. et RNA-kløvningsassay.
+**2.**  Det rekombinante S-peptidfragment bindes først på en Ni^2+^-søjle, hvorefter det er muligt at "fange" og oprense S-protein fra en anden prøve. Det samlede RNase S-enzym kan elueres vha. imidazol og aktiviteten analyseres vha. et RNA-kløvningsassay.
 
-3.  Se det færdige script på brightspace. Phe8 sidder i en hydrofob lomme mellem S-peptiden og S-proteinet, men indgår ikke i nogle stærke hydrofobe interaktioner. Det er muligt at mutationen har en effekt på enzymets aktivitet, men den vil formentlig ikke fuldstændig inaktivere det.
+**3.**  Se det færdige script på brightspace. Phe8 sidder i en hydrofob lomme mellem S-peptiden og S-proteinet, men indgår ikke i nogle stærke hydrofobe interaktioner. Det er muligt at mutationen har en effekt på enzymets aktivitet, men den vil formentlig ikke fuldstændig inaktivere det.
 :::

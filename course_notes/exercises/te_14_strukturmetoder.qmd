@@ -65,7 +65,7 @@ Forklar hvorfor højere opløsning kræver:\
 
 ::: {.solution-callout}
 
-1.  Når røntgenstråler rammer en krystal, bliver de spredt af elektronerne i atomerne. Man kan forestille sig, at atomerne ligger i ordnede planer med en bestemt afstand, d, imellem sig.\
+**1.**  Når røntgenstråler rammer en krystal, bliver de spredt af elektronerne i atomerne. Man kan forestille sig, at atomerne ligger i ordnede planer med en bestemt afstand, d, imellem sig.\
 
     ```python
     For at et stærkt signal (en diffraktionsplet) kan måles, skal de spredte bølger forstærke hinanden. Dette kaldes konstruktiv interferens. Det sker kun, når bølgetoppe møder bølgetoppe.
@@ -75,7 +75,7 @@ Forklar hvorfor højere opløsning kræver:\
     \
     Braggs lov (2d·sinθ = λ) beskriver netop denne betingelse. 2d·sinθ er den matematiske udregning af den ekstra vej, som den nederste bølge skal tilbagelægge. Kun ved helt bestemte vinkler (θ) vil denne ekstra vej svare til en hel bølgelængde, og kun da vil vi se et diffraktionssignal. Ved alle andre vinkler vil bølgerne interferere destruktivt og udslukke hinanden.
 
-2.  Krystal B (med den mindste enhedscelle) vil give diffraktionspletter længere fra centrum.\
+**2.**  Krystal B (med den mindste enhedscelle) vil give diffraktionspletter længere fra centrum.\
     \
     Forklaringen ligger i den omvendte sammenhæng i Braggs lov. Loven kan omskrives til:\
     \
@@ -87,7 +87,7 @@ Forklar hvorfor højere opløsning kræver:\
     \
     Da diffraktionspletterne længere fra centrum på detektoren svarer til større spredningsvinkler (θ), vil Krystal B, med den mindste d-værdi, producere disse pletter. Dette er et centralt koncept i krystallografi: Højopløst strukturel information (lille d) findes langt fra centrum i diffraktionsmønsteret.
 
-3.  Vi bruger Braggs lov:\
+**3.**  Vi bruger Braggs lov:\
     \
     2d·sinθ = λ\
     \
@@ -104,7 +104,7 @@ Forklar hvorfor højere opløsning kræver:\
     \
     Den mindste d-værdi (højeste opløsning), vi kan observere, er ca. 0.87 Å.
 
-4.  Højere opløsning betyder, at vi kan `se` finere detaljer, hvilket svarer til en mindre d-værdi. Lad os igen se på den omskrevne Bragg-lov:\
+**4.**  Højere opløsning betyder, at vi kan `se` finere detaljer, hvilket svarer til en mindre d-værdi. Lad os igen se på den omskrevne Bragg-lov:\
     \
     d = λ / (2·sinθ)\
 
@@ -215,16 +215,16 @@ Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de nor
 
 ::: {.solution-callout}
 
-1.  Peptidkæden har N-terminalen nederst og C-terminalen til højre i udgangspositionen og består af en α-helix (rester 2-15) efterfulgt af et turn og en β-strand (21-27).
+**1.**  Peptidkæden har N-terminalen nederst og C-terminalen til højre i udgangspositionen og består af en α-helix (rester 2-15) efterfulgt af et turn og en β-strand (21-27).
 
-2.  Sidekæderne sidder hver gang der er et gult Cβ-atom, der stikker ud fra hovedkæden. Carbonylerne kendes på de små bump og er også røde i poly-Ala modellen.
+**2.**  Sidekæderne sidder hver gang der er et gult Cβ-atom, der stikker ud fra hovedkæden. Carbonylerne kendes på de små bump og er også røde i poly-Ala modellen.
 
-3.  **MNYKELEKMLDVIFENSEIKEIDLFFD**\
+**3.**  **MNYKELEKMLDVIFENSEIKEIDLFFD**\
     De to Phe til sidst burde kunne identificeres, da de sidder lige ved siden af hinanden.
 
-4.  Flere af de store hydrofobe sidekæder (Met9, Phe14, Phe25 og Phe26) passer rigtig godt i tætheden.
+**4.**  Flere af de store hydrofobe sidekæder (Met9, Phe14, Phe25 og Phe26) passer rigtig godt i tætheden.
 
-5.  \-
+**5.**  \-
 
-6.  Flere af de lange, hydrofile sidekæder (Lys4, Lys20 og Glu21) passer ikke godt i tætheden. Dette skyldes at de hydrofile sidekæder ofte sidder på overfladen af proteinet og derfor er fleksible.
+**6.**  Flere af de lange, hydrofile sidekæder (Lys4, Lys20 og Glu21) passer ikke godt i tætheden. Dette skyldes at de hydrofile sidekæder ofte sidder på overfladen af proteinet og derfor er fleksible.
 :::

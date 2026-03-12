@@ -40,15 +40,15 @@ Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsænd
 
 ::: {.solution-callout}
 
-1.  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
+**1.**  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
 
-2.  Methylenblåt interagerer både via interkalation mellem baserne i strukturerede nukleinsyrer (dvs. RNA/DNA på helixform) på samme måde som ethidiumbromid samt elektrostatisk via den positive ladning, der interagerer uspecifikt med nukleinsyrer. Formentlig vil elektrostatisk interaktion være fremherskende ved lav ionstyrke, mens interkalation (hydrofob) interaktion vil være mere tydelig ved høj ionstyrke. Der findes dog ikke en højtopløst struktur af komplekset mellem methylenblåt og nukleinsyre, så der er tale om en vis spekulation. 
+**2.**  Methylenblåt interagerer både via interkalation mellem baserne i strukturerede nukleinsyrer (dvs. RNA/DNA på helixform) på samme måde som ethidiumbromid samt elektrostatisk via den positive ladning, der interagerer uspecifikt med nukleinsyrer. Formentlig vil elektrostatisk interaktion være fremherskende ved lav ionstyrke, mens interkalation (hydrofob) interaktion vil være mere tydelig ved høj ionstyrke. Der findes dog ikke en højtopløst struktur af komplekset mellem methylenblåt og nukleinsyre, så der er tale om en vis spekulation. 
 
-3.  Absorptionen stiger kraftigt ved C (ca. 680 nm) mens den falder ved A (600 nm). B er et såkaldt isosbektisk punkt, hvor absorptionen er konstant. Det A falder må der bliver mindre dimer, mens C stiger, hvilket betyder at monomeren (formentlig) interagerer med RNA.
+**3.**  Absorptionen stiger kraftigt ved C (ca. 680 nm) mens den falder ved A (600 nm). B er et såkaldt isosbektisk punkt, hvor absorptionen er konstant. Det A falder må der bliver mindre dimer, mens C stiger, hvilket betyder at monomeren (formentlig) interagerer med RNA.
 
-4.  Først vil der være en kraftig absorption omkring 680 nm, der så aftager efterhånden som RNA nedbrydes.
+**4.**  Først vil der være en kraftig absorption omkring 680 nm, der så aftager efterhånden som RNA nedbrydes.
 
-5.  688 nm.
+**5.**  688 nm.
 :::
 
 ## Opgave 2. Støkiometriske beregninger
@@ -81,10 +81,10 @@ Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs.
 
 ::: {.solution-callout}
 
-1.  H6-Ubi-S15: 11607.11 Da\
+**1.**  H6-Ubi-S15: 11607.11 Da\
     S-protein: 11541.96 Da
 
-2.  S-protein:\
+**2.**  S-protein:\
     5 mg/ml = 5 g/L\
     5 g/L / 11541.96 g/mol = 0.000433 mol/L = 0.43 mM\
     \
@@ -93,7 +93,7 @@ Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs.
     \
     Da koncentrationerne er næsten ens, skal vi altså tilsætte samme volumen H6-Ubi-S15 (10 μl) for at opnå 1:1 molært forhold.
 
-3.  Da vi har blandet 10 μl S-protein med samme volumen H6-Ubi-S15 er koncentrationen af S-protein (= aktive sites) altså halveret\
+**3.**  Da vi har blandet 10 μl S-protein med samme volumen H6-Ubi-S15 er koncentrationen af S-protein (= aktive sites) altså halveret\
     Dvs. \[S-protein\] = 0.215 mM.\
     \
     S-protein har sekvensen:\
@@ -131,14 +131,14 @@ Overvej om der er andre måder at foretage fortyndingen på, der minimerer usik
 
 ::: {.solution-callout}
 
-1.  5 μg/μL og 5000 ng/μL
+**1.**  5 μg/μL og 5000 ng/μL
 
-2.  5 mg/mL = 5 g/L\
+**2.**  5 mg/mL = 5 g/L\
     5 g/L / 13700 g/mol = 0.000364 M = 364 μM
 
-3.  5000 gange
+**3.**  5000 gange
 
-4.  Dette virker:\
+**4.**  Dette virker:\
     10 μL (5 mg/mL) + 490 μL buffer -> 0.1 mg/mL = 100 μg/mL\
     10 μL (100 μg/μL) + 990 μL buffer ->  1 μg/mL\
     \
@@ -149,7 +149,7 @@ Overvej om der er andre måder at foretage fortyndingen på, der minimerer usik
     Dette virker ikke:\
     1 μL (5 mg/mL) + 4999 μL buffer -> 0.001 mg/mL = 1 μg/mL
 
-5.  Se ovenfor.
+**5.**  Se ovenfor.
 :::
 
 ## Opgave 4. Opsætning af dataark til LØ

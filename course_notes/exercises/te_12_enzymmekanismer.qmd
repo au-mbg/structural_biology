@@ -70,9 +70,9 @@ Hvad kunne der ske hvis et bakterium erhvervede en helt ny RE ved f.eks overfør
 
 ::: {.solution-callout}
 
-1.  Skidt! Hvis bakterierne ikke når at methylere deres DNA før RE kommer til fadet, vil deres eget DNA jo nå at blive nedbrudt før det overhovedet er transkriberet.
+**1.**  Skidt! Hvis bakterierne ikke når at methylere deres DNA før RE kommer til fadet, vil deres eget DNA jo nå at blive nedbrudt før det overhovedet er transkriberet.
 
-2.  Endnu værre. Så er der slet ingen methylase til at beskytte bakterien mod sin egen RE.
+**2.**  Endnu værre. Så er der slet ingen methylase til at beskytte bakterien mod sin egen RE.
 :::
 
 ## ![](media/image55.png){width="1.0979166666666667in" height="0.8958333333333334in"}Opgave 8. Cheleringsagenter
@@ -114,11 +114,11 @@ Forklar de tre enzymers forskellige aktivitetsniveauer.
 
 ::: {.solution-callout}
 
-1.  Plastik repræsenterer nye former for makromolekyler som ikke har eksisteret før. Derfor har der heller ikke været evolutionært behov for at udvikle enzymer til at nedbryde dem. Enzymer skal typisk have en funktionel gruppe at angribe, f.eks. via hydrolyse. De tre grupper PE, PVC og PS mangler helt sådanne angrebspunkter og må derfor være sværest at nedbryde. De andre repræsenterer funktionelle grupper som estre (PLA, PA11 og PET) og amider (PUR) som skulle kunne give et vist udgangspunkt men det er jo langtfra naturlige substrater.
+**1.**  Plastik repræsenterer nye former for makromolekyler som ikke har eksisteret før. Derfor har der heller ikke været evolutionært behov for at udvikle enzymer til at nedbryde dem. Enzymer skal typisk have en funktionel gruppe at angribe, f.eks. via hydrolyse. De tre grupper PE, PVC og PS mangler helt sådanne angrebspunkter og må derfor være sværest at nedbryde. De andre repræsenterer funktionelle grupper som estre (PLA, PA11 og PET) og amider (PUR) som skulle kunne give et vist udgangspunkt men det er jo langtfra naturlige substrater.
 
-2.  MHETasen har et domæne, der fungerer som et slags låg, der omkapsler det aktive site og dermed substratet. PETasen arbejder med uopløseligt materiale så det skal ikke indkapsles. Derimod er MHET lille og skal tilbageholdes i det aktive site eftersom den langsomme reaktionsrate gør MHET tilbøjelig til at diffundere væk før det når at blive nedbrudt.
+**2.**  MHETasen har et domæne, der fungerer som et slags låg, der omkapsler det aktive site og dermed substratet. PETasen arbejder med uopløseligt materiale så det skal ikke indkapsles. Derimod er MHET lille og skal tilbageholdes i det aktive site eftersom den langsomme reaktionsrate gør MHET tilbøjelig til at diffundere væk før det når at blive nedbrudt.
 
-3.  PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA => MHET => TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
+**3.**  PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA => MHET => TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
 :::
 
 ## Opgave 11. Find den katalytiske triade (PyMOL API, OPTIONAL)

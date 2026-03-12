@@ -189,11 +189,11 @@ Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-protei
 
 ::: {.solution-callout}
 
-1.  Major groove. Man kan observere major groove på afstanden mellem beta-glykosid bindingerne. Alternativt ved at se på DNA-dobbelthelixen alene og observere, at det er i den major groove proteinet binder - dette kan man dog ikke være helt sikker på, da protein-bindingen kan have deformeret DNA-dobbelthelixen.
+**1.**  Major groove. Man kan observere major groove på afstanden mellem beta-glykosid bindingerne. Alternativt ved at se på DNA-dobbelthelixen alene og observere, at det er i den major groove proteinet binder - dette kan man dog ikke være helt sikker på, da protein-bindingen kan have deformeret DNA-dobbelthelixen.
 
-2.  Fire par og deres interaktionstype: Asparaginsyre-Cytosin (H-bond), Glycin-Thymin (ingen sterisk hindring), Asparagin-Guanin (H-bond), Isoleucin-Adenin (hydrofob). Det er Hoogsteen-siden af basen, der interageres med, da interaktionen foregår i major groove. TALE genkender chain B, hvilket man kan se i PyMOL (5'-3' retningen af strengen genkendes af N-term til C-term rækkefølge af TALE-repeats).
+**2.**  Fire par og deres interaktionstype: Asparaginsyre-Cytosin (H-bond), Glycin-Thymin (ingen sterisk hindring), Asparagin-Guanin (H-bond), Isoleucin-Adenin (hydrofob). Det er Hoogsteen-siden af basen, der interageres med, da interaktionen foregår i major groove. TALE genkender chain B, hvilket man kan se i PyMOL (5'-3' retningen af strengen genkendes af N-term til C-term rækkefølge af TALE-repeats).
 
-3.  Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-redigering. Transkriptionsfaktor-domæne kan aktivere RNA polymerase ved promoter. Der er flere andre muligheder.
+**3.**  Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-redigering. Transkriptionsfaktor-domæne kan aktivere RNA polymerase ved promoter. Der er flere andre muligheder.
 :::
 
 ## Opgave 6. Trp trap træsko 

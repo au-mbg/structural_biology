@@ -26,13 +26,13 @@ Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 
 ::: {.solution-callout}
 
-1.  Jo højere antal *cis*-dobbeltbindinger, desto mindre ordnet er membranbilaget og desto mere flydende er membransystemet. Du vil derfor forvente at smeltetemperaturen for systemet med acylkæderne med de fire dobbeltbindinger er meget lavere end for systemet med de mættede kæder.
+**1.**  Jo højere antal *cis*-dobbeltbindinger, desto mindre ordnet er membranbilaget og desto mere flydende er membransystemet. Du vil derfor forvente at smeltetemperaturen for systemet med acylkæderne med de fire dobbeltbindinger er meget lavere end for systemet med de mættede kæder.
 
-2.  Du ville forvente at bakterierne der har groet ved den højere temperatur har inkorporeret et større antal fedtsyrer med længere kæder og har en større andel af mættede fedtsyrekæder. På samme måde vil membranerne på bakterierne groet ved 18°C vil have flere kort-kædede fedtsyrer og flere som er umættede. Disse celler vælger fedtsyrer, der vil forblive flydende ved lavere temperatur for at undgå at deres membraner bliver for rigide. Cellerne dyrket ved højere temperatur vil derimod vælge fedtsyrer, der pakker tættere. 
+**2.**  Du ville forvente at bakterierne der har groet ved den højere temperatur har inkorporeret et større antal fedtsyrer med længere kæder og har en større andel af mættede fedtsyrekæder. På samme måde vil membranerne på bakterierne groet ved 18°C vil have flere kort-kædede fedtsyrer og flere som er umættede. Disse celler vælger fedtsyrer, der vil forblive flydende ved lavere temperatur for at undgå at deres membraner bliver for rigide. Cellerne dyrket ved højere temperatur vil derimod vælge fedtsyrer, der pakker tættere. 
 
-3.  Som kolesterol så er hopanoider polycykliske stoffer med en rigid, plade-agtig og hydrofob ringstruktur og en hydrofil ende. Den hydrofile -OH gruppe er dog i den modsatte ende af molekylet ift. kolesterol. 
+**3.**  Som kolesterol så er hopanoider polycykliske stoffer med en rigid, plade-agtig og hydrofob ringstruktur og en hydrofil ende. Den hydrofile -OH gruppe er dog i den modsatte ende af molekylet ift. kolesterol. 
 
-4.  Hopanoider har samme funktion i bakteriers membran som kolesterol i vores membraner, dvs. de er med til at moderere fluiditeten ved at blokere for fedtsyrekædernes bevægelser.
+**4.**  Hopanoider har samme funktion i bakteriers membran som kolesterol i vores membraner, dvs. de er med til at moderere fluiditeten ved at blokere for fedtsyrekædernes bevægelser.
 :::
 
 ## Opgave 2. Helical wheel
@@ -71,21 +71,21 @@ Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektro
 
 ::: {.solution-callout}
 
-1.  (18-20) \* 1.5 Å = 27 -- 30 Å.
+**1.**  (18-20) \* 1.5 Å = 27 -- 30 Å.
 
-2.  Et helical wheel-plot kan afsløre hvis en transmembran (eller enhver anden) helix har visse egenskaber langs én af siderne, f.eks. er overvejende hydrofob.
+**2.**  Et helical wheel-plot kan afsløre hvis en transmembran (eller enhver anden) helix har visse egenskaber langs én af siderne, f.eks. er overvejende hydrofob.
 
-3.  De hydrofobe sidekæder vender mod højre i figuren mens de hydrofile peger mod venstre. Dvs. at helixen er amfiphatisk. ![](media/image79.png){width="4.070008748906386in" height="4.050007655293088in"}
+**3.**  De hydrofobe sidekæder vender mod højre i figuren mens de hydrofile peger mod venstre. Dvs. at helixen er amfiphatisk. ![](media/image79.png){width="4.070008748906386in" height="4.050007655293088in"}
 
-4.  Ligander:\
+**4.**  Ligander:\
     HEM: PROTOPORPHYRIN IX CONTAINING FE (Co-faktor)\
     NAG: 2-acetamido-2-deoxy-beta-D-glucopyranose (N-linked glycosyleringer)\
     BOG: octyl beta-D-glucopyranoside (detergent, krystallisation)\
     SAL: 2-HYDROXYBENZOIC ACID (drug analog, krystallisation)
 
-5.  Prostagladin er lokaliseret til membranen via det delvist integrerede (amphipatisk helix) -- som er hvide i det beregnede electrostatiske potentiale.
+**5.**  Prostagladin er lokaliseret til membranen via det delvist integrerede (amphipatisk helix) -- som er hvide i det beregnede electrostatiske potentiale.
 
-6.  Helix 97-105 (2 kopier i dimeren) er meget hydrophob helix på den ydersiden (amphipatisk helix) som vil targeter prostagladin til membranen (se f. eks Stryer fig 12.23).\
+**6.**  Helix 97-105 (2 kopier i dimeren) er meget hydrophob helix på den ydersiden (amphipatisk helix) som vil targeter prostagladin til membranen (se f. eks Stryer fig 12.23).\
     \
     (Bemærk at der er en del positive ladninger (blå i beregnede electrostatiske potentiale) som sikker integrere med de negative ladede hovedgrupper på membranens lipider).
 :::
@@ -106,9 +106,9 @@ Hvilke usikkerheder ligger der i analysen?
 
 ::: {.solution-callout}
 
-1.  Proteinet i (C) har potentielle transmembrane helicer (3 i starten og 1 i slutningen). Dette ses ved at der er brede peaks, der ligger langt over støjniveauet.
+**1.**  Proteinet i (C) har potentielle transmembrane helicer (3 i starten og 1 i slutningen). Dette ses ved at der er brede peaks, der ligger langt over støjniveauet.
 
-2.  De andre proteiner *kan* have transmembrane segmenter, men vi kan ikke se det i hydropatiplottet. Forekommer der β-strands i membranen kan dette være næsten umuligt at se i sådan et plot. Faktisk er proteinet i (A) en porin, men dette kan ikke ses i plottet.
+**2.**  De andre proteiner *kan* have transmembrane segmenter, men vi kan ikke se det i hydropatiplottet. Forekommer der β-strands i membranen kan dette være næsten umuligt at se i sådan et plot. Faktisk er proteinet i (A) en porin, men dette kan ikke ses i plottet.
 :::
 
 ## Opgave 4. Breast Cancer Resistance Protein (BCRP)
@@ -233,18 +233,18 @@ Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
 ::: {.solution-callout}
 
-1.  Flere områder med ret høje (hydrofobe) og brede peaks i plottet, specielt nær C-terminalen.
+**1.**  Flere områder med ret høje (hydrofobe) og brede peaks i plottet, specielt nær C-terminalen.
 
-2.  6 transmembrane helicer. omkring (390 -- 415), (430 -- 450), (470 -- 500), (505 -- 530), (535 -- 555) og (630 -- 640).
+**2.**  6 transmembrane helicer. omkring (390 -- 415), (430 -- 450), (470 -- 500), (505 -- 530), (535 -- 555) og (630 -- 640).
 
-3.  Den N-terminale halvdel. Bonusinfo: P-loopet genfindes omkring 80-86.
+**3.**  Den N-terminale halvdel. Bonusinfo: P-loopet genfindes omkring 80-86.
 
-4.  Peptidet reagerer ikke med antistof hverken i N- eller C-terminalen, der må altså være et helt antal helicer. Position 420, 500 og 575 må desuden være udenfor membranen, idet de opmærkes.\
+**4.**  Peptidet reagerer ikke med antistof hverken i N- eller C-terminalen, der må altså være et helt antal helicer. Position 420, 500 og 575 må desuden være udenfor membranen, idet de opmærkes.\
     ![](media/image85.png){width="4.25in" height="6.010416666666667in"}
 
-5.  N338 (NAS) er et site, men formentlig ikke modificeret, da aminosyreresten ligger i cytoplasma. Der ud over findes N418 (NDS), N557 (NLT) og N596 (NAT).
+**5.**  N338 (NAS) er et site, men formentlig ikke modificeret, da aminosyreresten ligger i cytoplasma. Der ud over findes N418 (NDS), N557 (NLT) og N596 (NAT).
 
-6.  PNGase F spalter N-bundne oligosaccharider fra peptidkæden. N596 er glycosyleret i BCRP.
+**6.**  PNGase F spalter N-bundne oligosaccharider fra peptidkæden. N596 er glycosyleret i BCRP.
 :::
 
 ## Opgave 5. 5'-Nucleotidase
@@ -350,21 +350,21 @@ På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mu
 
 ::: {.solution-callout}
 
-1.  5'-nucleotidase = 5'-ribonucleotide phosphohydrolase. Navnet antyder at enzymet hydrolyserer nukleotider til nukleosider og phosphate (Fig. 25.17, s. 760).
+**1.**  5'-nucleotidase = 5'-ribonucleotide phosphohydrolase. Navnet antyder at enzymet hydrolyserer nukleotider til nukleosider og phosphate (Fig. 25.17, s. 760).
 
-2.  Detergenten (amfipatisk molekyle) solubiliserer membranproteinet proteinet ved at interagere med de hydrofobe områder. Herved kan proteinet analyseres på en gelfiltreringssøjle som et opløseligt protein.
+**2.**  Detergenten (amfipatisk molekyle) solubiliserer membranproteinet proteinet ved at interagere med de hydrofobe områder. Herved kan proteinet analyseres på en gelfiltreringssøjle som et opløseligt protein.
 
-3.  Dimer.
+**3.**  Dimer.
 
-4.  Både 3 kDa-fragmentet og dipeptidet må indeholde hydrophile og hydrophobe grupper for at blive lokaliseret i interfasen.
+**4.**  Både 3 kDa-fragmentet og dipeptidet må indeholde hydrophile og hydrophobe grupper for at blive lokaliseret i interfasen.
 
-5.  CNBr spalter efter Met. Ét CNBr fragment, 536--574, matcher aminosyresekvensen i Tabel 1, men er for stort (4.2 kDa), så man må forvente C-terminal processering. Dette understøttes af dipeptidsekvensen idet det K som kommer før i sekvenserne er det sidste K i peptidet. Derfor må S549 i cDNA sekvensen være den C-terminale rest, og noget andet må være koblet til den, enten via sidekæde --OH eller til C-teminus.
+**5.**  CNBr spalter efter Met. Ét CNBr fragment, 536--574, matcher aminosyresekvensen i Tabel 1, men er for stort (4.2 kDa), så man må forvente C-terminal processering. Dette understøttes af dipeptidsekvensen idet det K som kommer før i sekvenserne er det sidste K i peptidet. Derfor må S549 i cDNA sekvensen være den C-terminale rest, og noget andet må være koblet til den, enten via sidekæde --OH eller til C-teminus.
 
-6.  Den C-terminale Ser 549. Tabel 2 antyder at det er et glycolipid som er koblet til proteinet. Fig. 12.25 viser eksempler på membranankre.
+**6.**  Den C-terminale Ser 549. Tabel 2 antyder at det er et glycolipid som er koblet til proteinet. Fig. 12.25 viser eksempler på membranankre.
 
-7.  GPI-anker (Fig. 12.25). Den inositol-specifikke phospholipase C frigør sukkerdelen fra glycerol-backbone.
+**7.**  GPI-anker (Fig. 12.25). Den inositol-specifikke phospholipase C frigør sukkerdelen fra glycerol-backbone.
 
-8.  Signalpeptidet dirigerer translationsprocessen til ER, mens den hydrophobe C-terminal forbliver i ER-membranen. Efterfølgende bliver den hydrophobe ende spaltet fra og erstattet af GPI-ankeret. Herefter overføres proteinet til Golgi og sendes herefter ud af cellen.
+**8.**  Signalpeptidet dirigerer translationsprocessen til ER, mens den hydrophobe C-terminal forbliver i ER-membranen. Efterfølgende bliver den hydrophobe ende spaltet fra og erstattet af GPI-ankeret. Herefter overføres proteinet til Golgi og sendes herefter ud af cellen.
 
-9.  Enzymet må være placeret på ydersiden af cellen pga. den måde, det processeres på. Det fungerer ifm. næringsoptag ved at hydrolysere nukleotider til nukleosider, hvilket tillader dem at passere membranen, da de ikke længere er ladede.
+**9.**  Enzymet må være placeret på ydersiden af cellen pga. den måde, det processeres på. Det fungerer ifm. næringsoptag ved at hydrolysere nukleotider til nukleosider, hvilket tillader dem at passere membranen, da de ikke længere er ladede.
 :::

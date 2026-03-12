@@ -83,15 +83,15 @@ Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfa
 
 ::: {.solution-callout}
 
-1.  Struktur er mere bevaret end sekvens.
+**1.**  Struktur er mere bevaret end sekvens.
 
-2.  Stem 1 og 3 (talt fra 5' ende)\
+**2.**  Stem 1 og 3 (talt fra 5' ende)\
     Nogle tRNA sekvenser har insert mellem stem 3 og 4.
 
-3.  Har extra stem mellem stem 3 og 4.\
+**3.**  Har extra stem mellem stem 3 og 4.\
     Ja, der er covariationer i stem.
 
-4.  Hairpin er indsat mellem anticodon loop og T-psi-C loop.
+**4.**  Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 :::
 
 ## Opgave 2. Den forsvundne RNA replikase
@@ -139,22 +139,22 @@ Active site for RNA polymerase proteinet (Figur C) ligner meget active site for 
 
 ::: {.solution-callout}
 
-1.  4^N^ = 4^220^ mulige sekvenser. M(ribonukleotid) = 330 g/mol. M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
+**1.**  4^N^ = 4^220^ mulige sekvenser. M(ribonukleotid) = 330 g/mol. M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
     m(bibliotek 1) = n \* M = (antal/N~A~) \* 72.600 g/mol = 3,42 \* 10^113^ g\
     m(bibliotek 2) = n \* M = (antal/N~A~) \* 72.600 g/mol = 194 μg\
     Det betyder at det ikke er særlig svært at finde en RNA ligaseaktivitet, da den allerede kunne findes med et relativt lille bibliotek.
 
-2.  Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.\
+**2.**  Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.\
     \
     ![Screen Shot 2017-10-24 at 19.30.02](media/image34.png){width="2.3650120297462816in" height="1.9007086614173228in"}
 
-3.  P2,4,6 støttes af kompenserende baseændringer.\
+**3.**  P2,4,6 støttes af kompenserende baseændringer.\
     PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
 
-4.  P2,4,5,6,7 forudsagt. I fravær af P1 og P3 er der forudsagt en anden hairpin, som vi kan kalde PX.\
+**4.**  P2,4,5,6,7 forudsagt. I fravær af P1 og P3 er der forudsagt en anden hairpin, som vi kan kalde PX.\
     RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algoritme, der kun kan forudsige sekundær struktur.
 
-5.  C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
+**5.**  C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
 :::
 
 ## Opgave 3. Globin sekvensalignment 
@@ -206,20 +206,20 @@ Hvilke aminosyreegenskaber er involveret i Blossum-62 score?
 
 Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
 
-1.  11
+**1.**  11
 
-2.  11
+**2.**  11
 
-3.  MUSCLE, da den finder extra similariteter og laver ikke stort insert til sidst i alignment.
+**3.**  MUSCLE, da den finder extra similariteter og laver ikke stort insert til sidst i alignment.
 
-4.  Hæmoglobin og Myoglobin med 27%
+**4.**  Hæmoglobin og Myoglobin med 27%
 
-5.  Blossum scores:\
+**5.**  Blossum scores:\
     Kolonne 4 = 3\*4 (L-L) =12\
     Kolonne 18 = 2\*1 (T-S) + 4 (S-S) = 6\
     Kolonne 19 = 2\*-1 (F-V) + 4 (V-V) = 2
 
-6.  Aminosyrer er opdelt i: 1) ladede, 2) polære, 3) store og hydrofobe, 4) andre.
+**6.**  Aminosyrer er opdelt i: 1) ladede, 2) polære, 3) store og hydrofobe, 4) andre.
 
 ClustalO output:
 
@@ -304,21 +304,21 @@ Beskriv overordnet hvor de bevarede aminosyrer er placeret i globin-strukturen s
 
 ::: {.solution-callout}
 
-1.  Super aligner udelukkende på grundlag af struktur.\
+**1.**  Super aligner udelukkende på grundlag af struktur.\
     Super RMSD beregnes med kommandoerne:\
     super 1gdj, 1mbd RMSD = 1.618\
     super 1hbb_A, 1mbd RMSD = 1.401\
     super 1hbb_A, 1gdj RMSD = 2.762
 
-2.  Align laver først en sekvens alignment og bruger denne til at aligne struktur.\
+**2.**  Align laver først en sekvens alignment og bruger denne til at aligne struktur.\
     Align RMSD beregnes med kommandoerne:\
     align 1gdj, 1mbd RMSD = 3.062\
     align 1hbb_A, 1mbd RMSD = 1.328\
     align 1hbb_A, 1gdj RMSD = 3.446
 
-3.  Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
+**3.**  Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
 
-4.  De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
+**4.**  De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
 :::
 
 ## Opgave 5. Globin strukturbevarelse
@@ -395,17 +395,17 @@ Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmog
 
 ::: {.solution-callout}
 
-1.  De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
+**1.**  De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
 
-2.  Overfladen er blå (dvs. under 50% bevaret). Der er mange røde residues omkring hæmgruppen.
+**2.**  Overfladen er blå (dvs. under 50% bevaret). Der er mange røde residues omkring hæmgruppen.
 
-3.  Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
+**3.**  Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
 
-4.  Bøjning af alfa-helix. Ligand er SO~4~^2-^.
+**4.**  Bøjning af alfa-helix. Ligand er SO~4~^2-^.
 
-5.  Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
+**5.**  Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
 
-6.  Alfa helix 4 er forlænget i C-terminal.
+**6.**  Alfa helix 4 er forlænget i C-terminal.
 :::
 
 ## Opgave 6. Heat shock protein 70 evolution
@@ -450,9 +450,9 @@ Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den
 
 ::: {.solution-callout}
 
-1.  Stort insert omkring position 550.
+**1.**  Stort insert omkring position 550.
 
-2.  Script:
+**2.**  Script:
 
 ```pymol
 ## Script til opgave 6. Heat shock protein 70 evolution
@@ -545,10 +545,10 @@ scene F3, store
 
 scene F1
 ```
-3.  Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
+**3.**  Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
 
-4.  Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet position.
+**4.**  Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet position.
 
-5.  Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
+**5.**  Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
     Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
 :::

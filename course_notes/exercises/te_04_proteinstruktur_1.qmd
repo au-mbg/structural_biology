@@ -112,16 +112,16 @@ Er β-kæderne parallelle eller anti-parallelle?
 
 ::: {.solution-callout}
 
-1.  Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
+**1.**  Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
 
-2.  De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er vist som α-carbon trace (ét `hak` for hver aminosyrerest) kan vi derfor tælle os frem og finde de to valinrester som hhv. 4. `hak` fra den blå N-terminus og 5. hak fra den røde C-terminus.
+**2.**  De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er vist som α-carbon trace (ét `hak` for hver aminosyrerest) kan vi derfor tælle os frem og finde de to valinrester som hhv. 4. `hak` fra den blå N-terminus og 5. hak fra den røde C-terminus.
 
-3.  Kæde 1: Rest 5-10\
+**3.**  Kæde 1: Rest 5-10\
     Kæde 2: Rest 14-20\
     Kæde 3: Rest 31-38\
     Kæde 4: Rest 42-50
 
-4.  Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
+**4.**  Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
 :::
 
 ## Opgave 4. Cartoons
@@ -195,13 +195,13 @@ Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
 ::: {.solution-callout}
 
-1.  ![](media/image13.png){width="5.761013779527559in" height="3.375165135608049in"}
+**1.**  ![](media/image13.png){width="5.761013779527559in" height="3.375165135608049in"}
 
-2.  \-
+**2.**  \-
 
-3.  \~3.8 Å
+**3.**  \~3.8 Å
 
-4.  \~2.8 Å
+**4.**  \~2.8 Å
 :::
 
 ## Opgave 6. Binding af guanine
@@ -247,9 +247,9 @@ Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
 ::: {.solution-callout}
 
-1.  Cys137
+**1.**  Cys137
 
-2.  Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
+**2.**  Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
 
   ------------------------------------------------------------------------------
   Aminosyrerest\    Atom\       GDP atom\        H-donor\
@@ -264,13 +264,13 @@ Kom med en biokemisk forklaring på mutantens ændrede specificitet.
   D138              Oδ2         N1/N2            G
   ------------------------------------------------------------------------------
 
-3.  Adenine har hverken en ekstracyklisk N2-gruppe eller i stand til at donere en H-binding fra N1, så interaktionen med D138 er ikke favorabel.\
+**3.**  Adenine har hverken en ekstracyklisk N2-gruppe eller i stand til at donere en H-binding fra N1, så interaktionen med D138 er ikke favorabel.\
     \
     Xanthine har godt nok N1-gruppen fra guanine, men har til gengæld modsat polaritet (H-acceptor) idet N2 er udskiftet med O, så den er heller ikke favorabel.\
     \
     D138 udgør altså hele grundlaget for denne skelnen mellem nukleotider.
 
-4.  Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
+**4.**  Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
 :::
 
 ## Opgave 7. Nukleotid binding

@@ -22,11 +22,11 @@ Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen
 
 X er cAMP og dets produktion stimuleres af adrenalin.
 
-1.  Centrifugeringen sedimenterer adenylate cyclase som er membranbundet og katalyserer produktionen af cAMP.
+**1.**  Centrifugeringen sedimenterer adenylate cyclase som er membranbundet og katalyserer produktionen af cAMP.
 
-2.  Tilsætning af cAMP stimulerer glycogen phosphorylase.
+**2.**  Tilsætning af cAMP stimulerer glycogen phosphorylase.
 
-3.  cAMP er varmestabilt i modsætning til et protein som normalt denaturerer ved varmebehandling.
+**3.**  cAMP er varmestabilt i modsætning til et protein som normalt denaturerer ved varmebehandling.
 :::
 
 ## Opgave 2. Signalgenkendelse
@@ -76,24 +76,24 @@ Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kald
 
 ::: {.solution-callout}
 
-1.  Bakterielle overflade-sukkermolekyler genkendes af plante receptorer (LysM receptorer) som sidder i cellemembranen.\
+**1.**  Bakterielle overflade-sukkermolekyler genkendes af plante receptorer (LysM receptorer) som sidder i cellemembranen.\
     \
     Genkendelse af disse sukkermolekyler skal være specifik for at signaltransduktionen er målrettet så der kan skelne mellem symbiotiske og ikke-symbiotiske bakterier. Hvis planten f. eks. giver adgang til patogene bakterier så risikerer den at dø, så det er vigtigt at genkendelsen er specifik.
 
-2.  Et mindre og hydrofobt molekyle (cortisol) kan krydse cellemembranen og binde til cytoplasmatiske receptorer eller receptorer i cellekernen. Et signalmolekyle som er større og mere hydrofilt (chitin, chitopentaose) vil have svært ved at krydse membranen og man vil sandsynligvis finde dets receptor i cellemembranen.
+**2.**  Et mindre og hydrofobt molekyle (cortisol) kan krydse cellemembranen og binde til cytoplasmatiske receptorer eller receptorer i cellekernen. Et signalmolekyle som er større og mere hydrofilt (chitin, chitopentaose) vil have svært ved at krydse membranen og man vil sandsynligvis finde dets receptor i cellemembranen.
 
-3.  CERK1 har svovlbroer ved C29-C155, C91-C153, C25-C93 og de tre domæner er adskilt af svovlbroerne således de omtrentligt er placeret LysM1: 25-91, LysM2: 92-152 og LysM3: 153-225. Der er 5 forskellige sukkermolekyler (Chain B+C+D+E+F), hvor de første er kovalent bundet til 52+102+123+152 i en N-glykosylering. Derfor er Chain F liganden.
+**3.**  CERK1 har svovlbroer ved C29-C155, C91-C153, C25-C93 og de tre domæner er adskilt af svovlbroerne således de omtrentligt er placeret LysM1: 25-91, LysM2: 92-152 og LysM3: 153-225. Der er 5 forskellige sukkermolekyler (Chain B+C+D+E+F), hvor de første er kovalent bundet til 52+102+123+152 i en N-glykosylering. Derfor er Chain F liganden.
 
-4.  Chitin liganden (sukkermolekylet) genkendes specifikt via mange hydrogen bindinger fra både sidekæder og hovedkæden. Vandmolekyler i interface er også involveret i bindingen - eksempelvis vanmolekylerne på position: 1052+1072 (+flere, se script)
+**4.**  Chitin liganden (sukkermolekylet) genkendes specifikt via mange hydrogen bindinger fra både sidekæder og hovedkæden. Vandmolekyler i interface er også involveret i bindingen - eksempelvis vanmolekylerne på position: 1052+1072 (+flere, se script)
 
 ```sh
 ![](media/image99.png){width="3.3348665791776027in" height="3.1793186789151355in"}.
 ```
-5.  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM2 dog er der et par sidekæder (Asp143) som sterisk clasher med liganden. ![](media/image100.png){width="2.716385608048994in" height="2.844673009623797in"}
+**5.**  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM2 dog er der et par sidekæder (Asp143) som sterisk clasher med liganden. ![](media/image100.png){width="2.716385608048994in" height="2.844673009623797in"}
 
-6.  Introduktion af en stor aminosyre som tryptophan vil blokere for chitin bindingstedet og man kan derved undersøge om det er LysM1 eller LysM2 (eller begge) som binder liganden.
+**6.**  Introduktion af en stor aminosyre som tryptophan vil blokere for chitin bindingstedet og man kan derved undersøge om det er LysM1 eller LysM2 (eller begge) som binder liganden.
 
-7.  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM1 og der er umiddelbart ingen steriske clashes med liganden. Brug "super" frem for "align", da der ikke er så høj sekvensbevarelse.
+**7.**  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM1 og der er umiddelbart ingen steriske clashes med liganden. Brug "super" frem for "align", da der ikke er så høj sekvensbevarelse.
 :::
 
 ## Opgave 3. Beta-blokkere
@@ -122,13 +122,13 @@ Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil
 
 ::: {.solution-callout}
 
-1.  Adrenalin binding medfører konformationel ændring i receptoren som forplantes videre i Gα som derved mister affinitet for GDP (1. amplifikation). Gα binder nu GTP og frigøres fra Gβγ og kan nu aktivere adenylate cyclase (2. amplifikation). Adenylate cyclase katalyserer dannelsen af cAMP (3. amplifikation) som kan diffundere og aktivere PKA (4. amplifikation).
+**1.**  Adrenalin binding medfører konformationel ændring i receptoren som forplantes videre i Gα som derved mister affinitet for GDP (1. amplifikation). Gα binder nu GTP og frigøres fra Gβγ og kan nu aktivere adenylate cyclase (2. amplifikation). Adenylate cyclase katalyserer dannelsen af cAMP (3. amplifikation) som kan diffundere og aktivere PKA (4. amplifikation).
 
-2.  G-proteinet (Gα) vil forblive på den aktiverede GTP form når det ikke-hydrolyserbare GTP analog er bundet. 5'-guanosine-imidotriphosphate forlænger dermed effekten af adrenalin på muskel cellen.
+**2.**  G-proteinet (Gα) vil forblive på den aktiverede GTP form når det ikke-hydrolyserbare GTP analog er bundet. 5'-guanosine-imidotriphosphate forlænger dermed effekten af adrenalin på muskel cellen.
 
-3.  Propranolon binder kompetetivt (blokerer) til beta-adrenergicreceptors (beta) og forhindrer adrenalins binding deraf navnet beta-blokker.
+**3.**  Propranolon binder kompetetivt (blokerer) til beta-adrenergicreceptors (beta) og forhindrer adrenalins binding deraf navnet beta-blokker.
 
-4.  Man vil forvente lavere koncentration af cAMP og højere koncentration af ATP da receptoren ikke kan aktivere G proteinet som derved ikke kan aktivere adenylat cyklasen (som omdanner ATP til cAMP).**\**
+**4.**  Man vil forvente lavere koncentration af cAMP og højere koncentration af ATP da receptoren ikke kan aktivere G proteinet som derved ikke kan aktivere adenylat cyklasen (som omdanner ATP til cAMP).**\**
 :::
 
 ## Opgave 4. Mutationer/sygdomme 
@@ -147,13 +147,13 @@ Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-pro
 
 ::: {.solution-callout}
 
-1.  Ligandbinding medfører dimerisering/oligomerisering af receptoren eller konformationelle ændringer som aktiverer intracelulære kinaser (f.eks via kryds-fosforylering).
+**1.**  Ligandbinding medfører dimerisering/oligomerisering af receptoren eller konformationelle ændringer som aktiverer intracelulære kinaser (f.eks via kryds-fosforylering).
 
-2.  Hvis mutationen er i aktiverings-loopet på kinasen så kunne aspartat være en fosforylerings-efterligning (mimic) som holder kinasen konstitutiv aktiv.
+**2.**  Hvis mutationen er i aktiverings-loopet på kinasen så kunne aspartat være en fosforylerings-efterligning (mimic) som holder kinasen konstitutiv aktiv.
 
 ![7](media/image104.png){width="3.875in" height="2.25in"}
 
-3.  Mutationen i Q61 som stabiliserer transition state gør Ras GTP-hydrolyse langsom. Mutationen holder derved Ras på aktiveret GTP-form og derved stimuleres celledeling ukontrolleret.
+**3.**  Mutationen i Q61 som stabiliserer transition state gør Ras GTP-hydrolyse langsom. Mutationen holder derved Ras på aktiveret GTP-form og derved stimuleres celledeling ukontrolleret.
 :::
 
 ## Opgave 5. GPCR signallering
@@ -180,11 +180,11 @@ Ved mutation af konserverede serine- og theronine-rester i den C-terminale del a
 
 ::: {.solution-callout}
 
-1.  Et korrekt svar skal indeholde at tilsætning at ligand aktiverer GPCR-1, som aktiverer G-proteinet, som øger aktiviteten af adenylate cyclase som katalysere dannelsen af cAMP fra ATP.
+**1.**  Et korrekt svar skal indeholde at tilsætning at ligand aktiverer GPCR-1, som aktiverer G-proteinet, som øger aktiviteten af adenylate cyclase som katalysere dannelsen af cAMP fra ATP.
 
-2.  Et korrekt svar skal indeholde at Gα og Gβγ er forankret i lipiddobbeltlaget/membranen via. kovalent bundene fedtsyrer. Gα og Gβγ er altså membran-bundet også når de ikke interagerer med membranproteiner såsom receptorer eller adenylate cyclase.
+**2.**  Et korrekt svar skal indeholde at Gα og Gβγ er forankret i lipiddobbeltlaget/membranen via. kovalent bundene fedtsyrer. Gα og Gβγ er altså membran-bundet også når de ikke interagerer med membranproteiner såsom receptorer eller adenylate cyclase.
 
-3.  Et korrekt svar skal indeholde at strukturen viser en GTP analog (5'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke hydrolyseres ligesom GTP. Gα vil ikke kunne hydrolysere GDPCP og dermed være aktiveret og det vil øge fosforylerings-aktiviteten af Protein kinase A via adenylate cyclase.
+**3.**  Et korrekt svar skal indeholde at strukturen viser en GTP analog (5'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke hydrolyseres ligesom GTP. Gα vil ikke kunne hydrolysere GDPCP og dermed være aktiveret og det vil øge fosforylerings-aktiviteten af Protein kinase A via adenylate cyclase.
 
-4.  Et korrekt svar skal indeholde at når serin/threonin aminosyerene muteres kan receptoren ikke fosforyleres og dermed ikke rekruttere arrestin som normalt vil terminere signalering (derfor den øgede og længerevarende signallering). De konserverede serin/thronin aminosyrer bliver sandsynligvis fosforyleret og dermed skaber docking-sites for arrestin binding som normalt dæmper receptor aktiviteten.
+**4.**  Et korrekt svar skal indeholde at når serin/threonin aminosyerene muteres kan receptoren ikke fosforyleres og dermed ikke rekruttere arrestin som normalt vil terminere signalering (derfor den øgede og længerevarende signallering). De konserverede serin/thronin aminosyrer bliver sandsynligvis fosforyleret og dermed skaber docking-sites for arrestin binding som normalt dæmper receptor aktiviteten.
 :::
