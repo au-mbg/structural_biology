@@ -48,10 +48,7 @@ Sammensætningen af glykosyleringer er afhængig ikke kun af den organisme prote
 
 Foreslå to metoder til identificering af exogent EPO og forklar hvorfor de kan anvendes.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Svaret skal indeholde en beskrivelse og sammenligning af syntesen af både N-bundne og O-bundne oligosaccharider, herunder information om at N-bundne molekyler dannes på bærermolekylet [dolicholphosphate]{.underline}, hvorefter det overføres som én samlet enhed til target-proteinet, der herefter modificeres. Dette står i kontrast til de O-bundne oligosaccharider, som opbygges sekventielt på target-molekylet. AB0-blodtypesystemet fremkommer som et resultat af O-bunden modifikation af proteiner og lipider på erythrocytternes overflade. O-bundne oligosaccharider findes, i modsætning til de N-bundne oligosaccharider, som modifikationer både på proteiner og på lipider.
 
@@ -65,7 +62,6 @@ Foreslå to metoder til identificering af exogent EPO og forklar hvorfor de kan 
 
 6.   Isoelektrisk fokusering (se Stryer) fordi der vil være forskel i masse og/eller ladning. Masse spec da der vil være forskel i masse.
 :::
-::::
 
 ## Opgave 2. Serine carboxypeptidase Y
 
@@ -111,10 +107,7 @@ Aminosyreresterne 1-20 udgør signalsekvensen i pre-pro CPY, hvorefter 21-111 er
 Beskriv ud fra de givne oplysninger, hvordan modningen af CPY i cellen kunne foregå.\
  
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  N-glycosyleringer, NXT/S. N124 (NVT), N198 (NAT), N279 (NLT) og N479 (NWT).
 
@@ -124,7 +117,6 @@ Beskriv ud fra de givne oplysninger, hvordan modningen af CPY i cellen kunne for
 
 4.  Serine carboxypeptidase Y er et glycoprotein, der syntetiseres og processeres via ER- og Golgi-membransystemerne. Den modne N-terminal (QRPL) indeholder det vakuolære sorting signal. Eventuelle O-glycosyleringer sker i Golgi ligesom de N-bundne oligosaccharider kan blive trimmet til komplekse former. Carboxypeptidasen pakkes i en vesikel i den terminale del af Golgi, hvorefter denne frigives og transporteres til vakuolen. 
 :::
-::::
 
 ## Opgave 3. Mannosidase I
 
@@ -166,10 +158,7 @@ Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 
  ![kifcomplex](media/image72.png){width="3.2235290901137357in" height="2.3786931321084865in"}
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Den fælles stub er angivet med gråt i figur 11.16A i Stryer
 
@@ -183,7 +172,6 @@ Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 
 6.  Nitrogenet til venstre på figuren svarer til placeringen af oxygen på det anomere carbon. Hvis mannosen indgik i en beta-glycosid binding ville bindingen pege opad og der ville være sterisk hindring for binding til mannosidase I.
 :::
-::::
 
 ## Opgave 4. Glykosyleringer i sortilin
 
@@ -234,10 +222,7 @@ I et forsøg på at fjerne alle glykosyleringer blev alle asparaginer, der var f
 
 Giv en mulig forklaring på denne observation.  
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Script findes på Brightspace.
 
@@ -257,7 +242,6 @@ Script findes på Brightspace.
 
 8.  Der kan egentlig være to forklaringer. Enten kan Asn-sidekæderne selv være vigtige for proteinets foldning og mutationerne kan derfor betyde at proteinet ikke folder korrekt og dermed er uopløseligt. En anden mulighed er at glycosyleringerne er vigtige for foldning af proteinet i cellen eller for opløselighed under foldningsprocessen i Golgi/SR. Glycosyleringer tjener ofte til at forøge stabilitet og opløselighed af proteiner. I spørgsmål6 så vi at glykosyleringen på Asp549 forbandt det første β-sheet med det sidste i propelstrukturen via hydrogenbinginger.  Glykosyleringen kan derfor tænkes at være med til at stabilisere den 10-bladede propelstruktur. 
 :::
-::::
 
 ## Opgave 5. (Rhod-)opsin (PyMOL)
 
@@ -287,10 +271,7 @@ Identificér den prostetiske 11-*cis* retinal-gruppe og lav en scene kaldet F2, 
 
 Hent strukturen af opsin (PDB-ID: 3CAP) og på samme måde som før; dan et objekt med kæderne A, C og D. Foretag dernæst en overlejring af opsin på rhodopsin. Gem dette som scene F3. Hvad er forskellen på opbygningen af opsin og rhodopsin? Giver denne forskel anledning til strukturelle ændringer? Hvilke?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Brug rcsb.org for at finde ligander etc:\
     \
@@ -370,4 +351,3 @@ Hent strukturen af opsin (PDB-ID: 3CAP) og på samme måde som før; dan et obje
     \
     Opsin er selve proteinet uden den prostetiske gruppe (11-*cis* retinal). Strukturerne er nær identiske, men der er nogle små justeringer i den ene ende af de transmembrane helicer i opsin ift. rhodopsin. Det kunne godt tyde på, at det er tilstedeværelsen af 11-*cis* retinal, der forårsager ændringerne, selvom de er et stykke væk.
 :::
-::::

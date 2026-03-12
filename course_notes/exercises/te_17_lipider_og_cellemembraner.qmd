@@ -24,10 +24,7 @@ Hopanoider er pentacykliske molekyler, der findes i bakterier og visse planter. 
 
 Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Jo højere antal *cis*-dobbeltbindinger, desto mindre ordnet er membranbilaget og desto mere flydende er membransystemet. Du vil derfor forvente at smeltetemperaturen for systemet med acylkæderne med de fire dobbeltbindinger er meget lavere end for systemet med de mættede kæder.
 
@@ -37,7 +34,6 @@ Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 
 4.  Hopanoider har samme funktion i bakteriers membran som kolesterol i vores membraner, dvs. de er med til at moderere fluiditeten ved at blokere for fedtsyrekædernes bevægelser.
 :::
-::::
 
 ## Opgave 2. Helical wheel
 
@@ -73,10 +69,7 @@ Analyser den elektrostatiske overflade af prostaglandin. Lav en scene, kaldet F2
 
 Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektrostatiske overflade. Hint: Lav alphahelicerne et objekt. Analyser de enkelte helicers ligesom I gjorde med helix-wheel plottet. Stemmer det overens med det forventede?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  (18-20) \* 1.5 Å = 27 -- 30 Å.
 
@@ -96,7 +89,6 @@ Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektro
     \
     (Bemærk at der er en del positive ladninger (blå i beregnede electrostatiske potentiale) som sikker integrere med de negative ladede hovedgrupper på membranens lipider).
 :::
-::::
 
 ## Opgave 3. Hydropatiplot
 
@@ -112,16 +104,12 @@ Analysér nedenstående hydropatiplot for tilstedeværelse af transmembrane segm
 
 Hvilke usikkerheder ligger der i analysen?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Proteinet i (C) har potentielle transmembrane helicer (3 i starten og 1 i slutningen). Dette ses ved at der er brede peaks, der ligger langt over støjniveauet.
 
 2.  De andre proteiner *kan* have transmembrane segmenter, men vi kan ikke se det i hydropatiplottet. Forekommer der β-strands i membranen kan dette være næsten umuligt at se i sådan et plot. Faktisk er proteinet i (A) en porin, men dette kan ikke ses i plottet.
 :::
-::::
 
 ## Opgave 4. Breast Cancer Resistance Protein (BCRP)
 
@@ -243,10 +231,7 @@ For at undersøge om BCRP er glykosyleret, muterede man desuden specifikke aspar
 
 Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Flere områder med ret høje (hydrofobe) og brede peaks i plottet, specielt nær C-terminalen.
 
@@ -261,7 +246,6 @@ Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
 6.  PNGase F spalter N-bundne oligosaccharider fra peptidkæden. N596 er glycosyleret i BCRP.
 :::
-::::
 
 ## Opgave 5. 5'-Nucleotidase
 
@@ -364,10 +348,7 @@ Foreslå hvordan det hydrofobe område nær C-terminalen kan være involveret mo
 
 På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mulige, biologiske roller for enzymet.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  5'-nucleotidase = 5'-ribonucleotide phosphohydrolase. Navnet antyder at enzymet hydrolyserer nukleotider til nukleosider og phosphate (Fig. 25.17, s. 760).
 
@@ -387,4 +368,3 @@ På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mu
 
 9.  Enzymet må være placeret på ydersiden af cellen pga. den måde, det processeres på. Det fungerer ifm. næringsoptag ved at hydrolysere nukleotider til nukleosider, hvilket tillader dem at passere membranen, da de ikke længere er ladede.
 :::
-::::

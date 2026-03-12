@@ -6,27 +6,19 @@ title: "TØ 12 -- Enzymmekanismer"
 
 Når N-acetyl-L-phenylalanine p-nitrophenyl esteren blandes med chymotrypsin, ses en burst-phase (et hurtigt omvendt-eksponentielt henfald efterfulgt af en mere rolig lineær stigning). Hvis man i stedet for en ester bruger en amid (dvs. udskifter phenol gruppen med en anilin gruppe), ses ingen burst-phase. Hvordan kan det forklares?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Esteren reagerer så hurtigt med chymotrypsin, at den når at ophobe et kovalent intermediat (ved acylering) før det når at blive frigivet og starte steady-state produktion af produkt, dvs. frigivelsen er den langsomste proces og dermed flaskehalsen. Amid substratet reagerer ikke så hurtigt og man kan derfor ikke skelne mellem acylering og deacylering på samme måde.  
 :::
-::::
 
 ## Opgave 2. En pind til ligkisten?
 
 Vildtype subtilisin nedbryder de to peptider Phe-Ala-Gln-Phe (peptid A) og Phe-Ala-His-Phe (peptid B) lige hurtigt; men subtilisin mutanten His64Ala (som ellers er et meget dårligere enzym end vildtype subtilisin) kløver peptid B ca. 1000 gange hurtigere end peptid A. Hvorfor?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Substratets His er placeret tilstrækkeligt godt i forhold til position 64 på subtilisin til delvist at erstatte den manglende His. Det er et eksempel på "substrate-assisted catalysis".
 :::
-::::
 
 ## Opgave 3. Den mystiske inhibitor
 
@@ -48,29 +40,21 @@ Analysér de kinetiske data via en grafisk fremstilling og angiv hvilken type in
 
 (Hint: dette er baseret på Stryer kapitel 5).
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 ![Inhibition correct](media/image54.jpeg){width="6.268055555555556in" height="3.93125in"}
 
 Skæringen med y-aksen varierer mens linjerne samles (mere eller mindre) i et punkt på den negative x-akse. Inhibitoren I er en non-kompetitiv inhibitor (variabel v~max~, uændret *K*~M~).
 :::
-::::
 
 ## Opgave 4. Kan man lægge sammen?
 
 I subtilisin medfører mutationerne Ser221Ala og His64Ala hver især en nedgang i *k*~cat~ på ca. 10^6^. Man ville derfor forvente at dobbelt-mutanten fører til en nedgang i *k*~cat~ på ca. (10^6^)^2^ = 10^12^. Eller hvad?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Det ville kun være tilfældet hvis mutationerne var uafhængige af hinanden (additive snarere end synergistiske). Det er jo ikke tilfældet: "helheden er større end summen af de enkelte dele". Eftersom begge sidekæder skal bidrage for at sikre at triaden fungerer, kan man ødelægge triaden blot ved at fjerne én af sidekæderne; og man kan jo ikke slå et glas i stykker mere end én gang.
 :::
-::::
 
 ## Opgave 7. Restriktionsenzymer
 
@@ -84,29 +68,21 @@ Ville det være godt eller skidt for værtscellen?
 
 Hvad kunne der ske hvis et bakterium erhvervede en helt ny RE ved f.eks overførsel fra en anden bakterie art?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Skidt! Hvis bakterierne ikke når at methylere deres DNA før RE kommer til fadet, vil deres eget DNA jo nå at blive nedbrudt før det overhovedet er transkriberet.
 
 2.  Endnu værre. Så er der slet ingen methylase til at beskytte bakterien mod sin egen RE.
 :::
-::::
 
 ## ![](media/image55.png){width="1.0979166666666667in" height="0.8958333333333334in"}Opgave 8. Cheleringsagenter
 
 EDTA (ethylene diamine tetra eddike syre, jf. struktur til højre) chelerer (binder kraftigt) en bestemt type molekyler. Hvilke enzymer fra Berg-Stryer's kapitel 6 ville den inhibere?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Det binder divalente metal-ioner som Zn^2+^, Ca^2+^ og Mg^2+^ med meget høj affinitet (*K*~D~ ca. 10^-8^ M). Det vil derfor stjæle metal ioner fra f.eks. carbonic anhydrase, metalloproteaser, flere restriktionsenzymer og myosin.
 :::
-::::
 
 ## Opgave 10. Biologisk plastik-nedbrydning
 
@@ -136,10 +112,7 @@ Man fremstiller nu et hybridenzym bestående af en MHETase og en PETase forbunde
 
 Forklar de tre enzymers forskellige aktivitetsniveauer.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Plastik repræsenterer nye former for makromolekyler som ikke har eksisteret før. Derfor har der heller ikke været evolutionært behov for at udvikle enzymer til at nedbryde dem. Enzymer skal typisk have en funktionel gruppe at angribe, f.eks. via hydrolyse. De tre grupper PE, PVC og PS mangler helt sådanne angrebspunkter og må derfor være sværest at nedbryde. De andre repræsenterer funktionelle grupper som estre (PLA, PA11 og PET) og amider (PUR) som skulle kunne give et vist udgangspunkt men det er jo langtfra naturlige substrater.
 
@@ -147,7 +120,6 @@ Forklar de tre enzymers forskellige aktivitetsniveauer.
 
 3.  PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA => MHET => TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
 :::
-::::
 
 ## Opgave 11. Find den katalytiske triade (PyMOL API, OPTIONAL)
 
@@ -197,10 +169,7 @@ Læg mærke til, at kommandoer fra APIen ofte kræver strenge svarende til, hvad
 
 Nu skal vi finde de trioer, der er tæt nok på hinanden til potentielt at være en katalytisk triade. Fordi vi er i Python kan vi benytte et ganske almindeligt for-loop til at iterere gennem de relevante lister. Herefter kan [cmd.get_distance(...)](https://pymolwiki.org/index.php/Get_Distance) benyttes til at finde afstanden mellem to atomer i spidsen af aminosyreresterne (husk, at du kan indsætte i strenge med .format). Hvis get_distance(..) giver en distance (i Ångstrøm), der er under en tærskelværdi, tilføjes nummeret til en ny liste. Til sidst kan alle potentielle tripletter af aminosyrer returneres.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Eksempelløsning. Jeres ligner måske ikke helt.
 
@@ -262,4 +231,3 @@ def SP_catalytic_triad_finder(selection=`all`):
 
     return print(distspace\[`finallist`\])
 :::
-::::

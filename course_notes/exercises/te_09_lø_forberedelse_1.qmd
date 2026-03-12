@@ -40,10 +40,7 @@ Foreslå hvilken typer af interaktioner, der fastholder resten af RNA-kæden, he
 
 Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  ![RnaseA_simple_reaction](media/image35.png){width="4.1875in" height="3.625in"}
 
@@ -61,7 +58,6 @@ Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
 7.  ssDNA binder, men kløves ikke da det ikke indeholder en 2'-OH-gruppe.
 :::
-::::
 
 ## Opgave 2. Strukturen af RNase A
 
@@ -97,10 +93,7 @@ Den sidste involverede residue er 119, der fungerer i det næste trin, hvor det 
 
 Forklar til sidst hvorfor RNase A udviser en klokkeformet pH-afhængighed med maksimal aktivitet omkring pH 7.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Se det færdige script her under. Sidekæderne 12, 41 og 119 er en del af RNase's active site.
 
@@ -172,7 +165,6 @@ scene F2, store, substratanalogen CPA
 
 7.  Dette skyldes de to His i det aktive site, der skal være hhv. deprotoneret (His19) og protoneret (His119) for at enzymet er aktivt.
 :::
-::::
 
 ## Opgave 3. Disulfidbroer i RNase A
 
@@ -194,10 +186,7 @@ Diskutér hvordan du tror enzymet påvirkes af Cys-resternes interaktioner ift. 
 
 Hvad ville der ske, hvis man denaturerede proteinet under reducerende betingelser og fjernede reduktanten før proteinet blev refoldet (ved afkøling eller fjernelse af denaturant)? Forklar Anfinsens forsøg.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Se det færdige script på brightspace. De 8 Cys-rester i RNase A danner 4 disulfidbroer og bidrager dermed til kraftig stabilisering af proteinet. Cys-resterne er alle oxiderede (-S-S-, i modsætning til -SH), hvilket stemmer overens med enzymets ekstracellulære lokalisering. Den kraftige stabilisering er nødvendig fordi enzymet findes i maven, hvor der er ekstrem pH.
 
@@ -235,7 +224,6 @@ scene F3, store, RNase A's svovlbroer
 
 4.  Hvis proteinet denatureres under reducerende betingelser brydes disulfidbroerne. Lader man derefter disse oxidere før man fjerner denaturant eller sænker temperaturen vil der dannes forkerte S-S bindinger og proteinet vil ikke kunne refoldes korrekt. Dette var essensen i Anfinsens forsøg, hvor han fandt at denne proces kun gav ca. 1% aktivt enzym, omtrent svarende til den statistiske sandsynlighed for at disulfidbroerne dannes korrekt. Lader man der i mod enzymet refolde samtidig med at det oxideres, finder alle de rette S-S broer sted og man får >90% aktivt enzym.
 :::
-::::
 
 ## Opgave 4. Delvis proteolyse af RNase A
 
@@ -261,10 +249,7 @@ Lav en ny scene kaldet **F7**, hvor du inkluderer visualisering af svovlbroerne,
 
 Vi vil undersøge aktiviteten af RNase A, RNase S, S-peptid samt S-protein samt hvordan S-protein og S-peptid kan adskilles og bringes sammen igen ved laboratorieøvelserne.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Se det færdige script på brightspace. Subtilisin kløver efter en Ala (residue 20), hvilket er usædvanligt, at proteasen normalt foretrækker store hydrofobe sidekæder i S1-lommen. Alanin er dog stadig hydrofob og da den er lille kan den stadig passe ind i subtilisins specificitetslomme. Kløvningssitet sidder yderligt på RNase A i et loop, der formentlig giver god adgang for proteasen. Det er dog bemærkelsesværdigt at subsilisin ikke kløver efter Ala19, der sidder lige før og er eksponeret på samme måde. Dette fremhæver hvor svært det kan være at forudsige proteasers kløvningssites, da de afhænger meget af den præcise strukturelle og sekvensmæssige kontekst, hvori den genkendte aminosyre indgår.
 
@@ -395,7 +380,6 @@ scene F7, store, Active site og svovlbroer i relation til S-protein og S-peptid
 
 4.  Alle disulfidbroer sidder internt i S-proteinet, så der er ingen kovalente koblinger til S-peptidet. Dvs. at de to dele af RNase S vil kunne adskilles uden brug af reduktionsmiddel. Formentlig kan de adskilles vha. termisk denaturering efterfulgt af separation vha. søjlekromatografi.
 :::
-::::
 
 ## Opgave 5. Rekombinant RNase S fusionsprotein
 
@@ -419,10 +403,7 @@ Skriv et PyMOL-script baseret på strukturen af RNase S i 2RNS til at foretage s
 
 Lav et sidste script, kaldet **F9**, som gør det muligt at lave en strukturel analyse af RNaseS med henblik på at finde ud af hvordan mutationen F8G kunne tænkes at påvirke enzymets aktivitet.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Se det færdige script her under. De to strukturer er i hovedsagen identiske, men RNase S mangler residues 16-23. Der er mindre justeringer af loop-områder, der dog kan skyldes krystalkontakter.
 
@@ -492,4 +473,3 @@ scene F1, recall
 
 3.  Se det færdige script på brightspace. Phe8 sidder i en hydrofob lomme mellem S-peptiden og S-proteinet, men indgår ikke i nogle stærke hydrofobe interaktioner. Det er muligt at mutationen har en effekt på enzymets aktivitet, men den vil formentlig ikke fuldstændig inaktivere det.
 :::
-::::

@@ -14,18 +14,14 @@ Baseret på ovenstående, hvor mange *cis *Xaa-Pro bindinger vil du i gennemsn
 
 Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3. Derfor vil et protein med 270 aa indeholde 270 x 2.5\*10-3 eller ca. 0.7 af disse. Med andre ord, ca. 2/3 af alle proteiner vil forventes at indeholde én cis Xaa-Pro binding.
 
 2.  Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x 0.952, hvis du fraregner prolinerne), så frekvensen per 270-aa protein er altså 2.9\*10-4 x 0.952 x 270 = 0.075 eller én cis-peptidbinding per 13 proteiner.
 
-Bonusinfo: I artiklen (A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\]), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
+Bonusinfo: I artiklen [(A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\])](https://www.sciencedirect.com/science/article/pii/S0022283698924597?via%3Dihub), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
 :::
-::::
 
 ## Opgave 2. CATH
 
@@ -66,10 +62,7 @@ Hint: Se figur 1.58 i Petsko & Ringe.
 
 Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest domæner. Det er uvidst hvorfor det forholder sig sådan, men man kan betragte det ud fra flere vinkler: Rent kombinatorisk giver det måske mening, at et stort domæne vil have lidt af hvert og måske er blandede αβ-domæner mere stabile? Endelig kan der være en bias i de eksperimentelle data hvis det f.eks. viser sig generelt at være lettere at krystallisere domæner med blandet αβ-indhold.
 
@@ -81,7 +74,6 @@ Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskr
 
 5.  CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
 :::
-::::
 
 ## Opgave 3. Proteinfoldning 
 
@@ -121,10 +113,7 @@ Tryk **F4** for at undersøge domæne 3. Beskriv foldningen af domæne 3.
 
 Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  "dss defines secondary structure based on backbone geometry and hydrogen bonding patterns." - (PyMOLwiki)
 
@@ -140,7 +129,6 @@ Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
 7.  Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
 :::
-::::
 
 ## Opgave 4. Sekvens og struktur
 
@@ -188,10 +176,7 @@ Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38
 
 Diskuter placeringen af den katalytiske triade i forhold til "switch point" og det forventede substrat bindingssite. Lav en ny scene, F3, som viser active site og dens placering ift. Switchpoint.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Protomeren har kun et domæne. Domænet tilhører αβ klassen.
 
@@ -282,7 +267,6 @@ set_view (\\
 
 scene F3, store
 :::
-::::
 
 ## Opgave 5. Skattejagt
 
@@ -339,10 +323,7 @@ Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galacto
 
 Find allosteriske effektorer af expression for β-galactosidase.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Der søges efter "human myoglobin" i Uniprot databasen.\
     \
@@ -379,4 +360,3 @@ Find allosteriske effektorer af expression for β-galactosidase.
 
 11. Ses under "Expression". Ekspressionen af β-galactosidase induceres af allolactose.
 :::
-::::

@@ -26,10 +26,7 @@ På hvilke kromosomer finder man generne for de to former?
 
 Hvor mange splejsningsvarianter kendes for LDH-M?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Der findes 3 isozymer af LDH i mennesker (A chain, B chain or C chain).
 
@@ -39,7 +36,6 @@ Hvor mange splejsningsvarianter kendes for LDH-M?
 
 4.  LDH-M ("A chain") udviser 5 splejsningsvarianter (`isoform 1`\...`isoform 5`). 
 :::
-::::
 
 ## Opgave 2. Aspartat
 
@@ -63,10 +59,7 @@ En *E. coli*-mutant indeholdende en enzymdefekt relevant for biosyntesen af thr
 
 Hvilken anden pathway kunne være influeret af mutationen og hvorfor? Hint: Kig på reaktionspathwayen for threonin, isoleucin og methionin.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  PALA er en bisubstrat analog og bør derfor inhibere [kompetitivt]{.underline}. 10 nM er en stærk binding, så PALA er en stærk inhibitor.
 
@@ -78,7 +71,6 @@ Hvilken anden pathway kunne være influeret af mutationen og hvorfor? Hint: Kig 
 
 Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin sidekæde (Lys-84) koordinerer carboxylsyregruppen i substratet (Asp). Hvis substratanalogen ASA er bundet vil aldehyden danne en Schiff's base med Lys-84 og dermed inaktivere enzymet irreversibelt gennem kovalent modifikation. 
 :::
-::::
 
 ## Opgave 3. ATCase
 
@@ -100,10 +92,7 @@ Hvorfor har PALA været specielt nyttig i forhold til at forstå ATCases egenska
 
 Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  De katalytiske subunits roterer i forhold til hinanden og skilles ad i R-tilstanden i forhold til T-tilstanden.
 
@@ -113,7 +102,6 @@ Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
 
 4.  PALA promoverer T til R transitionen og fungerer dermed som en aktivator af enzymet. Men PALA er også en transition state-analog, der inhiberer enzymet.
 :::
-::::
 
 ## Opgave 4. Thrombin og Antithrombin (PyMOL)
 
@@ -168,10 +156,7 @@ Strukturen af thrombin i kompleks med inhibitor og et heparin fragment findes i�
 
 Lav en scene, kaldet F3, som viser heparins binding til thrombin (PDB-ID: 3UTU). Hint: Brug align og util.protein_vacuum_esp. Stemmer heparins placering overens med det forventede bindingsite?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 \## Script til opgave 4. Thrombin og Antithrombin
 
@@ -255,7 +240,6 @@ scene F3, store
 
 6.  Ja
 :::
-::::
 
 ## Opgave 5. Antithrombin 
 
@@ -287,10 +271,7 @@ Strukturen af factor XIa findes i PDB-ID: 3SOR. Lav en overlejring af 3SOR på t
 
 Lav en scene, kaldet F6, der viser XIa's interaktion med heparin. Vil man forvente at heparin binder på samme måde til Factor XIa som til thrombin?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Kræves for at stoppe størkningsprocessen af blod igen. Se Stryer s. 328-331.
 
@@ -382,7 +363,6 @@ set_view (\\
 
 scene F6, store
 :::
-::::
 
 ## Opgave 6. Kløvning af thrombin med factor Xa
 
@@ -446,10 +426,7 @@ Skitsér hvorledes prothrombin ville løbe i en SDS polyacrylamide gel under red
 
 Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Factor Xa kløver naturligt efter peptidet IEGR. 409 er His (H), 465 er Asp (D) og 571 er Ser (S) og udgør den katalytiske triade i serinproteasen. I prothrombin er konfigurationen forkert, så det aktive site ikke er samlet.
 
@@ -457,4 +434,3 @@ Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
 
 3.  Stryer s. 328 mm.
 :::
-::::

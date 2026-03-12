@@ -76,10 +76,7 @@ Har loopet samme konformation i alle 5 modeller? Hvad fortæller det om AlphaFol
 
 Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen (hvor residue 83 og 144 er forbundet). Hvorfor mon krystallograferne har gjort det?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  B-faktoren viser atomernes termiske bevægelse og positionel usikkerhed i krystallet.\
     \
@@ -114,7 +111,6 @@ Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen
 
 6.  Den lange fleksible linker (residues 84-143) blev fjernet fra konstruktet pga. fleksibilitet, hvilket ofte hindrer krystallisation.
 :::
-::::
 
 ## **Opgave 2. Hvad fortæller PAE (Predicted Aligned Error) om domæne-orientering**
 
@@ -142,10 +138,7 @@ Hvad fortæller PAE om Parkins struktur? Baseret på PAE-plottet - hvilke dele a
 
 Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dette loop veldefineret i forhold til resten af Parkin strukturen ifølge PAE-plottet?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  **Mørk grøn firkant (lav PAE \~0-5 Å):** Når man aligner strukturen på én af de to regioner, er positionen af den anden region meget præcis bestemt. Dette betyder veldefineret relativ orientering.\
     \
@@ -174,7 +167,6 @@ Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dett
 
 4.  Nej, det fleksible loop (84-141) har **meget høj PAE** (lys/hvid) i forhold til resten af strukturen. Dette betyder at loopets position er meget usikker relativt til både Ubl og RING-domænerne. PAE bekræfter at denne region fungerer som en fleksibel linker der tillader Ubl-domænet at bevæge sig frit.
 :::
-::::
 
 ## **Opgave 3. Modellering af et protein-kompleks med ligand og ioner**
 
@@ -196,10 +188,7 @@ Hvor er nukleotidet placeret i strukturen? Find en GTPase struktur i PDB med nuk
 
 Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminosyrerester der deltager i koordinationen)
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  pTM-værdien måler den overordnede kvalitet af strukturforudsigelsen. En værdi over 0.5 indikerer at AlphaFold har tilstrækkelig tillid til at de forudsagte folds er korrekte, mens værdier over 0.7 generelt betragtes som meget gode forudsigelser. For dette kompleks vil pTM fortælle om både IFT25 og IFT27 er blevet foldet rigtigt og om den samlede model er troværdig.\
     \
@@ -227,7 +216,6 @@ Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminos
     \
     Vigtigt er det også at flere backbone carbonyl-grupper fra residuer i loopet bidrager til koordinationen. I alt er calcium koordineret af 6-7 oxygen-atomer i en cirka oktahedral geometri, hvilket er standard for calcium-binding i proteiner. Denne type metal-binding kan være vigtig for at stabilisere IFT25's struktur eller have en regulatorisk funktion.
 :::
-::::
 
 ## Opgave 4. Protein-interaktion med Alphafold
 
@@ -249,10 +237,7 @@ Hvad er pTM og iPTM værdierne? Hvorfor er de mon lavere end for IFT25/27 i opga
 
 Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner eller om de lokale interfaces faktisk er dårligt forudsagte. Beskriv hvilke AlphaFold kørsler I ville lave og hvad I ville forvente at se hvis problemet primært er disordered regioner. Hvis der er tid så kør gerne AlphaFold forudsigelserne.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Baseret på PAE-plottet kan vi se at ODA16 interagerer direkte med IFT46, hvilket fremgår af lave PAE-værdier (mørk grøn) mellem disse to proteiner i de off-diagonale regioner. Interaktionen mellem ODA16 og IFT56 er derimod indirekte, hvilket ses ved høje PAE-værdier (lys/hvis) mellem disse to proteiner i PAE-plottet. IFT56 binder altså ikke direkte til ODA16, men er i stedet medieret gennem IFT46, som fungerer som bro mellem de to proteiner. Dette forklarer hvorfor begge proteiner blev identificeret i pull-down eksperimentet selvom kun den ene binder direkte til bait-proteinet.
 
@@ -286,4 +271,3 @@ Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de
     \
     Hvis derimod scoren stadig er lav (\<0.6) for disse sub-komplekser, ville det indikere at AlphaFold faktisk er usikker på selve interface-strukturerne, og at interaktionerne muligvis ikke er korrekt forudsagt.
 :::
-::::

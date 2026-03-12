@@ -23,6 +23,7 @@ return {
     return quarto.Callout({
       type = "important",
       title = title,
+      collapse = true,
       content = div.content,
     })
   end

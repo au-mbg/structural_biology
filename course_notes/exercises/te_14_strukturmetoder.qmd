@@ -34,14 +34,10 @@ Vis også strukturen af [LeuT2]{.underline} som "cartoon" og foretag et struktur
 
 Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Se script i svar mappen.
 :::
-::::
 
 ## Opgave 2. Bragg's lov
 
@@ -67,10 +63,7 @@ Forklar hvorfor højere opløsning kræver:\
 • Enten kortere bølgelængde (λ)\
 • Eller evnen til at måle ved større vinkler (θ)
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Når røntgenstråler rammer en krystal, bliver de spredt af elektronerne i atomerne. Man kan forestille sig, at atomerne ligger i ordnede planer med en bestemt afstand, d, imellem sig.\
 
@@ -124,7 +117,6 @@ Forklar hvorfor højere opløsning kræver:\
     • Måle ved større vinkler (θ): Sinus-funktionen vokser fra 0 til 1 i intervallet 0° til 90°. En større vinkel θ giver altså en større sinθ-værdi. Når nævneren i brøken bliver større, bliver den samlede værdi af d mindre. Derfor er det nødvendigt at indsamle data ved høje spredningsvinkler for at opnå høj opløsning. Detektoren skal fysisk kunne placeres, så den kan opfange disse højt spredte stråler.\
     *Note: I praksis er det som regel kvaliteten af krystallen (hvor velordnet den er), der sætter græsen for opløsningen i røntgen-diffraktions-eksperimentet.*
 :::
-::::
 
 ## Opgave 3. Røntgenkrystallografi vs. Cryo-EM -- Vælg den rette metode
 
@@ -159,10 +151,7 @@ Du vil forstå, hvordan en ionkanal fungerer direkte i cellemembranen, omgivet a
 
 *Hvilken metode (eller variation af en metode) vil du anbefale og hvorfor?*
 ```
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 **Scenarie 1 (Protease):**
 
@@ -182,7 +171,6 @@ Korrekt valg: En variation af Cryo-EM, nemlig Cryo-elektrontomografi (Cryo-ET)
 
 Begrundelse: Spørgsmålet handler om at se strukturen i dens native kontekst (in situ). Hverken traditionel røntgenkrystallografi eller single-particle cryo-EM (som begge kræver oprensede prøver) kan løse denne opgave. Cryo-ET er den eneste metode, der kan producere 3D-rekonstruktioner af dele af en celle i nær-nativ tilstand. Man kan fryse hele celler, skære en ultratynd skive ud (en `lamel`) med en ionstråle (FIB-milling) og derefter optage en serie billeder i mikroskopet, som kan rekonstrueres til et 3D-tomogram. Opløsningen er lavere end i single-particle cryo-EM, men det er den eneste måde at opnå `visual proteomics` og se molekylære maskiner i deres naturlige omgivelser.
 :::
-::::
 
 ## Opgave 4. Modelbygning
 
@@ -225,10 +213,7 @@ Man trykker på protein under Wizard > mutagenesis, so ses på figuren forneden 
 Kig alle aminosyreresterne igennem og find nogle, der ikke passer så godt i tætheden. Er der en fejl i sekvensen eller hvad kan dette mon skyldes?\
 Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Peptidkæden har N-terminalen nederst og C-terminalen til højre i udgangspositionen og består af en α-helix (rester 2-15) efterfulgt af et turn og en β-strand (21-27).
 
@@ -243,4 +228,3 @@ Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de nor
 
 6.  Flere af de lange, hydrofile sidekæder (Lys4, Lys20 og Glu21) passer ikke godt i tætheden. Dette skyldes at de hydrofile sidekæder ofte sidder på overfladen af proteinet og derfor er fleksible.
 :::
-::::

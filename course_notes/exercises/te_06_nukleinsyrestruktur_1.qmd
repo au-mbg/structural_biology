@@ -6,7 +6,11 @@ title: "TØ 6 -- Nukleinsyrestruktur 1"
 
 I denne opgave skal I lære hvordan proteiner genkender DNA (eller omvendt) for at kunne indgå i en specifik ("romantisk") binding til hinanden. Hemmeligheden bag denne genkendelse kan findes i Liljas "Textbook of Structural Biology" afsnit 10.2, hvor den specifikke interaktion mellem aminosyrer og DNA-baser beskrives. Aminosyrerne kan genkende både major og minor groove via den såkaldte "groove code", der er vist i Liljas figur 10.18. Som det ses i figuren herunder er der eksponerede H-bindings-donorer og acceptorer i både major og minor groove og det er disse, som aminosyrerne kan genkende og binde til:
 
-![Rende-kode1x](media/image21.png){width="5.691358267716535in" height="2.1454330708661415in"}![Rende-kode2](media/image22.png){width="6.263888888888889in" height="2.6590277777777778in"}
+::: {layout-ncol=1}
+![Rende-kode1x](media/image21.png){width="80%" fig-align="center"}
+
+![Rende-kode2](media/image22.png){width="80%" fig-align="center"}
+:::
 
 ### Forklar specificitet i major groove
 
@@ -26,18 +30,14 @@ Groove-koden kan være lidt svært at få øje på når man analyserer en DNA do
 
 Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.** Major groove har flere grupper eksponeret (4 i forhold til 3). Desuden kan man se forskel på A-T/T-A og C-G/G-C, hvilket man ikke kan i minor groove. Desuden er der mere plads i major groove.
 
-1.  Major groove har flere grupper eksponeret (4 i forhold til 3). Desuden kan man se forskel på A-T/T-A og C-G/G-C, hvilket man ikke kan i minor groove. Desuden er der mere plads i major groove.
+**2.** Aminosyrer der indeholder H-bindings-donorer og acceptorer f.eks. Lys, Arg, Asn, Gln, Asp, Glu, His.
 
-2.  Aminosyrer der indeholder H-bindings-donorer og acceptorer f.eks. Lys, Arg, Asn, Gln, Asp, Glu, His.
-
-3.  Groove-kode-mønstret er symmetrisk, hvilket skyldes at sekvensen i DNA dobbelthelixen er et palindrom.
+**3.** Groove-kode-mønstret er symmetrisk, hvilket skyldes at sekvensen i DNA dobbelthelixen er et palindrom.
 :::
-::::
 
 ## Opgave 2. Der skal to til tango
 
@@ -65,25 +65,24 @@ Binding af en ligand til et DNA-bindende protein kan regulere DNA-bindingen.
 
 Hvad er mekanismen hvormed ligand-binding kan påvirke proteinets evne til at binde DNA? Nævn et par eksempler på regulering med denne mekanisme.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  `5'-GCGCGCGC-3'` `3'-CGCGCGCG-5'`
+Palindrom læses ens forfra og bagfra. Basepar-palindrom er symmetrisk om central 2-fold symmetriakse, hvilket medfører et symmetrisk mønster af H-bindings-donorer og -acceptorer i store og minor groove. Homodimer proteiner har ligeledes en 2-fold symmetriakse, hvilket gør det lettere at udvikle et symmetrisk mønster af H-bindings-donorer og -acceptorer, der kan genkende det symmetriske DNA mønster.
 
-1.  5'-GCGCGCGC-3'\
-    3'-CGCGCGCG-5'\
-    Palindrom læses ens forfra og bagfra. Basepar-palindrom er symmetrisk om central 2-fold symmetriakse, hvilket medfører et symmetrisk mønster af H-bindings-donorer og -acceptorer i store og minor groove. Homodimer proteiner har ligeledes en 2-fold symmetriakse, hvilket gør det lettere at udvikle et symmetrisk mønster af H-bindings-donorer og -acceptorer, der kan genkende det symmetriske DNA mønster.
+**2.** 
+**Leucine zipper:** Dimeriseringsmotiv for to alfahelicer. Motivet forlænges ofte med to DNA-bindende basiske alfahelicer, der binder DNA major groove, hvor sidekæder interagerer med baserne. Symmetrisk binding. Liljas Fig. 10.10.
 
-2.  Leucine zipper: Dimeriseringsmotiv for to alfahelicer. Motivet forlænges ofte med to DNA-bindende basiske alfahelicer, der binder DNA major groove, hvor sidekæder interagerer med baserne. Symmetrisk binding. Liljas Fig. 10.10.\
-    Helix-loop-helix: Motiv på en leucine zipper, der ændrer vinklen på DNA-bindende helicer i DNA major groove. Liljas Fig. 10.11.\
-    Helix-turn-helix: Helix 2 binder i major groove. Sidekæder interagerer med baserne. Kan indgå i symmetrisk binding, men kan også binde som monomer/heterodimer. Liljas Fig. 10.12.\
-    Zn finger: 2His-2Cys binder Zn. Binder i major groove. Helix-ende and loop-rester binder specifikt til baser. Liljas Fig. 10.15.
+**Helix-loop-helix:** Motiv på en leucine zipper, der ændrer vinklen på DNA-bindende helicer i DNA major groove. Liljas Fig. 10.11.
 
-3.  Giver flere muligheder for bindingssites, da sekvensen nu ikke behøver være en palindrom-sekvens. Desuden giver det mulighed for regulering ved at begge proteiner skal være udtrykt på samme tid for at bindingen kan forekomme.
+**Helix-turn-helix:** Helix 2 binder i major groove. Sidekæder interagerer med baserne. Kan indgå i symmetrisk binding, men kan også binde som monomer/heterodimer. Liljas Fig. 10.12.
 
-4.  Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f.eks. går fra en konformation hvor det ikke kan binde til en anden konformation hvor det kan binde. Det kan f.eks. være at afstanden mellem to genkendelses-helicer justeres så de passer i afstand til binding i major groove (eksempel er Trp repressor der binder Trp, CAP-protein der binder cAMP, og *lac* repressor, der binder allolactose).
+**Zn finger:** 2His-2Cys binder Zn. Binder i major groove. Helix-ende and loop-rester binder specifikt til baser. Liljas Fig. 10.15.
+
+**3.** Giver flere muligheder for bindingssites, da sekvensen nu ikke behøver være en palindrom-sekvens. Desuden giver det mulighed for regulering ved at begge proteiner skal være udtrykt på samme tid for at bindingen kan forekomme.
+
+**4.**  Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f.eks. går fra en konformation hvor det ikke kan binde til en anden konformation hvor det kan binde. Det kan f.eks. være at afstanden mellem to genkendelses-helicer justeres så de passer i afstand til binding i major groove (eksempel er Trp repressor der binder Trp, CAP-protein der binder cAMP, og *lac* repressor, der binder allolactose).
 :::
-::::
 
 ## Opgave 3. TATA-box
 
@@ -113,20 +112,16 @@ Tryk **F3/F4** for at se et vigtigt element i DNA-protein bindingen, hvor t
 
 Hvordan er de to basepar påvirket af interaktionen med de to phenylalaniner? Hvilken standardparameter for den relative orientation af baser (Textbook of Structural Biology, figur 5.16) beskriver bedst konformationen af disse to basepar?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  Minor groove.
 
-1.  Minor groove.
+**2.**  Mønsteret består af H-bindingsacceptorer (røde) og ikke-polære hydrogenatomer (gule), hvilket opstår i minor groove for AT basepar.
 
-2.  Mønsteret består af H-bindingsacceptorer (røde) og ikke-polære hydrogenatomer (gule), hvilket opstår i minor groove for AT basepar.
+**3.**  Beta sheets interagerer med minor groove.
 
-3.  Beta sheets interagerer med minor groove.
-
-4.  Phenylalaninerne indsætter sig mellem basepar og hjælper til at forankre TBP i minor groove. Roll parameter.
+**4.**  Phenylalaninerne indsætter sig mellem basepar og hjælper til at forankre TBP i minor groove. Roll parameter.
 :::
-::::
 
 ## Opgave 4. Mad-Max
 
@@ -158,23 +153,17 @@ Beskriv hydrogen-bindingerne for de tre aminosyrer (His, Glu, Arg) i genkendelse
 
 ***PyMOL hint**: Brug menuen "Mouse > Selection mode > Atoms", så du bedre kan identificere de individuelle atomer, der indgår i hydrogen-bindingerne.*
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  Dimeriseringsdomænet består af en leucine-zipper og et helix-loop-helix. α-helicerne, der binder til DNA, er basiske.
 
-1.  Dimeriseringsdomænet består af en leucine-zipper og et helix-loop-helix. α-helicerne, der binder til DNA, er basiske.
+**2.** Major groove.
 
-2.  Major groove.
+**3.** Mønsteret er rotations-symmetrisk, hvilket skyldes den palindrome sekvens CACGTG.
 
-3.  Mønsteret er rotations-symmetrisk, hvilket skyldes den palindrome sekvens CACGTG.
-
-4.  For Myc-Max interagerer Arg914 med backbone P og N7 på G311 base. Glu910 interagerer med N6 på A109. Glu910 interagerer med N4 på C108. His906 interagerer med O6 på G313.\
-    Der er også interaktion med P backbone.\
-    Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er heterodimer og dermed er protein-sekvenserne lidt forskellige, hvilket giver små forskelle i konformation.\
-    Max-Max H-bindinger er symmetriske, da det er homodimer.
+**4.** For Myc-Max interagerer Arg914 med backbone P og N7 på G311 base. Glu910 interagerer med N6 på A109. Glu910 interagerer med N4 på C108. His906 interagerer med O6 på G313. Der er også interaktion med P backbone.
+Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er heterodimer og dermed er protein-sekvenserne lidt forskellige, hvilket giver små forskelle i konformation. Max-Max H-bindinger er symmetriske, da det er homodimer.
 :::
-::::
 
 ## Opgave 5. At TALE med DNA
 
@@ -198,10 +187,7 @@ Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-protei
 
 ![BER_11467_05_F38](media/image23.png){width="6.263888888888889in" height="3.4in"}
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Major groove. Man kan observere major groove på afstanden mellem beta-glykosid bindingerne. Alternativt ved at se på DNA-dobbelthelixen alene og observere, at det er i den major groove proteinet binder - dette kan man dog ikke være helt sikker på, da protein-bindingen kan have deformeret DNA-dobbelthelixen.
 
@@ -209,7 +195,6 @@ Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-protei
 
 3.  Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-redigering. Transkriptionsfaktor-domæne kan aktivere RNA polymerase ved promoter. Der er flere andre muligheder.
 :::
-::::
 
 ## Opgave 6. Trp trap træsko 
 
@@ -233,15 +218,16 @@ Hvad er karakteristisk ved mønsteret af H-bindingsdonorer og -acceptorer og hva
 
 Tryk **F2** for kun at se polære kontakter mellem genkendelseshelicer og DNA-dobbelthelix. Hvilken kant af basen interagerer Arginin-69 med? Hvilke typer af interaktioner ser man typisk bidrage til bindingsspecificitet mellem DNA og protein?
 
- Officielt svar
+::: {.solution-callout}
 
-1.  Major groove. Ca. 31,6 Å, hvilket ca. svarer til pitch (afstand for fuldt turn = 10.44 bp/turn x 3.4 Å rise/bp) = 35,5 Å. Transskriptionsfaktorer er ofte homodimerer, der binder symmetrisk i major groove.
+**1.**  Major groove. Ca. 31,6 Å, hvilket ca. svarer til pitch (afstand for fuldt turn = 10.44 bp/turn x 3.4 Å rise/bp) = 35,5 Å. Transskriptionsfaktorer er ofte homodimerer, der binder symmetrisk i major groove.
 
-2.  Genkendelses-helicernes position ændres mest. Afstanden mellem genkendelseshelicerne er nu 24.5 Å. Det ser ud til at genkendelses-helicerne kommer for tæt på DNA rygrad og derfor ikke kan binde i major groove.
+**2.**  Genkendelses-helicernes position ændres mest. Afstanden mellem genkendelseshelicerne er nu 24.5 Å. Det ser ud til at genkendelses-helicerne kommer for tæt på DNA rygrad og derfor ikke kan binde i major groove.
 
-3.  De to major grooves har samme mønster, der er rotationssymmetrisk omkring symmetriaksen. Det fortæller at Trp er homodimer, hvor hver monomer binder samme DNA-sekvens.
+**3.**  De to major grooves har samme mønster, der er rotationssymmetrisk omkring symmetriaksen. Det fortæller at Trp er homodimer, hvor hver monomer binder samme DNA-sekvens.
 
-4.  Arginin-69 interagerer med Högsteen-siden af Guanin-2. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
+**4.**  Arginin-69 interagerer med Högsteen-siden af Guanin-2. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
+:::
 
 ## Opgave 7. Arc repressor 
 
@@ -286,26 +272,24 @@ Tryk **F3**. Hvilken DNA-helix parameter svarer denne afstand til?
 
 Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af interaktioner bidrager til bindingsspecificitet?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  PyMOL script:
 
-1.  PyMOL script:
+```pymol
+# Script til opgave 7. Arc repressor
 
-\# Script til opgave 7. Arc repressor
+reinitfetch 1BDT, type=pdb1, async=0remove solventset_view (\
 
-reinitfetch 1BDT, type=pdb1, async=0remove solventset_view (\\
+0.729630232, -0.663575828, -0.165245384,\
 
-0.729630232, -0.663575828, -0.165245384,\\
+0.033471450, 0.276007086, -0.960573792,\
 
-0.033471450, 0.276007086, -0.960573792,\\
+0.683021665, 0.695331573, 0.223593742,\
 
-0.683021665, 0.695331573, 0.223593742,\\
+0.000000000, 0.000000000, -188.640228271,\
 
-0.000000000, 0.000000000, -188.640228271,\\
-
-43.895526886, -2.066005707, 25.748359680,\\
+43.895526886, -2.066005707, 25.748359680,\
 
 148.725402832, 228.555053711, -20.000000000 )
 
@@ -332,13 +316,13 @@ dist H-bond, resi 8-14 and chain A+B+C+D, chain E+F, mode=2
 hide labels
 
 scene F4, store
+```
 
-2.  Roll-parameter beskriver typisk helix bøjning over major eller minor groove. Dette blev nævnt til forelæsningen og var også et svar i opgave 3. Det kan være svært at se på de enkelte basestakke, men ses bedre hvis man sammenligner vinklen på baserne i enden af helixen, hvor man kan se den samlede effekt.
+**2.**  Roll-parameter beskriver typisk helix bøjning over major eller minor groove. Dette blev nævnt til forelæsningen og var også et svar i opgave 3. Det kan være svært at se på de enkelte basestakke, men ses bedre hvis man sammenligner vinklen på baserne i enden af helixen, hvor man kan se den samlede effekt.
 
-3.  Anti-parallel beta sheet. Major groove. Man kigger på basepar i groove og observerer hvilken side af basepar der bindes af proteinet. Det er specielt vigtigt at gå ind og se på baseparret, da man pga. helix-bøjning kan have svært ved at se hvad der er major/minor groove ihht. Watson-Crick-skiløber-reglen.
+**3.**  Anti-parallel beta sheet. Major groove. Man kigger på basepar i groove og observerer hvilken side af basepar der bindes af proteinet. Det er specielt vigtigt at gå ind og se på baseparret, da man pga. helix-bøjning kan have svært ved at se hvad der er major/minor groove ihht. Watson-Crick-skiløber-reglen.
 
-4.  Ca. 3,4 nm. Afstand for fuldt turn = 10.44 bp/turn x 3.4 Å rise/bp = 35,5 Å. Helix parameter kaldes `pitch`.
+**4.** Ca. 3,4 nm. Afstand for fuldt turn = 10.44 bp/turn x 3.4 Å rise/bp = 35,5 Å. Helix parameter kaldes `pitch`.
 
-5.  Asn11 og Gln9. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
+**5.** Asn11 og Gln9. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
 :::
-::::

@@ -14,10 +14,7 @@ Beregn ændringen i fri energi når tre Na^+^ transporteres ud og to K^+^ tran
 
 Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi til at drive processen? Forklar.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  (3 $\cdot$ Na^+^(12.05) + 2 $\cdot$ K^+^(3.99)) kJ/mol = 44.10 kJ/mol.\
     T temperatur i K (25C = 298K), R = Gas konstant (8.315 $\cdot$ 10^-3^ kJ mol^-1^ deg(K)^-1^),\
@@ -25,7 +22,6 @@ Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi 
 
 2.  Hydrolyse af én phosphodiesterbinding i ATP giver ca. 50 kJ/mol og at det dermed netop er nok til at drive processen.
 :::
-::::
 
 ## Opgave 2. Calciumpumpen
 
@@ -52,10 +48,7 @@ Koncentrationen af frit calcium i cytoplasma er omkring 0.15 μM, mens den inde 
 
 Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumioner transporteres fra cytoplasma til SR, dvs. svarende til én cyklus for SERCA.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  SRP (signal recognition particle) opfanges og translationen foregår direkte ind i SR.
 
@@ -63,7 +56,6 @@ Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumio
 
 3.  2x23.74 kJ/mol = 47.48 kJ/mol. Passer med to ioner per ATP. (Man antages at proton-koncentrationen er identisk i cytosol og i lumen af sarcoplasmic reticulum dermed bidrager H^+^ antiportering ikke til energiregnskabet ved et membran-potentiale på 0).
 :::
-::::
 
 ## Opgave 3. Brodys sygdom
 
@@ -91,16 +83,12 @@ Et eksperiment blev udført med membranvesikler indeholdende både SERCA og memb
 
 Forklar resultaterne i SERCA/bacteriorhodopsin-eksperimentet.    
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Patienterne med Brody's disease har den halve Ca^2+^-ATPase aktivitet (linje 1) på trods af samme relative mængde protein (linje 3 og 4). De har også den halve kcat (turnover). Isoform 1 må simpelthen være mindre aktiv. Muskelkramper ved fysisk aktivitet.
 
 2.  Med tiden vil pH blive så høj inde i vesiklerne at pumpen ikke kan fungere, på trods af tilstedeværelsen af ATP på ydersiden. Bacteriorhodopsin bruger lys til at transportere protoner fra en bakteriel celles protoplasma til ydersiden (se bla lærebogen figur 12.18). Tilførelsen af lys bevirker pumpning af protoner fra cytoplasma (udefra) og ind i vesiklerne og neutraliserer altså effekten af ATPasen.
 :::
-::::
 
 ## Opgave 4. Strukturen af SERCA
 
@@ -128,10 +116,7 @@ Aminosyren bliver modificeret som led i enzymets funktion. Da modifikationen er 
 
 Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er dette og hvordan er enzymet forandret?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Det er farvet med lysegrøn, gul og lyseblå. Domænerne ovenfor binder og hydrolyserer ATP og vender derfor mod cytoplasma. SR-siden er nedad i denne orientering.
 
@@ -145,7 +130,6 @@ Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er de
 
 6.  Asp351 er dephosphoryleret, hvilket betyder pumpen falder tilbage i den højaffine tilstand med 2 Ca-bindingssteder.
 :::
-::::
 
 ## Opgave 5. Na-K-pumpen
 
@@ -173,10 +157,7 @@ Hvilken aminosyrerest svarer Xaa i spot A til? Opskriv dens kemiske struktur.
 
 Hvilken rolle spiller denne rest i Na+-K+-ATPasens funktion?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  De to spots, A og B, indeholder begge Na-K ATPasen, men må have en ladningsforskel.
 
@@ -186,4 +167,3 @@ Hvilken rolle spiller denne rest i Na+-K+-ATPasens funktion?
 
 4.  Phosphorylering af Asp er en vigtig del af P-type ATPasernes virkningsmekanisme ("P-type" netop af denne grund), der er med til at sikre at forbrænding af energi i ATP altid kobles til transport af ioner.
 :::
-::::

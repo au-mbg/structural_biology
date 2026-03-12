@@ -24,14 +24,10 @@ Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?\
 \
 Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
-
+::: {.solution-callout}
 Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.
 :::
-::::
 
 ## Opgave 2. Aminosyrers pKa
 
@@ -49,22 +45,19 @@ Hvad er ladningen af en aminosyres sidekæde ved pH-værdier hhv. under og over 
 
 Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa ændres?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
-1.  De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.\
-    \
-    Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.\
-    \
-    Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvor i mod den mest basiske aminosyre, arginin, først deprotonerer ved et højere pH (pKa 12.5). 
+**1.** De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.
 
-2.  Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
+Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.
 
-3.  pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
+Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvor i mod den mest basiske aminosyre, arginin, først deprotonerer ved et højere pH (pKa 12.5). 
+
+**2.**  Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
+
+**3.** pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
 :::
-::::
 
 ## Opgave 3. Glutathione
 
@@ -100,22 +93,19 @@ Man kunne også beskrive stoffet som Glu-Cys-Gly.
 
 Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 5 tilfælde, både dem, du mener er korrekte og dem, du mener er forkerte.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
-1.  Korrekt, denne ses øverst til venstre i strukturen.
+**1.** Korrekt, denne ses øverst til venstre i strukturen.
 
-2.  Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
+**2.** Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
 
-3.  Korrekt, -CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
+**3.** Korrekt, -CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
 
-4.  Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
+**4.** Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
 
-5.  Forkert, se svaret til 2.
+**5.** Forkert, se svaret til 2.
 :::
-::::
 
 ## Opgave 4. Bereging af enzymkinetik
 
@@ -135,14 +125,11 @@ Hvor mange mikromol active sites er der i 1 mg enzym? Antag, at hver underenhed 
 
 Hvad er enzymets omsætningstal i s^-1^?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achieve.
 :::
-::::
+
 
 ## Opgave 5. Analyse af Chymotrypsin i PyMOL
 
@@ -166,19 +153,16 @@ Når chymotrypsinogen aktiveres til chymotrypsin så bliver molekylet kløvet to
 
 OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, F3 osv, da disse taster også bruges til at styre skærmens lysstyrke etc. på MacBooks.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
-1.  En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
+**1.** En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
 
-2.  De tre aminosyrer er vigtige for den enzymatiske reaktion. Kort fortalt hjælper Asp og His med til at Ser bliver deprotoneret og danner en alkoxidion, der kan angribe peptidbindingen under kløvningsreaktionen (se Fig. 9.8, Berg et al. 10. udgave, s. 279).
+**2.**  De tre aminosyrer er vigtige for den enzymatiske reaktion. Kort fortalt hjælper Asp og His med til at Ser bliver deprotoneret og danner en alkoxidion, der kan angribe peptidbindingen under kløvningsreaktionen (se Fig. 9.8, Berg et al. 10. udgave, s. 279).
 
-3.  En `pseudo-symmetri` er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have `pseudo-totalssymmetri`, mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
+**3.**  En `pseudo-symmetri` er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have `pseudo-totalssymmetri`, mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
 
 ![Totalssymmetri](media/image4.jpg){width="5.28125in" height="1.5625in"}
 
-4.  Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive site og er med til at danne det såkaldte "oxyanionhul".
+**4.** Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive site og er med til at danne det såkaldte "oxyanionhul".
 :::
-::::

@@ -38,10 +38,7 @@ RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes
 
 Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
 
@@ -53,7 +50,6 @@ Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsænd
 
 5.  688 nm.
 :::
-::::
 
 ## Opgave 2. Støkiometriske beregninger
 
@@ -83,10 +79,7 @@ I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes fo
 
 Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  H6-Ubi-S15: 11607.11 Da\
     S-protein: 11541.96 Da
@@ -111,7 +104,6 @@ Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs.
     \
     Den molære koncentration svarer altså til 0.215 mmol/L \* 13254.83 g/mol = 2.87 g/L = **2.87 mg/mL**
 :::
-::::
 
 ## Opgave 3. Øvelse i fortyndingsrækker
 
@@ -137,10 +129,7 @@ Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 
 
 Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  5 μg/μL og 5000 ng/μL
 
@@ -162,7 +151,6 @@ Overvej om der er andre måder at foretage fortyndingen på, der minimerer usik
 
 5.  Se ovenfor.
 :::
-::::
 
 ## Opgave 4. Opsætning af dataark til LØ
 
@@ -200,14 +188,10 @@ Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standard
 
 Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Intet svar angivet.
 :::
-::::
 
 ## Opgave 5. Flowchart til LØ
 
@@ -233,10 +217,7 @@ Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-
 
 Eksperiment 5 - Kemisk krydsbinding af RNase S
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Få inspiration fra LØ-vejledningens side 7:
 
@@ -259,4 +240,3 @@ Experiment 5: Chemical cross-linking of hybrid S protein.
 
 The instructors recommend: As you will be busy doing three separate experiments on day 2, you should start out by focusing on Experiment 4, as collecting samples for SDS-PAGE from the columns will be the bottleneck for completing all experiments. While the columns are running, you should also start the crosslinking reactions for Experiment 5, as these also produce samples to go onto the gel. Finally, initiate Experiment 3 when the crosslinking is running, as you will have time to measure the activities of the complexes while your SDS-PAGE gel is running.
 :::
-::::

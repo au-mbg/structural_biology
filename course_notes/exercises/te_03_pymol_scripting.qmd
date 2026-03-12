@@ -61,42 +61,38 @@ Prøv at farve selektionen select_A rød og objektet object_A blåt. Tænd og sl
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  Log fra PyMOL:
 
-1.  Log fra PyMOL:
+```pymol
+PyMOL>fetch 1BL8
+TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
+ExecutiveLoad-Detail: Detected mmCIF\
+CmdLoad: loaded as `1BL8`.
+```
 
-    ```sh
-    PyMOL>fetch 1BL8
-    TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
-    ExecutiveLoad-Detail: Detected mmCIF\
-    CmdLoad: loaded as `1BL8`.
-    ```
+**2.** Log fra PyMOL:
 
-2.  Log fra PyMOL:
+```pymol
+PyMOL>select select_A, chain A
+Selector: selection `select_A` defined with 708 atoms.
+```
 
-    ```pymol
-    PyMOL>select select_A, chain A
-    Selector: selection `select_A` defined with 708 atoms.
-    ```
+**3.**  \-
 
-3.  \-
-
-4.  Log fra PyMOL:
+**4.** Log fra PyMOL:
     
-    ```pymol
-    PyMOL>create object_A, chain A
-    Selector: found 708 atoms.
-    Executive: object `object_A` created.
-    ```
+```pymol
+PyMOL>create object_A, chain A
+Selector: found 708 atoms.
+Executive: object `object_A` created.
+```
 
-5.  \-
+**5.**  \-
 
-6.  \-
+**6.**  \-
 :::
-::::
 
 ## Opgave 2. Kæder, residues og atomer i PyMOL
 
@@ -202,10 +198,12 @@ select res103, /1BL8///103
 ```
 
 vælge alle residues i strukturen 1BL8 med residuenummer 103. Hvor mange atomer/residues er det?\
-\
-Da der kun er ét objekt, kunne vi endda bare sige,\
-\
+
+Da der kun er ét objekt, kunne vi endda bare sige,
+
+```
 select res103, ////103
+```
 
 ### Vælg residues i et interval
 
@@ -224,11 +222,12 @@ Endelig kan man vælge residues i proteinsekvensen. Vælg Display->Sequence fra 
 ### Lav specifikke navngivne selektioner
 
 Brug nu select-statements og nomenklaturen ovenfor til at lave følgende selektioner. Brug forskellige, fornuftige navne til dem alle:
-- Residues 110-120 i kæde B.\
-- Alle residues i kæde D.\
-- Alle Cα-atomer i kæde A.\
-- Residue Trp87 i kæde D.\
-- Atomet Nε1 i Trp87 i kæde D.\
+
+- Residues 110-120 i kæde B.
+- Alle residues i kæde D.
+- Alle Cα-atomer i kæde A.
+- Residue Trp87 i kæde D.
+- Atomet Nε1 i Trp87 i kæde D.
 - Alle Phe-residues i strukturen.
 
 ### Visualiser strukturen med selektioner
@@ -241,132 +240,128 @@ Hvad skete der med cartoon-farven i kæde A, da du ændrede farven på Cα-atome
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
+::: {.solution-callout}
 
-## Officielt svar
+**1.**  Log fra PyMOL:
 
-1.  Log fra PyMOL:
+```    
+PyMOL>fetch 1BL8\
+TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
+ExecutiveLoad-Detail: Detected mmCIF\
+CmdLoad: loaded as `1BL8`.
+```
 
-    ```    
-    PyMOL>fetch 1BL8\
-    TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
-    ExecutiveLoad-Detail: Detected mmCIF\
-    CmdLoad: loaded as `1BL8`.
-    ```
+**2.** Log fra PyMOL:
 
-2.  Log fra PyMOL:
+```    
+PyMOL>show sticks, 1BL8
+PyMOL>color yellow, 1BL8
+Executive: Colored 2824 atoms and 1 object.
+PyMOL>util.cnc 1BL8
+Executive: Colored 948 atoms.
+```
 
-    ```    
-    PyMOL>show sticks, 1BL8
-    PyMOL>color yellow, 1BL8
-    Executive: Colored 2824 atoms and 1 object.
-    PyMOL>util.cnc 1BL8
-    Executive: Colored 948 atoms.
-    ```
+**3.**  \-
 
-3.  \-
+**4.**  \-
 
-4.  \-
+**5.**  Log fra PyMOL:
 
-5.  Log fra PyMOL:
+```    
+Setting: mouse_selection_mode set to 2.
+You clicked /1BL8/A/A/VAL\`97/CB
+Selector: selection `sele` defined with 705 atoms.
+```
 
-    ```    
-     Setting: mouse_selection_mode set to 2.
-     You clicked /1BL8/A/A/VAL\`97/CB
-     Selector: selection `sele` defined with 705 atoms.
-    ```
+**6.**  \-
 
-6.  \-
+**7.** Log fra PyMOL:
 
-7.  Log fra PyMOL:
+```
+PyMOL>select chain_A, /1BL8/A/A
+Selector: selection "chain_A" defined with 705 atoms.
 
-    ```
-    PyMOL>select chain_A, /1BL8/A/A
-    Selector: selection "chain_A" defined with 705 atoms.
+PyMOL>select A103, /1BL8/A/A/103
+Selector: selection `A103` defined with 11 atoms.
 
-    PyMOL>select A103, /1BL8/A/A/103
-    Selector: selection `A103` defined with 11 atoms.
+PyMOL>select 103CG, 103/CG
+Selector: selection `103CG` defined with 4 atoms.
+```
 
-    PyMOL>select 103CG, 103/CG
-    Selector: selection `103CG` defined with 4 atoms.
-    ```
+4 atomer, ét CG-atom på residue 103 i hver af de fire kæder.    
 
-    4 atomer, ét CG-atom på residue 103 i hver af de fire kæder.    
+**8.** Log fra PyMOL:
 
-8.  Log fra PyMOL:
+```
+PyMOL>select res103, /1BL8///103
+Selector: selection `res103` defined with 44 atoms.
+```
+44 atomer
+```
+PyMOL>select res103, ////103
+Selector: selection `res103` defined with 44 atoms.
+```
 
-    ```
-    PyMOL>select res103, /1BL8///103
-    Selector: selection `res103` defined with 44 atoms.
-    ```
-    44 atomer
-    ```
-    PyMOL>select res103, ////103
-    Selector: selection `res103` defined with 44 atoms.
-    ```
+**9.** Log fra PyMOL:
 
-9.  Log fra PyMOL:
+```
+PyMOL>select A103-105, /1BL8//A/103-105
+Selector: selection `A103-105` defined with 23 atoms.
+```
 
-    ```
-    PyMOL>select A103-105, /1BL8//A/103-105
-    Selector: selection `A103-105` defined with 23 atoms.
-    ```
+**10.** Kæderne vises efter hinanden i sekvensen. Sætter man farver på kæderne følger sekvensen efter med samme farve. 
 
-10. Kæderne vises efter hinanden i sekvensen. Sætter man farver på kæderne følger sekvensen efter med samme farve. 
+**11.** 
 
-11. 
+```
+select resiB110-120, ///B/110-120
+```
 
-    ```
-    select resiB110-120, ///B/110-120\
-    ```
+```
+select chainD, ///D
+```
 
-    ```
-    select chainD, ///D
-    ```
+```
+select chainA_CA, ///A//CA
+```
 
-    ```
-    select chainA_CA, ///A//CA\
-    ```
+```
+select TrpD87, ///D/87
+```
 
-    ```
-    select TrpD87, ///D/87
-    ```
+```
+select TrpD87NE1, ///D/87/NE1
+```
 
-    ```
-    select TrpD87NE1, ///D/87/NE1\
-    ```
+```
+select Phe, ////Phe
+```
 
-    ```
-    select Phe, ////Phe
-    ```
+**12.** Log fra PyMOL:
 
-12. Log fra PyMOL:
+```
+PyMOL>hide all
+PyMOL>show cartoon, 1BL8
+PyMOL>color limegreen, 1BL8
+ Executive: Colored 2824 atoms and 1 object.
+PyMOL>color forest, chainD
+ Executive: Colored 705 atoms.
+PyMOL>color red, Phe
+ Executive: Colored 88 atoms.
+PyMOL>show sticks, TrpD87
+PyMOL>show nb_spheres, TrpD87NE1
+PyMOL>color tv_blue, TrpD87NE1
+ Executive: Colored 1 atom.
+PyMOL>show nb_spheres, chainA_CA
+PyMOL>color red, chainA_CA
+ Executive: Colored 97 atoms.
+PyMOL>color yellow, resiB110-120
+ Executive: Colored 82 atoms.
+```
 
-    ```
-    PyMOL>hide all
-    PyMOL>show cartoon, 1BL8
-    PyMOL>color limegreen, 1BL8
-     Executive: Colored 2824 atoms and 1 object.
-    PyMOL>color forest, chainD
-     Executive: Colored 705 atoms.
-    PyMOL>color red, Phe
-     Executive: Colored 88 atoms.
-    PyMOL>show sticks, TrpD87
-    PyMOL>show nb_spheres, TrpD87NE1
-    PyMOL>color tv_blue, TrpD87NE1
-     Executive: Colored 1 atom.
-    PyMOL>show nb_spheres, chainA_CA
-    PyMOL>color red, chainA_CA
-     Executive: Colored 97 atoms.
-    PyMOL>color yellow, resiB110-120
-     Executive: Colored 82 atoms.
-    ```
-
-13. Cartoon-farven styres af CA-atomerne, så hvis man farver dem ændrer cartoonen også farve. Løsningen, hvis man vil vise CA og sidekæde i én farve og cartoon i en anden, er at oprettet et nyt objekt (ikke en selektion) med de udvalgte residues. Dette trick benyttes meget ofte til figurer.
+**13.** Cartoon-farven styres af CA-atomerne, så hvis man farver dem ændrer cartoonen også farve. Løsningen, hvis man vil vise CA og sidekæde i én farve og cartoon i en anden, er at oprettet et nyt objekt (ikke en selektion) med de udvalgte residues. Dette trick benyttes meget ofte til figurer.
 
 :::
-::::
 
 
 ## Opgave 3. Avancerede selektioner og boolsk algebra i PyMOL
@@ -418,16 +413,16 @@ Prøv det og forklar resultatet. 
 
 På samme måde kan man vælge atomer efter navn (se forrige opgave) med "name" og residues efter navn (f.eks. Trp) vha. "resn". Skriv nu kommandoer til at lave selektionerne fra før og giv dem fornuftige navne,
    
-    - Residues 110-120 i kæde B.\
-    - Alle residues i kæde D.\
-    - Alle Cα-atomer i kæde A.\
-    - Residue Trp87 i kæde D.\
-    - Atomet Nε1 i Trp87 i kæde D.\
-    - Alle Phe-residues i strukturen.
+- Residues 110-120 i kæde B.
+- Alle residues i kæde D.
+- Alle Cα-atomer i kæde A.
+- Residue Trp87 i kæde D.
+- Atomet Nε1 i Trp87 i kæde D.
+- Alle Phe-residues i strukturen.
 
 ### Kombiner selektioner med OR-operatoren
 
-Foreningsmængde-operatoren OR benyttes når man skal vælge mere end én ting, f.eks. vælges både kæde A og B således,\
+Foreningsmængde-operatoren OR benyttes når man skal vælge mere end én ting, f.eks. vælges både kæde A og B således,
 
 ```
 select chainsAB, chain A or chain B
@@ -443,11 +438,11 @@ vælge både residue 87 i kæde A og residues 110-120 i kæde B i én selektion.
 
 ### Generer specifikke selektioner
 
-Brug nu ovenstående viden til at generere følgende selektioner,\
-\
-\* Residues 10-30 i kæde A og kæde B.\
-\* Atomet Cα i residue 87 i kæde A samt samme atom i residue 86 i kæde B.\
-\* Alle Cys-residues i kæde A og alle Met-residues in kæde B.
+Brug nu ovenstående viden til at generere følgende selektioner,
+
+- Residues 10-30 i kæde A og kæde B.
+- Atomet Cα i residue 87 i kæde A samt samme atom i residue 86 i kæde B.
+- Alle Cys-residues i kæde A og alle Met-residues in kæde B.
 
 ### Identificer og farv den lange helix
 
@@ -472,64 +467,62 @@ Lav en selection, der vælger alle residues i kæde A, undtagen Cys-residues.
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
-1.  \-
+**1.**  \-
 
-2.  Vi ville vælge både hele kæde D og residue 87. 
+**2.**  Vi ville vælge både hele kæde D og residue 87. 
 
-3.  
-    ```
-    select resiB110-120, chain B and resi 110-120\
+**3.**  
 
-    select chainD, chain D
+```
+select resiB110-120, chain B and resi 110-120\
 
-    select chainA_CA, chain A and name CA
+select chainD, chain D
 
-    select TrpD87, chain D and resi 87 (and resn Trp)
+select chainA_CA, chain A and name CA
 
-    select TrpD87NE1, chain D and resi 87 and name NE1
+select TrpD87, chain D and resi 87 (and resn Trp)
 
-    select Phe, resn Phe
-    ```
+select TrpD87NE1, chain D and resi 87 and name NE1
 
-4.  \-
+select Phe, resn Phe
+```
 
-5.
+**4.**  \-
 
-    ```
-    select ResAB1030, (chain A or chain B) and resi 10-30
-    select A87CaB86Ca, (chain A or chain B) and (resi 87 and name CA)
-    select ACysBMet, (chain A and resn cys) or (chain B and resi Met)
-    ```
+**5.**
 
-6.  Cirka residues 23-51:
+```
+select ResAB1030, (chain A or chain B) and resi 10-30
+select A87CaB86Ca, (chain A or chain B) and (resi 87 and name CA)
+select ACysBMet, (chain A and resn cys) or (chain B and resi Met)
+```
 
-    ```
-    select helix, resi 23-51\
-    color red, helix
-    ```
+**6.**  Cirka residues 23-51:
 
-7.  
+```
+select helix, resi 23-51\
+color red, helix
+```
 
-    ```
-    hide all
-    show ribbon
-    select longhelix, resi 24-50
-    color red, longhelix
-    ```
+**7.**  
 
-8.  
+```
+hide all
+show ribbon
+select longhelix, resi 24-50
+color red, longhelix
+```
 
-    ```
-    select notAcys, (chain A and not resn cys)
-    ```
+**8.**  
+
+```
+select notAcys, (chain A and not resn cys)
+```
 
 ::: 
-::::
 
 ## Opgave 4. Scripting i PyMOL
 
@@ -539,9 +532,7 @@ PyMOL-scripts kan indeholde PyMOL-kommandoer som dem vi har set indtil nu (selec
 
 Et PyMOL-script består af en tekstfil med enten .pml (Python macro language) eller .py (python) efternavn. Det anbefales, at du opretter en folder til dine scripts, så du senere kan finde dem frem igen. Scripts kan kaldes direkte inde fra PyMOL vha `@`-funktionen, men her vil vi starte med at kopiere scriptet og indsætte det på PyMOL's kommandolinje.
 
-Til redigering af scripts skal du bruge en plain text-editor. Det er ikke godt at bruge Word eller andre tekstbehandlingsprogrammer, da de har svært ved at undlade at indsætte koder i teksten. På samme måde som på Bioinformatik-kurset benytter vi Microsoft VS Code, der er en fremragende teksteditor, der fås til både Windows, Mac og Linux:
-
-**<https://code.visualstudio.com/download>**
+Til redigering af scripts skal du bruge en plain text-editor, som [VS Code](../other_notes/installation_vscode.qmd). 
 
 PyMOL-scripts er typisk opbygget på følgende måde:
 
@@ -556,7 +547,7 @@ Gør nu følgende
 
 ### Opret scriptet k-channel.pml
 
-Opret et nyt script i din editor og gem det som k-channel.pml.
+Opret et nyt script i din editor og gem det som `k-channel.pml`.
 
 ### Initialisér scriptet
 
@@ -711,10 +702,7 @@ scene overview, recall
 
 Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan skifte i mellem.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 Eksempel på færdigt script:
 
@@ -774,7 +762,6 @@ scene filter, store
 scene overview, recall
 ```
 :::
-::::
 
 ## Opgave 5. Strukturel analyse i PyMOL
 
@@ -882,10 +869,7 @@ PyMOL er udstyret med en funktion til interaktivt at måle afstanden mellem to a
 
 Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome P450 og camphor/heme. Hvilke typer interaktioner findes der? Hint: Brug `Wizard -> Measurement` til at måle afstande. 
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1-10.
 
@@ -954,7 +938,6 @@ scene overview, recall
 11\. 2.7 Å H-binding mellem camphors carbonylgruppe og OH-gruppen på Tyr96, hydrofobe interaktioner mellem Leu244, Val247 og den hydrofobe ring i camphor, 2.7 Å H-binding mellem den ene carboxylgruppe på heme og Asp297.
 
 :::
-::::
 
 ## Opgave 6. Mission Impossible i PyMOL
 
@@ -996,15 +979,14 @@ Opret et PyMOL-script, der gør følgende:
 
 Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-## Officielt svar
 
-1.  Interaktionerne er ikke meget specifikke, så der er flere muligheder. Et svar kunne være resterne 104, 70, 11, 145, 106, 26, 35, 166, 114 og 137.
+::: {.solution-callout}
 
-2.  Eksempel på script:
+**1.**  Interaktionerne er ikke meget specifikke, så der er flere muligheder. Et svar kunne være resterne 104, 70, 11, 145, 106, 26, 35, 166, 114 og 137.
 
-```pymol
+**2.**  Eksempel på script:
+
+```
 reinitialize
 
 fetch 148L, async=0
@@ -1071,6 +1053,6 @@ set_view (\\
 scene cellwall, store
 ```
 
-3.  Adskillige både hydrofobe og H-bindingsinteraktioner. Glu26 binder kovalent til sukkerdelen.
+
+**3.** Adskillige både hydrofobe og H-bindingsinteraktioner. Glu26 binder kovalent til sukkerdelen.
 :::
-::::

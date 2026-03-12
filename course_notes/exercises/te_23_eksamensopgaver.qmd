@@ -315,7 +315,6 @@ Beskriv den kvaternære struktur af AXE, herunder de symmetrielementer, enzymet 
 AXE er en hexamer. Ovenfra (venstre) ses en 3-talssymmetri og fra siden (højre) observeres en 2-talssymmetri.
 
 :::
-::::
 
 ### Spørgsmål 3.
 
@@ -330,7 +329,6 @@ Beskriv β-pladens opbygning og angiv foldningsklassen for AXE.
 ### Svar: 
 β-pladen består af 9 kæder. De tre første (N-terminale / til højre / blå) er antiparallelle mens resten er parallelle. AXE tilhører αβ klassen, mere præcist α/β.
 :::
-::::
 
 ### Spørgsmål 4.
 
@@ -359,5 +357,4 @@ Forskellene skyldes sterisk hindring. For paraoxon ethyl ses en tæt kontakt med
 
 Bonusinformation (kræves ikke i svar): Det ses i strukturen til højre at der er afvigelse fra ideel geometri. Bindingsvinklen er 93° hvor man ville forvente en værdi tæt på 108°. Desuden er der en meget tæt kontakt mellem C3 i DEP og tre atomer i ringen i Y206.
 :::
-::::
 

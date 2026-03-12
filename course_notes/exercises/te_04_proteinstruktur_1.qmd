@@ -42,10 +42,8 @@ Hvor mange helixer er der i α-Chymotrypsin?
 
 (Hint. Klik på "Structure" til venstre på UniProt-siden)
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
 **1.**  245 aminosyrer.
 
@@ -63,7 +61,6 @@ Højt antal Cys skyldes at det er et ekstracellulært, kløvet enzym, der holdes
 
 **5.**  Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
 :::
-::::
 
 ## Opgave 2. Ramachandran-plottet
 
@@ -79,16 +76,13 @@ På figuren for alle aminosyrer er der tre områder med høj forekomst af aminos
 
 ![fig1-6-Williamson-adapted](media/image7.png){width="80%" fig-align="center" .lightbox}
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
 **1.**  Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. Med andre ord er mængden af mulige kombinationer af ψ- og φ-vinkler væsentlige større. Prolins sidekæde er ringsluttet med hovedkæden og dets φ-vinkel er derfor bundet omkring -65°.
 
 **2.**  Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
 :::
-::::
 
 ## Opgave 3. C-alpha diagram
 
@@ -116,10 +110,7 @@ Angiv den omtrentlige position af β-kæderne og deres retning. Forklar dit svar
 
 Er β-kæderne parallelle eller anti-parallelle?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
 
@@ -132,7 +123,6 @@ Er β-kæderne parallelle eller anti-parallelle?
 
 4.  Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
 :::
-::::
 
 ## Opgave 4. Cartoons
 
@@ -171,10 +161,8 @@ Hvilken struktur hører til hvilket plot?
 
 Forklar dit svar.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
 A er Fab-fragmentet
 
@@ -186,7 +174,6 @@ Dette ses bl.a. ved at myoglobin kun indeholder α-helixer og Fab-fragmentet næ
 
 Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn og nummer), der antyder at strukturen kan være dårligt forfinet. 
 :::
-::::
 
 ## Opgave 5. Afstand mellem C-alpha atomer
 
@@ -206,10 +193,7 @@ Hvad er afstanden mellem de to Cα-atomer i et *trans*-peptid?
 
 Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  ![](media/image13.png){width="5.761013779527559in" height="3.375165135608049in"}
 
@@ -219,7 +203,6 @@ Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
 4.  \~2.8 Å
 :::
-::::
 
 ## Opgave 6. Binding af guanine
 
@@ -262,10 +245,7 @@ En mutation af aspartat til asparagin i sekvensmotivet for guaninbinding medfør
 
 Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Cys137
 
@@ -292,7 +272,6 @@ Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
 4.  Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
 :::
-::::
 
 ## Opgave 7. Nukleotid binding
 
@@ -332,10 +311,8 @@ Denne ville altså finde afstanden mellem alfa-carbon i aminosyrerest 13 i kæde
 
 Skriv et nyt script, der laver en visning af samme figur som før, men med GDPNP (en analog til GTP) i stedet for GDP og stadigvæk med angivelse af hydrogenbindinger. Hint: Der kan hentes meget inspiration i scriptet fra før. 
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
 
-## Officielt svar
+::: {.solution-callout}
 
 **1.**
 
@@ -359,7 +336,7 @@ select sidechains , byres eftu within 4.0 of nucleotide 
 
 **2.**
 
-```
+```pymol
 reinitialize
 bg_color white
 fetch 1eft , async=0
@@ -392,4 +369,3 @@ set_view (\
 
 ![GDPNP-EFtu](media/image16.png){width="80%" .lightbox}
 :::
-::::

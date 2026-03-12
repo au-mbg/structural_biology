@@ -24,10 +24,7 @@ Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som
 
 ***PyMOL hint:** For at identificere deep eller shallow groove af en RNA-dobbelthelix selekteres et WC-basepar med henblik på nærmere undersøgelse. For at zoome ind på et basepar vælges det først med musen og herefter bruges kommandoen **[zoom](https://www.pymolwiki.org/index.php/Zoom)** f.eks. zoom sele. Dernæst kan andre elementer fjernes med hide (not sele). Alternativt kan du bruge musehjul til at justere clipping plane omkring din selektion. Deep eller shallow groove kan nu identificeres på baseparret vha. placeringen af beta-glykosid-bindingerne. Du kan så trykke funktionstast for at komme tilbage til udgangspunktet.*
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  AU cWW, UA cWH
 
@@ -37,7 +34,6 @@ Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som
 
 4.  L7 proteinet binder i deep groove på kink-turn motivet.
 :::
-::::
 
 ## Opgave 2. tRNA og syntetase
 
@@ -71,10 +67,7 @@ Identificer aminosyrer der binder til midterste position i anticodon (position 3
 
 Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  tWH
 
@@ -88,7 +81,6 @@ Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
 6.  Energi til Gln charging.
 :::
-::::
 
 ## Opgave 3. 5S rRNA og L25
 
@@ -126,10 +118,7 @@ Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i forhold til e
 
 Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** og **F12**. Svaret skal indeholde angivelse af interaktioner til specifikke atomer på baseparret. Hvilke interaktioner bidrager generelt til sekvensspecifik binding af RNA-bindende proteiner?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Helix 1,2,3,4,5 er stammer med buler eller interne loops. \
     Loop C er hairpin med 13-nt loop.\
@@ -158,7 +147,6 @@ Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** 
     \
     Sekvens-specifik binding opnås via H-bindinger, form komplementaritet og hydrofobe interaktioner.
 :::
-::::
 
 ## Opgave 4. CRISPR-Cas9 
 
@@ -182,10 +170,7 @@ Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix typ
 
 **F4** viser den del af recognition (REC) domænet, der binder til RNA hairpin. **F5** viser RECs interaktion med baser i deep groove og **F6** viser RECs interaktion med baser i shallow groove af RNA helix. Beskriv de specifikke hydrogenbindings-interaktioner mellem baser og aminosyrer.
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  4 hairpins. A-form, da RNA-strengen inducerer A-form pga. 2'OH og C3'-endo konformation.
 
@@ -196,7 +181,6 @@ Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix typ
 4.  F5: Phe351 og Asp364 interagerer med G43, der er uparret base.\
     F6: Ser104 og Phe105 interagerer med U24 og A47 i minor groove.
 :::
-::::
 
 ## Opgave 5. Argonaut 
 
@@ -235,10 +219,7 @@ Tryk **F2**. Beskriv hydrogen-bindinger til de første nukleotider på DNA-stren
 
 Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. Hvilke domæner er involveret i bindingen? Er interaktionerne med baserne eller backbone og hvad fortæller det om bindingen?
 
-:::: {.content-hidden when-profile="exercise"}
-::: {.callout-important}
-
-## Officielt svar
+::: {.solution-callout}
 
 1.  Se vedhæftede script.
 
@@ -358,4 +339,3 @@ scene F1
 
 5.  Ago H-binder til sukker-fosfat-rygrad af DNA og RNA streng, hvilket betyder at det er en sekvens-uspecifik binding. Alle domæner er involveret i binding.
 :::
-::::
