@@ -63,4 +63,47 @@ This content will only be visible when viewing the instructor/solution version o
 but the content is contained in the same document as the exercise. This makes it much simpler to 
 keep exercises and solutions up to date. 
 
+## Figures
+
+Figures are included using 
+
+```md
+![Caption](path/to/figure.png)
+```
+
+Additionally [settings](https://quarto.org/docs/authoring/figures.html) are provided by Quarto, 
+for example setting the width/height in pixels, inches or percentage of screen space
+
+```md
+![Caption](path/to/figure.png){width=300}
+![Caption](path/to/figure.png){width=4in}
+![Caption](path/to/figure.png){width=80%}
+
+```
+
+### Subfigures
+
+Figures can be arranged using a figure div, 
+
+```md
+::: {#fig-elephants layout-ncol=2}
+
+![Surus](surus.png){#fig-surus}
+
+![Hanno](hanno.png){#fig-hanno}
+
+Famous Elephants
+:::
+```
+
+### Floating / Aligned figures
+
+To wrap text around a floating figure it can be wrapped in float div, like below
+
+```md
+::: {style="float: right; margin: 10px; width: 28%;"}
+![Ray Tracing settings](pymol_guide_1_media/media/image10.png)
+:::
+```
+
 
