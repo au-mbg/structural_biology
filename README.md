@@ -37,7 +37,7 @@ curl -fsSL https://pixi.sh/install.sh | sh
 
 On **Windows** it can be installed either through the installer available from the [`pixi` website](https://pixi.prefix.dev/latest/installation/#__tabbed_1_2) or with the command 
 
-```
+```powershell
 powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
 ```
 ### Installing `git` with `pixi`
@@ -52,11 +52,61 @@ Then the `git clone` commands listed above will work.
 
 ### `git` authentication
 
+To help with git setup you can run 
 
+```
+pixi run github-auth
+```
+This will ask a few questions and eventually open a browser to login to github. 
+You will only need to do this once per machine. 
 
+### Basic git operations 
 
+Before making any updates it's a good idea to make sure you have the latest version
 
-### Using Pixi for site rendering
+```bash
+git pull
+```
+
+When you've made an update you can run 
+
+```bash
+git status
+```
+This will list all the files that have been changed, for example 
+
+```
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   course_notes/exercises/te_01_i_gang_med_pymol.qmd
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+Then you add the files you want to commit 
+
+```bash
+git add course_notes/exercises/te_01_i_gang_med_pymol.qmd
+```
+Write a commit message
+
+```bash
+git commit -m "Update the exercises for the first TØ session."
+```
+
+And then push to the remote 
+
+```bash
+git push
+```
+
+For slightly more detailed instructions see [git - the simple guide](https://rogerdudler.github.io/git-guide/).
+
+### Using `pixi` for site rendering
 
 With `pixi` installed the site can be rendered or previewed using the commands 
 
