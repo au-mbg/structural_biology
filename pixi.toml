@@ -6,9 +6,15 @@ platforms = ["osx-arm64"]
 version = "0.1.0"
 
 [tasks]
+preview-exercise = { cmd = ["quarto",  "preview", "--profile", "exercise"], cwd="course_notes", description = "Preview the exercise version of the course notes"}
+preview-solution = { cmd = ["quarto",  "preview", "--profile", "solution"], cwd="course_notes", description = "Preview the solution version of the course notes"}
+
+render-exercise = { cmd = ["quarto",  "render", "--profile", "exercise"], cwd="course_notes", description = "Render the exercise version of the course notes"}
+render-solution = { cmd = ["quarto",  "render", "--profile", "solution"], cwd="course_notes", description = "Render the solution version of the course notes"}
+render = { depends-on = ["render-exercise", "render-solution"], description = "Render both the exercise and solution versions of the course notes"}
+
+clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 
 [dependencies]
-pyqt = ">=5.15.11,<6"
 python = "3.12.*"
-pymol-open-source = ">=3"
 quarto = ">=1.8.27,<2"
