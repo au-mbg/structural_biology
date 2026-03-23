@@ -42,7 +42,16 @@ If instead opting to not use `pixi` this requires installing
 
 This installation path is not recommended. 
 
+## Publishing 
 
+The site is automatically rendered and published when commits are pushed to the `main`-branch 
+of the repository. 
+
+This is configured through Github Actions, see [publish.yml](.github/workflows/publish.yml).
+
+## Authoring
+
+For authoring instructions see [AUTHORING.md](AUTHORING.md)
 
 
 
