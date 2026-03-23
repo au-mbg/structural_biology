@@ -40,6 +40,10 @@ On **Windows** it can be installed either through the installer available from t
 ```powershell
 powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
 ```
+
+After the installation finishes you will need to open a new terminal for the `pixi`-command to 
+be available.
+
 ### Installing `git` with `pixi`
 
 If you do not have git installed, you can use `pixi` to install git, like so
@@ -47,6 +51,8 @@ If you do not have git installed, you can use `pixi` to install git, like so
 ```bash
 pixi global install git
 ```
+
+After this open a new terminal/shell and `git` will be available. 
 
 Then the `git clone` commands listed above will work. 
 
