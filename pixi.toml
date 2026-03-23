@@ -5,6 +5,10 @@ name = "structure_biology"
 platforms = ["osx-arm64", "linux-64", "osx-64", "win-64"]
 version = "0.1.0"
 
+[environments]
+default = {features=[]}
+dev = {features=["git-tools"]}
+
 [tasks]
 preview-exercise = { cmd = ["quarto",  "preview", "--profile", "exercise"], cwd="course_notes", description = "Preview the exercise version of the course notes"}
 preview-solution = { cmd = ["quarto",  "preview", "--profile", "solution"], cwd="course_notes", description = "Preview the solution version of the course notes"}
@@ -15,6 +19,12 @@ render = { depends-on = ["render-exercise", "render-solution"], description = "R
 
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 
+github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
+
 [dependencies]
 python = "3.12.*"
 quarto = ">=1.8.27,<2"
+
+[feature.git-tools.dependencies]
+gh = '*'
+git = '*'

@@ -4,8 +4,25 @@ Repository for course notes for *Strukturbiologi* at the Department of Molecular
 
 ## Installation
 
-The site is build using [Quarto](https://quarto.org/) a Markdown-based publishing system. 
-The simplest installation is using `pixi`. 
+The site is build using [Quarto](https://quarto.org/) a Markdown-based publishing system 
+and uses `git` for version control with the remote repository hosted on Github.com.
+
+### Git 
+
+To work on the site locally you will need to clone the repository, you can do so 
+for a HTTPS setup with
+
+```
+git clone https://github.com/au-mbg/structural_biology.git
+```
+
+or for SSH (requires setting up an [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), which can be a little tricky) with 
+```
+git clone https://github.com/au-mbg/structural_biology.git
+```
+This requires having `git` installed, if you do not then you can first install `pixi`
+like described below and then use that to install git. 
+
 
 ### Pixi
 
@@ -23,8 +40,23 @@ On **Windows** it can be installed either through the installer available from t
 ```
 powershell -ExecutionPolicy Bypass -c "irm -useb https://pixi.sh/install.ps1 | iex"
 ```
+### Installing `git` with `pixi`
 
-#### Using Pixi 
+If you do not have git installed, you can use `pixi` to install git, like so
+
+```bash
+pixi global install git
+```
+
+Then the `git clone` commands listed above will work. 
+
+### `git` authentication
+
+
+
+
+
+### Using Pixi for site rendering
 
 With `pixi` installed the site can be rendered or previewed using the commands 
 
@@ -40,7 +72,7 @@ If instead opting to not use `pixi` this requires installing
 - `quarto`: See [Quarto Get Started](https://quarto.org/docs/get-started/)
 - A Python 3.12 environment with appropriate packages.
 
-This installation path is not recommended. 
+This installation path is not recommended unless you're comfortable tinkering a bit. 
 
 ## Publishing 
 
