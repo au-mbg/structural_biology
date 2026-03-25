@@ -71,7 +71,6 @@ website:
             - videos/videor_2.qmd
 
 filters:
-  - config/quarto/filters/wrap-plain-code.lua
   - config/quarto/filters/solution-callout.lua
 
 format:

@@ -276,7 +276,7 @@ Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af
 
 **1.**  PyMOL script:
 
-```pymol
+```default
 # Script til opgave 7. Arc repressor
 
 reinitfetch 1BDT, type=pdb1, async=0remove solventset_view (\

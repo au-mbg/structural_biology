@@ -18,7 +18,7 @@ Hvor mange aminosyrerester er der i sekvensen?
 
 ### Find molekylvægt af chymotrypsinogen
 
-Hvad er molekylvægten (Mw) for den viste sekvens?
+Hvad er molekylvægten ($M_w$) for den viste sekvens?
 
 Den viste sekvens er for chymotrypsinogen, som efter aktivering ved proteolytisk kløvning danner det aktive α-chymotrypsin (se Stryer, Fig. 10.18, s. 324).
 
@@ -283,7 +283,7 @@ Strukturen af EF-Tu med GDPNP er også blevet bestemt (PDB-ID: 1EFT). I 1EFT er 
 
 I scriptet indgår en linie:
 
-```pymol
+```default
 select sidechains, byres eftu within 4.0 of nucleotide
 ```
 
@@ -295,13 +295,13 @@ Forklar betydningen af de enkelte elementer i den pågældende linie. Hint: se 
 
 I er tidligere blevet introduceret for Wizard-measurement funktionen i PyMOL. Det er også muligt at bruge kommandoen distance til at finde samme afstande. Distance opretter ligeledes et objekt i objektoversigten, men her udspecificeres et navn til objektet af brugeren. Brugen af distance er som følger:
 
-```pymol
+```default
 distance (navn på måling), (første selektion), (anden selektion)
 ```
 
 Selektionerne gives i en hvilken som helst notation (herunder f.eks. /1efc/B/B/ASN\`13/CA eller tilsvarende (resi 13 and chain B and name CA)). Hvis der defineres flere atomer, finder kommandoen samtlige afstande mellem atomer i selektionen. Et tilfældigt eksempel på en afstand mellem to atomer i objektet "1efc" ved navn "d1" kunne således være:
 
-```pymol
+```default
 distance d1, /1efc/B/B/ASN\`13/CA, (resi 13 and chain A and name CA)
 ```
 
@@ -336,7 +336,7 @@ select sidechains , byres eftu within 4.0 of nucleotide 
 
 **2.**
 
-```pymol
+```default
 reinitialize
 bg_color white
 fetch 1eft , async=0

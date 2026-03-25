@@ -51,13 +51,13 @@ essential).
 
 To load a structure into PyMOL use the fetch command on the command line:
 
-```pymol
+```default
 fetch 1rg7
 ```
 
 You can also load a PDB file from your own file system using the load command:
 
-```pymol
+```default
 load 1rg7.pdb
 ```
 
@@ -65,7 +65,7 @@ load 1rg7.pdb
 To show a particular representation, use the show command followed the
 by representation name:
 
-```pymol
+```default
 show cartoon (shows cartoon for all objects)
 show lines (shows lines for all objects)
 ```
@@ -73,14 +73,14 @@ show lines (shows lines for all objects)
 
 To hide a representation use
 
-```pymol
+```default
 hide lines
 ```
 
 You can also choose to show only one particular representation with the
 as command:
 
-```pymol
+```default
 as cartoon
 as ribbon
 ```
@@ -88,7 +88,7 @@ as ribbon
 The zoom and orient commands are the equivalent to the zoom and orient
 buttons, respectively:
 
-```pymol
+```default
 zoom
 orient
 ```
@@ -96,7 +96,7 @@ orient
 We will come back to more useful commands through the tutorial. Make
 sure you use
 
-```pymol
+```default
 as lines
 ```
 
@@ -123,13 +123,13 @@ the command like this:
 
 Create a new selection called **mtx**:
 
-```pymol
+```default
 select mtx, resname MTX
 ```
 
 Create a new selection called **protein**:
 
-```pymol
+```default
 select protein, resid 1-160
 ```
 
@@ -137,7 +137,7 @@ Similarly to using the in range (-) symbol, you can use the addition
 (+) syntax. The following command will select the residues in rage 15
 to 20 as well as residue number 25:
 
-```pymol
+```default
 select resid 15-20+25
 ```
 
@@ -148,7 +148,7 @@ in the first or the second statement (union). The following example
 will select 5 atoms corresponding to the CA (c-alph) atoms in the
 residues 15-20:
 
-```pymol
+```default
 select resid 15-20 and name CA
 ```
 
@@ -168,7 +168,7 @@ structure.
 Coloring can be done using the command line. Below we color the mtx
 selection red and the protein blue:
 
-```pymol
+```default
 color red, mtx
 color blue, protein
 ```
@@ -178,7 +178,7 @@ oxygens red, nitrogens blue, sulphurs yellow etc, and only adjust the
 colors of carbon atoms. In the command line it can be carried out with
 combining the color command with selection statements:
 
-```pymol
+```default
 color green, mtx and elem C color red, mtx and elem O
 color blue, mtx and elem N
 ```

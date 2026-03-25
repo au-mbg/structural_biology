@@ -223,7 +223,7 @@ Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. H
 
 **1.**  Se scriptet nedenfor
 
-```pymol
+```default
 # This script shows details of the Argonaute protein.
 
 reinit

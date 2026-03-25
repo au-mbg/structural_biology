@@ -18,19 +18,40 @@ Et objekt kan altså godt eksistere uden en selektion, men en selektion kan ikke
 
 Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen `fetch 1BL8`. Kommandoer kan enten tastes øverst eller nederst i vinduet hvor der står "PyMOL>". I denne og følgende opgaver på kurset vil følgende angive en kommando, der skal skrives i PyMOL (eller stå i et script):
 
-```pymol
+```default
 fetch 1BL8
 ```
+
+::: {.solution-callout}
+Log fra PyMOL:
+
+```default
+PyMOL>fetch 1BL8
+TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
+ExecutiveLoad-Detail: Detected mmCIF\
+CmdLoad: loaded as `1BL8`.
+```
+:::
+
 
 ### Dan en selektion af kæde A
 
 Dan en ny selection bestående af kæde A i strukturen:\
 
-```pymol
+```default
 select select_A, chain A
 ```
 
 Her er `select_A` navnet på den nye selektion mens "chain A" fortæller PyMOL at selektionen skal bestå af kæde A. Bemærk at der kommer en ny selektion i listen til højre og at navnet står i parentes, hvilket angiver en selektion. PyMOL viser også selektionen med "selection handles" for hvert atom (små firkanter på strukturen). En selektion fungerer lidt som i andre programmer, du kender, f.eks. forsvinder "selection handles", hvis man klikker udenfor selektionen. De kommer tilbage ved at klikke på selektionens navn `(select_A)`. Man kan altså hhv. vælge og ikke vælge atomerne ved at klikke på navnet.
+
+::: {.solution-callout}
+Log fra PyMOL:
+
+```default
+PyMOL>select select_A, chain A
+Selector: selection `select_A` defined with 708 atoms.
+```
+:::
 
 ### Test selektion- og objektsynlighed
 
@@ -40,11 +61,22 @@ Prøv at vælge selektionen så de små selection handles vises. Sluk nu for hov
 
 Dan nu et nyt objekt bestående af kæde A i strukturen:\
 
-```
+```default
 create object_A, chain A
 ```
 
 Her er `objekt_A` navnet på det nye objekt mens "chain A" fortæller PyMOL at objektet skal bestå af kæde A. Bemærk at der kommer et nyt objekt i listen til højre og at navnet står uden parentes (og har en 1/1 state), hvilket angiver et objekt. PyMOL centrerer også synsfeltet på det nye objekt.
+
+::: {.solution-callout}
+
+Log fra PyMOL:
+
+```default
+PyMOL>create object_A, chain A
+Selector: found 708 atoms.
+Executive: object `object_A` created.
+```
+:::
 
 ### Sammenlign objekt og selektion
 
@@ -61,38 +93,6 @@ Prøv at farve selektionen select_A rød og objektet object_A blåt. Tænd og sl
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-::: {.solution-callout}
-
-**1.**  Log fra PyMOL:
-
-```pymol
-PyMOL>fetch 1BL8
-TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
-ExecutiveLoad-Detail: Detected mmCIF\
-CmdLoad: loaded as `1BL8`.
-```
-
-**2.** Log fra PyMOL:
-
-```pymol
-PyMOL>select select_A, chain A
-Selector: selection `select_A` defined with 708 atoms.
-```
-
-**3.**  \-
-
-**4.** Log fra PyMOL:
-    
-```pymol
-PyMOL>create object_A, chain A
-Selector: found 708 atoms.
-Executive: object `object_A` created.
-```
-
-**5.**  \-
-
-**6.**  \-
-:::
 
 ## Opgave 2. Kæder, residues og atomer i PyMOL
 
@@ -145,19 +145,19 @@ Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på é
 
 Vi kan også bruge nomenklaturen ovenfor til at danne en selektion med CG-atomet fra Phe 103:\
 
-```
+```default
 select 103CG, /1BL8/A/A/PHE\`103/CG
 ```
 
 Det lille `backquote` (\`) kan godt drille, men det behøves heldigvis heller ikke:\
 
-```
+```default
 select 103CG, /1BL8/A/A/103/CG
 ```
 
 Man behøver heller ikke give alle felterne, hvis de ikke er nødvendige, f.eks. i dette tilfælde er der kun én struktur, så vi kan nøjes med\
 
-```
+```default
 select 103CG, A/103/CG
 ```
 
@@ -171,19 +171,19 @@ Hvis man kun benytter en del af felterne er reglen at hvis udsagnet starter med
 \
 Vælg hele kæde A (fra venstre):\
 
-```
+```default
 select chain_A, /1BL8/A/A
 ```
 
 Vælg hele residue 103 i kæde A (fra venstre):\
 
-```
+```default
 select A103, /1BL8/A/A/103
 ```
 
 Vælg kun CG i residue 103 (fra højre):\
 
-```
+```default
 select 103CG, 103/CG
 ```
 
@@ -193,7 +193,7 @@ Hvor mange atomer vælges i dette tilfælde? Hvorfor?
 
 En anden nyttig regel er at man kan udelade noget af informationen for at vælge alt, f.eks. vil \
 
-```
+```default
 select res103, /1BL8///103
 ```
 
@@ -201,7 +201,7 @@ vælge alle residues i strukturen 1BL8 med residuenummer 103. Hvor mange atomer/
 
 Da der kun er ét objekt, kunne vi endda bare sige,
 
-```
+```default
 select res103, ////103
 ```
 
@@ -209,7 +209,7 @@ select res103, ////103
 
 Man kan også angive en range af residues vha. en bindestreg, f.eks. vil\
 
-```
+```default
 select A103-105, /1BL8//A/103-105
 ```
 
@@ -244,7 +244,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
 **1.**  Log fra PyMOL:
 
-```    
+```default
 PyMOL>fetch 1BL8\
 TITLE     POTASSIUM CHANNEL (KCSA) FROM STREPTOMYCES LIVIDANS\
 ExecutiveLoad-Detail: Detected mmCIF\
@@ -253,7 +253,7 @@ CmdLoad: loaded as `1BL8`.
 
 **2.** Log fra PyMOL:
 
-```    
+```default
 PyMOL>show sticks, 1BL8
 PyMOL>color yellow, 1BL8
 Executive: Colored 2824 atoms and 1 object.
@@ -267,7 +267,7 @@ Executive: Colored 948 atoms.
 
 **5.**  Log fra PyMOL:
 
-```    
+```default
 Setting: mouse_selection_mode set to 2.
 You clicked /1BL8/A/A/VAL\`97/CB
 Selector: selection `sele` defined with 705 atoms.
@@ -277,7 +277,7 @@ Selector: selection `sele` defined with 705 atoms.
 
 **7.** Log fra PyMOL:
 
-```
+```default
 PyMOL>select chain_A, /1BL8/A/A
 Selector: selection "chain_A" defined with 705 atoms.
 
@@ -292,19 +292,19 @@ Selector: selection `103CG` defined with 4 atoms.
 
 **8.** Log fra PyMOL:
 
-```
+```default
 PyMOL>select res103, /1BL8///103
 Selector: selection `res103` defined with 44 atoms.
 ```
 44 atomer
-```
+```default
 PyMOL>select res103, ////103
 Selector: selection `res103` defined with 44 atoms.
 ```
 
 **9.** Log fra PyMOL:
 
-```
+```default
 PyMOL>select A103-105, /1BL8//A/103-105
 Selector: selection `A103-105` defined with 23 atoms.
 ```
@@ -313,27 +313,27 @@ Selector: selection `A103-105` defined with 23 atoms.
 
 **11.** 
 
-```
+```default
 select resiB110-120, ///B/110-120
 ```
 
-```
+```default
 select chainD, ///D
 ```
 
-```
+```default
 select chainA_CA, ///A//CA
 ```
 
-```
+```default
 select TrpD87, ///D/87
 ```
 
-```
+```default
 select TrpD87NE1, ///D/87/NE1
 ```
 
-```
+```default
 select Phe, ////Phe
 ```
 
@@ -592,7 +592,7 @@ farve selektionen my_selection blå. Du kan få inspiration til farver i Color-m
 
 Lad os nu vise hele strukturen som ribbon:
 
-```
+```default
 show ribbon, kchannel
 ```
 
@@ -602,24 +602,12 @@ Bemærk at kommandoerne `show` og `hide` benyttes til at gribe ned i menuerne ti
 
 Orientér nu strukturen som du gerne vil have den skal se ud (zoom, centrering, rotation). Brug venstre museknap til at rotere,  højre museknap til at zoome og tryk på hjulet for at centrere. Skriv nu kommandoen (på kommandolinjen, ikke i scriptet):
 
-```
+```default
 get_view
 ```
 
-```
-### cut below here and paste into script ###
-set_view (\
-    0.649728715,   -0.607225955,    0.457305670,\
-    -0.557611287,    0.028152177,    0.829624295,\
-    -0.516643345,   -0.794027805,   -0.320305407,\
-    0.000000000,    0.000000000, -203.462997437,\
-    72.186561584,   26.599575043,   19.889984131,\
-164.716903687,  242.209091187,  -20.000000000 )
-### cut above here and paste into script ###
-```
-PyMOL giver os nu en 3x6 matrix, der fuldstændig definerer synsvinklen. Kopiér følgende,
-
-```
+PyMOL giver os nu en 3x6 matrix, der fuldstændig definerer synsvinklen, som det output der er vist nedenfor. Kopiér følgende,
+```default
 set_view (\
     0.649728715,   -0.607225955,    0.457305670,\
     -0.557611287,    0.028152177,    0.829624295,\
@@ -634,14 +622,14 @@ fra PyMOL og indsæt det nederst i dit script.
 
 Afhængig af hvordan, du har skrevet scriptet vil du muligvis opleve, at der vises en resterende selektion, når scriptet er kørt. For at undgå dette og fjerne den sidst valgte gruppe af atomer, indsæt kommandoen:
 
-```
+```default
 deselect
 ```
 
 Ifm. TØ kan det være smart at gemme flere forskellige views eller repræsentationer af strukturen i såkaldte "scenes", som let kan frembringes ved at klikke på knapperne nederst til venstre i PyMOL eller trykke F1, F2, F3\...\
 For at gemme det nuværende view som en scene, bruges følgende kommando, som indsættes efter set_view-matricen ovenfor:
 
-```
+```default
 scene overview, store
 ```
 
@@ -660,7 +648,7 @@ Prøv at orientere molekylet på en anden måde og tjek at du kommer tilbage til
 
 Nu skal vi oprette et nyt view, der viser detaljer i K^+^-kanalens såkaldte selektivitetsfilter, der er med til at sikre, at kun K^+^-ioner kan passere. Denne del af scriptet skrives efter ovenstående og vil blive gemt i en ny scene. Opret først en ny selection med ionerne:\
 
-```
+```default
 select k_ions, elem K
 ```
 
@@ -670,7 +658,7 @@ Dette udvælger alle atomer med grundstof K.
 
 Vis ionerne som non-bonded spheres (nb_spheres), der er mindre end alm. `spheres`, der viser VDW-radius:\
 
-```
+```default
 show nb_spheres, k_ions
 ```
 
@@ -680,7 +668,7 @@ Sæt også en passende farve på objektet efter frit valg.
 
 Opret nu en selektion med kanalens selektivitetsfilter. Dette ligger i residues 75-78 i alle kæder, så vi kan nøjes med at skrive:\
 
-```
+```default
 select filter, resi 75-78
 ```
 
@@ -694,7 +682,7 @@ Gem slutteligt den nye visning i scenen `filter`.
 
 Scriptet skal vise `overview` først, så afslut af med at hente den ind igen:
 
-```
+```default
 scene overview, recall
 ```
 
@@ -706,7 +694,7 @@ Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan
 
 Eksempel på færdigt script:
 
-```
+```default
 reinitialize
 
 fetch 1BL8, kchannel, async=0
@@ -725,12 +713,12 @@ color yellow, chainD
 
 show ribbon, kchannel
 
-set_view (\\
-0.649728715, -0.607225955, 0.457305670,\\
--0.557611287, 0.028152177, 0.829624295,\\
--0.516643345, -0.794027805, -0.320305407,\\
-0.000000000, 0.000000000, -203.462997437,\\
-72.186561584, 26.599575043, 19.889984131,\\
+set_view (\
+0.649728715, -0.607225955, 0.457305670,\
+-0.557611287, 0.028152177, 0.829624295,\
+-0.516643345, -0.794027805, -0.320305407,\
+0.000000000, 0.000000000, -203.462997437,\
+72.186561584, 26.599575043, 19.889984131,\
 164.716903687, 242.209091187, -20.000000000 )
 
 deselect
@@ -747,12 +735,12 @@ select filter, resi 75-78
 
 show sticks, filter
 
-set_view (\\
-0.888863146, 0.193117291, -0.415483952,\\
-0.192342117, -0.980332971, -0.044177610,\\
--0.415844947, -0.040646739, -0.908524752,\\
-0.000000000, 0.000000000, -61.653659821,\\
-67.867996216, 26.594999313, 9.017000198,\\
+set_view (\
+0.888863146, 0.193117291, -0.415483952,\
+0.192342117, -0.980332971, -0.044177610,\
+-0.415844947, -0.040646739, -0.908524752,\
+0.000000000, 0.000000000, -61.653659821,\
+67.867996216, 26.594999313, 9.017000198,\
 45.950794220, 77.356529236, -20.000000000 )
 
 deselect
@@ -779,7 +767,7 @@ Vi vil gerne lave et PyMOL-script, der sætter os i stand til at foretage en gru
 
 Start et ny PyMOL-script i VS Code med at reinitialisere og hent dernæst strukturen ovenfor via PDB-koden 2CPP, kald objektet cytochrome og skjul alle repræsentationer:
 
-```pymol
+```default
 reinitialize
 fetch 2CPP, cytochrome, async=0
 hide all
@@ -789,7 +777,7 @@ hide all
 
 Vis hele strukturen i lyseblå cartoon (som ovenfor):
 
-```pymol
+```default
 show cartoon, cytochrome
 color skyblue, cytochrome
 ```
@@ -798,7 +786,7 @@ color skyblue, cytochrome
 
 Nu skal vi lave en selection med substratet, men vi ved ikke hvad det er kaldet i PDB-filen. Et godt tip til at finde ud af dette er at slå strukturen op på RCSB: [https://www.rcsb.org/structure/2cpp](https://www.rcsb.org/structure/2cpp). Under `Small molecules` kan man se at der både findes en hæme prostetisk gruppe (kaldet HEM) og liganden camphor (CAM). Disse tre-bogstavsforkortelse henviser til det, der står ud for "residue name" i PDB-filen, dvs. at vi skal bruge kommandoen "resn" til at vælge dem:
 
-```pymol
+```default
 select heme, resn HEM
 select camphor, resn CAM
 ```
@@ -873,7 +861,7 @@ Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome 
 
 1-10.
 
-```pymol
+```default
 reinitialize
 
 fetch 2CPP, cytochrome, async=0

@@ -12,3 +12,4 @@ course_notes/.quarto
 # Avoid videos for now
 course_notes/videos/videos/
 
+__pycache__/

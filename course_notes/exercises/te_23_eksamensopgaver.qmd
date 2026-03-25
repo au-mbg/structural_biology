@@ -43,7 +43,7 @@ Hent strukturen af OR51E2 i PyMOL (PDB 8F76) og skriv et script, der viser recep
 :::
 
 
-```pymol
+```default
 reinitialize
 
 fetch 8f76, OR51E2

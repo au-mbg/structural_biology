@@ -454,7 +454,7 @@ Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den
 
 **2.**  Script:
 
-```pymol
+```default
 ## Script til opgave 6. Heat shock protein 70 evolution
 
 reinit
