@@ -151,6 +151,16 @@ that the code is valid
 ````
 Here the path is relative to the current file, so the above path works for all the `exercises/te_*.qmd` files. 
 
+### PyMOL Scripts
+
+The script Python script `course_notes/exercises/pymol_scripts/check_scripts.py` checks that all PyMOL scripts in the `course_notes/exercises/pymol_scripts/`-directory are syntactically correct. To run this you use 
+
+```
+pixi run check-pymol-scripts
+```
+
+This requires having PyMOL installed and discoverable.
+
 ## Callout blocks
 
 Callout blocks are very useful as way to make some content distinguishable, for example for hints. 

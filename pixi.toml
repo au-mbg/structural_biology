@@ -21,6 +21,8 @@ clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the re
 
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
 
+check-pymol-scripts = { cmd = ["python", "check_scripts.py"], cwd="course_notes/exercises/pymol_scripts"}
+
 [dependencies]
 python = "3.12.*"
 quarto = ">=1.8.27,<2"
