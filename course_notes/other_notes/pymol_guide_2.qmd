@@ -3,7 +3,7 @@ title: "Commands and scripting in PyMOL 3"
 author: "Ebbe S. Andersen and Johan N. Vinther"
 ---
 
-```{=html}
+```default
 <style>
   .display-panel { color: #e6c01dff; font-weight: bold; }
   .editor { color: #2c6b2aff; font-weight: bold; }

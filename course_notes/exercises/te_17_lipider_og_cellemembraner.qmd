@@ -319,7 +319,7 @@ Hvorfor findes 3 kDa-fragmentet og dipeptidet i interfasen mellem hexanfasen og 
 \
 ![](media/image87.png){width="5.2647058180227475in" height="4.072103018372704in"}
 
-```sh
+```default
 ![](media/image88.png){width="5.617646544181977in" height="4.956792432195975in"}
 ```
 Aminosyresekvensen af CNBr-fragmentet og dipeptidet kan ses i Tabel 1 nedenfor mens sammensætningen af fragmenterne er vist i Tabel 2. Begge fragmenter indeholder et komplekst glykolipid og udover komponenterne listet i tabellerne indeholder fragmenterne også glycerol og phosphat. Glykosamine var desuden på formen N-acetyl glukosamine.

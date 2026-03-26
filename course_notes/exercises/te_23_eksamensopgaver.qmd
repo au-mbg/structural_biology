@@ -130,7 +130,7 @@ Nedenfor er vist et udsnit af sekvensen for pro-furin. For at bestemme kløvning
 :::
 
 
-```txt
+```default
                       30         40         50
 **pro-furin** 27 -- QKVF TNTWAVRIPG GPAVANSVAR
 

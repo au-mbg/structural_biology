@@ -88,7 +88,7 @@ På figuren for alle aminosyrer er der tre områder med høj forekomst af aminos
 
 Nedenfor er vist et Cα-diagram for en struktur farvekodet efter de sædvanlige konventioner. Strukturen indeholder en β-plade bestående af fire β-kæder og proteinet har følgende sekvens:
 
-```
+```default
 HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 ```
 
@@ -126,7 +126,7 @@ Er β-kæderne parallelle eller anti-parallelle?
 
 ## Opgave 4. Cartoons
 
-```{=css}
+```default
 #app-1MBN {
   width: 40%;
 }
@@ -316,7 +316,7 @@ Skriv et nyt script, der laver en visning af samme figur som før, men m
 
 **1.**
 
-```
+```default
 select sidechains , byres eftu within 4.0 of nucleotide 
 ```
 

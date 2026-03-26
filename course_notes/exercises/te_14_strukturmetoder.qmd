@@ -132,21 +132,21 @@ For hvert scenarie nedenfor skal du:
 
 **Scenarie 1: Lægemiddeludvikling mod en lille, stabil protease**
 
-```sh
+```default
 Et medicinalfirma vil udvikle en ny hæmmer mod en viral protease. Proteinet er relativt lille (35 kDa), meget stabilt og kan produceres i store mængder. Målet er at opnå en struktur med den højest mulige opløsning for at kunne se præcis, hvordan lægemiddelkandidaten binder i det aktive site, inklusiv placeringen af enkelte vandmolekyler, der medierer interaktionen.
 
 *Hvilken metode vil du anbefale og hvorfor?*
 ```
 **Scenarie 2: Undersøgelse af et stort, dynamisk maskineri**
 
-```sh
+```default
 En forskergruppe vil bestemme strukturen af det humane spliceosom (en kæmpe samling af proteiner og RNA på over 1.5 MDa), mens det aktivt splejser et stykke pre-mRNA. Komplekset er kendt for at være meget fleksibelt og eksistere i adskillige forskellige konformationelle tilstande under processen. Det er ekstremt svært at rense komplekset i en helt homogen tilstand.
 
 *Hvilken metode vil du anbefale og hvorfor?*
 ```
 **Scenarie 3: Struktur af et membranprotein i sin native membran**
 
-```sh
+```default
 Du vil forstå, hvordan en ionkanal fungerer direkte i cellemembranen, omgivet af lipider og andre membranproteiner. Du er interesseret i at se, hvordan proteinets struktur ser ud *in situ* (på sin naturlige plads i cellen), ikke som et isoleret, oprenset protein.
 
 *Hvilken metode (eller variation af en metode) vil du anbefale og hvorfor?*

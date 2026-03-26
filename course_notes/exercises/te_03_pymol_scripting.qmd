@@ -339,7 +339,7 @@ select Phe, ////Phe
 
 **12.** Log fra PyMOL:
 
-```
+```default
 PyMOL>hide all
 PyMOL>show cartoon, 1BL8
 PyMOL>color limegreen, 1BL8
@@ -379,13 +379,13 @@ Disse kan kombineres med de boolske operatorer OR, AND og NOT, hvor OR giver for
 
 Start PyMOL og hent strukturen af Streptomyces K+-kanalen i 1BL8. Lav en selektion af kæde A, som vi gjorde i opgave 1,\
 
-```
+```default
 select chainA, chain A
 ```
 
 Lav en anden selection med Trp87 i kæde D vha. AND-operatoren:\
 
-```
+```default
 select D87, chain D and resi 87
 ```
 
@@ -393,7 +393,7 @@ Bemærk at "chain D" vælger alle atomer i kæde D mens `resi 87` vælger alle a
 \
 Husk som altid at tjekke at du får det forventede antal atomer. PyMOL skriver,\
 
-```
+```default
 Selector: selection `D87` defined with 14 atoms.
 ```
 
@@ -403,7 +403,7 @@ Selector: selection `D87` defined with 14 atoms.
 
 Mange begyndere bliver ofte usikre på om de skal bruge AND eller OR. Hvad ville resultatet være ved at skrive,\
 
-```
+```default
 select D87, chain D or resi 87
 ```
 
@@ -424,13 +424,13 @@ På samme måde kan man vælge atomer efter navn (se forrige opgave) med "name" 
 
 Foreningsmængde-operatoren OR benyttes når man skal vælge mere end én ting, f.eks. vælges både kæde A og B således,
 
-```
+```default
 select chainsAB, chain A or chain B
 ```
 
 Skal man kombinere AND or OR bliver det vigtigt at benytte parenteser, f.eks. vil udsagnet\
 
-```
+```default
 select my_res, (chain A and resi 87) or (chain B and resi 110-120)
 ```
 
@@ -454,7 +454,7 @@ Lav en selektion, der indeholder hele den lange helix i alle kæder og farv dem 
 
 Hvis man vil vælge det hele, men undlade en lille del, kan negationsoperatoren NOT være nyttig. F.eks. vil,\
 
-```
+```default
 select noNterm, 1BL8 and not resi 1-30
 ```
 
@@ -476,7 +476,7 @@ Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/
 
 **3.**  
 
-```
+```default
 select resiB110-120, chain B and resi 110-120\
 
 select chainD, chain D
@@ -494,7 +494,7 @@ select Phe, resn Phe
 
 **5.**
 
-```
+```default
 select ResAB1030, (chain A or chain B) and resi 10-30
 select A87CaB86Ca, (chain A or chain B) and (resi 87 and name CA)
 select ACysBMet, (chain A and resn cys) or (chain B and resi Met)
@@ -502,14 +502,14 @@ select ACysBMet, (chain A and resn cys) or (chain B and resi Met)
 
 **6.**  Cirka residues 23-51:
 
-```
+```default
 select helix, resi 23-51\
 color red, helix
 ```
 
 **7.**  
 
-```
+```default
 hide all
 show ribbon
 select longhelix, resi 24-50
@@ -518,7 +518,7 @@ color red, longhelix
 
 **8.**  
 
-```
+```default
 select notAcys, (chain A and not resn cys)
 ```
 
@@ -552,7 +552,7 @@ Opret et nyt script i din editor og gem det som `k-channel.pml`.
 ### Initialisér scriptet
 
 Start scriptet med at reinitialisere. Dette er rart, da man næsten altid kører scriptet mange gange under udviklingen og gerne vil have en "ren tavle" uden at genstarte PyMOL:
-```
+```default
 reinitialize
 ```
 
@@ -560,7 +560,7 @@ reinitialize
 
 Skriv nu kommandoen til at hente PDB-filen:
 
-```
+```default
 fetch 1BL8, kchannel, async=0
 ```
 
@@ -570,7 +570,7 @@ Her vælger vi at omdøbe objektet med det samme, så det hedder "kchannel` i st
 
 Vi ved at PDB-filen kommer ind som cartoon som standard, så lad os fjerne det hele, så vi kan starte på en frisk:
 
-```
+```default
 hide all
 ```
 
@@ -582,7 +582,7 @@ Skriv kommandoer til oprettelse af selektioner for hver kæde kaldet "chainA`, `
 
 Skriv kommandoer til at farve kæderne i forskellige farver vha. selektionerne, hertil benyttes kommandoen `color`, f.eks. vil
 
-```
+```default
 color tv_blue, my_selection
 ```
 
@@ -795,7 +795,7 @@ select camphor, resn CAM
 
 Vi vil også gerne have en selektion med alle de sidekæder, der interagerer med substratet, hvilket kan ses af figuren fra lærebogen:
 
-```
+```default
 select activesite, resi 87+96+297+247+244+295
 ```
 
@@ -803,7 +803,7 @@ select activesite, resi 87+96+297+247+244+295
 
 Nu viser vi alle tre selektioner som sticks:
 
-```
+```default
 show sticks, heme or camphor or activesite
 ```
 
@@ -817,7 +817,7 @@ Klik på et par af de udvalgte aminosyrerester for at forsikre dig at nummererin
 
 Kig nærmere på det aktive site, der er helt blåt. Bemærk at udover sidekæderne i det aktive site vises også hver aminosyres hovedkæde, hvilket vi ikke ønsker, da det forstyrrer når kun sidekæderne interagerer. For at fjerne disse må vi tilpasse udtrykket for activesite-selektionen. Ret derfor linjen ovenfor startende med `select` i dit script til følgende.
 
-```
+```default
 select activesite, resi 87+96+297+247+244+295 and (sidechain or name CA)
 ```
 
@@ -829,7 +829,7 @@ Kør scriptet igen og tjek at alt fungerer som ønsket nu.
 
 Nu vil vi gerne kigge på interaktioner, men de er lidt svære at se når alle atomer er blå. Vi kan dog ændre farverne for hæme og camphor samt benytte utility-funktionen CNC (Color Not Carbon), der farver alle atomer (pånær carbon) efter almindelige atomfarver. Den ligger i util-modulet og skal derfor kaldes på denne måde:
 
-```
+```default
 color palegreen, camphor
 color firebrick, heme
 util.cnc
@@ -974,7 +974,7 @@ Brug dit script til at analysere interaktionerne mellem lysozym og de to substra
 
 **2.**  Eksempel på script:
 
-```
+```default
 reinitialize
 
 fetch 148L, async=0

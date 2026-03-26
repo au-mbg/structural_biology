@@ -10,7 +10,7 @@ title: "PyMOL 3"
 
 3.  Når du er i mappen 'BMSF', skal du indsætte kommandoen i Terminalvinduet og trykke på Enter. Du vil blive bedt om at angive enten din brugeradgangskode eller tilladelser til de installerede apps flere gange.
 
-```sh
+```default
 pixi init --platform osx-64 -c conda-forge -c anaconda -c schrodinger && pixi config set --local run-post-link-scripts insecure && pixi add pyqt "pymol-bundle=3.1" "vtk-m=1.8"
 ```
 
@@ -22,13 +22,13 @@ pixi init --platform osx-64 -c conda-forge -c anaconda -c schrodinger && pixi co
 
 3.  Når du er i mappen 'BMSF', skal du indsætte kommandoen i PowerShell-vinduet og trykke på Enter. Du vil blive bedt flere gange om at tillade appen at foretage ændringer på din computer.
 
-```sh
+```default
 pixi init -c conda-forge -c anaconda -c schrodinger ; pixi config set --local run-post-link-scripts insecure ; pixi add pyqt "pymol-bundle=3.1" "vtk-m=1.8"
 ```
 
 For at køre PyMOL i din BMSF-mappe skal du bruge denne kommando:
 
-```sh
+```default
 pixi run pymol
 ```
 

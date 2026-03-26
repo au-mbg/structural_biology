@@ -100,7 +100,7 @@ Dette setup repræsenterer et godt setup til at arbejde med scripting i PyMOL, d
 
 Kopier følgende script ind i Visual Studio Code editoren:
 
-```sh
+```default
 # MY first PyMOL script
 
 reinitialize

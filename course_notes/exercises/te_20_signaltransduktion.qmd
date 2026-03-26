@@ -86,7 +86,7 @@ Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kald
 
 **4.**  Chitin liganden (sukkermolekylet) genkendes specifikt via mange hydrogen bindinger fra både sidekæder og hovedkæden. Vandmolekyler i interface er også involveret i bindingen - eksempelvis vanmolekylerne på position: 1052+1072 (+flere, se script)
 
-```sh
+```default
 ![](media/image99.png){width="3.3348665791776027in" height="3.1793186789151355in"}.
 ```
 **5.**  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM2 dog er der et par sidekæder (Asp143) som sterisk clasher med liganden. ![](media/image100.png){width="2.716385608048994in" height="2.844673009623797in"}

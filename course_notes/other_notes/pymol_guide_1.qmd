@@ -3,7 +3,7 @@ title: "Biomolecular visualization with PyMOL 3"
 author: Ebbe S. Andersen & Johan N. Vinther
 ---
 
-```{=html}
+```default
 <style>
   .top-menu { color: #e21cb1; font-weight: bold; }
   .display-panel { color: #e6c01dff; font-weight: bold; }

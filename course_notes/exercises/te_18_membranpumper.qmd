@@ -31,7 +31,7 @@ De såkaldte `fast twitch`-muskelceller fra kaniner indeholder store mængder af
 
 Forklar hvorledes modningen af SERCA må forventes at forløbe for at lokalisere pumpen i den korrekte membran
 
-```sh
+```default
 (hint: Figur 30.34 i Berg).
 ```
 Nedenfor vises et hydropatiplot for SERCA.

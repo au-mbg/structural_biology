@@ -68,7 +68,7 @@ Svar: Der er 3 klasser i CATH klassifikation (alpha, beta, alpha-beta), men i SC
 
 Det vides at Protein X er N-glykosyleret. Samtlige pentapeptid-fragmenter i proteinets sekvens med asparagin i den centrale position er vist nedenfor.
 
-```sh
+```default
 1\. PWNLE 8. VINEA
 
 2\. FENVP 9. TPNLV

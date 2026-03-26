@@ -264,7 +264,7 @@ Skriv en ny funktion til PyMOL, count_amino_acid(amino_acid), der tæller, hvor 
 
 Opgaven kan f.eks. løses således:
 
-```python
+```default
 from pymol import cmd
 
 @cmd.extend

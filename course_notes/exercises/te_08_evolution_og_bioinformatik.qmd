@@ -36,7 +36,7 @@ Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra [e-RNA.org](htt
 
 Vi skal nu undersøge de tRNA sekvenser der adskiller sig. Følgende tRNA-sekvenser er downloadet fra Rfam: 
 
-```
+```default
 >AB017063.1/58819-58900
 GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU--GCCCG-CGCAGGUUCGAAUCCUGCCGUUCACG
 >AB027572.1/4261-4342
@@ -54,7 +54,7 @@ Prøv at folde dem i [**RNAalifold server**](http://rna.tbi.univie.ac.at/cgi-bin
 Én ting der her er værd at bemærke, er at sekvensen, der vises i sekundærstrukturen, er et gennemsnit af de tre alignede, hvor den mest forekomne base typisk er den der vises.\
 Dette er også grunden til at der ses nogle atypiske basepar (f.eks. C:A, G:G og C:C), men se bort fra det.
 
-```
+```default
 >seq1 GUGGACGUGCCGGAGU-GGUU-AUCGGGCAUGACUAGAAAUCAUGUGGGC-UUU--GCCCGCGCAGGUUCGAAUCCUGCCGUUCACG-
 >seq2 GGGUCGAUGCCCGAGU-GGUUAAUGGGGACGGACUGUAAAUUCGUUGAC--AAU---GUCUACGCUGGUUCAAAUCCAGCUCGGCCCA
 >seq3 GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCGUGCCGGUUCAAGUCCGGCCCUCGGCA-
@@ -104,7 +104,7 @@ Hvor meget RNA skal du have i gram hvis biblioteket skal have mindst et molekyle
 
 Efter ti runder af selektion og amplifikation blev biblioteket sekventeret og der blev fundet flere forskellige familier af sekvenser med ligaseaktivitet. En af familierne (klasse I), der havde god ligeringsaktivitet, er vist herunder som en sekvensaligment. 
 
-```
+```default
 >b1-10
 GGAACACUAUCCGACUGGCACCGUAGAAUACAAAUGUGCCCUCAGAGCUUGGGAAGAUCCUUGCAGGAUCCAGGGGAGGCACCCCCCGGUGGCUUUAACGCCAACGUUCUCAACAAUAGUGGA---
 >b1-105
@@ -161,7 +161,7 @@ Active site for RNA polymerase proteinet (Figur C) ligner meget active site for 
 
 Hæmoglobin alpha (HGA) og Myoglobin (MYG) fra menneske og Leghæmoglobin-1 (LHG) fra blomsten [**Lupin**](https://en.wikipedia.org/wiki/Lupinus) er fremhævet som eksempel i Berg `Biochemistry`, udgave 10, kapitel 10. Følgende sekvenser er hentet fra UniProt i fasta-format.  
 
-```
+```default
 >HGA
 VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAV
 AHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKY
@@ -223,7 +223,7 @@ Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare s
 
 ClustalO output:
 
-```
+```default
 CLUSTAL O(1.2.4) multiple sequence alignment
 
 LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSF---LKGSSEVPQN 57
@@ -243,7 +243,7 @@ MYG QVLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG-------- 154
 ```
 MUSCLE output:
 
-```
+```default
 CLUSTAL multiple sequence alignment by MUSCLE (3.8)
 
 LHG MGVLTDVQVALVKSSFEEFNANIPKNTHRFFTLVLEIAPGAKDLFSFLK--GSSEVPQNN
@@ -263,7 +263,7 @@ MYG VLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG
 ```
 ClustalO identitetsmatrix:
 
-```
+```default
 1: LHG 100.00 19.84 18.71
 2: HGA 19.84 100.00 26.24
 3: MYG 18.71 26.24 100.00
@@ -271,7 +271,7 @@ ClustalO identitetsmatrix:
 
 MUSCLE identitetsmatrix:
 
-```
+```default
 1: LHG 100.00 15.71 17.57
 2: HGA 15.71 100.00 26.95
 3: MYG 17.57 26.95 100.00
@@ -333,7 +333,7 @@ I denne opgave bruger vi alignment af Hæmoglobin, Myoglobin og Leghæmoglobin 
 
 - Åben nu PyMOL, navigér til colCons mappen, sæt PyMOL-parametre, og aktivér colCons.py scriptet:
 
-```sh
+```default
 reinitialize
 cd [inset folder path]
 
@@ -345,7 +345,7 @@ run colCons.py
 
 - Hent nu Myoglobin og brug colCons til at farvelægge sekvensbevarelse i "rainbow" farveskala fra blå (sat til 50% sekvensbevarelse) til rød (sat til 100% sekvensbevarelse) ihht. globin-aln.fasta:
 
-```sh
+```default
 fetch 1mbd
 color_cons('1mbd','globin-aln-fasta.txt',1,1,0.5,1.0,'rain','yellow','red','BLOSUM62',True)
 ```
@@ -363,7 +363,7 @@ Hvordan er aminosyrer på overfladen af myoglobin bevaret? Hvordan ser bevarels
 
 - Åben nu alle globinerne og farvelæg dem med colCons:
 
-```sh
+```default
 reinit
 fetch 1hbb 1gdj 1mbd, async=0
 remove solvent

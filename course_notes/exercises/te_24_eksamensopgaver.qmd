@@ -50,9 +50,8 @@ Restriktionsendonukleaser (R), også kaldet restriktionsenzymer, udgør en del a
 
 R-enzymet EcoRI fra bakterien *Escherichia coli* er et af de mest kendte og anvendte restriktionsenzymer indenfor bioteknologi, da det både er meget aktivt og specifikt. Det genkender DNA-sekvensen GAATTC og klipper dsDNA som vist med grønt nedenfor:
 
-```sh
 ![](media/image147.png)
-```
+
 **Spørgsmål 2.** Forklar hvordan genkendelsessekvensen og kløvningsstedet for EcoRI adskiller sig fra EcoRV og hvilket fælles princip, der gør sig gældende for de to sekvenser. Hvordan afspejles dette princip i R-enzymernes struktur?
 
 **Svar:** EcoRV genkender GATATC og kløver efter GA, hvor EcoRI genkender GAATTC og kløver efter G. Begge sekvenser er palindromiske, hvilket er vigtigt fordi R-enzymerne er homodimerer, der genkender symmetrisk DNA.
