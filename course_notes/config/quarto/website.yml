@@ -72,6 +72,7 @@ website:
 
 filters:
   - config/quarto/filters/solution-callout.lua
+  - config/quarto/filters/collapse-callouts.lua
 
 format:
   html:
