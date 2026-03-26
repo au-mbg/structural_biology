@@ -20,8 +20,8 @@ Hvor mange mol eddikesyre og natriumacetat er der i 2 L af bufferen?
 
 ### Beregn gram af komponenterne
 
-Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?\
-\
+Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?
+
 Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
 
 
@@ -37,26 +37,29 @@ Denne opgave er repetition af Berg Biochemistry kapitel 2.
 
 Hvilke aminosyresidekæder kan almindeligvis fraspalte eller optage en proton under biologiske forhold og hvad er deres pKa-værdier?
 
+::: {.solution-callout}
+De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.
+
+Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.
+
+Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvor i mod den mest basiske aminosyre, arginin, først deprotonerer ved et højere pH (pKa 12.5). 
+:::
+
 ### Bestem sidekædeladning over og under pKa
 
 Hvad er ladningen af en aminosyres sidekæde ved pH-værdier hhv. under og over denne pKa?
+
+::: {.solution-callout}
+Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
+:::
 
 ### Diskuter variation af aminosyre pKa
 
 Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa ændres?
 
-
 ::: {.solution-callout}
 
-**1.** De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.
-
-Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.
-
-Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvor i mod den mest basiske aminosyre, arginin, først deprotonerer ved et højere pH (pKa 12.5). 
-
-**2.**  Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
-
-**3.** pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
+pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
 :::
 
 ## Opgave 3. Glutathione
@@ -67,25 +70,47 @@ Glutathione (GSH) er en antioxidant i planter, dyr, svampe og visse bakterier og
 
 Glutathion har følgende struktur:
 
-![glutathione](media/image3.png){width="6.263889982502187in" height="1.1145833333333333in"}
+![Glutathione](media/image3.png){width="80%" .lightbox fig-align="center"}
 
 Hvilke af følgende udsagn om molekylet er korrekte?
 
 ### Vurder tilstedeværelse af α-aminogruppe
 
-Det indeholder en α-aminogruppe.
+Det indeholder en $\alpha$-aminogruppe.
+
+::: {.solution-callout}
+
+Korrekt, denne ses øverst til venstre i strukturen.
+
+:::
 
 ### Vurder atypisk peptidbinding
 
 Der findes en kobling mellem to aminosyrer, der adskiller sig fra den almindelige peptidbinding.
 
+::: {.solution-callout}
+
+Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
+:::
+
 ### Vurder let oxidérbar gruppe
 
 Der findes en let oxidérbar gruppe.
 
+::: {.solution-callout}
+
+-CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
+
+:::
+
 ### Vurder tilstedeværelse af sekundær aminogruppe
 
 Der findes to sekundære aminogrupper.
+
+::: {.solution-callout}
+
+Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
+:::
 
 ### Vurder alternativ nomenklatur
 
@@ -96,15 +121,7 @@ Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 
 
 ::: {.solution-callout}
 
-**1.** Korrekt, denne ses øverst til venstre i strukturen.
-
-**2.** Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
-
-**3.** Korrekt, -CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
-
-**4.** Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
-
-**5.** Forkert, se svaret til 2.
+Se svaret til 2.
 :::
 
 ## Opgave 4. Bereging af enzymkinetik
@@ -113,9 +130,9 @@ Denne opgave er repetition af Berg Biochemistry kapitel 5.
 
 Hydrolysen af pyrofosfat til orthofosfat driver biosyntetiske reaktioner såsom DNA-syntese. Denne hydrolytiske reaktion katalyseres i E. coli af en pyrofosfatase, der har en masse på 120 kDa og består af seks identiske underenheder. For dette enzym defineres en aktivitetsenhed som den mængde enzym, der hydrolyserer 10 μmol pyrofosfat på 15 minutter ved 37 °C under standard assaybetingelser. Det oprensede enzym har et 𝑉max på 2800 enheder pr. milligram enzym.
 
-### Beregn Vmax i mikromol per sekund
+### Beregn $V_\mathrm{max}$ i mikromol per sekund
 
-Hvor mange mikromol substrat hydrolyseres pr. sekund pr. milligram enzym, når substratkoncentrationen er meget større end 𝐾M? Med andre ord, hvad er 𝑉max for den katalyserede reaktion? Angiv mængde hydrolyseret substrat i μmol.
+Hvor mange mikromol substrat hydrolyseres pr. sekund pr. milligram enzym, når substratkoncentrationen er meget større end $K_M$? Med andre ord, hvad er $V_\mathrm{max}$ for den katalyserede reaktion? Angiv mængde hydrolyseret substrat i μmol.
 
 ### Beregn antal active sites per milligram
 
@@ -123,7 +140,7 @@ Hvor mange mikromol active sites er der i 1 mg enzym? Antag, at hver underenhed 
 
 ### Beregn enzymets omsætningstal
 
-Hvad er enzymets omsætningstal i s^-1^?
+Hvad er enzymets omsætningstal i $s^{-1}$?
 
 ::: {.solution-callout}
 
@@ -133,7 +150,13 @@ Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achi
 
 ## Opgave 5. Analyse af Chymotrypsin i PyMOL
 
-I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, som beskrives på s. 223-226 i Berg Biochemistry 10. udgave. Åbn filen chymotrypsin.pse, som var med i TØ2 mappen og brug den til besvarelse af følgende spørgsmål. Pse-filer er PyMOL session filer, som du kan dobbeltklikke på for at åbne filen i PyMOL såfremt programmet er installeret.
+[TODO: Indsæt den rigtige pse fil.]{style="color:red"}
+
+<a href="../files/dummy_file.pse" download="chemotrypsin.pse">
+  📥 Click to download dataset.
+</a>
+
+I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, som beskrives på s. 223-226 i Berg Biochemistry 10. udgave. Åbn filen `chymotrypsin.pse`, pse-filer er PyMOL session filer, som du kan dobbeltklikke på for at åbne filen i PyMOL såfremt programmet er installeret.
 
 ### Lokalisér β-barrel domænerne
 

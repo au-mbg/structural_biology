@@ -3,7 +3,7 @@
 Content is written in Quarto flavoured markdown `.qmd`-files. The basic syntax 
 is regular Markdown a guide for which can be found [here](https://quarto.org/docs/authoring/markdown-basics.html). 
 
-These files are pure text, so what you see is exactly what the document contains, 
+These files are plain text, so what you see is exactly what the document contains, 
 unlike `.pdf` or `.docx` which carry various metadata and the viewing experience is 
 program and platform specific. Additionally, version control is much easier for 
 raw text rather than more complex formats. 
@@ -106,4 +106,45 @@ To wrap text around a floating figure it can be wrapped in float div, like below
 :::
 ```
 
+### Code 
+
+Markdown supports both inline code and code blocks. Inline code is written using single-backticks ``` `code` ```
+
+Code blocks are created using triple backticks
+
+````
+```
+Some code
+```
+````
+
+Additionally, Quarto markdown can highlight a number of languages, for code blocks this is done by specifying the language 
+
+```` 
+```python
+def my_func(x):
+    return x
+```
+````
+Will be rendered with Python highlighting. The majority of code shown in these course notes are PyMOL which doesn't have 
+a proper highligther, however it is still useful to write them using the default highlighter, like so 
+
+````
+```default
+# MY first PyMOL script
+
+reinitialize
+
+fetch 1BL8
+```
+````
+
+For larger pieces of code, e.g. in solutions it's beneficial to include them directly from a file as this makes it easier to ensure
+that the code is valid 
+````
+```default 
+{{< include pymol_scripts/script_te1_e2.pml >}}
+```
+````
+Here the path is relative to the current file, so the above path works for all the `exercises/te_*.qmd` files. 
 

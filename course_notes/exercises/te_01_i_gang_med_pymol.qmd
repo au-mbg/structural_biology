@@ -101,31 +101,7 @@ Dette setup repræsenterer et godt setup til at arbejde med scripting i PyMOL, d
 Kopier følgende script ind i Visual Studio Code editoren:
 
 ```default
-# MY first PyMOL script
-
-reinitialize
-
-fetch 1BL8
-
-# Show it nicely
-
-orient
-
-rotate y, 90
-
-# Color the chains
-
-color red, chain A
-
-color green, chain B
-
-color blue, chain C
-
-color cyan, chain D
-
-# Color the ions
-
-color purple, resn K
+{{< include pymol_scripts/script_te1_e2.pml >}}
 ```
 
 Gem scriptet som `my_script.pml` i BMSF-folderen, hvor du startede PyMOL.

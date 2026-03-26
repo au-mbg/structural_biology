@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - files/
 
 metadata-files:
   - config/quarto/website.yml
