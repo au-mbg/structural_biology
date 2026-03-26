@@ -16,50 +16,77 @@ Til højre på siden er der information om sekvenslængde og molekylevægt. Desu
 
 Hvor mange aminosyrerester er der i sekvensen?
 
+::: {.solution-callout}
+245 aminosyrer.
+:::
+
 ### Find molekylvægt af chymotrypsinogen
 
 Hvad er molekylvægten ($M_w$) for den viste sekvens?
 
 Den viste sekvens er for chymotrypsinogen, som efter aktivering ved proteolytisk kløvning danner det aktive α-chymotrypsin (se Stryer, Fig. 10.18, s. 324).
 
-### Find molekylvægt af α-chymotrypsin
+::: {.callout-tip}
 
-Hvad er Mw for α-chymotrypsin?
+Her er det nødvendigt at oprette et "fragment", der dækker hele chymotrypsinogens sekvens nederst på ProtParam-siden.
 
-(Hint: Brug "ProtParam" fra dropdown-menuen i "Sequence"-afsnittet af UniProt til at beregne molekylvægten for hver af de tre kæder i aktivt α-chymotrypsin.)
-
-ProtParam beregner også aminosyresammensætning for sekvensen.
-
-### Find de tre største aminosyreafvigelser
-
-Hvad er de tre største afvigelser mellem chymotrypsinogens aminosyresammensætning og sammensætningen for gennemsnittet af proteiner ([**https://web.expasy.org/docs/relnotes/relstat.html**](https://web.expasy.org/docs/relnotes/relstat.html) nederst på siden)? Kan nogle af disse forskelle forklares udfra dit kendskab til enzymet?
-
-(Hint. Her er det nødvendigt at oprette et "fragment", der dækker hele chymotrypsinogens sekvens nederst på ProtParam-siden).
+:::
 
 ### Tæl helixer i α-chymotrypsin
 
 Hvor mange helixer er der i α-Chymotrypsin?
 
-(Hint. Klik på "Structure" til venstre på UniProt-siden)
-
+::: {.callout-tip}
+Klik på "Structure" til venstre på UniProt-siden
+:::
 
 ::: {.solution-callout}
-
-**1.**  245 aminosyrer.
-
 **2.**  25666 Da (25,7 kDa).
+:::
 
-**3.**  
+
+### Find molekylvægt af α-chymotrypsin
+
+Hvad er $M_w$ for α-chymotrypsin?
+
+::: {.callout-tip}
+Brug "ProtParam" fra dropdown-menuen i "Sequence"-afsnittet af UniProt til at beregne molekylvægten for hver af de tre kæder i aktivt α-chymotrypsin.
+
+ProtParam beregner også aminosyresammensætning for sekvensen.
+:::
+
+::: {.solution-callout}
 Kæde A, resterne 1-13, Mw 1253,52 Da\
 Kæde B, resterne 16-146, Mw 13923,63 Da\
 Kæde C, resterne 149-245, Mw 10066,52 Da\
 I alt = 25243,67 Da (25,2 kDa)
+:::
 
-**4.**  
+
+### Find de tre største aminosyreafvigelser
+
+Hvad er de tre største afvigelser mellem chymotrypsinogens aminosyresammensætning og sammensætningen for gennemsnittet af proteiner ([**https://web.expasy.org/docs/relnotes/relstat.html**](https://web.expasy.org/docs/relnotes/relstat.html) nederst på siden)? Kan nogle af disse forskelle forklares udfra dit kendskab til enzymet?
+
+::: {.callout-tip}
+Her er det nødvendigt at oprette et "fragment", der dækker hele chymotrypsinogens sekvens nederst på ProtParam-siden.
+:::
+
+::: {.solution-callout}
 For fragmentet 1-245: Der er et lavt antal af Arg (1.6% mod 5.5%), stort antal Cys (4.1% mod 1.3%), lavt antal Glu (2.0% mod 6.7%), lavt antal Met (0.8% mod 2.4%), højt antal Ser (11.4% mod 6.6%), højt antal Thr (9,4% mod 5.3%).\
 Højt antal Cys skyldes at det er et ekstracellulært, kløvet enzym, der holdes sammen af disulphidbroer. De andre kan være svære at forklare, men der er også et ret lille antal aminosyrer at vurdere det på.
+:::
 
-**5.**  Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
+### Tæl helixer i α-chymotrypsin
+
+Hvor mange helixer er der i α-Chymotrypsin?
+
+::: {.callout-tip}
+Klik på "Structure" til venstre på UniProt-siden
+:::
+
+::: {.solution-callout}
+
+Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
 :::
 
 ## Opgave 2. Ramachandran-plottet
@@ -70,18 +97,21 @@ På figuren nedenfor er vist fordelingen af phi $\phi$ og psi $\psi$ vinkler for
 
 Hvilke strukturelle egenskaber for Pro og Gly forklarer deres placeringer i Ramachandran-plottet? 
 
+::: {.solution-callout}
+
+Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. Med andre ord er mængden af mulige kombinationer af ψ- og φ-vinkler væsentlige større. Prolins sidekæde er ringsluttet med hovedkæden og dets φ-vinkel er derfor bundet omkring -65°.
+
+:::
+
 ### Identificer tre områder med høj forekomst
 
 På figuren for alle aminosyrer er der tre områder med høj forekomst af aminosyrerester. Hvor finder man typisk disse områder i proteiners sekundærstruktur
 
-![fig1-6-Williamson-adapted](media/image7.png){width="80%" fig-align="center" .lightbox}
-
+![fig1-6-Williamson-adapted](media/image7.png){width="100%" fig-align="center" .lightbox}
 
 ::: {.solution-callout}
 
-**1.**  Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. Med andre ord er mængden af mulige kombinationer af ψ- og φ-vinkler væsentlige større. Prolins sidekæde er ringsluttet med hovedkæden og dets φ-vinkel er derfor bundet omkring -65°.
-
-**2.**  Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
+Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
 :::
 
 ## Opgave 3. C-alpha diagram
@@ -92,56 +122,52 @@ Nedenfor er vist et Cα-diagram for en struktur farvekodet efter de sædvanlige 
 HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 ```
 
-![blade-ribbon](media/image8.png){width="80%" fig-align="center" .lightbox}
+![Cα-diagram](media/image8.png){width="80%" fig-align="center" .lightbox}
 
 ### Afmærk N- og C-terminus i diagrammet
 
 Afmærk positionen af N- og C-terminus og forklar hvordan dette kan ses.
 
+::: {.solution-callout}
+Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
+:::
+
 ### Afmærk de to valin-rester
 
 Afmærk positionen af de to valin-rester i sekvensen og forklar hvordan dette kan ses.
 
+::: {.solution-callout}
+De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er vist som α-carbon trace (ét `hak` for hver aminosyrerest) kan vi derfor tælle os frem og finde de to valinrester som hhv. 4. `hak` fra den blå N-terminus og 5. hak fra den røde C-terminus.
+:::
+
 ### Angiv β-kædernes position og retning
 
 Angiv den omtrentlige position af β-kæderne og deres retning. Forklar dit svar.
+
+::: {.solution-callout}
+Kæde 1: Rest 5-10
+Kæde 2: Rest 14-20
+Kæde 3: Rest 31-38
+Kæde 4: Rest 42-50
+:::
+
 
 ### Bestem β-kædernes parallelitet
 
 Er β-kæderne parallelle eller anti-parallelle?
 
 ::: {.solution-callout}
-
-**1.**  Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
-
-**2.**  De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er vist som α-carbon trace (ét `hak` for hver aminosyrerest) kan vi derfor tælle os frem og finde de to valinrester som hhv. 4. `hak` fra den blå N-terminus og 5. hak fra den røde C-terminus.
-
-**3.**  Kæde 1: Rest 5-10\
-    Kæde 2: Rest 14-20\
-    Kæde 3: Rest 31-38\
-    Kæde 4: Rest 42-50
-
-**4.**  Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
+Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
 :::
 
 ## Opgave 4. Cartoons
-
-```default
-#app-1MBN {
-  width: 40%;
-}
-```
+Strukturerne af proteinet myoglobin, et immunoglobulin Fab-fragment samt β-galactosidase er vist nedenfor som cartoons.
 
 {{< mol-rcsb 1MBN >}}
 
 {{< mol-rcsb 1IGT >}}
 
 {{< mol-rcsb 1DP0 >}}
-
-
-
-
-Strukturerne af proteinet myoglobin, et immunoglobulin Fab-fragment samt β-galactosidase er vist nedenfor som cartoons.
 
 ::: {#fig-elephants layout-ncol=3}
 
@@ -181,6 +207,10 @@ Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn 
 
 Tegn en *trans*-peptidbinding med korrekte bindingslængder (se Berg, 10. udgave, s. 44) i en fast målestok (f.eks. 1 Å : 2 cm). Brug 120° som bindingsvinkel mellem alle tre bindinger til C (carbonyl-kulstof) og N (amid-nitrogen), da begge er *sp^2^*-hybridiserede (dvs. det er plane grupper).
 
+::: {.solution-callout}
+![](media/image13.png){width="60%" fig-align="center" .lightbox}
+:::
+
 ### Tegn cis-peptidbinding med mål
 
 Gentag ovenstående øvelse for en *cis*-peptidbinding.
@@ -189,19 +219,16 @@ Gentag ovenstående øvelse for en *cis*-peptidbinding.
 
 Hvad er afstanden mellem de to Cα-atomer i et *trans*-peptid?
 
+::: {.solution-callout}
+~3.8 Å
+:::
+
 ### Mål Cα-afstand i cis-peptid
 
 Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
 ::: {.solution-callout}
-
-**1.**  ![](media/image13.png){width="5.761013779527559in" height="3.375165135608049in"}
-
-**2.**  \-
-
-**3.**  \~3.8 Å
-
-**4.**  \~2.8 Å
+~2.8 Å
 :::
 
 ## Opgave 6. Binding af guanine
@@ -214,9 +241,13 @@ Alle GDP-bindende proteiner indeholder et bestemt sekvensmotiv, Asn-Lys-X-Asp (N
 
 Hvilken aminosyrerest svarer til X i NKXD motivet i dette tilfælde?
 
+::: {.solution-callout}
+Cys137
+:::
+
 ### Analysér hydrogenbindinger til guanin
 
-Analysér hydrogenbindingerne mellem sidekæderne og guanin og udfyld tabellen
+Analysér hydrogenbindingerne mellem sidekæderne og guanin og udfyld en tabel som den vist nedenfor
 
 ------------------------------------------------------------------------------
 Aminosyrerest\      Atom\       GDP atom\                H-donor\
@@ -235,47 +266,54 @@ EF-Tu er specifik for binding af GDP og binder således hverken nukleotiderne AD
 
 ![](media/image15.png){width="80%" .lightbox fig-align="center"}
 
+::: {.solution-callout}
+Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
+
+------------------------------------------------------------------------------
+Aminosyrerest\    Atom\       GDP atom\        H-donor\
+(e.g. N135)       (e.g. Nζ)   (e.g. O3')       (p for protein, G for guanin)
+----------------- ----------- ---------------- -------------------------------
+ N135              Nδ          N7              p 
+
+ K136              Nζ          O4'             p
+
+ D138             Oδ1         N1/N2            G
+
+ D138             Oδ2         N1/N2            G
+------------------------------------------------------------------------------
+:::
+
 ### Forklar EF-Tu's nukleotidspecificitet
 
 Forklar hvordan denne specificitet opnås.
 
 En mutation af aspartat til asparagin i sekvensmotivet for guaninbinding medfører at det muterede protein binder XDP og ikke GDP.
 
+::: {.solution-callout}
+Adenine har hverken en ekstracyklisk N2-gruppe eller i stand til at donere en H-binding fra N1, så interaktionen med D138 er ikke favorabel.
+
+Xanthine har godt nok N1-gruppen fra guanine, men har til gengæld modsat polaritet (H-acceptor) idet N2 er udskiftet med O, så den er heller ikke favorabel.
+
+D138 udgør altså hele grundlaget for denne skelnen mellem nukleotider.
+:::
+
 ### Forklar mutantens ændrede specificitet
 
 Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
 ::: {.solution-callout}
-
-**1.**  Cys137
-
-**2.**  Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
-
-  ------------------------------------------------------------------------------
-  Aminosyrerest\    Atom\       GDP atom\        H-donor\
-  (e.g. N135)       (e.g. Nζ)   (e.g. O3')       (p for protein, G for guanin)
-  ----------------- ----------- ---------------- -------------------------------
-   N135              Nδ          N7              p 
-
-   K136              Nζ          O4'             p
-
-   D138             Oδ1         N1/N2             G
-
-  D138              Oδ2         N1/N2            G
-  ------------------------------------------------------------------------------
-
-**3.**  Adenine har hverken en ekstracyklisk N2-gruppe eller i stand til at donere en H-binding fra N1, så interaktionen med D138 er ikke favorabel.\
-    \
-    Xanthine har godt nok N1-gruppen fra guanine, men har til gengæld modsat polaritet (H-acceptor) idet N2 er udskiftet med O, så den er heller ikke favorabel.\
-    \
-    D138 udgør altså hele grundlaget for denne skelnen mellem nukleotider.
-
-**4.**  Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
+Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
 :::
 
 ## Opgave 7. Nukleotid binding
 
+[TODO: Indsæt den rigtige pml fil.]{style="color:red"}
+
 ***PyMOL-scripting opgave**: I denne opgave skal i bruge de kommandoer I allerede kender, men også lære kommandoen "distance".*
+
+<a href="../files/script_te4_e7.pml" download="Tu.pml">
+  📥 Click to download script.
+</a>
 
 I TØ4 mappen finder du PyMOL scriptet Elongerings Faktor Tu.pml til at lave en figur af GDP-binding til Elongerings Faktor Tu fra *E.coli* (PDB-ID: 1EFC).
 
@@ -290,6 +328,29 @@ select sidechains, byres eftu within 4.0 of nucleotide
 ### Forklar PyMOL select-kommandoen
 
 Forklar betydningen af de enkelte elementer i den pågældende linie. Hint: se [**https://pymolwiki.org/index.php/Select**](https://pymolwiki.org/index.php/Select) og [**https://pymolwiki.org/index.php/Selection_Algebra**](https://pymolwiki.org/index.php/Selection_Algebra)
+
+::: {.solution-callout}
+
+```default
+select sidechains , byres eftu within 4.0 of nucleotide 
+```
+
+`select` kommando til at definere en selektion
+
+`sidechains` er navnet på selektionen
+
+`,` er nødvendigt for at adskille navnet fra definitionen - pymol rapporterer fejl, hvis det mangler
+
+`byres` angiver, at vi ønsker at selektionen expanderet til hele aminosyrerester
+
+`eftu` er navnet på det objekt/selection vi vælger fra
+
+`within 4.0 of` vi vælger de atomer der ligger inden for 4.0 Å fra den selektion der angives efterfølgende
+
+`nucleotide` et objekt/selektion der blev defineret i linie 6 i scriptet.
+
+:::
+
 
 ---
 
@@ -311,60 +372,10 @@ Denne ville altså finde afstanden mellem alfa-carbon i aminosyrerest 13 i kæde
 
 Skriv et nyt script, der laver en visning af samme figur som før, men med GDPNP (en analog til GTP) i stedet for GDP og stadigvæk med angivelse af hydrogenbindinger. Hint: Der kan hentes meget inspiration i scriptet fra før. 
 
-
 ::: {.solution-callout}
 
-**1.**
-
 ```default
-select sidechains , byres eftu within 4.0 of nucleotide 
-```
-
-`select` kommando til at definere en selektion
-
-`sidechains` er navnet på selektionen
-
-`,` er nødvendigt for at adskille navnet fra definitionen - pymol rapporterer fejl, hvis det mangler
-
-`byres` angiver, at vi ønsker at selektionen expanderet til hele aminosyrerester
-
-`eftu` er navnet på det objekt/selection vi vælger fra
-
-`within 4.0 of` vi vælger de atomer der ligger inden for 4.0 Å fra den selektion der angives efterfølgende
-
-`nucleotide` et objekt/selektion der blev defineret i linie 6 i scriptet.
-
-**2.**
-
-```default
-reinitialize
-bg_color white
-fetch 1eft , async=0
-create eftu , /1eft//A                       
-hide everything
-
-select nucleotide , /eftu///GNP or /eftu///MG
-select sidechains , byres eftu within 4.0 of nucleotide
-show sticks , nucleotide sidechains
-color yellow , (nucleotide and name C\*)
-center nucleotide
-
-distance dist1 ,(nucleotide and name O6) , /eftu///174/OG
-distance dist2 ,(nucleotide and name N1) , /eftu///139/OD1
-distance dist3 ,(nucleotide and name N2) , /eftu///139/OD2
-distance dist4 ,(nucleotide and name N7) , /eftu///136/ND2
-distance dist5 ,(nucleotide and name O4') , /eftu///137/NZ
-
-
-color blue , dist\*
-
-set_view (\
-     0.191412523,   -0.859790862,   -0.473412633,\
-     0.693364501,   -0.222936183,    0.685232103,\
-    -0.694701493,   -0.459409922,    0.553474486,\
-     0.000000000,    0.000000000,  -64.049102783,\
-   105.326667786,    6.069516182,   37.496429443,\
-    21.348415375,  106.749801636,  -20.000000000 )
+{{< include pymol_scripts/script_te4_e7.pml >}}
 ```
 
 ![GDPNP-EFtu](media/image16.png){width="80%" .lightbox}
