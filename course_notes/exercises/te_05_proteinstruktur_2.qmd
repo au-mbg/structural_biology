@@ -10,15 +10,16 @@ Højtopløste strukturer i Protein Data Bank blev gennemsøgt for *cis*-peptidbi
 
 Baseret på ovenstående, hvor mange *cis *Xaa-Pro bindinger vil du i gennemsnit forvente at finde i hvert protein? Hvis mindre end én, hvor mange proteiner ville man skulle kigge i gennem før man fandt én *cis* Xaa-Pro?
 
+::: {.solution-callout}
+Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3. Derfor vil et protein med 270 aa indeholde 270 x 2.5\*10-3 eller ca. 0.7 af disse. Med andre ord, ca. 2/3 af alle proteiner vil forventes at indeholde én cis Xaa-Pro binding.
+:::
+
 ### Beregn andre cis-peptidbindingers frekvens
 
 Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
 
 ::: {.solution-callout}
-
-**1.**  Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3. Derfor vil et protein med 270 aa indeholde 270 x 2.5\*10-3 eller ca. 0.7 af disse. Med andre ord, ca. 2/3 af alle proteiner vil forventes at indeholde én cis Xaa-Pro binding.
-
-**2.**  Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x 0.952, hvis du fraregner prolinerne), så frekvensen per 270-aa protein er altså 2.9\*10-4 x 0.952 x 270 = 0.075 eller én cis-peptidbinding per 13 proteiner.
+Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x 0.952, hvis du fraregner prolinerne), så frekvensen per 270-aa protein er altså 2.9\*10-4 x 0.952 x 270 = 0.075 eller én cis-peptidbinding per 13 proteiner.
 
 Bonusinfo: I artiklen [(A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\])](https://www.sciencedirect.com/science/article/pii/S0022283698924597?via%3Dihub), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
 :::
@@ -43,43 +44,57 @@ Hvilken af de fire klasser indeholder flest domæner? Diskutér.
 
 Expandér klasserne og kig efter arkitekturer der betegnes som "barrel".
 
+::: {.solution-callout}
+Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest domæner. Det er uvidst hvorfor det forholder sig sådan, men man kan betragte det ud fra flere vinkler: Rent kombinatorisk giver det måske mening, at et stort domæne vil have lidt af hvert og måske er blandede αβ-domæner mere stabile? Endelig kan der være en bias i de eksperimentelle data hvis det f.eks. viser sig generelt at være lettere at krystallisere domæner med blandet αβ-indhold.
+:::
+
 ### Find barrel-arkitekturer i klasserne
 
 I hvor mange klasser og i hvilke klasser findes der barrel-arkitekturer?
+
+::: {.solution-callout}
+Barrels findes (måske overraskende) blandt både de rene α-domæner, de rene β-domæner men og også de blandede αβ-domæner.
+:::
 
 ### Find barrel-arkitekturen med flest domæner
 
 Hvilken barrel-arkitektur indeholder flest domæner? 
 
-<!-- -->
+::: {.solution-callout}
+Den klassiske β-barrel indeholder flest domæner (>20.000) efterfulgt af de blandede αβ-domæner (\~13.000) og de rene α-barrels (\~760 domæner).
+:::
 
 ### Beskriv klassisk β-barrel foldning
 
-Beskriv foldningen i den klassiske β-barrel.\
-Hint: Se figur 1.58 i Petsko & Ringe.
+Beskriv foldningen i den klassiske β-barrel.
+
+::: {.callout-tip}
+Se figur 1.58 i Petsko & Ringe.
+:::
+
+::: {.solution-callout}
+Den klassiske β-barrel består af en række β-kæder, der folder sammen så den første hydrogenbinder til den sidste og de dermed danner en tønde-struktur. β-kæderne er antiparallelle og kræver derfor ikke helixer ind i mellem.
+:::
 
 ### Sammenlign CATH:3.20.20 og CATH:2.40.10
 
 Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
 
 ::: {.solution-callout}
-
-**1.**  Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest domæner. Det er uvidst hvorfor det forholder sig sådan, men man kan betragte det ud fra flere vinkler: Rent kombinatorisk giver det måske mening, at et stort domæne vil have lidt af hvert og måske er blandede αβ-domæner mere stabile? Endelig kan der være en bias i de eksperimentelle data hvis det f.eks. viser sig generelt at være lettere at krystallisere domæner med blandet αβ-indhold.
-
-**2.**  Barrels findes (måske overraskende) blandt både de rene α-domæner, de rene β-domæner men og også de blandede αβ-domæner.
-
-**3.**  Den klassiske β-barrel indeholder flest domæner (>20.000) efterfulgt af de blandede αβ-domæner (\~13.000) og de rene α-barrels (\~760 domæner).
-
-**4.**  Den klassiske β-barrel består af en række β-kæder, der folder sammen så den første hydrogenbinder til den sidste og de dermed danner en tønde-struktur. β-kæderne er antiparallelle og kræver derfor ikke helixer ind i mellem.
-
-**5.**  CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
+CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
 :::
 
 ## Opgave 3. Proteinfoldning 
 
-I denne opgave skal vi bruge PyMOL til at kigge på strukturen af elongeringsfaktor EF-Tu.\
-\
-Kig på filen EF-Tu-folding.pml, som findes under denne uge på Brightspace. Nogle linier nede i scriptet vil du finde linjen; dss /1eft
+[TODO: Indsæt den rigtige pml fil.]{style="color:red"}
+
+<a href="../files/script_te5_e3.pml" download="EF-Tu-folding.pml">
+  📥 Click to download script.
+</a>
+
+I denne opgave skal vi bruge PyMOL til at kigge på strukturen af elongeringsfaktor EF-Tu.
+
+Kig på filen `EF-Tu-folding.pml`, nogle linier nede i scriptet vil du finde linjen; `dss /1eft`
 
 ### Undersøg dss-kommandoen
 
@@ -89,45 +104,56 @@ Copy/Paste scriptet fra EF-Tu-folding.pml ind i PyMOL.
 
 Tryk **F1** for at få et overblik over strukturen.
 
+::: {.solution-callout}
+> "dss defines secondary structure based on backbone geometry and hydrogen bonding patterns." - (PyMOLwiki)
+:::
+
 ### Tæl domæner i EF-Tu
 
 Hvor mange domæner består proteinet af? Forklar hvordan det ses.
+
+::: {.solution-callout}
+Strukturen indeholder 3 domæner, hvilket ses ved at de er individuelle, globulære enheder forbundet med en kort linker.
+:::
 
 ### Angiv foldningsklasse for hvert domæne
 
 Angiv foldningsklasse for hvert enkelt domæne.
 
+::: {.solution-callout}
+Der er to β-domæner (β-barrels i orange og gult) samt et blandet αβ-domæne (blåt/grønt).
+:::
+
 ### Tæl β-α-β-motiver i domæne 1
 
 Tryk **F2** for at undersøge domæne 1. Hvor mange β-α-β motiver består domæne 1 af?
+
+::: {.solution-callout}
+Domænet indeholder 3 β-α-β motiver, men i flere tilfælde er der ekstra indsatte helixer.
+:::
 
 ### Tæl β-hairpins i domæne 2
 
 Tryk **F3** for at undersøge domæne 2. Hvor mange β-hairpins findes der i domæne 2?
 
+::: {.solution-callout}
+Der er 2 β-hairpins, de andre β-strenge er ikke i hairpin-strukturer.
+:::
+
 ### Beskriv foldning af domæne 3
 
 Tryk **F4** for at undersøge domæne 3. Beskriv foldningen af domæne 3.
+
+::: {.solution-callout}
+Det indeholder en β-barrel.
+:::
 
 ### Identificer nukleotidbindende domæne
 
 Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
 ::: {.solution-callout}
-
-**1.**  "dss defines secondary structure based on backbone geometry and hydrogen bonding patterns." - (PyMOLwiki)
-
-**2.**  Strukturen indeholder 3 domæner, hvilket ses ved at de er individuelle, globulære enheder forbundet med en kort linker.
-
-**3.**  Der er to β-domæner (β-barrels i orange og gult) samt et blandet αβ-domæne (blåt/grønt).
-
-**4.**  Domænet indeholder 3 β-α-β motiver, men i flere tilfælde er der ekstra indsatte helixer.
-
-**5.**  Der er 2 β-hairpins, de andre β-strenge er ikke i hairpin-strukturer.
-
-**6.**  Det indeholder en β-barrel.
-
-**7.**  Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
+Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
 :::
 
 ## Opgave 4. Sekvens og struktur
@@ -142,6 +168,10 @@ Strukturen af *B.amyloliquefaciens* PGP-I (PDB-ID: 1AUG) kan findes i Protein Da
 
 Hvilken foldningsklasse tilhører PGP-I og hvor mange domæner består protomeren af.
 
+::: {.solution-callout}
+Protomeren har kun et domæne. Domænet tilhører αβ klassen.
+:::
+
 ### Beskriv PGP-I's kvaternære struktur
 
 Beskriv PGP-I's kvaternære struktur og beskriv hvilke(n) symmetri(er) der er mellem de enkelte protomerer. (Hint: Petsko og Ringe, side 40-45)
@@ -152,25 +182,55 @@ FVCNHLFYGLMDEISRHHP
 
 Anvend EMBOSS ( f.eks. på [**http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel**](http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel)) til at tegne et helix hjul.
 
+::: {.solution-callout}
+Den kvaternære struktur består af fire protomere og er dermed en tetramer. De fire protomere ligger i et fælles plan. Ser man vinkelret på denne plan ( brug 'orient' funktionen i Pymol) og farver hver protomer 'rainbow' ses det, at en 180° rotation ( en to-tals rotation) vinkelret på planen vil føre tetrameren over i sig selv. Hvis man nu ser tetrameren fra siden (rotate x, 90) kan man se at der igen er en to-tals rotation der bringer tetrameren over i sig selv. Endelig kan man rotere tetrameren igen så man ser den vinkel ret på orienteringen fra før (rotate y , 90) . Igen ser man en to-tals akse der bringer tetrameren over i sg selv. Alt i alt har vi tre to-tals akser vinkelret på hinanden som danner en lukket punktgruppe, som betegnes 222.
+:::
+
 ### Tegn et helix-hjul for helixen
 
 Diskuter fordelingen af aminosyrer på hjulet med hensyn til deres fysisk/kemiske egenskaber.
 
+::: {.solution-callout}
+![pepwheel.1](media/image17.png){width="80%" fig-align="center" .lightbox}
+
+På hjulet ses at der fra kl 10-16 hoved sageligt er polære sidekæder, mens der overvejende er hydrophobe sidekæder på resten af hjulet.
+:::
+
 ### Identificer helixens hydrofobe side
 
-Hvilken side af helixen forventer du vender ind mod kernen af proteinet ?
+Hvilken side af helixen forventer du vender ind mod kernen af proteinet?
 
-***PyMOL info**: Surface kommandoen bruges ofte i situationer, hvor man vil vise pasform interaktioner mellem ligand og protein. Funktionen viser Connelly overfladen, også kaldet den tilgængelige overflade, som viser alle de teoretisk mulige steder vand kan befinde sig omkring proteinet. Da afgrænsningen sættes ved vandets oxygenatoms centrum, vil det sige, at der godt kan ske overlap mellem ligandens og proteinets Connelly overflade, men kun svarende til oxygens radius. I kan læse mere om surface funktionen og Connelly overfladen på; [**https://en.wikipedia.org/wiki/Accessible_surface_area**](https://en.wikipedia.org/wiki/Accessible_surface_area).*\
-\
-Lokaliser helixen i strukturen og vis kun den i surface repræsentation og farvelæg efter atom type. Du vil bemærke, at hvis du har lavet en selektion, der omfatter helixen, er det stadigvæk kun overfladen mod solventet, der bliver vist. For at få vist overfladen af hele helixen er du nødt til at definere et nyt object kun bestående af helixen.
+::: {.solution-callout}
+Da kernen af proteinet er hydrophob vil man forvente at den hydrophobe side af helixen vender ind mod kernen.
+:::
 
 ### Lav script med surface-visualisering
 
-Lav et script, der definerer helicen som et nyt objekt, lav en passende visualisering og gem scenen som F1. Se nu på overfladen af helixen (show surface) og undersøg hvordan overfladen ind mod kernen af proteinet adskiller sig fra den side der vender mod solvent og sammenlign med helix hjulet fra tidligere. Vender helixen som forventet jvf spørgsmål 4.
+::: {.callout-note title="PyMOL Info"}
+Surface kommandoen bruges ofte i situationer, hvor man vil vise pasform interaktioner mellem ligand og protein. Funktionen viser Connelly overfladen, også kaldet den tilgængelige overflade, som viser alle de teoretisk mulige steder vand kan befinde sig omkring proteinet. Da afgrænsningen sættes ved vandets oxygenatoms centrum, vil det sige, at der godt kan ske overlap mellem ligandens og proteinets Connelly overflade, men kun svarende til oxygens radius. I kan læse mere om surface funktionen og Connelly overfladen på; [**https://en.wikipedia.org/wiki/Accessible_surface_area**](https://en.wikipedia.org/wiki/Accessible_surface_area).
+
+Lokaliser helixen i strukturen og vis kun den i surface repræsentation og farvelæg efter atom type. Du vil bemærke, at hvis du har lavet en selektion, der omfatter helixen, er det stadigvæk kun overfladen mod solventet, der bliver vist. For at få vist overfladen af hele helixen er du nødt til at definere et nyt object kun bestående af helixen.
+:::
+
+Lav et script, der definerer helicen som et nyt objekt, lav en passende visualisering og gem scenen som F1. Se nu på overfladen af helixen (show surface) og undersøg hvordan overfladen ind mod kernen af proteinet adskiller sig fra den side der vender mod solvent og sammenlign med helix hjulet fra tidligere. Vender helixen som forventet jvf spørgsmål 4?
+
+::: {.solution-callout}
+Ja, den vender som forventet
+:::
 
 ### Tegn topologisk foldningsdiagram
 
-Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38-39). Lokaliser også switchpoint i PyMOL og lav en scene kaldet F2, der visualiserer dette. Hint: Brug specrum kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
+Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38-39). Lokaliser også switchpoint i PyMOL og lav en scene kaldet F2, der visualiserer dette. 
+
+::: {.callout-tip}
+Brug `spectrum` kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
+:::
+
+::: {.solution-callout}
+Topologisk foldningsdiagram for PGP-I:
+
+![](media/image18.png){width="80%" fig-align="center" .lightbox}
+:::
 
 ### Diskuter katalytisk triade og switchpoint
 
@@ -178,103 +238,27 @@ Diskuter placeringen af den katalytiske triade i forhold til "switch point" og d
 
 ::: {.solution-callout}
 
-**1.**  Protomeren har kun et domæne. Domænet tilhører αβ klassen.
+Vi ser at Cys 144 peger mod det topologiske switchpoint mens histidin og glutamat ligger over mod β-kæde 4. Substratbindingsite befinder sig derfor i switchpoint hvor genkendelse formentlig sker ved interaktion med løkken der forbinder β-kæde 1 med den første helix.
 
-**2.**  Den kvaternære struktur består af fire protomere og er dermed en tetramer. De fire protomere ligger i et fælles plan. Ser man vinkelret på denne plan ( brug 'orient' funktionen i Pymol) og farver hver protomer 'rainbow' ses det, at en 180° rotation ( en to-tals rotation) vinkelret på planen vil føre tetrameren over i sig selv. Hvis man nu ser tetrameren fra siden (rotate x, 90) kan man se at der igen er en to-tals rotation der bringer tetrameren over i sig selv. Endelig kan man rotere tetrameren igen så man ser den vinkel ret på orienteringen fra før (rotate y , 90) . Igen ser man en to-tals akse der bringer tetrameren over i sg selv. Alt i alt har vi tre to-tals akser vinkelret på hinanden som danner en lukket punktgruppe, som betegnes 222.
+PyMOL script:
 
-**3.**  ![pepwheel.1](media/image17.png){width="2.6071423884514435in" height="2.2373086176727908in"}\
-    PÅ hjulet ses at der fra kl 10-16 hoved sageligt er polære sidekæder, mens der overvejende er hydrophobe sidekæder på resten af hjulet.
-
-**4.**  Da kernen af proteinet er hydrophob vil man forvente at den hydrophobe side af helixen vender ind mod kernen.
-
-**5.**  Ja, den vender som forventet
-
-**6.**  Topologisk foldningsdiagram for PGP-I :
-
-![](media/image18.png){width="5.238094925634296in" height="4.181672134733159in"}
-
-**7.**  Vi ser at Cys 144 peger mod det topologiske switchpoint mens histidin og glutamat ligger over mod β-kæde 4. Substratbindingsite befinder sig derfor i switchpoint hvor genkendelse formentlig sker ved interaktion med løkken der forbinder β-kæde 1 med den første helix.\
-    \
-    PyMOL script:
-
-\## Script til opgave 4. Sekvens og struktur
-
-reinit
-
-fetch 1AUG, PGP_I
-
-remove solvent
-
-create helix, resi 142-160
-
-show surface, helix
-
-set_view (\\
-
--0.408535630, -0.441266984, 0.798987269,\\
-
-0.206248984, 0.808099747, 0.551758111,\\
-
--0.889134109, 0.390203059, -0.239126563,\\
-
-0.000036286, 0.000023451, -105.909782410,\\
-
-38.459018707, 13.234984398, 32.668601990,\\
-
-89.802589417, 122.012229919, -20.000000000 )
-
-scene F1, store
-
-as cartoon, helix
-
-deselect helix
-
-spectrum count, rainbow, (PGP_I and chain A)
-
-set_view (\\
-
-0.347743720, -0.400866359, -0.847573400,\\
-
-0.518844843, 0.835229516, -0.182157472,\\
-
-0.780935228, -0.376411676, 0.498429596,\\
-
--0.000691116, 0.000368766, -107.724067688,\\
-
-35.487663269, 10.953766823, 37.446750641,\\
-
-97.219642639, 118.235801697, -20.000000000 )
-
-scene F2, store
-
-show sticks, resi 81+144+168 and (sidechain or name CA)
-
-util.cbaw resi 81+144+168 and sidechain
-
-set_view (\\
-
-0.826230526, -0.071138412, -0.558820605,\\
-
--0.150898471, -0.983684242, -0.097883336,\\
-
--0.542736888, 0.165197283, -0.823481143,\\
-
-0.000423234, -0.000018544, -54.828662872,\\
-
-28.495000839, 11.418835640, 32.957633972,\\
-
-45.805042267, 64.068885803, -20.000000000 )
-
-scene F3, store
+```default
+{{< include pymol_scripts/script_te5_e4.pml >}}
+```
 :::
 
 ## Opgave 5. Skattejagt
 
 Vi har i en tidligere opgave stiftet bekendtskab med følgende to proteiner:
 
-![myoglobin](media/image19.png){width="1.5in" height="1.09375in"} Human myoglobin       ![beta_galactosidase](media/image20.png){width="1.5in" height="1.15625in"}*E. coli* β-galactosidase
+::: {#fig-proteins layout-ncol=2}
 
- 
+![Human myoglobin](media/image19.png){width="100%" .lightbox}
+
+![*E. coli* β-galactosidase](media/image20.png){width="100%" .lightbox}
+
+De to proteiner
+:::
 
 Brug dit kendskab til online databaser til at besvare følgende spørgsmål
 
@@ -282,81 +266,109 @@ Brug dit kendskab til online databaser til at besvare følgende spørgsmål
 
 Hvad er funktionen af de to proteiner i cellen og i hvilke sammenhænge optræder de?
 
+::: {.solution-callout}
+Der søges efter "human myoglobin" i Uniprot databasen.
+
+Under overskriften "Function" ses:
+
+> "Serves as a reserve supply of oxygen and facilitates the movement of oxygen within muscles."
+
+På samme made søges efter "beta galactosidase `e coli`":
+
+> "Hydrolysis of terminal non-reducing beta-D-galactose residues in beta-D-galactosides."
+:::
+
 ### Find β-galactosidasens molekylvægt
 
 Hvad er molekylevægten af β-galactosidase og hvor mange kæder består det aktive enzym af?
+
+::: {.solution-callout}
+Under overskriften Sequence ses at sekvensen svarer til en molekylvægt på 116 kDa. Under overskriften "Interaction" står der at b-galactosidase er en homotetramer og altså består af 4 kæder.
+:::
 
 ### Find PDB-kode og accessionsnummer
 
 Hvilken PDB-kode (struktur) og accessionsnummer er registreret for myoglobin?
 
+::: {.solution-callout}
+Under Structure i Uniprot ses at der kun er en struktur deponeret i PDB: 3RGK.
+:::
+
+
 ### Find myoglobins subcellulære placering
 
-Hvilken subcellulære position findes myoglobin i?[\
-]{.mark}
+Hvilken subcellulære position findes myoglobin i?
+
+::: {.solution-callout}
+Ses under `Subcellular structure`. Myoglobin findes cytosolen og i det ekstracellulære domæne.
+:::
 
 ### Find kromosomlokalisering for proteinerne
 
 Benævn chromosompositionen for proteinerne. Forklar hvorfor β-galactosidase er lidt anderledes.
 
+::: {.solution-callout}
+Ses under "Names & Taxonomy". Myogloblin findes på chromosom 22. β-galactosidase findes på `chromosom` fordi E. Coli udelukkende har ét chromosom.
+:::
+
 ### Beskriv posttranslationelle modifikationer
 
 Beskriv de to proteiners posttranscriptionelle modifikationer.
 
-### Find β-galactosidasens KM og Vmax
+::: {.solution-callout}
+Myoglobin kan phosphoryleres på Ser4 og Thr68. β-galactosidase har ingen posttranskriptionelle modifikationer.
+:::
 
-Hvad er K~M~-værdien for β-galactosidase overfor det stærkest bindende substrat, man har målt? Hvad er V~max~ for enzymet med dette substrat?
+### Find β-galactosidasens $K_M$ og $V_\mathrm{max}$
+
+Hvad er $K_M$-værdien for β-galactosidase overfor det stærkest bindende substrat, man har målt? Hvad er $V_\mathrm{max}$ for enzymet med dette substrat?
+
+::: {.solution-callout}
+Under overskriften "Function" ses:
+
+> KM=34 µM for p-nitrophenyl beta-D-galactoside (with magnesium as cofactor and 30 degrees Celsius)
+
+> Vmax=59.7 µmol/min/mg enzyme with p-nitrophenyl beta-D-galactoside as substrate (with magnesium as cofactor and 30 degrees Celsius)
+:::
+
 
 ### Find active site aminosyrer
 
 Find aminosyrerne der er den del af active site for begge proteiner.
 
+::: {.solution-callout}
+Ses under "Funktion". For β-galactosidase er det aminosyreresterne 462 og 538. Under "Sequence" kan man se at dette er hhv. E og E. Myoglobin er et carrier protein uden enzymatiske egenskaber, så den har intet active site.
+:::
+
+
 ### Find isoelektrisk punkt for proteinerne
 
-Hvad er det isoelektriske punkt (pI) for henholdsvis myoglobin og beta-galactosidase?
+Hvad er det isoelektriske punkt ($pI$) for henholdsvis myoglobin og beta-galactosidase?
+
+::: {.solution-callout}
+
+Under 'Sequence' vælges ude til højre ved Go-knappen "Compute pI/Mw". 
+
+Myoglobin: $pI=7.14$.
+
+beta-galactosidase: $pI = 5.28$.
+
+Man kan også indsætte sekvensen i Protparam, hvilket giver samme resultat.
+:::
+
 
 ### Find sekvenser med mere end 50 % identitet
 
 Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galactosidase?
+
+::: {.solution-callout}
+6512 lignende sekvenser - Under "Similar Proteins" klikkes på fanen "50% identity"
+:::
 
 ### Find allosteriske effektorer af expression
 
 Find allosteriske effektorer af expression for β-galactosidase.
 
 ::: {.solution-callout}
-
-**1.**  Der søges efter "human myoglobin" i Uniprot databasen.\
-    \
-    Under overskriften "Function" ses:\
-    \
-    "Serves as a reserve supply of oxygen and facilitates the movement of oxygen within muscles."\
-    \
-    På samme made søges efter "beta galactosidase `e coli`":\
-    \
-    "Hydrolysis of terminal non-reducing beta-D-galactose residues in beta-D-galactosides."
-
-**2.**  Under overskriften Sequence ses at sekvensen svarer til en molekylvægt på 116 kDa. Under overskriften "Interaction" står der at b-galactosidase er en homotetramer og altså består af 4 kæder.
-
-**3.**  Under Structure i Uniprot ses at der kun er en struktur deponeret i PDB: 3RGK. I sidens headline ses accession nr: P02144.
-
-**4.**  Ses under `Subcellular structure`. Myoglobin findes cytosolen og i det ekstracellulære domæne.
-
-**5.**  Ses under "Names & Taxonomy". Myogloblin findes på chromosom 22. β-galactosidase findes på `chromosom` fordi E. Coli udelukkende har ét chromosom.
-
-**6.**  Myoglobin kan phosphoryleres på Ser4 og Thr68. β-galactosidase har ingen posttranskriptionelle modifikationer.
-
-**7.**  Under overskriften "Function" ses:\
-    \
-    KM=34 µM for p-nitrophenyl beta-D-galactoside (with magnesium as cofactor and 30 degrees Celsius)\
-    \
-    Vmax=59.7 µmol/min/mg enzyme with p-nitrophenyl beta-D-galactoside as substrate (with magnesium as cofactor and 30 degrees Celsius)
-
-**8.**  Ses under "Funktion". For β-galactosidase er det aminosyreresterne 462 og 538. Under "Sequence" kan man se at dette er hhv. E og E. Myoglobin er et carrier protein uden enzymatiske egenskaber, så den har intet active site.
-
-**9.**  Under 'Sequence' vælges ude til højre ved Go-knappen "Compute pI/Mw". Myoglobin: pI=7.14 beta-galactosidase: pI = 5.28.\
-    Man kan også indsætte sekvensen i Protparam, hvilket giver samme resultat.
-
-10. 6512 lignende sekvenser - Under "Similar Proteins" klikkes på fanen "50% identity"
-
 11. Ses under "Expression". Ekspressionen af β-galactosidase induceres af allolactose.
 :::
