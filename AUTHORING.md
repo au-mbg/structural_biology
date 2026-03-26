@@ -36,6 +36,9 @@ course_notes
 │  ├── media             # Contains figures
 │  ├── te_01_....qmd     # An exercise .qmd file
 │  ├── ...
+├── exercises            # Directory with downloadable files
+│  ├── file.pml
+│  ├── ...
 ├── index.qmd            # Landing page 
 ├── other_notes          # Directory for guides/installation
 │  ├── installation.qmd  # An installation guide .qmd file
@@ -106,7 +109,7 @@ To wrap text around a floating figure it can be wrapped in float div, like below
 :::
 ```
 
-### Code 
+## Code 
 
 Markdown supports both inline code and code blocks. Inline code is written using single-backticks ``` `code` ```
 
@@ -148,3 +151,29 @@ that the code is valid
 ````
 Here the path is relative to the current file, so the above path works for all the `exercises/te_*.qmd` files. 
 
+## Callout blocks
+
+Callout blocks are very useful as way to make some content distinguishable, for example for hints. 
+
+A callout for a hint can be created like so 
+
+```
+::: {.callout-tip}
+My hint explanation here....
+
+This can include any other content, such as figures, math or code.
+
+:::
+```
+
+## Downloadable files
+
+Downloadable files should be put in the `course_notes/files`-directory and then linked to using a block like
+
+```
+<a href="../files/script_te4_e7.pml" download="Tu.pml">
+  📥 Click to download script.
+</a>
+```
+
+Here the `href`-path should is the relative path from the `.qmd` to the fil. The `download`-path specifies the file name of the downloaded file. 
