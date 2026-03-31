@@ -38,7 +38,7 @@ def check_script(pymol_bin: str, script_path: Path) -> bool:
         return False
 
 
-def main():
+def main(args):
     pymol_bin = find_pymol_executable()
     if pymol_bin is None:
         print("Could not find PyMOL executable.")
@@ -47,20 +47,40 @@ def main():
 
     print(f"Using PyMOL executable: {pymol_bin}")
 
-    script_dir = Path.cwd()
-    scripts = sorted(script_dir.glob("*.pml"))
+    script_dir = Path(args.directory)
+    scripts = list(sorted(script_dir.glob("*.pml"))) + list(sorted(script_dir.glob("*.pse")))
 
     if not scripts:
-        print(f"No .pml files found in: {script_dir}")
+        print(f"No .pml or .pse files found in: {script_dir}")
         return
+    
+    scripts = [s.resolve() for s in scripts]
+    
+    # Go to a temporary directory to avoid any side effects from running the scripts.
+    with subprocess.Popen(["mktemp", "-d"], stdout=subprocess.PIPE, text=True) as proc:
+        temp_dir = proc.stdout.read().strip()
+    os.chdir(temp_dir)
 
-    failed = 0
+    failed_scripts = []
     for script in scripts:
         if not check_script(pymol_bin, script):
-            failed += 1
+            failed_scripts.append(script)
 
-    if failed:
+    print(f"Checked {len(scripts)} scripts, {len(failed_scripts)} failed.")
+    if failed_scripts:
+        print("Failed scripts:")
+        for script in failed_scripts:
+            print(f"\t{script}")
+
+
+    if failed_scripts:
         raise SystemExit(1)
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Check PyMOL scripts for syntax errors.")
+    parser.add_argument("--directory", "-d", type=str, default=".", help="Directory to search for .pml files (default: current directory)")
+    args = parser.parse_args()
+
+    main(args)

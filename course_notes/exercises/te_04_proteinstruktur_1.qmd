@@ -307,15 +307,13 @@ Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæd
 
 ## Opgave 7. Nukleotid binding
 
-[TODO: Indsæt den rigtige pml fil.]{style="color:red"}
+<a href="../files/TE4-Elongerings_Faktor_Tu.pml" download="Elongerings_Faktor_Tu.pml">
+  📥 Click to download `Elongerings-Faktor_Tu.pml`.
+</a>
 
 ***PyMOL-scripting opgave**: I denne opgave skal i bruge de kommandoer I allerede kender, men også lære kommandoen "distance".*
 
-<a href="../files/script_te4_e7.pml" download="Tu.pml">
-  📥 Click to download script.
-</a>
-
-I TØ4 mappen finder du PyMOL scriptet Elongerings Faktor Tu.pml til at lave en figur af GDP-binding til Elongerings Faktor Tu fra *E.coli* (PDB-ID: 1EFC).
+Brug PyMOL scriptet `Elongerings_Faktor_Tu.pml` til at lave en figur af GDP-binding til Elongerings Faktor Tu fra *E.coli* (PDB-ID: 1EFC).
 
 Strukturen af EF-Tu med GDPNP er også blevet bestemt (PDB-ID: 1EFT). I 1EFT er det EF-Tu fra den thermophile bakterie *T.aquaticus*. Da det er EF-Tu fra forskellige organismer er der forskel i sekvensnumrene for de sidekæder der indgår i binding af nukleotidet.
 

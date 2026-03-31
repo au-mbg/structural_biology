@@ -150,10 +150,8 @@ Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achi
 
 ## Opgave 5. Analyse af Chymotrypsin i PyMOL
 
-[TODO: Indsæt den rigtige pse fil.]{style="color:red"}
-
-<a href="../files/dummy_file.pse" download="chemotrypsin.pse">
-  📥 Click to download dataset.
+<a href="../files/TE2-Chymotrypsin.pse" download="chymotrypsin.pse">
+  📥 Click to download `chymotripsin.pse`.
 </a>
 
 I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, som beskrives på s. 223-226 i Berg Biochemistry 10. udgave. Åbn filen `chymotrypsin.pse`, pse-filer er PyMOL session filer, som du kan dobbeltklikke på for at åbne filen i PyMOL såfremt programmet er installeret.
