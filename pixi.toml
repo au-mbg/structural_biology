@@ -9,14 +9,25 @@ version = "0.1.0"
 default = {features=[]}
 dev = {features=["git-tools"]}
 
+[tasks.preview]
+args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
+cmd = "quarto preview --profile {{mode}}"
+cwd = "course_notes"
+description = "Preview the course notes in either exercise or solution mode"
+
+[tasks.render]
+args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
+cmd = "quarto render --profile {{mode}}"
+cwd = "course_notes"
+description = "Render the course notes in either exercise or solution mode"
+
+[tasks.render-all]
+depends-on = ["clean",
+            {task = "render", args=["exercise"]},
+            {task = "render", args=["solution"]}]
+description = "Clean and render the course notes in both exercise and solution mode"
+
 [tasks]
-preview-exercise = { cmd = ["quarto",  "preview", "--profile", "exercise"], cwd="course_notes", description = "Preview the exercise version of the course notes"}
-preview-solution = { cmd = ["quarto",  "preview", "--profile", "solution"], cwd="course_notes", description = "Preview the solution version of the course notes"}
-
-render-exercise = { cmd = ["quarto",  "render", "--profile", "exercise"], cwd="course_notes", description = "Render the exercise version of the course notes"}
-render-solution = { cmd = ["quarto",  "render", "--profile", "solution"], cwd="course_notes", description = "Render the solution version of the course notes"}
-render = { depends-on = ["render-exercise", "render-solution"], description = "Render both the exercise and solution versions of the course notes"}
-
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}

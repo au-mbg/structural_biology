@@ -116,9 +116,9 @@ For slightly more detailed instructions see [git - the simple guide](https://rog
 
 With `pixi` installed the site can be rendered or previewed using the commands 
 
-- `pixi run preview-exercise`: Opens a live preview of the student facing version of the site.
-- `pixi run preview-solution`: Opens a live preview of the instructor facing version of the site.
-- `pixi run render`: Renders the entire site (not live).
+- `pixi run preview exercise`: Opens a live preview of the student facing version of the site.
+- `pixi run preview solution`: Opens a live preview of the instructor facing version of the site.
+- `pixi run render-all`: Renders the entire site (not live).
 - `pixi run clean`: Cleans up any site artifacts. 
 
 ### Manual installation
