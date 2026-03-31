@@ -153,7 +153,12 @@ Here the path is relative to the current file, so the above path works for all t
 
 ### PyMOL Scripts
 
-The script Python script `course_notes/exercises/pymol_scripts/check_scripts.py` checks that all PyMOL scripts in the `course_notes/exercises/pymol_scripts/`-directory are syntactically correct. To run this you use 
+The Python script `scripts/check_scripts.py` checks that all PyMOL scripts in a directory are syntactically correct. The project has PyMOL files in two places: 
+
+- `course_notes/files`: For downloadable scripts/session files. 
+- `course_notes/exercises/pymol_scripts`: For exercise solution scripts. 
+
+To run the check on both directories use
 
 ```
 pixi run check-pymol-scripts
