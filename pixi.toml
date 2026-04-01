@@ -31,6 +31,11 @@ description = "Clean and render the course notes in both exercise and solution m
 cmd = """python scripts/check_scripts.py --directory course_notes/exercises/pymol_scripts;
 python scripts/check_scripts.py --directory course_notes/files/"""
 
+[tasks.check-script]
+cmd = """python scripts/check_scripts.py --file $INIT_CWD/{{file}}"""
+args = [{ "arg" = "file"}]
+description = "Check a specific PyMOL script for syntax errors"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 

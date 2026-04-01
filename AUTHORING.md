@@ -160,11 +160,15 @@ The Python script `scripts/check_scripts.py` checks that all PyMOL scripts in a 
 
 To run the check on both directories use
 
-```
+```sh
 pixi run check-pymol-scripts
 ```
+This requires having PyMOL installed and discoverable. For checking just a single script one 
+can use 
 
-This requires having PyMOL installed and discoverable.
+```sh
+pixi run check-script <script_path.pml>
+```
 
 ## Callout blocks
 

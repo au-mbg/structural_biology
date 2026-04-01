@@ -47,8 +47,11 @@ def main(args):
 
     print(f"Using PyMOL executable: {pymol_bin}")
 
-    script_dir = Path(args.directory)
-    scripts = list(sorted(script_dir.glob("*.pml"))) + list(sorted(script_dir.glob("*.pse")))
+    if args.file:
+        scripts = [Path(args.file)]
+    else:
+        script_dir = Path(args.directory) if args.directory else Path(".")
+        scripts = list(sorted(script_dir.glob("*.pml"))) + list(sorted(script_dir.glob("*.pse")))
 
     if not scripts:
         print(f"No .pml or .pse files found in: {script_dir}")
@@ -80,7 +83,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Check PyMOL scripts for syntax errors.")
-    parser.add_argument("--directory", "-d", type=str, default=".", help="Directory to search for .pml files (default: current directory)")
+    parser.add_argument("--directory", "-d", type=str, default=None, help="Directory to search for .pml files (default: current directory)")
+    parser.add_argument("--file", "-f", type=str, help="Specific .pml file to check (overrides --directory)", default=None)
     args = parser.parse_args()
 
     main(args)

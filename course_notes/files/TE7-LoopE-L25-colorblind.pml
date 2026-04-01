@@ -1,6 +1,7 @@
 # Exercise looking at the 5S rRNA Loop E binding to L25
 # Colorblindfriendly: https://pymolwiki.org/index.php/Colorblindfriendly
 # Written by Ebbe Sloth Andersen. Updated 13/9-2023.
+# Updated 1/04/2026: Mads-Peter V. C.
 
 reinit
 
@@ -133,8 +134,13 @@ set_view (\
     46.810501099,   71.936447144,  -20.000000000 )
 scene F8, store
 
+# Colorblind mode
+# This link no longer works
+# run https://github.com/Pymol-Scripts/Pymol-script-repo/raw/master/colorblindfriendly.py
+# But this one does
+run https://raw.githubusercontent.com/Pymol-Scripts/Pymol-script-repo/refs/heads/master/scripts/colorblindfriendly.py
+
 # Now color RNA groove code
-run https://github.com/Pymol-Scripts/Pymol-script-repo/raw/master/colorblindfriendly.py
 select nts, resn A+U+C+G
 show spheres, nts
 color white, nts
