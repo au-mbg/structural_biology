@@ -3,7 +3,7 @@ title: "Biomolecular visualization with PyMOL 3"
 author: Ebbe S. Andersen & Johan N. Vinther
 ---
 
-```default
+```{=html}
 <style>
   .top-menu { color: #e21cb1; font-weight: bold; }
   .display-panel { color: #e6c01dff; font-weight: bold; }
@@ -35,7 +35,7 @@ details of selections. Note also the [bottom menu]{.bottom-menu} of the object m
 that contains controls for mouse, wizards, sequences and movies and a
 button to hide/show the log window.
 
-![**Figure 1**: The PyMOL graphical user interface with PDB ID **1tg7** loaded.](pymol_guide_1_media/media/image1_annotated.png)
+![**Figure 1**: The PyMOL graphical user interface with PDB ID **1tg7** loaded.](pymol_guide_1_media/media/image1_annotated.png){.lightbox}
 
 It is highly recommended to use a 3-button mouse for navigating PyMOL as
 the 3-button viewing mode is the most convenient and has most
@@ -122,8 +122,7 @@ ribbon, the residues close to the ligand will show in lines, and the
 ligand is shown as sticks. Also notice the yellow dashed lines appearing
 between polar groups between the protein and ligand (**Figure 2**).
 
-![**Figure 2**: Example of view of PETG
-bound to *E. coli* LacZ.](pymol_guide_1_media/media/image4.png)
+![**Figure 2**: Example of view of PETG bound to *E. coli* LacZ.](pymol_guide_1_media/media/image4.png)
 
 PyMOL also offers various similar visualization presets for the
 protein-ligand interactions. Explore these through navigating in the

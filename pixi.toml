@@ -36,6 +36,10 @@ cmd = """python scripts/check_scripts.py --file $INIT_CWD/{{file}}"""
 args = [{ "arg" = "file"}]
 description = "Check a specific PyMOL script for syntax errors"
 
+[tasks.check-figures]
+cmd = """python scripts/check_figures.py"""
+description = "Check all figures for references in .qmd files"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 
