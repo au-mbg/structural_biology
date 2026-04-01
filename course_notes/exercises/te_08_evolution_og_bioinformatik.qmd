@@ -8,11 +8,26 @@ Vi skal nu kigge på den bredere evolution af tRNA ved at finde en alignment af 
 
 ### Undersøg tRNA-bevarelse i Rfam
 
-Gå til Rfam-databasen og søg efter "tRNA". Tryk på "Secondary structure" under tRNA-familien. Klik på "seqcons" (sekvensbevarelse) og bpcons (baseparbevarelse). Hvad er mest bevaret, struktur eller sekvens? Hint: I nedre venstre hjørne ses et farvespektrum fra ikke bevaret (0) til stærkt bevaret (1).
+Gå til Rfam-databasen og søg efter "tRNA". Tryk på "Secondary structure" under tRNA-familien. Klik på "seqcons" (sekvensbevarelse) og bpcons (baseparbevarelse). Hvad er mest bevaret, struktur eller sekvens? 
+
+::: {.callout-tip title="Hint"}
+I nedre venstre hjørne ses et farvespektrum fra ikke bevaret (0) til stærkt bevaret (1).
+:::
+
+::: {.solution-callout}
+Struktur er mere bevaret end sekvens.
+:::
 
 ### Analyser Rchie-plot for tRNA
 
-Kig nu på "Rchie" plottet, der vises i boksen herunder. Plottet viser sekvenser (blok med farver, hvor hver vandrette linje repræsenterer en sekvens) og deres sekundær struktur (buer vist på toppen, der forbinder baser der danner basepar). Hvilke stems indeholder mest covariation? Kig ned gennem alignmenten -- hvad adskiller nogle tRNA sekvenser fra andre? Hint: Læs om Rchie plots i boksen herunder.
+Kig nu på "Rchie" plottet, der vises i boksen herunder. Plottet viser sekvenser (blok med farver, hvor hver vandrette linje repræsenterer en sekvens) og deres sekundær struktur (buer vist på toppen, der forbinder baser der danner basepar). Hvilke stems indeholder mest covariation? Kig ned gennem alignmenten -- hvad adskiller nogle tRNA sekvenser fra andre? 
+
+::: {.solution-callout}
+Stem 1 og 3 (talt fra 5' ende)\
+Nogle tRNA sekvenser har insert mellem stem 3 og 4.
+:::
+
+Læs om Rchie plots i boksen herunder.
 
 ::: {.callout-note title="Rchie-plots"}
 
@@ -47,7 +62,19 @@ GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCG-UGCCGGUUCAAGUCCGGC
 
 ### Fold atypiske sekvenser med RNAalifold
 
-Prøv at folde dem i [**RNAalifold server**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi). Hvordan adskiller strukturen sig fra tRNA? Er denne struktur understøttet af co-variationer? Hint: Der ses en masse undermenuer, hvor man kan vælge foldningsalgoritme mm. Disse skal bare ignoreres. De sorte basepar betyder mismatches i alle sekvenser. Læs om RNAalifold output i boksen herunder.
+Prøv at folde dem i [**RNAalifold server**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi). Hvordan adskiller strukturen sig fra tRNA? Er denne struktur understøttet af co-variationer? 
+
+
+::: {.callout-tip title=Hint}
+Der ses en masse undermenuer, hvor man kan vælge foldningsalgoritme mm. Disse skal bare ignoreres. De sorte basepar betyder mismatches i alle sekvenser.
+:::
+
+::: {.solution-callout}
+Har extra stem mellem stem 3 og 4.\
+Ja, der er covariationer i stem.
+:::
+
+Læs om RNAalifold output i boksen herunder.
 
 ::: {.callout-note title="RNAalifold output"}
 
@@ -62,45 +89,60 @@ Dette er også grunden til at der ses nogle atypiske basepar (f.eks. C:A, G:G og
 (((((((..((((..........))))((((((.......))))))(((((....)))))..(((((.......))))))))))))..
 ```
 
-![](media/image28.png){width="6.044407261592301in" height="3.281363735783027in"}De sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.
+![](media/image28.png){width="95%" fig-align="center" .lightbox}
 
-![](media/image29.png){width="2.1418788276465444in" height="2.3409733158355204in"}\
+De sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.
+
+![](media/image29.png){width="45%" fig-align="center" .lightbox}
+
 En bedre og mere detaljeret præsentation af tRNA-femkløveren kan ses ved at vælge PDF under **Download options** ud for '*structure drawing with conservation annotation'* under **Image description**, som det ses herunder:
 
-![](media/image30.png){width="2.4730708661417324in" height="3.0030139982502186in"} ![](media/image31.png){width="2.1795833333333334in" height="1.0123567366579178in"}
+![](media/image30.png){width="45%" fig-align="center" .lightbox}
+
+![](media/image31.png){width="65%" fig-align="center" .lightbox}
 
 Herved fås en repræsentation med farvning efter antal af forskellige basepar på hver position samt en graduering i gennemsigtighed efter antallet af inkompatible basepar.
 
 Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-bracket notation ved at vælge PDF ud for **structure annotated alignment**.
 
-![](media/image32.png){width="6.362213473315835in" height="1.7086187664041994in"}
+![](media/image32.png){width="95%" fig-align="center" .lightbox}
 
 :::
 
 ### Sammenlign selenocysteine tRNA-struktur
 
-Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med "fetch 3a3a". Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
+Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med `fetch 3a3a`. Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
 
 ::: {.solution-callout}
-
-**1.**  Struktur er mere bevaret end sekvens.
-
-**2.**  Stem 1 og 3 (talt fra 5' ende)\
-    Nogle tRNA sekvenser har insert mellem stem 3 og 4.
-
-**3.**  Har extra stem mellem stem 3 og 4.\
-    Ja, der er covariationer i stem.
-
-**4.**  Hairpin er indsat mellem anticodon loop og T-psi-C loop.
+Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 :::
 
 ## Opgave 2. Den forsvundne RNA replikase
 
 For at sandsynliggøre "RNA world" hypotesen prøvede forskere omkring 1993 at skabe et RNA polymerase ribozym ([**Bartel & Szostak, 1993**](https://www.ncbi.nlm.nih.gov/pubmed/7690155)) ved at bruge en selektionsmetode, hvor man laver et bibliotek af sekvenser og selekterer for funktion (se Berg, udgave 10, afsnit 10.4). Ved at selektere for ligeringsaktivitet fandt de en RNA ligase, der senere er blevet udviklet til at syntetisere længere RNA-sekvenser ([**Horning & Joyce, 2016**](https://www.ncbi.nlm.nih.gov/pubmed/27528667)). Til selektionseksperimentet blev der indsat en tilfældig sekvens (et bibliotek) på 220 nukleotider, der syntetiseres kemisk ved tilfældigt at indsætte en af de fire baser på hver af 220 positioner. Figur A viser en oversigt over dette eksperiment, hvor den tilfældige sekvens er annoteret som N220.
 
+![](media/image33.png){width="65%" fig-align="center" .lightbox}
+
 ### Beregn RNA-biblioteksstørrelse og masse
 
-Hvor meget RNA skal du have i gram hvis biblioteket skal have mindst et molekyle med hver sin sekvens? Hint: Den gennemsnitlige molekylevægt for et nukleotid er 330 g/mol og Avogadros tal er 6,0221415 \* 10^23^ mol^-1^. I det oprindelige eksperiment blev der brugt et bibliotek med 1,6 \* 10^15^ forskellige sekvenser. Hvor mange gram skal bruges til dette bibliotek? Hvad betyder det at de fandt en RNA ligase med dette bibliotek for sandsynligheden for at RNA ligaser kan udvikles?
+Hvor meget RNA skal du have i gram hvis biblioteket skal have mindst et molekyle med hver sin sekvens? I det oprindelige eksperiment blev der brugt et bibliotek med 1,6 \* 10^15^ forskellige sekvenser. Hvor mange gram skal bruges til dette bibliotek? Hvad betyder det at de fandt en RNA ligase med dette bibliotek for sandsynligheden for at RNA ligaser kan udvikles?
+
+::: {.callout-tip title=Hint}
+Den gennemsnitlige molekylevægt for et nukleotid er 330 g/mol og Avogadros tal er 6,0221415 \* 10^23^ mol^-1^.
+:::
+
+::: {.solution-callout}
+4^N^ = 4^220^ mulige sekvenser. \ 
+M(ribonukleotid) = 330 g/mol. \
+M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
+
+m(bibliotek 1) = n \* M = (antal/N~A~) \* 72.600 g/mol = 3,42 \* 10^113^ g\
+m(bibliotek 2) = n \* M = (antal/N~A~) \* 72.600 g/mol = 194 μg\
+
+Det betyder at det ikke er særlig svært at finde en RNA ligaseaktivitet, da den allerede kunne findes med et relativt lille bibliotek.
+:::
+
+### Forudsig konsensus sekundær struktur
 
 Efter ti runder af selektion og amplifikation blev biblioteket sekventeret og der blev fundet flere forskellige familier af sekvenser med ligaseaktivitet. En af familierne (klasse I), der havde god ligeringsaktivitet, er vist herunder som en sekvensaligment. 
 
@@ -113,49 +155,54 @@ GGAACACUCUACGACUGGAACCGAAAAAUACAAAUGUGCCCUUAGAGCUUGAUAAGAUCCUCGCAGGAUCCAGGGGAGGC
 GGAAGACCAUACGACUGGCACCGUACAAUACAAAUGUGCCCUCAGAGCUUGAGAAGAUCCUUGCAGGAUAAAGGGGAGGCACCCCCCGGUAGCUUAAAAGCCAACGUUCUCAACAAUGGUC-ACAA
 ```
 
-### Forudsig konsensus sekundær struktur
-
 Brug [**RNAalifold**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi) webserver til at forudsige konsensus sekundær struktur for RNA ligase klasse I. Sammenlign den forudsagte sekundær struktur med strukturen som forskerne kom frem til (Figur B). Hvilke stem-regioner (P) er forudsagt korrekt? Hvorfor tror du pseudoknuden P3 ikke er forudsagt?
+
+::: {.solution-callout}
+Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.
+
+![](media/image34.png){width="80%" fig-align="center" .lightbox}
+:::
+
 
 ### Identificer kompenserende baseændringer
 
 Hvilke kompenserende baseændringer bliver observeret og hvilke stem-regioner understøtter de? Hvilke stem-regioner modsiges af inkompatible basepar?
 
-I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt med røntgen krystallografi ([**Shechner *et al.,* 2009**](https://www.ncbi.nlm.nih.gov/pubmed/19965478)) og i 2011 blev den bestemt i "pre-ligation-state" ([**Shechner & Bartel, 2011**](https://www.nature.com/articles/nsmb.2107)). Åben scriptet **RNA-ligase.pml** i PyMOL. **F1** viser RNA strukturen med samme farver som vist i nedenstående figur i panel B - dog er pseudoknuden P3 markeret i rød i PyMOL.
+::: {.solution-callout}
+P2,4,6 støttes af kompenserende baseændringer.\
+PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
+:::
 
 ### Bestem hvilke stems stacker i PyMOL
 
+<a href="../files/TE8-RNA-ligase.pml" download="RNA-ligase.pml">
+  📥 Click to download PyMOL script.
+</a>
+
+I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt med røntgen krystallografi ([**Shechner *et al.,* 2009**](https://www.ncbi.nlm.nih.gov/pubmed/19965478)) og i 2011 blev den bestemt i "pre-ligation-state" ([**Shechner & Bartel, 2011**](https://www.nature.com/articles/nsmb.2107)). Åben scriptet `RNA-ligase.pml` i PyMOL. **F1** viser RNA strukturen med samme farver som vist i nedenstående figur i panel B - dog er pseudoknuden P3 markeret i rød i PyMOL.
+
 Hvilke stems stacker på hinanden? Hint: To stems kan tilsammen danne en længere helix ved at stacke på hinanden (som det ses f.eks. for P6 og P7 i Figur B).
+
+::: {.solution-callout}
+P2,4,5,6,7 forudsagt. I fravær af P1 og P3 er der forudsagt en anden hairpin, som vi kan kalde PX.\
+RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algoritme, der kun kan forudsige sekundær struktur.
+:::
 
 ### Analyser aktive site i pre- og post-ligation
 
-**F2** viser active site i "pre-ligation-state` og **F3** `post-ligation-state". Mellem hvilke nukleotider dannes den nye binding? Hvorfor er C47 mon udskiftet med U47 i "pre-ligation-state"? Hvad er C47s rolle i katalysen og hvilken interaktion har C47 med C30? (Hint: Se Figur D).
+**F2** viser active site i "pre-ligation-state` og **F3** `post-ligation-state". Mellem hvilke nukleotider dannes den nye binding? Hvorfor er C47 mon udskiftet med U47 i "pre-ligation-state"? Hvad er C47s rolle i katalysen og hvilken interaktion har C47 med C30?.
+
+::: {.callout-tip title="Hint"}
+Se Figur D
+:::
+
+::: {.solution-callout}
+C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
+:::
 
 ### Sammenlign reaktionsmekanismer RNA og protein
 
 Active site for RNA polymerase proteinet (Figur C) ligner meget active site for RNA ligasen (Figur D). Hvilken reaktionsmekanisme sker når to nukelotider hæftes sammen? Hvilken rolle spiller Mg^2+^-ion, C30, C47 og vand-molekylet?
-
-![](media/image33.png){width="6.263888888888889in" height="7.958333333333333in"}
-
-::: {.solution-callout}
-
-**1.**  4^N^ = 4^220^ mulige sekvenser. M(ribonukleotid) = 330 g/mol. M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
-    m(bibliotek 1) = n \* M = (antal/N~A~) \* 72.600 g/mol = 3,42 \* 10^113^ g\
-    m(bibliotek 2) = n \* M = (antal/N~A~) \* 72.600 g/mol = 194 μg\
-    Det betyder at det ikke er særlig svært at finde en RNA ligaseaktivitet, da den allerede kunne findes med et relativt lille bibliotek.
-
-**2.**  Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.\
-    \
-    ![Screen Shot 2017-10-24 at 19.30.02](media/image34.png){width="2.3650120297462816in" height="1.9007086614173228in"}
-
-**3.**  P2,4,6 støttes af kompenserende baseændringer.\
-    PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
-
-**4.**  P2,4,5,6,7 forudsagt. I fravær af P1 og P3 er der forudsagt en anden hairpin, som vi kan kalde PX.\
-    RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algoritme, der kun kan forudsige sekundær struktur.
-
-**5.**  C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
-:::
 
 ## Opgave 3. Globin sekvensalignment 
 
@@ -196,7 +243,11 @@ Protein alignment programmer som MUSCLE bruger Blossum-62 matricen til at score 
 
 ### Beregn BLOSUM-62-score for alignment
 
-Brug figur 10.7 til at beregne score for de første (fra N-term) af hver slags ændring hhv. "conserved" (markeret med \* tegn), "conservative" (markeret med : tegn) og "semi-conservative" (markeret med . tegn) i MUSCLE alignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hint: For tre sekvenser summeres scores for alle sammenlignings-kombinationer.
+Brug figur 10.7 til at beregne score for de første (fra N-term) af hver slags ændring hhv. "conserved" (markeret med \* tegn), "conservative" (markeret med : tegn) og "semi-conservative" (markeret med . tegn) i MUSCLE alignment af Hæmoglobin, Myoglobin og Leghæmoglobin. 
+
+::: {.callout-tip title="Hint"}
+For tre sekvenser summeres scores for alle sammenlignings-kombinationer.
+:::
 
 ### Identificer aminosyreegenskaber i BLOSUM-62
 
