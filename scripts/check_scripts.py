@@ -75,6 +75,8 @@ def main(args):
         console.print("Install PyMOL or set PYMOL_BIN to the full executable path.", style="bold red")
         raise SystemExit(1)
 
+    console.print("Checking PyMOL scripts for syntax errors...", style="bold green")
+    console.print("Checking: {}".format(args.file if args.file else (args.directory if args.directory else "current directory")), style="bold green")
     console.print(f"Using PyMOL executable: {pymol_bin}", style="bold green")
 
     if args.file:
