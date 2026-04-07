@@ -109,6 +109,16 @@ To wrap text around a floating figure it can be wrapped in float div, like below
 :::
 ```
 
+### Checking figure references 
+
+The command 
+
+```sh
+pixi run check-figures
+```
+Produces an overview of the figure references in the documents and highlights any 
+broken links or unlinked figures. 
+
 ## Code 
 
 Markdown supports both inline code and code blocks. Inline code is written using single-backticks ``` `code` ```
@@ -189,10 +199,16 @@ This can include any other content, such as figures, math or code.
 
 Downloadable files should be put in the `course_notes/files`-directory and then linked to using a block like
 
-```
+```txt
 <a href="../files/script_te4_e7.pml" download="Tu.pml">
   📥 Click to download script.
 </a>
 ```
 
 Here the `href`-path should is the relative path from the `.qmd` to the fil. The `download`-path specifies the file name of the downloaded file. 
+
+You can check that downloadable files are correctly linked using the command 
+
+```sh
+pixi run check-downloads
+```
