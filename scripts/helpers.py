@@ -25,7 +25,7 @@ class QMDDocument:
         matches = re.findall(pattern, self.content)
         download_paths = []
         for match in matches:
-            download_path = self.path.resolve().parent / match
+            download_path = (self.path.resolve().parent / match).resolve()
             download_paths.append(download_path)
         return download_paths
 
