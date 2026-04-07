@@ -5,6 +5,28 @@ from pathlib import Path
 
 from rich.console import Console
 from rich.panel import Panel
+from rich.text import Text
+from rich.highlighter import RegexHighlighter, Highlighter
+
+class ErrorHighlighter(Highlighter):
+
+    def check(self, text: Text) -> bool:
+        if "Error" in text.plain:
+            return True
+        if "Traceback" in text.plain:
+            return True
+        return False
+
+    def highlight(self, text: Text) -> None:
+        # Highlight lines that contain "Error" in red.
+        character_index = 0
+        for line in text.split():
+            if self.check(line):
+                text.stylize("bold red", character_index, character_index + len(line))
+            character_index += len(line) + 1  # +1 for the newline character
+
+
+
 
 def find_pymol_executable() -> str | None:
     # Allow users/collaborators to override executable path explicitly.
@@ -28,7 +50,8 @@ def check_script(pymol_bin: str, script_path: Path, console: Console) -> bool:
         output = subprocess.run([pymol_bin, "-c", str(script_path)], check=True, capture_output=True, text=True)
 
         if "Error" in output.stdout:
-            panel = Panel(output.stdout, title=f"Syntax Errors in {script_path.name}", style="bold red")
+
+            panel = Panel(ErrorHighlighter()("\n".join(output.stdout.splitlines())), title=f"Syntax Errors in {script_path.name}")
             console.print(panel)
 
             # console.print(f"Script '{script_path.name}' has syntax errors", style="bold red")
