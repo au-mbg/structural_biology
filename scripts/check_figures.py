@@ -1,25 +1,9 @@
 from pathlib import Path
-import re
+from helpers import QMDDocument, ROOT
+from rich.console import Console
 
 EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg"]
 EXCLUDE = ['_site']
-
-ROOT = Path.cwd() / 'course_notes'
-
-class QMDDocument:
-    def __init__(self, path: Path):
-        self.path = path
-        self.content = path.read_text()
-
-    def find_figures(self) -> list[Path]:
-        pattern = r"!\[.*?\]\((.*?)\)"
-        matches = re.findall(pattern, self.content)
-        figure_paths = []
-        for match in matches:
-            figure_path = self.path.resolve().parent / match
-            figure_paths.append(figure_path)
-        return figure_paths
-
 
 def relative_to_root(path: Path) -> Path:
     return path.relative_to(ROOT.resolve())
@@ -32,6 +16,8 @@ def find_figures(directory: Path) -> list[Path]:
     return paths
 
 def main():    
+    console = Console()
+
     figure_files = find_figures(ROOT)
     figure_ref_count = {path: 0 for path in figure_files}
 
@@ -42,7 +28,7 @@ def main():
             if figure_path in figure_ref_count:
                 figure_ref_count[figure_path] += 1
             else:
-                print(f"Warning: Figure {relative_to_root(figure_path)} referenced in {relative_to_root(qmd_file.resolve())} not found in figure files.")
+                console.print(f"Warning: Figure {relative_to_root(figure_path)} referenced in {relative_to_root(qmd_file.resolve())} not found in figure files.", style="bold yellow")
 
     # Print the results
     for figure_path, count in figure_ref_count.items():
@@ -52,14 +38,10 @@ def main():
             for ext in EXTENSIONS:
                 alt_figure_path = figure_path.with_suffix(ext)
                 if alt_figure_path in figure_ref_count and figure_ref_count[alt_figure_path] > 0:
-                    print(f"Figure {relative_to_root(figure_path)} is not referenced, but {relative_to_root(alt_figure_path)} is referenced.")
+                    console.print(f"Figure {relative_to_root(figure_path)} is not referenced, but {relative_to_root(alt_figure_path)} is referenced.", style="bold yellow")
                     break
             else:
-                print(f"Figure {relative_to_root(figure_path)} is not referenced in any .qmd file.")
-
-
-
-
+                console.print(f"Figure {relative_to_root(figure_path)} is not referenced in any .qmd file.", style="bold red")
 
 if __name__ == "__main__":
     main()

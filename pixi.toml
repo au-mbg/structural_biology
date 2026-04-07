@@ -40,6 +40,10 @@ description = "Check a specific PyMOL script for syntax errors"
 cmd = """python scripts/check_figures.py"""
 description = "Check all figures for references in .qmd files"
 
+[tasks.check-downloads]
+cmd = """python scripts/check_downloads.py"""
+description = "Check that all download links in the course notes are valid"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 
@@ -52,3 +56,6 @@ quarto = ">=1.8.27,<2"
 [feature.git-tools.dependencies]
 gh = '*'
 git = '*'
+
+[pypi-dependencies]
+rich = ">=14.3.3, <15"
