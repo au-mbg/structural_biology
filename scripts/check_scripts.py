@@ -6,7 +6,9 @@ from pathlib import Path
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
-from rich.highlighter import RegexHighlighter, Highlighter
+from rich.highlighter import Highlighter
+
+import tempfile
 
 class ErrorHighlighter(Highlighter):
 
@@ -47,16 +49,16 @@ def find_pymol_executable() -> str | None:
 
 def check_script(pymol_bin: str, script_path: Path, console: Console) -> bool:
     try:
-        output = subprocess.run([pymol_bin, "-c", str(script_path)], check=True, capture_output=True, text=True)
+        with tempfile.TemporaryDirectory() as tmp:
+            # Symlink every sibling file into the temp dir
+            for f in script_path.parent.iterdir():
+                os.symlink(f.resolve(), Path(tmp) / f.name)
+
+            output = subprocess.run([pymol_bin, "-cq", str(script_path)], check=True, capture_output=True, text=True, cwd=tmp)
 
         if "Error" in output.stdout:
-
             panel = Panel(ErrorHighlighter()("\n".join(output.stdout.splitlines())), title=f"Syntax Errors in {script_path.name}")
             console.print(panel)
-
-            # console.print(f"Script '{script_path.name}' has syntax errors", style="bold red")
-            # for line in output.stdout.splitlines():
-            #     console.print(f"\t{line}", style="bold red")
             return False
 
         console.print(f"Script '{script_path.name}' is valid.", style="bold green")
@@ -83,19 +85,13 @@ def main(args):
         scripts = [Path(args.file)]
     else:
         script_dir = Path(args.directory) if args.directory else Path(".")
-        scripts = list(sorted(script_dir.glob("*.pml"))) + list(sorted(script_dir.glob("*.pse")))
+        scripts = list(sorted(script_dir.rglob("*.pml"))) + list(sorted(script_dir.rglob("*.pse")))
 
     if not scripts:
         console.print(f"No .pml or .pse files found in: {script_dir}", style="bold yellow")
         return
     
     scripts = [s.resolve() for s in scripts]
-    
-    # Go to a temporary directory to avoid any side effects from running the scripts.
-    with subprocess.Popen(["mktemp", "-d"], stdout=subprocess.PIPE, text=True) as proc:
-        temp_dir = proc.stdout.read().strip()
-    os.chdir(temp_dir)
-
     failed_scripts = []
     for script in scripts:
         if not check_script(pymol_bin, script, console):

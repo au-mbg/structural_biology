@@ -227,50 +227,8 @@ ELAIIIKKEMKDAA
 
 Brug [**ClustalO**](https://www.ebi.ac.uk/jdispatcher/msa/clustalo) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
 
-### Aligner globiner med MUSCLE
-
-Brug [**MUSCLE**](https://www.ebi.ac.uk/jdispatcher/msa/muscle) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
-
-### Sammenlign ClustalO og MUSCLE-resultater
-
-Sammenlign ClustalO og MUSCLE. Hvilke forskelle i alignment viser de?
-
-### Find tættest beslægtede globinsekvenser
-
-Klik på "Result Files" og på "Percent Identity Matrix". Hvilke to af de tre sekvenser er tættest beslægtet og med hvilken identitetsprocent?
-
-Protein alignment programmer som MUSCLE bruger Blossum-62 matricen til at score sekvensalignment. Blossum-62 matricen er vist i grafisk repræsentation i Berg `Biochemistry`, udgave 10, kapitel 10, figur 10.7.
-
-### Beregn BLOSUM-62-score for alignment
-
-Brug figur 10.7 til at beregne score for de første (fra N-term) af hver slags ændring hhv. "conserved" (markeret med \* tegn), "conservative" (markeret med : tegn) og "semi-conservative" (markeret med . tegn) i MUSCLE alignment af Hæmoglobin, Myoglobin og Leghæmoglobin. 
-
-::: {.callout-tip title="Hint"}
-For tre sekvenser summeres scores for alle sammenlignings-kombinationer.
-:::
-
-### Identificer aminosyreegenskaber i BLOSUM-62
-
-Hvilke aminosyreegenskaber er involveret i Blossum-62 score?
-
 ::: {.solution-callout}
-
-Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
-
-**1.**  11
-
-**2.**  11
-
-**3.**  MUSCLE, da den finder extra similariteter og laver ikke stort insert til sidst i alignment.
-
-**4.**  Hæmoglobin og Myoglobin med 27%
-
-**5.**  Blossum scores:\
-    Kolonne 4 = 3\*4 (L-L) =12\
-    Kolonne 18 = 2\*1 (T-S) + 4 (S-S) = 6\
-    Kolonne 19 = 2\*-1 (F-V) + 4 (V-V) = 2
-
-**6.**  Aminosyrer er opdelt i: 1) ladede, 2) polære, 3) store og hydrofobe, 4) andre.
+11
 
 ClustalO output:
 
@@ -292,7 +250,23 @@ HGA VTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR-------------- 141
 MYG QVLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG-------- 154
 .: .: . . : *
 ```
-MUSCLE output:
+
+ClustalO identitetsmatrix:
+
+```default
+1: LHG 100.00 19.84 18.71
+2: HGA 19.84 100.00 26.24
+3: MYG 18.71 26.24 100.00
+```
+
+:::
+
+### Aligner globiner med MUSCLE
+
+Brug [**MUSCLE**](https://www.ebi.ac.uk/jdispatcher/msa/muscle) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
+
+::: {.solution-callout}
+11
 
 ```default
 CLUSTAL multiple sequence alignment by MUSCLE (3.8)
@@ -312,13 +286,6 @@ HGA TLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR------
 MYG VLQSKHPGDFGADAQGAMNKALELFRKDMASNYKELGFQG
 .: .: : : . : .: .
 ```
-ClustalO identitetsmatrix:
-
-```default
-1: LHG 100.00 19.84 18.71
-2: HGA 19.84 100.00 26.24
-3: MYG 18.71 26.24 100.00
-```
 
 MUSCLE identitetsmatrix:
 
@@ -329,58 +296,135 @@ MUSCLE identitetsmatrix:
 ```
 :::
 
+### Sammenlign ClustalO og MUSCLE-resultater
+
+Sammenlign ClustalO og MUSCLE. Hvilke forskelle i alignment viser de?
+
+::: {.solution-callout}
+
+TODO: Det her svar giver ikke rigtig mening? 
+
+MUSCLE, da den finder extra similariteter og laver ikke stort insert til sidst i alignment.
+:::
+
+### Find tættest beslægtede globinsekvenser
+
+Klik på "Result Files" og på "Percent Identity Matrix". Hvilke to af de tre sekvenser er tættest beslægtet og med hvilken identitetsprocent?
+
+::: {.solution-callout}
+Hæmoglobin og Myoglobin med 27%
+:::
+
+### Beregn BLOSUM-62-score for alignment
+
+Protein alignment programmer som MUSCLE bruger Blossum-62 matricen til at score sekvensalignment. Blossum-62 matricen er vist i grafisk repræsentation i Berg `Biochemistry`, udgave 10, kapitel 10, figur 10.7.
+
+Brug figur 10.7 til at beregne score for de første (fra N-term) af hver slags ændring hhv. "conserved" (markeret med \* tegn), "conservative" (markeret med : tegn) og "semi-conservative" (markeret med . tegn) i MUSCLE alignment af Hæmoglobin, Myoglobin og Leghæmoglobin. 
+
+::: {.callout-tip title="Hint"}
+For tre sekvenser summeres scores for alle sammenlignings-kombinationer.
+:::
+
+::: {.solution-callout}
+Blossum scores:\
+Kolonne 4 = 3\*4 (L-L) =12\
+Kolonne 18 = 2\*1 (T-S) + 4 (S-S) = 6\
+Kolonne 19 = 2\*-1 (F-V) + 4 (V-V) = 2
+:::
+
+### Identificer aminosyreegenskaber i BLOSUM-62
+
+Hvilke aminosyreegenskaber er involveret i Blossum-62 score?
+
+::: {.solution-callout}
+Aminosyrer er opdelt i: 
+
+1. ladede
+2. polære
+3. store og hydrofobe
+4. andre.
+:::
+
+::: {.solution-callout}
+Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
+:::
+
 ## Opgave 4. Globin strukturalignment
 
-***PyMOL-scripting opgave**: I denne opgave skal i lære at bruge kommandoerne align og super.*
+<a href="../files/TE8-Globin.pml" download="Globin.pml">
+  📥 Click to download PyMOL script.
+</a>
 
-Åben nu pml filen**Globin.pml** i PyMOL, hvor **F1** viser en strukturel alignment af Hæmoglobin alfa kæde (PDB-ID: 1HBB), Myoglobin (PDB-ID: 1MBD) og Leghæmoglobin (PDB-ID: 1GDJ).
+***PyMOL-scripting opgave**: I denne opgave skal i lære at bruge kommandoerne `align` og `super`.*
+
+Åben nu pml filen `Globin.pml` i PyMOL, hvor **F1** viser en strukturel alignment af Hæmoglobin alfa kæde (PDB-ID: `1HBB`), Myoglobin (PDB-ID: `1MBD`) og Leghæmoglobin (PDB-ID: `1GDJ`).
 
 ### Beregn RMSD med super-kommando
 
-Forklar hvordan PyMOLs **[super](https://pymolwiki.org/index.php/Super)** kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem 1HBB, 1MBD og 1GDJ.
+Forklar hvordan PyMOLs [`super`](https://pymolwiki.org/index.php/Super) kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem `1HBB`, `1MBD` og `1GDJ`.
+
+::: {.solution-callout}
+Super aligner udelukkende på grundlag af struktur.
+
+Super RMSD beregnes med kommandoerne:
+
+`super 1gdj, 1mbd` $\rightarrow$ RMSD = 1.618\
+`super 1hbb_A, 1mbd` $\rightarrow$ RMSD = 1.401\
+`super 1hbb_A, 1gdj` $\rightarrow$ RMSD = 2.762
+:::
+
 
 ### Beregn RMSD med align-kommando
 
-Forklar hvordan PyMOLs [**align**](https://pymolwiki.org/index.php/Align) kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem 1HBB, 1MBD og 1GDJ.
+Forklar hvordan PyMOLs `align`(https://pymolwiki.org/index.php/Align) kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem 1HBB`, `1MBD` og `1GDJ`.
+
+::: {.solution-callout}
+Align laver først en sekvens alignment og bruger denne til at aligne struktur.
+
+Align RMSD beregnes med kommandoerne:
+
+`align 1gdj, 1mbd` $\rightarrow$ RMSD = 3.062\
+`align 1hbb_A, 1mbd` $\rightarrow$ RMSD = 1.328\
+`align 1hbb_A, 1gdj` $\rightarrow$ RMSD = 3.446
+:::
 
 ### Sammenlign super og align-kommandoer
 
-I hvilke tilfælde fungerer super og align bedst? Stemmer RMSD generelt overens med "percent identity" fra forrige opgave?
+I hvilke tilfælde fungerer `super` og `align` bedst? Stemmer RMSD generelt overens med "percent identity" fra forrige opgave?
 
 **F2** viser identiteter fra forrige opgave i grøn og hæmgruppe i rød. 
+
+::: {.solution-callout}
+Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
+:::
 
 ### Beskriv placering af bevarede aminosyrer
 
 Beskriv overordnet hvor de bevarede aminosyrer er placeret i globin-strukturen som vist i **F2**. Hvad er afstanden af bindingen mellem Histidin-87 og jern-atomet? Hvorfor vises denne vigtige binding ikke i PyMOL? Hvordan passer denne længde med en kovalent binding overfor en hydrogen-binding?
 
 ::: {.solution-callout}
-
-**1.**  Super aligner udelukkende på grundlag af struktur.\
-    Super RMSD beregnes med kommandoerne:\
-    super 1gdj, 1mbd RMSD = 1.618\
-    super 1hbb_A, 1mbd RMSD = 1.401\
-    super 1hbb_A, 1gdj RMSD = 2.762
-
-**2.**  Align laver først en sekvens alignment og bruger denne til at aligne struktur.\
-    Align RMSD beregnes med kommandoerne:\
-    align 1gdj, 1mbd RMSD = 3.062\
-    align 1hbb_A, 1mbd RMSD = 1.328\
-    align 1hbb_A, 1gdj RMSD = 3.446
-
-**3.**  Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
-
-**4.**  De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
+De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
 :::
 
 ## Opgave 5. Globin strukturbevarelse
 
-***PyMOL-scripting opgave**: I denne PyMOL opgave skal I lære at plotte sekvensbevarelse på protein struktur vha. et Python script, der hedder colCons.py.*
+<a href="../files/colCons.zip" download="colCons.zip">
+  📥 Click to download Python script & related files (colCons.zip).
+</a>
 
-Programmet colCons tager en alignment i fasta-format og en atomar struktur som input, beregner sekvensbevarelse ihht. BLOSSUM-62-matricen, og farvelægger hver aminosyre efter en farveskala. Download følgende zip-fil der indeholder colCons Python-programmet: **colCons.zip**, der ligger under denne TØ's mappe på Brightspace. Beskrivelse af hvordan programmet fungerer kan læses i toppen af Python-scriptet. allSorts.inp indeholder PyMOL-kommandoer til at køre programmet på to medfølgende eksempler: EFTU og Sortilin.
+<a href="../files/globin-aln-fasta.txt" download="globin-aln-fasta.txt">
+  📥 Click to download globin-aln-fasta.txt
+</a>
 
-I denne opgave bruger vi alignment af Hæmoglobin, Myoglobin og Leghæmoglobin fra opgave 5 som eksempel.
+***PyMOL-scripting opgave**: I denne PyMOL opgave skal I lære at plotte sekvensbevarelse på protein struktur vha. et Python script, der hedder `colCons.py`.*
 
-- Download **globin-aln-fasta.txt** og placér filen i colCons mappen.
+Programmet `colCons` tager en alignment i fasta-format og en atomar struktur som input, beregner sekvensbevarelse ihht. BLOSSUM-62-matricen, og farvelægger hver aminosyre efter en farveskala.
+
+Download følgende zip-fil der indeholder colCons Python-programmet: `colCons.zip`. Beskrivelse af hvordan programmet fungerer kan læses i toppen af Python-scriptet. `allSorts.inp` indeholder PyMOL-kommandoer til at køre programmet på to medfølgende eksempler: EFTU og Sortilin.
+
+I denne opgave bruger vi alignment af Hæmoglobin, Myoglobin og Leghæmoglobin fra opgave 4 som eksempel.
+
+- Download `globin-aln-fasta.txt` og placér filen i colCons mappen.
 
 - Åben nu PyMOL, navigér til colCons mappen, sæt PyMOL-parametre, og aktivér colCons.py scriptet:
 
@@ -392,27 +436,46 @@ bg_color white
 set opaque_background, off
 run colCons.py 
 ```
-***PyMOL info**: `cd`-kommandoen står for "change directory". Når man bruger cd-kommandoen skal man være opmærksom på hvor i computeren man er på et givent tidspunkt. Man kan tjekke hvor man er med kommandoen `pwd`, der vil give den nuværende sti til PyMOL sessionen. Brug `ls`-kommandoen for at opliste indholdet af den nuværende mappe. For at komme ind i den rigtige mappe kan man starte sin folder path med `cd /`, hvilket fører dig til root directory. Herefter indsættes vejen gennem foldere til filen. Man kan se filens folder path ved at højreklikke på filen og trykke "get info` på mac eller `properties`/`egenskaber" på windows. Det kunne f.eks. se sådan ud; cd /: Users/JensJensen/Desktop/BioMolStrFunk/TØ/TØ7.*
 
-- Hent nu Myoglobin og brug colCons til at farvelægge sekvensbevarelse i "rainbow" farveskala fra blå (sat til 50% sekvensbevarelse) til rød (sat til 100% sekvensbevarelse) ihht. globin-aln.fasta:
+::: {.callout-note title="PyMOL Info"}
+`cd`-kommandoen står for "change directory". Når man bruger cd-kommandoen skal man være opmærksom på hvor i computeren man er på et givent tidspunkt. Man kan tjekke hvor man er med kommandoen `pwd` (*print working directory*), der vil give den nuværende sti til PyMOL sessionen. Brug `ls`-kommandoen for at opliste indholdet af den nuværende mappe. For at komme ind i den rigtige mappe kan man starte sin folder path med `cd /`, hvilket fører dig til root directory. Herefter indsættes vejen gennem foldere til filen. Man kan se filens folder path ved at højreklikke på filen og trykke "get info` på mac eller `properties`/`egenskaber" på windows. Det kunne f.eks. se sådan ud; cd /: Users/JensJensen/Desktop/BioMolStrFunk/TØ/TØ7.*
+:::
+
+- Hent nu Myoglobin og brug `colCons` til at farvelægge sekvensbevarelse i "rainbow" farveskala fra blå (sat til 50% sekvensbevarelse) til rød (sat til 100% sekvensbevarelse) ihht. globin-aln.fasta:
 
 ```default
 fetch 1mbd
 color_cons('1mbd','globin-aln-fasta.txt',1,1,0.5,1.0,'rain','yellow','red','BLOSUM62',True)
 ```
-- Vis proteinet med "cartoon`- og `stick"-repræsentation og svar på følgende spørgsmål:
 
 ### Identificer bevarede aminosyrer ved hæmgruppen
 
-Hvilke 100% bevarede aminosyrer binder til hæmgruppen? Hvilke aminosyrer kontakter det centrale Fe atom i hæmgruppen? Hvilken aminosyre er "proximal histidine" og hvilken er "distal histidine" (svar på spørgsmål ud fra information i Berg, udgave 10, afsnit 3.2)? Hint: Find finder ikke interaktion med Fe, så brug i stedet "distance" funktionen.
+Vis proteinet med `cartoon`- og `stick`-repræsentation og svar på følgende spørgsmål.
 
-- Vis proteinet med `sphere`-repræsentation og svar på følgende spørgsmål:
+Hvilke 100% bevarede aminosyrer binder til hæmgruppen? Hvilke aminosyrer kontakter det centrale Fe atom i hæmgruppen? Hvilken aminosyre er "proximal histidine" og hvilken er "distal histidine" (svar på spørgsmål ud fra information i Berg, udgave 10, afsnit 3.2)? 
+
+::: {.callout-tip title=Hint}
+`find` finder ikke interaktion med Fe, så brug i stedet `distance` funktionen.
+:::
+
+::: {.solution-callout}
+De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
+:::
+
 
 ### Analyser overfladebevarelse i myoglobin
 
+Vis proteinet med `sphere`-repræsentation og svar på følgende spørgsmål.
+
 Hvordan er aminosyrer på overfladen af myoglobin bevaret? Hvordan ser bevarelsen ud omkring bindingssite for hæmgruppen?
 
-- Åben nu alle globinerne og farvelæg dem med colCons:
+::: {.solution-callout}
+Overfladen er blå (dvs. under 50% bevaret). Der er mange røde residues omkring hæmgruppen.
+:::
+
+### Sammenlign 3D-placering af bevarede rester
+
+Åben nu alle globinerne og farvelæg dem med colCons:
 
 ```default
 reinit
@@ -426,37 +489,37 @@ color_cons('1hbb','globin-aln-fasta.txt',3,1,0.5,1.0,'rain','yellow','red','BLOS
 color_cons('1mbd','globin-aln-fasta.txt',1,1,0.5,1.0,'rain','yellow','red','BLOSUM62',True)
 color_cons('1gdj','globin-aln-fasta.txt',2,1,0.5,1.0,'rain','yellow','red','BLOSUM62',True)
 ```
-- Vis proteinerne med "cartoon`- og `stick"-repræsentation og svar på følgende spørgsmål:
 
-### Sammenlign 3D-placering af bevarede rester
+Vis proteinerne med `cartoon`- og `stick`-repræsentation og svar på følgende spørgsmål.
 
 Er 3D placeringen af de 100% bevarede aminosyrer helt ens imellem de tre globiner?
+
+::: {.solution-callout}
+Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
+:::
 
 ### Find myoglobins strukturelle insert
 
 Myoglobin har et insert på position 57-61 i forhold til Hæmoglobin. Hvilken sekundær struktur har dette insert og hvilken ligand er bundet til denne struktur?
 
+::: {.solution-callout}
+Bøjning af alfa-helix. Ligand er SO~4~^2-^.
+:::
+
 ### Sammenlign myoglobin og hæmoglobin strukturelt
 
 Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Myoglobin (1MBD)?
+
+::: {.solution-callout}
+Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
+:::
 
 ### Sammenlign hæmoglobin og leghæmoglobin
 
 Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmoglobin (1GDJ)?
 
 ::: {.solution-callout}
-
-**1.**  De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
-
-**2.**  Overfladen er blå (dvs. under 50% bevaret). Der er mange røde residues omkring hæmgruppen.
-
-**3.**  Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
-
-**4.**  Bøjning af alfa-helix. Ligand er SO~4~^2-^.
-
-**5.**  Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
-
-**6.**  Alfa helix 4 er forlænget i C-terminal.
+Alfa helix 4 er forlænget i C-terminal.
 :::
 
 ## Opgave 6. Heat shock protein 70 evolution
@@ -467,7 +530,11 @@ Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmog
 
 ### Sammenlign HSP74 og HSP7F i alignment
 
-Kig på alignment (klik på "Alignments`, vælg derefter `seed") og sammenlign HSP74 fra menneske og HSP7F fra gær. Hvad er den største forskel mellem dem?
+Kig på alignment (klik på `Alignments`, vælg derefter `seed`) og sammenlign HSP74 fra menneske og HSP7F fra gær. Hvad er den største forskel mellem dem?
+
+::: {.solution-callout}
+Stort insert omkring position 550.
+:::
 
 ### Skriv PyMOL-script til strukturalignment
 
@@ -487,119 +554,37 @@ Lav et PyMOL-script, der gør følgende:
 
 - Gem som F3.
 
+::: {.solution-callout}
+
+```default
+{{< include pymol_scripts/script_te8_e6.pml >}}
+```
+
+:::
+
+
 ### Lokalisér insert i HSP7F-struktur
 
-Tryk på **F1** og identificer positionen for insertet FKKVTKTVKKDDLTIVAHTFGLDAKKLNE (rest 521-549) i HSP7F fra gær. I hvilken sekundær struktur sidder dette insert? Foreslå evolutionær mekanisme hvormed dette insert er blevet dannet.
+Tryk på **F1** og identificer positionen for insertet `FKKVTKTVKKDDLTIVAHTFGLDAKKLNE` (rest 521-549) i HSP7F fra gær. I hvilken sekundær struktur sidder dette insert? Foreslå evolutionær mekanisme hvormed dette insert er blevet dannet.
+
+::: {.solution-callout}
+Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
+:::
 
 ### Beskriv strukturforskelle i HSP7F og DnaK
 
 Tryk på **F2** for at se strukturel alignment af HSP7F og DNAK. Hvilke strukturelle forskelle er der på disse strukturer?
+
+::: {.solution-callout}
+Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet pos
+:::
+
 
 ### Beskriv domænestruktur i HSP og actin
 
 Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den overordnede struktur af domæner med beta sheets og alfa helices. Er actin og Hsp70 homologe proteiner når de har en forskellig funktion?
 
 ::: {.solution-callout}
-
-**1.**  Stort insert omkring position 550.
-
-**2.**  Script:
-
-```default
-## Script til opgave 6. Heat shock protein 70 evolution
-
-reinit
-
-fetch 2qxl, async=0
-
-remove solvent
-
-remove not chain A
-
-color red, ss h
-
-color yellow, ss s
-
-color green, ss l+''
-
-zoom 2qxl
-
-set_view (\
-0.199747995, 0.212087438, 0.956618607,\
-0.376789302, 0.884598374, -0.274796277,\
--0.904504299, 0.415335208, 0.096784934,\
-0.000000000, 0.000000000, -305.530761719,\
-78.327835083, 88.848686218, -11.949821472,\
-240.882781982, 370.178741455, -20.000000000 )
-
-scene F1, store
-
-fetch 4b9q, async=0
-
-remove solvent
-
-remove not chain A
-
-align 4b9q, 2qxl
-
-reset
-
-color red, ss h
-
-color yellow, ss s
-
-color green, ss l+''
-
-zoom 2qxl
-
-set_view (\
-0.199747995, 0.212087438, 0.956618607,\
-0.376789302, 0.884598374, -0.274796277,\
--0.904504299, 0.415335208, 0.096784934,\
-0.000000000, 0.000000000, -305.530761719,\
-78.327835083, 88.848686218, -11.949821472,\
-240.882781982, 370.178741455, -20.000000000 )
-
-scene F2, store
-
-# Sammenlign HSP og actin
-
-hide everything
-
-fetch 1atn 1atr, async=0
-
-remove solvent
-
-remove not chain A
-
-align 1atr, 1atn
-
-reset
-
-color red, ss h
-
-color yellow, ss s
-
-color green, ss l+''
-
-zoom 1atr
-
-set_view (\
-0.958695173, -0.196217537, 0.205921307,\
--0.060286976, 0.567336917, 0.821276307,\
--0.277975500, -0.799767375, 0.532072842,\
-0.000000000, 0.000000000, -204.769836426,\
-94.304534912, 50.986602783, 71.455520630,\
-161.442108154, 248.097564697, -20.000000000 )
-
-scene F3, store
-
-scene F1
-```
-**3.**  Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
-
-**4.**  Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet position.
-
-**5.**  Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
-    Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
+Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
+Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
 :::
