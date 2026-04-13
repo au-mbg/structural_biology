@@ -2,3 +2,9 @@
 project:
   output-dir: _site
 
+website:
+  navbar:
+    right:
+      - href: instructor/index.html
+        text: Go to solution version
+        icon: book-fill

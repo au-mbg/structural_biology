@@ -10,8 +10,8 @@ from rich.highlighter import Highlighter
 
 import tempfile
 
-class ErrorHighlighter(Highlighter):
 
+class ErrorHighlighter(Highlighter):
     def check(self, text: Text) -> bool:
         if "Error" in text.plain:
             return True
@@ -26,8 +26,6 @@ class ErrorHighlighter(Highlighter):
             if self.check(line):
                 text.stylize("bold red", character_index, character_index + len(line))
             character_index += len(line) + 1  # +1 for the newline character
-
-
 
 
 def find_pymol_executable() -> str | None:
@@ -54,17 +52,29 @@ def check_script(pymol_bin: str, script_path: Path, console: Console) -> bool:
             for f in script_path.parent.iterdir():
                 os.symlink(f.resolve(), Path(tmp) / f.name)
 
-            output = subprocess.run([pymol_bin, "-cq", str(script_path)], check=True, capture_output=True, text=True, cwd=tmp)
+            output = subprocess.run(
+                [pymol_bin, "-cq", str(script_path)],
+                check=True,
+                capture_output=True,
+                text=True,
+                cwd=tmp,
+            )
 
         if "Error" in output.stdout:
-            panel = Panel(ErrorHighlighter()("\n".join(output.stdout.splitlines())), title=f"Syntax Errors in {script_path.name}")
+            panel = Panel(
+                ErrorHighlighter()("\n".join(output.stdout.splitlines())),
+                title=f"Syntax Errors in {script_path.name}",
+            )
             console.print(panel)
             return False
 
         console.print(f"Script '{script_path.name}' is valid.", style="bold green")
         return True
     except subprocess.CalledProcessError as e:
-        console.print(f"Script '{script_path.name}' has syntax errors:\n{e.stderr}", style="bold red")
+        console.print(
+            f"Script '{script_path.name}' has syntax errors:\n{e.stderr}",
+            style="bold red",
+        )
         return False
 
 
@@ -74,45 +84,76 @@ def main(args):
     pymol_bin = find_pymol_executable()
     if pymol_bin is None:
         console.print("Could not find PyMOL executable.", style="bold red")
-        console.print("Install PyMOL or set PYMOL_BIN to the full executable path.", style="bold red")
+        console.print(
+            "Install PyMOL or set PYMOL_BIN to the full executable path.",
+            style="bold red",
+        )
         raise SystemExit(1)
 
     console.print("Checking PyMOL scripts for syntax errors...", style="bold green")
-    console.print("Checking: {}".format(args.file if args.file else (args.directory if args.directory else "current directory")), style="bold green")
+    console.print(
+        "Checking: {}".format(
+            args.file
+            if args.file
+            else (args.directory if args.directory else "current directory")
+        ),
+        style="bold green",
+    )
     console.print(f"Using PyMOL executable: {pymol_bin}", style="bold green")
 
     if args.file:
         scripts = [Path(args.file)]
     else:
         script_dir = Path(args.directory) if args.directory else Path(".")
-        scripts = list(sorted(script_dir.rglob("*.pml"))) + list(sorted(script_dir.rglob("*.pse")))
+        scripts = list(sorted(script_dir.rglob("*.pml"))) + list(
+            sorted(script_dir.rglob("*.pse"))
+        )
 
     if not scripts:
-        console.print(f"No .pml or .pse files found in: {script_dir}", style="bold yellow")
+        console.print(
+            f"No .pml or .pse files found in: {script_dir}", style="bold yellow"
+        )
         return
-    
+
     scripts = [s.resolve() for s in scripts]
     failed_scripts = []
     for script in scripts:
         if not check_script(pymol_bin, script, console):
             failed_scripts.append(script)
 
-    console.print(f"Checked {len(scripts)} scripts, {len(failed_scripts)} failed.", style="bold green")
+    console.print(
+        f"Checked {len(scripts)} scripts, {len(failed_scripts)} failed.",
+        style="bold green",
+    )
     if failed_scripts:
         console.print("Failed scripts:", style="bold red")
         for script in failed_scripts:
             console.print(f"\t{script}", style="bold red")
 
-
     if failed_scripts:
         raise SystemExit(1)
+
 
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Check PyMOL scripts for syntax errors.")
-    parser.add_argument("--directory", "-d", type=str, default=None, help="Directory to search for .pml files (default: current directory)")
-    parser.add_argument("--file", "-f", type=str, help="Specific .pml file to check (overrides --directory)", default=None)
+    parser = argparse.ArgumentParser(
+        description="Check PyMOL scripts for syntax errors."
+    )
+    parser.add_argument(
+        "--directory",
+        "-d",
+        type=str,
+        default=None,
+        help="Directory to search for .pml files (default: current directory)",
+    )
+    parser.add_argument(
+        "--file",
+        "-f",
+        type=str,
+        help="Specific .pml file to check (overrides --directory)",
+        default=None,
+    )
     args = parser.parse_args()
 
     main(args)

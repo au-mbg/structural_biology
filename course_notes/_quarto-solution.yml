@@ -1,3 +1,17 @@
 # Profile active when rendering solution handouts
 project:
   output-dir: _site/instructor
+
+website:
+  navbar:
+    right:
+      - href: ../index.html
+        text: Go to student version
+        icon: book
+
+  announcement:
+    icon: info-circle
+    dismissable: false
+    content: "You are viewing the instructor version of the course notes. Click the button in the top right to switch to the student version."
+    type: primary
+    position: below-navbar
