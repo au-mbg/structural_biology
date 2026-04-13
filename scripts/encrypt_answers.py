@@ -44,6 +44,8 @@ def encrypt_file(page: ProtectedPage) -> None:
         "--short",
         "--config",
         "false",
+        "--template-color-secondary",
+        "#1e1e1e",
     ]
 
     subprocess.run(cmd, check=True)
