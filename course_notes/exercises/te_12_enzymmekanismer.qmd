@@ -215,7 +215,7 @@ PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end a
 
 ***PyMOL-scripting opgave**: I denne opgave skal I bruge den viden I har fået i sidste uges TØ og video 6 om PyMOL API. OBS: Denne opgave er svær og det forventes ikke at alle kommer i mål. Det er en rigtigt god ide at alliere sig med nogle studiekammerater, som man kan løse den sammen med.*
 
-Denne opgave går ud på at skrive en python-udvidelse af PyMOL, der finder potentielle katalytiske triader bestående af en aspartat, i en selektion. Test den på MHETase fra opgave 10. Nedenfor er anført en foreslået fremgangsmåde, der baserer sig udelukkende på afstande mellem aminosyrerne.
+Denne opgave går ud på at skrive en python-udvidelse af PyMOL, der finder potentielle katalytiske triader bestående af en aspartat, i en selektion. Test den på MHETase fra opgave 7. Nedenfor er anført en foreslået fremgangsmåde, der baserer sig udelukkende på afstande mellem aminosyrerne.
 
 - Lav lister over alle asp, ser og his-rester i en selektion.
 
@@ -227,7 +227,7 @@ Denne opgave går ud på at skrive en python-udvidelse af PyMOL, der finder pote
 
 - Returner alle underlister, der har længden 3.
 
-Test jeres udvidelse på nogle strukturer I ved indeholde en katalytisk triade bestående af en aspartat, en serin og en histidin (F.eks. MHETase (PDB-ID: 6QGA) eller subtilisin (PDB-ID: 1SUB)).
+Test jeres udvidelse på nogle strukturer I ved indeholde en katalytisk triade bestående af en aspartat, en serin og en histidin (F.eks. MHETase (PDB-ID: `6QGA`) eller subtilisin (PDB-ID:  `1SUB`)).
 
 ::: {.callout-note title="Dybdegående guide"}
 PyMOL er, som du sikkert ved, et python-baseret program og derfor er det ikke overraskende, at der eksisterer en indbygget [API](https://da.wikipedia.org/wiki/Application_programming_interface) (Application Programming Interface) i PyMOL til Python. Dette gør, at man kan skrive avancerede udvidelser af PyMOL, der benytter sig af alle Pythons funktioner. Man kan køre en python-fil fra PyMOL ved at sørge for at have python-filen i *working directory.* F.eks. kan filen `python_fil.py`, der ligger i mappen `slangefiler` køres ved først at skifte directory med kommandoen: `cd users\jens_jensen\slangefiler\` og dernæst skrive: run python_fil.py i PyMOLs kommandolinje. Nedenfor er en step-by-step guide, der kan hjælpe dig igennem opgaven.
