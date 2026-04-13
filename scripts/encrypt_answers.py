@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import subprocess
 from pathlib import Path
 
-ROOT = Path("course_notes/_site/instructor/").resolve()
+ROOT = Path("course_notes/_site/instructor/exercises/").resolve()
 
 
 @dataclass()
