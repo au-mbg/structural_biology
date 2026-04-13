@@ -22,9 +22,10 @@ cwd = "course_notes"
 description = "Render the course notes in either exercise or solution mode"
 
 [tasks.render-all]
-depends-on = ["clean",
+depends-on = ["clean", "npm-install",
             {task = "render", args=["exercise"]},
-            {task = "render", args=["solution"]}]
+            {task = "render", args=["solution"]},
+            "encrypt-answers"]
 description = "Clean and render the course notes in both exercise and solution mode"
 
 [tasks.check-pymol-scripts]
@@ -44,14 +45,24 @@ description = "Check all figures for references in .qmd files"
 cmd = """python scripts/check_downloads.py"""
 description = "Check that all download links in the course notes are valid"
 
+[tasks.npm-install]
+cmd = "npm install"
+description = "Install npm dependencies"
+inputs = ["package.json"]
+outputs = ["node_modules"]
+
+[tasks.encrypt-answers]
+cmd = "python scripts/encrypt_answers.py"
+description = "Encrypt the answer pages using staticrypt"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
-
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
 
 [dependencies]
 python = "3.12.*"
 quarto = ">=1.8.27,<2"
+nodejs = ">=20"
 
 [feature.git-tools.dependencies]
 gh = '*'

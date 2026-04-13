@@ -16,3 +16,6 @@ __pycache__/
 
 # Avoid the Brightspace folder for now, as it contains a lot of files that we don't need to track in git.
 brightspace/
+
+# NodeJS
+node_modules/
