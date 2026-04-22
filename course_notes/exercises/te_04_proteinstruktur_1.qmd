@@ -307,9 +307,7 @@ Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæd
 
 ## Opgave 7. Nukleotid binding
 
-<a href="../files/TE4-Elongerings_Faktor_Tu.pml" download="Elongerings_Faktor_Tu.pml">
-  📥 Click to download `Elongerings-Faktor_Tu.pml`.
-</a>
+{{< download path="../files/TE4-Elongerings_Faktor_Tu.pml" filename="Elongerings_Faktor_Tu.pml" >}}
 
 ***PyMOL-scripting opgave**: I denne opgave skal i bruge de kommandoer I allerede kender, men også lære kommandoen "distance".*
 

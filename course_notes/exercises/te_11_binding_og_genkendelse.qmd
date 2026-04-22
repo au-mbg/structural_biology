@@ -167,9 +167,7 @@ Kurve 1: d. Kurve 2: a eller c. Kurve 4: b.
 
 ***Databehandlings opgave**: I denne opgave er det en fordel at bruge Python til databehandling, f.eks. igennem [Google Colab](https://colab.research.google.com/)*
 
-<a href="../files/lampretfisk_hb_ilt.csv" download="lampretfisk_hb_ilt.csv">
-  📥 Click to download dataset.
-</a>
+{{< download-button path="../files/lampretfisk_hb_ilt.csv" >}}
 
 Lampretfisk er primitive dyr, hvis stamfædre (og ditto mødre!) forgrenede sig væk fra fiskenes stamforældre ca. 400 millioner år siden. Lampretfisk indeholder en hemoglobin (Hb) der er beslægtet med pattedyrs Hb. Der er dog den forskel at lampret Hb er monomert i den ilt-bundne form. Tilførende data for lampret Hb ilt binding kan ses nedenfor eller downloades som `.csv` ovenfor 
 

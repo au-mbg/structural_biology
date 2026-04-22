@@ -4,14 +4,9 @@ title: "TØ 6 -- Nukleinsyrestruktur 1"
 
 ## Opgave 1. Kærlighed ved første blik
 
-<a href="../files/TE6-DNA-groove.pml" download="DNA-groove.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE6-DNA-groove.pml" filename="DNA-groove.pml" >}}
 
-<a href="../files/TE6-DNA-groove-colorblind.pml" download="DNA-groove-colorblind.pml">
-  📥 Click to download PyMOL script (Colorblind mode).
-</a>
-
+{{< download-button path="../files/TE6-DNA-groove-colorblind.pml" filename="DNA-groove-colorblind.pml" >}}
 
 I denne opgave skal I lære hvordan proteiner genkender DNA (eller omvendt) for at kunne indgå i en specifik ("romantisk") binding til hinanden. Hemmeligheden bag denne genkendelse kan findes i Liljas "Textbook of Structural Biology" afsnit 10.2, hvor den specifikke interaktion mellem aminosyrer og DNA-baser beskrives. Aminosyrerne kan genkende både major og minor groove via den såkaldte "groove code", der er vist i Liljas figur 10.18. Som det ses i figuren herunder er der eksponerede H-bindings-donorer og acceptorer i både major og minor groove og det er disse, som aminosyrerne kan genkende og binde til:
 
@@ -108,9 +103,7 @@ Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f
 
 ## Opgave 3. TATA-box
 
-<a href="../files/TE6-TATA.pml" download="TATA.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< downloadb-button path="../files/TE6-TATA.pml" filename="TATA.pml" >}}
 
 Det TATA-box bindende protein (TBP) er involveret i promoter-genkendelse mht. at starte RNA polymerase transskription. TATA-boksen er en 8-basepar del af promoteren, der normalt er lokaliseret 30 nukleotider før transskription start site (TSS). Konsensus-sekvensen er `TATA(A/T)A(A/T)(G/A)`.
 
@@ -158,9 +151,7 @@ Phenylalaninerne indsætter sig mellem basepar og hjælper til at forankre TBP i
 
 ## Opgave 4. Mad-Max
 
-<a href="../files/TE6-Mad-Max.pml" download="Mad-Max.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE6-Mad-Max.pml" filename="Mad-Max.pml" >}}
 
 Max-Myc-Mad er et heterodimerisk transkriptionsfaktor system, der binder specifikt til DNA segmentet CACGTG som tre forskellige komplekser: Myc-Max, Max-Max og Mad-Max. Ifølge forfatterne til den oprindelige artikel om Max-Myc-Mad systemet har navngivningen af Mad (det andet protein i Mad-Max heterodimer) ikke noget at gøre med filmen af samme navn ([**Youtube link**](https://youtu.be/hEJnMQG9ev8)), men kommer fra forkortelsen af "Max dimerization". Hent PyMOL-scriptet `Mad-Max.pml` og kør det i PyMOL. Tryk **F1** for at se Myc-Max komplekset, tryk **F2** for at se Max-Max komplekset, og **F3** for at se Mad-Max komplekset.
 
@@ -211,9 +202,7 @@ Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er hete
 
 ## Opgave 5. At TALE med DNA
 
-<a href="../files/TE6-TALE.pml" download="TALE.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE6-TALE.pml" filename="TALE.pml" >}}
 
 Transskriptionsfaktor-lignende effector nukleaser (TALENs) binder specifikke DNA-sekvenser vha. en række DNA-bindende domæner kaldet TALE-repeats. TALEN-proteiner kan designes til at genkende og kløve specifikke DNA-sekvenser og kan dermed anvendes til genom-redigering (genome editing). TALE-proteiner er omtalt i Berg Biochemistry, udgave 10, side 292, og opbygningen kan ses i figur 9.37 (se nedenstående figur).
 
@@ -251,9 +240,7 @@ Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-r
 
 ## Opgave 6. Trp trap træsko 
 
-<a href="../files/TE6-Trp.pml" download="Trp.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button file="../files/TE6-Trp.pml" filename="Trp.pml" >}}
 
 I *E. coli* binder Trp-repressor en specifik DNA-sekvens under tilstedeværelse af aminosyren tryptofan (Trp) og hæmmer dermed udtryk af fem gener i *trp-*operon. Trp-repressor danner en homodimer, der binder til DNA-dobbelthelix via to alpha-helicer (kaldet "genkendelseshelicer"). Åben PyMOL-scriptet `Trp.pml` i PyMOL, der laver en strukturel alignment af Trp-repressor (bundet til Trp og DNA) med *apo*-formen af proteinet (ikke bundet til Trp eller DNA). **F1** viser denne alignment.
 

@@ -175,9 +175,7 @@ PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
 
 ### Bestem hvilke stems stacker i PyMOL
 
-<a href="../files/TE8-RNA-ligase.pml" download="RNA-ligase.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE8-RNA-ligase.pml" filename="RNA-ligase.pml" >}}
 
 I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt med røntgen krystallografi ([**Shechner *et al.,* 2009**](https://www.ncbi.nlm.nih.gov/pubmed/19965478)) og i 2011 blev den bestemt i "pre-ligation-state" ([**Shechner & Bartel, 2011**](https://www.nature.com/articles/nsmb.2107)). Åben scriptet `RNA-ligase.pml` i PyMOL. **F1** viser RNA strukturen med samme farver som vist i nedenstående figur i panel B - dog er pseudoknuden P3 markeret i rød i PyMOL.
 
@@ -351,9 +349,7 @@ Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare s
 
 ## Opgave 4. Globin strukturalignment
 
-<a href="../files/TE8-Globin.pml" download="Globin.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE8-Globin.pml" filename="Globin.pml" >}}
 
 ***PyMOL-scripting opgave**: I denne opgave skal i lære at bruge kommandoerne `align` og `super`.*
 
@@ -408,13 +404,9 @@ De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen
 
 ## Opgave 5. Globin strukturbevarelse
 
-<a href="../files/colCons.zip" download="colCons.zip">
-  📥 Click to download Python script & related files (colCons.zip).
-</a>
+{{< download-button path="../files/colCons.zip" >}}
 
-<a href="../files/globin-aln-fasta.txt" download="globin-aln-fasta.txt">
-  📥 Click to download globin-aln-fasta.txt
-</a>
+{{< download-button path="../files/globin-aln-fasta.txt" >}}
 
 ***PyMOL-scripting opgave**: I denne PyMOL opgave skal I lære at plotte sekvensbevarelse på protein struktur vha. et Python script, der hedder `colCons.py`.*
 

@@ -86,9 +86,7 @@ CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase
 
 ## Opgave 3. Proteinfoldning 
 
-<a href="../files/TE5-EF-Tu-folding.pml" download="EF-Tu-folding.pml">
-  📥 Click to download script.
-</a>
+{{< download-button path="../files/TE5-EF-Tu-folding.pml" filename="EF-Tu-folding.pml" >}}
 
 I denne opgave skal vi bruge PyMOL til at kigge på strukturen af elongeringsfaktor EF-Tu.
 
