@@ -4,9 +4,7 @@ title: "TØ 7 -- Nukleinsyrestruktur 2"
 
 ## Opgave 1. RNA-protein binding
 
-<a href="../files/TE7-RNA-protein.pml" download="RNA-protein.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE7-RNA-protein.pml" filename="RNA-protein.pml" >}}
 
 Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Hent og åben pml filen `RNA-protein.pml`. Tryk **F1** for at se TAR hårnål og **F2** for at se binding til Tat proteinet. Tryk **F3** for at se kink-turn motivet og **F4** for at se binding til L7 proteinet.
 
@@ -48,9 +46,7 @@ L7 proteinet binder i deep groove på kink-turn motivet.
 
 ## Opgave 2. tRNA og syntetase
 
-<a href="../files/TE7-tRNA.pml" download="tRNA.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE7-tRNA.pml" filename="tRNA.pml" >}}
 
 tRNA har en kompleks tertiær struktur med mange non-Watson-Crick basepar. Her skal vi kigge på et par af disse non-Watson-Crick basepar og hvordan tRNA bindes af sin syntetase. Åben pml scriptet `tRNA.pml` i PyMOL. **F1** viser tRNA-molekylet i cartoon-repræsentation med bundne Mg^2+^ og Mn^2+^ ioner.
 
@@ -116,13 +112,9 @@ Energi til Gln charging.
 
 ## Opgave 3. 5S rRNA og L25
 
-<a href="../files/TE7-LoopE-L25.pml" download="LoopE-L25.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE7-LoopE-L25.pml" filename="LoopE-L25.pml" >}}
 
-<a href="../files/TE7-LoopE-L25-colorblind.pml" download="LoopE-L25.pml">
-  📥 Click to download PyMOL script (Colorblind mode).
-</a>
+{{< download-button path="../files/TE7-LoopE-L25-colorblind.pml" filename="LoopE-L25-colorblind.pml" >}}
 
 5S ribosomalt RNA (5S rRNA) er ca. 120 nukleotider-langt og er en funktionel komponent af den store subunit af ribosomet. Herunder vises den sekundære struktur med angivelse af enkelte non-Watson-Crick basepar (markeret med åbne cirkler). Interne loops i RNA struktur er beskrevet i afsnit 5.3.7.2 (side 135) i Liljas *Textbook of Structural Biology*.
 
@@ -201,9 +193,7 @@ Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** 
 
 ## Opgave 4. CRISPR-Cas9 
 
-<a href="../files/TE7-CRISPR.pml" download="CRISPR.pml">
-  📥 Click to download PyMOL script.
-</a>
+{{< download-button path="../files/TE7-CRISPR.pml" filename="CRISPR.pml" >}}
 
 Cas9-proteinet binder til et guide RNA, som dirigerer komplekset til binding af komplementær DNA-sekvens, der kløves. Vi skal her se nærmere på opbygning og funktion af dette multifunktionelle RNA-bindende protein. Guide RNA blev oprindeligt designet ved at sammenkoble 3′-enden af crRNA med 5′-enden af tracrRNA med et GAAA tetraloop ([**Jinek-2012**](https://science.sciencemag.org/content/337/6096/816)). Opgaven baserer sig på informationer fra oprindelig artikel om Cas9 krystalstruktur ([**Nishimasu 2014**](https://www.sciencedirect.com/science/article/pii/S0092867414001561?via%3Dihub#undfig1)). Du kan læse mere om CRISPR-Cas9 i Berg Biochemistry, udgave 10, side 293-294.
 
