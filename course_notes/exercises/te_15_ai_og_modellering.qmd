@@ -76,7 +76,7 @@ Har loopet samme konformation i alle 5 modeller? Hvad fortæller det om AlphaFol
 
 Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen (hvor residue 83 og 144 er forbundet). Hvorfor mon krystallograferne har gjort det?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  B-faktoren viser atomernes termiske bevægelse og positionel usikkerhed i krystallet.\
     \
@@ -138,7 +138,7 @@ Hvad fortæller PAE om Parkins struktur? Baseret på PAE-plottet - hvilke dele a
 
 Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dette loop veldefineret i forhold til resten af Parkin strukturen ifølge PAE-plottet?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  **Mørk grøn firkant (lav PAE \~0-5 Å):** Når man aligner strukturen på én af de to regioner, er positionen af den anden region meget præcis bestemt. Dette betyder veldefineret relativ orientering.\
     \
@@ -188,7 +188,7 @@ Hvor er nukleotidet placeret i strukturen? Find en GTPase struktur i PDB med nuk
 
 Hvor binder calcium-ionen, og hvordan er den koordineret? (Beskriv hvilke aminosyrerester der deltager i koordinationen)
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  pTM-værdien måler den overordnede kvalitet af strukturforudsigelsen. En værdi over 0.5 indikerer at AlphaFold har tilstrækkelig tillid til at de forudsagte folds er korrekte, mens værdier over 0.7 generelt betragtes som meget gode forudsigelser. For dette kompleks vil pTM fortælle om både IFT25 og IFT27 er blevet foldet rigtigt og om den samlede model er troværdig.\
     \
@@ -237,7 +237,7 @@ Hvad er pTM og iPTM værdierne? Hvorfor er de mon lavere end for IFT25/27 i opga
 
 Baseret på pLDDT-værdierne for IFT46, design et eksperiment for at teste om de lave pTM/iPTM værdier skyldes IFT46's disordered regioner eller om de lokale interfaces faktisk er dårligt forudsagte. Beskriv hvilke AlphaFold kørsler I ville lave og hvad I ville forvente at se hvis problemet primært er disordered regioner. Hvis der er tid så kør gerne AlphaFold forudsigelserne.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Baseret på PAE-plottet kan vi se at ODA16 interagerer direkte med IFT46, hvilket fremgår af lave PAE-værdier (mørk grøn) mellem disse to proteiner i de off-diagonale regioner. Interaktionen mellem ODA16 og IFT56 er derimod indirekte, hvilket ses ved høje PAE-værdier (lys/hvis) mellem disse to proteiner i PAE-plottet. IFT56 binder altså ikke direkte til ODA16, men er i stedet medieret gennem IFT46, som fungerer som bro mellem de to proteiner. Dette forklarer hvorfor begge proteiner blev identificeret i pull-down eksperimentet selvom kun den ene binder direkte til bait-proteinet.
 

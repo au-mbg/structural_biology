@@ -14,7 +14,7 @@ Beregn ændringen i fri energi når tre Na^+^ transporteres ud og to K^+^ tran
 
 Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi til at drive processen? Forklar.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  (3 $\cdot$ Na^+^(12.05) + 2 $\cdot$ K^+^(3.99)) kJ/mol = 44.10 kJ/mol.\
     T temperatur i K (25C = 298K), R = Gas konstant (8.315 $\cdot$ 10^-3^ kJ mol^-1^ deg(K)^-1^),\
@@ -48,7 +48,7 @@ Koncentrationen af frit calcium i cytoplasma er omkring 0.15 μM, mens den inde 
 
 Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumioner transporteres fra cytoplasma til SR, dvs. svarende til én cyklus for SERCA.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  SRP (signal recognition particle) opfanges og translationen foregår direkte ind i SR.
 
@@ -83,7 +83,7 @@ Et eksperiment blev udført med membranvesikler indeholdende både SERCA og memb
 
 Forklar resultaterne i SERCA/bacteriorhodopsin-eksperimentet.    
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Patienterne med Brody's disease har den halve Ca^2+^-ATPase aktivitet (linje 1) på trods af samme relative mængde protein (linje 3 og 4). De har også den halve kcat (turnover). Isoform 1 må simpelthen være mindre aktiv. Muskelkramper ved fysisk aktivitet.
 
@@ -116,7 +116,7 @@ Aminosyren bliver modificeret som led i enzymets funktion. Da modifikationen er 
 
 Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er dette og hvordan er enzymet forandret?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Det er farvet med lysegrøn, gul og lyseblå. Domænerne ovenfor binder og hydrolyserer ATP og vender derfor mod cytoplasma. SR-siden er nedad i denne orientering.
 
@@ -157,7 +157,7 @@ Hvilken aminosyrerest svarer Xaa i spot A til? Opskriv dens kemiske struktur.
 
 Hvilken rolle spiller denne rest i Na+-K+-ATPasens funktion?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  De to spots, A og B, indeholder begge Na-K ATPasen, men må have en ladningsforskel.
 

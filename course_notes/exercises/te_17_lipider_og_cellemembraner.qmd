@@ -24,7 +24,7 @@ Hopanoider er pentacykliske molekyler, der findes i bakterier og visse planter. 
 
 Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Jo højere antal *cis*-dobbeltbindinger, desto mindre ordnet er membranbilaget og desto mere flydende er membransystemet. Du vil derfor forvente at smeltetemperaturen for systemet med acylkæderne med de fire dobbeltbindinger er meget lavere end for systemet med de mættede kæder.
 
@@ -69,7 +69,7 @@ Analyser den elektrostatiske overflade af prostaglandin. Lav en scene, kaldet F2
 
 Kig nærmere på alphahelicerne mellem rest 74 og 124 og undersøg deres elektrostatiske overflade. Hint: Lav alphahelicerne et objekt. Analyser de enkelte helicers ligesom I gjorde med helix-wheel plottet. Stemmer det overens med det forventede?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  (18-20) \* 1.5 Å = 27 -- 30 Å.
 
@@ -104,7 +104,7 @@ Analysér nedenstående hydropatiplot for tilstedeværelse af transmembrane segm
 
 Hvilke usikkerheder ligger der i analysen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Proteinet i (C) har potentielle transmembrane helicer (3 i starten og 1 i slutningen). Dette ses ved at der er brede peaks, der ligger langt over støjniveauet.
 
@@ -231,7 +231,7 @@ For at undersøge om BCRP er glykosyleret, muterede man desuden specifikke aspar
 
 Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Flere områder med ret høje (hydrofobe) og brede peaks i plottet, specielt nær C-terminalen.
 
@@ -348,7 +348,7 @@ Foreslå hvordan det hydrofobe område nær C-terminalen kan være involveret mo
 
 På hvilken side af plasmamembranen er 5'-nucleotidase lokaliseret? Diskutér mulige, biologiske roller for enzymet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  5'-nucleotidase = 5'-ribonucleotide phosphohydrolase. Navnet antyder at enzymet hydrolyserer nukleotider til nukleosider og phosphate (Fig. 25.17, s. 760).
 

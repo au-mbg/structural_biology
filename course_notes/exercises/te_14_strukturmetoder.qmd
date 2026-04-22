@@ -34,7 +34,7 @@ Vis også strukturen af [LeuT2]{.underline} som "cartoon" og foretag et struktur
 
 Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Se script i svar mappen.
 :::
@@ -63,7 +63,7 @@ Forklar hvorfor højere opløsning kræver:\
 • Enten kortere bølgelængde (λ)\
 • Eller evnen til at måle ved større vinkler (θ)
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Når røntgenstråler rammer en krystal, bliver de spredt af elektronerne i atomerne. Man kan forestille sig, at atomerne ligger i ordnede planer med en bestemt afstand, d, imellem sig.\
 
@@ -151,7 +151,7 @@ Du vil forstå, hvordan en ionkanal fungerer direkte i cellemembranen, omgivet a
 
 *Hvilken metode (eller variation af en metode) vil du anbefale og hvorfor?*
 ```
-::: {.solution-callout}
+::: {.callout-solution}
 
 **Scenarie 1 (Protease):**
 
@@ -213,7 +213,7 @@ Man trykker på protein under Wizard > mutagenesis, so ses på figuren forneden 
 Kig alle aminosyreresterne igennem og find nogle, der ikke passer så godt i tætheden. Er der en fejl i sekvensen eller hvad kan dette mon skyldes?\
 Hint: Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Peptidkæden har N-terminalen nederst og C-terminalen til højre i udgangspositionen og består af en α-helix (rester 2-15) efterfulgt af et turn og en β-strand (21-27).
 

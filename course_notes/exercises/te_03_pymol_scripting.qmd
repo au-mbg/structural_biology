@@ -22,7 +22,7 @@ Hent strukturen af K+-kanalen fra Streptomyces fra forrige opgave med kommandoen
 fetch 1BL8
 ```
 
-::: {.solution-callout}
+::: {.callout-solution}
 Log fra PyMOL:
 
 ```default
@@ -44,7 +44,7 @@ select select_A, chain A
 
 Her er `select_A` navnet på den nye selektion mens "chain A" fortæller PyMOL at selektionen skal bestå af kæde A. Bemærk at der kommer en ny selektion i listen til højre og at navnet står i parentes, hvilket angiver en selektion. PyMOL viser også selektionen med "selection handles" for hvert atom (små firkanter på strukturen). En selektion fungerer lidt som i andre programmer, du kender, f.eks. forsvinder "selection handles", hvis man klikker udenfor selektionen. De kommer tilbage ved at klikke på selektionens navn `(select_A)`. Man kan altså hhv. vælge og ikke vælge atomerne ved at klikke på navnet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Log fra PyMOL:
 
 ```default
@@ -67,7 +67,7 @@ create object_A, chain A
 
 Her er `objekt_A` navnet på det nye objekt mens "chain A" fortæller PyMOL at objektet skal bestå af kæde A. Bemærk at der kommer et nyt objekt i listen til højre og at navnet står uden parentes (og har en 1/1 state), hvilket angiver et objekt. PyMOL centrerer også synsfeltet på det nye objekt.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -102,7 +102,7 @@ Nu hvor du forstår forskellen på selektioner og objekter, skal vi tale om PyMO
 
 Hent strukturen af Streptomyces K+-kanalen som i de forrige opgaver (fetch 1BL8). Har man allerede startet PyMOL og vil slette alt, kan man skrive kommandoen reinit (reinitialize), eller vælge File->Reinitialize->Everything fra menuen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -119,7 +119,7 @@ CmdLoad: loaded as `1BL8`.
 
 Vis 1BL8 som sticks og zoom lidt ind med musen (huske at skjule cartoon-repræsentationen først). Farv den med atomfarver med carbon i gult.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Log fra PyMOL:
 
@@ -167,7 +167,7 @@ Cα hedder altså CA, Oγ hedder OG og så fremdeles. Nogle gange (f.eks. i Asp)
 
 Bemærk at selektionen vælger hele residuet (11 atomer) når man klikker på ét atom. Dette styres i menuen Mouse > Selection Mode. Skift selection mode til "Chains" og brug dette til at vælge hele kæde A. Nu kan vi omdøbe den generelle selektion til noget andet, så vælge "rename selection" i Action-menuen for sele og navngiv den `select_A`. Skift tilbage til selection mode `Residues` og vælg Phe103 i kæde A igen. Bemærk at der nu kommer en ny sele-selektion. På denne måde kan man opbygge selektioner uden brug af kommandoer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -226,7 +226,7 @@ select 103CG, 103/CG
 
 Hvor mange atomer vælges i dette tilfælde? Hvorfor?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -261,7 +261,7 @@ Da der kun er ét objekt, kunne vi endda bare sige,
 select res103, ////103
 ```
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -287,7 +287,7 @@ select A103-105, /1BL8//A/103-105
 
 vælge residues 103-105 i kæde A.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -301,7 +301,7 @@ Selector: selection `A103-105` defined with 23 atoms.
 
 Endelig kan man vælge residues i proteinsekvensen. Vælg Display->Sequence fra menuen og træk fra residue Arg27-Leu36 i sekvensen for at vælge det. Find selv ud af hvordan man vælger i de andre kæder (Hint: Sæt først kæderne til forskellige farver, da de vises i sekvensen).
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Kæderne vises efter hinanden i sekvensen. Sætter man farver på kæderne følger sekvensen efter med samme farve. 
 
@@ -318,7 +318,7 @@ Brug nu select-statements og nomenklaturen ovenfor til at lave følgende selekti
 - Atomet Nε1 i Trp87 i kæde D.
 - Alle Phe-residues i strukturen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **11.** 
 
@@ -351,7 +351,7 @@ select Phe, ////Phe
 
 Brug dine selektioner til at vise hele strukturen i cartoon med en lys grøn farve, farv kæde D mørkegrøn, farv alle Phe-residues i strukturen røde, vis Trp87 i kæde D med sticks og atomet Nε1 med en blå sphere. Vis alle Cα-atomer i kæde A med røde spheres. Farv området 110-120 i kæde B gult.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Log fra PyMOL:
 
@@ -382,7 +382,7 @@ Hvad skete der med cartoon-farven i kæde A, da du ændrede farven på Cα-atome
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Cartoon-farven styres af CA-atomerne, så hvis man farver dem ændrer cartoonen også farve. Løsningen, hvis man vil vise CA og sidekæde i én farve og cartoon i en anden, er at oprettet et nyt objekt (ikke en selektion) med de udvalgte residues. Dette trick benyttes meget ofte til figurer.
 
@@ -434,7 +434,7 @@ select D87, chain D or resi 87
 
 Prøv det og forklar resultatet. 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Vi ville vælge både hele kæde D og residue 87. 
 
@@ -451,7 +451,7 @@ På samme måde kan man vælge atomer efter navn (se forrige opgave) med "name" 
 - Atomet Nε1 i Trp87 i kæde D.
 - Alle Phe-residues i strukturen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 select resiB110-120, chain B and resi 110-120
@@ -493,7 +493,7 @@ Brug nu ovenstående viden til at generere følgende selektioner,
 - Atomet Cα i residue 87 i kæde A samt samme atom i residue 86 i kæde B.
 - Alle Cys-residues i kæde A og alle Met-residues in kæde B.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 select ResAB1030, (chain A or chain B) and resi 10-30
@@ -507,7 +507,7 @@ select ACysBMet, (chain A and resn cys) or (chain B and resi Met)
 Vis strukturen som ribbon for at lette identifikationen af Cα-atomer. Identificér start og slut residues for den lange, yderste helix i strukturen, der er én i hver kæde, så det er lige meget hvilken du bruger.
 Lav en selektion, der indeholder hele den lange helix i alle kæder og farv dem røde. 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Cirka residues 23-51:
 
@@ -528,7 +528,7 @@ select noNterm, 1BL8 and not resi 1-30
 
 vælge hele strukturen pånær de N-terminale residues 1-30. Prøv at farve alt undtagen N-terminalen blå.
 
-::: {.solution-callout}
+::: {.callout-solution}
  
 ```default
 hide all
@@ -544,7 +544,7 @@ Lav en selection, der vælger alle residues i kæde A, undtagen Cys-residues.
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 select notAcys, (chain A and not resn cys)
@@ -718,7 +718,7 @@ scene overview, recall
 
 Kør det samlede script i PyMOL og check at der er to views, som man hurtigt kan skifte i mellem.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Eksempel på færdigt script:
 
@@ -833,7 +833,7 @@ PyMOL er udstyret med en funktion til interaktivt at måle afstanden mellem to a
 
 Brug nu `active site`-scenen til at analysere interaktionerne mellem cytochrome P450 og camphor/heme. Hvilke typer interaktioner findes der? Hint: Brug `Wizard -> Measurement` til at måle afstande. 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Samlet script fra underopgaver **1-10**.
 
@@ -861,7 +861,7 @@ Slå strukturen op på [**www.rcsb.org**](http://www.rcsb.org) og hent den ind
 
 2.  Vælg **H->water** og **S->lines** for at vise detaljer for hele strukturen og skjule vand. Brug dette til at identificere (og nedskrive) en liste af aminosyrerester, der interagerer med substraterne.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Interaktionerne er ikke meget specifikke, så der er flere muligheder. Et svar kunne være resterne 104, 70, 11, 145, 106, 26, 35, 166, 114 og 137.
 :::
@@ -886,7 +886,7 @@ Opret et PyMOL-script, der gør følgende:
 
 8.  Gemmer både en oversigts- og to detaljevisninger i tre scenes, `overview` samt `cell wall` og `sugar`, der fokuserer hhv. på de to substratdele.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Eksempel på script:
 
@@ -902,7 +902,7 @@ Eksempel på script:
 Brug dit script til at analysere interaktionerne mellem lysozym og de to substrater. Hvilke typer interaktioner findes der? Hvilken aminosyrerest er kovalent forbundet til substrat?
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Adskillige både hydrofobe og H-bindingsinteraktioner. Glu26 binder kovalent til sukkerdelen.
 :::

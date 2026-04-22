@@ -48,7 +48,7 @@ Sammensætningen af glykosyleringer er afhængig ikke kun af den organisme prote
 
 Foreslå to metoder til identificering af exogent EPO og forklar hvorfor de kan anvendes.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Svaret skal indeholde en beskrivelse og sammenligning af syntesen af både N-bundne og O-bundne oligosaccharider, herunder information om at N-bundne molekyler dannes på bærermolekylet [dolicholphosphate]{.underline}, hvorefter det overføres som én samlet enhed til target-proteinet, der herefter modificeres. Dette står i kontrast til de O-bundne oligosaccharider, som opbygges sekventielt på target-molekylet. AB0-blodtypesystemet fremkommer som et resultat af O-bunden modifikation af proteiner og lipider på erythrocytternes overflade. O-bundne oligosaccharider findes, i modsætning til de N-bundne oligosaccharider, som modifikationer både på proteiner og på lipider.
 
@@ -107,7 +107,7 @@ Aminosyreresterne 1-20 udgør signalsekvensen i pre-pro CPY, hvorefter 21-111 er
 Beskriv ud fra de givne oplysninger, hvordan modningen af CPY i cellen kunne foregå.\
  
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  N-glycosyleringer, NXT/S. N124 (NVT), N198 (NAT), N279 (NLT) og N479 (NWT).
 
@@ -158,7 +158,7 @@ Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 
  ![kifcomplex](media/image72.png){width="3.2235290901137357in" height="2.3786931321084865in"}
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Den fælles stub er angivet med gråt i figur 11.16A i Stryer
 
@@ -222,7 +222,7 @@ I et forsøg på at fjerne alle glykosyleringer blev alle asparaginer, der var f
 
 Giv en mulig forklaring på denne observation.  
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Script findes på Brightspace.
 
@@ -271,7 +271,7 @@ Identificér den prostetiske 11-*cis* retinal-gruppe og lav en scene kaldet F2, 
 
 Hent strukturen af opsin (PDB-ID: 3CAP) og på samme måde som før; dan et objekt med kæderne A, C og D. Foretag dernæst en overlejring af opsin på rhodopsin. Gem dette som scene F3. Hvad er forskellen på opbygningen af opsin og rhodopsin? Giver denne forskel anledning til strukturelle ændringer? Hvilke?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Brug rcsb.org for at finde ligander etc:\
     \

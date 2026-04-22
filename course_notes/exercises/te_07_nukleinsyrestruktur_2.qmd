@@ -14,7 +14,7 @@ Strukturelle RNA motiver bruges ofte til specifik binding af proteiner. Hent og 
 
 Tryk **F1**. Beskriv udfra Leontis-Westhof basepar klassifikationen (Liljas tabel 5.2) de basepar interaktioner, der er markeret med grøn på TAR hairpin.
 
-::: {.solution-callout}
+::: {.callout-solution}
 AU cWW, UA cWH
 :::
 
@@ -22,7 +22,7 @@ AU cWW, UA cWH
 
 Tryk **F2**. Bestem hvilken groove (deep eller shallow) af TAR hårnål som Tat proteinet binder i.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Tat proteinet binder i deep groove på TAR hårnål.
 :::
 
@@ -30,7 +30,7 @@ Tat proteinet binder i deep groove på TAR hårnål.
 
 Tryk **F3**. Beskriv udfra Leontis-Westhof basepar klassifikationen de non-Watson-Crick basepar, der er markeret med grøn på kink-turn motivet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 A20-G6 tHS, A7-G19 tHS
 :::
 
@@ -42,7 +42,7 @@ Tryk **F4**. Bestem hvilken groove (deep eller shallow) af kink-turn motivet som
 For at identificere deep eller shallow groove af en RNA-dobbelthelix selekteres et WC-basepar med henblik på nærmere undersøgelse. For at zoome ind på et basepar vælges det først med musen og herefter bruges kommandoen **[zoom](https://www.pymolwiki.org/index.php/Zoom)** f.eks. zoom sele. Dernæst kan andre elementer fjernes med hide (not sele). Alternativt kan du bruge musehjul til at justere clipping plane omkring din selektion. Deep eller shallow groove kan nu identificeres på baseparret vha. placeringen af beta-glykosid-bindingerne. Du kan så trykke funktionstast for at komme tilbage til udgangspunktet.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 L7 proteinet binder i deep groove på kink-turn motivet.
 :::
 
@@ -58,7 +58,7 @@ tRNA har en kompleks tertiær struktur med mange non-Watson-Crick basepar. Her s
 
 **F2** viser et basepar i T-loop. Hvordan beskrives denne type basepar interaktion ifgl. Leontis-Westhof basepar klassifikationen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 tWH
 :::
 
@@ -66,7 +66,7 @@ tWH
 
 **F3** viser pseudoknot baseparret G19-C56. Hvilke standard parametre for den relative orientation af baser (Liljas Fig. 5.16) beskriver bedst dette basepar?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Propeller & buckle
 :::
 
@@ -74,7 +74,7 @@ Propeller & buckle
 
 **F4** viser en base triple af C13:G22/G46. Hvilken interaktion dannes mellem de to G baser (brug Leontis-Westhof)? Hvordan er G46 modificeret?
 
-::: {.solution-callout}
+::: {.callout-solution}
 tWH (kig evt. på backbone retning, der er anti-parallel). Methyleret på position 7.
 :::
 
@@ -88,7 +88,7 @@ Under Actions findes en funktion kaldet "find", der gør det muligt at finde int
 ![](media/image24.png){width="80%" fig-align="center" .lightbox}
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Hovedsageligt acceptor stem og anticodon loop.
 :::
 
@@ -102,7 +102,7 @@ Selektér residue U35 og brug den "find"-funktion, der bedst viser interaktioner
 Alternativt bruges dist funktionen, der blev introduceret i TØ6 opgave 7. Identificer nu interaktions-partnere. Gøres lettest ved at vise protein som "lines" og zoome ind på U35.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Menuen "to other atoms in object" fremhæver H-bindingerne. Q517, R341 og R520.
 :::
 
@@ -110,7 +110,7 @@ Menuen "to other atoms in object" fremhæver H-bindingerne. Q517, R341 og R520.
 
 Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Energi til Gln charging.
 :::
 
@@ -132,7 +132,7 @@ Energi til Gln charging.
 
 Beskriv de navngivne elementer i den sekundære struktur for 5S rRNA med angivelse af bulge-, loop- og junction-typer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 - Helix 1,2,3,4,5 er stammer med buler eller interne loops. 
 - Loop C er hairpin med 13-nt loop.
 - Loop D er hairpin med tetra loop. 
@@ -147,7 +147,7 @@ Loop E-motivet bindes af det ribosomale protein L25 og strukturen af komplekset 
 
 Beskriv hvilke protein-strukturelementer i L25, der interagerer med RNA-dobbelthelicen og i hvilke grooves. Hint: For at finde grooves skal man ikke kigge på loop E motivet (markeret i gul), men derimod på den mere regulære helix (markeret i blå), så man kan se hvad der er deep og shallow groove inde i loop E motivet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 - Beta-sheet interagerer med shallow groove.
 - Alfa-helix interagerer med deep groove.
 :::
@@ -159,7 +159,7 @@ Beskriv hvilke protein-strukturelementer i L25, der interagerer med RNA-dobbelth
 
 Beskriv de tre non-Watson-Crick basepar der vises i **F2**, **F3** og **F8 **ihht. Leontis-Westhof-basepar klassifikationen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 - F2: AG tHS
 - F3: UA tWH
 - F8: GA tSH
@@ -174,7 +174,7 @@ Tryk **F9** for at se RNA-dobbelthelixen vist som kuglemodel, hvor H-bindingsacc
 
 Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i forhold til en normal A-form RNA helix (se ovenstående billede)? Hvordan adskiller mønsteret af H-bindingsdonorer og -acceptorer ved bindingsstedet i shallow groove fra en normal A-form RNA helix (farvekode: blå=donor, rød=acceptor, gul=non-bindende H)?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Deep groove er meget smal. Shallow groove er større end normalt.
 Loop E motivet har et meget mere komplekst mønster af H-bond donorer og acceptorer end der normalt er i shallow groove.
 :::
@@ -185,7 +185,7 @@ Loop E motivet har et meget mere komplekst mønster af H-bond donorer og accepto
 
 Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** og **F12**. Svaret skal indeholde angivelse af interaktioner til specifikke atomer på baseparret. Hvilke interaktioner bidrager generelt til sekvensspecifik binding af RNA-bindende proteiner?
 
-::: {.solution-callout}
+::: {.callout-solution}
 **F11**:
 
 - Lys10 binder OP1 på fosfat af G275
@@ -213,7 +213,7 @@ Cas9-proteinet binder til et guide RNA, som dirigerer komplekset til binding af 
 
 Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix type danner DNA-RNA-hybriden?
 
-::: {.solution-callout}
+::: {.callout-solution}
 4 hairpins. A-form, da RNA-strengen inducerer A-form pga. 2'OH og C3'-endo konformation.
 :::
 
@@ -221,7 +221,7 @@ Tryk **F1** for at se guide RNAet. Hvor mange hairpins er der? Hvilken helix typ
 
 **F2** viser proteinet, hvor RuvC-domænet er cyan, REC-domænet grå, HNH-domænet lyserød, PI-domænet brun, og DNA-strengen rød. Beskriv hvilke protein-domæner der er i kontakt med hairpinet, der involverer nukleotiderne 82-96.
 
-::: {.solution-callout}
+::: {.callout-solution}
 RuvC og PI.
 :::
 
@@ -229,7 +229,7 @@ RuvC og PI.
 
 **F3** zoomer ind på det kunstigt indsatte GAAA tetra-loop og viser H-bindinger mellem residue 33 og 36. Hvilken type non-Watson-Crick basepar dannes af nukleotid 33 og 36?
 
-::: {.solution-callout}
+::: {.callout-solution}
 tHS.
 :::
 
@@ -237,7 +237,7 @@ tHS.
 
 **F4** viser den del af recognition (REC) domænet, der binder til RNA hairpin. **F5** viser RECs interaktion med baser i deep groove og **F6** viser RECs interaktion med baser i shallow groove af RNA helix. Beskriv de specifikke hydrogenbindings-interaktioner mellem baser og aminosyrer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 **F5**: Phe351 og Asp364 interagerer med G43, der er uparret base.\
 **F6**: Ser104 og Phe105 interagerer med U24 og A47 i minor groove.
 :::
@@ -262,7 +262,7 @@ d.  Lav en ny scene, der viser hydrogenbindinger mellem Ago og DNA/RNA-strengen.
 
 Brug nu dit script til at svare på følgende spørgsmål:
 
-::: {.solution-callout}
+::: {.callout-solution}
 Se scriptet nedenfor
 
 ```default
@@ -275,7 +275,7 @@ Se scriptet nedenfor
 
 Tryk **F1**. Hvilket domæne binder 5'-T på DNA-strengen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Mid domænet.
 :::
 
@@ -284,7 +284,7 @@ Mid domænet.
 
 Er konformationen af DNA-RNA dobbelthelicen A- eller B-form?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Konformationen er A-form som det kan ses på C3'-endo sugar pucker. Man kan se det ved at zoome ind på nukleotid og se på sukkerens konformation.
 :::
 
@@ -293,7 +293,7 @@ Konformationen er A-form som det kan ses på C3'-endo sugar pucker. Man kan se d
 
 Tryk **F2**. Beskriv hydrogen-bindinger til de første nukleotider på DNA-strengen. Hvilken rolle spiller Mg^2+^-ion?
 
-::: {.solution-callout}
+::: {.callout-solution}
 T1-base H-binder til Met413. G2-base H-binder til Asn449. Mg^2+ ^koordinerer fosfater i backbone.
 :::
 
@@ -302,6 +302,6 @@ T1-base H-binder til Met413. G2-base H-binder til Asn449. Mg^2+ ^koordinerer fo
 
 Tryk **F3**. Undersøg hydrogen-bindinger til resten af DNA- og RNA-strengene. Hvilke domæner er involveret i bindingen? Er interaktionerne med baserne eller backbone og hvad fortæller det om bindingen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ago H-binder til sukker-fosfat-rygrad af DNA og RNA streng, hvilket betyder at det er en sekvens-uspecifik binding. Alle domæner er involveret i binding.
 :::

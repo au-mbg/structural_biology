@@ -8,3 +8,6 @@ website:
       - href: instructor/index.html
         text: Go to solution version
         icon: book-fill
+
+teaching:
+  show-solutions: false

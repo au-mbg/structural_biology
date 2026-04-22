@@ -40,7 +40,7 @@ Foreslå hvilken typer af interaktioner, der fastholder resten af RNA-kæden, he
 
 Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  ![RnaseA_simple_reaction](media/image35.png){width="4.1875in" height="3.625in"}
 
@@ -93,7 +93,7 @@ Den sidste involverede residue er 119, der fungerer i det næste trin, hvor det 
 
 Forklar til sidst hvorfor RNase A udviser en klokkeformet pH-afhængighed med maksimal aktivitet omkring pH 7.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Se det færdige script her under. Sidekæderne 12, 41 og 119 er en del af RNase's active site.
 
@@ -186,7 +186,7 @@ Diskutér hvordan du tror enzymet påvirkes af Cys-resternes interaktioner ift. 
 
 Hvad ville der ske, hvis man denaturerede proteinet under reducerende betingelser og fjernede reduktanten før proteinet blev refoldet (ved afkøling eller fjernelse af denaturant)? Forklar Anfinsens forsøg.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Se det færdige script på brightspace. De 8 Cys-rester i RNase A danner 4 disulfidbroer og bidrager dermed til kraftig stabilisering af proteinet. Cys-resterne er alle oxiderede (-S-S-, i modsætning til -SH), hvilket stemmer overens med enzymets ekstracellulære lokalisering. Den kraftige stabilisering er nødvendig fordi enzymet findes i maven, hvor der er ekstrem pH.
 
@@ -249,7 +249,7 @@ Lav en ny scene kaldet **F7**, hvor du inkluderer visualisering af svovlbroerne,
 
 Vi vil undersøge aktiviteten af RNase A, RNase S, S-peptid samt S-protein samt hvordan S-protein og S-peptid kan adskilles og bringes sammen igen ved laboratorieøvelserne.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Se det færdige script på brightspace. Subtilisin kløver efter en Ala (residue 20), hvilket er usædvanligt, at proteasen normalt foretrækker store hydrofobe sidekæder i S1-lommen. Alanin er dog stadig hydrofob og da den er lille kan den stadig passe ind i subtilisins specificitetslomme. Kløvningssitet sidder yderligt på RNase A i et loop, der formentlig giver god adgang for proteasen. Det er dog bemærkelsesværdigt at subsilisin ikke kløver efter Ala19, der sidder lige før og er eksponeret på samme måde. Dette fremhæver hvor svært det kan være at forudsige proteasers kløvningssites, da de afhænger meget af den præcise strukturelle og sekvensmæssige kontekst, hvori den genkendte aminosyre indgår.
 
@@ -403,7 +403,7 @@ Skriv et PyMOL-script baseret på strukturen af RNase S i 2RNS til at foretage s
 
 Lav et sidste script, kaldet **F9**, som gør det muligt at lave en strukturel analyse af RNaseS med henblik på at finde ud af hvordan mutationen F8G kunne tænkes at påvirke enzymets aktivitet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Se det færdige script her under. De to strukturer er i hovedsagen identiske, men RNase S mangler residues 16-23. Der er mindre justeringer af loop-områder, der dog kan skyldes krystalkontakter.
 

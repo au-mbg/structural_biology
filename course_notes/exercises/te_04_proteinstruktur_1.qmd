@@ -16,7 +16,7 @@ Til højre på siden er der information om sekvenslængde og molekylevægt. Desu
 
 Hvor mange aminosyrerester er der i sekvensen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 245 aminosyrer.
 :::
 
@@ -40,7 +40,7 @@ Hvor mange helixer er der i α-Chymotrypsin?
 Klik på "Structure" til venstre på UniProt-siden
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 **2.**  25666 Da (25,7 kDa).
 :::
 
@@ -55,7 +55,7 @@ Brug "ProtParam" fra dropdown-menuen i "Sequence"-afsnittet af UniProt til at be
 ProtParam beregner også aminosyresammensætning for sekvensen.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Kæde A, resterne 1-13, Mw 1253,52 Da\
 Kæde B, resterne 16-146, Mw 13923,63 Da\
 Kæde C, resterne 149-245, Mw 10066,52 Da\
@@ -71,7 +71,7 @@ Hvad er de tre største afvigelser mellem chymotrypsinogens aminosyresammensætn
 Her er det nødvendigt at oprette et "fragment", der dækker hele chymotrypsinogens sekvens nederst på ProtParam-siden.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 For fragmentet 1-245: Der er et lavt antal af Arg (1.6% mod 5.5%), stort antal Cys (4.1% mod 1.3%), lavt antal Glu (2.0% mod 6.7%), lavt antal Met (0.8% mod 2.4%), højt antal Ser (11.4% mod 6.6%), højt antal Thr (9,4% mod 5.3%).\
 Højt antal Cys skyldes at det er et ekstracellulært, kløvet enzym, der holdes sammen af disulphidbroer. De andre kan være svære at forklare, men der er også et ret lille antal aminosyrer at vurdere det på.
 :::
@@ -84,7 +84,7 @@ Hvor mange helixer er der i α-Chymotrypsin?
 Klik på "Structure" til venstre på UniProt-siden
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
 :::
@@ -97,7 +97,7 @@ På figuren nedenfor er vist fordelingen af phi $\phi$ og psi $\psi$ vinkler for
 
 Hvilke strukturelle egenskaber for Pro og Gly forklarer deres placeringer i Ramachandran-plottet? 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. Med andre ord er mængden af mulige kombinationer af ψ- og φ-vinkler væsentlige større. Prolins sidekæde er ringsluttet med hovedkæden og dets φ-vinkel er derfor bundet omkring -65°.
 
@@ -109,7 +109,7 @@ På figuren for alle aminosyrer er der tre områder med høj forekomst af aminos
 
 ![fig1-6-Williamson-adapted](media/image7.png){width="100%" fig-align="center" .lightbox}
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
 :::
@@ -128,7 +128,7 @@ HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 
 Afmærk positionen af N- og C-terminus og forklar hvordan dette kan ses.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med blåt (nitrogen i NH3 vises ofte med blåt) og C-terminalen med rødt (COOH indholder mange oxygener, der ofte vises røde).
 :::
 
@@ -136,7 +136,7 @@ Strukturen er vist i alm. regnbuefarver, for hvilke N-terminalen angives med bl�
 
 Afmærk positionen af de to valin-rester i sekvensen og forklar hvordan dette kan ses.
 
-::: {.solution-callout}
+::: {.callout-solution}
 De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er vist som α-carbon trace (ét `hak` for hver aminosyrerest) kan vi derfor tælle os frem og finde de to valinrester som hhv. 4. `hak` fra den blå N-terminus og 5. hak fra den røde C-terminus.
 :::
 
@@ -144,7 +144,7 @@ De to valinrester findes hhv. som 4. første og 5. sidste rest. Da strukturen er
 
 Angiv den omtrentlige position af β-kæderne og deres retning. Forklar dit svar.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Kæde 1: Rest 5-10
 Kæde 2: Rest 14-20
 Kæde 3: Rest 31-38
@@ -156,7 +156,7 @@ Kæde 4: Rest 42-50
 
 Er β-kæderne parallelle eller anti-parallelle?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
 :::
 
@@ -188,7 +188,7 @@ Hvilken struktur hører til hvilket plot?
 Forklar dit svar.
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 A er Fab-fragmentet
 
@@ -207,7 +207,7 @@ Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn 
 
 Tegn en *trans*-peptidbinding med korrekte bindingslængder (se Berg, 10. udgave, s. 44) i en fast målestok (f.eks. 1 Å : 2 cm). Brug 120° som bindingsvinkel mellem alle tre bindinger til C (carbonyl-kulstof) og N (amid-nitrogen), da begge er *sp^2^*-hybridiserede (dvs. det er plane grupper).
 
-::: {.solution-callout}
+::: {.callout-solution}
 ![](media/image13.png){width="60%" fig-align="center" .lightbox}
 :::
 
@@ -219,7 +219,7 @@ Gentag ovenstående øvelse for en *cis*-peptidbinding.
 
 Hvad er afstanden mellem de to Cα-atomer i et *trans*-peptid?
 
-::: {.solution-callout}
+::: {.callout-solution}
 ~3.8 Å
 :::
 
@@ -227,7 +227,7 @@ Hvad er afstanden mellem de to Cα-atomer i et *trans*-peptid?
 
 Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
-::: {.solution-callout}
+::: {.callout-solution}
 ~2.8 Å
 :::
 
@@ -241,7 +241,7 @@ Alle GDP-bindende proteiner indeholder et bestemt sekvensmotiv, Asn-Lys-X-Asp (N
 
 Hvilken aminosyrerest svarer til X i NKXD motivet i dette tilfælde?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Cys137
 :::
 
@@ -266,7 +266,7 @@ EF-Tu er specifik for binding af GDP og binder således hverken nukleotiderne AD
 
 ![](media/image15.png){width="80%" .lightbox fig-align="center"}
 
-::: {.solution-callout}
+::: {.callout-solution}
 Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
 
 ------------------------------------------------------------------------------
@@ -289,7 +289,7 @@ Forklar hvordan denne specificitet opnås.
 
 En mutation af aspartat til asparagin i sekvensmotivet for guaninbinding medfører at det muterede protein binder XDP og ikke GDP.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Adenine har hverken en ekstracyklisk N2-gruppe eller i stand til at donere en H-binding fra N1, så interaktionen med D138 er ikke favorabel.
 
 Xanthine har godt nok N1-gruppen fra guanine, men har til gengæld modsat polaritet (H-acceptor) idet N2 er udskiftet med O, så den er heller ikke favorabel.
@@ -301,7 +301,7 @@ D138 udgør altså hele grundlaget for denne skelnen mellem nukleotider.
 
 Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
 :::
 
@@ -327,7 +327,7 @@ select sidechains, byres eftu within 4.0 of nucleotide
 
 Forklar betydningen af de enkelte elementer i den pågældende linie. Hint: se [**https://pymolwiki.org/index.php/Select**](https://pymolwiki.org/index.php/Select) og [**https://pymolwiki.org/index.php/Selection_Algebra**](https://pymolwiki.org/index.php/Selection_Algebra)
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 select sidechains , byres eftu within 4.0 of nucleotide 
@@ -370,7 +370,7 @@ Denne ville altså finde afstanden mellem alfa-carbon i aminosyrerest 13 i kæde
 
 Skriv et nyt script, der laver en visning af samme figur som før, men med GDPNP (en analog til GTP) i stedet for GDP og stadigvæk med angivelse af hydrogenbindinger. Hint: Der kan hentes meget inspiration i scriptet fra før. 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 {{< include pymol_scripts/script_te4_e7.pml >}}

@@ -25,7 +25,7 @@ Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?
 Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.
 :::
 
@@ -37,7 +37,7 @@ Denne opgave er repetition af Berg Biochemistry kapitel 2.
 
 Hvilke aminosyresidekæder kan almindeligvis fraspalte eller optage en proton under biologiske forhold og hvad er deres pKa-værdier?
 
-::: {.solution-callout}
+::: {.callout-solution}
 De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.
 
 Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.
@@ -49,7 +49,7 @@ Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvo
 
 Hvad er ladningen af en aminosyres sidekæde ved pH-værdier hhv. under og over denne pKa?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
 :::
 
@@ -57,7 +57,7 @@ Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet 
 
 Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa ændres?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
 :::
@@ -78,7 +78,7 @@ Hvilke af følgende udsagn om molekylet er korrekte?
 
 Det indeholder en $\alpha$-aminogruppe.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Korrekt, denne ses øverst til venstre i strukturen.
 
@@ -88,7 +88,7 @@ Korrekt, denne ses øverst til venstre i strukturen.
 
 Der findes en kobling mellem to aminosyrer, der adskiller sig fra den almindelige peptidbinding.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
 :::
@@ -97,7 +97,7 @@ Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carb
 
 Der findes en let oxidérbar gruppe.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 -CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
 
@@ -107,7 +107,7 @@ Der findes en let oxidérbar gruppe.
 
 Der findes to sekundære aminogrupper.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
 :::
@@ -119,7 +119,7 @@ Man kunne også beskrive stoffet som Glu-Cys-Gly.
 Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 5 tilfælde, både dem, du mener er korrekte og dem, du mener er forkerte.
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Se svaret til 2.
 :::
@@ -142,7 +142,7 @@ Hvor mange mikromol active sites er der i 1 mg enzym? Antag, at hver underenhed 
 
 Hvad er enzymets omsætningstal i $s^{-1}$?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achieve.
 :::
@@ -175,7 +175,7 @@ Når chymotrypsinogen aktiveres til chymotrypsin så bliver molekylet kløvet to
 OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, F3 osv, da disse taster også bruges til at styre skærmens lysstyrke etc. på MacBooks.
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.** En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
 

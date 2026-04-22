@@ -38,7 +38,7 @@ RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes
 
 Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
 
@@ -79,7 +79,7 @@ I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes fo
 
 Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  H6-Ubi-S15: 11607.11 Da\
     S-protein: 11541.96 Da
@@ -129,7 +129,7 @@ Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 
 
 Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  5 μg/μL og 5000 ng/μL
 
@@ -188,7 +188,7 @@ Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standard
 
 Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Intet svar angivet.
 :::
@@ -217,7 +217,7 @@ Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-
 
 Eksperiment 5 - Kemisk krydsbinding af RNase S
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Få inspiration fra LØ-vejledningens side 7:
 

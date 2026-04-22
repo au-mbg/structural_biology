@@ -15,3 +15,7 @@ website:
     content: "You are viewing the instructor version of the course notes. Click the button in the top right to switch to the student version."
     type: primary
     position: below-navbar
+
+teaching:
+  show-solutions: true
+  default-solution-title: "Svar"

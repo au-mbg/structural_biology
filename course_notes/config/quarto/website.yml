@@ -71,7 +71,7 @@ website:
             - videos/videor_2.qmd
 
 filters:
-  - config/quarto/filters/solution-callout.lua
+  - callout-solution
   - config/quarto/filters/collapse-callouts.lua
 
 format:
@@ -84,6 +84,6 @@ format:
       dark: [darkly, config/quarto/styling/theme-dark.scss]
     respect-user-color-scheme: true
 
-# format-links:
-#   - format: typst
-#     text: PDF
+teaching:
+  show-solutions: true
+  default-solution-title: "Svar"

@@ -57,7 +57,7 @@ The project uses a set of *filters* in `config/quarto/filters/` to control the v
 callout blocks which are specified with 
 
 ```
-::: {.solution-callout}
+::: {.callout-solution}
 Content...
 :::
 ```

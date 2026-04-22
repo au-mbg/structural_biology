@@ -12,7 +12,7 @@ Odorantreceptoren tilhører klassen af G-koblede receptorer.
 Foretag en sammenligning mellem signalkaskaden induceret af epinephrine (adrenalin) via β-adrenergic receptor og kaskaden induceret af odoranter. På hvilke måder ligner de to signalveje hinanden, og hvor adskiller de sig?
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ligheder: I begge tilfælde binder et ekstracellulært stof (epinephrine / odorant) til den membranbundne receptor og aktiverer et G-protein til at udskifte GDP med GTP og frigøre βγ subunits. I begge tilfælde aktiverer G-proteinet på GTP-form adenylate cyklase, der danner cAMP.
 
 
@@ -26,7 +26,7 @@ Hvert sanseneuron i næsen udtrykker kun én specifik odorantreceptor mens neuro
 
 Forklar hvordan det for mennesker er muligt at genkende millioner af duftstoffer med kun ca. 400 forskellige odorantreceptorer men har svært ved at skelne forskellige bitterstoffer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 De 400 duftreceptorer reagerer på en kombinatorisk måde overfor duftstoffer, så hvert duftstof genkendes af mange receptorer og hver receptor genkender mange duftstoffer. Dette giver et meget stort antal mulige genkendelser. Desuden samles alle nerveceller, der udtrykker samme odorantreceptor i et bundt i lugtekolben, så signalet separeres og forstærkes. Modsat udtrykker nervecellerne i munden hver mange forskellige bitterreceptorer, hvilket betyder at vi ikke kan skelne mellem forskellige bitterstoffer, da mange aktiverer samme neuroner.
 :::
 
@@ -36,7 +36,7 @@ Strukturen af en human odorantreceptor (OR51E2) i kompleks med propionat er blev
 
 Hent strukturen af OR51E2 i PyMOL (PDB 8F76) og skriv et script, der viser receptoren med propionat og det ekstracellulære miljø opad. Odorant-molekylet skal vises med `spheres` og atomfarver (C=sort, O=rød) og strukturen af protein i cartoon med forskellige farver for hver kæde. Kæde N er et antistof, der er brug til at stabilisere komplekset og denne skal ikke med i figuren. Dit svar skal indeholde script og strukturfigur på hvid baggrund og propionat skal kunne ses. Forklar kort hvilke proteiner kæderne A, X, Y og Z repræsenterer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ::: {style="float: right; margin: 10px; width: 40%;"}
 ![](media/image138_1.png)
@@ -97,7 +97,7 @@ Figuren nedenfor viser et såkaldt `heat map` over hvilke aminosyrerester i rece
 
 Brug strukturen til at forklare observationerne for R262 og H180 med speciel fokus på O^α^-, O^β^- og C^α^-atomernes interaktioner. Beskriv hvilken type af bindinger, de to aminosyrerester indgår i og hermed hvordan odoranten genkendes.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Svar: I strukturen er det tydeligt at His180 indgår i en stærk H-binding med det ene O-atom mens Arg262 har stærke ioniske/H-bindinger med begge O-atomer i carboxylatgruppen. Den er også tæt på C^α^, men indgår ikke i en direkte binding med denne. Sammen med bindingslommens størrelse er disse interaktioner med til at gøre receptoren specifik for propionate.
 
@@ -113,7 +113,7 @@ Convertase Subtilsin/Kexin type 3, PCSK3, også kaldet furin er en protease, der
 
 Foreslå et eksperiment, der sammen med ovenstående information kan fastslå hvilken type protease, furin tilhører.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Svar: Både serine proteaser og aspartyl proteaser har en aspartat i aktivt site. For at teste om det er en serinprotease kan man se om furin inaktiveres af DIPF eller PMSF. Pepstatin kan også benyttes til at påvise Asp protease.
 
@@ -150,7 +150,7 @@ RPRHSRLQRE PQVQWLEQQV AKRRTKRDV**Y** QEPTDPKFPQ
 
 Bestem ud fra de givne oplysninger kløvningsstedet og dermed N-terminalen af det modne furin.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Da det er i tredje Edman-cyklus, at der ses et højt tælletal, må tyrosin være i tredje position i det modne furin. Det kan ikke være før dobbelt tyrosinen i 64-65 da der i så fald ville have været målt et højt tælletal i to positioner efter hinanden. Derfor må signalet stamme fra Y110, så N-terminalen er DVY. Der kløves derfor efter position R107, hvilket vil give en reduktion i massen på ca. 9 kDa.
 :::
 
@@ -175,7 +175,7 @@ Tabellen nedenfor angiver nogle af de proteiner, furin kløver, hvor\| angiver k
   -------------------------------------------
 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Svar: S1 og S4 binder R. Det er derfor sandsynligt at der i en dyb bindingslomme findes en negativt ladet sidekæde fx Asp eller Glu. S2 har de samme egenskaber som S1 og S4 dog tillades lidt mere fleksibilitet idet der her kan bindes både K og R. For P3 er der ikke nogen konsensus, P,S,R,K forekommer. S3 er derfor "ikke eksisterende"
 :::
 
@@ -191,7 +191,7 @@ For at fastslå hvordan aktiveringen af furin foregår, blandede man trunkeret f
 
 Fastslå først om furin er i stand til at kløve sin egen pro-form og forklar hvordan du ser det. Foregår kløvningen som en intermolekylær (mellem molekyler) eller intramolekylær (selv-kløvning) proces? Forklar dit svar.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Svar: Det bemærkes at sekvensen fra 104 til 107 matcher genkendelsessekvensen for furin. Som kontrol fortæller bane 2 at vildtype pro-furin også kløves når den trunkerede form er til stede. Bane 3 og 4 fortæller at furin ikke kløves når specificitetssekvensen ændres. Bane 5 hvor det aktive site er muteret ses ingen kløvning selv om specificitetssekvensen er intakt. Derfor kløver furin sig selv og der må være tale om (intramolekylær) auto-aktivering (selvkløvning).
 :::
 
@@ -203,7 +203,7 @@ Et forskerhold vil undersøge hvilke proteiner der associeres til membranen af r
 
 Hvad kunne være formålet med at tilsætte natriumpalmitat, og hvad gør dette molekyle ved proteinerne i membranen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Svar: Natriumpalmitat er en detergent (sæbe), som bruges til at solubilisere membranproteinerne ved at danne miceller som erstatning for membranlipiderne.
 :::
 
@@ -213,7 +213,7 @@ Proteinet EPC1 forventes ikke at være et membranprotein, men bliver alligevel f
 
 Kom med en sandsynlig forklaring på den afvigende masse samt forklar hvorfor EPC1 findes i membranen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 EPC1 er modificeret med et membrananker, som forankrer EPC1 til membranen. Det passer også med oplysningen om at det C-terminale peptid er tungere end forventet grundet denne modifikation.
 :::
 
@@ -223,7 +223,7 @@ Proteinet EPC2 findes også i membranprøven. EPC2 har en enkelt transmembran he
 
 Forklar hvordan EPC2 er orienteret i membranen, herunder på hvilken side eller sider, N-terminal og C-terminal af proteinet må befinde sig.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Glykosyleringer er på ydersiden af membranen, så da EPC2 kun har en trans-membran helix må N-terminal med asparagin 4 ligge udenfor cellen og C-terminal (og dermed resten af proteinet) inde i cellen.
 :::
 
@@ -233,7 +233,7 @@ Proteinet EPC3 findes ligeledes i blodcellemembranen og forskerne er interessere
 
 Forslå en metode som kan måle hvor hurtigt EPC3 bevæger sig i membranen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Svar: Der kan laves et FRAP (fluorescence recovery after photo-bleaching)-eksperiment, som direkte måler membranmobiliteten. Det kræver at EPC3 mærkes med en fluorofor.
 :::
 
@@ -247,7 +247,7 @@ I vinterhalvåret er det en god idé at tage vitamin D, da der ikke er nok solly
 
 Find de to ens bindingsområder i DNA-sekvensen, hvortil heterodimeren binder. Hvilken type sekvensmotiv er der tale om?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Der er to områder med sekvensen AGGTCA. Der er tale om et `direct repeat`. Altså ikke et "inverted repeat" eller palindrom, som man ofte ser. `Direct repeat` termen er ikke nævnt direkte i pensum, så det er ok ikke at bruge termen, og i stedet beskrive det med ord. Duplikeret motiv er også korrekt svar.
 :::
 
@@ -257,7 +257,7 @@ Der er to områder med sekvensen AGGTCA. Der er tale om et `direct repeat`. Alts
 
 Hvilken type strukturmotiv indeholder de to DNA-bindende domæner og hvilken groove af DNA binder de til?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Zink-finger, major groove.
 :::
 
@@ -265,14 +265,14 @@ Zink-finger, major groove.
 
 Hvad er afstanden mellem de to α-helicer i proteinerne, der genkender DNA, og hvad ville afstanden typisk være hvis der var tale om en symmetrisk binding ved en homodimer?
 
-::: {.solution-callout}
+::: {.callout-solution}
 28 Å. For symmetrisk binding vil afstanden typisk være ca. 34 Å, da dette svarer til en full turn af DNA (=10x 3.4 Å).
 :::
 
 ### Spørgsmål 4
 Identificer 3 sekvensspecifikke interaktioner mellem genkendelseshelicen og DNA dobbelthelix for et af de to DNA-bindende domæner. Angiv i hvert tilfælde de to involverede aminosyre- og nukleotidrester på henholdsvis protein og DNA.
 
-::: {.solution-callout}
+::: {.callout-solution}
 To svar er mulige:
 
 Domæne 1: Arg50-G431, Glu42-C433, Lys45-G404

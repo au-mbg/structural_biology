@@ -18,7 +18,7 @@ Når homogenat blev behandlet med adrenalin blev stoffet X dannet. X blev oprens
 
 Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen. Hvordan kan det være?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 X er cAMP og dets produktion stimuleres af adrenalin.
 
@@ -74,7 +74,7 @@ Forudse ud fra strukturen af CERK6 hvad effekten af de to mutationer vil have p�
 
 Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kaldet F4, der viser chitin i LysM1 for CERK6 og undersøg om der er sterisk plads til binding af chitin her. .
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Bakterielle overflade-sukkermolekyler genkendes af plante receptorer (LysM receptorer) som sidder i cellemembranen.\
     \
@@ -120,7 +120,7 @@ Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil
 
         ![5](media/image102.png){width="2.703999343832021in" height="1.2268143044619422in"}            ![6](media/image103.png){width="2.584000437445319in" height="1.429446631671041in"}
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Adrenalin binding medfører konformationel ændring i receptoren som forplantes videre i Gα som derved mister affinitet for GDP (1. amplifikation). Gα binder nu GTP og frigøres fra Gβγ og kan nu aktivere adenylate cyclase (2. amplifikation). Adenylate cyclase katalyserer dannelsen af cAMP (3. amplifikation) som kan diffundere og aktivere PKA (4. amplifikation).
 
@@ -145,7 +145,7 @@ Et forskerhold har identificeret en patient med en mutation i en meget konserver
 
 Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-protein Ras. Forklare hvorfor Q61 ofte ses muteret i mange former for kræft"?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Ligandbinding medfører dimerisering/oligomerisering af receptoren eller konformationelle ændringer som aktiverer intracelulære kinaser (f.eks via kryds-fosforylering).
 
@@ -178,7 +178,7 @@ Stoffet nedenfor mikroinjiceres dernæst i celler, som udtrykker GPCR-1 receptor
 
 Ved mutation af konserverede serine- og theronine-rester i den C-terminale del af GPCR-1 til alanine ses en øget og længevarende receptor-signalering. Giv en forklaring på den øgede aktivitet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 **1.**  Et korrekt svar skal indeholde at tilsætning at ligand aktiverer GPCR-1, som aktiverer G-proteinet, som øger aktiviteten af adenylate cyclase som katalysere dannelsen af cAMP fra ATP.
 

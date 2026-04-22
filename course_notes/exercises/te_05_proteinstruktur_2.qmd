@@ -10,7 +10,7 @@ Højtopløste strukturer i Protein Data Bank blev gennemsøgt for *cis*-peptidbi
 
 Baseret på ovenstående, hvor mange *cis *Xaa-Pro bindinger vil du i gennemsnit forvente at finde i hvert protein? Hvis mindre end én, hvor mange proteiner ville man skulle kigge i gennem før man fandt én *cis* Xaa-Pro?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3. Derfor vil et protein med 270 aa indeholde 270 x 2.5\*10-3 eller ca. 0.7 af disse. Med andre ord, ca. 2/3 af alle proteiner vil forventes at indeholde én cis Xaa-Pro binding.
 :::
 
@@ -18,7 +18,7 @@ Den forventede frekvens af cis Xaa-Pro er én i hver 0.048 x 0.052 = 2.5\*10-3
 
 Hvordan ser det ud for andre *cis*-peptider (altså ikke involverende proline)?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x 0.952, hvis du fraregner prolinerne), så frekvensen per 270-aa protein er altså 2.9\*10-4 x 0.952 x 270 = 0.075 eller én cis-peptidbinding per 13 proteiner.
 
 Bonusinfo: I artiklen [(A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\])](https://www.sciencedirect.com/science/article/pii/S0022283698924597?via%3Dihub), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
@@ -44,7 +44,7 @@ Hvilken af de fire klasser indeholder flest domæner? Diskutér.
 
 Expandér klasserne og kig efter arkitekturer der betegnes som "barrel".
 
-::: {.solution-callout}
+::: {.callout-solution}
 Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest domæner. Det er uvidst hvorfor det forholder sig sådan, men man kan betragte det ud fra flere vinkler: Rent kombinatorisk giver det måske mening, at et stort domæne vil have lidt af hvert og måske er blandede αβ-domæner mere stabile? Endelig kan der være en bias i de eksperimentelle data hvis det f.eks. viser sig generelt at være lettere at krystallisere domæner med blandet αβ-indhold.
 :::
 
@@ -52,7 +52,7 @@ Gruppen af blandede αβ-proteiner indeholder (måske ikke overraskende) flest
 
 I hvor mange klasser og i hvilke klasser findes der barrel-arkitekturer?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Barrels findes (måske overraskende) blandt både de rene α-domæner, de rene β-domæner men og også de blandede αβ-domæner.
 :::
 
@@ -60,7 +60,7 @@ Barrels findes (måske overraskende) blandt både de rene α-domæner, de rene 
 
 Hvilken barrel-arkitektur indeholder flest domæner? 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den klassiske β-barrel indeholder flest domæner (>20.000) efterfulgt af de blandede αβ-domæner (\~13.000) og de rene α-barrels (\~760 domæner).
 :::
 
@@ -72,7 +72,7 @@ Beskriv foldningen i den klassiske β-barrel.
 Se figur 1.58 i Petsko & Ringe.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den klassiske β-barrel består af en række β-kæder, der folder sammen så den første hydrogenbinder til den sidste og de dermed danner en tønde-struktur. β-kæderne er antiparallelle og kræver derfor ikke helixer ind i mellem.
 :::
 
@@ -80,7 +80,7 @@ Den klassiske β-barrel består af en række β-kæder, der folder sammen så 
 
 Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskriv forskellen mellem de to foldninger.
 
-::: {.solution-callout}
+::: {.callout-solution}
 CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
 :::
 
@@ -102,7 +102,7 @@ Copy/Paste scriptet fra EF-Tu-folding.pml ind i PyMOL.
 
 Tryk **F1** for at få et overblik over strukturen.
 
-::: {.solution-callout}
+::: {.callout-solution}
 > "dss defines secondary structure based on backbone geometry and hydrogen bonding patterns." - (PyMOLwiki)
 :::
 
@@ -110,7 +110,7 @@ Tryk **F1** for at få et overblik over strukturen.
 
 Hvor mange domæner består proteinet af? Forklar hvordan det ses.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Strukturen indeholder 3 domæner, hvilket ses ved at de er individuelle, globulære enheder forbundet med en kort linker.
 :::
 
@@ -118,7 +118,7 @@ Strukturen indeholder 3 domæner, hvilket ses ved at de er individuelle, globul�
 
 Angiv foldningsklasse for hvert enkelt domæne.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Der er to β-domæner (β-barrels i orange og gult) samt et blandet αβ-domæne (blåt/grønt).
 :::
 
@@ -126,7 +126,7 @@ Der er to β-domæner (β-barrels i orange og gult) samt et blandet αβ-domæne
 
 Tryk **F2** for at undersøge domæne 1. Hvor mange β-α-β motiver består domæne 1 af?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Domænet indeholder 3 β-α-β motiver, men i flere tilfælde er der ekstra indsatte helixer.
 :::
 
@@ -134,7 +134,7 @@ Domænet indeholder 3 β-α-β motiver, men i flere tilfælde er der ekstra inds
 
 Tryk **F3** for at undersøge domæne 2. Hvor mange β-hairpins findes der i domæne 2?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Der er 2 β-hairpins, de andre β-strenge er ikke i hairpin-strukturer.
 :::
 
@@ -142,7 +142,7 @@ Der er 2 β-hairpins, de andre β-strenge er ikke i hairpin-strukturer.
 
 Tryk **F4** for at undersøge domæne 3. Beskriv foldningen af domæne 3.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Det indeholder en β-barrel.
 :::
 
@@ -150,7 +150,7 @@ Det indeholder en β-barrel.
 
 Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
 :::
 
@@ -166,7 +166,7 @@ Strukturen af *B.amyloliquefaciens* PGP-I (PDB-ID: 1AUG) kan findes i Protein Da
 
 Hvilken foldningsklasse tilhører PGP-I og hvor mange domæner består protomeren af.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Protomeren har kun et domæne. Domænet tilhører αβ klassen.
 :::
 
@@ -180,7 +180,7 @@ FVCNHLFYGLMDEISRHHP
 
 Anvend EMBOSS ( f.eks. på [**http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel**](http://emboss.bioinformatics.nl/cgi-bin/emboss/pepwheel)) til at tegne et helix hjul.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den kvaternære struktur består af fire protomere og er dermed en tetramer. De fire protomere ligger i et fælles plan. Ser man vinkelret på denne plan ( brug 'orient' funktionen i Pymol) og farver hver protomer 'rainbow' ses det, at en 180° rotation ( en to-tals rotation) vinkelret på planen vil føre tetrameren over i sig selv. Hvis man nu ser tetrameren fra siden (rotate x, 90) kan man se at der igen er en to-tals rotation der bringer tetrameren over i sig selv. Endelig kan man rotere tetrameren igen så man ser den vinkel ret på orienteringen fra før (rotate y , 90) . Igen ser man en to-tals akse der bringer tetrameren over i sg selv. Alt i alt har vi tre to-tals akser vinkelret på hinanden som danner en lukket punktgruppe, som betegnes 222.
 :::
 
@@ -188,7 +188,7 @@ Den kvaternære struktur består af fire protomere og er dermed en tetramer. De 
 
 Diskuter fordelingen af aminosyrer på hjulet med hensyn til deres fysisk/kemiske egenskaber.
 
-::: {.solution-callout}
+::: {.callout-solution}
 ![pepwheel.1](media/image17.png){width="80%" fig-align="center" .lightbox}
 
 På hjulet ses at der fra kl 10-16 hoved sageligt er polære sidekæder, mens der overvejende er hydrophobe sidekæder på resten af hjulet.
@@ -198,7 +198,7 @@ På hjulet ses at der fra kl 10-16 hoved sageligt er polære sidekæder, mens de
 
 Hvilken side af helixen forventer du vender ind mod kernen af proteinet?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Da kernen af proteinet er hydrophob vil man forvente at den hydrophobe side af helixen vender ind mod kernen.
 :::
 
@@ -212,7 +212,7 @@ Lokaliser helixen i strukturen og vis kun den i surface repræsentation og farve
 
 Lav et script, der definerer helicen som et nyt objekt, lav en passende visualisering og gem scenen som F1. Se nu på overfladen af helixen (show surface) og undersøg hvordan overfladen ind mod kernen af proteinet adskiller sig fra den side der vender mod solvent og sammenlign med helix hjulet fra tidligere. Vender helixen som forventet jvf spørgsmål 4?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ja, den vender som forventet
 :::
 
@@ -224,7 +224,7 @@ Tegn et topologisk foldningsdiagram og lokaliser "switch point" (jvf P&R side 38
 Brug `spectrum` kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Topologisk foldningsdiagram for PGP-I:
 
 ![](media/image18.png){width="80%" fig-align="center" .lightbox}
@@ -234,7 +234,7 @@ Topologisk foldningsdiagram for PGP-I:
 
 Diskuter placeringen af den katalytiske triade i forhold til "switch point" og det forventede substrat bindingssite. Lav en ny scene, F3, som viser active site og dens placering ift. Switchpoint.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Vi ser at Cys 144 peger mod det topologiske switchpoint mens histidin og glutamat ligger over mod β-kæde 4. Substratbindingsite befinder sig derfor i switchpoint hvor genkendelse formentlig sker ved interaktion med løkken der forbinder β-kæde 1 med den første helix.
 
@@ -264,7 +264,7 @@ Brug dit kendskab til online databaser til at besvare følgende spørgsmål
 
 Hvad er funktionen af de to proteiner i cellen og i hvilke sammenhænge optræder de?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Der søges efter "human myoglobin" i Uniprot databasen.
 
 Under overskriften "Function" ses:
@@ -280,7 +280,7 @@ På samme made søges efter "beta galactosidase `e coli`":
 
 Hvad er molekylevægten af β-galactosidase og hvor mange kæder består det aktive enzym af?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Under overskriften Sequence ses at sekvensen svarer til en molekylvægt på 116 kDa. Under overskriften "Interaction" står der at b-galactosidase er en homotetramer og altså består af 4 kæder.
 :::
 
@@ -288,7 +288,7 @@ Under overskriften Sequence ses at sekvensen svarer til en molekylvægt på 116 
 
 Hvilken PDB-kode (struktur) og accessionsnummer er registreret for myoglobin?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Under Structure i Uniprot ses at der kun er en struktur deponeret i PDB: 3RGK.
 :::
 
@@ -297,7 +297,7 @@ Under Structure i Uniprot ses at der kun er en struktur deponeret i PDB: 3RGK.
 
 Hvilken subcellulære position findes myoglobin i?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ses under `Subcellular structure`. Myoglobin findes cytosolen og i det ekstracellulære domæne.
 :::
 
@@ -305,7 +305,7 @@ Ses under `Subcellular structure`. Myoglobin findes cytosolen og i det ekstracel
 
 Benævn chromosompositionen for proteinerne. Forklar hvorfor β-galactosidase er lidt anderledes.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ses under "Names & Taxonomy". Myogloblin findes på chromosom 22. β-galactosidase findes på `chromosom` fordi E. Coli udelukkende har ét chromosom.
 :::
 
@@ -313,7 +313,7 @@ Ses under "Names & Taxonomy". Myogloblin findes på chromosom 22. β-galactosida
 
 Beskriv de to proteiners posttranscriptionelle modifikationer.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Myoglobin kan phosphoryleres på Ser4 og Thr68. β-galactosidase har ingen posttranskriptionelle modifikationer.
 :::
 
@@ -321,7 +321,7 @@ Myoglobin kan phosphoryleres på Ser4 og Thr68. β-galactosidase har ingen postt
 
 Hvad er $K_M$-værdien for β-galactosidase overfor det stærkest bindende substrat, man har målt? Hvad er $V_\mathrm{max}$ for enzymet med dette substrat?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Under overskriften "Function" ses:
 
 > KM=34 µM for p-nitrophenyl beta-D-galactoside (with magnesium as cofactor and 30 degrees Celsius)
@@ -334,7 +334,7 @@ Under overskriften "Function" ses:
 
 Find aminosyrerne der er den del af active site for begge proteiner.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ses under "Funktion". For β-galactosidase er det aminosyreresterne 462 og 538. Under "Sequence" kan man se at dette er hhv. E og E. Myoglobin er et carrier protein uden enzymatiske egenskaber, så den har intet active site.
 :::
 
@@ -343,7 +343,7 @@ Ses under "Funktion". For β-galactosidase er det aminosyreresterne 462 og 538. 
 
 Hvad er det isoelektriske punkt ($pI$) for henholdsvis myoglobin og beta-galactosidase?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 Under 'Sequence' vælges ude til højre ved Go-knappen "Compute pI/Mw". 
 
@@ -359,7 +359,7 @@ Man kan også indsætte sekvensen i Protparam, hvilket giver samme resultat.
 
 Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galactosidase?
 
-::: {.solution-callout}
+::: {.callout-solution}
 6512 lignende sekvenser - Under "Similar Proteins" klikkes på fanen "50% identity"
 :::
 
@@ -367,6 +367,6 @@ Hvor mange sekvenser i Uniprot har mere end 50 % sekvens lighed med beta-galacto
 
 Find allosteriske effektorer af expression for β-galactosidase.
 
-::: {.solution-callout}
+::: {.callout-solution}
 11. Ses under "Expression". Ekspressionen af β-galactosidase induceres af allolactose.
 :::

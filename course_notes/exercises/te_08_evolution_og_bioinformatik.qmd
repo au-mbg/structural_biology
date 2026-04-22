@@ -14,7 +14,7 @@ Gå til Rfam-databasen og søg efter "tRNA". Tryk på "Secondary structure" unde
 I nedre venstre hjørne ses et farvespektrum fra ikke bevaret (0) til stærkt bevaret (1).
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Struktur er mere bevaret end sekvens.
 :::
 
@@ -22,7 +22,7 @@ Struktur er mere bevaret end sekvens.
 
 Kig nu på "Rchie" plottet, der vises i boksen herunder. Plottet viser sekvenser (blok med farver, hvor hver vandrette linje repræsenterer en sekvens) og deres sekundær struktur (buer vist på toppen, der forbinder baser der danner basepar). Hvilke stems indeholder mest covariation? Kig ned gennem alignmenten -- hvad adskiller nogle tRNA sekvenser fra andre? 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Stem 1 og 3 (talt fra 5' ende)\
 Nogle tRNA sekvenser har insert mellem stem 3 og 4.
 :::
@@ -69,7 +69,7 @@ Prøv at folde dem i [**RNAalifold server**](http://rna.tbi.univie.ac.at/cgi-bin
 Der ses en masse undermenuer, hvor man kan vælge foldningsalgoritme mm. Disse skal bare ignoreres. De sorte basepar betyder mismatches i alle sekvenser.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Har extra stem mellem stem 3 og 4.\
 Ja, der er covariationer i stem.
 :::
@@ -113,7 +113,7 @@ Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-brack
 
 Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med `fetch 3a3a`. Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 :::
 
@@ -131,7 +131,7 @@ Hvor meget RNA skal du have i gram hvis biblioteket skal have mindst et molekyle
 Den gennemsnitlige molekylevægt for et nukleotid er 330 g/mol og Avogadros tal er 6,0221415 \* 10^23^ mol^-1^.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 4^N^ = 4^220^ mulige sekvenser. \ 
 M(ribonukleotid) = 330 g/mol. \
 M(RNA) = 220 nt \* 330 g/(mol\*nt) = 72.600 g/mol. N~A~ =  6,022140857 \* 10^23^ /mol. \
@@ -157,7 +157,7 @@ GGAAGACCAUACGACUGGCACCGUACAAUACAAAUGUGCCCUCAGAGCUUGAGAAGAUCCUUGCAGGAUAAAGGGGAGGC
 
 Brug [**RNAalifold**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold.cgi) webserver til at forudsige konsensus sekundær struktur for RNA ligase klasse I. Sammenlign den forudsagte sekundær struktur med strukturen som forskerne kom frem til (Figur B). Hvilke stem-regioner (P) er forudsagt korrekt? Hvorfor tror du pseudoknuden P3 ikke er forudsagt?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.
 
 ![](media/image34.png){width="80%" fig-align="center" .lightbox}
@@ -168,7 +168,7 @@ Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en
 
 Hvilke kompenserende baseændringer bliver observeret og hvilke stem-regioner understøtter de? Hvilke stem-regioner modsiges af inkompatible basepar?
 
-::: {.solution-callout}
+::: {.callout-solution}
 P2,4,6 støttes af kompenserende baseændringer.\
 PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
 :::
@@ -183,7 +183,7 @@ I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt me
 
 Hvilke stems stacker på hinanden? Hint: To stems kan tilsammen danne en længere helix ved at stacke på hinanden (som det ses f.eks. for P6 og P7 i Figur B).
 
-::: {.solution-callout}
+::: {.callout-solution}
 P2,4,5,6,7 forudsagt. I fravær af P1 og P3 er der forudsagt en anden hairpin, som vi kan kalde PX.\
 RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algoritme, der kun kan forudsige sekundær struktur.
 :::
@@ -196,7 +196,7 @@ RNAalifold kan ikke forudsige pseudoknots, da programmet baserer sig på algorit
 Se Figur D
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
 :::
 
@@ -227,7 +227,7 @@ ELAIIIKKEMKDAA
 
 Brug [**ClustalO**](https://www.ebi.ac.uk/jdispatcher/msa/clustalo) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
 
-::: {.solution-callout}
+::: {.callout-solution}
 11
 
 ClustalO output:
@@ -265,7 +265,7 @@ ClustalO identitetsmatrix:
 
 Brug [**MUSCLE**](https://www.ebi.ac.uk/jdispatcher/msa/muscle) til at lave en sekvensalignment af Hæmoglobin, Myoglobin og Leghæmoglobin. Hvor mange identiteter er der mellem de tre sekvenser i den forudsagte sekvensalignment?
 
-::: {.solution-callout}
+::: {.callout-solution}
 11
 
 ```default
@@ -300,7 +300,7 @@ MUSCLE identitetsmatrix:
 
 Sammenlign ClustalO og MUSCLE. Hvilke forskelle i alignment viser de?
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 TODO: Det her svar giver ikke rigtig mening? 
 
@@ -311,7 +311,7 @@ MUSCLE, da den finder extra similariteter og laver ikke stort insert til sidst i
 
 Klik på "Result Files" og på "Percent Identity Matrix". Hvilke to af de tre sekvenser er tættest beslægtet og med hvilken identitetsprocent?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Hæmoglobin og Myoglobin med 27%
 :::
 
@@ -325,7 +325,7 @@ Brug figur 10.7 til at beregne score for de første (fra N-term) af hver slags �
 For tre sekvenser summeres scores for alle sammenlignings-kombinationer.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Blossum scores:\
 Kolonne 4 = 3\*4 (L-L) =12\
 Kolonne 18 = 2\*1 (T-S) + 4 (S-S) = 6\
@@ -336,7 +336,7 @@ Kolonne 19 = 2\*-1 (F-V) + 4 (V-V) = 2
 
 Hvilke aminosyreegenskaber er involveret i Blossum-62 score?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Aminosyrer er opdelt i: 
 
 1. ladede
@@ -345,7 +345,7 @@ Aminosyrer er opdelt i:
 4. andre.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
 :::
 
@@ -363,7 +363,7 @@ Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare s
 
 Forklar hvordan PyMOLs [`super`](https://pymolwiki.org/index.php/Super) kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem `1HBB`, `1MBD` og `1GDJ`.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Super aligner udelukkende på grundlag af struktur.
 
 Super RMSD beregnes med kommandoerne:
@@ -378,7 +378,7 @@ Super RMSD beregnes med kommandoerne:
 
 Forklar hvordan PyMOLs `align`(https://pymolwiki.org/index.php/Align) kommando fungerer og brug funktionen til at udregne root mean square deviation ([**RMSD**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)) mellem 1HBB`, `1MBD` og `1GDJ`.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Align laver først en sekvens alignment og bruger denne til at aligne struktur.
 
 Align RMSD beregnes med kommandoerne:
@@ -394,7 +394,7 @@ I hvilke tilfælde fungerer `super` og `align` bedst? Stemmer RMSD generelt over
 
 **F2** viser identiteter fra forrige opgave i grøn og hæmgruppe i rød. 
 
-::: {.solution-callout}
+::: {.callout-solution}
 Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst når der er god sekvensbevarelse. Det ses at 1gdj er mest forskellig fra de andre. Hvilket passer med at det også er 1gdj der har færrest identiteter med de andre.
 :::
 
@@ -402,7 +402,7 @@ Super fungerer godt når der ikke er stor sekvensbevarelse. Align fungerer bedst
 
 Beskriv overordnet hvor de bevarede aminosyrer er placeret i globin-strukturen som vist i **F2**. Hvad er afstanden af bindingen mellem Histidin-87 og jern-atomet? Hvorfor vises denne vigtige binding ikke i PyMOL? Hvordan passer denne længde med en kovalent binding overfor en hydrogen-binding?
 
-::: {.solution-callout}
+::: {.callout-solution}
 De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
 :::
 
@@ -458,7 +458,7 @@ Hvilke 100% bevarede aminosyrer binder til hæmgruppen? Hvilke aminosyrer kontak
 `find` finder ikke interaktion med Fe, så brug i stedet `distance` funktionen.
 :::
 
-::: {.solution-callout}
+::: {.callout-solution}
 De binder hæmgruppe på hver sin side og kontakter hæmgruppen med sidekæde.
 :::
 
@@ -469,7 +469,7 @@ Vis proteinet med `sphere`-repræsentation og svar på følgende spørgsmål.
 
 Hvordan er aminosyrer på overfladen af myoglobin bevaret? Hvordan ser bevarelsen ud omkring bindingssite for hæmgruppen?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Overfladen er blå (dvs. under 50% bevaret). Der er mange røde residues omkring hæmgruppen.
 :::
 
@@ -494,7 +494,7 @@ Vis proteinerne med `cartoon`- og `stick`-repræsentation og svar på følgende 
 
 Er 3D placeringen af de 100% bevarede aminosyrer helt ens imellem de tre globiner?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
 :::
 
@@ -502,7 +502,7 @@ Ja, de fleste røde aminosyrer har ca. den samme 3D orientering.
 
 Myoglobin har et insert på position 57-61 i forhold til Hæmoglobin. Hvilken sekundær struktur har dette insert og hvilken ligand er bundet til denne struktur?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Bøjning af alfa-helix. Ligand er SO~4~^2-^.
 :::
 
@@ -510,7 +510,7 @@ Bøjning af alfa-helix. Ligand er SO~4~^2-^.
 
 Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Myoglobin (1MBD)?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
 :::
 
@@ -518,7 +518,7 @@ Alfa helix er indsat mellem helix 3 og 4 (talt fra N-term).
 
 Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmoglobin (1GDJ)?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Alfa helix 4 er forlænget i C-terminal.
 :::
 
@@ -532,7 +532,7 @@ Alfa helix 4 er forlænget i C-terminal.
 
 Kig på alignment (klik på `Alignments`, vælg derefter `seed`) og sammenlign HSP74 fra menneske og HSP7F fra gær. Hvad er den største forskel mellem dem?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Stort insert omkring position 550.
 :::
 
@@ -554,7 +554,7 @@ Lav et PyMOL-script, der gør følgende:
 
 - Gem som F3.
 
-::: {.solution-callout}
+::: {.callout-solution}
 
 ```default
 {{< include pymol_scripts/script_te8_e6.pml >}}
@@ -567,7 +567,7 @@ Lav et PyMOL-script, der gør følgende:
 
 Tryk på **F1** og identificer positionen for insertet `FKKVTKTVKKDDLTIVAHTFGLDAKKLNE` (rest 521-549) i HSP7F fra gær. I hvilken sekundær struktur sidder dette insert? Foreslå evolutionær mekanisme hvormed dette insert er blevet dannet.
 
-::: {.solution-callout}
+::: {.callout-solution}
 Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra beta strand, der leder hen til lang alfa helix. Insert kan være dannet ved duplikation under kopiering.
 :::
 
@@ -575,7 +575,7 @@ Insert sidder i dobbelt lag antiparallelt beta-sheet del og tilføjer én extra 
 
 Tryk på **F2** for at se strukturel alignment af HSP7F og DNAK. Hvilke strukturelle forskelle er der på disse strukturer?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet pos
 :::
 
@@ -584,7 +584,7 @@ Beta sandwich har flyttet position. Lange alfa helicer i C-term har flyttet pos
 
 Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den overordnede struktur af domæner med beta sheets og alfa helices. Er actin og Hsp70 homologe proteiner når de har en forskellig funktion?
 
-::: {.solution-callout}
+::: {.callout-solution}
 Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
 Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
 :::
