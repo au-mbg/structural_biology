@@ -21,10 +21,11 @@ class QMDDocument:
         return figure_paths
     
     def find_downloads(self) -> list[str]:
-        pattern = r'<a href="(.*?)" download=".*?">'
+        pattern = r'{{<\s*download-button\s+path="(.*?)"(?:\s+filename=".*?")?\s*>}}'
         matches = re.findall(pattern, self.content)
         download_paths = []
         for match in matches:
+            print(match)
             download_path = (self.path.resolve().parent / match).resolve()
             download_paths.append(download_path)
         return download_paths

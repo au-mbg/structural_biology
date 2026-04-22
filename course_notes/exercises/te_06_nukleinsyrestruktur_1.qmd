@@ -103,7 +103,7 @@ Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f
 
 ## Opgave 3. TATA-box
 
-{{< downloadb-button path="../files/TE6-TATA.pml" filename="TATA.pml" >}}
+{{< download-button path="../files/TE6-TATA.pml" filename="TATA.pml" >}}
 
 Det TATA-box bindende protein (TBP) er involveret i promoter-genkendelse mht. at starte RNA polymerase transskription. TATA-boksen er en 8-basepar del af promoteren, der normalt er lokaliseret 30 nukleotider før transskription start site (TSS). Konsensus-sekvensen er `TATA(A/T)A(A/T)(G/A)`.
 
@@ -240,7 +240,7 @@ Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-r
 
 ## Opgave 6. Trp trap træsko 
 
-{{< download-button file="../files/TE6-Trp.pml" filename="Trp.pml" >}}
+{{< download-button path="../files/TE6-Trp.pml" filename="Trp.pml" >}}
 
 I *E. coli* binder Trp-repressor en specifik DNA-sekvens under tilstedeværelse af aminosyren tryptofan (Trp) og hæmmer dermed udtryk af fem gener i *trp-*operon. Trp-repressor danner en homodimer, der binder til DNA-dobbelthelix via to alpha-helicer (kaldet "genkendelseshelicer"). Åben PyMOL-scriptet `Trp.pml` i PyMOL, der laver en strukturel alignment af Trp-repressor (bundet til Trp og DNA) med *apo*-formen af proteinet (ikke bundet til Trp eller DNA). **F1** viser denne alignment.
 

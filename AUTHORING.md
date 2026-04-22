@@ -199,13 +199,10 @@ This can include any other content, such as figures, math or code.
 
 Downloadable files should be put in the `course_notes/files`-directory and then linked to using a block like
 
-```txt
-<a href="../files/script_te4_e7.pml" download="Tu.pml">
-  📥 Click to download script.
-</a>
-```
+{{< download-button path="../files/TE6-TALE.pml" filename="TALE.pml" >}}
 
-Here the `href`-path should is the relative path from the `.qmd` to the fil. The `download`-path specifies the file name of the downloaded file. 
+
+Here the `path` is the relative path from the `.qmd` to the file. The `filename` specifies the file name of the downloaded file. 
 
 You can check that downloadable files are correctly linked using the command 
 
