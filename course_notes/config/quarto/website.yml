@@ -72,7 +72,7 @@ website:
 
 filters:
   - callout-solution
-  - config/quarto/filters/collapse-callouts.lua
+  - collapse-callouts
 
 format:
   html:
@@ -87,3 +87,4 @@ format:
 teaching:
   show-solutions: true
   default-solution-title: "Svar"
+  collapse-tips: true
