@@ -1,5 +1,6 @@
 ---
 title: "Strukturbiologi TØ"
+format-links: false
 ---
 
 Velkomst til øvelsessiderne for strukturbiologi. Brug sidebaren til at navigere mellem de enkelte øvelsessæt.

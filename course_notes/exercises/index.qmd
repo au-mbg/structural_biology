@@ -1,6 +1,7 @@
 ---
 title: "Øvelser"
 sidebar: exercises-sidebar
+format-links: false
 ---
 
 Brug sidebaren til at navigere mellem de enkelte øvelsessæt.
