@@ -1,6 +1,7 @@
 ---
 title: "TØ 16 -- Kulhydrater og glykosylering af proteiner"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. AB0-blodtypesystemet
 
@@ -73,6 +74,7 @@ Foreslå to metoder til identificering af exogent EPO og forklar hvorfor de kan 
 ::: {.callout-solution}
 Isoelektrisk fokusering (se Stryer) fordi der vil være forskel i masse og/eller ladning. Masse spec da der vil være forskel i masse.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Serine carboxypeptidase Y
 
@@ -136,6 +138,7 @@ Beskriv ud fra de givne oplysninger, hvordan modningen af CPY i cellen kunne for
 ::: {.callout-solution}
 Serine carboxypeptidase Y er et glycoprotein, der syntetiseres og processeres via ER- og Golgi-membransystemerne. Den modne N-terminal (QRPL) indeholder det vakuolære sorting signal. Eventuelle O-glycosyleringer sker i Golgi ligesom de N-bundne oligosaccharider kan blive trimmet til komplekse former. Carboxypeptidasen pakkes i en vesikel i den terminale del af Golgi, hvorefter denne frigives og transporteres til vakuolen. 
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Mannosidase I
 
@@ -202,6 +205,7 @@ Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 ::: {.callout-solution}
 Nitrogenet til venstre på figuren svarer til placeringen af oxygen på det anomere carbon. Hvis mannosen indgik i en beta-glycosid binding ville bindingen pege opad og der ville være sterisk hindring for binding til mannosidase I.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Glykosyleringer i sortilin
 
@@ -289,6 +293,7 @@ Giv en mulig forklaring på denne observation.  
 ::: {.callout-solution}
 Der kan egentlig være to forklaringer. Enten kan Asn-sidekæderne selv være vigtige for proteinets foldning og mutationerne kan derfor betyde at proteinet ikke folder korrekt og dermed er uopløseligt. En anden mulighed er at glycosyleringerne er vigtige for foldning af proteinet i cellen eller for opløselighed under foldningsprocessen i Golgi/SR. Glycosyleringer tjener ofte til at forøge stabilitet og opløselighed af proteiner. I spørgsmål6 så vi at glykosyleringen på Asp549 forbandt det første β-sheet med det sidste i propelstrukturen via hydrogenbinginger. Glykosyleringen kan derfor tænkes at være med til at stabilisere den 10-bladede propelstruktur. 
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. (Rhod-)opsin (PyMOL)
 

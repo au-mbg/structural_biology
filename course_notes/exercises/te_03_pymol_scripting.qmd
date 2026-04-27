@@ -1,6 +1,7 @@
 ---
 title: TØ 3 - PyMOL-scripting
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Selektioner og objekter i PyMOL
 
@@ -93,6 +94,7 @@ Prøv at farve selektionen select_A rød og objektet object_A blåt. Tænd og sl
 
 Læs mere om selektioner i PyMOL [**[her]{.underline}**](https://pymolwiki.org/index.php/Selection_Algebra).
 
+{{< pagebreak >}}
 
 ## Opgave 2. Kæder, residues og atomer i PyMOL
 
@@ -388,6 +390,7 @@ Cartoon-farven styres af CA-atomerne, så hvis man farver dem ændrer cartoonen 
 
 :::
 
+{{< pagebreak >}}
 
 ## Opgave 3. Avancerede selektioner og boolsk algebra i PyMOL
 
@@ -551,6 +554,7 @@ select notAcys, (chain A and not resn cys)
 ```
 
 ::: 
+{{< pagebreak >}}
 
 ## Opgave 4. Scripting i PyMOL
 
@@ -726,6 +730,7 @@ Eksempel på færdigt script:
 {{< include pymol_scripts/script_te3_e4.pml >}}
 ```
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Strukturel analyse i PyMOL
 
@@ -822,9 +827,7 @@ Indsæt nu en kommando så ingen atomer er valgt og find et passende view, der s
 Find også en god oversigtsorientering og gem de to som scener under `overview` og `active site`.
 
 
-::: {.callout-note}
-
-## PyMOL info
+::: {.callout-note title="PyMOL Info"}
 
 PyMOL er udstyret med en funktion til interaktivt at måle afstanden mellem to atomer i strukturen. Under fanebladet "Wizard" ligger værktøjet "Measurement", der tillader brugeren at finde afstanden mellem to atomer i 3D-strukturen blot ved at klikke på først det ene og så det andet atom. Når der klikkes på et atom, anføres dette i logbogen øverst og et objekt ved navn measure## i objektoversigten til højre (hvor \## er nummeret på målingen). For at afslutte brugen af værktøjet klikkes på "Done" i nederste højre hjørne.*
 :::
@@ -844,6 +847,7 @@ Samlet script fra underopgaver **1-10**.
 **11.** 2.7 Å H-binding mellem camphors carbonylgruppe og OH-gruppen på Tyr96, hydrofobe interaktioner mellem Leu244, Val247 og den hydrofobe ring i camphor, 2.7 Å H-binding mellem den ene carboxylgruppe på heme og Asp297.
 
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. Mission Impossible i PyMOL
 

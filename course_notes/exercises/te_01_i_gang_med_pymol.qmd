@@ -6,6 +6,8 @@ I dette TØ sæt skal I arbejde på at få installeret og afprøvet software som
 
 Det er vigtigt at I alle får sat PyMOL-programmet op på samme måde, da det så er lettere at hjælpe jer i det tilfælde at I oplever problemer - følg derfor [PyMOL installations guiden](../other_notes/installation_pymol.qmd) og [VS Code installations guiden](../other_notes/installation_vscode.qmd).
 
+{{< pagebreak >}}
+
 ## Opgave 1. I gang med PyMOL
 
 PyMOL er et fantastisk værktøj til analyse af biologiske molekyler, både til hurtige kig og mere dybdegående analyse. I denne opgave skal vi benytte nogle enkle værktøjer til at kigge på en struktur og se hvordan man kan ændre den grafiske repræsentation. Opgaven behandler mange af de samme ting I har set i videoen "Introduktion til PyMOL".
@@ -83,6 +85,8 @@ Brug menuerne til at vise 1BL8 kun i sticks og vælg atomfarver med carbon i gul
 ### Udforsk cartoon-repræsentation og farvning
 
 Brug menuerne til at vise 1BL8 kun i cartoon og vælg farver efter sekundær struktur, herefter rainbow. Identificér proteinets rigtige N-terminal. Hvorfor er der så mange andre "terminaler"? Brug kæde-specifik farvning til at forstå den kvarternære opbygning af K^+^-kanalen.
+
+{{< pagebreak >}}
 
 ## Opgave 2. Kør dit første script i PyMOL.
 

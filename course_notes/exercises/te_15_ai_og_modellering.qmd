@@ -1,6 +1,7 @@
 ---
 title: "TØ 15 -- AI og modellering"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. AlphaFold vs. Eksperimentel struktur - Confidence og fleksibilitet
 
@@ -121,6 +122,7 @@ Bemærk at det flexible loop er fjernet i kontruktet brugt til krystalstrukturen
 ::: {.callout-solution}
 Den lange fleksible linker (residues 84-143) blev fjernet fra konstruktet pga. fleksibilitet, hvilket ofte hindrer krystallisation.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Hvad fortæller PAE om domæne-orientering
 
@@ -192,6 +194,7 @@ Identificér det lange fleksible loop i Parkin strukturen. Er positionen af dett
 ::: {.callout-solution}
 Nej, det fleksible loop (84-141) har **meget høj PAE** (lys/hvid) i forhold til resten af strukturen. Dette betyder at loopets position er meget usikker relativt til både Ubl og RING-domænerne. PAE bekræfter at denne region fungerer som en fleksibel linker der tillader Ubl-domænet at bevæge sig frit.
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Modellering af et protein-kompleks med ligand og ioner
 
@@ -246,6 +249,7 @@ Koordinationen involverer både sidekæder fra specifikke aminosyrer og backbone
 
 Vigtigt er det også at flere backbone carbonyl-grupper fra residuer i loopet bidrager til koordinationen. I alt er calcium koordineret af 6-7 oxygen-atomer i en cirka oktahedral geometri, hvilket er standard for calcium-binding i proteiner. Denne type metal-binding kan være vigtig for at stabilisere IFT25's struktur eller have en regulatorisk funktion.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Protein-interaktion med Alphafold
 

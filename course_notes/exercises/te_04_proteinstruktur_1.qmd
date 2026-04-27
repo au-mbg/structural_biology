@@ -1,6 +1,7 @@
 ---
 title: "TØ 4 -- Proteinstruktur 1"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. UniProt-databasen - Chymotrypsin
 
@@ -89,6 +90,8 @@ Klik på "Structure" til venstre på UniProt-siden
 Der er 5 helicer. Den første mellem 12 og 15 findes ikke i det modne enzym.
 :::
 
+{{< pagebreak >}}
+
 ## Opgave 2. Ramachandran-plottet
 
 På figuren nedenfor er vist fordelingen af phi $\phi$ og psi $\psi$ vinkler for aminosyrerester i kendte protein strukturer [(Hovmöller et al., *Acta Cryst D*, **58**, p.768-776, 2002)](https://journals.iucr.org/paper?S0907444902003359). Til venstre er vist den generelle fordeling for alle aminosyrer, dernæst for glycin rester og længst til højre for prolin rester.
@@ -113,6 +116,8 @@ På figuren for alle aminosyrer er der tre områder med høj forekomst af aminos
 
 Området omkring (φ, ψ) = (-60,-40) svarer til konformationen i α-helixer. Området omkring (φ, ψ) = (-120,+130) svarer til konformationene i β-kæder (β-strands), medens det nærliggende område svarer til en generelt udstrakt konformation af peptidkæden. Det tyndtbefolkede område omkring (φ, ψ) = (+60,+60) optræder i forbindelse med såkaldte "turns". 
 :::
+
+{{< pagebreak >}}
 
 ## Opgave 3. C-alpha diagram
 
@@ -160,6 +165,8 @@ Er β-kæderne parallelle eller anti-parallelle?
 Kæderne er antiparallelle da nabo kæder er modsat rettede. Det ses også af at de loops, der findes mellem kæderne, ikke krydser tilbage hen forbi β-pladen.
 :::
 
+{{< pagebreak >}}
+
 ## Opgave 4. Cartoons
 Strukturerne af proteinet myoglobin, et immunoglobulin Fab-fragment samt β-galactosidase er vist nedenfor som cartoons.
 
@@ -201,6 +208,8 @@ Dette ses bl.a. ved at myoglobin kun indeholder α-helixer og Fab-fragmentet næ
 Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn og nummer), der antyder at strukturen kan være dårligt forfinet. 
 :::
 
+{{< pagebreak >}}
+
 ## Opgave 5. Afstand mellem C-alpha atomer
 
 ### Tegn trans-peptidbinding med mål
@@ -230,6 +239,8 @@ Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 ::: {.callout-solution}
 ~2.8 Å
 :::
+
+{{< pagebreak >}}
 
 ## Opgave 6. Binding af guanine
 
@@ -304,6 +315,8 @@ Kom med en biokemisk forklaring på mutantens ændrede specificitet.
 ::: {.callout-solution}
 Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæde og har derfor netop mulighed for at donere én H-binding og acceptere en anden. Dette passer perfekt med kombinationen af NH1 og O2 i xanthine.
 :::
+
+{{< pagebreak >}}
 
 ## Opgave 7. Nukleotid binding
 

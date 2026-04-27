@@ -4,6 +4,7 @@ original_materials/
 # Quarto stuff: 
 course_notes/_site
 course_notes/.quarto
+fonts/
 
 # pixi environments
 .pixi/*

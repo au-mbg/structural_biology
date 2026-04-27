@@ -1,6 +1,7 @@
 ---
 title: "TØ 19 -- Kanaler og porer"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. ABC-transporteren
 
@@ -81,6 +82,7 @@ I MRP1a-strukturen er sekvensen af Walker B-motivet ILILDE. Konsensussekvensen e
 "[A/V/I/L/M/F/Y/W][A/V/I/L/M/F/Y/W][A/V/I/L/M/F/Y/W][A/V/I/L/M/F/Y/W]DE"
 ```
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Melatonin
 
@@ -117,6 +119,7 @@ Hvad må der ske med Ca2+-koncentrationen i muskelceller under vasokonstriktion 
 ::: {.callout-solution}
 Ca2+-koncentrationen må stige for at musklerne kan kontrahere under vasokonstriktion, dermed må VDCC være aktiv (åben). Binding til receptoren inhiberer syntesen af cAMP og dermed inaktiverer PKA (indirekte). Dette leder til at BKCaikke phosphoryleres og dermed ikke aktiveres. Da aktiviteten af BKCa har en negativ effekt på VDCC må denne derfor (indirekte) aktiveres.
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Ionkanaler 
 
@@ -161,6 +164,7 @@ Analyser strukturen, identificér og opskriv de aminosyrer som binder kalium. H
 ::: {.callout-solution}
 Disse aminosyere udgør selektivitetsfilter (TVGYG) som gør kanalen selektiv for kun kalium.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Strukturbestemmelse af en kanal
 

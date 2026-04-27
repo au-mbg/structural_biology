@@ -1,6 +1,7 @@
 ---
 title: "TØ 7 -- Nukleinsyrestruktur 2"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. RNA-protein binding
 
@@ -43,6 +44,7 @@ For at identificere deep eller shallow groove af en RNA-dobbelthelix selekteres 
 ::: {.callout-solution}
 L7 proteinet binder i deep groove på kink-turn motivet.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. tRNA og syntetase
 
@@ -109,6 +111,7 @@ Hvad tror du er rollen for ATP-molekylet, der er bundet tæt ved CCA enden?
 ::: {.callout-solution}
 Energi til Gln charging.
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. 5S rRNA og L25
 
@@ -190,6 +193,7 @@ Beskriv H-bindingerne mellem L25 aminosyrerne og baseparrene, der ses i **F11** 
 - Lys14 binder O6 på Hogsteen side af G279
 - Sekvens-specifik binding opnås via H-bindinger, form komplementaritet og hydrofobe interaktioner.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. CRISPR-Cas9 
 
@@ -231,6 +235,7 @@ tHS.
 **F5**: Phe351 og Asp364 interagerer med G43, der er uparret base.\
 **F6**: Ser104 og Phe105 interagerer med U24 og A47 i minor groove.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Argonaut 
 

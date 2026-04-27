@@ -1,6 +1,7 @@
 ---
 title: "TØ 12 -- Enzymmekanismer"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Burst phase eller ej?
 
@@ -10,6 +11,7 @@ Når N-acetyl-L-phenylalanine p-nitrophenyl esteren blandes med chymotrypsin, se
 
 Esteren reagerer så hurtigt med chymotrypsin, at den når at ophobe et kovalent intermediat (ved acylering) før det når at blive frigivet og starte steady-state produktion af produkt, dvs. frigivelsen er den langsomste proces og dermed flaskehalsen. Amid substratet reagerer ikke så hurtigt og man kan derfor ikke skelne mellem acylering og deacylering på samme måde.  
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. En pind til ligkisten?
 
@@ -19,6 +21,7 @@ Vildtype subtilisin nedbryder de to peptider Phe-Ala-Gln-Phe (peptid A) og Phe-A
 
 Substratets His er placeret tilstrækkeligt godt i forhold til position 64 på subtilisin til delvist at erstatte den manglende His. Det er et eksempel på "substrate-assisted catalysis".
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Den mystiske inhibitor
 
@@ -126,6 +129,7 @@ plt.show()
 ```
 
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Kan man lægge sammen?
 
@@ -135,6 +139,7 @@ I subtilisin medfører mutationerne Ser221Ala og His64Ala hver især en nedgang 
 
 Det ville kun være tilfældet hvis mutationerne var uafhængige af hinanden (additive snarere end synergistiske). Det er jo ikke tilfældet: "helheden er større end summen af de enkelte dele". Eftersom begge sidekæder skal bidrage for at sikre at triaden fungerer, kan man ødelægge triaden blot ved at fjerne én af sidekæderne; og man kan jo ikke slå et glas i stykker mere end én gang.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Restriktionsenzymer
 
@@ -155,6 +160,7 @@ Hvad kunne der ske hvis et bakterium erhvervede en helt ny RE ved f.eks overfør
 ::: {.callout-solution}
 Endnu værre. Så er der slet ingen methylase til at beskytte bakterien mod sin egen RE.
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. Cheleringsagenter
 
@@ -166,6 +172,7 @@ EDTA (ethylene diamine tetra eddike syre, jf. struktur til højre) chelerer (bin
 
 Det binder divalente metal-ioner som Zn^2+^, Ca^2+^ og Mg^2+^ med meget høj affinitet (*K*~D~ ca. 10^-8^ M). Det vil derfor stjæle metal ioner fra f.eks. carbonic anhydrase, metalloproteaser, flere restriktionsenzymer og myosin.
 :::
+{{< pagebreak >}}
 
 ## Opgave 7. Biologisk plastik-nedbrydning
 
@@ -210,6 +217,7 @@ Forklar de tre enzymers forskellige aktivitetsniveauer.
 ::: {.callout-solution}
 PETasen er "død" da den danner MHET, ikke TPA. Hybridenzymet virker bedre end at have MHETase og PETase til stede hver for sig, fordi der er tale om koblede nedbrydningsveje (PTA $\Rightarrow$ MHET $\Rightarrow$ TPA) så man øger den effektive koncentration af MHETase ved at have det tæt på stedet, hvor MHET dannes af PETasen.
 :::
+{{< pagebreak >}}
 
 ## Opgave 8. Find den katalytiske triade (PyMOL API, OPTIONAL)
 
@@ -305,3 +313,4 @@ PyMOL>SP_catalytic_triad_finder chain A
 ```
 
 :::
+{{< pagebreak >}}

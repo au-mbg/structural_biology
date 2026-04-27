@@ -1,6 +1,7 @@
 ---
 title: "TØ 14 -- Strukturmetoder"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Test dig selv i PyMOL-scripting
 
@@ -43,6 +44,7 @@ Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
 ```
 
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Bragg's lov
 
@@ -150,6 +152,7 @@ For at få en lille $d$-værdi (høj opløsning), skal tælleren (λ) være så 
 
 *Note: I praksis er det som regel kvaliteten af krystallen (hvor velordnet den er), der sætter græsen for opløsningen i røntgen-diffraktions-eksperimentet.*
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Røntgenkrystallografi vs. Cryo-EM -- Vælg den rette metode
 
@@ -196,6 +199,7 @@ Korrekt valg: En variation af Cryo-EM, nemlig Cryo-elektrontomografi (Cryo-ET)
 
 Begrundelse: Spørgsmålet handler om at se strukturen i dens native kontekst (in situ). Hverken traditionel røntgenkrystallografi eller single-particle cryo-EM (som begge kræver oprensede prøver) kan løse denne opgave. Cryo-ET er den eneste metode, der kan producere 3D-rekonstruktioner af dele af en celle i nær-nativ tilstand. Man kan fryse hele celler, skære en ultratynd skive ud (en `lamel`) med en ionstråle (FIB-milling) og derefter optage en serie billeder i mikroskopet, som kan rekonstrueres til et 3D-tomogram. Opløsningen er lavere end i single-particle cryo-EM, men det er den eneste måde at opnå `visual proteomics` og se molekylære maskiner i deres naturlige omgivelser.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Modelbygning
 
@@ -271,3 +275,4 @@ Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt f
 ::: {.callout-solution}
 Flere af de lange, hydrofile sidekæder (Lys4, Lys20 og Glu21) passer ikke godt i tætheden. Dette skyldes at de hydrofile sidekæder ofte sidder på overfladen af proteinet og derfor er fleksible.
 :::
+{{< pagebreak >}}

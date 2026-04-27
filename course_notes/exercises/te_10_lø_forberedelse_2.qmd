@@ -1,6 +1,7 @@
 ---
 title: "TØ 10 -- LØ-forberedelse 2"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. RNase-assayet
 

@@ -1,8 +1,11 @@
 ---
 title: "TØ 2 -- Introduktion til TØ"
 ---
+{{< pagebreak >}}
 
 I dette TØ sæt arbejdes der på at blive introduceret til TØ formatet med gruppearbejde og præsentation af løsning på opgaver. Opgaverne drejer sig mest om repetition af viden fra tidligere kurser (Berg kapitel 1, 2 og 5) samt anvendelse af PyMOL til analyse af enzym struktur og Excel til analyse af enzym funktion.
+
+{{< pagebreak >}}
 
 ## Opgave 1. Buffer-beregninger
 
@@ -28,6 +31,8 @@ Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacet
 ::: {.callout-solution}
 Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.
 :::
+
+{{< pagebreak >}}
 
 ## Opgave 2. Aminosyrers pKa
 
@@ -61,6 +66,8 @@ Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa æ
 
 pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
 :::
+
+{{< pagebreak >}}
 
 ## Opgave 3. Glutathione
 
@@ -123,6 +130,7 @@ Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 
 
 Se svaret til 2.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Bereging af enzymkinetik
 
@@ -147,6 +155,7 @@ Hvad er enzymets omsætningstal i $s^{-1}$?
 Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achieve.
 :::
 
+{{< pagebreak >}}
 
 ## Opgave 5. Analyse af Chymotrypsin i PyMOL
 

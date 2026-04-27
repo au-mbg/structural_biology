@@ -1,6 +1,7 @@
 ---
 title: "TØ 20 -- Signaltransduktion"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Earl W. Sutherland 
 
@@ -31,6 +32,7 @@ Da X blev varmebehandlet beholdt det kapaciteten til at stimulere phosphorylasen
 ::: {.callout-solution}
 cAMP er varmestabilt i modsætning til et protein som normalt denaturerer ved varmebehandling.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Signalgenkendelse
 
@@ -118,6 +120,7 @@ Det viser sig at CERK6 bruger LysM1 til binding af chitin. Lav en ny scene, kald
 ::: {.callout-solution}
 Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM1 og der er umiddelbart ingen steriske clashes med liganden. Brug "super" frem for "align", da der ikke er så høj sekvensbevarelse.
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Beta-blokkere
 
@@ -163,6 +166,7 @@ Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil
 ::: {.callout-solution}
 Man vil forvente lavere koncentration af cAMP og højere koncentration af ATP da receptoren ikke kan aktivere G proteinet som derved ikke kan aktivere adenylat cyklasen (som omdanner ATP til cAMP).**\**
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Mutationer/sygdomme 
 
@@ -192,6 +196,7 @@ Aminosyren Q61 stabiliserer transition-state for GTP-hydrolyse i det lille G-pro
 ::: {.callout-solution}
 Mutationen i Q61 som stabiliserer transition state gør Ras GTP-hydrolyse langsom. Mutationen holder derved Ras på aktiveret GTP-form og derved stimuleres celledeling ukontrolleret.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. GPCR signallering
 

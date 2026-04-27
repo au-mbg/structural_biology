@@ -1,6 +1,7 @@
 ---
 title: "TØ 18 -- Membranpumper"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Na/K-pumpen fra skeletmuskulatur
 
@@ -26,6 +27,7 @@ Ville hydrolyse af et enkelt ATP-molekyle til ADP frigive tilstrækkelig energi 
 ::: {.callout-solution}
 Hydrolyse af én phosphodiesterbinding i ATP giver ca. 50 kJ/mol og at det dermed netop er nok til at drive processen.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Calciumpumpen
 
@@ -64,6 +66,7 @@ Beregn forskellen i Gibbs frie energi (i kJ/mol) ved processen hvor to calciumio
 ::: {.callout-solution}
 2x23.74 kJ/mol = 47.48 kJ/mol. Passer med to ioner per ATP. (Man antages at proton-koncentrationen er identisk i cytosol og i lumen af sarcoplasmic reticulum dermed bidrager H^+^ antiportering ikke til energiregnskabet ved et membran-potentiale på 0).
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Brodys sygdom
 
@@ -94,6 +97,7 @@ Forklar resultaterne i SERCA/bacteriorhodopsin-eksperimentet.    
 ::: {.callout-solution}
 Med tiden vil pH blive så høj inde i vesiklerne at pumpen ikke kan fungere, på trods af tilstedeværelsen af ATP på ydersiden. Bacteriorhodopsin bruger lys til at transportere protoner fra en bakteriel celles protoplasma til ydersiden (se bla lærebogen figur 12.18). Tilførelsen af lys bevirker pumpning af protoner fra cytoplasma (udefra) og ind i vesiklerne og neutraliserer altså effekten af ATPasen.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Strukturen af SERCA
 
@@ -148,6 +152,7 @@ Tryk endelig F7 for at se aminosyren i en anden tilstand. Hvilken tilstand er de
 ::: {.callout-solution}
 Asp351 er dephosphoryleret, hvilket betyder pumpen falder tilbage i den højaffine tilstand med 2 Ca-bindingssteder.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Na-K-pumpen
 

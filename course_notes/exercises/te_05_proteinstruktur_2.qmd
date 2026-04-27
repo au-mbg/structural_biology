@@ -1,6 +1,7 @@
 ---
 title: "TØ 5 -- Proteinstruktur 2"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Cis-peptider
 
@@ -23,6 +24,7 @@ Den tilsvarende beregning for alle aminosyrer er 2.9\*10-4 eller (2.9\*10-4 x
 
 Bonusinfo: I artiklen [(A. Jabs et al. \[J. Mol. Biol. 286:291-- 304, 1999\])](https://www.sciencedirect.com/science/article/pii/S0022283698924597?via%3Dihub), der beskriver dette angives det er frekvensen i virkeligheden formentlig er lidt højere, da strukturbestemmelsesmetoder antager trans-peptider som standard med mindre der er gode data for det modsatte. Da mange (specielt gamle) strukturer er løst ved lav opløsning er det derfor ret sandsynligt at der er flere cis-bindinger i virkeligheden end databasen antyder.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. CATH
 
@@ -83,6 +85,7 @@ Hvilke typer barrels tilhører foldningerne CATH:3.20.20 og CATH:2.40.10? Beskr
 ::: {.callout-solution}
 CATH:3.20.20 er en såkaldt `TIM-barrel` (først observeret i Triose IsoMerase) mens CATH:2.40.10 ("Thrombin, subunit H") er en helt klassisk β-barrel. TIM-barrel adskiller sig ved at have parallelle β-strands og helixes, der forbinder dem, mens den klassiske β-barrel er antiparallel.
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Proteinfoldning 
 
@@ -151,6 +154,7 @@ Hvilket domæne vil du forvente binder nukleotid? Begrund dit svar.
 ::: {.callout-solution}
 Domæne 1, da det typisk kræver en αβ-fold (Rossmann-fold).
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Sekvens og struktur
 
@@ -242,6 +246,7 @@ PyMOL script:
 {{< include pymol_scripts/script_te5_e4.pml >}}
 ```
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Skattejagt
 
@@ -368,3 +373,4 @@ Find allosteriske effektorer af expression for β-galactosidase.
 ::: {.callout-solution}
 11. Ses under "Expression". Ekspressionen af β-galactosidase induceres af allolactose.
 :::
+{{< pagebreak >}}

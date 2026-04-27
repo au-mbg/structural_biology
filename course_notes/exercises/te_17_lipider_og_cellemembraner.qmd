@@ -1,6 +1,7 @@
 ---
 title: "TØ 17 -- Lipider og cellemembraner"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Membransammensætning
 
@@ -39,6 +40,7 @@ Hvilken effekt vil du forvente at hopanoid har på den bakterielle cellemembran?
 ::: {.callout-solution}
 Hopanoider har samme funktion i bakteriers membran som kolesterol i vores membraner, dvs. de er med til at moderere fluiditeten ved at blokere for fedtsyrekædernes bevægelser.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Helical wheel
 
@@ -112,6 +114,7 @@ Helix 97-105 (2 kopier i dimeren) er meget hydrophob helix på den ydersiden (am
 
 (Bemærk at der er en del positive ladninger (blå i beregnede electrostatiske potentiale) som sikker integrere med de negative ladede hovedgrupper på membranens lipider).
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Hydropatiplot
 
@@ -136,6 +139,7 @@ Hvilke usikkerheder ligger der i analysen?
 ::: {.callout-solution}
 De andre proteiner *kan* have transmembrane segmenter, men vi kan ikke se det i hydropatiplottet. Forekommer der β-strands i membranen kan dette være næsten umuligt at se i sådan et plot. Faktisk er proteinet i (A) en porin, men dette kan ikke ses i plottet.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Breast Cancer Resistance Protein (BCRP)
 
@@ -264,6 +268,7 @@ Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 ::: {.callout-solution}
 PNGase F spalter N-bundne oligosaccharider fra peptidkæden. N596 er glycosyleret i BCRP.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. 5'-Nucleotidase
 

@@ -1,6 +1,7 @@
 ---
 title: "TØ 11 -- Binding og genkendelse"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Indhold af hæmoglobin
 
@@ -40,6 +41,7 @@ Hvor meget Hb ville der være per blodlegeme hvis Hb var krystallinsk pakket her
 ::: {.callout-solution}
 Hvert Hb molekyle fylder $(65 \times 10^{-10} \ \mathrm{m})^3 = 274 \times 10^{-27} \ \mathrm{m}$. Hver celle fylder $87 \times 10^{-18} \ \mathrm{m}^3$. Dvs. der er plads til $3.1 \times 10^8$ molekyler. Det fås ikke meget tættere!
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Jern, ilt og hæm
 
@@ -51,7 +53,7 @@ Hvor meget jern er der i en 70kg voksen person? Antag 70 ml blod per kg kropsvæ
 70 kg => 4900 ml blod og et Hb indhold på 160 g/L x 4,9 L = 784 g. Molekylvægt per Hb monomer er 16.25 kDa, dvs. 784 g/16,25 x 10^3^ g/mol = 48,2 x 10^-3^ mol. Fe har en molekylvægt på 56 g/mol, dvs. 2,7 g.
 :::
 
-### Beregn O₂-binding per kg muskel
+### Beregn $O_2$-binding per kg muskel
 
 Menneskemuskel kan indeholde op til 8 g myoglobin (Mb) per kg mens kaskelothvalen har op til 80 g/kg. Hvor meget O~2~ kan bindes per kg menneske- og hval-muskel når Mb er mættet med ilt?
 
@@ -66,6 +68,7 @@ Ilt koncentrationen i vævsvæske ved 37^o^C er ca. 35 µM. Hvor meget mere (ell
 ::: {.callout-solution}
 Der er jo bundet ilt svarende til en koncentration på 0,48 x 10^-3^ mol/kg = 480 µM i menneskemuskel (ca. 14 gange mere end i vævsvædske) og yderligere 10 gange i hval. God kapacitet!
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. Kooperativitetsopgave
 
@@ -162,6 +165,7 @@ d.  Tab af kvarternær struktur.
 ::: {.callout-solution}
 Kurve 1: d. Kurve 2: a eller c. Kurve 4: b.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Lampret-fiskens iltbinding
 
@@ -245,6 +249,7 @@ Her kan vi anvende begreberne fra T og R tilstand med den viden at monomeren bin
 
 ![TØ uge 43 lampret](media/image50.png){width="80%" fig-align="center" .lightbox}
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Allosterispørgsmål
 
@@ -291,6 +296,7 @@ Hvad er betydningen af disse ændringer i absorbtionen af reporter-sidekæderne?
 
 I denne ATCase er det slet ikke muligt at binde substrat (begge katalytiske trimerer er blokerede fra at binde). Men der er stadig mulighed for at allosteriske regulatorerer kan binde, da de binder til de regulatoriske subunits som jo ikke er modificerede. ATP har samme strukturtransmissionsegenskab som substrat, dvs. trækker i samme (aktiverende) retning (fra T til R), mens CTP trækker i modsatte retning (inhibitor - altså forskyder ligevægten endnu mere over mod T). Dette måles igen udfra nitrotyrosin farven som altså er følsom overfor T-til-R overgangen (uanset om det sker ved at binde noget til en katalytisk subunit eller en regulatorisk subunit).
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. PyMOL API introduktion (OPTIONAL)
 
@@ -343,3 +349,4 @@ PyMOL>count_amino_acid('Tyr')
 ```
 
 :::
+{{< pagebreak >}}

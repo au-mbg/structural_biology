@@ -1,6 +1,7 @@
 ---
 title: "TØ 6 -- Nukleinsyrestruktur 1"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. Kærlighed ved første blik
 
@@ -45,6 +46,7 @@ Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
 ::: {.callout-solution}
 Groove-kode-mønstret er symmetrisk, hvilket skyldes at sekvensen i DNA dobbelthelixen er et palindrom.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Der skal to til tango
 
@@ -100,6 +102,7 @@ Hvad er mekanismen hvormed ligand-binding kan påvirke proteinets evne til at bi
 ::: {.callout-solution}
 Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f.eks. går fra en konformation hvor det ikke kan binde til en anden konformation hvor det kan binde. Det kan f.eks. være at afstanden mellem to genkendelses-helicer justeres så de passer i afstand til binding i major groove (eksempel er Trp repressor der binder Trp, CAP-protein der binder cAMP, og *lac* repressor, der binder allolactose).
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. TATA-box
 
@@ -148,6 +151,7 @@ Hvordan er de to basepar påvirket af interaktionen med de to phenylalaniner? 
 ::: {.callout-solution}
 Phenylalaninerne indsætter sig mellem basepar og hjælper til at forankre TBP i minor groove. Roll parameter.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Mad-Max
 
@@ -199,6 +203,7 @@ Brug menuen "Mouse > Selection mode > Atoms", så du bedre kan identificere de i
 For Myc-Max interagerer Arg914 med backbone P og N7 på G311 base. Glu910 interagerer med N6 på A109. Glu910 interagerer med N4 på C108. His906 interagerer med O6 på G313. Der er også interaktion med P backbone.
 Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er heterodimer og dermed er protein-sekvenserne lidt forskellige, hvilket giver små forskelle i konformation. Max-Max H-bindinger er symmetriske, da det er homodimer.
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. At TALE med DNA
 
@@ -237,6 +242,7 @@ Forslå hvilke protein-funktionaliteter man kan sætte i enden af et TALE-protei
 ::: {.callout-solution}
 Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-redigering. Transkriptionsfaktor-domæne kan aktivere RNA polymerase ved promoter. Der er flere andre muligheder.
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. Trp trap træsko 
 
@@ -277,6 +283,7 @@ Tryk **F2** for kun at se polære kontakter mellem genkendelseshelicer og DNA-do
 ::: {.callout-solution}
 Arginin-69 interagerer med Högsteen-siden af Guanin-2. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
 :::
+{{< pagebreak >}}
 
 ## Opgave 7. Arc repressor 
 
@@ -348,3 +355,4 @@ Tryk **F4**. Hvilke aminosyrer hydrogenbinder til baserne? Hvilke andre typer af
 ::: {.callout-solution}
 Asn11 og Gln9. DNA-sekvensen bliver også genkendt via form-komplementaritet og hydrofobe interaktioner.
 :::
+{{< pagebreak >}}

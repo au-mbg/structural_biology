@@ -1,6 +1,7 @@
 ---
 title: "TØ 8 -- Evolution og bioinformatik"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. tRNAs familiealbum
 
@@ -116,6 +117,7 @@ Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfa
 ::: {.callout-solution}
 Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Den forsvundne RNA replikase
 
@@ -201,6 +203,7 @@ C47 binder stabiliserer GTP1 så ligeringsreaktionen kan foregå.
 ### Sammenlign reaktionsmekanismer RNA og protein
 
 Active site for RNA polymerase proteinet (Figur C) ligner meget active site for RNA ligasen (Figur D). Hvilken reaktionsmekanisme sker når to nukelotider hæftes sammen? Hvilken rolle spiller Mg^2+^-ion, C30, C47 og vand-molekylet?
+{{< pagebreak >}}
 
 ## Opgave 3. Globin sekvensalignment 
 
@@ -346,6 +349,7 @@ Aminosyrer er opdelt i:
 ::: {.callout-solution}
 Denne opgave skal lære jer at man skal vælge algoritme med omhu og ikke bare stole på det første resultat man får. Svaret afhænger af de valgte sekvenser!
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Globin strukturalignment
 
@@ -401,6 +405,7 @@ Beskriv overordnet hvor de bevarede aminosyrer er placeret i globin-strukturen s
 ::: {.callout-solution}
 De fleste bevarede aminosyrer er placeret omkring bindingsstedet for hæmgruppen og generelt vender de indad i proteinet. His-87 binder til jern-atom i hæmgruppen med en afstand på 2.2 Å. Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere end normale kovalente bindinger (se Berg Biochemistry, udgave 10, figur 3.11, og standard bindingslængder bagerst i bogen).
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Globin strukturbevarelse
 
@@ -513,6 +518,7 @@ Hvad er den største strukturelle forskel mellem Hæmoglobin (1HHB) og Leghæmog
 ::: {.callout-solution}
 Alfa helix 4 er forlænget i C-terminal.
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. Heat shock protein 70 evolution
 
@@ -580,3 +586,4 @@ Tryk på **F3** for at se strukturel alignment af HSP og Actin og beskriv den
 Strukturen består af alternerende domæner af alfa helix og beta sheet, der danner en kløft hvor ATP er bundet.\
 Actin og Hsp70 er paraloge proteiner, da de eksisterer i samme organisme og må være udviklet fra det samme oprindelige protein, da det er usandsynligt at det vil kunne udvikles ved konvergent evolution.
 :::
+{{< pagebreak >}}

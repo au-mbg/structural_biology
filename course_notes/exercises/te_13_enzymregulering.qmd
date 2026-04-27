@@ -1,6 +1,7 @@
 ---
 title: "TØ 13 -- Enzymregulering"
 ---
+{{< pagebreak >}}
 
 ## Opgave 1. LDH-isozymer
 
@@ -42,6 +43,7 @@ Hvor mange splejsningsvarianter kendes for LDH-M?
 ::: {.callout-solution}
 LDH-M ("A chain") udviser 5 splejsningsvarianter (`isoform 1`\...`isoform 5`). 
 :::
+{{< pagebreak >}}
 
 ## Opgave 2. Aspartat
 
@@ -85,6 +87,7 @@ Pathway ses nedenfor. Trinnet der er blokeret i mutanten er trin C (enzymet hedd
 
 Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin sidekæde (Lys-84) koordinerer carboxylsyregruppen i substratet (Asp). Hvis substratanalogen ASA er bundet vil aldehyden danne en Schiff's base med Lys-84 og dermed inaktivere enzymet irreversibelt gennem kovalent modifikation. 
 :::
+{{< pagebreak >}}
 
 ## Opgave 3. ATCase
 
@@ -122,6 +125,7 @@ Forklar hvordan PALA kan fungere både som en aktivator og en inbitor af ATCase.
 ::: {.callout-solution}
 PALA promoverer T til R transitionen og fungerer dermed som en aktivator af enzymet. Men PALA er også en transition state-analog, der inhiberer enzymet.
 :::
+{{< pagebreak >}}
 
 ## Opgave 4. Thrombin og Antithrombin (PyMOL)
 
@@ -221,6 +225,7 @@ Samlet PyMOL script
 {{< include pymol_scripts/script_te13_e4.pml >}}
 ```
 :::
+{{< pagebreak >}}
 
 ## Opgave 5. Antithrombin 
 
@@ -272,6 +277,7 @@ PyMOL script
 ```
 
 :::
+{{< pagebreak >}}
 
 ## Opgave 6. Kløvning af thrombin med factor Xa
 
@@ -324,3 +330,4 @@ Hvordan bidrager factor XIIIa til stabilisering af en blodklump?
 
 **3.**  Stryer s. 328 mm.
 :::
+{{< pagebreak >}}
