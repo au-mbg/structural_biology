@@ -89,11 +89,19 @@ format:
     toc: true
     toc-depth: 2
     margin: {left: 2cm, right: 2cm, top: 2.5cm, bottom: 2.5cm}    
+    text: PDF
+    icon: file-pdf
+  docx: default
 
 format-links:
   - format: typst
     text: PDF
     icon: file-pdf
+  - format: docx
+    text: Word
+    icon: file-word
+
+
 
 
 teaching:
