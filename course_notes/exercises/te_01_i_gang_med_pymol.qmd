@@ -2,7 +2,7 @@
 title: "TØ 1 -- I gang med PyMOL"
 ---
 
-I dette TØ sæt skal I arbejde på at få installeret og afprøvet software som skal bruges på kurset. Vi håber desuden at lære jer nogle gode arbejdsgange, som kan gøre arbejdet med TØ opgaverne mere effektivt.
+XXXXXI dette TØ sæt skal I arbejde på at få installeret og afprøvet software som skal bruges på kurset. Vi håber desuden at lære jer nogle gode arbejdsgange, som kan gøre arbejdet med TØ opgaverne mere effektivt.
 
 Det er vigtigt at I alle får sat PyMOL-programmet op på samme måde, da det så er lettere at hjælpe jer i det tilfælde at I oplever problemer - følg derfor [PyMOL installations guiden](../other_notes/installation_pymol.qmd) og [VS Code installations guiden](../other_notes/installation_vscode.qmd).
 
