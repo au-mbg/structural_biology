@@ -48,7 +48,7 @@ Most contributors will only need to work in `exercises/`, `other_notes/`, `video
 
 ## Exercise vs. solution
 
-The project uses a set of *filters* in `config/quarto/filters/` to control the visibility of solutions - specifically 
+The project uses a set of *filters* in `_extensions` to control the visibility of solutions - specifically 
 callout blocks which are specified with 
 
 ```
@@ -207,8 +207,10 @@ pixi run check-downloads
 
 ## Different formats 
 
+*Note: This is regards to converting existing files to markdown, not outputting different formats from the website*
+
 `quarto` uses the very powerful `pandoc` for converting between file formats internally, but 
-sometimes it can also be useful for helping with converting a file, for example 
+sometimes it can also be useful for helping with converting a file while authoring, for example 
 
 ```
 pixi r pandoc word_document.docx -o markdown.md -t markdown 
@@ -222,3 +224,4 @@ pixi r pandoc word_document.docx -o markdown.md -t markdown --extract-media=medi
 ```
 
 For a full list of options see [the pandoc manual](https://pandoc.org/MANUAL.html).
+
