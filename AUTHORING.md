@@ -18,14 +18,9 @@ The site is generated from a number of documents, the layout looks like so
 ```
 course_notes
 ├── config               # Most configuration lives here
-│  ├── editor
-│  │  └── pymol.xml      # Optional editor syntax support for PyMOL
 │  ├── quarto
-│  │  ├── filters        # Controls what gets shown/hidden during rendering
 │  │  ├── styling        # CSS/SCSS for the website
 │  │  └── website.yml    # Main Quarto website/navigation configuration
-│  └── tooling
-│     └── Makefile       # Render/preview commands used by the root Makefile
 ├── _extensions          # Quarto extensions (kept at the top level for Quarto)
 ├── _quarto-exercise.yml # Exercise profile configuration
 ├── _quarto-solution.yml # Solution profile configuration
