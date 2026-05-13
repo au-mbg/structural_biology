@@ -204,3 +204,21 @@ You can check that downloadable files are correctly linked using the command
 ```sh
 pixi run check-downloads
 ```
+
+## Different formats 
+
+`quarto` uses the very powerful `pandoc` for converting between file formats internally, but 
+sometimes it can also be useful for helping with converting a file, for example 
+
+```
+pixi r pandoc word_document.docx -o markdown.md -t markdown 
+```
+
+Will convert a Word `.docx` document to an `.md`-markdown while trying to preserve as much 
+styling as possible. `pandoc` has a variety of settings and features, for example it can media/images 
+
+```
+pixi r pandoc word_document.docx -o markdown.md -t markdown --extract-media=media/
+```
+
+For a full list of options see [the pandoc manual](https://pandoc.org/MANUAL.html).

@@ -76,6 +76,7 @@ fetch-fonts = { cmd = """
 python = "3.12.*"
 quarto = ">=1.8.27,<2"
 nodejs = ">=20"
+pandoc = ">=3.6.3,<4"
 
 [feature.git-tools.dependencies]
 gh = '*'
