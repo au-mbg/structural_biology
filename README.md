@@ -162,9 +162,10 @@ when the authoritative timetable is known. A page can be forced on or off by
 adding `draft: false` or `draft: true` to its calendar entry.
 
 The extension controls pages and generated HTML/PDF/Word documents. The homepage
-continues to show future exercise titles but links only released exercises. Files
-under `course_notes/files/` remain public, as does the linked `/instructor/` site;
-profiles and schedules are content separation, not access control.
+is an always-visible overview with plain-text exercise titles; links to released
+exercises appear in the sidebar. Files under `course_notes/files/` remain public,
+as does the linked `/instructor/` site; profiles and schedules are content
+separation, not access control.
 
 For reproducible date testing, temporarily replace `draft-after: "system-time"`
 with an ISO date in the relevant calendar, run the corresponding Pixi render,
@@ -173,5 +174,4 @@ inspect `_site`, and restore `system-time` before committing.
 ## Authoring
 
 For authoring instructions see [AUTHORING.md](AUTHORING.md)
-
 

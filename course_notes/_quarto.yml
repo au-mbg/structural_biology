@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: _site
-  pre-render:
-    - python ../scripts/generate_course_plan.py
   post-render:
     - python ../scripts/purge_unreleased.py
   resources:

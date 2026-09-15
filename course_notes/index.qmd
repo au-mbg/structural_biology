@@ -7,4 +7,17 @@ Velkomst til øvelsessiderne for strukturbiologi. Brug sidebaren til at navigere
 
 ## Semesterkalender
 
-{{< include _generated/course-plan.md >}}
+| Week number | Lectures | Theoretical exercise | Reading material | Videos |
+|---|---|---|---|---|
+| 1 | — | TØ 01: I gang med PyMOL<br>TØ 02: Introduktion til TØ | — | [Introduktion to PyMOL](videos/videor_1.qmd) |
+| 2 | — | TØ 03: PyMOL scripting<br>TØ 04: Proteinstruktur 1 | — | — |
+| 3 | — | TØ 05: Proteinstruktur 2<br>TØ 06: Nukleinsyrestruktur 1 | — | — |
+| 4 | — | TØ 07: Nukleinsyrestruktur 2<br>TØ 08: Evolution og bioinformatik | — | — |
+| 5 | — | TØ 09: LØ forberedelse 1<br>TØ 10: LØ forberedelse 2 | — | — |
+| 6 | — | TØ 11: Binding og genkendelse<br>TØ 12: Enzymmekanismer | — | — |
+| 7 | — | TØ 13: Enzymregulering<br>TØ 14: Strukturmetoder | — | — |
+| 8 | — | TØ 15: AI og modellering<br>TØ 16: Kulhydrater og glykosylering af proteiner | — | — |
+| 9 | — | TØ 17: Lipider og cellemembraner<br>TØ 18: Membranpumper | — | — |
+| 10 | — | TØ 19: Kanaler og porer<br>TØ 20: Signaltransduktion | — | — |
+| 11 | — | TØ 21: Eksamensopgaver<br>TØ 22: Eksamensopgaver | — | — |
+| 12 | — | TØ 23: Eksamensopgaver<br>TØ 24: Eksamensopgaver | — | — |
