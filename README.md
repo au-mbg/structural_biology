@@ -124,10 +124,11 @@ With `pixi` installed the site can be rendered or previewed using the commands
 - `pixi run clean`: Cleans up any site artifacts. 
 
 Direct `quarto render` from `course_notes/` is also a supported student-default
-render. Use the Pixi commands for solution builds: they safely select the solution
-calendar and restore the student calendar even if Quarto fails. `quarto preview`
-shows drafts deliberately, so release behaviour must be checked with a render and
-the generated `_site` directory.
+render. Use the Pixi commands for previews and solution builds: they safely select
+the appropriate calendar and restore the student calendar even if Quarto fails.
+`pixi run preview` shows drafts deliberately, so release behaviour must be checked
+with a render and the generated `_site` directory. Direct `quarto preview` is not
+supported because it bypasses the preview-mode safeguards in the Pixi wrapper.
 
 ### Manual installation
 
@@ -174,4 +175,3 @@ inspect `_site`, and restore `system-time` before committing.
 ## Authoring
 
 For authoring instructions see [AUTHORING.md](AUTHORING.md)
-

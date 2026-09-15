@@ -102,11 +102,17 @@ class ScheduleSelection:
 
 def run_quarto(repository_root: Path, command: str, profile: str) -> int:
     with ScheduleSelection(repository_root, profile):
-        completed = subprocess.run(
-            ["quarto", command, "--profile", profile],
-            cwd=repository_root / "course_notes",
-            check=False,
-        )
+        environment = os.environ.copy()
+        environment["STRUCTURE_BIOLOGY_QUARTO_COMMAND"] = command
+        try:
+            completed = subprocess.run(
+                ["quarto", command, "--profile", profile],
+                cwd=repository_root / "course_notes",
+                env=environment,
+                check=False,
+            )
+        except KeyboardInterrupt:
+            return 130
     return completed.returncode
 
 

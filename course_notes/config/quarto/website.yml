@@ -94,6 +94,7 @@ format:
   docx: default
 
 format-links:
+  - html
   - format: typst
     text: PDF
     icon: file-pdf

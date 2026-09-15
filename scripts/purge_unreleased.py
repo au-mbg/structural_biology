@@ -17,6 +17,10 @@ FORMATS = (".html", ".pdf", ".docx")
 
 
 def purge_unreleased(profile: str | None = None) -> list[Path]:
+    if os.environ.get("STRUCTURE_BIOLOGY_QUARTO_COMMAND") == "preview":
+        print("Preview mode: keeping draft outputs for Quarto live reload")
+        return []
+
     schedule = read_schedule(COURSE_ROOT / "_schedule.yml")
     active_profile = profile if profile is not None else os.environ.get("QUARTO_PROFILE", "")
     output_root = COURSE_ROOT / "_site"
