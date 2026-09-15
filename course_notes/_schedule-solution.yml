@@ -3,11 +3,12 @@ scheduled-docs:
   timezone: "+00:00"
   docs:
     - href: exercises/te_01_i_gang_med_pymol.qmd
-      date: "2026-09-21"
+      date: "2026-09-15"
     - href: exercises/te_02_introduktion_til_tø.qmd
-      date: "2026-09-21"
+      date: "2026-09-15"
     - href: exercises/te_03_pymol_scripting.qmd
       date: "2026-09-28"
+      draft: false
     - href: exercises/te_04_proteinstruktur_1.qmd
       date: "2026-09-28"
     - href: exercises/te_05_proteinstruktur_2.qmd
