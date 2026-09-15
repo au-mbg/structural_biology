@@ -57,9 +57,10 @@ Content...
 :::
 ```
 
-This content will only be visible when viewing the instructor/solution version of the site, 
-but the content is contained in the same document as the exercise. This makes it much simpler to 
-keep exercises and solutions up to date. 
+This content will only be visible when viewing the public instructor/solution version of the site.
+Both versions are rendered as ordinary HTML without password protection, but the content is
+contained in the same document as the exercise. This makes it much simpler to keep exercises and
+solutions up to date.
 
 ## Figures
 
@@ -224,4 +225,3 @@ pixi r pandoc word_document.docx -o markdown.md -t markdown --extract-media=medi
 ```
 
 For a full list of options see [the pandoc manual](https://pandoc.org/MANUAL.html).
-
