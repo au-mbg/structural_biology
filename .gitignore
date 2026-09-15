@@ -14,6 +14,7 @@ fonts/
 course_notes/videos/videos/
 
 __pycache__/
+.schedule-selection.lock/
 
 # Avoid the Brightspace folder for now, as it contains a lot of files that we don't need to track in git.
 brightspace/

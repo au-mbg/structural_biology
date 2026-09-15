@@ -118,8 +118,16 @@ With `pixi` installed the site can be rendered or previewed using the commands
 
 - `pixi run preview exercise`: Opens a live preview of the student facing version of the site.
 - `pixi run preview solution`: Opens a live preview of the public instructor/solution version of the site.
+- `pixi run render exercise`: Renders only the student-facing version (also the default for `pixi run render`).
+- `pixi run render solution`: Renders only the public solution version using its own release calendar.
 - `pixi run render-all`: Renders both public site versions (not live).
 - `pixi run clean`: Cleans up any site artifacts. 
+
+Direct `quarto render` from `course_notes/` is also a supported student-default
+render. Use the Pixi commands for solution builds: they safely select the solution
+calendar and restore the student calendar even if Quarto fails. `quarto preview`
+shows drafts deliberately, so release behaviour must be checked with a render and
+the generated `_site` directory.
 
 ### Manual installation
 
@@ -133,13 +141,37 @@ This installation path is not recommended unless you're comfortable tinkering a 
 ## Publishing 
 
 The site is automatically rendered and published when commits are pushed to the `main`-branch 
-of the repository. 
+of the repository. It can also be started manually and is rebuilt daily at 03:17
+UTC so scheduled material can become visible without a new commit. GitHub may
+start scheduled workflows later than their nominal time.
 
 This is configured through Github Actions, see [publish.yml](.github/workflows/publish.yml).
+
+### Scheduled exercise releases
+
+The course uses the unmodified `scheduled-docs` extension. The editable release
+calendars are:
+
+- `course_notes/_schedule.yml` for student exercises.
+- `course_notes/_schedule-solution.yml` for the public solution profile.
+
+Dates use ISO `YYYY-MM-DD` notation and UTC. In the provisional 2026 calendar,
+each pair of exercises is released to students one week before its course-plan
+week and in the solution profile one week afterward. Edit the dates in both files
+when the authoritative timetable is known. A page can be forced on or off by
+adding `draft: false` or `draft: true` to its calendar entry.
+
+The extension controls pages and generated HTML/PDF/Word documents. The homepage
+continues to show future exercise titles but links only released exercises. Files
+under `course_notes/files/` remain public, as does the linked `/instructor/` site;
+profiles and schedules are content separation, not access control.
+
+For reproducible date testing, temporarily replace `draft-after: "system-time"`
+with an ISO date in the relevant calendar, run the corresponding Pixi render,
+inspect `_site`, and restore `system-time` before committing.
 
 ## Authoring
 
 For authoring instructions see [AUTHORING.md](AUTHORING.md)
-
 
 

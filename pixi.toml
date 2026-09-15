@@ -13,23 +13,20 @@ default = {features=[]}
 dev = {features=["git-tools"]}
 
 [tasks.preview]
-args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
-cmd = "quarto preview --profile {{mode}}"
-cwd = "course_notes"
+args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+cmd = "python scripts/render_profile.py preview {{mode}}"
 description = "Preview the course notes in either exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render]
-args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
-cmd = "quarto render --profile {{mode}}"
-cwd = "course_notes"
+args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+cmd = "python scripts/render_profile.py render {{mode}}"
 description = "Render the course notes in either exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render-all]
-depends-on = ["clean",
-            {task = "render", args=["exercise"]},
-            {task = "render", args=["solution"]}]
+cmd = "python scripts/render_profile.py render-all"
+depends-on = ["fetch-fonts"]
 description = "Clean and render the course notes in both exercise and solution mode"
 
 [tasks.check-pymol-scripts]

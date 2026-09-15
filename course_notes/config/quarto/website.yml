@@ -105,6 +105,6 @@ format-links:
 
 
 teaching:
-  show-solutions: true
+  show-solutions: false
   default-solution-title: "Svar"
   collapse-tips: true

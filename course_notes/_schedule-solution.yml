@@ -1,0 +1,52 @@
+scheduled-docs:
+  draft-after: "system-time"
+  timezone: "+00:00"
+  docs:
+    - href: exercises/te_01_i_gang_med_pymol.qmd
+      date: "2026-09-21"
+    - href: exercises/te_02_introduktion_til_tø.qmd
+      date: "2026-09-21"
+    - href: exercises/te_03_pymol_scripting.qmd
+      date: "2026-09-28"
+    - href: exercises/te_04_proteinstruktur_1.qmd
+      date: "2026-09-28"
+    - href: exercises/te_05_proteinstruktur_2.qmd
+      date: "2026-10-05"
+    - href: exercises/te_06_nukleinsyrestruktur_1.qmd
+      date: "2026-10-05"
+    - href: exercises/te_07_nukleinsyrestruktur_2.qmd
+      date: "2026-10-12"
+    - href: exercises/te_08_evolution_og_bioinformatik.qmd
+      date: "2026-10-12"
+    - href: exercises/te_09_lø_forberedelse_1.qmd
+      date: "2026-10-19"
+    - href: exercises/te_10_lø_forberedelse_2.qmd
+      date: "2026-10-19"
+    - href: exercises/te_11_binding_og_genkendelse.qmd
+      date: "2026-10-26"
+    - href: exercises/te_12_enzymmekanismer.qmd
+      date: "2026-10-26"
+    - href: exercises/te_13_enzymregulering.qmd
+      date: "2026-11-02"
+    - href: exercises/te_14_strukturmetoder.qmd
+      date: "2026-11-02"
+    - href: exercises/te_15_ai_og_modellering.qmd
+      date: "2026-11-09"
+    - href: exercises/te_16_kulhydrater_og_glykosylering_af_proteiner.qmd
+      date: "2026-11-09"
+    - href: exercises/te_17_lipider_og_cellemembraner.qmd
+      date: "2026-11-16"
+    - href: exercises/te_18_membranpumper.qmd
+      date: "2026-11-16"
+    - href: exercises/te_19_kanaler_og_porer.qmd
+      date: "2026-11-23"
+    - href: exercises/te_20_signaltransduktion.qmd
+      date: "2026-11-23"
+    - href: exercises/te_21_eksamensopgaver.qmd
+      date: "2026-11-30"
+    - href: exercises/te_22_eksamensopgaver.qmd
+      date: "2026-11-30"
+    - href: exercises/te_23_eksamensopgaver.qmd
+      date: "2026-12-07"
+    - href: exercises/te_24_eksamensopgaver.qmd
+      date: "2026-12-07"

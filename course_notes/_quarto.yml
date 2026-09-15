@@ -1,8 +1,23 @@
 project:
   type: website
   output-dir: _site
+  pre-render:
+    - python ../scripts/generate_course_plan.py
+  post-render:
+    - python ../scripts/purge_unreleased.py
   resources:
     - files/
 
 metadata-files:
   - config/quarto/website.yml
+  - scheduled-docs_files/draft-list.yml
+
+profile:
+  group:
+    - [exercise, solution]
+
+website:
+  draft-mode: gone
+
+teaching:
+  show-solutions: false
