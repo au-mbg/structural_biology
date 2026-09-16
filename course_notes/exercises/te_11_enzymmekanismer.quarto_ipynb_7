@@ -8,7 +8,7 @@
         "title: \"TØ 12 -- Enzymmekanismer\"\n",
         "---"
       ],
-      "id": "1545c4f3"
+      "id": "0187e7fe"
     },
     {
       "cell_type": "markdown",
@@ -85,7 +85,7 @@
         "\n",
         "**Python løsning**"
       ],
-      "id": "67b8c837"
+      "id": "b7dac875"
     },
     {
       "cell_type": "code",
@@ -145,7 +145,7 @@
         "ax.legend()\n",
         "plt.show()"
       ],
-      "id": "e6ff4574",
+      "id": "2d176305",
       "execution_count": null,
       "outputs": []
     },
@@ -404,7 +404,7 @@
         ":::\n",
         "{{< pagebreak >}}"
       ],
-      "id": "f8d03cd3"
+      "id": "f6296c4a"
     }
   ],
   "metadata": {

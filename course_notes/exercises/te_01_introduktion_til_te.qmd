@@ -1,9 +1,14 @@
 ---
-title: "TØ 1 -- Introduktion til TØ"
+title: "TØ 2 – Introduktion til TØ"
 ---
+
 {{< pagebreak >}}
 
-I dette TØ sæt arbejdes der på at blive introduceret til TØ formatet med gruppearbejde og præsentation af løsning på opgaver. Opgaverne drejer sig om repetition af viden fra tidligere kurser (Berg kapitel 1, 2 og 5) samt anvendelse af PyMOL til analyse af enzym struktur. TØ opgaverne gennemgås i grupper og præsenteres for klassen.
+I dette TØ sæt arbejdes der på at blive introduceret til TØ formatet med
+gruppearbejde og præsentation af løsning på opgaver. Opgaverne drejer
+sig om repetition af viden fra tidligere kurser (Berg kapitel 1, 2 og 5)
+samt anvendelse af PyMOL til analyse af enzym struktur. TØ opgaverne
+gennemgås i grupper og præsenteres for klassen.
 
 {{< pagebreak >}}
 
@@ -13,13 +18,20 @@ Denne opgave er repetition af Berg Biochemistry kapitel 1.
 
 En forsker forbereder en buffer af eddikesyre og natriumacetat med en pH-værdi på 5,0. Den samlede koncentration af begge komponenter i bufferen er 250 mM, og eddikesyre har en pKa-værdi på 4,75.
 
-### Hvad er koncentrationerne af eddikesyre og natriumacetat i bufferen?
+### Beregn bufferkomponenternes koncentrationer
 
-### Hvor mange mol eddikesyre og natriumacetat er der i 2 L af bufferen?
+Hvad er koncentrationerne af eddikesyre og natriumacetat i bufferen?
 
-### Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?
+### Beregn molmængder i bufferen
+
+Hvor mange mol eddikesyre og natriumacetat er der i 2 L af bufferen?
+
+### Beregn gram af komponenterne
+
+Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?
 
 Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
+
 
 ::: {.callout-solution}
 Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.

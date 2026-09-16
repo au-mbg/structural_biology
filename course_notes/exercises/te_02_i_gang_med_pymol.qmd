@@ -1,197 +1,547 @@
 ---
-title: "TØ 2 – Introduktion til TØ"
+title: "TØ 2 - I gang med PyMOL"
 ---
 
-{{< pagebreak >}}
+I dette TØ sæt skal I arbejde med PyMOL. Det forudsættes at PyMOL er
+installeret og at I har fulgt PyMOL guide 1 og set Video 1 og 2. TØ
+timerne kan bruges til at sikre at alle har fået installeret PyMOL og
+kan finde ud af grundlæggende navigation og funktioner i programmet.
+Opgaverne giver jer mulighed for at kigge på forskellige strukturer fra
+Protein Data Bank (PDB) og træne jeres evner til at visualisere og
+analysere dem. TØ opgave 1-2 gennemgås af instruktor på tavlen. TØ
+opgave 3-5 laves i grupper af de studerende.
 
-I dette TØ sæt arbejdes der på at blive introduceret til TØ formatet med gruppearbejde og præsentation af løsning på opgaver. Opgaverne drejer sig mest om repetition af viden fra tidligere kurser (Berg kapitel 1, 2 og 5) samt anvendelse af PyMOL til analyse af enzym struktur og Excel til analyse af enzym funktion.
+## PyMOL og K^+^-kanalen
 
-{{< pagebreak >}}
+PyMOL er et fantastisk værktøj til analyse af biologiske molekyler, både
+til hurtige kig og mere dybdegående analyse. I denne opgave skal vi
+benytte nogle enkle værktøjer til at kigge på en struktur og se hvordan
+man kan ændre den grafiske repræsentation. Opgaven behandler mange af de
+samme ting I har set i videoen \"Introduktion til PyMOL\".
 
-## Opgave 1. Buffer-beregninger
+Inden du går i gang, skal du naturligvis have installeret PyMOL på din
+computer (enten Mac eller PC) ligesom det er vigtigt, at benytte en mus
+med både højre og venstre knap samt hjul i midten. Hjulet skal også have
+en knap-funktion, når man trykker på det (3-button mouse). Hvis du ikke
+har sådan en mus, anbefales det kraftigt at få fat på én, da det er
+meget svært at styre PyMOL fra en laptop pegeplade, specielt på Mac.
+Sådanne USB-mus koster typisk under 100 kr
+(f.eks. [**denne**](https://www.pc-lager.dk/da/p/logitech-b100-optisk-kabling-hvid-95308)).
 
-Denne opgave er repetition af Berg Biochemistry kapitel 1.
-
-En forsker forbereder en buffer af eddikesyre og natriumacetat med en pH-værdi på 5,0. Den samlede koncentration af begge komponenter i bufferen er 250 mM, og eddikesyre har en pKa-værdi på 4,75.
-
-### Beregn bufferkomponenternes koncentrationer
-
-Hvad er koncentrationerne af eddikesyre og natriumacetat i bufferen?
-
-### Beregn molmængder i bufferen
-
-Hvor mange mol eddikesyre og natriumacetat er der i 2 L af bufferen?
-
-### Beregn gram af komponenterne
-
-Hvor mange gram eddikesyre og natriumacetat er der i 2 L af bufferen?
-
-Den molære masse af eddikesyre er 60,05 g/mol; den molære masse af natriumacetat er 82,03 g/mol.
-
-
-::: {.callout-solution}
-Berg kapitel 1 End-of-chapter problem 15. Svar findes bag i bogen eller på Achieve.
-:::
-
-{{< pagebreak >}}
-
-## Opgave 2. Aminosyrers pKa
-
-Denne opgave er repetition af Berg Biochemistry kapitel 2.
-
-### Identificer ioniserbare aminosyresidekæder
-
-Hvilke aminosyresidekæder kan almindeligvis fraspalte eller optage en proton under biologiske forhold og hvad er deres pKa-værdier?
+1.  Hent strukturen af K^+^-kanalen fra *Streptomyces lividans* bestemt
+    med krystallografi med PDB-kode 1BL8 ved at skrive kommandoen
+    \"fetch 1BL8\". Gem scenen. Hint: Brug menuen \"Scenes\" øverst til
+    højre.
 
 ::: {.callout-solution}
-De sure sidekæder på aspartat og glutamat har en pKa på ca. 4.1 og kan dermed optage en proton herunder.
-
-Histidin og cystein med pKa-værdier på hhv. 6.0 og 8.3 er de eneste sidekæder, der optager eller fraspalter protoner ved fysiologisk pH, men de andre aminosyrerester kan gøre det afh. af de lokale forhold.
-
-Tyrosin og lysin har pKa tæt ved 11 og kan dermed afgive en proton herover, hvor i mod den mest basiske aminosyre, arginin, først deprotonerer ved et højere pH (pKa 12.5). 
+1.  Se scene 001.
 :::
 
-### Bestem sidekædeladning over og under pKa
+Den højre side af Viewer-vinduet viser den hentede PDB-fil som et
+PyMOL **objekt** med samme navn som PDB-filen. Disse kendes på, at
+navnet ikke står i parentes. Senere skal vi se på **selektioner**, der
+kendes ved at deres navn står i parentes. Forskellen på de to typer er,
+at hvor objekter selv indeholder molekylekoordinater, så er en selektion
+blot et udvalg af atomer i et objekt, en selektion indeholder ikke selv
+atomerne. Det svarer lidt til at vælge noget tekst i Word med musen. Der
+skal altså være et objekt før man kan lave en selektion. Objekter kan
+tændes og slukkes ved at klikke på navnet.
 
-Hvad er ladningen af en aminosyres sidekæde ved pH-værdier hhv. under og over denne pKa?
+Øverst findes altid et globalt objekt \"All\", der dækker alle objekter
+og selektioner i PyMOL. Dvs. laver man en ændring her vil det påvirke
+alle objekter nedenfor.
+
+For strukturer bestemt med NMR vil der typisk være flere tilstande af
+proteinet.
+
+2.  Hent strukturen af PAS-domænet fra HERG K^+^-kanalen bestemt med NMR
+    via PDB-kode 2L0W. Efter objektnavnet står der \"1/20\", hvilket
+    betyder at vi kigger på tilstand 1 ud af i alt 20 tilstande af
+    strukturen. Gem scenen.
 
 ::: {.callout-solution}
-Sidekæden vil være neutral (C-terminal, Asp, Cys og Tyr) eller positivt ladet (His, N-terminal, Lys og Arg) ved pH-værdier under pKa og neutral (His, N-terminal, Lys og Arg) eller negativt ladet (C-terminal, Asp, Cys og Tyr) over denne værdi.
 :::
 
-### Diskuter variation af aminosyre pKa
-
-Er en aminosyres pKa altid den samme? Hvis ikke, i hvilke situationer kan pKa ændres?
+3.  Prøv at skifte mellem visning af de forskellige tilstande vha.
+    knapperne i bunden af vinduet:\
+    \
+    ![A white circle with a triangle in it AI-generated content may be
+    incorrect.](media/image6.png){width="1.4444444444444444in"
+    height="0.28888888888888886in"}
 
 ::: {.callout-solution}
-
-pKa ændrer sig som følge af det lokale miljø, aminosyren befinder sig i. Hvis en aminosyre befinder sig i et miljø afskærmet fra protondonorer eller -acceptorer, som f.eks. i et proteins centrum vil det hhv. hæve og sænke pH. pKa kan også ændres grundet ladninger af andre aminosyrer i nærmiljøet. F.eks. vil en deprotoneret Asp være mindre tilbøjelig til at optage en proton, hvis der er en protoneret Arg i nærheden. Den protonerede Arg's positive ladning vil have en stabiliserende effekt på den deprotonerede Asp og protoneringen vil have en frastødende effekt på en protoneret Asp. Protoneringen er derfor ufavorabel og pKa for den Asp vil være sænket.
 :::
 
-{{< pagebreak >}}
+Ud for hvert objekt eller selektion ses 5 menuer angivet med bogstaverne
+**A** (Action), **S** (Show), **H** (Hide), **L** (Label) og
+**C** (Color). Disse kan bruges til at styre hvordan
+objektet/selektionen fremstår visuelt samt udføre forskellige
+beregninger på dem.
 
-## Opgave 3. Glutathione
+Under **A** (Action) menuen er de vigtigste funktioner:
 
-Denne opgave er repetition af Berg Biochemistry kapitel 2.
+> **orient** - flytter objektet/sektionen ind midt i synsfeltet\
+> **center** - sætter rotationscentrum til selektionen/objektet\
+> **find** - finder bl.a. polære interaktioner fra en selektion/objekt\
+> **align** - foretager strukturelt alignment af selektionen/objektet\
+> **rename** - omdøber objektet/selektionen\
+> **delete** - sletter objektet/selektionen\
+> **remove waters** - fjerner vandmolekyler for bedre overblik
 
-Glutathione (GSH) er en antioxidant i planter, dyr, svampe og visse bakterier og archaea. Glutathione forhindrer skade på vigtige, cellulære komponenter som følge af reaktive oxygen-forbindelser som frie radikaler, peroxider og tungmetaller.
+Ovenstående actions vil alle blive gennemgået i løbet af kurset.
 
-Glutathion har følgende struktur:
-
-![Glutathione](media/image3.png){width="80%" .lightbox fig-align="center"}
-
-Hvilke af følgende udsagn om molekylet er korrekte?
-
-### Vurder tilstedeværelse af α-aminogruppe
-
-Det indeholder en $\alpha$-aminogruppe.
+4.  Brug Objekt menuen til at fravælge NMR-strukturen og Action-menuen
+    til at flytte 1BL8 ind midt i synsfeltet med center-action.
 
 ::: {.callout-solution}
-
-Korrekt, denne ses øverst til venstre i strukturen.
-
 :::
 
-### Vurder atypisk peptidbinding
+Menuen **S** (Show) bruges til at vise objekter/selektioner med
+forskellige grafiske repræsentationer, hvor af de vigtigste er:
 
-Der findes en kobling mellem to aminosyrer, der adskiller sig fra den almindelige peptidbinding.
+> **(wire) lines** - Viser alle bindinger som tynde linjer med
+> atomfarver i hjørnerne.\
+> **(licorice) sticks** - Som lines, men med tykkere stave.\
+> **ribbon** - Viser et Cα-trace, dvs. en tyk linje med et Cα-atom i
+> hvert hjørne. Dette er godt til at få overblik over sekundær struktur
+> og sammenligne foldninger.\
+> **cartoon** - Viser en flot præsentation af strukturen med α-helicer
+> som bånd og β-strands som pile. God til artikler og opgaver.\
+> **spheres** - Viser hvert atom som en kugle med korrekt Van der
+> Waals-radius.\
+> **surface** - Viser en overflade baseret på atomernes Van der
+> Waals-radii.
+
+Bemærk at et objekt/selektion kan have flere repræsentationer samtidig,
+hvorfor det er nødvendigt at skjule eksisterende repræsentationer når
+andre vælges (medmindre man selvfølgelig ønsker begge samtidig). Dette
+gøres vha. Hide-menuen. I version 3 af PyMOL vises alle nye strukturer,
+der åbnes, som en flot cartoon-repræsentation med ligander i sticks og
+ioner i spheres.
+
+5.  Benyt Hide-menuen udfor det globale \"All\"-objekt til at gemme alt
+    (H-\>Hide: everything).
 
 ::: {.callout-solution}
-
-Korrekt, glutamyl-cysteine koblingen er via γ-carboxylgruppen og ikke α-carboxylgruppen på glutamine.
 :::
 
-### Vurder let oxidérbar gruppe
-
-Der findes en let oxidérbar gruppe.
+6.  Eksperimentér med de forskellige repræsentationer af 1BL8 vha.
+    Show-menuen. Brug Hide-menuen til at fjerne en repræsentation før en
+    ny vises. Gem scenen for din foretrukne repræsentation.
 
 ::: {.callout-solution}
-
--CH~2~SH kan let oxideres til -CH~2~SO~3~H eller indgå i oxideret form i en disulphidbro (-CH~2~-S-S-CH~2~-).
-
 :::
 
-### Vurder tilstedeværelse af sekundær aminogruppe
+Color-menuen bruges som navnet antyder til at sætte en farve for et
+objekt eller en selektion. Dette er mest anvendeligt når man har lavet
+under-selektioner af strukturen, som vi skal se senere. De vigtigste
+funktioner er:
 
-Der findes to sekundære aminogrupper.
+> **by element**: Farv et objekt/selektion efter atomtype, der er flere
+> forskellige, hvor af den klassiske har carbon i gult. Fungerer bedst
+> med sticks/spheres repræsentation, da cartoon/ribbon kun viser
+> C-atomer.\
+> **by chain**: Farv et objekt/selektion efter kæde, dvs. hvis der er
+> flere peptidkæder, så får de hver sin farve.\
+> **by ss**: Farv et objekt/selektion efter sekundær struktur.\
+> **spectrum rainbow**: Farv et objekt/selektion fra blå i N-terminalen
+> til rød i C-terminalen.
+
+7.  Brug menuerne til at vise 1BL8 kun i sticks og vælg atomfarver med
+    carbon i gult. Gem scenen.
 
 ::: {.callout-solution}
-
-Forkert, NH-grupperne i kæden er begge koblet til C=O grupper og er derfor *amid*grupper, ikke *amin*grupper. 
 :::
 
-### Vurder alternativ nomenklatur
-
-Man kunne også beskrive stoffet som Glu-Cys-Gly.
-
-Bemærk at der kan være mere end ét rigtigt svar. Argumentér for hvert af de 5 tilfælde, både dem, du mener er korrekte og dem, du mener er forkerte.
-
+8.  Brug menuerne til at vise 1BL8 kun i cartoon og vælg farver efter
+    sekundær struktur. Gem scenen.
 
 ::: {.callout-solution}
-
-Se svaret til 2.
 :::
-{{< pagebreak >}}
 
-## Opgave 4. Bereging af enzymkinetik
-
-Denne opgave er repetition af Berg Biochemistry kapitel 5.
-
-Hydrolysen af pyrofosfat til orthofosfat driver biosyntetiske reaktioner såsom DNA-syntese. Denne hydrolytiske reaktion katalyseres i E. coli af en pyrofosfatase, der har en masse på 120 kDa og består af seks identiske underenheder. For dette enzym defineres en aktivitetsenhed som den mængde enzym, der hydrolyserer 10 μmol pyrofosfat på 15 minutter ved 37 °C under standard assaybetingelser. Det oprensede enzym har et 𝑉max på 2800 enheder pr. milligram enzym.
-
-### Beregn $V_\mathrm{max}$ i mikromol per sekund
-
-Hvor mange mikromol substrat hydrolyseres pr. sekund pr. milligram enzym, når substratkoncentrationen er meget større end $K_M$? Med andre ord, hvad er $V_\mathrm{max}$ for den katalyserede reaktion? Angiv mængde hydrolyseret substrat i μmol.
-
-### Beregn antal active sites per milligram
-
-Hvor mange mikromol active sites er der i 1 mg enzym? Antag, at hver underenhed har ét active site. Angives i μmol.
-
-### Beregn enzymets omsætningstal
-
-Hvad er enzymets omsætningstal i $s^{-1}$?
+9.  Farv med rainbow og identificér proteinets rigtige N-terminal. Gem
+    scenen. Hvorfor er der så mange andre \"terminaler\"?
 
 ::: {.callout-solution}
-
-Berg kapitel 5 End-of-chapter problem 13. Svar findes bag i bogen eller på Achieve.
 :::
 
-{{< pagebreak >}}
-
-## Opgave 5. Analyse af Chymotrypsin i PyMOL
-
-{{< download-button path="../files/TE2-Chymotrypsin.pse" filename="chymotripsin.pse" >}}
-
-I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, som beskrives på s. 223-226 i Berg Biochemistry 10. udgave. Åbn filen `chymotrypsin.pse`, pse-filer er PyMOL session filer, som du kan dobbeltklikke på for at åbne filen i PyMOL såfremt programmet er installeret.
-
-### Lokalisér β-barrel domænerne
-
-Chymotrypsin består af to β-barrels kaldet domæne 1 og 2 vist med henholdsvis blåt og rødt. Lokalisér de to domæner og prøv at tænde og slukke for dem med knapperne *Domain 1* og *Domain 2* i listen til højre. Hvad karakteriserer en β-barrel?
-
-### Undersøg den katalytiske triade
-
-Den katalytiske triade bestående af Ser195, His57 og Asp102 befinder sig i området mellem de to domæner og er vist med grønne streger (sticks) i objektet *Triad*. Tryk F2 for at se disse aminosyrer tæt på. Hvilken rolle spiller disse for enzymet? Prøv også at identificere andre elementer i strukturen ved at tænde og slukke for dem.
-
-### Forklar pseudo-2-talssymmetri
-
-De to domæner ligner meget hinanden og er arrangeret med en såkaldt `pseudo-2-talssymmetri`. Tryk F1 på keyboardet for at se ned langs denne akse og F3 og F4 for at se ned langs hvert domæne. Hvad tror du en `pseudo-2-talssymmetri` er?
-
-### Find aktiveringsskæringen ved residue 16
-
-Når chymotrypsinogen aktiveres til chymotrypsin så bliver molekylet kløvet to steder for at producere kæderne, der her hedder A, B og C (se figur 7.17, s. 224 i Berg Biochemistry 10. udgave). Stykket, der forsvinder mellem kæde B og C er vist med prikker i strukturen (*Loop*) og er ikke så vigtigt for aktivering. Derimod er skæringen ved residue 16 kritisk. Find residue 16 og forklar hvorfor denne aminosyre er vigtig for aktivering af chymotrypsin.
-
-OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, F3 osv, da disse taster også bruges til at styre skærmens lysstyrke etc. på MacBooks.
-
+10. Brug kæde-specifik rainbow farvning til at forstå den kvarternære
+    opbygning af K^+^-kanalen. Gem scenen.
 
 ::: {.callout-solution}
-
-**1.** En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
-
-**2.**  De tre aminosyrer er vigtige for den enzymatiske reaktion. Kort fortalt hjælper Asp og His med til at Ser bliver deprotoneret og danner en alkoxidion, der kan angribe peptidbindingen under kløvningsreaktionen (se Fig. 9.8, Berg et al. 10. udgave, s. 279).
-
-**3.**  En `pseudo-symmetri` er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have `pseudo-totalssymmetri`, mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
-
-![Totalssymmetri](media/image4.jpg){width="5.28125in" height="1.5625in"}
-
-**4.** Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive site og er med til at danne det såkaldte "oxyanionhul".
 :::
+
+11. Gem din session som \"1_K+-kanalen.pse\" i STRBIO mappen, så du kan
+    vise svarene frem senere.
+
+::: {.callout-solution}
+:::
+
+**Officielt svar**:
+
+Se PyMOL session fil i svar-mappen: 1_K+-kanalen.pse
+
+
+2.  Se scene 002.
+
+3.  \-
+
+4.  \-
+
+5.  \-
+
+6.  Se scene 003.
+
+7.  Se scene 004.
+
+8.  Se scene 006.
+
+9.  Se scene 007. N-terminal er ved ALA23. Der er mange terminaler, da
+    der er mange kæder.
+
+10. Se scene 008. K^+^-kanalen er en tetramer.
+
+11. \-
+
+## Den første proteinstruktur
+
+Enhver diskussion om proteinstruktur må nødvendigvis begynde med
+myoglobin, fordi det er her, videnskaben om proteinstruktur begyndte.
+Efter mange års hårdt arbejde fastlagde John Kendrew og hans kolleger
+myoglobins atomstruktur og lagde grundlaget for en æra med biologisk
+forståelse. Du kan selv tage et nærmere kig på denne proteinstruktur i
+PDB-indgangen
+[1mbn](http://www.rcsb.org/pdb/explore/explore.do?structureId=1mbn). Du
+vil blive forbløffet, ligesom verden var i 1960, over den smukke
+kompleksitet i dette protein. Læs evt. mere
+[her](https://pdb101.rcsb.org/motm/1).
+
+1.  Åben 1MBN i PyMOL. Hvor mange alpha-helicer har proteinet? Gem
+    scene.
+
+2.  Find information om 1MBN på RCSB-website (<https://www.rcsb.org/>).
+    Hvornår blev strukturen offentliggjort? Hvilken metode blev brugt
+    til at løse strukturen og hvilken opløsning/resolution blev den
+    bestemt ved?
+
+3.  Zoom ind på liganden med menuen Zoom \> Next ligand. Gem scene. Hvad
+    hedder denne ligand og hvilket atom er bundet i midten?
+
+4.  Find aminosyrerne i bindingsstedet for liganden. Brug Action-menuen
+    A \> preset \> ligands. Gem scene. Hvilke aminosyrer binder direkte
+    til liganden med hydrogen bindinger?
+
+5.  Vis bindingslommen i surface repræsentation. Brug Action-menuen A \>
+    preset \> ligand site \> surface. Farv protein C \> by element \>
+    CHNOS\... med C i grå. Gem scene. Beskriv bindings-interaktioner
+    mellem protein og ligand ud over hydrogen bindinger.
+
+6.  Sammenlign myoglobin fra hval (1MBN) og gris (1PMB). Brug
+    Action-menuen A \> align \> to molecule for at overlejre de to
+    proteiner. Gem scene. Hvor ens er de to proteiner? Kan vurderes med
+    Root Mean Square Deviation (RMSD), hvilket er et mål for hvor meget
+    de to protein-strukturer adskiller sig fra hinanden.
+
+7.  Sammenlign myoglobin (1MBN) med myoglobin, der har ilt bundet
+    (1MBO). Brug Action-menuen A \> preset \> ligands. Gem scene. Hvor
+    binder ilt atomet?
+
+8.  Gem din session som \"2_Myoglobin.pse\" i STRBIO mappen, så du kan
+    vise svarene frem senere.
+
+**Officielt svar**:
+
+Se PyMOL session fil i svar-mappen: 2_Myoglobin.pse
+
+1.  8
+
+2.  1976, X-ray krystallografi, 2 Å
+
+3.  Heme, Fe
+
+4.  Arg45, His97, Ser92
+
+5.  Bindingslommen er hydrofob. Der er mange C-C og få N og O
+    interaktioner.
+
+6.  Meget ens. RMSD = 0.48
+
+7.  Binder på Fe og His.
+
+8.  \-
+
+## Ikonisk DNA og designede krystaller
+
+DNA er uden tvivl et af de smukkeste molekyler i levende celler. Dens
+yndefulde helix er behagelig for øjet. DNA er også et af de mest
+velkendte molekyler, det centrale ikon inden for molekylærbiologi, let
+genkendt af alle. DNA er perfekt til opbevaring og aflæsning af
+information. Hver overflade og kant af molekylet bærer information. Den
+grundlæggende mekanisme, hvorigennem DNA lagrer og transmitterer
+genetisk information, blev opdaget i 1950\'erne af Watson og Crick. Læs
+evt. mere [her](https://pdb101.rcsb.org/motm/23).
+
+![DNA double helix.](media/image8.gif){width="1.067619203849519in"
+height="6.087344706911636in"}
+
+1.  Reinitialiser PyMOL med menuen File \> Reinitialize \> Everything.
+    Alternativt kan du åbne et nyt PyMOL vindue med menuen File \> New
+    Window (Default).
+
+2.  Åben DNA helix med PBD-ID 1BNA. Fjern vand. Vis DNA helix med
+    spheres repræsentation. Mål afstand over major og minor groove med
+    distance Wizard. Gem scene.
+
+***PyMOL info**: PyMOL er udstyret med en funktion til interaktivt at
+måle afstanden mellem to atomer i strukturen. Under fanebladet "Wizard"
+ligger værktøjet "Measurement", der tillader brugeren at finde afstanden
+mellem to atomer i 3D-strukturen blot ved at klikke på først det ene og
+så det andet atom. Når der klikkes på et atom, anføres dette i logbogen
+øverst og et objekt ved navn measure## i objektoversigten til højre
+(hvor \## er nummeret på målingen). For at afslutte brugen af værktøjet
+klikkes på "Done" i nederste højre hjørne.*
+
+3.  Udvælg et basepar og gem resten med H \> unselected. Vis basepar i
+    stick-repræsentation med (sele) S \> as \> sticks. Zoom ind på det
+    med (sele) A \> zoom. Mål bredden af helix med distance Wizard. Gem
+    scene.
+
+4.  DNA findes hovedsagelig i B-form, men optræder også i A-form (1ANA)
+    og Z-form (2DCG). Mål bredden af A-form og Z-form helix med distance
+    Wizard. Gem scene for hver.
+
+5.  RNA helicer findes kun i A-form. Åben tRNA-strukturen (4TNA) og mål
+    bredden af helix. Gem scene. Stemmer bredden overens med A-form?
+
+DNA er et perfekt råmateriale til at konstruere nanoskalastrukturer. Da
+baseparring er blevet udvalgt af evolutionen til at være meget specifik,
+er det let at designe sekvenser, der kan forbindes med deres rigtige
+partnere. På denne måde kan vi behandle små stykker DNA som
+Lego-klodser, designe individuelle komponenter og derefter lade dem
+samle sig selv. Derudover er kemien i DNA-syntese blevet fuldstændig
+automatiseret, så ![Three engineered strands of DNA assemble into a
+triangular module (top) that self-assembles into a two-dimensional
+lattice (bottom).](media/image9.jpeg){width="1.5854166666666667in"
+height="2.4923611111111112in"}specialtilpassede DNA-stykker nemt kan
+konstrueres eller endda bestilles fra kommercielle biotekvirksomheder.
+Nadrian Seeman var pioner inden for brugen af DNA til at bygge
+nanoskalastrukturer. Efter årtiers arbejde er strukturen, der vises her,
+fra PDB-indgang
+[3gbi](http://www.rcsb.org/pdb/explore/explore.do?structureId=3gbi) ,
+den første krystalstruktur i et DNA-gitter, der er fuldstændig designet
+fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
+
+6.  Find information om 3GBI på RCSB-website (<https://www.rcsb.org/>).
+    Hvilken opløsning blev den bestemt ved? Hvor mange DNA-strenge er
+    der i strukturen?
+
+7.  Åben DNA designer krystalstruktur (3GBI) i PyMOL. Man ser kun den
+    asymmetriske enhed. Ekspandér krystallen med objektmenuen A \>
+    generate \> symmetry mates \> within 4 A og fjern de to objekter,
+    der ikke er en del af DNA-trekanten. Farvelæg strengene i
+    DNA-strukturen, som vist i figuren oven for. Gem scene. Hint: Brug
+    \"Selection \> Chains\" og udvælg strenge i Display panel eller
+    Sekvens panel (vælges med SEQ knap).
+
+8.  Ekspandér krystallen med objektmenuen A \> generate \> symmetry
+    mates \> within 100 A. Mål afstanden imellem parallelle DNA-helicer
+    i krystallen. Gem scene.
+
+9.  Man kan desuden designe RNA nanostrukturer. Åben RNA lattice element
+    (9R7Q). Farvelæg RNA strukturen med regnbue farver, der viser forløb
+    fra 5\'- til 3\'-ende af strenge. Gem scene. Hvor mange strenge er
+    denne RNA-struktur dannet af?
+
+10. Gem din session som \"3_DNA.pse\" i STRBIO mappen, så du kan vise
+    svarene frem senere.
+
+**Officielt svar**:
+
+Se PyMOL session fil i svar-mappen: 3_DNA.pse
+
+1.  \-
+
+2.  Se scene 001. Major groove ca. 19 Å. Minor grove ca. 11 Å.
+
+3.  Se scene 003. B-form bredde ca. 17 Å.
+
+4.  Se scene 004. A-form bredde ca. 17.7 Å.\
+    Se scene 005. Z-form bredde ca. 16.2 Å.
+
+5.  Se scene 006. A-form RNA ca. 17.9 Å.
+
+6.  4 Å, 4 strenge
+
+7.  Se scene 007.
+
+8.  Se scene 008. 50 Å.
+
+9.  Se scene 009. Een streng.
+
+10. \-
+
+## Insulin
+
+Vores celler kommunikerer via et molekylært postsystem: blodet er
+postvæsenet, og hormonerne er brevene. Insulin er et af de vigtigste
+hormoner, der bærer beskeder, der ![Insulin and proinsulin, with A-chain
+in green, B-chain in blue and disulfide linkages in
+yellow.](media/image10.jpeg){width="2.107638888888889in"
+height="1.8444444444444446in"}beskriver, hvor meget sukker der er
+tilgængeligt i blodet fra øjeblik til øjeblik. Insulin produceres i
+bugspytkirtlen og tilsættes blodet efter måltider, når sukkerniveauet er
+højt. Dette signal spreder sig derefter gennem hele kroppen og binder
+sig til insulinreceptorer på overfladen af lever-, muskel- og
+fedtceller. Insulin fortæller disse organer at de skal tage glukose ud
+af blodet og lagre det i form af glykogen eller fedt. Læs evt. mere
+[her](https://pdb101.rcsb.org/motm/14).
+
+1.  Hent strukturen 4INS i PyMOL. Brug action menuen A \> remove waters.
+    Gem kæde C og D ved at selektere dem med \"Chains selector\" og
+    bruge (sele) H \> everything. Farv chain A cyan og chain B grøn. Gem
+    scene. Hvor mange alpha-helicer og hvor mange beta-strenge er der i
+    insulin?
+
+2.  Vis struktur som sticks via Show menuen S \> as \> sticks. Gem
+    scene. Hvor mange svovlbroer er der i insulin? Hvor mange er
+    indenfor en kæde og hvor mange er imellem kæder?
+
+Når insulinfunktionen er nedsat, enten på grund af skade på
+bugspytkirtlen eller aldringens påtrængende udfordringer, stiger
+blodsukkerniveauet faretruende, hvilket fører til diabetes mellitus.
+Diabetes mellitus kan behandles ved manuelt at erstatte den insulin, der
+mangler i blodet med insulin fra gris eller ko, eller produceret i
+mikroorganismer.
+
+3.  Sammenlign insulin fra gris (4INS) med insulin fra menneske (2HIU).
+    Farv dem i to forskellige farver. Brug objektmenuen A \> align \> to
+    molecule for at overlejre de to proteiner. Gem scene. Har de samme
+    struktur og sekvens? Hint: Brug \"SEQ\" knappen til at se de to
+    sekvenser ved siden af hinanden.
+
+Insulin lagres i bugspytkirtlen som et hexamerisk kompleks, som falder
+fra hinanden og danner den aktive monomer, når det frigives i blodbanen
+og binder sig til insulinreceptorer, som findes på overfladen af de
+fleste celler i menneskekroppen.
+
+4.  Åben strukturen
+    [1trz](http://www.rcsb.org/pdb/explore/explore.do?structureId=1trz)
+    af det første rekombinante humane insulin, markedsført som Humulin.
+    Ekspandér krystallen og vis kun de elementer, der udgør det
+    hexameriske kompleks. Farv kæder med C \> by chain \> by chain. Gem
+    scene. Hvilke typer interaktioner og ioner stabiliserer hexameren?
+
+Insulin kan designes til at være langtids-virkende ved at stabilisere
+hexameren. Forskere muterede insulin for at gøre det mere stabilt og fik
+glargine (Lantus ®). Læs mere [her](https://pdb101.rcsb.org/motm/194).
+
+5.  Åben strukturen af glargine
+    ([4iyf](http://www.rcsb.org/pdb/explore/explore.do?structureId=4iyf))
+    og undersøg hvilke aminosyrer, som er blevet ændret og hvor de
+    sidder i proteinet. Gem scene. Hint: Brug Sekvens panel og A \>
+    align \> to molecule.
+
+6.  Åben desuden designer insulin ved navn degludec (Tresiba ®) (PDB
+    entry [4ajx](http://www.rcsb.org/pdb/explore/explore.do?structureId=4ajx)).
+    Ekspandér krystallen med objektmenuen A \> generate \> symmetry
+    mates \> within 4 A og find interaktion mellem to hexamerer. Gem
+    scene. Hvilke ligander fremmer hexamer-hexamer binding?
+
+7.  Gem din session som \"4_Insulin.pse\" i STRBIO mappen, så du kan
+    vise svarene frem senere.
+
+**Officielt svar**:
+
+Se PyMOL session fil i svar-mappen: 4_Insulin.pse
+
+1.  Se scene 001. 3 alpha-helicer, 1 beta-streng
+
+2.  Se scene 003. 3 = 2 mellem kæde A og B + 1 intern i kæde A.
+
+3.  Se scene 004. Struktur er meget ens med RMSD = 0.9\
+    Sekvens er ens på nær A30T
+
+4.  Se scene 006. Na og Cl ioner og protein-protein interaktioner.
+
+5.  Se scene 007.\
+    N21G (C-term kæde A)\
+    T30delta (C-term deletion i kæde B)
+
+6.  Se scene 009. Hydrocarbon danner bro mellem hexamerer.
+
+7.  \-
+
+## Calciumpumpenx
+
+Calciumpumpen er en fantastisk maskine med flere bevægelige dele. Den
+findes i membranen, som vist her fra PDB-indgang
+[1su4](https://www.rcsb.org/structure/1su4). Den har et stort domæne,
+der stikker ud på ydersiden af det sarkoplasmatiske retikulum, og et
+område, der er indlejret i membranen og danner en tunnel til den anden
+side. For hver ATP, der brydes, overføres to calciumioner (vist her i
+blåt) gennem membranen, og to eller tre hydrogenioner overføres tilbage
+i modsat retning. Læs evt. mere [her](https://pdb101.rcsb.org/motm/51).
+
+1.  Åben 1SU4 i PyMOL. Orientér modellen på samme måde som i figuren.
+    Farv modellen med C \> by element \> CHNOS (med C i hvid). Find
+    Ca^2+^ ioner og farv dem cyan. Hint: Lettest at fjerne vand og
+    dernæst finde ioner i Sekvens panel - helt til højre, udvælge dem og
+    farve dem som (sele). Gem scene.
+
+2.  Zoom ind på Calcium kanalen, hvor to Ca ioner er bundet. Vis Ca
+    ioner som nb_spheres. Vælg A \> find \> polar contacts \> to other
+    atoms in object. Vis 1SU4 som lines. Vælg menuen Zoom \> Active
+    Selection. Gem scene. Hvilke aminosyrer binder Ca ionerne med deres
+    sidekæder?
+
+3.  Åben 1IWO i PyMOL. Denne indeholder 2 strukturer i den asymmetriske
+    enhed. Slet den ene af strukturene med kommandoen: remove chain B.
+    Brug objektmenuen A \> align \> to molecule for at overlejre de to
+    proteiner. Gem scene.
+
+4.  Vis kun 1IWO. Zoom ind på Inhibitor ved brug af menuen Zoom \> Next
+    Ligand \[CTRL-L\]. Brug nu objekt-menuen (1IWO) A \> preset \>
+    ligands og beskriv hvordan denne ligand er bundet til de centrale
+    alpha-helicer i kanalen. Gem scene.
+
+5.  Vis både 1SU4 og 1IWO som cartoon. Farvelæg domæner i begge modeller
+    ved at kopiere følgende kommandoer til kommandolinjen og trykke
+    return:\
+    \
+    color purple, resi 1-41+125-243\
+    color yellow, resi 350-600\
+    color orange, resi 601-742\
+    color red, resi 42-124+244-349+743-994\
+    \
+    Gem scene.
+
+6.  For at visualisere hvordan de to modeller kan bevæge sig over i
+    hinanden skal vi bruge Morphing funktionen. Den findes under menuen
+    Plugin \> Morphing. For ikke at bruge for meget regnekraft på din
+    computer anbefales følgende settings: Refinement cycles = 0, Number
+    of output states = 20, Interpolation Method = Linear. Gem scene.
+    Afspil Morph movie. Hvilke domæner bevæger sig mest og hvad sker der
+    med de transmembrane helicer?
+
+7.  Gem din session som \"5_Ca-pumpen.pse\" i STRBIO mappen, så du kan
+    vise svarene frem senere.
+
+**Officielt svar**:
+
+Se PyMOL session fil i svar-mappen: 5_Ca-pumpen.pse
+
+1.  Se scene 002.
+
+2.  Se scene 004. Asp, Asn, Glu, Glu, Thr, Glu, Asn
+
+3.  Se scene 005.
+
+4.  Se scene 006. Binder imellem alpha-helicer, men uden hydrogen
+    bindinger.
+
+5.  Se scene 007.
+
+6.  Se scene 008. Gul og lilla domæne bevæger sig mest. Små bevægelser i
+    de transmembrane.
+
+7.  \-

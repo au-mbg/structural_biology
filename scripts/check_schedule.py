@@ -13,6 +13,8 @@ def main():
     exercise_scheduled = {str(path): False for path in exercise_files}
     solution_scheduled = {str(path): False for path in exercise_files}
 
+    any_mistake = False
+
     with open(ROOT / "_schedule.yml") as f:
         exercise_schedule = yaml.safe_load(f)
     with open(ROOT / "_schedule-solution.yml") as f:
@@ -35,12 +37,17 @@ def main():
     for path, scheduled in exercise_scheduled.items():
         if not scheduled:
             console.print(f"Exercise file not scheduled: {path}")
+            any_mistake = True
 
     for path, scheduled in solution_scheduled.items():
         if not scheduled:
             console.print(f"Solution file not scheduled: {path}")
+            any_mistake = True
 
-
+    if any_mistake:
+        console.print("There are mistakes in the schedule.", style="bold red")
+    else:
+        console.print("No mistakes found in the schedule.", style="bold green")
 
 if __name__ == "__main__":
     main()

@@ -15,7 +15,7 @@ website:
         text: Installation og opsætning
         icon: gear-fill
       - href: videos/videor.qmd
-        text: Videor
+        text: Videoer
         icon: youtube
   sidebar:
     - id: exercises-sidebar

@@ -8,7 +8,7 @@
         "title: \"TØ 11 -- Binding og genkendelse\"\n",
         "---"
       ],
-      "id": "71dcf053"
+      "id": "032bd564"
     },
     {
       "cell_type": "markdown",
@@ -143,7 +143,7 @@
         "\n",
         "Python kode og plot"
       ],
-      "id": "110ca62e"
+      "id": "7ef0f8b4"
     },
     {
       "cell_type": "code",
@@ -166,7 +166,7 @@
         "ax.set_xlabel('p(O2)')\n",
         "ax.set_ylabel('Y')"
       ],
-      "id": "11e8b82f",
+      "id": "3f0b06d3",
       "execution_count": null,
       "outputs": []
     },
@@ -241,7 +241,7 @@
         "::: {.callout-solution}\n",
         "Plot Y (brøken af lampret Hb der har bundet ilt) versus p(O~2~):"
       ],
-      "id": "df15a0e4"
+      "id": "28143d79"
     },
     {
       "cell_type": "code",
@@ -254,7 +254,7 @@
         "# Læs filen\n",
         "df = pd.read_csv('../files/lampretfisk_hb_ilt.csv') # Den givne path ville skulle skiftes til den der passer på din maskine."
       ],
-      "id": "1b5f27c4",
+      "id": "0ced7b8a",
       "execution_count": null,
       "outputs": []
     },
@@ -264,7 +264,7 @@
       "source": [
         "Med datasættet loadet, f.eks. med `pd.read_csv(...)` kan et plot laves som"
       ],
-      "id": "ba060307"
+      "id": "8552b6ce"
     },
     {
       "cell_type": "code",
@@ -276,7 +276,7 @@
         "ax.set_ylabel('Y')\n",
         "plt.show()"
       ],
-      "id": "51c37d26",
+      "id": "6d935d7f",
       "execution_count": null,
       "outputs": []
     },
@@ -302,7 +302,7 @@
         "\n",
         "Alternativt kan der laves et ikke-linært fit "
       ],
-      "id": "89833319"
+      "id": "76ab3eee"
     },
     {
       "cell_type": "code",
@@ -321,7 +321,7 @@
         "print(f'n = {n}')\n",
         "print(f'p50 = {p50}')"
       ],
-      "id": "d1802e0e",
+      "id": "461ca987",
       "execution_count": null,
       "outputs": []
     },
@@ -458,7 +458,7 @@
         ":::\n",
         "{{< pagebreak >}}"
       ],
-      "id": "dcc89146"
+      "id": "e5985c3e"
     }
   ],
   "metadata": {
