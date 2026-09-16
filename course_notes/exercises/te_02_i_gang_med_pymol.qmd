@@ -34,7 +34,7 @@ Sådanne USB-mus koster typisk under 100 kr
     højre.
 
 ::: {.callout-solution}
-1.  Se scene 001.
+1.  Se scene 001 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 Den højre side af Viewer-vinduet viser den hentede PDB-fil som et
@@ -60,6 +60,7 @@ proteinet.
     strukturen. Gem scenen.
 
 ::: {.callout-solution}
+Se scene 002 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 3.  Prøv at skifte mellem visning af de forskellige tilstande vha.
@@ -130,6 +131,7 @@ ioner i spheres.
     ny vises. Gem scenen for din foretrukne repræsentation.
 
 ::: {.callout-solution}
+Se scene 003 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 Color-menuen bruges som navnet antyder til at sætte en farve for et
@@ -151,57 +153,34 @@ funktioner er:
     carbon i gult. Gem scenen.
 
 ::: {.callout-solution}
+Se scene 004 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 8.  Brug menuerne til at vise 1BL8 kun i cartoon og vælg farver efter
     sekundær struktur. Gem scenen.
 
 ::: {.callout-solution}
+Se scene 006 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 9.  Farv med rainbow og identificér proteinets rigtige N-terminal. Gem
     scenen. Hvorfor er der så mange andre \"terminaler\"?
 
 ::: {.callout-solution}
+Se scene 007 i PyMOL session fil: 1_K+-kanalen.pse. N-terminal er ved ALA23. Der er mange terminaler, da der er mange kæder.
 :::
 
-10. Brug kæde-specifik rainbow farvning til at forstå den kvarternære
-    opbygning af K^+^-kanalen. Gem scenen.
+10. Brug kæde-specifik rainbow farvning til at forstå den kvarternære opbygning af K^+^-kanalen. Gem scenen.
+
+::: {.callout-solution}
+Se scene 008 i PyMOL session fil: 1_K+-kanalen.pse. K^+^-kanalen er en tetramer.
+:::
+
+11. Gem din session som \"1_K+-kanalen.pse\" i STRBIO mappen, så du kan vise svarene frem senere.
 
 ::: {.callout-solution}
 :::
 
-11. Gem din session som \"1_K+-kanalen.pse\" i STRBIO mappen, så du kan
-    vise svarene frem senere.
-
-::: {.callout-solution}
-:::
-
-**Officielt svar**:
-
-Se PyMOL session fil i svar-mappen: 1_K+-kanalen.pse
-
-
-2.  Se scene 002.
-
-3.  \-
-
-4.  \-
-
-5.  \-
-
-6.  Se scene 003.
-
-7.  Se scene 004.
-
-8.  Se scene 006.
-
-9.  Se scene 007. N-terminal er ved ALA23. Der er mange terminaler, da
-    der er mange kæder.
-
-10. Se scene 008. K^+^-kanalen er en tetramer.
-
-11. \-
 
 ## Den første proteinstruktur
 
@@ -219,22 +198,42 @@ kompleksitet i dette protein. Læs evt. mere
 1.  Åben 1MBN i PyMOL. Hvor mange alpha-helicer har proteinet? Gem
     scene.
 
+::: {.callout-solution}
+8
+:::
+
 2.  Find information om 1MBN på RCSB-website (<https://www.rcsb.org/>).
     Hvornår blev strukturen offentliggjort? Hvilken metode blev brugt
     til at løse strukturen og hvilken opløsning/resolution blev den
     bestemt ved?
 
+::: {.callout-solution}
+1976, X-ray krystallografi, 2 Å
+:::
+
 3.  Zoom ind på liganden med menuen Zoom \> Next ligand. Gem scene. Hvad
     hedder denne ligand og hvilket atom er bundet i midten?
+
+::: {.callout-solution}
+Heme, Fe
+:::
 
 4.  Find aminosyrerne i bindingsstedet for liganden. Brug Action-menuen
     A \> preset \> ligands. Gem scene. Hvilke aminosyrer binder direkte
     til liganden med hydrogen bindinger?
 
+::: {.callout-solution}
+Arg45, His97, Ser92
+:::
+
 5.  Vis bindingslommen i surface repræsentation. Brug Action-menuen A \>
     preset \> ligand site \> surface. Farv protein C \> by element \>
     CHNOS\... med C i grå. Gem scene. Beskriv bindings-interaktioner
     mellem protein og ligand ud over hydrogen bindinger.
+
+::: {.callout-solution}
+Bindingslommen er hydrofob. Der er mange C-C og få N og O interaktioner.
+:::
 
 6.  Sammenlign myoglobin fra hval (1MBN) og gris (1PMB). Brug
     Action-menuen A \> align \> to molecule for at overlejre de to
@@ -242,33 +241,25 @@ kompleksitet i dette protein. Læs evt. mere
     Root Mean Square Deviation (RMSD), hvilket er et mål for hvor meget
     de to protein-strukturer adskiller sig fra hinanden.
 
+::: {.callout-solution}
+Meget ens. RMSD = 0.48
+:::
+
 7.  Sammenlign myoglobin (1MBN) med myoglobin, der har ilt bundet
     (1MBO). Brug Action-menuen A \> preset \> ligands. Gem scene. Hvor
     binder ilt atomet?
 
+::: {.callout-solution}
+Binder på Fe og His.
+:::
+
 8.  Gem din session som \"2_Myoglobin.pse\" i STRBIO mappen, så du kan
     vise svarene frem senere.
 
-**Officielt svar**:
+::: {.callout-solution}
+PyMOL session fil: 2_Myoglobin.pse
+:::
 
-Se PyMOL session fil i svar-mappen: 2_Myoglobin.pse
-
-1.  8
-
-2.  1976, X-ray krystallografi, 2 Å
-
-3.  Heme, Fe
-
-4.  Arg45, His97, Ser92
-
-5.  Bindingslommen er hydrofob. Der er mange C-C og få N og O
-    interaktioner.
-
-6.  Meget ens. RMSD = 0.48
-
-7.  Binder på Fe og His.
-
-8.  \-
 
 ## Ikonisk DNA og designede krystaller
 
@@ -288,9 +279,16 @@ height="6.087344706911636in"}
     Alternativt kan du åbne et nyt PyMOL vindue med menuen File \> New
     Window (Default).
 
+::: {.callout-solution}
+:::
+
 2.  Åben DNA helix med PBD-ID 1BNA. Fjern vand. Vis DNA helix med
     spheres repræsentation. Mål afstand over major og minor groove med
     distance Wizard. Gem scene.
+
+::: {.callout-solution}
+Se scene 001 i PyMOL session fil: 3_DNA.pse. Major groove ca. 19 Å. Minor grove ca. 11 Å.
+:::
 
 ***PyMOL info**: PyMOL er udstyret med en funktion til interaktivt at
 måle afstanden mellem to atomer i strukturen. Under fanebladet "Wizard"
@@ -306,12 +304,25 @@ klikkes på "Done" i nederste højre hjørne.*
     med (sele) A \> zoom. Mål bredden af helix med distance Wizard. Gem
     scene.
 
+::: {.callout-solution}
+Se scene 003 i PyMOL session fil: 3_DNA.pse. B-form bredde ca. 17 Å.
+:::
+
 4.  DNA findes hovedsagelig i B-form, men optræder også i A-form (1ANA)
     og Z-form (2DCG). Mål bredden af A-form og Z-form helix med distance
     Wizard. Gem scene for hver.
 
+::: {.callout-solution}
+Se scene 004 i PyMOL session fil: 3_DNA.pse. A-form bredde ca. 17.7 Å.\
+Se scene 005 i PyMOL session fil: 3_DNA.pse. Z-form bredde ca. 16.2 Å.
+:::
+
 5.  RNA helicer findes kun i A-form. Åben tRNA-strukturen (4TNA) og mål
     bredden af helix. Gem scene. Stemmer bredden overens med A-form?
+
+::: {.callout-solution}
+Se scene 006 i PyMOL session fil: 3_DNA.pse. A-form RNA ca. 17.9 Å.
+:::
 
 DNA er et perfekt råmateriale til at konstruere nanoskalastrukturer. Da
 baseparring er blevet udvalgt af evolutionen til at være meget specifik,
@@ -319,10 +330,7 @@ er det let at designe sekvenser, der kan forbindes med deres rigtige
 partnere. På denne måde kan vi behandle små stykker DNA som
 Lego-klodser, designe individuelle komponenter og derefter lade dem
 samle sig selv. Derudover er kemien i DNA-syntese blevet fuldstændig
-automatiseret, så ![Three engineered strands of DNA assemble into a
-triangular module (top) that self-assembles into a two-dimensional
-lattice (bottom).](media/image9.jpeg){width="1.5854166666666667in"
-height="2.4923611111111112in"}specialtilpassede DNA-stykker nemt kan
+automatiseret, så specialtilpassede DNA-stykker nemt kan
 konstrueres eller endda bestilles fra kommercielle biotekvirksomheder.
 Nadrian Seeman var pioner inden for brugen af DNA til at bygge
 nanoskalastrukturer. Efter årtiers arbejde er strukturen, der vises her,
@@ -331,9 +339,18 @@ fra PDB-indgang
 den første krystalstruktur i et DNA-gitter, der er fuldstændig designet
 fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
 
+![Three engineered strands of DNA assemble into a
+triangular module (top) that self-assembles into a two-dimensional
+lattice (bottom).](media/image9.jpeg){width="1.5854166666666667in"
+height="2.4923611111111112in"}
+
 6.  Find information om 3GBI på RCSB-website (<https://www.rcsb.org/>).
     Hvilken opløsning blev den bestemt ved? Hvor mange DNA-strenge er
     der i strukturen?
+
+::: {.callout-solution}
+4 Å, 4 strenge
+:::
 
 7.  Åben DNA designer krystalstruktur (3GBI) i PyMOL. Man ser kun den
     asymmetriske enhed. Ekspandér krystallen med objektmenuen A \>
@@ -343,42 +360,33 @@ fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
     \"Selection \> Chains\" og udvælg strenge i Display panel eller
     Sekvens panel (vælges med SEQ knap).
 
+::: {.callout-solution}
+Se scene 007 i PyMOL session fil: 3_DNA.pse.
+:::
+
 8.  Ekspandér krystallen med objektmenuen A \> generate \> symmetry
     mates \> within 100 A. Mål afstanden imellem parallelle DNA-helicer
     i krystallen. Gem scene.
+
+::: {.callout-solution}
+Se scene 008 i PyMOL session fil: 3_DNA.pse. 50 Å.
+:::
 
 9.  Man kan desuden designe RNA nanostrukturer. Åben RNA lattice element
     (9R7Q). Farvelæg RNA strukturen med regnbue farver, der viser forløb
     fra 5\'- til 3\'-ende af strenge. Gem scene. Hvor mange strenge er
     denne RNA-struktur dannet af?
 
+::: {.callout-solution}
+Se scene 009 i PyMOL session fil: 3_DNA.pse. Een streng.
+:::
+
 10. Gem din session som \"3_DNA.pse\" i STRBIO mappen, så du kan vise
     svarene frem senere.
 
-**Officielt svar**:
-
-Se PyMOL session fil i svar-mappen: 3_DNA.pse
-
-1.  \-
-
-2.  Se scene 001. Major groove ca. 19 Å. Minor grove ca. 11 Å.
-
-3.  Se scene 003. B-form bredde ca. 17 Å.
-
-4.  Se scene 004. A-form bredde ca. 17.7 Å.\
-    Se scene 005. Z-form bredde ca. 16.2 Å.
-
-5.  Se scene 006. A-form RNA ca. 17.9 Å.
-
-6.  4 Å, 4 strenge
-
-7.  Se scene 007.
-
-8.  Se scene 008. 50 Å.
-
-9.  Se scene 009. Een streng.
-
-10. \-
+::: {.callout-solution}
+Se PyMOL session fil: 3_DNA.pse
+:::
 
 ## Insulin
 
@@ -402,9 +410,17 @@ af blodet og lagre det i form af glykogen eller fedt. Læs evt. mere
     scene. Hvor mange alpha-helicer og hvor mange beta-strenge er der i
     insulin?
 
+::: {.callout-solution}
+Se scene 001 i PyMOL session fil: 4_Insulin.pse. 3 alpha-helicer, 1 beta-streng
+:::
+
 2.  Vis struktur som sticks via Show menuen S \> as \> sticks. Gem
     scene. Hvor mange svovlbroer er der i insulin? Hvor mange er
     indenfor en kæde og hvor mange er imellem kæder?
+
+::: {.callout-solution}
+Se scene 003 i PyMOL session fil: 4_Insulin.pse. 3 = 2 mellem kæde A og B + 1 intern i kæde A.
+:::
 
 Når insulinfunktionen er nedsat, enten på grund af skade på
 bugspytkirtlen eller aldringens påtrængende udfordringer, stiger
@@ -419,6 +435,11 @@ mikroorganismer.
     struktur og sekvens? Hint: Brug \"SEQ\" knappen til at se de to
     sekvenser ved siden af hinanden.
 
+::: {.callout-solution}
+Se scene 004 i PyMOL session fil: 4_Insulin.pse. Struktur er meget ens med RMSD = 0.9\
+    Sekvens er ens på nær A30T
+:::
+
 Insulin lagres i bugspytkirtlen som et hexamerisk kompleks, som falder
 fra hinanden og danner den aktive monomer, når det frigives i blodbanen
 og binder sig til insulinreceptorer, som findes på overfladen af de
@@ -431,6 +452,10 @@ fleste celler i menneskekroppen.
     hexameriske kompleks. Farv kæder med C \> by chain \> by chain. Gem
     scene. Hvilke typer interaktioner og ioner stabiliserer hexameren?
 
+::: {.callout-solution}
+Se scene 006 i PyMOL session fil: 4_Insulin.pse. Na og Cl ioner og protein-protein interaktioner.
+:::
+
 Insulin kan designes til at være langtids-virkende ved at stabilisere
 hexameren. Forskere muterede insulin for at gøre det mere stabilt og fik
 glargine (Lantus ®). Læs mere [her](https://pdb101.rcsb.org/motm/194).
@@ -441,37 +466,30 @@ glargine (Lantus ®). Læs mere [her](https://pdb101.rcsb.org/motm/194).
     sidder i proteinet. Gem scene. Hint: Brug Sekvens panel og A \>
     align \> to molecule.
 
+::: {.callout-solution}
+Se scene 007 i PyMOL session fil: 4_Insulin.pse.\
+    N21G (C-term kæde A)\
+    T30delta (C-term deletion i kæde B)
+:::
+
 6.  Åben desuden designer insulin ved navn degludec (Tresiba ®) (PDB
     entry [4ajx](http://www.rcsb.org/pdb/explore/explore.do?structureId=4ajx)).
     Ekspandér krystallen med objektmenuen A \> generate \> symmetry
     mates \> within 4 A og find interaktion mellem to hexamerer. Gem
     scene. Hvilke ligander fremmer hexamer-hexamer binding?
 
+::: {.callout-solution}
+Se scene 009 i PyMOL session fil: 4_Insulin.pse. Hydrocarbon danner bro mellem hexamerer.
+:::
+
 7.  Gem din session som \"4_Insulin.pse\" i STRBIO mappen, så du kan
     vise svarene frem senere.
 
-**Officielt svar**:
+::: {.callout-solution}
+Se PyMOL session fil: 4_Insulin.pse
+:::
 
-Se PyMOL session fil i svar-mappen: 4_Insulin.pse
-
-1.  Se scene 001. 3 alpha-helicer, 1 beta-streng
-
-2.  Se scene 003. 3 = 2 mellem kæde A og B + 1 intern i kæde A.
-
-3.  Se scene 004. Struktur er meget ens med RMSD = 0.9\
-    Sekvens er ens på nær A30T
-
-4.  Se scene 006. Na og Cl ioner og protein-protein interaktioner.
-
-5.  Se scene 007.\
-    N21G (C-term kæde A)\
-    T30delta (C-term deletion i kæde B)
-
-6.  Se scene 009. Hydrocarbon danner bro mellem hexamerer.
-
-7.  \-
-
-## Calciumpumpenx
+## Calciumpumpen
 
 Calciumpumpen er en fantastisk maskine med flere bevægelige dele. Den
 findes i membranen, som vist her fra PDB-indgang
@@ -488,32 +506,52 @@ i modsat retning. Læs evt. mere [her](https://pdb101.rcsb.org/motm/51).
     dernæst finde ioner i Sekvens panel - helt til højre, udvælge dem og
     farve dem som (sele). Gem scene.
 
+::: {.callout-solution}
+Se scene 002 i PyMOL session fil: 5_Ca-pumpen.pse.
+:::
+
 2.  Zoom ind på Calcium kanalen, hvor to Ca ioner er bundet. Vis Ca
     ioner som nb_spheres. Vælg A \> find \> polar contacts \> to other
     atoms in object. Vis 1SU4 som lines. Vælg menuen Zoom \> Active
     Selection. Gem scene. Hvilke aminosyrer binder Ca ionerne med deres
     sidekæder?
 
+::: {.callout-solution}
+Se scene 004 i PyMOL session fil: 5_Ca-pumpen.pse. Asp, Asn, Glu, Glu, Thr, Glu, Asn
+:::
+
 3.  Åben 1IWO i PyMOL. Denne indeholder 2 strukturer i den asymmetriske
     enhed. Slet den ene af strukturene med kommandoen: remove chain B.
     Brug objektmenuen A \> align \> to molecule for at overlejre de to
     proteiner. Gem scene.
+
+::: {.callout-solution}
+Se scene 005 i PyMOL session fil: 5_Ca-pumpen.pse.
+:::
 
 4.  Vis kun 1IWO. Zoom ind på Inhibitor ved brug af menuen Zoom \> Next
     Ligand \[CTRL-L\]. Brug nu objekt-menuen (1IWO) A \> preset \>
     ligands og beskriv hvordan denne ligand er bundet til de centrale
     alpha-helicer i kanalen. Gem scene.
 
+::: {.callout-solution}
+Se scene 006 i PyMOL session fil: 5_Ca-pumpen.pse. Binder imellem alpha-helicer, men uden hydrogen bindinger.
+:::
+
 5.  Vis både 1SU4 og 1IWO som cartoon. Farvelæg domæner i begge modeller
     ved at kopiere følgende kommandoer til kommandolinjen og trykke
-    return:\
-    \
+    return:
+    ```default
     color purple, resi 1-41+125-243\
     color yellow, resi 350-600\
     color orange, resi 601-742\
     color red, resi 42-124+244-349+743-994\
-    \
+    ```
     Gem scene.
+
+::: {.callout-solution}
+Se scene 007 i PyMOL session fil: 5_Ca-pumpen.pse.
+:::
 
 6.  For at visualisere hvordan de to modeller kan bevæge sig over i
     hinanden skal vi bruge Morphing funktionen. Den findes under menuen
@@ -523,25 +561,13 @@ i modsat retning. Læs evt. mere [her](https://pdb101.rcsb.org/motm/51).
     Afspil Morph movie. Hvilke domæner bevæger sig mest og hvad sker der
     med de transmembrane helicer?
 
+::: {.callout-solution}
+Se scene 008 i PyMOL session fil: 5_Ca-pumpen.pse. Gul og lilla domæne bevæger sig mest. Små bevægelser i de transmembrane.
+:::
+
 7.  Gem din session som \"5_Ca-pumpen.pse\" i STRBIO mappen, så du kan
     vise svarene frem senere.
 
-**Officielt svar**:
-
-Se PyMOL session fil i svar-mappen: 5_Ca-pumpen.pse
-
-1.  Se scene 002.
-
-2.  Se scene 004. Asp, Asn, Glu, Glu, Thr, Glu, Asn
-
-3.  Se scene 005.
-
-4.  Se scene 006. Binder imellem alpha-helicer, men uden hydrogen
-    bindinger.
-
-5.  Se scene 007.
-
-6.  Se scene 008. Gul og lilla domæne bevæger sig mest. Små bevægelser i
-    de transmembrane.
-
-7.  \-
+::: {.callout-solution}
+PyMOL session fil: 5_Ca-pumpen.pse.cd..
+:::
