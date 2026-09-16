@@ -50,6 +50,10 @@ description = "Check that all download links in the course notes are valid"
 cmd = """python scripts/check_schedule.py"""
 description = "Check the schedule for the course notes"
 
+[tasks.check-quarto]
+cmd = """python scripts/check_quarto.py"""
+description = "Check the Quarto configuration for the course notes"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
