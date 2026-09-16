@@ -36,8 +36,8 @@ website:
             - exercises/te_11_enzymmekanismer.qmd
             - exercises/te_12_enzymregulering.qmd
             - exercises/te_13_drug_design.qmd
-            - exercises/te_14_ms.qmd
-            - exercises/te_15_lo_forberedelse.qmd
+            - exercises/te_14_lo_forberedelse.qmd
+            - exercises/te_15_ms.qmd
             - exercises/te_16_strukturmetoder.qmd
             - exercises/te_17_ai_og_modellering.qmd
             - exercises/te_18_kulhydrater.qmd

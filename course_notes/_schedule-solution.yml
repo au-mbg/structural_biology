@@ -28,9 +28,9 @@ scheduled-docs:
       date: "2026-10-09"
     - href: exercises/te_13_drug_design.qmd
       date: "2026-10-21"
-    - href: exercises/te_15_lo_forberedelse.qmd
-      date: "2026-11-23"
-    - href: exercises/te_14_ms.qmd
+    - href: exercises/te_14_lo_forberedelse.qmd
+      date: "2026-10-23"
+    - href: exercises/te_15_ms.qmd
       date: "2026-11-04"
     - href: exercises/te_16_strukturmetoder.qmd
       date: "2026-11-06"
