@@ -46,6 +46,10 @@ description = "Check all figures for references in .qmd files"
 cmd = """python scripts/check_downloads.py"""
 description = "Check that all download links in the course notes are valid"
 
+[tasks.check-schedule]
+cmd = """python scripts/check_schedule.py"""
+description = "Check the schedule for the course notes"
+
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
