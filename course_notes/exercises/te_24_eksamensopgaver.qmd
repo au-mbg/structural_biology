@@ -8,7 +8,7 @@ title: "TØ 24 -- Eksamensopgaver"
 
 I følge RNA-verden-hypotesen opstod livet ved at et RNA-molekyle begyndte at kopiere sig selv, men et sådant RNA-molekyle er endnu ikke fundet i naturen. Forskere har derfor brugt kunstig (*in vitro*) evolution til at udvikle et fungerende RNA polymerase ribozym (RPR) ud fra randomiserede sekvenser. Strukturen af RPR blev bestemt med cryo-elektronmikroskopi og viste sig at bestå af to RNA-molekyler (5TU og t1) holdt sammen af interaktioner på to steder, KL1 og KL2, som vist nedenfor.
 
-![](figures/te_24/opgave-1-figur-1.png){width="6.6930555555555555in" height="2.172222222222222in"}
+![](figures/te_24/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvilken type interaktion, er der tale om mellem 5TU og t1 (primær, sekundær, tertiær eller kvarternær) og hvad kaldes det motiv, de RNA-enheder bliver holdt sammen af i KL1 og KL2?
 
@@ -38,7 +38,7 @@ De symmetriske basepar G88-A91 og G65-A68 er trans-HS (Högsteen-Sugar edge, 5 p
 
 RPR kan forlænge en RNA primer på en RNA-template ved sammenkobling af matchende triplet-nukleotider (tre nukleotider koblet sammen 5'-3' og på 5' trifosfatform, 5'-^PPP^NNN-3'). For at undersøge effekten af KL1- og KL2-interaktionerne på denne reaktion, har man indført specifikke mutationer i 5TU KL1 position 7-8, 5TU KL2 position 89-90, t1 KL1 position 25-26, og t1 KL2 position 72-73. Effekten af mutationerne på aktiviteten af enzymet er vist på figuren herunder, hvor mutationer er indikeret i rød og `-` angiver at t1 ikke er til stede.
 
-![](figures/te_24/opgave-1-figur-2.png){width="6.6930555555555555in" height="3.5034722222222223in"}
+![](figures/te_24/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Hvad viser forsøget om vigtigheden af t1? Kom desuden med en forklaring på resultaterne observeret for de specifikke mutationer af KL1 og KL2.
 
@@ -70,7 +70,7 @@ R-enzymet EcoRI fra bakterien *Escherichia coli* er et af de mest kendte og anve
 
 Nedenfor ses resultatet af et enzymatisk forsøg, hvor 160 pM EcoRI blev inkuberet med forskellige koncentrationer af mærket DNA ved 27°C. Initielle reaktionshastigheder blev bestemt ved lineær regression af datapunkter målt fra 5-20 min.
 
-![](figures/te_24/opgave-2-figur-2.png){width="3.844659886264217in" height="3.132891513560805in"}
+![](figures/te_24/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 Det indsatte plot er et såkaldt Eadie-Hofstee diagram, hvor den katalytiske parameter K~m~ kan bestemmes som den negative hældning ("minus hældningen").
 
@@ -226,7 +226,7 @@ Enzymet UDP-N-acetylglucosamine diphosphorylase (UAP) katalyserer reaktioner af 
 
 Strukturen af **TbUAP** fra parasitten *Trypanosoma brucei* (en parasit, der forårsager sovesyge) er bestemt eksperimentelt i kompleks med en inhibitor. I figuren nedenfor er vist det centrale nukleotid bindende domæne i TbUAP som cartoon.
 
-![](figures/te_24/opgave-5-figur-2.png){width="3.072580927384077in" height="2.308182414698163in"}
+![](figures/te_24/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvilken foldningsklasse tilhører det nukleotidbindende domæne?
 

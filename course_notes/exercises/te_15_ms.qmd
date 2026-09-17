@@ -9,7 +9,7 @@ I denne opgave skal vi arbejde med teorien bag det RNase-assay, der benyttes ved
 
 Strukturen af methylenblåt samt stoffets udseende er vist nedenfor.
 
-![](figures/te_15/opgave-1-figur-1.png){width="4.125in" height="1.28125in"}            ![methylene-blue-powder-500x500](figures/te_15/opgave-1-figur-2.jpeg){width="3.03125in" height="2.1875in"}
+![](figures/te_15/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}            ![methylene-blue-powder-500x500](figures/te_15/opgave-1-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
 
  
 
@@ -23,7 +23,7 @@ Methylenblåt interagerer kraftigt med nukleinsyrer, men kun når disse er struk
 
 Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som vist i figuren nedenfor, hvor den lille, indsatte figur viser spektre for RNA-bundet (II) og frit methylenblåt (I) og den store figur differensspektre for forskellige koncentrationer af RNA (tallene 1-8 på graferne angiver at der er tilsat mellem 0.1 og 0.8 mg/ml):
 
-![methylenblue_absorption](figures/te_15/opgave-1-figur-3.gif){width="4.5in" height="3.8125in"}
+![methylenblue_absorption](figures/te_15/opgave-1-figur-3.gif){.lightbox width="90%" fig-align="center"}
 
  
 

@@ -339,8 +339,8 @@ Både 3 kDa-fragmentet og dipeptidet må indeholde hydrophile og hydrophobe grup
 
 ### Lokalisér fragmenter i sekvensen
 
-![](figures/te_19/opgave-5-figur-2.png){width="5.2647058180227475in" height="4.072103018372704in"}
-![](figures/te_19/opgave-5-figur-3.png){width="5.617646544181977in" height="4.956792432195975in"}
+![](figures/te_19/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
+![](figures/te_19/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 Aminosyresekvensen af CNBr-fragmentet og dipeptidet kan ses i Tabel 1 nedenfor mens sammensætningen af fragmenterne er vist i Tabel 2. Begge fragmenter indeholder et komplekst glykolipid og udover komponenterne listet i tabellerne indeholder fragmenterne også glycerol og phosphat. Glykosamine var desuden på formen N-acetyl glukosamine.
 

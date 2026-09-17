@@ -43,11 +43,11 @@ Enkeltstrenget DNA binder også til RNase A, men kløves ikke. Forklar dette.
 
 ::: {.callout-solution}
 
-**1.**  ![RnaseA_simple_reaction](figures/te_09/opgave-1-figur-1.png){width="4.1875in" height="3.625in"}
+**1.**  ![RnaseA_simple_reaction](figures/te_09/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **2.**  2'-OH-gruppen agerer som nukleofil.\
     \
-    ![RnaseA_cyclic_intermediate](figures/te_09/opgave-1-figur-2.png){width="1.5625in" height="1.71875in"}
+    ![RnaseA_cyclic_intermediate](figures/te_09/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **3.**  Et vandmolekyle opløser det cykliske intermediat ved at lave et nukleofilt angreb på phosphatatomet. Samme reaktion som i 1. trin, blot med vand som nukleofil.
 
@@ -255,7 +255,7 @@ Vi vil undersøge aktiviteten af RNase A, RNase S, S-peptid samt S-protein samt 
 **1.**  Se det færdige script på brightspace. Subtilisin kløver efter en Ala (residue 20), hvilket er usædvanligt, at proteasen normalt foretrækker store hydrofobe sidekæder i S1-lommen. Alanin er dog stadig hydrofob og da den er lille kan den stadig passe ind i subtilisins specificitetslomme. Kløvningssitet sidder yderligt på RNase A i et loop, der formentlig giver god adgang for proteasen. Det er dog bemærkelsesværdigt at subsilisin ikke kløver efter Ala19, der sidder lige før og er eksponeret på samme måde. Dette fremhæver hvor svært det kan være at forudsige proteasers kløvningssites, da de afhænger meget af den præcise strukturelle og sekvensmæssige kontekst, hvori den genkendte aminosyre indgår.
 
 **2.**  Der er flere kraftige, ikke-kovalente interaktioner mellem det røde S-peptid og det grønne S-protein og desuden er S-peptidets helix kilet fast mellem to dele af S-proteinet. Det er derfor sandsynligt at de to dele forbliver sammen efter kløvning, da S-peptidet i langt højere grad holdes fast af ikke-kovalente interaktioner end den enkelte kobling af hovedkæden efter residue 20.\
-    ![S_protein_S_peptide_interactions](figures/te_09/opgave-4-figur-1.png){width="3.46875in" height="2.78125in"}
+    ![S_protein_S_peptide_interactions](figures/te_09/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **3.**  Se det færdige script her under. S-peptidet indeholder His12, som vi ved er central for enzymets aktivitet. Derfor vil hverken S-peptid eller S-protein være aktivt i isoleret form, da ingen af dem indeholder et komplet aktivt site. Det kløvede RNase A, kaldet RNase S, er til gengæld ganske aktivt på trods af at det består af to kæder. 
 
