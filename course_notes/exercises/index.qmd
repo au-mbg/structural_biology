@@ -2,6 +2,10 @@
 title: "Øvelser"
 sidebar: exercises-sidebar
 format-links: false
+listing: 
+    contents: te_*.qmd    
+    type: table
+    fields: [title]
 ---
 
 Brug sidebaren til at navigere mellem de enkelte øvelsessæt.

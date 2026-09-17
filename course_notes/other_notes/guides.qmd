@@ -1,7 +1,17 @@
 ---
-title: "PyMOL Guides"
+title: "Guides"
 sidebar: pymol-sidebar
 ---
+
+## Installation guides
+
+| Guide | Description |
+|-------|-------------|
+| [Pixi](installation_pixi.qmd) | Package manager for installing PyMOL etc. |
+| [PyMOL 3](installation_pymol.qmd) | Visualization tool used in exercises. |
+| [VS Code](installation_vscode.qmd) | Code editor for making scripts |
+
+## PyMOL Guides
 
 These guides provide an introduction to molecular visualization and scripting with PyMOL 3.
 

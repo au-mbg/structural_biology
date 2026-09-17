@@ -2,6 +2,8 @@
 title: "Eksamensopgaver"
 sidebar: exam_sets-sidebar
 format-links: false
+listing: 
+    contents: exam_*.qmd    
+    type: table
+    fields: [date, title]
 ---
-
-Brug sidebaren til at navigere mellem de enkelte eksamensssæt.
