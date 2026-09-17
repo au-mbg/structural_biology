@@ -64,11 +64,9 @@ Se scene 002 i PyMOL session fil: 1_K+-kanalen.pse
 :::
 
 3.  Prøv at skifte mellem visning af de forskellige tilstande vha.
-    knapperne i bunden af vinduet:\
-    \
-    ![A white circle with a triangle in it AI-generated content may be
-    incorrect.](media/image6.png){width="1.4444444444444444in"
-    height="0.28888888888888886in"}
+    knapperne i bunden af vinduet:
+
+    ![](new_media/image6.png){width="30%"}
 
 ::: {.callout-solution}
 :::
@@ -261,7 +259,7 @@ PyMOL session fil: 2_Myoglobin.pse
 :::
 
 
-## Ikonisk DNA og designede krystaller
+## Ikonisk DNA og designede krystaller 
 
 DNA er uden tvivl et af de smukkeste molekyler i levende celler. Dens
 yndefulde helix er behagelig for øjet. DNA er også et af de mest
@@ -338,10 +336,7 @@ fra PDB-indgang
 den første krystalstruktur i et DNA-gitter, der er fuldstændig designet
 fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
 
-![Three engineered strands of DNA assemble into a
-triangular module (top) that self-assembles into a two-dimensional
-lattice (bottom).](media/image9.jpeg){width="1.5854166666666667in"
-height="2.4923611111111112in"}
+![Three engineered strands of DNA assemble into atriangular module (top) that self-assembles into a two-dimensionallattice (bottom).](new_media/image9.jpeg){width="90%"}
 
 6.  Find information om 3GBI på RCSB-website (<https://www.rcsb.org/>).
     Hvilken opløsning blev den bestemt ved? Hvor mange DNA-strenge er
@@ -389,12 +384,11 @@ Se PyMOL session fil: 3_DNA.pse
 
 ## Insulin
 
+![Insulin and proinsulin, with A-chain in green, B-chain in blue and disulfide linkages in yellow.](new_media/image10.jpeg){width="80%"}
+
 Vores celler kommunikerer via et molekylært postsystem: blodet er
 postvæsenet, og hormonerne er brevene. Insulin er et af de vigtigste
-hormoner, der bærer beskeder, der ![Insulin and proinsulin, with A-chain
-in green, B-chain in blue and disulfide linkages in
-yellow.](media/image10.jpeg){width="2.107638888888889in"
-height="1.8444444444444446in"}beskriver, hvor meget sukker der er
+hormoner, der bærer beskeder, der beskriver, hvor meget sukker der er
 tilgængeligt i blodet fra øjeblik til øjeblik. Insulin produceres i
 bugspytkirtlen og tilsættes blodet efter måltider, når sukkerniveauet er
 højt. Dette signal spreder sig derefter gennem hele kroppen og binder

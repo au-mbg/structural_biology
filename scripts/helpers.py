@@ -13,7 +13,7 @@ class QMDDocument:
 
     def find_figures(self) -> list[Path]:
         pattern = r"!\[.*?\]\((.*?)\)"
-        matches = re.findall(pattern, self.content)
+        matches = re.findall(pattern, self.content, flags=re.DOTALL)
         figure_paths = []
         for match in matches:
             figure_path = self.path.resolve().parent / match
