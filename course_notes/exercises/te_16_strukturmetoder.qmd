@@ -1,5 +1,5 @@
 ---
-title: "TØ 14 -- Strukturmetoder"
+title: "TØ 16 -- Strukturmetoder"
 ---
 {{< pagebreak >}}
 

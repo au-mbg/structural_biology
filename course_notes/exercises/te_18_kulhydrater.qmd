@@ -1,5 +1,5 @@
 ---
-title: "TØ 16 -- Kulhydrater og glykosylering af proteiner"
+title: "TØ 18 -- Kulhydrater og glykosylering af proteiner"
 ---
 {{< pagebreak >}}
 

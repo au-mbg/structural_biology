@@ -1,5 +1,5 @@
 ---
-title: "TØ 11 -- Binding og genkendelse"
+title: "TØ 10 -- Binding og genkendelse"
 ---
 {{< pagebreak >}}
 

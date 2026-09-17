@@ -1,5 +1,5 @@
 ---
-title: "TØ 13 -- Enzymregulering"
+title: "TØ 12 -- Enzymregulering"
 ---
 {{< pagebreak >}}
 
