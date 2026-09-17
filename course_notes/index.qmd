@@ -3,4 +3,19 @@ title: "Strukturbiologi TØ"
 format-links: false
 ---
 
-Velkomst til øvelsessiderne for strukturbiologi. Brug sidebaren til at navigere mellem de enkelte øvelsessæt.
+Velkomst til øvelsessiderne for strukturbiologi. 
+
+## Øvelser
+
+Øvelserne til TØ kan findes [her](exercises/index.qmd) eller ved at klikke på banneret i toppen af siden. 
+
+## Guides
+
+Guides til opsætning og brug af PyMOL kan findes [her](other_notes/guides.qmd).
+
+## Eksamenssæt 
+
+Gamle eksamenssæt kan findes [her](exam_sets/index.qmd).
+
+
+
