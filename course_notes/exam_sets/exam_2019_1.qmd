@@ -422,7 +422,7 @@ interagerer med sukker for U23.
 
 ## Opgave 5
 
-![](media/image47.emf){.lightbox width="90%" fig-align="center"}Forskere har udviklet et stof X, som kan binde til
+![](media/image47.png){.lightbox width="90%" fig-align="center"}Forskere har udviklet et stof X, som kan binde til
 og inhibere en bestemt klasse af proteaser. Dette er illustreret i
 figuren til højre, der viser hvordan X interagerer med enzymets
 S~1~^\'^- og S~2~^\'^-bindingssteder. På figuren befinder X sig indenfor

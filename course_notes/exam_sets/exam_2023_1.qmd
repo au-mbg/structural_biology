@@ -253,9 +253,9 @@ på 161 mM.
 
 Svar:
 
-![](media/image144.emf){.lightbox width="90%" fig-align="center"}
+![](media/image144.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image145.emf){.lightbox width="90%" fig-align="center"}
+![](media/image145.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** I et laboratorieforsøg med Na^+^-kanalen fandt man en
 variant, L32D, som forblev permeabel overfor Na^+^ efter aktivering. I

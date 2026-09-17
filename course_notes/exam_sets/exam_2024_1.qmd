@@ -360,7 +360,7 @@ binding mellem Ser Cβ, Oγ og P er vist.
 
 ![](media/image167.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image168.emf){.lightbox width="90%" fig-align="center"}
+![](media/image168.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Angiv først en liste med de tre inhibitorer (DIPF,
 paraoxon-ethyl og paraoxon-methyl) fra svagest til stærkest inhibitor.

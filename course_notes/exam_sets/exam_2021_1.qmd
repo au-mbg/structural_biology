@@ -203,7 +203,7 @@ nedenfor til venstre) og GDP. Figuren til højre viser området omkring
 det aktive site, hvor den angivne H^+^ stammer fra 3\'-OH-gruppen på
 GDP.
 
-![](media/image97.emf){.lightbox width="90%" fig-align="center"}
+![](media/image97.png){.lightbox width="90%" fig-align="center"}
 ![](media/image98.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvordan adskiller AMPCPP sig fra ATP og hvad kan være
@@ -252,7 +252,7 @@ angivet nedenfor.
   5.0      6.1379          1.7759
   -----------------------------------------
 
-![](media/image99.emf){.lightbox width="90%" fig-align="center"}
+![](media/image99.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Beregn og kommentér graden af kooperativitet i
 aktiviteten overfor hhv. GDP og GTP. Benyt hæmoglobins binding til ilt

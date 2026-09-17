@@ -119,7 +119,7 @@ På figuren nedenfor (A) er data tilpasset enten ligning 1 ( ) eller
 ligning 2 ( ). Den indsatte figur fokuserer på de laveste \[Thr\]
 værdier.
 
-![](media/image77.emf){.lightbox width="90%" fig-align="center"}
+![](media/image77.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvilken ligning passer bedst og hvad fortæller det om
 reaktionen? Tilpasning til ligning 1 giver *n* = 1,27 ± 0,10 og *K* =
@@ -142,7 +142,7 @@ reaktionshastighed. Δ*F*/*F*~max~ antager værdier mellem 0 og 1 og
 $\frac{\mathrm{\Delta}F}{F_{\max}} = \frac{{\lbrack\alpha AB\rbrack}^{n}}{{\lbrack\alpha AB\rbrack}^{n} + {K_{D}}^{n}}$
 (1b)
 
-![](media/image78.emf){.lightbox width="90%" fig-align="center"}
+![](media/image78.png){.lightbox width="90%" fig-align="center"}
 
 ![](media/image80.png){.lightbox width="90%" fig-align="center"}
 
@@ -161,9 +161,9 @@ funktion af \[Val\] ved forskellige faste koncentrationer af Ile (D).
 Der kan ses bort fra nedgangen i aktivitet ved høj \[Val\] og antages at
 aktivitet er konstant.
 
-![](media/image82.emf){.lightbox width="90%" fig-align="center"}
+![](media/image82.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image84.emf){.lightbox width="90%" fig-align="center"}
+![](media/image84.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Estimér den nye værdi for *K*~D~ ud fra data i (C) og
 forklar ud fra din viden om enzymet hvorfor Ile har denne effekt på

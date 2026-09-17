@@ -106,7 +106,7 @@ katalytiske roller har de to sidekæder?
 Svar: Det følger flg. mekanisme: Her er Glu212 en nukleofil katalysator
 mens Glu217 er en generel syre/base.
 
-![](media/image55.emf){.lightbox width="90%" fig-align="center"}
+![](media/image55.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvorfor er det nødvendigt for enzymet at påvirke
 pK~a~-værdien af Glu217 og i hvilken retning ændres den?
@@ -239,7 +239,7 @@ eller wild-type \"WT\" proteiner med \[^32^P\]-ATP og K^+^ i 30
 minutter, hvorefter prøverne separeres med SDS-PAGE og visualiseres med
 auto-radiografi (vist nedenfor).
 
-![](media/image56.emf){.lightbox width="90%" fig-align="center"}
+![](media/image56.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3**. Hvilken type aminosyrerest er 386 højst sandsynligt og
 hvorfor er den vigtig for transportfunktionen?

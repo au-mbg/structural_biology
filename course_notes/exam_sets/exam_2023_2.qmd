@@ -311,7 +311,7 @@ junction. De 3 hairpins har tetraloop. Hairpin 2 har G bulge. Hairpin 3
 har asymmetrisk bulge med 3 nukleotider på 5\' side og 2 nukleotider på
 3\' side.
 
-![](media/image9.emf){.lightbox width="90%" fig-align="center"}
+![](media/image9.png){.lightbox width="90%" fig-align="center"}
 
 Højre side af figuren herover viser resultatet af et forsøg, hvor
 fluorescensen fra Spinach-DFHBI komplekset måltes som funktion af

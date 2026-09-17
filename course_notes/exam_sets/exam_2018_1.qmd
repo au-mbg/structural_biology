@@ -340,7 +340,7 @@ kulstofatomerne).
 
 ![](media/image26.png){.lightbox width="90%" fig-align="center"}**2**
 
-![](media/image27.emf){.lightbox width="90%" fig-align="center"}
+![](media/image27.png){.lightbox width="90%" fig-align="center"}
 
 ![](media/image28.png){.lightbox width="90%" fig-align="center"}
 
@@ -355,7 +355,7 @@ Aktiviteten af enzymet carbonisk anhydrase (CA) hæmmes aktiviteten af
 anionen trithiocarbonat (CS~3~^2-^). I strukturen af komplekset mellem
 CA og CS~3~^2-^ er anioninen koordineret på følgende vis:
 
-![](media/image29.emf){.lightbox width="90%" fig-align="center"}
+![](media/image29.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Ud fra dit kendskab til strukturen og mekanismen for
 CA, diskutér hvilken slags inhibitor CS3^2-^ er, og hvorfor stoffet
@@ -399,7 +399,7 @@ Nedenfor er vist resultatet af et forsøg med gelfiltrering af STH og
 receptordomænerne af RTK1 og RTK2 både hver for sig (grå, rød og blå
 kurver) og sammen (grøn).
 
-![](media/image30.emf){.lightbox width="90%" fig-align="center"}
+![](media/image30.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Foreslå på baggrund af dette eksperiment en sandsynlig
 aktiveringsmekanisme for receptorkinaserne RTK1 og RTK2

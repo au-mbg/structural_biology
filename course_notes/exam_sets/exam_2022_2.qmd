@@ -126,7 +126,7 @@ ALK5 + ligand. Der injiceres ligeledes tre proteiner med kendte
 molekylevægte på 20, 66 og 121 kDa som standarder for at kalibrere
 søjlen.
 
-![](media/image129.emf){.lightbox width="90%" fig-align="center"}
+![](media/image129.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hvad eksperimentet viser og foreslå en
 aktiveringsmekanisme for ALK5 baseret på dette resultat.

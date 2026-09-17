@@ -568,7 +568,7 @@ Svar:
 
 ![](media/image208.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image209.emf){.lightbox width="90%" fig-align="center"}
+![](media/image209.png){.lightbox width="90%" fig-align="center"}
 
 Eₙₐ = 60.6 mV, (ved 37 °C = 310 K, z = +1)
 
