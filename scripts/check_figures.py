@@ -2,7 +2,7 @@ from pathlib import Path
 from helpers import QMDDocument, ROOT
 from rich.console import Console
 
-EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg"]
+EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg", ".gif"]
 EXCLUDE = ['_site', '.quarto']
 
 def relative_to_root(path: Path) -> Path:
