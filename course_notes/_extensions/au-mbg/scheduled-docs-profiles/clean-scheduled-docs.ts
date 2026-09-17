@@ -1,8 +1,12 @@
 
 import { existsSync } from "https://deno.land/std/fs/mod.ts";
+import { readConfig, readScheduledDocs, removeTempDir } from "./scheduled-docs.ts";
 
-// Check for _schedule.yml in project root - silently exit if not found
-if (!existsSync("_schedule.yml")) {
+const configParams = await readConfig();
+const ymlPath = configParams['path-to-yaml']
+
+// Clean up the placeholder created when no applicable schedule exists.
+if (!existsSync(ymlPath)) {
     // Clean up the placeholder draft-list.yml we might have created
     if (existsSync("scheduled-docs_files/draft-list.yml")) {
         try {
@@ -23,12 +27,6 @@ if (!existsSync("_schedule.yml")) {
     Deno.exit(0);
 }
 
-// Import external libraries
-import { readConfig, readScheduledDocs, removeTempDir } from "./scheduled-docs.ts";
-
-// Get parameters
-const configParams = await readConfig();
-const ymlPath = configParams['path-to-yaml']
 const scheduledDocsKey = configParams['scheduled-docs-key'];
 const tempFilesDir = configParams['temp-files-dir'];
 

@@ -38,6 +38,29 @@ _HREF = re.compile(r'^\s*-\s+href:\s*["\']?([^"\'#]+)')
 _DRAFT = re.compile(r"^\s+draft:\s*(true|false)\s*$", re.IGNORECASE)
 
 
+def parse_profiles(profile_value: str | None) -> tuple[str, ...]:
+    """Return active Quarto profiles in their declared precedence order."""
+    return tuple(
+        profile.strip()
+        for profile in (profile_value or "").split(",")
+        if profile.strip()
+    )
+
+
+def profile_schedule_path(base_path: Path, profile: str) -> Path:
+    """Insert a profile name before the schedule file extension."""
+    return base_path.with_name(f"{base_path.stem}-{profile}{base_path.suffix}")
+
+
+def resolve_schedule_path(base_path: Path, profile_value: str | None) -> Path:
+    """Select the first existing profile schedule, or the base schedule."""
+    for profile in parse_profiles(profile_value):
+        candidate = profile_schedule_path(base_path, profile)
+        if candidate.is_file():
+            return candidate
+    return base_path
+
+
 def read_schedule(path: Path) -> Schedule:
     """Parse the deliberately small scheduled-docs schema used by this repository."""
     draft_after: str | None = None

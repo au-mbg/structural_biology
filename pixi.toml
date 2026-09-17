@@ -14,20 +14,24 @@ dev = {features=["git-tools"]}
 
 [tasks.preview]
 args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
-cmd = "python scripts/render_profile.py preview {{mode}}"
+cmd = "quarto preview course_notes --profile {{mode}},preview --render html"
 description = "Preview the course notes in either exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render]
 args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
-cmd = "python scripts/render_profile.py render {{mode}}"
+cmd = "quarto render course_notes --profile {{mode}}"
 description = "Render the course notes in either exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render-all]
-cmd = "python scripts/render_profile.py render-all"
-depends-on = ["fetch-fonts"]
+cmd = "quarto render course_notes --profile exercise && quarto render course_notes --profile solution"
+depends-on = ["clean", "fetch-fonts"]
 description = "Clean and render the course notes in both exercise and solution mode"
+
+[tasks.test-scheduling]
+cmd = "python -m unittest tests/test_scheduling.py"
+description = "Test release calendars, profile selection, and output purging"
 
 [tasks.check-pymol-scripts]
 cmd = """python scripts/check_scripts.py --directory course_notes/exercises/pymol_scripts;

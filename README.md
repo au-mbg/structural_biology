@@ -123,12 +123,24 @@ With `pixi` installed the site can be rendered or previewed using the commands
 - `pixi run render-all`: Renders both public site versions (not live).
 - `pixi run clean`: Cleans up any site artifacts. 
 
-Direct `quarto render` from `course_notes/` is also a supported student-default
-render. Use the Pixi commands for previews and solution builds: they safely select
-the appropriate calendar and restore the student calendar even if Quarto fails.
-`pixi run preview` shows drafts deliberately, so release behaviour must be checked
-with a render and the generated `_site` directory. Direct `quarto preview` is not
-supported because it bypasses the preview-mode safeguards in the Pixi wrapper.
+Direct Quarto commands are also supported. From the repository root, use
+`quarto render course_notes --profile exercise` or
+`quarto render course_notes --profile solution`; from `course_notes/`, omit the
+project path. The scheduling extension selects the applicable calendar without
+moving or replacing files.
+
+`pixi run preview` combines the selected release profile with the `preview`
+profile and performs an initial HTML-only rebuild. This makes scheduled pages
+visible for authoring, including pages that a previous publication render left
+as blank draft shells, without rebuilding the PDF and Word formats. The
+equivalent direct commands are
+`quarto preview course_notes --profile exercise,preview --render html` and
+`quarto preview course_notes --profile solution,preview --render html`.
+
+Release behaviour must be checked with a complete render and the generated
+`_site` directory. Only complete project renders run the final cleanup of
+unreleased HTML, PDF, and Word outputs; the `preview` profile must not be used
+for publication renders.
 
 ### Manual installation
 
@@ -150,11 +162,18 @@ This is configured through Github Actions, see [publish.yml](.github/workflows/p
 
 ### Scheduled exercise releases
 
-The course uses the unmodified `scheduled-docs` extension. The editable release
-calendars are:
+The course uses `scheduled-docs-profiles` 1.0.0, an MIT-licensed derivative of
+`qmd-lab/scheduled-docs` 0.6.0 maintained in
+[`au-mbg/quarto-teaching-tools`](https://github.com/au-mbg/quarto-teaching-tools/tree/main/extensions/scheduled-docs-profiles).
+The original extension was created by Andrew Bray; its license and attribution
+are included with the vendored extension. The editable release calendars are:
 
 - `course_notes/_schedule.yml` for student exercises.
 - `course_notes/_schedule-solution.yml` for the public solution profile.
+
+For each active profile the extension looks for `_schedule-<profile>.yml` and
+falls back to `_schedule.yml`. Thus the exercise profile uses the base calendar
+and the solution profile automatically uses `_schedule-solution.yml`.
 
 Dates use ISO `YYYY-MM-DD` notation and UTC. In the provisional 2026 calendar,
 each pair of exercises is released to students one week before its course-plan

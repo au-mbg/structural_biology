@@ -6,9 +6,9 @@ import os
 from pathlib import Path
 
 try:
-    from .schedule_support import read_schedule
+    from .schedule_support import parse_profiles, read_schedule, resolve_schedule_path
 except ImportError:  # Executed as a repository script by Quarto.
-    from schedule_support import read_schedule
+    from schedule_support import parse_profiles, read_schedule, resolve_schedule_path
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,14 +17,20 @@ FORMATS = (".html", ".pdf", ".docx")
 
 
 def purge_unreleased(profile: str | None = None) -> list[Path]:
-    if os.environ.get("STRUCTURE_BIOLOGY_QUARTO_COMMAND") == "preview":
-        print("Preview mode: keeping draft outputs for Quarto live reload")
+    profile_value = profile if profile is not None else os.environ.get("QUARTO_PROFILE", "")
+    active_profiles = parse_profiles(profile_value)
+    if "preview" in active_profiles:
+        print("Preview render: keeping draft outputs")
         return []
 
-    schedule = read_schedule(COURSE_ROOT / "_schedule.yml")
-    active_profile = profile if profile is not None else os.environ.get("QUARTO_PROFILE", "")
+    if os.environ.get("QUARTO_PROJECT_RENDER_ALL") != "1":
+        print("Incremental render: keeping draft outputs")
+        return []
+
+    schedule_path = resolve_schedule_path(COURSE_ROOT / "_schedule.yml", profile_value)
+    schedule = read_schedule(schedule_path)
     output_root = COURSE_ROOT / "_site"
-    if active_profile == "solution":
+    if "solution" in active_profiles:
         output_root /= "instructor"
 
     removed: list[Path] = []
