@@ -12,9 +12,9 @@ title: "TØ 6 -- Nukleinsyrestruktur 1"
 I denne opgave skal I lære hvordan proteiner genkender DNA (eller omvendt) for at kunne indgå i en specifik ("romantisk") binding til hinanden. Hemmeligheden bag denne genkendelse kan findes i Liljas "Textbook of Structural Biology" afsnit 10.2, hvor den specifikke interaktion mellem aminosyrer og DNA-baser beskrives. Aminosyrerne kan genkende både major og minor groove via den såkaldte "groove code", der er vist i Liljas figur 10.18. Som det ses i figuren herunder er der eksponerede H-bindings-donorer og acceptorer i både major og minor groove og det er disse, som aminosyrerne kan genkende og binde til:
 
 ::: {layout-ncol=1}
-![Figur 1](media/image21.png){width="80%" fig-align="center"}
+![Figur 1](figures/te_06/opgave-1-figur-1.png){width="80%" fig-align="center"}
 
-![Figur 2](media/image22.png){width="80%" fig-align="center"}
+![Figur 2](figures/te_06/opgave-1-figur-2.png){width="80%" fig-align="center"}
 :::
 
 ### Forklar specificitet i major groove
@@ -211,7 +211,7 @@ Myc-Max og Mad-Max H-bindingerne er ikke helt ens, hvilket skyldes at de er hete
 
 Transskriptionsfaktor-lignende effector nukleaser (TALENs) binder specifikke DNA-sekvenser vha. en række DNA-bindende domæner kaldet TALE-repeats. TALEN-proteiner kan designes til at genkende og kløve specifikke DNA-sekvenser og kan dermed anvendes til genom-redigering (genome editing). TALE-proteiner er omtalt i Berg Biochemistry, udgave 10, side 292, og opbygningen kan ses i figur 9.37 (se nedenstående figur).
 
-![BER_11467_05_F38](media/image23.png){width="80%" fig-align="center" .lightbox}
+![BER_11467_05_F38](figures/te_06/opgave-5-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 ### Find TALE-proteinets bindingsgroove
 

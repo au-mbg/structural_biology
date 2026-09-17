@@ -191,7 +191,7 @@ Den kvaternære struktur består af fire protomere og er dermed en tetramer. De 
 Diskuter fordelingen af aminosyrer på hjulet med hensyn til deres fysisk/kemiske egenskaber.
 
 ::: {.callout-solution}
-![pepwheel.1](media/image17.png){width="80%" fig-align="center" .lightbox}
+![pepwheel.1](figures/te_05/opgave-4-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 På hjulet ses at der fra kl 10-16 hoved sageligt er polære sidekæder, mens der overvejende er hydrophobe sidekæder på resten af hjulet.
 :::
@@ -229,7 +229,7 @@ Brug `spectrum` kommandoen (spectrum count, rainbow, 1AUG) på én af kæderne.
 ::: {.callout-solution}
 Topologisk foldningsdiagram for PGP-I:
 
-![](media/image18.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_05/opgave-4-figur-2.png){width="80%" fig-align="center" .lightbox}
 :::
 
 ### Diskuter katalytisk triade og switchpoint
@@ -254,9 +254,9 @@ Vi har i en tidligere opgave stiftet bekendtskab med følgende to proteiner:
 
 ::: {#fig-proteins layout-ncol=2}
 
-![Human myoglobin](media/image19.png){width="100%" .lightbox}
+![Human myoglobin](figures/te_05/opgave-5-figur-1.png){width="100%" .lightbox}
 
-![*E. coli* β-galactosidase](media/image20.png){width="100%" .lightbox}
+![*E. coli* β-galactosidase](figures/te_05/opgave-5-figur-2.png){width="100%" .lightbox}
 
 De to proteiner
 :::

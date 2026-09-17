@@ -49,7 +49,7 @@ SRP (signal recognition particle) opfanges og translationen foregår direkte i
 
 Nedenfor vises et hydropatiplot for SERCA.
 
-![](media/image89.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_20/opgave-2-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 Estimér antallet af transmembrane helicer i SERCA og deres omtrentlige placering. Forklar hvordan du når frem til dette.
 
@@ -158,7 +158,7 @@ Asp351 er dephosphoryleret, hvilket betyder pumpen falder tilbage i den højaffi
 
 Na+-K+-pumpen (Na+-K+-ATPasen) findes som et integreret membranprotein i pattedyr og dets 1020-aminosyrerester lange sekvens er blevet bestemt ud fra cDNA. I et eksperiment brugte man ekstrakt fra leverceller til en proteomanalyse bestående af todimensionel gelelektroforese efterfulgt af identifikation af enkelte proteinspots ved trypsinering og massespektrometrisk analyse. En del af den todimensionelle gel er vist nedenfor.
 
-![](media/image90.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_20/opgave-5-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 Både spots A og B matchede aminosyresekvensen for Na+-K+-ATPasen, men en detaljeret analyse af massespektrene afslørede en interessant forskel: Et fragment med massen 1947.22 Da fra spot A kunne ikke genfindes blandt peptiderne i spot B. Desuden gav spot B et fragment på 1867.89 Da, der meget præcis passer med massen af peptidet `NLEAVETLGSTSTICSDK` i Na+-K+-ATPasen.
 

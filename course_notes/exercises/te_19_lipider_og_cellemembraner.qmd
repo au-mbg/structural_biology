@@ -27,7 +27,7 @@ Du ville forvente at bakterierne der har groet ved den højere temperatur har in
 
 Hopanoider er pentacykliske molekyler, der findes i bakterier og visse planter. En typisk hopanoidstruktur er vist nedenfor. Sammenlign strukturen med kolesterol.
 
-![bacteriohopanetetrol](media/image77.png){width="80%" fig-align="center"}
+![bacteriohopanetetrol](figures/te_19/opgave-1-figur-1.png){width="80%" fig-align="center"}
 
 ::: {.callout-solution}
 Som kolesterol så er hopanoider polycykliske stoffer med en rigid, plade-agtig og hydrofob ringstruktur og en hydrofil ende. Den hydrofile -OH gruppe er dog i den modsatte ende af molekylet ift. kolesterol. 
@@ -44,7 +44,7 @@ Hopanoider har samme funktion i bakteriers membran som kolesterol i vores membra
 
 ## Opgave 2. Helical wheel
 
-![](media/image78.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-2-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 Membranspændende helicer består typisk af 18 to 20 aminosyrer.
 
@@ -79,7 +79,7 @@ Ser-Val-Tyr-Asp-Ile-Leu-Glu-Arg-Phe-Asn-Glu-Thr-Met-Asn-His-Ala-Val-Ser-Gly
 ::: {.callout-solution}
 De hydrofobe sidekæder vender mod højre i figuren mens de hydrofile peger mod venstre. Dvs. at helixen er amfiphatisk. 
 
-![](media/image79.png){width="70%" fig-align="center"}
+![](figures/te_19/opgave-2-figur-2.png){width="70%" fig-align="center"}
 :::
 
 
@@ -122,11 +122,11 @@ Helix 97-105 (2 kopier i dimeren) er meget hydrophob helix på den ydersiden (am
 
 Analysér nedenstående hydropatiplot for tilstedeværelse af transmembrane segmenter:
 
-![](media/image80.png){width="70%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-3-figur-1.png){width="70%" fig-align="center" .lightbox}
 
-![](media/image81.png){width="70%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-3-figur-2.png){width="70%" fig-align="center" .lightbox}
 
-![](media/image82.png){width="70%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-3-figur-3.png){width="70%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 Proteinet i (C) har potentielle transmembrane helicer (3 i starten og 1 i slutningen). Dette ses ved at der er brede peaks, der ligger langt over støjniveauet.
@@ -172,7 +172,7 @@ NPCNYATCTG EEYLVKQGID LSPWGLWKNH VALACMIVIF LTIAYLKLLF LKKYS
 
 Hydrofobicitetsanalyse af BCRP giver desuden følgende resultat:
 
-![](media/image83.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-4-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 ### Identificér TM-helicer i BCRP-hydropatiplot
 
@@ -245,7 +245,7 @@ Lav en skitse af BCRP som det er indlejret i cellemembranen. Er N- og C-terminal
 ::: {.callout-solution}
 Peptidet reagerer ikke med antistof hverken i N- eller C-terminalen, der må altså være et helt antal helicer. Position 420, 500 og 575 må desuden være udenfor membranen, idet de opmærkes.
 
-![](media/image85.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-4-figur-2.png){width="80%" fig-align="center" .lightbox}
 :::
 
 
@@ -261,7 +261,7 @@ N338 (NAS) er et site, men formentlig ikke modificeret, da aminosyreresten ligge
 
 For at undersøge om BCRP er glykosyleret, muterede man desuden specifikke asparaginrester. Proteinekstrakter fra celler transfekteret med mutant BCRP blev derefter analyseret ved SDS-PAGE før og efter behandling med PNGase F. Resultatet af analysen vises nedenfor.
 
-![](media/image84.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_19/opgave-4-figur-3.png){width="80%" fig-align="center" .lightbox}
 
 Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit svar.
 
@@ -286,7 +286,7 @@ Hvilken type reaktion antyder navnet at 5'-nucleotidase udfører?
 
 Ved gelfiltrering af det ekstraherede enzym på Sephacryl S-300-søjle under tilstedeværelse af 0.1% Triton X-100 (en detergent), eluerer enzymet svarende til et 150 kDa protein. Uden detergent eluerer enzymet i void-volumen som vist nedenfor.
 
-![Gelfiltrering af 5'-nucleotidase med (fyldte cirkler) eller uden (hule cirkler) Triton X-100 til stede. Pilene angiver positionen af (a) thyroglobulin (670 KDa), (b) ferritin (440 KDa), (c) immunoglobulin G (160 KDa) og (d) serum albumin (68 KDa).  Vo er søjlens void-volumen.](media/image86.png){width="90%" fig-align="center" .lightbox}
+![Gelfiltrering af 5'-nucleotidase med (fyldte cirkler) eller uden (hule cirkler) Triton X-100 til stede. Pilene angiver positionen af (a) thyroglobulin (670 KDa), (b) ferritin (440 KDa), (c) immunoglobulin G (160 KDa) og (d) serum albumin (68 KDa).  Vo er søjlens void-volumen.](figures/te_19/opgave-5-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 Beskriv den rolle, detergenten spiller i oprensningen.
 
@@ -339,8 +339,8 @@ Både 3 kDa-fragmentet og dipeptidet må indeholde hydrophile og hydrophobe grup
 
 ### Lokalisér fragmenter i sekvensen
 
-![](media/image87.png){width="5.2647058180227475in" height="4.072103018372704in"}
-![](media/image88.png){width="5.617646544181977in" height="4.956792432195975in"}
+![](figures/te_19/opgave-5-figur-2.png){width="5.2647058180227475in" height="4.072103018372704in"}
+![](figures/te_19/opgave-5-figur-3.png){width="5.617646544181977in" height="4.956792432195975in"}
 
 Aminosyresekvensen af CNBr-fragmentet og dipeptidet kan ses i Tabel 1 nedenfor mens sammensætningen af fragmenterne er vist i Tabel 2. Begge fragmenter indeholder et komplekst glykolipid og udover komponenterne listet i tabellerne indeholder fragmenterne også glycerol og phosphat. Glykosamine var desuden på formen N-acetyl glukosamine.
 

@@ -61,7 +61,7 @@ PALA er en bisubstrat analog og bør derfor inhibere [kompetitivt]{.underline}.
 
 Stimulering af ATCase-aktiviteten kan observeres under visse eksperimentelle betingelser, som vist nedenfor.\
 \
-![](media/image60.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_12/opgave-2-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 Beskriv kurven og forklar hvad der foregår.
 
@@ -83,7 +83,7 @@ Kig på reaktionspathwayen for threonin, isoleucin og methionin.
 ::: {.callout-solution}
 Pathway ses nedenfor. Trinnet der er blokeret i mutanten er trin C (enzymet hedder homoserine dehydrogenase). Dette medfører at aspartate semialdehyde (ASA) ophobes fordi dannelsen af lysin ikke kan aftage alt det ASA der produceres. Den overskydende ASA, ligner Asp og inhiberer derfor ATCase. ATCase varetager det første (`committede`) reaktionstrin på vej til uracil, der er precursor for både UTP og CTP. Når der tilsættes uracil til vækstmediet er ATCase reaktionen unødvendig og væksten normal.
 
-![](media/image61.jpeg){width="90%" fig-align="center" .lightbox}
+![](figures/te_12/opgave-2-figur-2.jpeg){width="90%" fig-align="center" .lightbox}
 
 Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin sidekæde (Lys-84) koordinerer carboxylsyregruppen i substratet (Asp). Hvis substratanalogen ASA er bundet vil aldehyden danne en Schiff's base med Lys-84 og dermed inaktivere enzymet irreversibelt gennem kovalent modifikation. 
 :::
@@ -153,7 +153,7 @@ Mindre plads i aktivt site, brug for fleksibilitet fra Gly eller S1' site specif
 
 Heparin er en højt sulfateret glycosaminoglycan polymer, der bnder til mange af proteinerne i koagulationskaskaden og påvirker aktiviteten af serpiner som antithrombin. Det bruges indenfor lægevidenskaben til at behandle bl.a. thrombose (dannelse af blodklumper i blodet) og som et additiv til donorblod, for at modvirke koagulation under oplagring. Den kemiske struktur af en heparinenhed er vist nedenfor. 
 
-![](media/image62.png){width="50%" fig-align="center"}
+![](figures/te_12/opgave-4-figur-1.png){width="50%" fig-align="center"}
 
 Hvilken gruppe af stoffer tilhører heparin og hvilke funktionelle grupper indeholder det?
 
@@ -175,22 +175,22 @@ På grund af heparins mange negative ladninger binder det til basiske (positivt 
 
 Vi skal nu visualisere den elektrostatiske overflade. Når man bruge PyMOL-interface tastes; A>generate>vacuum electrostatics>protein contact potential (local). Se figuren forneden.
 
-![](media/image63.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_12/opgave-4-figur-2.png){width="90%" fig-align="center" .lightbox}
 
 Men vi vil ikke bare gøre det i vores PyMOL session. Vi vil have det ind i vores script.
 
 Når man skal bestemme kommandoen for en mere kompliceret funktion vil det ofte være smart åbne en logfil. Det gør man som illustreret for neden ved at gå ind på undermenuen `File`, derefter på `Log File` og til sidst `Open\...`. Så gemmer du det under det ønskede navn, f.eks. `Log-file.pml`.
 
-![](media/image64.png){width="45%" .lightbox}
-![](media/image65.png){width="45%" .lightbox}
+![](figures/te_12/opgave-4-figur-3.png){width="45%" .lightbox}
+![](figures/te_12/opgave-4-figur-4.png){width="45%" .lightbox}
 
 Herefter bruger du A>generate>vacuum electrostatics>protein contact potential (local) igen. Herefter går du ind og lukker logfilen som du ser i figuren forneden.
 
-![](media/image66.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_12/opgave-4-figur-5.png){width="90%" fig-align="center" .lightbox}
 
 Herefter vil du kunne gå ind på log-filen og se kommandoen for den aktion du lige har udført. Denne kan bruges i dit script.
 
-![](media/image67.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_12/opgave-4-figur-6.png){width="90%" fig-align="center" .lightbox}
 
 Positionen af den elektrostatiske overflade beregnes ligesom den vand-tilgængelige overflade og så farves den efter elektrostatisk potentiale. Potentialet beregnes som den tiltrækning (blå) eller frastødning (rød) en negativ punktladning vil opleve hvis den blev placeret på overfladen af proteinet. Beregningen foretages for neutralt pH.
 
@@ -243,7 +243,7 @@ Kræves for at stoppe størkningsprocessen af blod igen. Se Stryer s. 328-331.
 
 Figuren nedenfor viser resultaterne fra et eksperiment, hvor effekten af antithrombin III på factor XIa's proteolytiske funktion blev målt, med og uden heparin tilstede. 
 
-![Effekten af antithrombin III (x-aksen, µM) på factor XIa's proteolytiske aktivitet (ved 8 nM) er angivet langs y-aksen i arbitrære enheder under tilstedeværelse samt uden heparin (0.28 µM).](media/image68.png){width="80%" fig-align="center" .lightbox}
+![Effekten af antithrombin III (x-aksen, µM) på factor XIa's proteolytiske aktivitet (ved 8 nM) er angivet langs y-aksen i arbitrære enheder under tilstedeværelse samt uden heparin (0.28 µM).](figures/te_12/opgave-5-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 Hvordan  påvirker heparin serpinens aktivitet?
 

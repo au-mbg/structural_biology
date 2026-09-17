@@ -110,7 +110,7 @@ Glycin har ikke en sidekæde og er derfor underlagt færre steriske hindringer. 
 
 På figuren for alle aminosyrer er der tre områder med høj forekomst af aminosyrerester. Hvor finder man typisk disse områder i proteiners sekundærstruktur
 
-![fig1-6-Williamson-adapted](media/image7.png){width="100%" fig-align="center" .lightbox}
+![fig1-6-Williamson-adapted](figures/te_04/opgave-2-figur-1.png){width="100%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 
@@ -127,7 +127,7 @@ Nedenfor er vist et Cα-diagram for en struktur farvekodet efter de sædvanlige 
 HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 ```
 
-![Cα-diagram](media/image8.png){width="80%" fig-align="center" .lightbox}
+![Cα-diagram](figures/te_04/opgave-3-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 ### Afmærk N- og C-terminus i diagrammet
 
@@ -178,17 +178,17 @@ Strukturerne af proteinet myoglobin, et immunoglobulin Fab-fragment samt β-gala
 
 ::: {#fig-elephants layout-ncol=3}
 
-![Human myoglobin](media/image9.png){.lightbox width="100%"}
+![Human myoglobin](figures/te_04/opgave-4-figur-1.png){.lightbox width="100%"}
 
-![Fab-fragment](media/image10.png){.lightbox width="100%"}
+![Fab-fragment](figures/te_04/opgave-4-figur-2.png){.lightbox width="100%"}
 
-![β-galactosidase](media/image11.png){.lightbox width="100%"}
+![β-galactosidase](figures/te_04/opgave-4-figur-3.png){.lightbox width="100%"}
 
 :::
 
 Ramachandran-plot for de tre strukturer er mærket A, B, og C og vist herunder.
 
-![Ramachandran plots ](media/image12.png){width="90%" .lightbox}
+![Ramachandran plots ](figures/te_04/opgave-4-figur-4.png){width="90%" .lightbox}
 
 Hvilken struktur hører til hvilket plot?
 
@@ -217,7 +217,7 @@ Bemærk de mange `outliers` for Fab-fragmentet (er angivet med aminosyrens navn 
 Tegn en *trans*-peptidbinding med korrekte bindingslængder (se Berg, 10. udgave, s. 44) i en fast målestok (f.eks. 1 Å : 2 cm). Brug 120° som bindingsvinkel mellem alle tre bindinger til C (carbonyl-kulstof) og N (amid-nitrogen), da begge er *sp^2^*-hybridiserede (dvs. det er plane grupper).
 
 ::: {.callout-solution}
-![](media/image13.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_04/opgave-5-figur-1.png){width="60%" fig-align="center" .lightbox}
 :::
 
 ### Tegn cis-peptidbinding med mål
@@ -246,7 +246,7 @@ Hvad er afstanden mellem de to Cα-atomer i et *cis*-peptid?
 
 Alle GDP-bindende proteiner indeholder et bestemt sekvensmotiv, Asn-Lys-X-Asp (NKXD), og i strukturer af GDP-bindende proteiner finder man at sidekæderne i motivet er ansvarlige for genkendelse af selve guaninbasen. I figuren nedenfor ses et udsnit af det GDP-bindende protein EF-Tu (Elongeringsfaktor Tu), som viser bindingen af guanin- og ribose-delen af GDP (carbon - turkis, nitrogen -- blå, oxygen - rød, svovl -- gul, phosphor - orange, stiplede gule linjer viser hydrogenbindinger med angivelse af donor-acceptor afstand).
 
-![NKXD-GDP](media/image14.png){width="80%" .lightbox fig-align="center"}
+![NKXD-GDP](figures/te_04/opgave-6-figur-1.png){width="80%" .lightbox fig-align="center"}
 
 ### Find X i NKXD-motivet
 
@@ -275,7 +275,7 @@ Aminosyrerest\      Atom\       GDP atom\                H-donor\
 
 EF-Tu er specifik for binding af GDP og binder således hverken nukleotiderne ADP (adenosine diphosphate) eller XDP (xantosine diphosphate). De tilsvarende tre baser er vist nedenfor.
 
-![](media/image15.png){width="80%" .lightbox fig-align="center"}
+![](figures/te_04/opgave-6-figur-2.png){width="80%" .lightbox fig-align="center"}
 
 ::: {.callout-solution}
 Bemærk at det ikke er muligt at skelne mellem Oδ~1~ og Oδ~2~, da de er identiske.
@@ -387,5 +387,5 @@ Skriv et nyt script, der laver en visning af samme figur som før, men m
 {{< include pymol_scripts/script_te4_e7.pml >}}
 ```
 
-![GDPNP-EFtu](media/image16.png){width="80%" .lightbox}
+![GDPNP-EFtu](figures/te_04/opgave-7-figur-1.png){width="80%" .lightbox}
 :::

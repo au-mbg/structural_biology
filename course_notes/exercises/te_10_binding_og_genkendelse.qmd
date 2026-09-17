@@ -78,25 +78,25 @@ Fremstilling af teoretiske bindingskurver.
 
 Vi skal nu udlede og anvende en simpel matematisk funktion til at beskrive kooperativ binding, den såkaldte *Hill ligning* (ikke noget med bakker men derimod den gode *Archibald Hill*). Lad os tage udgangspunkt i en simpel binding af substrat S til protein X:
 
-![](media/image41.png){width="80%" fig-align="center"}
+![](figures/te_10/opgave-3-figur-1.png){width="80%" fig-align="center"}
 
 Her gælder at mætningsgraden Y (altså hvor stor en brøkdel af X proteinerne har bundet S) kan skrives som:
 
-![](media/image42.png){width="80%" fig-align="center"}
+![](figures/te_10/opgave-3-figur-2.png){width="80%" fig-align="center"}
 
 Vi udvider nu denne simple bindingsmodel til at involvere binding af op til *n* molekyler S per X. Vi antager at hvert S kan binde uafhængigt af de andre S'ere:
 
-![](media/image43.png){width="80%" fig-align="center"}
+![](figures/te_10/opgave-3-figur-3.png){width="80%" fig-align="center"}
 
 Vis hvordan dette fører til Hill-ligningen:
 
-![](media/image44.png){width="80%" fig-align="center"}
+![](figures/te_10/opgave-3-figur-4.png){width="80%" fig-align="center"}
 
 ::: {.callout-solution}
 
 Dette følger af det simple sammenhæng 
 
-![](media/image46.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_10/opgave-3-figur-5.png){width="60%" fig-align="center" .lightbox}
 
 :::
 
@@ -106,7 +106,7 @@ Brug Hill ligningen til at plotte en ilt-bindings kurve for et hypotetisk two-su
 
 Nedenstående kurve viser flere forskellige ilt-bindingskurver. Kurve 3 svarer til hemoglobin med fysiologiske koncentrationer af CO~2~ og 2,3-BPG ved pH 7.
 
-![Ilt-bindingskurver](media/image45_cropped.png){width="80%" fig-align="center" .lightbox}
+![Ilt-bindingskurver](figures/te_10/opgave-3-figur-6.png){width="80%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 Det udføres bedst i Python eller Excel med brug af ligningerne i appendix.
@@ -124,7 +124,7 @@ $$
 
 Herved fås
 
-![](media/image47.png){width="80%" fig-align="center"}
+![](figures/te_10/opgave-3-figur-7.png){width="80%" fig-align="center"}
 
 Man ser godt kooperativiteten ved de lave ilt koncentrationer.
 
@@ -217,7 +217,7 @@ Lave et Hill plot udfra disse data. Angiver dette plot kooperativitet? Hvad er H
 ::: {.callout-solution}
 Her skal log (Y/(1-Y)) plottes mod log (p(O~2~)) hvor hældningen giver kooperativitetskoefficienten *n*.
 
-![](media/image49.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_10/opgave-4-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 Hældningen bliver 1.2 så den er svagt kooperativ!
 
@@ -247,7 +247,7 @@ Yderligere studier viser at lampret Hb danner primært dimerer når det ikke er 
 ::: {.callout-solution}
 Her kan vi anvende begreberne fra T og R tilstand med den viden at monomeren binder ilt godt og dimeren ikke binder ilt så godt. Kooperativiteten opstår hvis begyndelsen er sværere end fortsættelsen. Dvs. som udgangspunkt er der mere dimer end monomer i fravær af ilt (ligevægt forskudt mod dimer). Når der øges på ilt trykket, vil det være svært at binde ilt fordi dimeren (som er den dominerende population) binder dårligt og der er ikke meget monomer. Men når ilt binder (enten til monomer eller dimer) vil det forskyde ligevægten over mod monomer, og jo mere ilt der bindes jo mere forskydes ligevægten over til monomer. Herved opstår en (svag) kooperativitet.
 
-![TØ uge 43 lampret](media/image50.png){width="80%" fig-align="center" .lightbox}
+![TØ uge 43 lampret](figures/te_10/opgave-4-figur-2.png){width="80%" fig-align="center" .lightbox}
 :::
 {{< pagebreak >}}
 
@@ -266,7 +266,7 @@ Hvis T/R ændres fra 300/1 til 1/300, betyder det at allerede i fravær af subst
 
 Nedenstående graf viser fraktionen af et allosterisk enzym i R-state (*f*~R~) samt fraktionen af aktive sites bundet til substrat (*Y*) som funktion af substratkoncentration. Hvilken model, MWC eller sekventiel, kan bedst forklare disse resultater?
 
-![Y versus substrate](media/image51.png){width="80%" fig-align="center" .lightbox}
+![Y versus substrate](figures/te_10/opgave-5-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 T/R forholdet sænkes med en faktor c for hvert ekstra substrat der bindes. Dvs. når 1 substrat molekyle er bundet, er T/R forholdet sænket med en faktor 100.
@@ -276,7 +276,7 @@ T/R forholdet sænkes med en faktor c for hvert ekstra substrat der bindes. Dvs.
 
 ATCase blev reageret med tetra-nitromethan (TNM) for at danne en farvet nitrotyrosin sidekæde (λ~max~ = 430 nm) i hvert af dens katalytiske peptidkæder. Absorptionen af denne reporter-gruppe afhænger af dens omkringliggende miljø. En essentiel lysin-sidekæde i hvert katalytisk site var endvidere blevet modificeret for at blokere binding af substrat til de aktive site. Katalytiske trimerer blev herefter blevet dannet ved at blande monomerer af dette dobbelt modificerede enzym og det native enzym for at danne hybridkomplekser. Absorptionen af nitrotyrosin sidekæden blev til sidst målt ved titrering af substratanalogen succinate som vist i figuren nedenfor:
 
-![succinate versus wavelength](media/image52.png){width="80%" fig-align="center" .lightbox}
+![succinate versus wavelength](figures/te_10/opgave-5-figur-2.png){width="80%" fig-align="center" .lightbox}
 
 Hvad er betydningen af ændringen i 430 nm signalet?
 
@@ -288,7 +288,7 @@ Substrat kan ikke binde til den modificerede trimer, så derfor må absorptions�
 
 En anden ATCase-hybrid blev lavet til at undersøge effekt af allosteriske aktivatorer og inhibitorer. Almindelige regulatoriske subunits var blandet med nitrotyrosin-indeholdende katalytiske subunits. Titrering af ATP i fravær af substrat øgede absorbansen ved 430 nm, på samme måde som succinate i forrige spørgsmål. Det modsatte observerede man for CTP, hvor titrering af stoffet i fravær af substrate forårsagede et fald i 430 nm absorption:
 
-![ATP and CTP versus wavelength](media/image53.png){width="80%" fig-align="center" .lightbox}
+![ATP and CTP versus wavelength](figures/te_10/opgave-5-figur-3.png){width="80%" fig-align="center" .lightbox}
 
 Hvad er betydningen af disse ændringer i absorbtionen af reporter-sidekæderne?
 

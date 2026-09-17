@@ -7,7 +7,7 @@ title: "TØ 21 -- Kanaler og porer"
 
 ATP Binding Cassette (ABC)-transportere bruges til næringsimport i bakterier og generelt til eksport i eukaryoter og forbrænder ét ATP-molekyle hver gang der transporteres et substratmolekyle:
 
-![](media/image91.jpeg){width="80%" fig-align="center" .lightbox}
+![](figures/te_21/opgave-1-figur-1.jpeg){width="80%" fig-align="center" .lightbox}
 
 For at vise konformationerne af ABC-transporteren kan man bruge Multidrug resistance protein 1a MRP1a (PDB-ID: `3G5U`) og Permease protein msbA (PDB-ID: `3B60`).
 
@@ -90,7 +90,7 @@ Melatonin (5-methoxy-N-acetyl tryptamine), der også kaldes "mørkets hormon", s
 
 Figuren nedenfor viser samspillet mellem MT1, en G-koblet melatoninreceptor, adenylyl cyclase samt flere membranindlejrede ionkanaler. Binding af melatonin til den G-koblede receptor leder til inhibering af adenylyl cyclase via Gαs og dermed formindsket cAMP-syntese.
 
-![](media/image92.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_21/opgave-2-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 ### Beskriv cAMP's effekt på PKA
 
@@ -154,7 +154,7 @@ Angiv som dit svar en PyMOL-figur, der viser de kæder, der udgør en funktionel
 ::: {.callout-solution}
 KV1.2 har 4 identiske kæder (tetramer).
 
-![](media/image93.jpeg){width="60%" fig-align="center" .lightbox}
+![](figures/te_21/opgave-3-figur-1.jpeg){width="60%" fig-align="center" .lightbox}
 :::
 
 ### Analysér selektivitetsfilter
@@ -185,13 +185,13 @@ Cryo-elektronmikroskopi (cryo-EM) er velegnet til at studere store komplekser og
 
 Til strukturbestemmelse af en bakteriel K^+^-kanal har forskere oprenset og krystalliseret proteinet, derefter indsamlet røntgendiffraktionsdata og beregnet et elektrontæthedskort, hvoraf et udsnit vises nedenfor.
 
-![](media/image94.jpeg){width="70%" fig-align="center" .lightbox}
+![](figures/te_21/opgave-4-figur-1.jpeg){width="70%" fig-align="center" .lightbox}
 
 Beskriv foldningen af peptidkæden, der observeres, herunder om der ses tegn på sekundær struktur og kom med forslag til hvilke fire aminosyrer, der ses på udsnittet. Forklar endeligt hvordan kædens retning (N- til C-terminal) kan bestemmes ud fra tætheden.
 
 
 ::: {.callout-solution}
-![](media/image95.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_21/opgave-4-figur-2.png){width="60%" fig-align="center" .lightbox}
 
 Der ses ikke nogen tydelig sekundær struktur (ingen H-bindinger mellem hovedkædens atomer. Sekvensen er Pro-Leu-His-Ile (nede fra venstre og op mod højre), hvilket ses af sidekædetæthed og positionen af carbonylgrupper:
 :::

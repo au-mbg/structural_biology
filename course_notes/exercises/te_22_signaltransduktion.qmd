@@ -54,9 +54,9 @@ Et forskerhold har identificeret nogle mulige signalmolekyler, som ses forneden 
 
 ::: {#fig-opgave2 layout-ncol=2}
 
-![](media/image96.png){width="40%"}
+![](figures/te_22/opgave-2-figur-1.png){width="40%"}
 
-![](media/image97.png){width="60%"}
+![](figures/te_22/opgave-2-figur-2.png){width="60%"}
 
 Figur 1
 :::
@@ -69,7 +69,7 @@ Et mindre og hydrofobt molekyle (cortisol) kan krydse cellemembranen og binde ti
 
 Den ekstracellulære del af LysM receptorer binder kulhydrat signalmolekyler og disse ectodomæner er opbygget af tre LysM moduler adskilt af svovlbroer. Ved hjælp af røntgenkrystallografi er strukturen af CERK1 ectodomænet fra *Arabidopsis* blevet bestemt i kompleks med liganden chitin (PDB-ID: `4EBZ`). 
 
-![](media/image98.png){width="80%" .lightbox fig-align="center"}
+![](figures/te_22/opgave-2-figur-3.png){width="80%" .lightbox fig-align="center"}
 
 Undersøg strukturen af CERK1 i PyMOL og definer de tre bindingsdomæner (LysM1, LysM2 og LysM3) ud fra svovlbroerne og kald scenen F1. Vis svovlbroerne tydeligt. Undersøg receptoren og ligand-bindingsstedet og identificer CERK1's posttranskriptionelle modifikationer.
 
@@ -86,7 +86,7 @@ Den homologe receptor CERK6 fra planten *Lotus* er ligeledes bestemt dog uden ch
 ::: {.callout-solution}
 **4.**  Chitin liganden (sukkermolekylet) genkendes specifikt via mange hydrogen bindinger fra både sidekæder og hovedkæden. Vandmolekyler i interface er også involveret i bindingen - eksempelvis vanmolekylerne på position: 1052+1072 (+flere, se script)
 
-![](media/image99.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_22/opgave-2-figur-4.png){width="60%" fig-align="center" .lightbox}
 :::
 
 ### Sammenlign chitin-bindingssted
@@ -98,7 +98,7 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne. I Lys
 ::: {.callout-solution}
 Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM2 dog er der et par sidekæder (Asp143) som sterisk clasher med liganden. 
 
-![](media/image100.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_22/opgave-2-figur-5.png){width="60%" fig-align="center" .lightbox}
 :::
 
 ### Forudsig mutationseffekt på ligandbinding
@@ -136,7 +136,7 @@ Adrenalin binding medfører konformationel ændring i receptoren som forplantes 
 
 Strukturen af 5'-guanosine-imidotriphosphate er vist nedenfor. Hvilken effekt vil man forvente stoffet har på muskelcellers respons på adrenalin?
 
-![](media/image101.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_22/opgave-3-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 G-proteinet (Gα) vil forblive på den aktiverede GTP form når det ikke-hydrolyserbare GTP analog er bundet. 5'-guanosine-imidotriphosphate forlænger dermed effekten af adrenalin på muskel cellen.
@@ -156,9 +156,9 @@ Forklar Propranolons virkningsmekanisme og forudse hvad man vil forvente der vil
 
 ::: {#fig-elephants layout-ncol=2}
 
-![Propanolon](media/image102.png)
+![Propanolon](figures/te_22/opgave-3-figur-2.png)
 
-![Adrenalin](media/image103.png)
+![Adrenalin](figures/te_22/opgave-3-figur-3.png)
 
 :::
 
@@ -185,7 +185,7 @@ Et forskerhold har identificeret en patient med en mutation i en meget konserver
 ::: {.callout-solution}
 Hvis mutationen er i aktiverings-loopet på kinasen så kunne aspartat være en fosforylerings-efterligning (mimic) som holder kinasen konstitutiv aktiv.
 
-![](media/image104.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_22/opgave-4-figur-1.png){width="60%" fig-align="center" .lightbox}
 :::
 
 
@@ -223,7 +223,7 @@ Et korrekt svar skal indeholde at Gα og Gβγ er forankret i lipiddobbeltlaget/
 
 Stoffet nedenfor mikroinjiceres dernæst i celler, som udtrykker GPCR-1 receptoren og man måler aktiviteten af Protein kinase A. Forklar hvorfor stoffet stimulerer fosforylerings-aktiviteten af Protein kinase A.
 
-![](media/image105.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_22/opgave-5-figur-1.png){width="80%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 Et korrekt svar skal indeholde at strukturen viser en GTP analog (5'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke hydrolyseres ligesom GTP. Gα vil ikke kunne hydrolysere GDPCP og dermed være aktiveret og det vil øge fosforylerings-aktiviteten af Protein kinase A via adenylate cyclase.

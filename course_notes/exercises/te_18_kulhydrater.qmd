@@ -19,7 +19,7 @@ Svaret skal indeholde en beskrivelse og sammenligning af syntesen af både N-bun
 
 Beskriv det genetiske og biokemiske grundlag for at netop disse tre varianter dannes i det konkrete tilfælde med blodsystemet?
 
-![](media/image70.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-1-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 Erythropoeitin (EPO) er et glycoprotein der sitmulerer dannelse af røde blod legemer. EPO kan fremstilles recombinant i mammale celler hvorved man opnår et glykosyleret protein.
 
@@ -188,7 +188,7 @@ Hvis mannosidase I inhiberes vil de efterfølgende modifikationer i Golgi ikke f
 
 Vil du forvente at kifunensin er en kompetitiv, non-kompetitiv eller un-kompetitiv inhibitor ?
 
-![](media/image71.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-3-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 I billedet nedenfor er vist kifunensin bundet i en lomme i mannosidase I. Kifunensin er vist som sticks og enzymet som en overflade. Det grønne kryds er en Ca^2+ ^ion og de stiplede linier angiver interaktioner med oxygen atomer.
 
@@ -200,7 +200,7 @@ Man vil forvente at kifunensin er en kompetitiv inhibitor, idet den har struktur
 
 Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 
-![](media/image72.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-3-figur-2.png){width="60%" fig-align="center" .lightbox}
 
 ::: {.callout-solution}
 Nitrogenet til venstre på figuren svarer til placeringen af oxygen på det anomere carbon. Hvis mannosen indgik i en beta-glycosid binding ville bindingen pege opad og der ville være sterisk hindring for binding til mannosidase I.
@@ -299,7 +299,7 @@ Der kan egentlig være to forklaringer. Enten kan Asn-sidekæderne selv være vi
 
 Proteinet rhodopsin er ansvarlig for omsætning af lys til et sansesignal i øjet. Strukturbestemmelse af rhodopsin har været ekstremt udfordrende, da proteinet ikke blot er et membranprotein, men heller ikke tåler lys. Derfor skal oprensningen ske i mørke.
 
-![](media/image73.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-5-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 ### Hent og visualisér rhodopsin
 
@@ -353,13 +353,13 @@ Kæde C
 
 (alpha-D-mannopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose):
 
-![](media/image74.png){width="40%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-5-figur-2.png){width="40%" fig-align="center" .lightbox}
 
 Kæde D
 
 (2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose)
 
-![](media/image75.png){width="40%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-5-figur-3.png){width="40%" fig-align="center" .lightbox}
 
 :::
 
@@ -410,7 +410,7 @@ select none
 
 11-*cis* retinal er kovalent koblet til Lys296 og fastholdes gennem forskellige, bl.a. hydrofobe interaktioner. Lys forårsager at 11-*cis* retinal omlejres til *trans* retinal.
 
-![](media/image76.png){width="70%" fig-align="center" .lightbox}
+![](figures/te_18/opgave-5-figur-4.png){width="70%" fig-align="center" .lightbox}
 
 :::
 

@@ -83,7 +83,7 @@ tWH (kig evt. på backbone retning, der er anti-parallel). Methyleret på positi
 ::: {.callout-note title="PyMOL Info"}
 Under Actions findes en funktion kaldet "find", der gør det muligt at finde interaktioner mellem objekter og/eller selektioner. Funktionen har to undermenuer, men vi vil fokusere på undermenuen "polar contacts". Under "polar contacts" er der mange forskellige muligheder for at inkludere eller ekskludere interaktioner med f.eks. solvent, sidekæder og mainchain. De vigtigste at kende er dem markeret med en rød firkant på billedet forneden. I nogle situationer vil andre dog være bedre, så man må prøve sig frem, for at finde ud af hvilken funktion, der er bedst i den givne situation. Dette er den manuelle måde at gøre det samme, som det man kan med distance-kommandoen.
 
-![](media/image24.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_07/opgave-2-figur-1.png){width="80%" fig-align="center" .lightbox}
 :::
 
 ::: {.callout-solution}
@@ -121,7 +121,7 @@ Energi til Gln charging.
 
 5S ribosomalt RNA (5S rRNA) er ca. 120 nukleotider-langt og er en funktionel komponent af den store subunit af ribosomet. Herunder vises den sekundære struktur med angivelse af enkelte non-Watson-Crick basepar (markeret med åbne cirkler). Interne loops i RNA struktur er beskrevet i afsnit 5.3.7.2 (side 135) i Liljas *Textbook of Structural Biology*.
 
-![5S rRNA 1](media/image25.png){width="90%" fig-align="center" .lightbox}
+![5S rRNA 1](figures/te_07/opgave-3-figur-1.png){width="90%" fig-align="center" .lightbox}
 
 ### Beskriv sekundærstrukturelementerne i 5S rRNA
 
@@ -165,7 +165,7 @@ Beskriv de tre non-Watson-Crick basepar der vises i **F2**, **F3** og **F8 **ih
 
 Tryk **F9** for at se RNA-dobbelthelixen vist som kuglemodel, hvor H-bindingsacceptorer farvet røde, H-bindingsdonorer blå, metylgrupper grønne og ikke-polære hydrogenatomer gule. Proteinet kan fjernes ved at trykke **F10**.
 
-![](media/image26.png){width="90%" fig-align="center" .lightbox}
+![](figures/te_07/opgave-3-figur-2.png){width="90%" fig-align="center" .lightbox}
 
 Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i forhold til en normal A-form RNA helix (se ovenstående billede)? Hvordan adskiller mønsteret af H-bindingsdonorer og -acceptorer ved bindingsstedet i shallow groove fra en normal A-form RNA helix (farvekode: blå=donor, rød=acceptor, gul=non-bindende H)?
 

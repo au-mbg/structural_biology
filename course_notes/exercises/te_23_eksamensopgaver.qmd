@@ -39,7 +39,7 @@ Hent strukturen af OR51E2 i PyMOL (PDB 8F76) og skriv et script, der viser recep
 ::: {.callout-solution}
 
 ::: {style="float: right; margin: 10px; width: 40%;"}
-![](media/image138_1.png)
+![](figures/te_23/opgave-1-figur-1.png)
 :::
 
 
@@ -93,7 +93,7 @@ Kæde A er odorantreceptoren (grøn), kæde X er G-proteinet (G~olf~ eller G~α~
 
 Figuren nedenfor viser et såkaldt `heat map` over hvilke aminosyrerester i receptoren, der interagerer med hvilke atomer i odoranten (propionate) i et simuleringsforsøg.
 
-![](media/image126_1.png){width="80%" .lightbox fig-align="center"}
+![](figures/te_23/opgave-1-figur-2.png){width="80%" .lightbox fig-align="center"}
 
 Brug strukturen til at forklare observationerne for R262 og H180 med speciel fokus på O^α^-, O^β^- og C^α^-atomernes interaktioner. Beskriv hvilken type af bindinger, de to aminosyrerester indgår i og hermed hvordan odoranten genkendes.
 
@@ -101,7 +101,7 @@ Brug strukturen til at forklare observationerne for R262 og H180 med speciel fok
 
 Svar: I strukturen er det tydeligt at His180 indgår i en stærk H-binding med det ene O-atom mens Arg262 har stærke ioniske/H-bindinger med begge O-atomer i carboxylatgruppen. Den er også tæt på C^α^, men indgår ikke i en direkte binding med denne. Sammen med bindingslommens størrelse er disse interaktioner med til at gøre receptoren specifik for propionate.
 
-![](media/image128.png){width="60%" fig-align="center"}
+![](figures/te_23/opgave-1-figur-3.png){width="60%" fig-align="center"}
 
 :::
 
@@ -126,7 +126,7 @@ Svar: Både serine proteaser og aspartyl proteaser har en aspartat i aktivt site
 Nedenfor er vist et udsnit af sekvensen for pro-furin. For at bestemme kløvningsstedet blev tyrosiner i modent furin iodineret med radioaktivt iod (^125^I), hvorefter der blev foretaget Edman-degradering. I hvert trin blev radioaktiviteten for den frigivne aminosyremålt som vist i figuren nedenfor.
 
 ::: {style="float: left; margin: 10px; width: 40%;"}
-![](media/image_128_and_a_half.png)
+![](figures/te_23/opgave-2-figur-1.png)
 :::
 
 
@@ -187,7 +187,7 @@ Molmassen af pro-furin er 97 kDa mens det modne furin har en masse på 90 kDa. E
 
 For at fastslå hvordan aktiveringen af furin foregår, blandede man trunkeret furin med fuldlængde furin enten vildtype (bane 2) eller med mutationer R107G (bane 3), R104A (bane 4) samt aktiv site-mutanten D153N (bane 5). På SDS-PAGE gelen vises resultaterne af disse forsøg samt trunkeret furin alene (bane 1).
 
-![](media/image131.png)
+![](figures/te_23/opgave-2-figur-2.png)
 
 Fastslå først om furin er i stand til at kløve sin egen pro-form og forklar hvordan du ser det. Foregår kløvningen som en intermolekylær (mellem molekyler) eller intramolekylær (selv-kløvning) proces? Forklar dit svar.
 
@@ -241,7 +241,7 @@ Svar: Der kan laves et FRAP (fluorescence recovery after photo-bleaching)-eksper
 
 I vinterhalvåret er det en god idé at tage vitamin D, da der ikke er nok sollys til at det kan dannes naturligt i vores hudceller. Efter indtagelse, omdannes vitamin D til et hormon, der binder til vitamin D-receptoren (VDR), som er med til at kontrollere syntesen af forskellige proteiner, der regulerer calcium- og fosfatniveauerne i vores krop. VDR består af to domæner, et domæne, der binder hormonet samt et domæne, der binder til DNA. Den aktive form findes i kompleks med et andet protein, 9-*cis* retinsyrereceptor (RXR), og sammen binder de to proteiner sig til DNA, som vist på figuren nedenfor.
 
-![](media/image132.png){width="80%" fig-align="center"}
+![](figures/te_23/opgave-4-figur-1.png){width="80%" fig-align="center"}
 
 ### Spørgsmål 1
 
@@ -284,7 +284,7 @@ Domæne 2: Arg261-G422, Glu253-C424, Lys256-G413
 
 Xylan er et polysaccharid, der hovedsageligt består af xylose-enheder, der ofte er substitueret i flere positioner. Enzymet Acetyl Xylan Esterase (AXE) fraspalter acetylgruppen bundet i 2-positionen, så der frigives en acetation. Nedenfor ses reaktionen katalyseret af AXE.
 
-![](media/image133.png){width="80%" .lightbox fig-align="center"}
+![](figures/te_23/opgave-5-figur-1.png){width="80%" .lightbox fig-align="center"}
 
 ### Spørgsmål 1.
 
@@ -303,7 +303,7 @@ Det er en β-1-4 glycosidbinding.
 
 Strukturen af det aktive AXE er vist nedenfor i to orienteringer med de enkelte protomerer i forskellige farver.
 
-![](media/image136_1.png)
+![](figures/te_23/svar-figur-1.png)
 
 Beskriv den kvaternære struktur af AXE, herunder de symmetrielementer, enzymet indeholder.
 
@@ -320,7 +320,7 @@ AXE er en hexamer. Ovenfra (venstre) ses en 3-talssymmetri og fra siden (højre)
 
 Monomerstrukturen af AXE er vist nedenfor:
 
-![](media/image139.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_23/svar-figur-2.png){width="80%" fig-align="center" .lightbox}
 
 Beskriv β-pladens opbygning og angiv foldningsklassen for AXE.
 
@@ -334,15 +334,15 @@ Beskriv β-pladens opbygning og angiv foldningsklassen for AXE.
 
 AXE inhiberes af visse organiske fosfatforbindelser ved at der dannes en kovalent binding med S181 i den katalytiske triade. Paraoxon-[ethyl]{.underline} en K~i~ værdi på 5,1 mM mens K~i~ for paraoxon-[methyl]{.underline} er 13,4 𝜇M. DIPF-inhibering er ikke målbar.
 
-![](media/image141.png){width="70%" fig-align="center" .lightbox}
+![](figures/te_23/svar-figur-3.png){width="70%" fig-align="center" .lightbox}
 
 Ved binding af paraoxon-ethyl fraspaltes en del af inhibitoren og nedenfor ses et udsnit af strukturen af det inhiberede enzym. Til venstre ses den kovalent bundne diethyl-phosphatidyl gruppe (DEP) på overfladen af enzymet og på figuren til højre viser de stiplede linjer afstande (ikke hydrogenbindinger) mellem udvalgte carbon-atomer i henholdsvis AXE og DEP, ligesom bindingsvinklen for den kovalente binding mellem Ser Cβ, Oγ og P er vist.
 
 ::: {layout-ncol=2}
 
-![](media/image142.png){.lightbox}
+![](figures/te_23/svar-figur-4.png){.lightbox}
 
-![](media/image143_1.png){.lightbox width="100%"}
+![](figures/te_23/svar-figur-5.png){.lightbox width="100%"}
 
 :::
 

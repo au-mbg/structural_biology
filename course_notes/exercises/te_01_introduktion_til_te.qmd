@@ -83,7 +83,7 @@ Glutathione (GSH) er en antioxidant i planter, dyr, svampe og visse bakterier og
 
 Glutathion har følgende struktur:
 
-![Glutathione](media/image3.png){width="80%" .lightbox fig-align="center"}
+![Glutathione](figures/te_01/opgave-3-figur-1.png){width="80%" .lightbox fig-align="center"}
 
 Hvilke af følgende udsagn om molekylet er korrekte?
 
@@ -196,7 +196,7 @@ OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, 
 
 **3.**  En `pseudo-symmetri` er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have `pseudo-totalssymmetri`, mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
 
-![Totalssymmetri](media/image4.jpg){width="5.28125in" height="1.5625in"}
+![Totalssymmetri](figures/te_01/opgave-5-figur-1.jpg){width="5.28125in" height="1.5625in"}
 
 **4.** Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive site og er med til at danne det såkaldte "oxyanionhul".
 :::

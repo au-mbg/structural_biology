@@ -670,7 +670,7 @@ Dette gemmer den nuværende visning i en scene kaldet `overview`. Bemærk at man
 ### Kør og test scriptet
 
 Du har nu et komplet PyMOL-script, der først initialiserer, så henter PDB-filen, definerer selektioner og bruger dem og endelig sætter repræsentation og view. Test scriptet ved at kopiere hele teksten og indsætte den ind på PyMOL's kommandolinje, enten øverst eller nederst, som angivet nedenfor. Tryk Enter/Return for at køre scriptet.
-![Eksempel på brug af PyMOL kommandolinje](media/image5.png){width="80%" fig-align="center"}
+![Eksempel på brug af PyMOL kommandolinje](figures/te_03/opgave-4-figur-1.png){width="80%" fig-align="center"}
 
 ### Orienter molekylet og test
 
@@ -740,7 +740,7 @@ Et vigtigt element i strukturel analyse er at kunne analysere interaktioner og d
 
 I denne opgave skal vi kigge på et eksempel, der er nævnt i kapitel 8 i Stryer, strukturen af cytochrome P450 bundet til substratet camphor (Fig. 8.5):
 
-![](media/image6.png){width="80%"  fig-align="center" .lightbox}
+![](figures/te_03/opgave-5-figur-1.png){width="80%"  fig-align="center" .lightbox}
 
 Vi vil gerne lave et PyMOL-script, der sætter os i stand til at foretage en grundig, strukturel analyse af hvordan camphor binder til proteiner, herunder hvilke typer af interaktioner (H-bindinger, Van der Waals- og hydrofobe interaktioner), der findes.
 

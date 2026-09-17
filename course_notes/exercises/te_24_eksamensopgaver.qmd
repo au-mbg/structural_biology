@@ -8,7 +8,7 @@ title: "TØ 24 -- Eksamensopgaver"
 
 I følge RNA-verden-hypotesen opstod livet ved at et RNA-molekyle begyndte at kopiere sig selv, men et sådant RNA-molekyle er endnu ikke fundet i naturen. Forskere har derfor brugt kunstig (*in vitro*) evolution til at udvikle et fungerende RNA polymerase ribozym (RPR) ud fra randomiserede sekvenser. Strukturen af RPR blev bestemt med cryo-elektronmikroskopi og viste sig at bestå af to RNA-molekyler (5TU og t1) holdt sammen af interaktioner på to steder, KL1 og KL2, som vist nedenfor.
 
-![](media/image144.png){width="6.6930555555555555in" height="2.172222222222222in"}
+![](figures/te_24/opgave-1-figur-1.png){width="6.6930555555555555in" height="2.172222222222222in"}
 
 **Spørgsmål 1.** Forklar hvilken type interaktion, er der tale om mellem 5TU og t1 (primær, sekundær, tertiær eller kvarternær) og hvad kaldes det motiv, de RNA-enheder bliver holdt sammen af i KL1 og KL2?
 
@@ -38,7 +38,7 @@ De symmetriske basepar G88-A91 og G65-A68 er trans-HS (Högsteen-Sugar edge, 5 p
 
 RPR kan forlænge en RNA primer på en RNA-template ved sammenkobling af matchende triplet-nukleotider (tre nukleotider koblet sammen 5'-3' og på 5' trifosfatform, 5'-^PPP^NNN-3'). For at undersøge effekten af KL1- og KL2-interaktionerne på denne reaktion, har man indført specifikke mutationer i 5TU KL1 position 7-8, 5TU KL2 position 89-90, t1 KL1 position 25-26, og t1 KL2 position 72-73. Effekten af mutationerne på aktiviteten af enzymet er vist på figuren herunder, hvor mutationer er indikeret i rød og `-` angiver at t1 ikke er til stede.
 
-![](media/image145.png){width="6.6930555555555555in" height="3.5034722222222223in"}
+![](figures/te_24/opgave-1-figur-2.png){width="6.6930555555555555in" height="3.5034722222222223in"}
 
 **Spørgsmål 4.** Hvad viser forsøget om vigtigheden af t1? Kom desuden med en forklaring på resultaterne observeret for de specifikke mutationer af KL1 og KL2.
 
@@ -60,7 +60,7 @@ Restriktionsendonukleaser (R), også kaldet restriktionsenzymer, udgør en del a
 
 R-enzymet EcoRI fra bakterien *Escherichia coli* er et af de mest kendte og anvendte restriktionsenzymer indenfor bioteknologi, da det både er meget aktivt og specifikt. Det genkender DNA-sekvensen GAATTC og klipper dsDNA som vist med grønt nedenfor:
 
-![](media/image147.png)
+![](figures/te_24/opgave-2-figur-1.png)
 
 **Spørgsmål 2.** Forklar hvordan genkendelsessekvensen og kløvningsstedet for EcoRI adskiller sig fra EcoRV og hvilket fælles princip, der gør sig gældende for de to sekvenser. Hvordan afspejles dette princip i R-enzymernes struktur?
 
@@ -70,7 +70,7 @@ R-enzymet EcoRI fra bakterien *Escherichia coli* er et af de mest kendte og anve
 
 Nedenfor ses resultatet af et enzymatisk forsøg, hvor 160 pM EcoRI blev inkuberet med forskellige koncentrationer af mærket DNA ved 27°C. Initielle reaktionshastigheder blev bestemt ved lineær regression af datapunkter målt fra 5-20 min.
 
-![](media/image148.png){width="3.844659886264217in" height="3.132891513560805in"}
+![](figures/te_24/opgave-2-figur-2.png){width="3.844659886264217in" height="3.132891513560805in"}
 
 Det indsatte plot er et såkaldt Eadie-Hofstee diagram, hvor den katalytiske parameter K~m~ kan bestemmes som den negative hældning ("minus hældningen").
 
@@ -112,7 +112,7 @@ Genkendelsen af sødestoffer i smagssansen er fundamentalt anderledes, da det he
 
 Odorantreceptoren er membranbunden og tilhører klassen af 7TM-proteiner, der består af 7 transmembrane helicer. Dette gør sig også gældende for bitterreceptoren:
 
-![](media/image151.png)
+![](figures/te_24/opgave-3-figur-1.png)
 
 **Spørgsmål 2.** Forklar hvad de røde og blå farver repræsenterer i figuren ovenfor og forklar hvordan de to receptortyper adskiller sig på den ydre (øverst) og indre (nederst) side af membranen samt i det transmembrane område. Kom med forslag til hvorfor der er områder af proteinerne, der har henholdsvis den ene eller anden funktion.
 
@@ -122,7 +122,7 @@ Odorantreceptoren er membranbunden og tilhører klassen af 7TM-proteiner, der be
 
 De fleste vingede insekter (*neoptera*) udtrykker, ligesom pattedyr, en lang række odorantreceptorer og kan dermed opfatte dufte. Man mener endog, at odorantreceptoren stammer fra insekterne og opstod i forbindelse med at de blev landbaserede for mio. af år siden, hvor luftbårne dufte kunne opfattes. Primitive insekter som "jumping bristletail" (*Machilis hrabei*), der minder om sølvfisk, udtrykker et meget simpelt duftsystem (MhOR), hvor odorantmolekylerne binder direkte til en membranbunden ionkanal og den G-protein koblede receptor og signalvejen dermed er unødvendig.
 
-![](media/image155.png)
+![](figures/te_24/opgave-3-figur-2.png)
 
 **Spørgsmål 3.** Hent strukturen af *M. hrabei* MhOR bundet til insektmidlet DEET via PDB ID 7LIG og angiv foldningsklasse og oligomerisk struktur. Skriv et PyMOL-script, der viser kanalen i cartoon på hvid baggrund med forskellige farver for hver monomer samt liganden i `sticks` og atomfarver. Dit svar skal indeholde figuren samt PyMOL-scriptet.
 
@@ -171,7 +171,7 @@ set_view (\\
 
 299.514251709, 422.312316895, -20.000000000 )
 
-![](media/image1530.png)
+![](figures/te_24/opgave-3-figur-3.png)
 :::
 
 **Spørgsmål 4.** Analysér interaktionen mellem DEET og ionkanalen i PyMOL og angiv hvilke aminosyrerester, duftstoffet interagerer med. Er interaktionen primært hydrofil eller hydrofobisk? Forklar endelig hvordan binding af et duftstof til ionkanalen kan give anledning til et nervesignal.
@@ -216,7 +216,7 @@ Kaliblock er et lægemiddel, der hæmmer spændingsstyrede K⁺-kanaler.
 
 Enzymet UDP-N-acetylglucosamine diphosphorylase (UAP) katalyserer reaktioner af typen nedenfor.
 
-![](media/image162.png)
+![](figures/te_24/opgave-5-figur-1.png)
 
 **Spørgsmål 1.** Hvad er konfigurationen omkring det anomere carbon i phosphatidyl-N-acetylglucosamine?
 
@@ -226,7 +226,7 @@ Enzymet UDP-N-acetylglucosamine diphosphorylase (UAP) katalyserer reaktioner af 
 
 Strukturen af **TbUAP** fra parasitten *Trypanosoma brucei* (en parasit, der forårsager sovesyge) er bestemt eksperimentelt i kompleks med en inhibitor. I figuren nedenfor er vist det centrale nukleotid bindende domæne i TbUAP som cartoon.
 
-![](media/image161.png){width="3.072580927384077in" height="2.308182414698163in"}
+![](figures/te_24/opgave-5-figur-2.png){width="3.072580927384077in" height="2.308182414698163in"}
 
 **Spørgsmål 2.** Hvilken foldningsklasse tilhører det nukleotidbindende domæne?
 
@@ -236,7 +236,7 @@ Strukturen af **TbUAP** fra parasitten *Trypanosoma brucei* (en parasit, der for
 
 Bindingsstedet for inhibitoren er lokaliseret i interface mellem det N-terminale domæne og det nukleotidbindende domæne, vist nedenfor til venstre. Til højre ses det samme udsnit af strukturen af det tilsvarende enzym fra mennesker, HsUAP. Strukturen af HsUAP er vist overlejret med TbUAP, men kun inhibitoren af TbUAP ses.
 
-![](media/image1650.png)
+![](figures/te_24/opgave-5-figur-3.png)
 
 **Spørgsmål 3.** Vil inhibitoren også inhibere det humane enzym? Begrund dit svar.
 

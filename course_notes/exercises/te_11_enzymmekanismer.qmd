@@ -66,7 +66,7 @@ velocities.columns.name = "[I] (mM)"
 
 ::: {.callout-solution}
 
-![Inhibition correct](media/image54.jpeg){width="80%" fig-align="center" .lightbox}
+![Inhibition correct](figures/te_11/opgave-3-figur-1.jpeg){width="80%" fig-align="center" .lightbox}
 
 Skæringen med y-aksen varierer mens linjerne samles (mere eller mindre) i et punkt på den negative x-akse. Inhibitoren I er en non-kompetitiv inhibitor (variabel v~max~, uændret *K*~M~).
 
@@ -164,7 +164,7 @@ Endnu værre. Så er der slet ingen methylase til at beskytte bakterien mod sin 
 
 ## Opgave 6. Cheleringsagenter
 
-![](media/image55.png){width="60%" fig-align="center" .lightbox}
+![](figures/te_11/opgave-6-figur-1.png){width="60%" fig-align="center" .lightbox}
 
 EDTA (ethylene diamine tetra eddike syre, jf. struktur til højre) chelerer (binder kraftigt) en bestemt type molekyler. Hvilke enzymer fra Berg-Stryer's kapitel 6 ville den inhibere?
 
@@ -178,7 +178,7 @@ Det binder divalente metal-ioner som Zn^2+^, Ca^2+^ og Mg^2+^ med meget høj a
 
 Gennem de sidste ca. 50-70 år er der sket en kolossal ophobning af syntetisk fremstillet plastik som affald i naturen. Noget af dette affald graves ned, andet brændes af. En stor del spredes dog i naturen, hvor det langsomt bliver fysisk nedbrudt til mindre partikler. Der finder meget lidt enzym-drevet nedbrydning af plastik sted. Strukturerne af de mest udbredte klasser af plastik er vist nedenunder. 
 
-![](media/image56.jpeg){width="90%" fig-align="center" .lightbox}
+![](figures/te_11/opgave-7-figur-1.jpeg){width="90%" fig-align="center" .lightbox}
 
 ### Analyser kemiske udfordringer ved plastik-nedbrydning
 
@@ -186,11 +186,11 @@ Ud fra et kemisk perspektiv, hvorfor er det en udfordring for enzymer at nedbryd
 
 Der er ikke desto mindre identificeret forskellige enzymer der (om end langsomt) nedbryder forskellige typer plastik. Nogle af disse produceres af mikroorganismer der vokser på en losseplads for primært PET-plastik. Et enzym (PETase) nedbryder PET til MHET, mens et andet enzym (en MHETase) nedbryder MHET til PTA og EG (se reaktionsskema nedenfor).
 
-![](media/image57.jpeg){width="90%" fig-align="center" .lightbox}
+![](figures/te_11/opgave-7-figur-2.jpeg){width="90%" fig-align="center" .lightbox}
 
 Strukturen af MHETase løses i nærvær af stoffet benzoat (se nedenfor).
 
-![](media/image58.jpeg){width="90%" fig-align="center" .lightbox}
+![](figures/te_11/opgave-7-figur-3.jpeg){width="90%" fig-align="center" .lightbox}
 
 Det aktive site i MHETase virker ligesom flere proteaser mm. gennem en såkaldt katalytisk triade bestående af en histidin-, en aspartat- og en serin-rest. Skriv et kort script, der henter MHETase (PDB-ID: 6QGA) og PETase (PDB-ID: 5XH3) og fjerner overskydende versioner af proteinerne. Align de to strukturer med super.
 
@@ -200,7 +200,7 @@ Plastik repræsenterer nye former for makromolekyler som ikke har eksisteret fø
 
 ### Sammenlign MHETase og PETase i PyMOL
 
-![](media/image59.jpeg){width="90%" fig-align="center" .lightbox}
+![](figures/te_11/opgave-7-figur-4.jpeg){width="90%" fig-align="center" .lightbox}
 
 Beskriv forskellen mellem de to strukturer, find det aktive site og kom med et bud på, hvorfor MHETasen har et domæne som PETasen ikke har, når det oplyses at MHETasen har en meget lav *k*~cat~.
 

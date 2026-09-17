@@ -34,7 +34,7 @@ Læs om Rchie plots i boksen herunder.
 
 Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra [e-RNA.org](https://www.e-rna.org/r-chie/faq.cgi))
 
-![](media/image27.png){width="65%" fig-align="center"} 
+![](figures/te_08/opgave-1-figur-1.png){width="65%" fig-align="center"} 
 
 **Covariation** (correlated variation): refererer til ethvert validt basepar (A:U, G:C, G:U) som adskiller sig fra det mest gængse observerede valide basepar. Det vil sige at der er kompensatoriske baseparændringer (mutationer), som stadig muliggør baseparring samt sekundær struktur.
 
@@ -90,23 +90,23 @@ Dette er også grunden til at der ses nogle atypiske basepar (f.eks. C:A, G:G og
 (((((((..((((..........))))((((((.......))))))(((((....)))))..(((((.......))))))))))))..
 ```
 
-![](media/image28.png){width="95%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-1-figur-2.png){width="95%" fig-align="center" .lightbox}
 
 De sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.
 
-![](media/image29.png){width="45%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-1-figur-3.png){width="45%" fig-align="center" .lightbox}
 
 En bedre og mere detaljeret præsentation af tRNA-femkløveren kan ses ved at vælge PDF under **Download options** ud for '*structure drawing with conservation annotation'* under **Image description**, som det ses herunder:
 
-![](media/image30.png){width="45%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-1-figur-4.png){width="45%" fig-align="center" .lightbox}
 
-![](media/image31.png){width="65%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-1-figur-5.png){width="65%" fig-align="center" .lightbox}
 
 Herved fås en repræsentation med farvning efter antal af forskellige basepar på hver position samt en graduering i gennemsigtighed efter antallet af inkompatible basepar.
 
 Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-bracket notation ved at vælge PDF ud for **structure annotated alignment**.
 
-![](media/image32.png){width="95%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-1-figur-6.png){width="95%" fig-align="center" .lightbox}
 
 :::
 
@@ -123,7 +123,7 @@ Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 
 For at sandsynliggøre "RNA world" hypotesen prøvede forskere omkring 1993 at skabe et RNA polymerase ribozym ([**Bartel & Szostak, 1993**](https://www.ncbi.nlm.nih.gov/pubmed/7690155)) ved at bruge en selektionsmetode, hvor man laver et bibliotek af sekvenser og selekterer for funktion (se Berg, udgave 10, afsnit 10.4). Ved at selektere for ligeringsaktivitet fandt de en RNA ligase, der senere er blevet udviklet til at syntetisere længere RNA-sekvenser ([**Horning & Joyce, 2016**](https://www.ncbi.nlm.nih.gov/pubmed/27528667)). Til selektionseksperimentet blev der indsat en tilfældig sekvens (et bibliotek) på 220 nukleotider, der syntetiseres kemisk ved tilfældigt at indsætte en af de fire baser på hver af 220 positioner. Figur A viser en oversigt over dette eksperiment, hvor den tilfældige sekvens er annoteret som N220.
 
-![](media/image33.png){width="65%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-2-figur-1.png){width="65%" fig-align="center" .lightbox}
 
 ### Beregn RNA-biblioteksstørrelse og masse
 
@@ -162,7 +162,7 @@ Brug [**RNAalifold**](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAalifold
 ::: {.callout-solution}
 Den sekundære struktur består af 4 hairpins og 2 stems, der er arrangeret i en 3-way junction og en 4-way junction.
 
-![](media/image34.png){width="80%" fig-align="center" .lightbox}
+![](figures/te_08/opgave-2-figur-2.png){width="80%" fig-align="center" .lightbox}
 :::
 
 
