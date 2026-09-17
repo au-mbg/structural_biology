@@ -15,7 +15,7 @@ cryo-elektronmikroskopi og viste sig at bestå af to RNA-molekyler (5TU
 og t1) holdt sammen af interaktioner på to steder, KL1 og KL2, som vist
 nedenfor.
 
-![](media/image169.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvilken type interaktion, er der tale om mellem
 5TU og t1 (primær, sekundær, tertiær eller kvarternær) og hvad kaldes
@@ -58,7 +58,7 @@ KL1 position 25-26, og t1 KL2 position 72-73. Effekten af mutationerne
 på aktiviteten af enzymet er vist på figuren herunder, hvor mutationer
 er indikeret i rød og \"-\" angiver at t1 ikke er til stede.
 
-![](media/image170.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Hvad viser forsøget om vigtigheden af t1? Kom desuden
 med en forklaring på resultaterne observeret for de specifikke
@@ -91,7 +91,7 @@ nukleotider, hvilket bryder phosphodiesterbindingen. Vandmolekylet
 aktiveres ligeledes af Asp74, der som generel base hjælper med at
 deprotonere og danne en nukleofil hydroxylion.
 
-![](media/image172.png){.lightbox width="90%" fig-align="center"}R-enzymet EcoRI fra bakterien *Escherichia coli*
+![](figures/exam_2024_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}R-enzymet EcoRI fra bakterien *Escherichia coli*
 er et af de mest kendte og anvendte restriktionsenzymer indenfor
 bioteknologi, da det både er meget aktivt og specifikt. Det genkender
 DNA-sekvensen GAATTC og klipper dsDNA som vist med grønt nedenfor:
@@ -111,7 +111,7 @@ inkuberet med forskellige koncentrationer af mærket DNA ved 27°C.
 Initielle reaktionshastigheder blev bestemt ved lineær regression af
 datapunkter målt fra 5-20 min.
 
-![](media/image173.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 Det indsatte plot er et såkaldt Eadie-Hofstee diagram, hvor den
 katalytiske parameter K~m~ kan bestemmes som den negative hældning
@@ -178,7 +178,7 @@ Odorantreceptoren er membranbunden og tilhører klassen af 7TM-proteiner,
 der består af 7 transmembrane helicer. Dette gør sig også gældende for
 bitterreceptoren:
 
-![](media/image176.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Forklar hvad de røde og blå farver repræsenterer i
 figuren ovenfor og forklar hvordan de to receptortyper adskiller sig på
@@ -205,7 +205,7 @@ meget simpelt duftsystem (MhOR), hvor odorantmolekylerne binder direkte
 til en membranbunden ionkanal og den G-protein koblede receptor og
 signalvejen dermed er unødvendig.
 
-![](media/image180.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hent strukturen af *M. hrabei* MhOR bundet til
 insektmidlet DEET via PDB ID 7LIG og angiv foldningsklasse og
@@ -256,7 +256,7 @@ set_view (\\
 
 299.514251709, 422.312316895, -20.000000000 )
 
-![](media/image183.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-3-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Analysér interaktionen mellem DEET og ionkanalen i
 PyMOL og angiv hvilke aminosyrerester, duftstoffet interagerer med. Er
@@ -312,7 +312,7 @@ aktionspotentiale.
 
 ## Opgave 5
 
-![](media/image188.png){.lightbox width="90%" fig-align="center"}Enzymet UDP-N-acetylglucosamine diphosphorylase
+![](figures/exam_2024_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}Enzymet UDP-N-acetylglucosamine diphosphorylase
 (UAP) katalyserer reaktioner af typen nedenfor.
 
 **Spørgsmål 1.** Hvad er konfigurationen omkring det anomere carbon i
@@ -326,7 +326,7 @@ der forårsager sovesyge) er bestemt eksperimentelt i kompleks med en
 inhibitor. I figuren nedenfor er vist det centrale nukleotid bindende
 domæne i TbUAP som cartoon.
 
-![](media/image192.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvilken foldningsklasse tilhører det nukleotidbindende
 domæne?
@@ -339,7 +339,7 @@ venstre. Til højre ses det samme udsnit af strukturen af det tilsvarende
 enzym fra mennesker, HsUAP. Strukturen af HsUAP er vist overlejret med
 TbUAP, men kun inhibitoren af TbUAP ses.
 
-![](media/image195.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_2/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Vil inhibitoren også inhibere det humane enzym? Begrund
 dit svar.

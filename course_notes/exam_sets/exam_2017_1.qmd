@@ -9,7 +9,7 @@ date: 1-1-2018
 Nedenfor vises strukturen af et protein, X, i to forskellige
 orienteringer.
 
-![](media/image1.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 *Figur 1. Den tre-dimensionelle struktur af protein X i
 cartoon-repræsentation farvet fra blå ved N-terminalen til rød ved
@@ -68,7 +68,7 @@ fra en human cellelinje (HuH7) både med og uden tilsætning af
 tunicamycin. De to proteinpræparationer blev herefter analyseret ved
 hjælp af massespektrometri (Figur 2).
 
-![](media/image2.gif){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-1-figur-2.gif){.lightbox width="90%" fig-align="center"}
 
 *Figur 2. Massespektrometrisk analyse af Protein X. Øverst, protein X
 udtrykt uden tunicamycin. Nederst, protein X udtrykt med tilsat
@@ -91,12 +91,12 @@ bestående af fire SH3-domæner, der er forbundne med korte linkere.
 SH3-domænerne kan formodes ikke at interagere med hinanden.
 4SH-proteinets domænestruktur er skitseret nedenfor.
 
-![](media/image3.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 For at kortlægge præcis hvor interaktionen foregår, har man lavet
 følgende rekombinante proteiner:
 
-![](media/image4.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 YP er mærket med en fluorofor (dansyl) med henblik på
 fluorescenstitrering. I dette forsøg måles intensiteten af
@@ -149,7 +149,7 @@ FI(x) = A+B\*x/(x+K)
 Hvor A og B er konstanter, x er protein koncentrationen og K er Kd.
 Fitning i MATLAB giver følgende Kd værdier.
 
-![](media/image5.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 Konstrukt 1: 8,4uM +/- 1,5uM
 
@@ -198,7 +198,7 @@ sorte). Tallene 1-14 angiver bindinger i proteinets hovedkæde (bemærk at
 rækkefølgen ikke nødvendigvis svarer til proteinets egen
 N-til-C-terminus sekvens).
 
-![](media/image6.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvilken type af sidekæde mangler subtilisin-mutanten
 til at indgå i den katalytiske mekanisme udover S221 og D32? Vurdér hvor
@@ -222,7 +222,7 @@ hvordan kløvningsstedet angribes og navngiv de involverede atomer. Angiv
 også på tegningen hvor tre karakteristiske delelementer i proteasens
 mekanisme findes.
 
-![](media/image7.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Anvend specificitetsnomenklaturen til at navngive de
 relevante aminosyrerester på substratet. Hvilken betegnelse får
@@ -261,7 +261,7 @@ udtrykker GPCR-1 receptoren, og man måler aktiviteten af Protein Kinase
 A. Forklar hvorfor stoffet stimulerer fosforyleringsaktiviteten af
 Protein Kinase A.
 
-![](media/image8.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Svar: Et korrekt svar skal indeholde at strukturen viser en GTP analog
 (5\'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke
@@ -315,7 +315,7 @@ junction. De 3 hairpins har tetraloop. Hairpin 2 har G bulge. Hairpin 3
 har asymmetrisk bulge med 3 nukleotider på 5\' side og 2 nukleotider på
 3\' side.
 
-![](media/image9.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Højre side af figuren herover viser resultatet af et forsøg, hvor
 fluorescensen fra Spinach-DFHBI komplekset måltes som funktion af

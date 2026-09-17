@@ -11,7 +11,7 @@ central rolle i at regulere appetit og metabolisme. Det binder til GLP-1
 receptor i plasmamembranen og aktiverer signaltransduktion via G
 proteiner, som det ses på figuren herunder.
 
-![](media/image195_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Lav et PyMOL script der sammenligner inaktiv receptor
 (PDB 6LN2) med GLP-1 bundet receptor (PDB 6X18) ved at lave en
@@ -19,7 +19,7 @@ strukturel alignment. Vis kun selve receptor proteinet og ligand
 (gem/fjern FAB-fragment og G-proteiner) og farvelæg GLP-1 i rød. Svaret
 skal indeholde script og resulterende billede.
 
-![](media/image197.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 Svar:
 
@@ -73,7 +73,7 @@ Gliaøglen, der udskiller Extendin-4, der er en GLP-1 receptor agonist.
 Herunder vises en Clustal Omega alignment mellem de to peptider, hvor
 trekant viser hvor dipeptidyl peptidase-4 (DPP-4) kløver GLP-1.
 
-![](media/image198.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Beregn identitetsscore for hele peptidet og
 similaritetsscore for de første 10 positioner i alignment og diskutér
@@ -98,7 +98,7 @@ substitutioner og modifikationer (se figur herunder), der gør det mere
 resistent mod proteolytisk kløvning og forsinker udskillelse fra
 kroppen, hvilket gør at man kun skal tage en dosis en gang om ugen.
 
-![](media/image200.svg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-1-figur-4.svg){.lightbox width="90%" fig-align="center"}
 
 **Semaglutid**
 
@@ -120,7 +120,7 @@ korrekt 5' ende på tRNAet. I figur 1A herunder vises RNase P fra
 bakterier, der består af et RNA (rød) og et protein (blå), der binder
 til tRNA (gul). Figur 1B viser den sekundære struktur af RNase P RNA.
 
-![](media/image201_tif.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 1.** (A) Kvarternær struktur af RNase P med bundet tRNA. (B)
 Sekundær struktur af RNase P RNA.
@@ -230,7 +230,7 @@ Active site indeholder Mg ion (MG903). Som i andre ribozymer må man
 antage at en OH gruppe har lavet en S~N~2-type nukleofilt angreb på
 fosfat-rygrad katalyseret af Mg ioner.
 
-![](media/image202.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 ## Opgave 3
 
@@ -245,7 +245,7 @@ NAD^+^.
 Absorptionsspektrene for 10 mM GAP, DHAP, NADH og NAD^+^ er vist
 nedenunder.
 
-![](media/image203.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvorfor er det nødvendigt at bruge G3PDH for at måle
 TPI's aktivitet og hvilken bølgelængde ville du anvende til dine
@@ -277,7 +277,7 @@ Vi bruger nu det koblede assay (ved 30°C) og screener en masse
 forskellige stoffer for deres evne til at inhibere TPI. Vi identificerer
 bl.a. to hits:
 
-![](media/image204.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-3-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Diskuter hvilken ADME profil disse to stoffer har,
 d.v.s. hvordan de generelt kan tænkes at opføre sig i kroppen ved
@@ -430,7 +430,7 @@ svarende til én konformation.
 Efter 3D-rekonstruktion blev følgende Fourier Shell Correlation
 (FSC)-kurver beregnet fra to uafhængige half-maps for hver konformation:
 
-![](media/image205.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 1.** FSC-kurver for de tre konformationsklasser.
 
@@ -496,7 +496,7 @@ opløsning.
 b\) Kort B matcher Class 1, kort C matcher Class 2, og kort A matcher
 Class 3.
 
-![](media/image206.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 2.** 3D density maps (vist i gul) fra de tre cryo-EM
 rekonstruktioner ved forskellig opløsning som givet ved FSC i Figur 1.
@@ -548,7 +548,7 @@ ikke tilberedes korrekt. Dette skyldes tilstedeværelsen af tetrodotoksin
 (TTX) - et lavmolekylært neurotoksin, som hæmmer den spændingsstyrede
 natriumkanal (Na~V~1.4). Strukturen af TTX er vist nedenfor.
 
-![](media/image207.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Tetrodotoksin (TTX)**
 
@@ -566,9 +566,9 @@ mM og udenfor cellen på 145 mM.
 
 Svar:
 
-![](media/image208.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image209.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_1/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 Eₙₐ = 60.6 mV, (ved 37 °C = 310 K, z = +1)
 

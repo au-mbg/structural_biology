@@ -52,7 +52,7 @@ indeholde script og strukturfigur på hvid baggrund og propionat skal
 kunne ses. Forklar kort hvilke proteiner kæderne A, X, Y og Z
 repræsenterer.
 
-![](media/image149.png){.lightbox width="90%" fig-align="center"}Svar:
+![](figures/exam_2024_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}Svar:
 
 reinitialize
 
@@ -102,7 +102,7 @@ Figuren nedenfor viser et såkaldt \"heat map\" over hvilke
 aminosyrerester i receptoren, der interagerer med hvilke atomer i
 odoranten (propionate) i et simuleringsforsøg.
 
-![](media/image152.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Brug strukturen til at forklare observationerne for
 R262 og H180 med speciel fokus på O^α^-, O^β^- og C^α^-atomernes
@@ -115,7 +115,7 @@ O-atomer i carboxylatgruppen. Den er også tæt på C^α^, men indgår ikke i
 en direkte binding med denne. Sammen med bindingslommens størrelse er
 disse interaktioner med til at gøre receptoren specifik for propionate.
 
-![](media/image154.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 ## Opgave 2
 
@@ -196,7 +196,7 @@ mutationer R107G (bane 3), R104A (bane 4) samt aktiv site-mutanten D153N
 (bane 5). På SDS-PAGE gelen vises resultaterne af disse forsøg samt
 trunkeret furin alene (bane 1).
 
-![](media/image157.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Fastslå først om furin er i stand til at kløve sin egen
 pro-form og forklar hvordan du ser det. Foregår kløvningen som en
@@ -270,7 +270,7 @@ samt et domæne, der binder til DNA. Den aktive form findes i kompleks
 med et andet protein, 9-*cis* retinsyrereceptor (RXR), og sammen binder
 de to proteiner sig til DNA, som vist på figuren nedenfor.
 
-![](media/image158.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Find de to ens bindingsområder i DNA-sekvensen, hvortil
 heterodimeren binder. Hvilken type sekvensmotiv er der tale om?
@@ -316,13 +316,13 @@ der ofte er substitueret i flere positioner. Enzymet Acetyl Xylan
 Esterase (AXE) fraspalter acetylgruppen bundet i 2-positionen, så der
 frigives en acetation. Nedenfor ses reaktionen katalyseret af AXE.
 
-![](media/image159.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 1.** Angiv konformation og
+![](figures/exam_2024_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 1.** Angiv konformation og
 kobling for glycosidbindingen mellem de to xylose-enheder i xylan som
 vist ovenfor.
 
 Svar: Det er en β-1-4 glycosidbinding.
 
-![](media/image162.png){.lightbox width="90%" fig-align="center"}Strukturen af det aktive AXE er vist nedenfor i
+![](figures/exam_2024_1/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}Strukturen af det aktive AXE er vist nedenfor i
 to orienteringer med de enkelte protomerer i forskellige farver.
 
 **Spørgsmål 2.** Beskriv den kvaternære struktur af AXE, herunder de
@@ -333,7 +333,7 @@ siden (højre) observeres en 2-talssymmetri.
 
 Monomerstrukturen af AXE er vist nedenfor:
 
-![](media/image164.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Beskriv β-pladens opbygning og angiv foldningsklassen
 for AXE.
@@ -348,7 +348,7 @@ Paraoxon-[ethyl]{.underline} en K~i~ værdi på 5,1 mM mens K~i~ for
 paraoxon-[methyl]{.underline} er 13,4 𝜇M. DIPF-inhibering er ikke
 målbar.
 
-![](media/image166.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-5-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 Ved binding af paraoxon-ethyl fraspaltes en del af inhibitoren og
 nedenfor ses et udsnit af strukturen af det inhiberede enzym. Til
@@ -358,9 +358,9 @@ afstande (ikke hydrogenbindinger) mellem udvalgte carbon-atomer i
 henholdsvis AXE og DEP, ligesom bindingsvinklen for den kovalente
 binding mellem Ser Cβ, Oγ og P er vist.
 
-![](media/image167.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-5-figur-5.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image168.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2024_1/opgave-5-figur-6.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Angiv først en liste med de tre inhibitorer (DIPF,
 paraoxon-ethyl og paraoxon-methyl) fra svagest til stærkest inhibitor.

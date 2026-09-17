@@ -149,9 +149,9 @@ til monosaccharider. Krystalstrukturen af en trunkeret form af ét af
 disse enzymer (bbgIII aminosyrerester 33-917) i kompleks med det ene af
 de hydrolytiske produkter, *galactose*, er blevet bestemt ved pH 7.6:
 
-![](media/image10.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image11.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvilket foldningsmotiv ses i hydrolasens katalytiske
 domæne?
@@ -190,7 +190,7 @@ for fuldlængde *bbgIII* (A), signalP-forudsigelse (B) for de 70
 N-terminale aminosyrer samt i (C) et nærbillede af hydropatiplottet for
 de 100 C-terminale aminosyrer.
 
-![](media/image12.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-3-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Foreslå en subcellulær placering af bbgIII og begrund
 dit forslag.
@@ -211,7 +211,7 @@ En del af RNA-strukturen danner en *pseudoknot* via en triplet
 base-interaktion markeret med rødt i A nedenfor. Triplet-interaktionen
 er desuden vist i detaljer med angivelse af polære interaktioner i B.
 
-![](media/image13.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Beskriv triplet-interaktionen i figur B. Hvilke kanter
 af baserne interagerer og hvad kaldes denne type interaktion?
@@ -240,7 +240,7 @@ måle.
 I figuren herunder er den tilhørende sekundærstruktur vist, hvor man kan
 se \"G site\" hvor \"guanosine co-factor\" bindes.
 
-![](media/image14.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 I første trin at splejsningsprocessen reagerer U\* i P1 stem
 med \"guanosin cofaktor\" via en transesterficeringsreaktion.
@@ -270,7 +270,7 @@ med G414 backbone 3'-OH, G313 interaktion med G414 sukker 2\'-OH, C413
 interaktion med G414 fosfat, C413 interaktion med G414 base og C262
 interaktion med G414 base.
 
-![](media/image15.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 ## Opgave 5
 
@@ -291,7 +291,7 @@ Enzymet *tryptophan synthase* er det sidste del af pathway\'en fra
 stoffet *indole 3-glycerol phosphate* til slutproduktet tryptophan og
 udviser fænomenet *\"substrate channeling\"*:
 
-![](media/image16.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Forklar kort, hvad *\"substate channeling\"* dækker
 over samt hvorfor det er nødvendigt for enzymet i dette tilfælde.
@@ -304,7 +304,7 @@ cellen. Endelig kan det være med til at effektivisere processen.
 Nedenfor ses strukturen af tryptophan synthase bundet til en substratet
 indole 3-glycerol phosphate (grønt).
 
-![](media/image17.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2017_2/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Angiv hvor mange domæner, enzymet består af samt
 hvilken af enzymets to reaktioner, der katalyseres i domænet med

@@ -14,7 +14,7 @@ Lactobacillales-Derived). Strukturen af disse blev bestemt ved cryo-EM
 og viste sig at danne hhv. dimer, 8-mer og 14-mer (med PDB-ID 9LCR,
 9MDS, 9MEE). Strukturerne er vist på nedenstående figur.
 
-![](media/image210.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1:** Lav et PyMOL script, der åbner OLE og favelægger de to
 monomerer i forskellige farver. Farvelæg desuden strukturen med B-faktor
@@ -36,9 +36,9 @@ spectrum b, blue_white_red, minimum=20, maximum=50
 
 scene F2, store
 
-![](media/image211.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image212.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 De nederste helicer har høj B-faktor, hvilket betyder at de er flexible.
 
@@ -53,7 +53,7 @@ strukturen med basepar vist som dot-bracket annotation og annoteret med
 stem (P) og loop (L) interaktioner. L5 til L6\' er intermolekylære
 basepar.
 
-![](media/image213.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-1-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3:** Beskriv strukturbevarelse i de intra- og
 intermolekylære basepar interaktioner?
@@ -79,7 +79,7 @@ membran protein, hvilket medfører at OLE RNA går igennem cellemembranen,
 mens ROOL og GOLLD er RNA kapsler med indre volumener, som det ses
 herunder.
 
-![](media/image214.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-1-figur-5.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4:** Foreslå mulige funktioner af OLE, ROOL og GOLLD ud fra
 din viden om transmembrane proteiner og protein kapsler.
@@ -106,7 +106,7 @@ fri til at transskribere genet, og proteinerne dannes. På figuren
 herunder ses Lac-repressor tetramer (grøn), der binder to steder på en
 DNA streng (rød), og DNA-sekvensen der bindes.
 
-![](media/image215.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1:** Beskriv hvilken type DNA-sekvens-motiv som
 Lac-repressor binder til og forklar hvorfor man mener at DNAet danner et
@@ -143,8 +143,8 @@ color blue, chain D\
 color yellow, chain E\
 show spheres, resn NPF
 
-![](media/image216.png){.lightbox width="90%" fig-align="center"}
-![](media/image217.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3:** Hvilken type protein-bindings-motiv er der tale om,
 hvilken groove af DNA\'et bindes, og hvordan påvirkes DNA helixen?
@@ -161,7 +161,7 @@ Tryk på ligand og brug \"Find polar contacts to other atoms in
 object\".\
 Med fordel ændres ligand til sticks og protein til lines, som det ses
 her:\
-![](media/image218.png){.lightbox width="90%" fig-align="center"}\
+![](figures/exam_2025_2/opgave-2-figur-4.png){.lightbox width="90%" fig-align="center"}\
 Nu kan man finde de relevante aminosyrer:\
 Leu148\
 Asp149\
@@ -253,7 +253,7 @@ en stejlere kurve (rød/lilla nedenunder) med lavere p~O2~^50%^. Det
 betyder at der ikke kan leveres så meget ilt til de forskellige væv, så
 man kommer til at lide af åndedrætsbesvær og generel anoxi. Ikke godt!
 
-![](media/image219.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-3-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **\**
 
@@ -265,7 +265,7 @@ krystaller blev testet ved en synkrotron. Diffraktionsbilleder blev
 indsamlet under identiske betingelser: samme røntgen-bølgelængde (λ =
 1.0 Å) og samme krystal-til-detektor afstand (200 mm).
 
-![](media/image220.png){.lightbox width="90%" fig-align="center"}**Figur 1:** Diffraktionsmønstrene fra de
+![](figures/exam_2025_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}**Figur 1:** Diffraktionsmønstrene fra de
 tre krystaller:
 
 **Spørgsmål 1:** Hvilket af de tre diffraktionsmønstre (A, B, eller C)
@@ -279,7 +279,7 @@ betyder at reflektionerne placeres langt fra centrum på detektoren.
 Mønster C har kun reflektioner tæt på centrum, hvilket svarer til lav
 opløsning.
 
-![](media/image221.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 2:** Den geometriske opstilling ved et
 røntgendiffraktionseksperiment.
@@ -359,7 +359,7 @@ krystaller giver sådanne regioner ingen veldefineret elektrontæthed, da
 atomerne indtager mange forskellige positioner og kan derfor ikke
 modelleres.
 
-![](media/image222.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 3:** pLDDT plot for AlphaFold3 model for tyrosine-protein kinase
 C-SRC.
@@ -387,7 +387,7 @@ forhold til resten af proteinet. N-terminalen er intrisically disordered
 og har ingen velbestemt struktur eller veldefineret position i forhold
 til protein domænerne.
 
-![](media/image223.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-4-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 4:** PAE plot for AlphaFold3 model for C-SRC.
 
@@ -415,7 +415,7 @@ Forskere oprensede Erythropoietin fra en patient og analyserede det på
 en SDS-PAGE efter de har tilsat enzymet X med forskellige
 inkubationstider (se nedenfor).
 
-![](media/image224.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Lane 1**: Proteinmarkør
 
@@ -465,4 +465,4 @@ påvirker dog proteinets stabilitet og halveringstid i plasma.
 Receptor (blå), Erythropoietin (grøn), N-glycosyleringerne (K24, K38,
 K83) (rød)
 
-![](media/image225.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2025_2/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}

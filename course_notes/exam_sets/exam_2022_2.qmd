@@ -11,7 +11,7 @@ foregår ved 37°C. Når det er meget koldt, kan kropstemperaturen dog godt
 falde til 25°C i fingre og fødder. Figuren nedenfor viser
 iltbindingskurver for Hb ved de to forskellige temperaturer:
 
-![](media/image128.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-1-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Beskriv forskellene på de to iltbindingskurver og
 forklar baseret på hæmoglobins funktion i kroppen, hvad dette betyder
@@ -126,7 +126,7 @@ ALK5 + ligand. Der injiceres ligeledes tre proteiner med kendte
 molekylevægte på 20, 66 og 121 kDa som standarder for at kalibrere
 søjlen.
 
-![](media/image129.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hvad eksperimentet viser og foreslå en
 aktiveringsmekanisme for ALK5 baseret på dette resultat.
@@ -146,7 +146,7 @@ siden blevet fundet i alle livets domæner. Nedenfor ses et alignment af
 Hammerhead-ribozymet fra tre arter, der viser tre helix-regioner
 markeret i cyan, rød og lilla:
 
-![](media/image130.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Identificér en position i alignment, der viser
 co-variation, der bevarer basepar.
@@ -158,7 +158,7 @@ at nævne én af ovenstående.
 Strukturen af hammerhead-ribozymet er blevet løst med
 røntgenkrystallografi og ses nedenfor:
 
-![](media/image131.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvad man kalder interaktionen mellem loopet i stem II
 og bulge i stem I og hvilke non-Watson-Crick basepar indgår i denne
@@ -185,7 +185,7 @@ U13-A31 tWH trans-Watson-Crick-Högsteen
 
 Figuren herunder viser det aktive site i hammerhead-ribozymet.
 
-![](media/image132.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-3-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Hvilken rolle spiller 2\'-hydroxylgruppen på C-17 for
 reaktionsmekanismen? Hvor bliver RNA strengen kløvet og hvad er
@@ -219,7 +219,7 @@ Til strukturbestemmelse af en bakteriel K^+^-kanal har forskere oprenset
 og krystalliseret proteinet, derefter indsamlet røntgendiffraktionsdata
 og beregnet et elektrontæthedskort, hvoraf et udsnit vises nedenfor.
 
-![](media/image133.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-4-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Beskriv foldningen af peptidkæden, der observeres,
 herunder om der ses tegn på sekundær struktur og kom med forslag til
@@ -231,13 +231,13 @@ H-bindinger mellem hovedkædens atomer. Sekvensen er Pro-Leu-His-Ile
 (nede fra venstre og op mod højre), hvilket ses af sidekædetæthed og
 positionen af carbonylgrupper:
 
-![](media/image134.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-4-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
 
 For at løse strukturen har forskerne brugt et Fab-fragment til at
 stabilisere K^+^-kanalen under krystallisation. Strukturen indeholdende
 både Fab-fragment og K+-kanal findes i PDB med ID **1K4C**.
 
-![](media/image135.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 3.** Forklar først hvad et
+![](figures/exam_2022_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 3.** Forklar først hvad et
 Fab-fragment er og hvorfor det kan bruges til at stabilisere strukturen
 af K^+^-kanalen. Hent dernæst **1K4C** i PyMOL og gør rede for hvilke
 domæner Fab-fragmentet og K^+^-kanalen indeholder samt hvilke
@@ -294,7 +294,7 @@ sidekæder tættere på inhibitoren end 4 Å er vist som sticks. Inhibitoren
 er gul og vist som sticks. Den grå kugle er en zinkion, som er essentiel
 for aktiviteten af ACE2.
 
-![](media/image136.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Skriv et PyMOL-script der genererer figuren (uden
 labels). Besvarelsen skal indeholde scriptet og det genererede billede.
@@ -399,7 +399,7 @@ arginine.
 
 Figuren nedenfor viser aktiviteten af ACE2 sum funktion af pH.
 
-![](media/image137.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_2/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Angiv den mest sandsynlige forklaring på hvorfor ACE2
 mister aktivitet ved lav pH.

@@ -167,7 +167,7 @@ Nedenfor ses et sekvens-alignment af FSE-elementet fra SARS-CoV2 med
 sekvenser fra lignende vira med eksempler på co-varierende baseændringer
 i Stem1 og Stem2 markeret med røde og fede bogstaver:
 
-![](media/image60.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4**. Hvor mange forskellige typer co-varierende
 baseændringer er der på de markerede positioner i Stem1 og Stem2?
@@ -190,14 +190,14 @@ FRET-effektivitet 0,2 betegnes Enz~1~ mens tilstanden med
 FRET-effektivitet 0,8 betegnes Enz~2~, hvorved hastigheds- og
 ligevægtskonstanter defineres som følger:
 
-![](media/image61.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvor stor forskel er der på afstanden imellem donor og
 acceptor mellem Enz~1~ og Enz~2~?
 
 Svar: FRET-effektiviteten er givet ved:
 
-![](media/image62.gif){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-3-figur-2.gif){.lightbox width="90%" fig-align="center"}
 
 Vi isolerer r:
 
@@ -220,7 +220,7 @@ Forskellen er dermed: 7.55nm -- 4.76 nm = 2,8 nm = 28 Å
 Nedenfor ses et repræsentativt enkelt-molekyle FRET-eksperiment for
 systemet.
 
-![](media/image63.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-3-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Giv et begrundet estimat for K.
 
@@ -231,7 +231,7 @@ med lav FRET. Der for er K = 1/2
 Eksperimentet gentages nu for en mutant af enzymet, hvilket giver
 nedenstående resultat.
 
-![](media/image64.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-3-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Angiv ud fra dette om k~1~, k~-1~ og K hver især er
 *større*, *mindre* eller *omtrent uændret* for mutanten relativt til
@@ -244,7 +244,7 @@ k~1~ uændret, k~-1~ er øget og K er mindre.
 Eksperimentet gentages nu for vildtype-enzymet i tilstedeværelse af en
 inhibitor, som vist nedenfor.
 
-![](media/image65.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-3-figur-5.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Giv med udgangspunkt i disse data en forklaring på
 hvordan inhibitoren virker.
@@ -277,7 +277,7 @@ et bundet monosaccharid fra to synsvinkler. Kulstofatomer i toksinet og
 saccharidet er vist i henholdsvis grønt og gult og hydrogenbindinger er
 vist som blå stiplede linjer.
 
-![](media/image68.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Angivet hvilket specifikt monosaccharid, der er bundet
 til receptoren, herunder konfigurationen omkring det anomere kulstof.
@@ -291,7 +291,7 @@ Strukturen af toksinet er også bestemt i kompleks med et trisaccharid
 som vist nedenfor, hvor de tre saccharider er mærket henholdsvis A, B og
 C.
 
-![](media/image69.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Beskriv glycosidbindingerne mellem A og B samt mellem B
 og C med angivelse af de indgående kulstofatomer og konfigurationen.
@@ -331,7 +331,7 @@ syntetisk fremstillet plastik som affald i naturen. Dette nedbrydes
 meget langsomt, i visse tilfælde af enzymdrevne processer. Strukturerne
 af de mest udbredte klasser af plastik er vist nedenunder.
 
-![](media/image70.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-5-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvorfor er det en udfordring for enzymer at nedbryde
 disse stoffer ud fra et kemisk perspektiv? Hvilke stofgrupper må
@@ -352,14 +352,14 @@ af mikroorganismer der vokser på en losseplads med primært PET-plastik.
 Ét sådant enzym (en PETase) nedbryder PET til MHET, mens et andet (en
 MHETase) nedbryder MHET til PTA og EG, som vist nedenfor.
 
-![](media/image71.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-5-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
 
 Strukturen af MHETase er bestemt i nærvær af stoffet benzoat (se
 nedenfor). MHETase kan deles op i to domæner, en lysegrå del, som er
 næsten identisk med PETase og en mørkegrå del der ikke findes i PETase.
 Dvs. MHETase kan beskrives som PETase (lysegrå) med låg (mørkegrå).
 
-![](media/image72.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-5-figur-3.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvorfor kan benzoat binde til det aktive site i
 MHETase? Hvilken enzymklasse forbindes sidekæderne i det aktive site
@@ -378,7 +378,7 @@ indkapsles. Derimod er MHET lille og skal tilbageholdes i det aktive
 site eftersom den langsomme reaktionsrate gør MHET tilbøjelig til at
 diffundere væk før det når at blive nedbrudt.
 
-![](media/image73.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_1/opgave-5-figur-4.jpeg){.lightbox width="90%" fig-align="center"}
 
 Man fremstiller nu et hybridenzym bestående af en MHETase og en PETase
 forbundet med en 8-aminosyrerest linker. Dets evne til at danne TPA

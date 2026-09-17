@@ -91,7 +91,7 @@ Nedenfor vises strukturen af Protein X som cartoon, farvet fra blå
 Bemærk at flere fleksible loops ikke er vist, da de er uordnede samt at
 C-terminalen ikke ses i B.
 
-![](media/image1.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvordan et domæne er defineret og angiv baseret
 på farverne antallet og rækkefølgen af strukturelle domæner i Protein X.
@@ -182,7 +182,7 @@ reaktioner.
 intermediatet *indole 3-glycerol phosphate* til slutproduktet
 tryptophan, udviser fænomenet *\"substrate channeling\"*:
 
-![](media/image16.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Forklar kort, hvad *\"substate channeling\"* dækker
 over samt hvorfor det er nødvendigt for enzymet i dette tilfælde.
@@ -197,7 +197,7 @@ membranen), og reaktivt samt kan interkalere i DNA.
 Nedenfor ses strukturen af tryptophan synthase bundet til en substratet
 indole 3-glycerol phosphate (grønt).
 
-![](media/image17.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_2/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Angiv hvor mange domæner, enzymet består af samt
 hvilken af enzymets to reaktioner, der katalyseres i domænet med
@@ -260,7 +260,7 @@ som udtrykker GPCR-1 receptoren, og man måler aktiviteten af Protein
 Kinase A. Forklar hvad der er særlige ved stoffet og forklar hvorfor
 stoffet stimulerer fosforyleringsaktiviteten af Protein Kinase A.
 
-![](media/image8.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Svar: Et korrekt svar skal indeholde at strukturen viser en GTP analog
 (5\'-guanosyl-methylene-triphosphate (GDPCP)) og at denne ikke
@@ -311,7 +311,7 @@ junction. De 3 hairpins har tetraloop. Hairpin 2 har G bulge. Hairpin 3
 har asymmetrisk bulge med 3 nukleotider på 5\' side og 2 nukleotider på
 3\' side.
 
-![](media/image9.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Højre side af figuren herover viser resultatet af et forsøg, hvor
 fluorescensen fra Spinach-DFHBI komplekset måltes som funktion af

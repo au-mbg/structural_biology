@@ -25,7 +25,7 @@ PTPRδ består af 13 strukturelle domæner, 3 Ig-domæner, 8 Fn-domæner og 2
 phosphatase-domæner. I figuren nedenfor er vist det tredje Ig-domæne og
 det første Fn3-domæne samt det første phosphatase-domæne.
 
-![](media/image38.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Angiv foldningsklassen for hver af de tre domænetyper
 og begrund dit svar.
@@ -36,7 +36,7 @@ tilhører 𝛼𝛽 foldningsklassen idet sekundærstrukturen indeholder både
 𝛼-helix og 𝛽-kæder. (Mere specifikt tilhører domænet 𝛼/𝛽-klassen da det
 er en parallel 𝛽-plade med helix på begge sider).
 
-![](media/image39.png){.lightbox width="90%" fig-align="center"}PTPRδ binder chondroitin sulfat proteoglycaner.
+![](figures/exam_2019_1/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}PTPRδ binder chondroitin sulfat proteoglycaner.
 Chondroitin sulfat består af repeterende enheder af et modificeret
 disaccharid vist i figuren til højre.
 
@@ -59,7 +59,7 @@ hexasaccharidet. I figuren nedenfor er vist ladningsfordelingen på
 overfladen af de tre Ig-domæner. Røde områder er negativt ladede og blå
 områder positivt ladede.
 
-![](media/image40.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Foreslå hvilket af Ig-domænerne der binder CS og
 begrund dit svar.
@@ -187,7 +187,7 @@ hovedtyper af subunits i \"tønden\" er vist med forskellige farver.
 Svaret til denne opgave består af en figur fra PyMOL med angivelse af
 hvilke farver, der svarer til hvilke subunits.
 
-![](media/image41.png){.lightbox width="90%" fig-align="center"}Svar: I figuren til venstre er subunits
+![](figures/exam_2019_1/opgave-3-2018-ordning-figur-1.png){.lightbox width="90%" fig-align="center"}Svar: I figuren til venstre er subunits
 fra α-ringene farvet grøn og blå og subunits fra β-ringene lyserød og
 cyan. Spørgsmålet kan også forstås som at man skal farve én af hver af
 de forskellige proteasetyper (specificitetstyper), så dette antages også
@@ -203,7 +203,7 @@ må forventes at tillade adgang af substrat og dermed være aktiv. Det er
 anderledes end for det isolerede 20S proteasom, hvor terminale haler på
 α-enhederne blokerer for adgangen.
 
-![](media/image42.png){.lightbox width="90%" fig-align="center"}Figuren til venstre er blot til
+![](figures/exam_2019_1/opgave-3-2018-ordning-figur-2.png){.lightbox width="90%" fig-align="center"}Figuren til venstre er blot til
 illustration, og kræves ikke for korrekt svar.
 
 Kør følgende script i PyMOL for at få et blik ind i ét af de mange
@@ -241,7 +241,7 @@ generel base. Det kunne være enten Asp eller Lys som vist på figuren,
 afhængig af lokale pKa-forhold. Figuren nedenfor er til illustration og
 ikke en del af svaret.
 
-![](media/image43.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-3-2018-ordning-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 ## Opgave 3 (2019-ordning)
 
@@ -331,7 +331,7 @@ Svar: Det mest naturlige er at plotte ændringen i absorption over tid
 som funktion af den tilsatte mængde RNA. Dette kan f.eks. gøres vha.
 LINEST-funktionen i Excel, som vi har brugt ved laboratorieøvelserne:
 
-![](media/image44.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-3-2019-ordning-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Ved dette ses at der er et optimum ved 2 ul tilsat RNA, hvor
 absorptionsændringen absolut set er størst.
@@ -422,7 +422,7 @@ interagerer med sukker for U23.
 
 ## Opgave 5
 
-![](media/image47.png){.lightbox width="90%" fig-align="center"}Forskere har udviklet et stof X, som kan binde til
+![](figures/exam_2019_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}Forskere har udviklet et stof X, som kan binde til
 og inhibere en bestemt klasse af proteaser. Dette er illustreret i
 figuren til højre, der viser hvordan X interagerer med enzymets
 S~1~^\'^- og S~2~^\'^-bindingssteder. På figuren befinder X sig indenfor
@@ -456,7 +456,7 @@ den normale Michaelis-Menten formalisme, som skitseret nedenfor. Angiv
 hvor X indgår i denne mekanisme og beskrive hvilke enzymatiske
 parametre, der ændres ved tilsætning af X.
 
-![](media/image46.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 Svar: Klassisk mekanisme: E:I ⬄ I + E (med *K*~I~) sammen med E + S ⬄E:S
 (med *K*~M~) ⬄ E + P (med *k*~cat~).
@@ -464,7 +464,7 @@ Svar: Klassisk mekanisme: E:I ⬄ I + E (med *K*~I~) sammen med E + S ⬄E:S
 Vi måler nu hvordan X reducerer aktiviteten af proteasen og får kurven
 nedenfor.
 
-![](media/image47.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_1/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Hvilken enzymatisk parameter får man ud af sådan et
 plot? Hvilken omtrentlig værdi har denne parameter?

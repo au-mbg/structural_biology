@@ -10,7 +10,7 @@ Et enzym findes i ligevægt imellem to konformationer, en åben tilstand
 og en lukket tilstand. Enzymets ligevægt kan beskrives ved hjælp af
 parametrene, k~1~, k~-1~ og K som er givet som vist nedenfor.
 
-![](media/image48.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Vha. enkelt-molekyle FRET-spektroskopi, hvor den åbne tilstand har en
 lav FRET-effektivitet og den lukkede har en høj FRET-effektivitet, opnås
@@ -18,7 +18,7 @@ ovenstående kurve, der viser et repræsentative data for et enkelt
 molekyle af wild type-enzymet. For tre mutanter af enzymet opnås
 nedenstående data.
 
-![](media/image49.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvordan er k~1~, k~-1~ og K ændret for Mutant A
 relativt til wild type-enzymet? Der forventes en begrundelse, men ikke
@@ -77,9 +77,9 @@ glycosid-binding. Figur A viser hvordan et substratmolekyle binder til
 en sådan cellulase, mens Figur B viser mere generelt hvordan den enkelte
 glukosering vekselvirker med enzymet.
 
-![](media/image50.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image51.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvor mange glukose-molekyler indgår i substratet i
 Figur A? Beskriv ud fra figurerne (A og B) hvilke forskellige typer af
@@ -90,14 +90,14 @@ hydrofob og en hydrofil side, så den hydrofobe side er god til at pakke
 mod de hydrofobe Trp ringe, mens den hydrofile side formodentlig har en
 masse H-bindinger til proteinets polære grupper.
 
-![](media/image53.png){.lightbox width="90%" fig-align="center"}Der findes tre katalytisk vigtige aminosyrerester
+![](figures/exam_2019_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}Der findes tre katalytisk vigtige aminosyrerester
 i cellulasen, som angivet i Figur C. Af disse har Asp214 en
 stabiliserende funktion, mens de to Glu-sidekæder reagerer direkte med
 substratet. I forbindelse med strukturbestemmelse er Glu217 i dette
 tilfælde muteret til en Gln for at undgå substratkløvning og vist i to
 alternative konformationer på figuren.
 
-![](media/image54.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 2.** Angiv med reaktionspile
+![](figures/exam_2019_2/opgave-2-figur-4.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 2.** Angiv med reaktionspile
 hvordan Glu212 og Glu217 samarbejder om at nedbryde cellobiose. Hvilke
 katalytiske roller har de to sidekæder?
 
@@ -106,7 +106,7 @@ katalytiske roller har de to sidekæder?
 Svar: Det følger flg. mekanisme: Her er Glu212 en nukleofil katalysator
 mens Glu217 er en generel syre/base.
 
-![](media/image55.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-2-figur-5.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvorfor er det nødvendigt for enzymet at påvirke
 pK~a~-værdien af Glu217 og i hvilken retning ændres den?
@@ -239,7 +239,7 @@ eller wild-type \"WT\" proteiner med \[^32^P\]-ATP og K^+^ i 30
 minutter, hvorefter prøverne separeres med SDS-PAGE og visualiseres med
 auto-radiografi (vist nedenfor).
 
-![](media/image56.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3**. Hvilken type aminosyrerest er 386 højst sandsynligt og
 hvorfor er den vigtig for transportfunktionen?
@@ -255,7 +255,7 @@ bliver brugt som lægemiddel mod halsbrand. Foreslå en mulig
 inhiberingsmekanisme og forklar hvordan stoffet kan fungere som
 lægemiddel.
 
-![](media/image57.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 SCH28080
 
@@ -276,7 +276,7 @@ prøven blev delt i to portioner. For den ene portion fjernede man
 samtidig igen både urea og β-mercaptoethanol, mens man for den anden
 først fjernede β-mercaptoethanol og herefter urea.
 
-![](media/image58.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2019_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 RNase A er et meget stabilt enzym, der udskilles af bugspytkirtlen
 (pancreas) hos mange dyr, hvor det deltager i fordøjelsen af fødevarer.

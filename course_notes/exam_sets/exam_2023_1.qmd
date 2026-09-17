@@ -57,7 +57,7 @@ color magenta ,/6diidim///700
 
 orient 6diidim
 
-![](media/image139.png){.lightbox width="90%" fig-align="center"}RMSD =    0.464 (1076 to 1076 atoms)
+![](figures/exam_2023_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}RMSD =    0.464 (1076 to 1076 atoms)
 
 Fedtsyreamidaser indeholder en katalytisk triade, der til forskel fra
 serinproteaser, består af 2x Ser og 1x Lys. Nedenfor ses sekvensen for
@@ -125,7 +125,7 @@ den relative aktivitet for forskellige kombinationer af peptider.
   H          C          N          **30**
   ------------------------------------------------
 
-![](media/image142.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-2-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvorfor visse kombinationer af tre
 aminosyresidekæder kan give hydrolyseaktivitet overfor substratet.
@@ -159,7 +159,7 @@ til og blive hydrolyseret i. Eftersom enzymer stabiliserer transition
 f.eks. en hvor C=O-bindingen er erstattet af en C(-OH)-OH-binding (et
 tetravalent intermediat).
 
-![](media/image143.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvilke(n) type(r) af inhibitor tilhører inhibitor 1 og
 2? Begrund dit svar. Til hvilke af de to bindingssteder i RNA polymerase
@@ -253,9 +253,9 @@ på 161 mM.
 
 Svar:
 
-![](media/image144.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image145.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** I et laboratorieforsøg med Na^+^-kanalen fandt man en
 variant, L32D, som forblev permeabel overfor Na^+^ efter aktivering. I
@@ -297,7 +297,7 @@ strenge som i DNA vil der altid være sekundær struktur, der kan
 interageres med. Når RNA nedbrydes frigives det bundne methylene blue
 hvorved absorptionen falder.
 
-![](media/image146.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 methylene blue
 
@@ -354,7 +354,7 @@ Svar: Kurven har et minimum ved ca. 2-3 µl tilsat RNA. Afhænger af om
 man beregner hældning vha. regression (LINEST) eller bare slut minus
 start OD:
 
-![](media/image147.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvilken mængde RNA er optimalt at bruge i forsøget med
 RNase A? Forklar dit svar. Kom også med en mulig, biologisk forklaring
@@ -374,7 +374,7 @@ T., Grunow, M., Hahn, U. \"A general ribonuclease assay using methylene
 blue\", Anal Biochem (1996) 240(1):24-8), hvor man tilsatte forskellige
 mængder af RNA til en fast mængde methylene blue og målte absorbansen:
 
-![](media/image148.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2023_1/opgave-5-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Beskriv hvordan ovenstående forsøg adskiller sig fra
 forsøget, de studerende gennemførte og kom med en mulig forklaring på

@@ -10,7 +10,7 @@ Planten *Thapsia gargancia* (også kendt som giftig gulerod) har været
 kendt siden oldtiden for sine urtemedicinske egenskaber. Stoffet
 thapsigargin blev isoleret fra *Thapsia gargancia* i 1970'erne.
 
-![](media/image105.png){.lightbox width="90%" fig-align="center"}*Thapsigargin*
+![](figures/exam_2021_2/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}*Thapsigargin*
 
 Spørgsmål 1. Forklar ud fra thapsigargins kemiske struktur hvordan du
 forventer stoffet passerer cellemembranen. Begrund dit svar.
@@ -71,7 +71,7 @@ Herefter studerer du proteinet med enkelt-molekyle FRET-spektroskopi og
 får følgende FRET-effektivitet (E) som funktion af tiden for et
 repræsentativt enzymmolekyle.
 
-![](media/image106.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Forklar sammenhængen imellem den kuvette-baserede
 måling og enkelt-molekylemålingen. Er der overensstemmelse imellem de
@@ -86,7 +86,7 @@ klart mest almindelig, så gennemsnittet passer fint med en værdi omkring
 Du tilsætter nu proteinets ligand og laver følgende enkelt molekyle
 måling:
 
-![](media/image107.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvordan påvirker liganden proteinets struktur og
 dynamik?
@@ -98,12 +98,12 @@ meget mere sjældent end i *apo*-tilstanden.
 Du fortolker proteins dynamik ud fra en model med to tilstande, S1 og
 S2, hvor S1 har lav RET effektivitet, og S2 har høj FRET-effektivitet.
 
-![](media/image101.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 Du studerer nu en mutant af proteinet og får følgende data (uden
 ligand):
 
-![](media/image108.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-2-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Hvordan påvirker mutation (øger eller sænker) k~1~,
 k~-1~, og K~eq~? (begrund dit svar)
@@ -118,7 +118,7 @@ imod høj FRET-tilstanden, S2. Altså er K~eq~ større.
 Stoffet methylenblåt kan bruges til at bestemme koncentrationen af RNA i
 en opløsning.
 
-![](media/image109.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 *Methylenblåt (chloridsalt)*
 
@@ -140,7 +140,7 @@ forhold mellem phosphat i RNA (P) og methylenblåt (M). Resultatet ses i
 figuren nedenfor hvor (1) er methylenblåt alene, (2) er ved et
 P/M-forhold på 4,7 og (3) ved et P/M-forhold på 35,2.
 
-![](media/image110.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Beregn hvor mange molekyler methylenblåt, der i
 gennemsnit er bundet til hvert tRNA-molekyle i (2) og (3), når det
@@ -194,7 +194,7 @@ PMID: 7671338
 
 ## Opgave 4
 
-![](media/image111.png){.lightbox width="90%" fig-align="center"}Lipaser er enzymer der nedbryder
+![](figures/exam_2021_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}Lipaser er enzymer der nedbryder
 fedtstoffer såsom triglycerider gennem hydrolyse. På figuren til højre
 er vist et triglycerid med kløvningsstederne angivet med røde streger.
 
@@ -204,7 +204,7 @@ kløves af lipasen.
 Svar: Det er esterbindingerne. Bemærk af det skal være mellem O og C(O)
 gruppen, ikke O og CH eller C(O) og Cα.
 
-![](media/image112.jpeg){.lightbox width="90%" fig-align="center"}I figuren til højre ses en del af
+![](figures/exam_2021_2/opgave-4-figur-2.jpeg){.lightbox width="90%" fig-align="center"}I figuren til højre ses en del af
 strukturen af en lipase omkring dens aktive site.
 
 **Spørgsmål 2.** Angiv navn og nummer på de [tre]{.underline} sidekæder
@@ -220,7 +220,7 @@ nær His for at stabilisere dens positive ladning.
 Som modelsubstrat til at undersøge lipaseaktivitet anvendes ONPG, se
 figur nedenfor.
 
-![](media/image113.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 O*-nitrophenolbutyrat (ONPG)*
 
@@ -231,7 +231,7 @@ substratet frigives først og hvordan måles det?
 Svar: Se nedenfor. ONPH frigives først; den er gul i ONP- formen (måles
 ved absorbans).
 
-![](media/image114.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-4-figur-4.jpeg){.lightbox width="90%" fig-align="center"}
 
 Nu udføres der et stopped-flow forsøg med lipasen hvor stoffet MUB (se
 nedenfor) anvendes som substrat. Her bliver methylumbelliferyl-gruppen
@@ -240,7 +240,7 @@ figuren til højre.
 
 |                                                               |                                                               |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| ![](media/image115.jpeg){.lightbox width="90%" fig-align="center"}                         | ![](media/image116.jpeg){.lightbox width="90%" fig-align="center"}                         |
+| ![](figures/exam_2021_2/opgave-4-figur-5.jpeg){.lightbox width="90%" fig-align="center"}                         | ![](figures/exam_2021_2/opgave-4-figur-6.jpeg){.lightbox width="90%" fig-align="center"}                         |
 | *methyl-umbelliferyl butyrate (MUB)*                          |                                                               |
 
 **Spørgsmål 4.** Forklar den molekylære basis for udseendet af grafen
@@ -255,7 +255,7 @@ så hele enzym populationen når at blive acyleret hurtigt (burst phase \<
 (\>0.07s) før enzymerne kan frigives for at starte en ny runde
 hydrolyse.
 
-![](media/image117.png){.lightbox width="90%" fig-align="center"}Bonus svar: Det kaldes "active site titration". Jo
+![](figures/exam_2021_2/opgave-4-figur-7.png){.lightbox width="90%" fig-align="center"}Bonus svar: Det kaldes "active site titration". Jo
 mere aktivt protein (altså protein som faktisk reagerer med substratet),
 jo større forskel mellem nul-punkts-ekstrapoleringerne fra steady-state
 tilstanden og burst-phase tilstanden (se skitse).
@@ -330,4 +330,4 @@ show sticks, 1EK6 and (resn NAI or resn UPG or resn TMA or resn MG)
 
 color yellow, 1EK6 and (resn NAI or resn UPG or resn TMA or resn MG)
 
-![](media/image118.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}

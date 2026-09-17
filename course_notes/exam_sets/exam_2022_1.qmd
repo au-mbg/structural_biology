@@ -11,7 +11,7 @@ pancreas og derfor har været brugt til en lang række biokemiske
 eksperimenter gennem tiden. RNase A er desuden et usædvanligt stabilt
 enzym.
 
-![](media/image119.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 1.** Beskriv domænestruktur og
+![](figures/exam_2022_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}**Spørgsmål 1.** Beskriv domænestruktur og
 foldningsklasse af RNase A, herunder hvilke biokemiske egenskaber, der
 gør enzymet så stabilt.
 
@@ -81,7 +81,7 @@ forskel på de to konformationer af receptoren.
 
 Svar:
 
-![](media/image120.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 Domænerne lukker sammen omkring uPA, så 2FD6 er mere lukket end 1YWH med
 peptid-antagonisten.
@@ -116,7 +116,7 @@ E(2FD6) = 0.94
 Nedenfor ser du resultatet af et enkelt-molekyle FRET-eksperiment for
 uPAR med ovenstående mærkning i fravær af nogen ligander.
 
-![](media/image121.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_1/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 Ligevægtskonstanten K for den strukturelle omlejring er defineret for
 reaktionen:
@@ -141,9 +141,9 @@ receptor, der er vigtig for mange funktioner i hjernen.
 **Spørgsmål 1.** Den kemiske struktur af **dopamin** er vist nedenfor.
 Forventer du at stoffet kan passere cellemembranen? Begrund dit svar.
 
-![](media/image122.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_1/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image123.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2022_1/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **dopamin** **doxanthrine**
 
@@ -280,7 +280,7 @@ Med mutanterne udførtes pull-down forsøg hvor affinitets-tagget NL1 blev
 bundet til en søjle, hvorefter binding af NX1β kunne vurderes via en
 SDS-gel. Resultatet af forsøgene er vist i figuren nedenfor.
 
-![](media/image127.png){.lightbox width="90%" fig-align="center"}\
+![](figures/exam_2022_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}\
 **Spørgsmål 2.** Forklar baseret på strukturen og disse resultater,
 hvilken af de to muligheder for kompleksdannelse, der er den fysiologisk
 relevante.

@@ -60,7 +60,7 @@ binder mange forskellige proteiner:
 Sekvensanalyse afslører, at de tre Protein G-varianter ikke indeholder
 samme elementer:
 
-![](media/image75.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Forklar ud fra disse data hvilke områder i Protein G,
 der bidrager væsentlig til binding af henholdsvis IgG og HSA.
@@ -85,7 +85,7 @@ Enzymet threonin deaminase (TD) omdanner aminosyren Thr til
 reducerer enzymets aktivitet, mens aminosyren Val (som dannes via et
 ubeslægtet sæt af metaboliske reaktioner) øger aktiviteten.
 
-![](media/image76.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Fordel de tre begreber *heterotrop allosterisk
 aktivering*, *heterotrop allosterisk inhibering* eller *homotrop
@@ -119,7 +119,7 @@ På figuren nedenfor (A) er data tilpasset enten ligning 1 ( ) eller
 ligning 2 ( ). Den indsatte figur fokuserer på de laveste \[Thr\]
 værdier.
 
-![](media/image77.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvilken ligning passer bedst og hvad fortæller det om
 reaktionen? Tilpasning til ligning 1 giver *n* = 1,27 ± 0,10 og *K* =
@@ -142,9 +142,9 @@ reaktionshastighed. Δ*F*/*F*~max~ antager værdier mellem 0 og 1 og
 $\frac{\mathrm{\Delta}F}{F_{\max}} = \frac{{\lbrack\alpha AB\rbrack}^{n}}{{\lbrack\alpha AB\rbrack}^{n} + {K_{D}}^{n}}$
 (1b)
 
-![](media/image78.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image80.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvad minder αAB mest om, substrat eller produkt?
 Forklar ud fra (A) og (B) ligheder og forskelle i hvordan αAB og Thr
@@ -161,9 +161,9 @@ funktion af \[Val\] ved forskellige faste koncentrationer af Ile (D).
 Der kan ses bort fra nedgangen i aktivitet ved høj \[Val\] og antages at
 aktivitet er konstant.
 
-![](media/image82.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-5.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image84.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-6.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Estimér den nye værdi for *K*~D~ ud fra data i (C) og
 forklar ud fra din viden om enzymet hvorfor Ile har denne effekt på
@@ -211,7 +211,7 @@ der udgør en funktionel kanal og angiv den kvaternære struktur.
 
 Svar: KV1.2 har 4 identiske kæder (tetramer).
 
-![](media/image85.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4**. Analyser strukturen, identificér og opskriv de
 aminosyrer som binder kalium. Hvilken rolle har disse aminosyrer for
@@ -230,7 +230,7 @@ til membraner i andre organeller eller til plasmamembranen. Nedenfor ses
 den generelle struktur af ceramider og krystalstrukturen af det
 ceramid-bindende domæne i CERT med N-stearyl-ceramid bundet.
 
-![](media/image86.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Anslå hvor mange aminosyrerester, der indgår i den
 lange α-helix (orange) og herfra dens længde målt i Å.
@@ -246,7 +246,7 @@ hydrogenbindinger som stiplede linjer og sidekæder med grøn
 énbogstavskode og sekvensnummer. Atomer i ceramidet er angivet med sort
 skrift.
 
-![](media/image87.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Beskriv hvorledes den polære del af ceramidet genkendes
 af CERT, og angiv hvor muligt hvilke atomer der er donorer / acceptorer
@@ -272,9 +272,9 @@ bindingslommen på proteinet med sphingosine-delen i blå-grøn og
 fedtsyredelen i gul-rød. Søjlediagrammet viser binding af ceramider med
 forskellig fedtsyrelængde til CERT.
 
-![](media/image88_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image89.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-4.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Giv en sandsynlig forklaring på variationen i
 affiniteten som funktion af fedtsyrekædelængde.
@@ -293,7 +293,7 @@ I et andet forsøg målte man binding af N-stearyl ceramide til CERT under
 tilstedeværelse af fire punktmutationer i CERT (E446A, Q467A, N504A,
 Y553F).
 
-![](media/image90_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-5.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hvorfor bindingen er reduceret for de fire
 mutationer og foreslå hvorfor binding til N504A og Y553F er væsentligt
@@ -316,7 +316,7 @@ S2, hvoraf S1 udgør proteinets hovede og S2 rummer fusionsmaskineriet.
 På figuren herunder er de enkelte aminosyrer farvelagt ud fra deres
 variation mellem et betydeligt antal forskellige Spike-sekvenser:
 
-![](media/image91.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvad skalaen fra \"Conserved\" til \"Variable\"
 betyder og hvorfor S1 domænet er mest variabelt?

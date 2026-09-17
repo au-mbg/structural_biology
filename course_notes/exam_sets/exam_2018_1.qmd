@@ -13,7 +13,7 @@ bestemt. Nedenfor ses overfladen af AtCERK1 i grønt med
 chitin-fragmentet som \"sticks\" farvet efter atomtype (C-gul, N-blå,
 O-rød).
 
-![](media/image18.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Angiv hvilken ende af den viste chitin-tetramer, der er
 den [reducerende ende]{.underline}. Forklar dit svar.
@@ -53,7 +53,7 @@ LTTMESLQARNPFPATNIPLSATLNVLVN**[C]{.mark}**S**[C]{.mark}**GDESVSKDFGLFVTYPLR
 
 PEDSLSSIARSSGVSADILQRYNPGVNFNSGNGIVYVPGRDPNGAFPPFKS
 
-![](media/image19.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Angiv under angivelse af sekvensnumre, hvilke [tre par
 af cysteinrester,]{.underline} der danner disulfidbroer.
@@ -234,7 +234,7 @@ $$Y = K_{1} - K_{2} \times \ (c + K_{d} + \ P)\sqrt{{(c + K_{d} + \ P)}^{2} - 4P
 
 Løsning af opgaven med SOLVER funktionen i Excel:
 
-![](media/image20.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 ## Opgave 3 (udenfor pensum)
 
@@ -256,7 +256,7 @@ bruges til at frigøre komplekserne fra IgG-søjlen. Efter oprensning kan
 bånd identificeres vha. MS. Baseret på:
 https://www.sciencedirect.com/science/article/pii/S1046202301911831
 
-![](media/image21.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Forklar hvilke overvejelser, der kunne ligge til grund
 for at vælge en stamme, der er *Δrrp6*, herunder hvorfor dette kan være
@@ -271,7 +271,7 @@ kaldet **CE** og **RE**. I figur (a) nedenfor ses en SDS-PAGE gel med de
 to fraktioner og i panel (b) et kromatogram efter oprensning af de to
 fraktioner på en gelfiltreringssøjle.
 
-![](media/image22_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Forklar hvordan indholdet af CE og RE adskiller sig og
 anslå den omtrentlige molekylemasse (i hele hundrede kDa) af de to
@@ -292,7 +292,7 @@ Baseret på: https://www.pnas.org/content/104/43/16844
 Efterfølgende analyserede man komplekserne CE og RE vha. \"negative
 stain\" elektronmikroskopi. Resultatet af dette er vist nedenfor.
 
-![](media/image23_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-3-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hovedprincipperne i strukturløsning med
 \"negative stain\"-metoden og kom med en fortolkning af strukturerne,
@@ -313,9 +313,9 @@ Et antistof, der specifikt binder den kemiske forbindelse **1,**
 katalyserer tillige nedbrydningen af stofferne **3-5** som angivet
 nedenfor.
 
-![](media/image25.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image25_tiff.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Ud fra bindingen til **1**, forklar hvordan antistoffet
 kan katalysere disse reaktioner.
@@ -338,11 +338,11 @@ Strukturen er angivet nedenfor, hvor den tunge kæde af antistoffet er
 vist i grøn, den lette kæde i turkis og stof **2** i gul (for
 kulstofatomerne).
 
-![](media/image26.png){.lightbox width="90%" fig-align="center"}**2**
+![](figures/exam_2018_1/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}**2**
 
-![](media/image27.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-4-figur-4.png){.lightbox width="90%" fig-align="center"}
 
-![](media/image28.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-4-figur-5.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Angiv baseret på strukturen en forklaring på hvorfor
 antistoffet har så bred specificitet.
@@ -355,7 +355,7 @@ Aktiviteten af enzymet carbonisk anhydrase (CA) hæmmes aktiviteten af
 anionen trithiocarbonat (CS~3~^2-^). I strukturen af komplekset mellem
 CA og CS~3~^2-^ er anioninen koordineret på følgende vis:
 
-![](media/image29.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-4-figur-6.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Ud fra dit kendskab til strukturen og mekanismen for
 CA, diskutér hvilken slags inhibitor CS3^2-^ er, og hvorfor stoffet
@@ -399,7 +399,7 @@ Nedenfor er vist resultatet af et forsøg med gelfiltrering af STH og
 receptordomænerne af RTK1 og RTK2 både hver for sig (grå, rød og blå
 kurver) og sammen (grøn).
 
-![](media/image30.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2018_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Foreslå på baggrund af dette eksperiment en sandsynlig
 aktiveringsmekanisme for receptorkinaserne RTK1 og RTK2

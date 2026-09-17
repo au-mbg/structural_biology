@@ -10,7 +10,7 @@ Stoffet *N*-glutaryl-*L*-phenylalanine-*p*-nitrophenol (GPN) kan
 benyttes som såkaldt [kromogent substrat]{.underline} for proteasen
 chymotrypsin.
 
-![](media/image92.png){.lightbox width="90%" fig-align="center"}*\
+![](figures/exam_2021_1/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}*\
 N*-glutaryl-*L*-phenylalanine *p*-nitrophenol
 
 Spørgsmål 1. Beskriv hvad der forstås ved et \"kromogent substrat\",
@@ -27,7 +27,7 @@ Ved den enzymatiske reaktion dannes stoffet ***p*-nitrophenol**, der er
 en svag syre med en pK~a~-værdi på 7,15. Nedenfor ses absorptionskurver
 for stoffets to protoneringsformer.
 
-![](media/image93.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Angiv i punktform de eksperimentelle trin, du vil tage
 for at opstille en standardkurve for aktiviteten af chymotrypsin overfor
@@ -57,7 +57,7 @@ konfidensinterval.
 
 Svar: Data plottes i Excel:
 
-![](media/image94.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 Konfidensinterval vurderes til 5-15 \* 10^-5^ M enzym (som vist med
 orange + bedste, rette linje).
@@ -104,7 +104,7 @@ oprindelige Wuhan-virus, hvor monomer i åben konformation er vist i cyan
 siden af med mutationer vist for substitutioner (rød) og
 inserts/deletions (gul).
 
-![](media/image95.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Forklar hvordan mutationer opstår i SARS-CoV2, hvorfor
 de bevares i varianterne under naturlig selektion, og hvad der kan
@@ -189,7 +189,7 @@ kalibreringskurve for samme kolonne hvor man har bestemt
 elueringsvolumen for proteiner med kendte molekylemasser. Ligningen
 ovenfor grafen angiver den bedste rette linje.
 
-![](media/image96.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-3-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Hvor mange subunits består Als af under disse
 betingelser? Forklar hvordan du når frem til dit svar.
@@ -203,8 +203,8 @@ nedenfor til venstre) og GDP. Figuren til højre viser området omkring
 det aktive site, hvor den angivne H^+^ stammer fra 3\'-OH-gruppen på
 GDP.
 
-![](media/image97.png){.lightbox width="90%" fig-align="center"}
-![](media/image98.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-3-figur-2.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-3-figur-3.jpeg){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Hvordan adskiller AMPCPP sig fra ATP og hvad kan være
 grunden til at det benyttes ved strukturbestemmelsen?
@@ -252,7 +252,7 @@ angivet nedenfor.
   5.0      6.1379          1.7759
   -----------------------------------------
 
-![](media/image99.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-3-figur-4.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Beregn og kommentér graden af kooperativitet i
 aktiviteten overfor hhv. GDP og GTP. Benyt hæmoglobins binding til ilt
@@ -308,7 +308,7 @@ som funktion af tiden for et repræsentativt enzymmolekyle. Nedenfor
 vises resultatet af to eksperimenter udført hhv. med (sort) og uden
 (rød) substrat.
 
-![](media/image100.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-4-figur-1.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 2.** Beskriv substratets effekt på enzymets struktur og
 dynamik ud fra ovenstående graf.
@@ -320,11 +320,11 @@ kompakt konformation.
 Enzymets dynamik kan fortolkes ud fra en model med to tilstande, S1 og
 S2, hvor S1 har lav og S2 har høj FRET-effektivitet.
 
-![](media/image101.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
 For en mutant af enzymet fås nu følgende data.
 
-![](media/image102.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2021_1/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 3.** Hvordan påvirker mutation (øger eller sænker) k~1~,
 k~-1~, og K~eq~ under tilstedeværelse af substrat? Begrund dit svar.
@@ -384,7 +384,7 @@ Besvarelsen skal indeholde både script og tilhørende billede.
 
 Svar:
 
-![](media/image103_tiff.png){.lightbox width="90%" fig-align="center"}reinitialize
+![](figures/exam_2021_1/opgave-5-figur-1.png){.lightbox width="90%" fig-align="center"}reinitialize
 
 fetch 5nzn
 
@@ -435,7 +435,7 @@ create 5nznA, /5nzn/A/A
 
 enable 5nznA
 
-![](media/image104_tiff.png){.lightbox width="90%" fig-align="center"}show cartoon, 5nznA
+![](figures/exam_2021_1/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}show cartoon, 5nznA
 
 color magenta, 5nznA
 
