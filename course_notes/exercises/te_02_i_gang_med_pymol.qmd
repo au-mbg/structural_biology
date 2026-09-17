@@ -272,8 +272,7 @@ grundlæggende mekanisme, hvorigennem DNA lagrer og transmitterer
 genetisk information, blev opdaget i 1950\'erne af Watson og Crick. Læs
 evt. mere [her](https://pdb101.rcsb.org/motm/23).
 
-![DNA double helix.](media/image8.gif){width="1.067619203849519in"
-height="6.087344706911636in"}
+![DNA double helix.](new_media/dna.gif){width="100%"}
 
 1.  Reinitialiser PyMOL med menuen File \> Reinitialize \> Everything.
     Alternativt kan du åbne et nyt PyMOL vindue med menuen File \> New
