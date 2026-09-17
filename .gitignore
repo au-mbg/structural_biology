@@ -5,6 +5,7 @@ original_materials/
 course_notes/_site
 course_notes/.quarto
 fonts/
+course_notes/*/*quarto_ipynb*
 
 # pixi environments
 .pixi/*
