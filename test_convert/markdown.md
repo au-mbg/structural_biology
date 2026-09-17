@@ -1,5 +1,457 @@
 **Teoretiske øvelser i strukturbiologi 2026**
 
+[Indhold]{.underline}
+
+[TØ 1 -- Introduktion til TØ
+[5](#tø-1-introduktion-til-tø)](#tø-1-introduktion-til-tø)
+
+[Opgave 1. Buffer-beregninger
+[5](#opgave-1.-buffer-beregninger)](#opgave-1.-buffer-beregninger)
+
+[Opgave 2. Aminosyrers pKa
+[5](#opgave-2.-aminosyrers-pka)](#opgave-2.-aminosyrers-pka)
+
+[Opgave 3. Glutathion [6](#opgave-3.-glutathion)](#opgave-3.-glutathion)
+
+[Opgave 4. Protein quiz
+[7](#opgave-4.-protein-quiz)](#opgave-4.-protein-quiz)
+
+[Opgave 5. Beregning af enzymkinetik
+[9](#opgave-5.-beregning-af-enzymkinetik)](#opgave-5.-beregning-af-enzymkinetik)
+
+[Opgave 6. Analyse af Chymotrypsin i PyMOL
+[10](#opgave-6.-analyse-af-chymotrypsin-i-pymol)](#opgave-6.-analyse-af-chymotrypsin-i-pymol)
+
+[TØ 2 -- I gang med PyMOL
+[12](#tø-2-i-gang-med-pymol)](#tø-2-i-gang-med-pymol)
+
+[Opgave 1. PyMOL og K^+^-kanalen
+[12](#opgave-1.-pymol-og-k-kanalen)](#opgave-1.-pymol-og-k-kanalen)
+
+[Opgave 2. Den første proteinstruktur
+[15](#illustration-of-myoglobin-by-irving-geis.-you-can-learn-more-about-this-painting-at-the-geis-archive-on-pdb-101.used-with-permission-from-the-howard-hughes-medical-institute-copyright-2015opgave-2.-den-første-proteinstruktur)](#illustration-of-myoglobin-by-irving-geis.-you-can-learn-more-about-this-painting-at-the-geis-archive-on-pdb-101.used-with-permission-from-the-howard-hughes-medical-institute-copyright-2015opgave-2.-den-første-proteinstruktur)
+
+[Opgave 3. Ikonisk DNA og designede krystaller
+[16](#opgave-3.-ikonisk-dna-og-designede-krystaller)](#opgave-3.-ikonisk-dna-og-designede-krystaller)
+
+[Opgave 4. Insulin [18](#opgave-4.-insulin)](#opgave-4.-insulin)
+
+[Opgave 5. Calciumpumpen
+[19](#calcium-pump-with-two-bound-calcium-ions-in-turquoise.-the-membrane-is-shown-schematically-in-gray.opgave-5.-calciumpumpen)](#calcium-pump-with-two-bound-calcium-ions-in-turquoise.-the-membrane-is-shown-schematically-in-gray.opgave-5.-calciumpumpen)
+
+[TØ 3 -- PyMOL-scripting
+[21](#tø-3-pymol-scripting)](#tø-3-pymol-scripting)
+
+[Opgave 1. Selektioner og objekter i PyMOL
+[21](#opgave-1.-selektioner-og-objekter-i-pymol)](#opgave-1.-selektioner-og-objekter-i-pymol)
+
+[Opgave 2. Kæder, residues og atomer i PyMOL
+[23](#opgave-2.-kæder-residues-og-atomer-i-pymol)](#opgave-2.-kæder-residues-og-atomer-i-pymol)
+
+[Opgave 3. Avancerede selektioner og boolsk algebra i PyMOL
+[28](#opgave-3.-avancerede-selektioner-og-boolsk-algebra-i-pymol)](#opgave-3.-avancerede-selektioner-og-boolsk-algebra-i-pymol)
+
+[Opgave 4. Scripting i PyMOL
+[30](#opgave-4.-scripting-i-pymol)](#opgave-4.-scripting-i-pymol)
+
+[Opgave 5. Strukturel analyse i PyMOL
+[35](#opgave-5.-strukturel-analyse-i-pymol)](#opgave-5.-strukturel-analyse-i-pymol)
+
+[Opgave 6. Mission Impossible i PyMOL
+[38](#opgave-6.-mission-impossible-i-pymol)](#opgave-6.-mission-impossible-i-pymol)
+
+[TØ 4 -- Proteinstruktur 1
+[41](#tø-4-proteinstruktur-1)](#tø-4-proteinstruktur-1)
+
+[Opgave 1. Protein quiz
+[41](#opgave-1.-protein-quiz)](#opgave-1.-protein-quiz)
+
+[Opgave 2. UniProt-databasen - Chymotrypsin
+[41](#opgave-2.-uniprot-databasen---chymotrypsin)](#opgave-2.-uniprot-databasen---chymotrypsin)
+
+[Opgave 3. Ramachandran-plottet
+[43](#opgave-3.-ramachandran-plottet)](#opgave-3.-ramachandran-plottet)
+
+[Opgave 4. C-alpha diagram
+[44](#opgave-4.-c-alpha-diagram)](#opgave-4.-c-alpha-diagram)
+
+[Opgave 5. Cartoons [46](#opgave-5.-cartoons)](#opgave-5.-cartoons)
+
+[Opgave 6. Afstand mellem C-alpha atomer
+[48](#opgave-6.-afstand-mellem-c-alpha-atomer)](#opgave-6.-afstand-mellem-c-alpha-atomer)
+
+[Opgave 7. Binding af guanine
+[48](#opgave-7.-binding-af-guanine)](#opgave-7.-binding-af-guanine)
+
+[Opgave 8. Nukleotid binding
+[51](#opgave-8.-nukleotid-binding)](#opgave-8.-nukleotid-binding)
+
+[TØ 5 -- Proteinstruktur 2
+[54](#tø-5-proteinstruktur-2)](#tø-5-proteinstruktur-2)
+
+[Opgave 1. Protein qiuz
+[54](#opgave-1.-protein-qiuz)](#opgave-1.-protein-qiuz)
+
+[Opgave 2. Cis-peptider
+[56](#opgave-2.-cis-peptider)](#opgave-2.-cis-peptider)
+
+[Opgave 3. CATH [57](#opgave-3.-cath)](#opgave-3.-cath)
+
+[Opgave 4. Proteinfoldning
+[58](#opgave-4.-proteinfoldning)](#opgave-4.-proteinfoldning)
+
+[Opgave 5. Sekvens og struktur
+[59](#opgave-5.-sekvens-og-struktur)](#opgave-5.-sekvens-og-struktur)
+
+[Opgave 6. Skattejagt
+[62](#opgave-6.-skattejagt)](#opgave-6.-skattejagt)
+
+[TØ 6 -- Nukleinsyrestruktur 1
+[65](#tø-6-nukleinsyrestruktur-1)](#tø-6-nukleinsyrestruktur-1)
+
+[Opgave 1. DNA quiz [65](#opgave-1.-dna-quiz)](#opgave-1.-dna-quiz)
+
+[Opgave 2. Kærlighed ved første blik
+[68](#opgave-2.-kærlighed-ved-første-blik)](#opgave-2.-kærlighed-ved-første-blik)
+
+[Opgave 3. Der skal to til tango
+[69](#opgave-3.-der-skal-to-til-tango)](#opgave-3.-der-skal-to-til-tango)
+
+[Opgave 4. TATA-box [70](#opgave-4.-tata-box)](#opgave-4.-tata-box)
+
+[Opgave 5. Mad-Max [71](#opgave-5.-mad-max)](#opgave-5.-mad-max)
+
+[Opgave 6. At TALE med DNA
+[73](#opgave-6.-at-tale-med-dna)](#opgave-6.-at-tale-med-dna)
+
+[Opgave 7. Trp trap træsko
+[74](#opgave-7.-trp-trap-træsko)](#opgave-7.-trp-trap-træsko)
+
+[Opgave 8. Arc repressor
+[75](#opgave-8.-arc-repressor)](#opgave-8.-arc-repressor)
+
+[TØ 7 -- Nukleinsyrestruktur 2
+[78](#tø-7-nukleinsyrestruktur-2)](#tø-7-nukleinsyrestruktur-2)
+
+[Opgave 1. RNA quiz [78](#opgave-1.-rna-quiz)](#opgave-1.-rna-quiz)
+
+[Opgave 2. RNA-protein binding
+[82](#opgave-2.-rna-protein-binding)](#opgave-2.-rna-protein-binding)
+
+[Opgave 3. tRNA og syntetase
+[83](#opgave-3.-trna-og-syntetase)](#opgave-3.-trna-og-syntetase)
+
+[Opgave 4. 5S rRNA og L25
+[84](#opgave-4.-5s-rrna-og-l25)](#opgave-4.-5s-rrna-og-l25)
+
+[Opgave 5. CRISPR-Cas9
+[86](#opgave-5.-crispr-cas9)](#opgave-5.-crispr-cas9)
+
+[Opgave 6. Argonaut [87](#opgave-6.-argonaut)](#opgave-6.-argonaut)
+
+[TØ 8 -- Evolution og bioinformatik
+[89](#tø-8-evolution-og-bioinformatik)](#tø-8-evolution-og-bioinformatik)
+
+[Opgave 1. Evolution quiz
+[89](#opgave-1.-evolution-quiz)](#opgave-1.-evolution-quiz)
+
+[Opgave 2. tRNAs familiealbum
+[92](#opgave-2.-trnas-familiealbum)](#opgave-2.-trnas-familiealbum)
+
+[Opgave 3. Den forsvundne RNA replikase
+[96](#opgave-3.-den-forsvundne-rna-replikase)](#opgave-3.-den-forsvundne-rna-replikase)
+
+[Opgave 4. Globin sekvensalignment
+[98](#opgave-4.-globin-sekvensalignment)](#opgave-4.-globin-sekvensalignment)
+
+[Opgave 5. Globin strukturalignment
+[101](#opgave-5.-globin-strukturalignment)](#opgave-5.-globin-strukturalignment)
+
+[Opgave 6. Globin strukturbevarelse
+[102](#opgave-6.-globin-strukturbevarelse)](#opgave-6.-globin-strukturbevarelse)
+
+[Opgave 7. Heat shock protein 70 evolution
+[104](#opgave-7.-heat-shock-protein-70-evolution)](#opgave-7.-heat-shock-protein-70-evolution)
+
+[TØ 9 -- Metoder til oprensning og analyse
+[106](#tø-9-metoder-til-oprensning-og-analyse)](#tø-9-metoder-til-oprensning-og-analyse)
+
+[Opgave 1. Metode quiz
+[106](#opgave-1.-metode-quiz)](#opgave-1.-metode-quiz)
+
+[Opgave 2. Gelfiltrering
+[108](#opgave-2.-gelfiltrering)](#opgave-2.-gelfiltrering)
+
+[Opgave 3. Ionbyttekromatografi
+[111](#opgave-3.-ionbyttekromatografi)](#opgave-3.-ionbyttekromatografi)
+
+[Opgave 4. En sekventiel proces
+[114](#opgave-4.-en-sekventiel-proces)](#opgave-4.-en-sekventiel-proces)
+
+[Opgave 5. Kalibrering af gelfiltrering
+[117](#opgave-5.-kalibrering-af-gelfiltrering)](#opgave-5.-kalibrering-af-gelfiltrering)
+
+[Opgave 6. Oprensning af ukendt protein
+[121](#opgave-6.-oprensning-af-ukendt-protein)](#opgave-6.-oprensning-af-ukendt-protein)
+
+[Opgave 7. Strukturbestemmelse af det oprensede protein (PyMOL)
+[125](#opgave-7.-strukturbestemmelse-af-det-oprensede-protein-pymol)](#opgave-7.-strukturbestemmelse-af-det-oprensede-protein-pymol)
+
+[TØ 10 -- Binding og genkendelse
+[127](#tø-10-binding-og-genkendelse)](#tø-10-binding-og-genkendelse)
+
+[Opgave 1. Indhold af hæmoglobin
+[127](#opgave-1.-indhold-af-hæmoglobin)](#opgave-1.-indhold-af-hæmoglobin)
+
+[Opgave 2. Jern, ilt og hæm
+[127](#opgave-2.-jern-ilt-og-hæm)](#opgave-2.-jern-ilt-og-hæm)
+
+[Opgave 3. Kooperativitetsopgave
+[128](#opgave-3.-kooperativitetsopgave)](#opgave-3.-kooperativitetsopgave)
+
+[Opgave 4. Lampret-fiskens iltbinding
+[130](#opgave-4.-lampret-fiskens-iltbinding)](#opgave-4.-lampret-fiskens-iltbinding)
+
+[Opgave 5. Allosterispørgsmål
+[132](#opgave-5.-allosterispørgsmål)](#opgave-5.-allosterispørgsmål)
+
+[Opgave 6. PyMOL API introduktion (OPTIONAL)
+[135](#opgave-6.-pymol-api-introduktion-optional)](#opgave-6.-pymol-api-introduktion-optional)
+
+[TØ 11 -- Enzymmekanismer
+[136](#tø-11-enzymmekanismer)](#tø-11-enzymmekanismer)
+
+[Opgave 1. Burst phase eller ej?
+[136](#opgave-1.-burst-phase-eller-ej)](#opgave-1.-burst-phase-eller-ej)
+
+[Opgave 2. En pind til ligkisten?
+[136](#opgave-2.-en-pind-til-ligkisten)](#opgave-2.-en-pind-til-ligkisten)
+
+[Opgave 3. Den mystiske inhibitor
+[136](#opgave-3.-den-mystiske-inhibitor)](#opgave-3.-den-mystiske-inhibitor)
+
+[Opgave 4. Kan man lægge sammen?
+[137](#opgave-4.-kan-man-lægge-sammen)](#opgave-4.-kan-man-lægge-sammen)
+
+[Opgave 5. Restriktionsenzymer
+[137](#opgave-5.-restriktionsenzymer)](#opgave-5.-restriktionsenzymer)
+
+[Opgave 6. Cheleringsagenter
+[138](#a-structure-of-a-chemical-formula-ai-generated-content-may-be-incorrect.opgave-6.-cheleringsagenter)](#a-structure-of-a-chemical-formula-ai-generated-content-may-be-incorrect.opgave-6.-cheleringsagenter)
+
+[Opgave 7. Biologisk plastik-nedbrydning
+[138](#opgave-7.-biologisk-plastik-nedbrydning)](#opgave-7.-biologisk-plastik-nedbrydning)
+
+[Opgave 8. Find den katalytiske triade (PyMOL API, OPTIONAL)
+[141](#opgave-8.-find-den-katalytiske-triade-pymol-api-optional)](#opgave-8.-find-den-katalytiske-triade-pymol-api-optional)
+
+[TØ 12 -- Enzymregulering
+[144](#tø-12-enzymregulering)](#tø-12-enzymregulering)
+
+[Opgave 1. LDH-isozymer
+[144](#opgave-1.-ldh-isozymer)](#opgave-1.-ldh-isozymer)
+
+[Opgave 2. Aspartat [144](#opgave-2.-aspartat)](#opgave-2.-aspartat)
+
+[Opgave 3. ATCase [146](#opgave-3.-atcase)](#opgave-3.-atcase)
+
+[Opgave 4. Thrombin og Antithrombin (PyMOL)
+[147](#opgave-4.-thrombin-og-antithrombin-pymol)](#opgave-4.-thrombin-og-antithrombin-pymol)
+
+[Opgave 5. Antithrombin
+[151](#opgave-5.-antithrombin)](#opgave-5.-antithrombin)
+
+[Opgave 6. Kløvning af thrombin med factor Xa
+[153](#opgave-6.-kløvning-af-thrombin-med-factor-xa)](#opgave-6.-kløvning-af-thrombin-med-factor-xa)
+
+[TØ 13 -- Drug design [155](#tø-13-drug-design)](#tø-13-drug-design)
+
+[Opgave 1. [155](#opgave-1.)](#opgave-1.)
+
+[Opgave 2. [155](#opgave-2.)](#opgave-2.)
+
+[Opgave 3. [156](#opgave-3.)](#opgave-3.)
+
+[Opgave 4. [157](#opgave-4.)](#opgave-4.)
+
+[Opgave 5. [157](#opgave-5.)](#opgave-5.)
+
+[TØ 14 -- Massespektrometri
+[159](#tø-14-massespektrometri)](#tø-14-massespektrometri)
+
+[Opgave 1. Hvad måler et massespektrometer egentlig?
+[160](#opgave-1.-hvad-måler-et-massespektrometer-egentlig)](#opgave-1.-hvad-måler-et-massespektrometer-egentlig)
+
+[Opgave 2. Ladningsserier -- fra m/z til molekylmasse
+[161](#opgave-2.-ladningsserier-fra-mz-til-molekylmasse)](#opgave-2.-ladningsserier-fra-mz-til-molekylmasse)
+
+[Opgave 3. Peptide mass fingerprinting -- hvilket protein er det?
+[162](#opgave-3.-peptide-mass-fingerprinting-hvilket-protein-er-det)](#opgave-3.-peptide-mass-fingerprinting-hvilket-protein-er-det)
+
+[Opgave 4. De novo-sekventering med tandem-MS
+[164](#opgave-4.-de-novo-sekventering-med-tandem-ms)](#opgave-4.-de-novo-sekventering-med-tandem-ms)
+
+[Opgave 5. Når den målte masse ikke passer med genet
+[166](#opgave-5.-når-den-målte-masse-ikke-passer-med-genet)](#opgave-5.-når-den-målte-masse-ikke-passer-med-genet)
+
+[TØ 15 -- LØ forberedelse
+[169](#tø-15-lø-forberedelse)](#tø-15-lø-forberedelse)
+
+[Opgave 1. [169](#opgave-1.-1)](#opgave-1.-1)
+
+[Opgave 2. [169](#opgave-2.-1)](#opgave-2.-1)
+
+[Opgave 3. [169](#opgave-3.-1)](#opgave-3.-1)
+
+[Opgave 4. [169](#opgave-4.-1)](#opgave-4.-1)
+
+[Opgave 5. [169](#opgave-5.-1)](#opgave-5.-1)
+
+[TØ 16 -- Strukturmetoder
+[170](#tø-16-strukturmetoder)](#tø-16-strukturmetoder)
+
+[Opgave 1. Test dig selv i PyMOL-scripting
+[170](#opgave-1.-test-dig-selv-i-pymol-scripting)](#opgave-1.-test-dig-selv-i-pymol-scripting)
+
+[Opgave 2. Bragg's lov
+[170](#opgave-2.-braggs-lov)](#opgave-2.-braggs-lov)
+
+[Opgave 3. Røntgenkrystallografi vs. Cryo-EM -- Vælg den rette metode
+[172](#opgave-3.-røntgenkrystallografi-vs.-cryo-em-vælg-den-rette-metode)](#opgave-3.-røntgenkrystallografi-vs.-cryo-em-vælg-den-rette-metode)
+
+[Opgave 4. Modelbygning
+[174](#opgave-4.-modelbygning)](#opgave-4.-modelbygning)
+
+[TØ 17 -- AI og modellering
+[177](#tø-17-ai-og-modellering)](#tø-17-ai-og-modellering)
+
+[Opgave 1. AlphaFold vs. Eksperimentel struktur - Confidence og
+fleksibilitet
+[177](#opgave-1.-alphafold-vs.-eksperimentel-struktur---confidence-og-fleksibilitet)](#opgave-1.-alphafold-vs.-eksperimentel-struktur---confidence-og-fleksibilitet)
+
+[Opgave 2. Hvad fortæller PAE (Predicted Aligned Error) om
+domæne-orientering
+[179](#opgave-2.-hvad-fortæller-pae-predicted-aligned-error-om-domæne-orientering)](#opgave-2.-hvad-fortæller-pae-predicted-aligned-error-om-domæne-orientering)
+
+[Opgave 3. Modellering af et protein-kompleks med ligand og ioner
+[180](#opgave-3.-modellering-af-et-protein-kompleks-med-ligand-og-ioner)](#opgave-3.-modellering-af-et-protein-kompleks-med-ligand-og-ioner)
+
+[Opgave 4. Protein-interaktion med Alphafold
+[182](#opgave-4.-protein-interaktion-med-alphafold)](#opgave-4.-protein-interaktion-med-alphafold)
+
+[TØ 18 -- Kulhydrater og glykosylering af proteiner
+[185](#tø-18-kulhydrater-og-glykosylering-af-proteiner)](#tø-18-kulhydrater-og-glykosylering-af-proteiner)
+
+[Opgave 1. AB0-blodtypesystemet
+[185](#opgave-1.-ab0-blodtypesystemet)](#opgave-1.-ab0-blodtypesystemet)
+
+[Opgave 2. Serine carboxypeptidase Y
+[187](#opgave-2.-serine-carboxypeptidase-y)](#opgave-2.-serine-carboxypeptidase-y)
+
+[Opgave 3. Mannosidase I
+[188](#opgave-3.-mannosidase-i)](#opgave-3.-mannosidase-i)
+
+[Opgave 4. Glykosyleringer i sortilin
+[190](#opgave-4.-glykosyleringer-i-sortilin)](#opgave-4.-glykosyleringer-i-sortilin)
+
+[Opgave 5. (Rhod-)opsin (PyMOL)
+[191](#opgave-5.-rhod-opsin-pymol)](#opgave-5.-rhod-opsin-pymol)
+
+[TØ 19 -- Lipider og cellemembraner
+[195](#tø-19-lipider-og-cellemembraner)](#tø-19-lipider-og-cellemembraner)
+
+[Opgave 1. Membransammensætning
+[195](#opgave-1.-membransammensætning)](#opgave-1.-membransammensætning)
+
+[Opgave 2. Helical wheel
+[196](#opgave-2.-helical-wheel)](#opgave-2.-helical-wheel)
+
+[Opgave 3. Hydropatiplot
+[198](#opgave-3.-hydropatiplot)](#opgave-3.-hydropatiplot)
+
+[Opgave 4. Breast Cancer Resistance Protein (BCRP)
+[199](#opgave-4.-breast-cancer-resistance-protein-bcrp)](#opgave-4.-breast-cancer-resistance-protein-bcrp)
+
+[Opgave 5. 5\'-Nucleotidase
+[202](#opgave-5.-5-nucleotidase)](#opgave-5.-5-nucleotidase)
+
+[TØ 20 -- Membranpumper
+[206](#tø-20-membranpumper)](#tø-20-membranpumper)
+
+[Opgave 1. Na/K-pumpen fra skeletmuskulatur
+[206](#opgave-1.-nak-pumpen-fra-skeletmuskulatur)](#opgave-1.-nak-pumpen-fra-skeletmuskulatur)
+
+[Opgave 2. Calciumpumpen
+[207](#opgave-2.-calciumpumpen)](#opgave-2.-calciumpumpen)
+
+[Opgave 3. Brodys sygdom
+[208](#opgave-3.-brodys-sygdom)](#opgave-3.-brodys-sygdom)
+
+[Opgave 4. Strukturen af SERCA
+[208](#opgave-4.-strukturen-af-serca)](#opgave-4.-strukturen-af-serca)
+
+[Opgave 5. Na-K-pumpen
+[210](#opgave-5.-na-k-pumpen)](#opgave-5.-na-k-pumpen)
+
+[TØ 21 -- Kanaler og porer
+[212](#tø-21-kanaler-og-porer)](#tø-21-kanaler-og-porer)
+
+[Opgave 1. ABC-transporteren
+[212](#opgave-1.-abc-transporteren)](#opgave-1.-abc-transporteren)
+
+[Opgave 2. Melatonin [214](#opgave-2.-melatonin)](#opgave-2.-melatonin)
+
+[Opgave 3. Ionkanaler
+[215](#opgave-3.-ionkanaler)](#opgave-3.-ionkanaler)
+
+[Opgave 4. Strukturbestemmelse af en kanal
+[216](#opgave-4.-strukturbestemmelse-af-en-kanal)](#opgave-4.-strukturbestemmelse-af-en-kanal)
+
+[TØ 22 -- Signaltransduktion
+[219](#tø-22-signaltransduktion)](#tø-22-signaltransduktion)
+
+[Opgave 1. Earl W. Sutherland
+[219](#opgave-1.-earl-w.-sutherland)](#opgave-1.-earl-w.-sutherland)
+
+[Opgave 2. Signalgenkendelse
+[219](#opgave-2.-signalgenkendelse)](#opgave-2.-signalgenkendelse)
+
+[Opgave 3. Beta-blokkere
+[222](#opgave-3.-beta-blokkere)](#opgave-3.-beta-blokkere)
+
+[Opgave 4. Mutationer/sygdomme
+[223](#opgave-4.-mutationersygdomme)](#opgave-4.-mutationersygdomme)
+
+[Opgave 5. GPCR signallering
+[224](#opgave-5.-gpcr-signallering)](#opgave-5.-gpcr-signallering)
+
+[TØ 23 -- Eksamensopgaver 2024
+[226](#tø-23-eksamensopgaver-2024)](#tø-23-eksamensopgaver-2024)
+
+[Opgave 1 [226](#opgave-1)](#opgave-1)
+
+[Opgave 2 [228](#opgave-2)](#opgave-2)
+
+[Opgave 3 [230](#opgave-3)](#opgave-3)
+
+[Opgave 4 [231](#opgave-4)](#opgave-4)
+
+[Opgave 5 [232](#opgave-5)](#opgave-5)
+
+[TØ 24 -- Eksamensopgaver 2025
+[235](#tø-24-eksamensopgaver-2025)](#tø-24-eksamensopgaver-2025)
+
+[Opgave 1 [235](#opgave-1-1)](#opgave-1-1)
+
+[Opgave 2 [238](#opgave-2-1)](#opgave-2-1)
+
+[Opgave 3
+[240](#the-reaction-catalyzed-by-triose-phosphate-isomerase-and-the-covalent...-download-scientific-diagramopgave-3)](#the-reaction-catalyzed-by-triose-phosphate-isomerase-and-the-covalent...-download-scientific-diagramopgave-3)
+
+[Opgave 4 [244](#opgave-4-1)](#opgave-4-1)
+
+[Opgave 5 [247](#opgave-5-1)](#opgave-5-1)
+
 # TØ 1 -- Introduktion til TØ
 
 I dette TØ sæt arbejdes der på at blive introduceret til TØ formatet med
@@ -90,7 +542,7 @@ radikaler, peroxider og tungmetaller.
 
 Glutathion har følgende struktur:
 
-![glutathione](media/image1.png){width="6.263889982502187in"
+![glutathione](exercises/media/image1.png){width="6.263889982502187in"
 height="1.1145833333333333in"}
 
 1.  Hvilke aminosyrer indgår i GSH? Markér dem i figuren.
@@ -121,13 +573,13 @@ Denne opgave er repetition af Berg Biochemistry kapitel 2.
 1.  Hvilke af nedenstående aminosyrer er L-alanin? Marker de korrekte.
 
 > ![A group of chemical formulas AI-generated content may be
-> incorrect.](media/image2.png){width="3.958160542432196in"
+> incorrect.](exercises/media/image2.png){width="3.958160542432196in"
 > height="2.3974365704286966in"}
 
 2.  Nedenfor vises et udsnit af en peptidkæde, der har sekvensen
     DKCQGG![A molecule structure with colorful balls AI-generated
     content may be
-    incorrect.](media/image3.png){width="3.3205129046369204in"
+    incorrect.](exercises/media/image3.png){width="3.3205129046369204in"
     height="2.2368722659667544in"}\
     Hvilke af følgende udsagn er korrekte:
 
@@ -193,7 +645,7 @@ d.  ω kan kun have værdierne 0°, 120° og 240°
 e.  Oxygen-atomet har en partiel negativ ladning
 
 ![DiagramDescription automatically
-generated](media/image4.png){width="3.4618055555555554in"
+generated](exercises/media/image4.png){width="3.4618055555555554in"
 height="2.110294181977253in"}
 
 6.  Hvilke af følgende påstande om **peptidbindinger** er korrekte:
@@ -313,7 +765,8 @@ også bruges til at styre skærmens lysstyrke etc. på MacBooks.
     \"pseudo-totalssymmetri\", mens det ville være en egentlig
     totalssymmetri, hvis det drejede sig om to helt ens molekyler:
 
-![Totalssymmetri](media/image5.jpg){width="5.28125in" height="1.5625in"}
+![Totalssymmetri](exercises/media/image5.jpg){width="5.28125in"
+height="1.5625in"}
 
 4.  Den nye aminoterminal (N-terminal), der dannes ved aminosyre 16 når
     peptidbindingen mellem 15 og 16 kløves bevæger sig ind i det aktive
@@ -378,7 +831,7 @@ proteinet.
     knapperne i bunden af vinduet:\
     \
     ![A white circle with a triangle in it AI-generated content may be
-    incorrect.](media/image6.png){width="1.4444444444444444in"
+    incorrect.](exercises/media/image6.png){width="1.4444444444444444in"
     height="0.28888888888888886in"}
 
 Ud for hvert objekt eller selektion ses 5 menuer angivet med bogstaverne
@@ -489,7 +942,7 @@ Se PyMOL session fil i svar-mappen: 1_K+-kanalen.pse
 
 11. \-
 
-## ![Illustration of myoglobin by Irving Geis. You can learn more about this painting at the Geis Archive on PDB-101.Used with permission from the Howard Hughes Medical Institute, Copyright 2015](media/image7.png){width="1.7326388888888888in" height="1.7909722222222222in"}Opgave 2. Den første proteinstruktur
+## ![Illustration of myoglobin by Irving Geis. You can learn more about this painting at the Geis Archive on PDB-101.Used with permission from the Howard Hughes Medical Institute, Copyright 2015](exercises/media/image7.png){width="1.7326388888888888in" height="1.7909722222222222in"}Opgave 2. Den første proteinstruktur
 
 Enhver diskussion om proteinstruktur må nødvendigvis begynde med
 myoglobin, fordi det er her, videnskaben om proteinstruktur begyndte.
@@ -567,7 +1020,8 @@ grundlæggende mekanisme, hvorigennem DNA lagrer og transmitterer
 genetisk information, blev opdaget i 1950\'erne af Watson og Crick. Læs
 evt. mere [her](https://pdb101.rcsb.org/motm/23).
 
-![DNA double helix.](media/image8.gif){width="1.067619203849519in"
+![DNA double
+helix.](exercises/media/image8.gif){width="1.067619203849519in"
 height="6.087344706911636in"}
 
 1.  Reinitialiser PyMOL med menuen File \> Reinitialize \> Everything.
@@ -607,7 +1061,8 @@ Lego-klodser, designe individuelle komponenter og derefter lade dem
 samle sig selv. Derudover er kemien i DNA-syntese blevet fuldstændig
 automatiseret, så ![Three engineered strands of DNA assemble into a
 triangular module (top) that self-assembles into a two-dimensional
-lattice (bottom).](media/image9.jpeg){width="1.5854166666666667in"
+lattice
+(bottom).](exercises/media/image9.jpeg){width="1.5854166666666667in"
 height="2.4923611111111112in"}specialtilpassede DNA-stykker nemt kan
 konstrueres eller endda bestilles fra kommercielle biotekvirksomheder.
 Nadrian Seeman var pioner inden for brugen af DNA til at bygge
@@ -672,7 +1127,7 @@ Vores celler kommunikerer via et molekylært postsystem: blodet er
 postvæsenet, og hormonerne er brevene. Insulin er et af de vigtigste
 hormoner, der bærer beskeder, der ![Insulin and proinsulin, with A-chain
 in green, B-chain in blue and disulfide linkages in
-yellow.](media/image10.jpeg){width="2.107638888888889in"
+yellow.](exercises/media/image10.jpeg){width="2.107638888888889in"
 height="1.8444444444444446in"}beskriver, hvor meget sukker der er
 tilgængeligt i blodet fra øjeblik til øjeblik. Insulin produceres i
 bugspytkirtlen og tilsættes blodet efter måltider, når sukkerniveauet er
@@ -757,7 +1212,7 @@ Se PyMOL session fil i svar-mappen: 4_Insulin.pse
 
 7.  \-
 
-## ![Calcium pump, with two bound calcium ions in turquoise. The membrane is shown schematically in gray.](media/image11.gif){width="2.2in" height="2.7881944444444446in"}Opgave 5. Calciumpumpen
+## ![Calcium pump, with two bound calcium ions in turquoise. The membrane is shown schematically in gray.](exercises/media/image11.gif){width="2.2in" height="2.7881944444444446in"}Opgave 5. Calciumpumpen
 
 Calciumpumpen er en fantastisk maskine med flere bevægelige dele. Den
 findes i membranen, som vist her fra PDB-indgang
@@ -1559,7 +2014,7 @@ Berg 10. udgave, strukturen af cytochrome P450 bundet til substratet
 camphor (Fig. 5.5):
 
 ![A picture containing diagram Description automatically
-generated](media/image12.png){width="4.8256878827646545in"
+generated](exercises/media/image12.png){width="4.8256878827646545in"
 height="2.417212379702537in"}
 
 Vi vil gerne lave et PyMOL-script, der sætter os i stand til at foretage
@@ -1920,7 +2375,7 @@ højre for prolin rester.
 2.  På figuren for alle aminosyrer er der tre områder med høj forekomst
     af aminosyrerester. Hvor finder man typisk disse områder i
     proteiners
-    sekundærstruktur![fig1-6-Williamson-adapted](media/image13.png){width="6.268055555555556in"
+    sekundærstruktur![fig1-6-Williamson-adapted](exercises/media/image13.png){width="6.268055555555556in"
     height="3.192361111111111in"}
 
 **Officielt svar**
@@ -1945,7 +2400,7 @@ fire β-kæder og proteinet har følgende sekvens:
 
 HKAVCLAKWGSDNTIFFTTYANGSCKADLGALLELWRTSDLGKSFKTIGVKIYS
 
-![blade-ribbon](media/image14.png){width="6.268055555555556in"
+![blade-ribbon](exercises/media/image14.png){width="6.268055555555556in"
 height="4.295138888888889in"}
 
 1.  Afmærk positionen af N- og C-terminus og forklar hvordan dette kan
@@ -1986,19 +2441,19 @@ height="4.295138888888889in"}
 Strukturerne af proteinet myoglobin, et immunoglobulin Fab-fragment samt
 β-galactosidase er vist nedenfor som cartoons.
 
-![myoglobin](media/image15.png){width="3.2528740157480316in"
+![myoglobin](exercises/media/image15.png){width="3.2528740157480316in"
 height="2.3551859142607174in"} Human myoglobin
 
-![fab_fragment](media/image16.png){width="3.2527777777777778in"
+![fab_fragment](exercises/media/image16.png){width="3.2527777777777778in"
 height="2.5966076115485563in"}Fab-fragment
 
-![beta_galactosidase](media/image17.png){width="4.206896325459318in"
+![beta_galactosidase](exercises/media/image17.png){width="4.206896325459318in"
 height="3.2412981189851267in"}β-galactosidase
 
 Ramachandran-plot for de tre strukturer er mærket A, B, og C og vist
 herunder.
 
-![ramachandran](media/image18.png){width="6.259720034995626in"
+![ramachandran](exercises/media/image18.png){width="6.259720034995626in"
 height="2.0388888888888888in"}
 
 Hvilken struktur hører til hvilket plot?
@@ -2039,7 +2494,7 @@ forfinet. 
 **Officielt svar**
 
 1.  ![A diagram of a molecule AI-generated content may be
-    incorrect.](media/image19.png){width="5.761013779527559in"
+    incorrect.](exercises/media/image19.png){width="5.761013779527559in"
     height="3.375165135608049in"}
 
 2.  \-
@@ -2059,7 +2514,7 @@ ribose-delen af GDP (carbon - turkis, nitrogen -- blå, oxygen - rød,
 svovl -- gul, phosphor - orange, stiplede gule linjer viser
 hydrogenbindinger med angivelse af donor-acceptor afstand).
 
- ![NKXD-GDP](media/image20.png){width="6.259720034995626in"
+ ![NKXD-GDP](exercises/media/image20.png){width="6.259720034995626in"
 height="4.129861111111111in"}
 
 1.  Hvilken aminosyrerest svarer til X i NKXD-motivet i dette tilfælde?
@@ -2086,7 +2541,7 @@ EF-Tu er specifik for binding af GDP og binder således hverken
 nukleotiderne ADP (adenosine diphosphate) eller XDP
 (xantosine diphosphate). De tilsvarende tre baser er vist nedenfor.
 
-![baser_1](media/image21.png){width="6.259720034995626in"
+![baser_1](exercises/media/image21.png){width="6.259720034995626in"
 height="2.3375in"}
 
 3.  Forklar hvordan denne specificitet opnås.
@@ -2353,16 +2808,16 @@ c.  α+β
 d.  α/β
 
 ![A colorful spirals of different colors AI-generated content may be
-incorrect.](media/image22.png){width="1.3841491688538932in"
+incorrect.](exercises/media/image22.png){width="1.3841491688538932in"
 height="1.128205380577428in"}![A close-up of a model of a protein
 AI-generated content may be
-incorrect.](media/image23.png){width="1.0859689413823272in"
+incorrect.](exercises/media/image23.png){width="1.0859689413823272in"
 height="1.217574365704287in"}![A colorful arrows pointing to different
 colors AI-generated content may be
-incorrect.](media/image24.png){width="1.7172528433945757in"
+incorrect.](exercises/media/image24.png){width="1.7172528433945757in"
 height="1.0897440944881889in"}![A colorful structure of a protein
 AI-generated content may be
-incorrect.](media/image25.png){width="1.3840277777777779in"
+incorrect.](exercises/media/image25.png){width="1.3840277777777779in"
 height="1.1345056867891514in"}
 
 **A B C D**
@@ -2722,7 +3177,7 @@ du nødt til at definere et nyt object kun bestående af helixen.
     tre to-tals akser vinkelret på hinanden som danner en lukket
     punktgruppe, som betegnes 222.
 
-3.  ![pepwheel.1](media/image26.png){width="2.6071423884514435in"
+3.  ![pepwheel.1](exercises/media/image26.png){width="2.6071423884514435in"
     height="2.2373086176727908in"}\
     PÅ hjulet ses at der fra kl 10-16 hoved sageligt er polære
     sidekæder, mens der overvejende er hydrophobe sidekæder på resten af
@@ -2738,7 +3193,7 @@ du nødt til at definere et nyt object kun bestående af helixen.
 6.  Topologisk foldningsdiagram for PGP-I :
 
 > ![Text Description automatically
-> generated](media/image27.png){width="5.238094925634296in"
+> generated](exercises/media/image27.png){width="5.238094925634296in"
 > height="4.181672134733159in"}
 
 7.  Vi ser at Cys 144 peger mod det topologiske switchpoint mens
@@ -2754,8 +3209,9 @@ du nødt til at definere et nyt object kun bestående af helixen.
 Vi har i en tidligere opgave stiftet bekendtskab med følgende
 to proteiner:
 
-![myoglobin](media/image28.png){width="1.5in" height="1.09375in"} Human
-myoglobin       ![beta_galactosidase](media/image29.png){width="1.5in"
+![myoglobin](exercises/media/image28.png){width="1.5in"
+height="1.09375in"} Human myoglobin     
+ ![beta_galactosidase](exercises/media/image29.png){width="1.5in"
 height="1.15625in"}*E. coli* β-galactosidase
 
  
@@ -2856,13 +3312,13 @@ Brug dit kendskab til online databaser til at besvare følgende spørgsmål
     billeder, der viser højredrejede helicer.
 
 ![A close-up of a dna AI-generated content may be
-incorrect.](media/image30.png){width="6.268055555555556in"
+incorrect.](exercises/media/image30.png){width="6.268055555555556in"
 height="1.7833333333333334in"}
 
 2.  I hvilke af nedenstående billeder peger pilen på major groove?
 
 ![A diagram of dna molecule AI-generated content may be
-incorrect.](media/image31.jpeg){width="6.268055555555556in"
+incorrect.](exercises/media/image31.jpeg){width="6.268055555555556in"
 height="3.0944444444444446in"}
 
 3.  Match nukleotiderne med deres navn.
@@ -2878,16 +3334,16 @@ c.  Thymin
 d.  Adenin
 
 ![A structure of a molecule AI-generated content may be
-incorrect.](media/image32.png){width="1.5630249343832021in"
+incorrect.](exercises/media/image32.png){width="1.5630249343832021in"
 height="1.3076924759405075in"}![A colorful molecule model AI-generated
 content may be
-incorrect.](media/image33.png){width="1.4100962379702537in"
+incorrect.](exercises/media/image33.png){width="1.4100962379702537in"
 height="1.1794870953630796in"}![A structure of a molecule AI-generated
 content may be
-incorrect.](media/image34.png){width="1.5158836395450568in"
+incorrect.](exercises/media/image34.png){width="1.5158836395450568in"
 height="1.2692300962379703in"}![A structure of a molecule AI-generated
 content may be
-incorrect.](media/image35.png){width="1.424012467191601in"
+incorrect.](exercises/media/image35.png){width="1.424012467191601in"
 height="1.1923075240594925in"}
 
 **A B C D**
@@ -2943,19 +3399,19 @@ g.  Længste turn
 > **A. A-form**
 >
 > ![A colorful spiral of dna AI-generated content may be
-> incorrect.](media/image36.png){width="3.448611111111111in"
+> incorrect.](exercises/media/image36.png){width="3.448611111111111in"
 > height="1.0770833333333334in"}
 >
 > **B. B-form**
 >
 > ![A close-up of a dna model AI-generated content may be
-> incorrect.](media/image37.png){width="4.0in"
+> incorrect.](exercises/media/image37.png){width="4.0in"
 > height="1.1409722222222223in"}
 >
 > **C. Z-form**
 >
 > ![A close-up of a structure AI-generated content may be
-> incorrect.](media/image38.png){width="4.5256944444444445in"
+> incorrect.](exercises/media/image38.png){width="4.5256944444444445in"
 > height="1.0770833333333334in"}
 
 7.  Hvilken basepar- eller basestak-parameter beskriver bedst
@@ -2970,7 +3426,7 @@ b.  Tilt
 c.  Roll
 
 ![A dna strand diagram showing the same model AI-generated content may
-be incorrect.](media/image39.png){width="6.268055555555556in"
+be incorrect.](exercises/media/image39.png){width="6.268055555555556in"
 height="2.8256944444444443in"}
 
 Nucleosom DNA Holiday junction DNA A-form DNA
@@ -3053,8 +3509,8 @@ er vist i Liljas figur 10.18. Som det ses i figuren herunder er der
 eksponerede H-bindings-donorer og acceptorer i både major og minor
 groove og det er disse, som aminosyrerne kan genkende og binde til:
 
-![Rende-kode1x](media/image40.png){width="5.691358267716535in"
-height="2.1454330708661415in"}![Rende-kode2](media/image41.png){width="6.263888888888889in"
+![Rende-kode1x](exercises/media/image40.png){width="5.691358267716535in"
+height="2.1454330708661415in"}![Rende-kode2](exercises/media/image41.png){width="6.263888888888889in"
 height="2.6590277777777778in"}
 
 1.  Forklar hvorfor der er mere specificitet i binding til major groove
@@ -3316,7 +3772,7 @@ ved at organisere rækkefølgen af TALE-repeats ihht. DNA-sekvensen.
     TALE-proteindomæne og beskriv hvilke biologiske effekter det kan
     have og/eller hvilke teknologiske muligheder det kan give.
 
-![BER_11467_05_F38](media/image42.png){width="6.263888888888889in"
+![BER_11467_05_F38](exercises/media/image42.png){width="6.263888888888889in"
 height="3.4in"}
 
 **Officielt svar**
@@ -3531,19 +3987,19 @@ f.  Tillader G-U wobble basepar
     e.  Bulge
 
 ![A black and white drawing of a cross AI-generated content may be
-incorrect.](media/image43.png){width="1.554983595800525in"
+incorrect.](exercises/media/image43.png){width="1.554983595800525in"
 height="1.1811023622047243in"}![A black and white light bulb
 AI-generated content may be
-incorrect.](media/image44.png){width="1.020196850393701in"
+incorrect.](exercises/media/image44.png){width="1.020196850393701in"
 height="1.1811023622047243in"}![A black and white drawing of a circle
 AI-generated content may be
-incorrect.](media/image45.png){width="0.7337915573053369in"
+incorrect.](exercises/media/image45.png){width="0.7337915573053369in"
 height="1.1811023622047243in"}![A black and white symbol AI-generated
 content may be
-incorrect.](media/image46.png){width="1.6538462379702537in"
+incorrect.](exercises/media/image46.png){width="1.6538462379702537in"
 height="0.646000656167979in"}![A black and white drawing of a track
 AI-generated content may be
-incorrect.](media/image47.png){width="1.2179483814523184in"
+incorrect.](exercises/media/image47.png){width="1.2179483814523184in"
 height="0.6709678477690288in"}
 
 **A B C D E**
@@ -3551,7 +4007,7 @@ height="0.6709678477690288in"}
 4.  Skriv en parentesnotation for den viste hairpin.
 
 ![A black text on a white background AI-generated content may be
-incorrect.](media/image48.png){width="1.5787139107611547in"
+incorrect.](exercises/media/image48.png){width="1.5787139107611547in"
 height="0.7307688101487314in"}
 
 5.  Match kanter på nedenstående figur med deres navne.
@@ -3563,7 +4019,7 @@ height="0.7307688101487314in"}
     c.  Watson-Crick-kant
 
 ![A structure of a molecule AI-generated content may be
-incorrect.](media/image49.png){width="3.154166666666667in"
+incorrect.](exercises/media/image49.png){width="3.154166666666667in"
 height="2.7305555555555556in"}
 
 6.  Match forskellige basepar-interaktioner med Leontis-Westhof
@@ -3582,25 +4038,25 @@ height="2.7305555555555556in"}
     f.  cWS
 
 ![A structure of a chemical formula AI-generated content may be
-incorrect.](media/image50.png){width="1.8976968503937008in"
+incorrect.](exercises/media/image50.png){width="1.8976968503937008in"
 height="1.1811023622047243in"}![A structure of a chemical formula
 AI-generated content may be
-incorrect.](media/image51.png){width="1.9276476377952756in"
+incorrect.](exercises/media/image51.png){width="1.9276476377952756in"
 height="1.1811023622047243in"}![A structure of a molecule AI-generated
 content may be
-incorrect.](media/image52.png){width="1.7751432633420823in"
+incorrect.](exercises/media/image52.png){width="1.7751432633420823in"
 height="1.1811023622047243in"}
 
 A B C
 
 ![A molecule of chemical formula AI-generated content may be
-incorrect.](media/image53.png){width="1.5748031496062993in"
+incorrect.](exercises/media/image53.png){width="1.5748031496062993in"
 height="0.7225098425196851in"}![A chemical structure with letters and
 numbers AI-generated content may be
-incorrect.](media/image54.png){width="1.5748031496062993in"
+incorrect.](exercises/media/image54.png){width="1.5748031496062993in"
 height="1.0643077427821521in"}![A molecule with letters and numbers
 AI-generated content may be
-incorrect.](media/image55.png){width="1.5748031496062993in"
+incorrect.](exercises/media/image55.png){width="1.5748031496062993in"
 height="1.1017891513560805in"}
 
 D E F
@@ -3634,42 +4090,42 @@ k.  cWW
 l.  tWS
 
 ![A black circle with a black stripe AI-generated content may be
-incorrect.](media/image56.png){width="0.7951388888888888in"
+incorrect.](exercises/media/image56.png){width="0.7951388888888888in"
 height="0.42291666666666666in"}![A black circle with two black lines
 AI-generated content may be
-incorrect.](media/image57.png){width="0.7819444444444444in"
+incorrect.](exercises/media/image57.png){width="0.7819444444444444in"
 height="0.4361111111111111in"}![A black and white logo AI-generated
 content may be
-incorrect.](media/image58.png){width="0.6923611111111111in"
+incorrect.](exercises/media/image58.png){width="0.6923611111111111in"
 height="0.4618055555555556in"}![A black and white logo AI-generated
 content may be
-incorrect.](media/image59.png){width="0.7305555555555555in"
+incorrect.](exercises/media/image59.png){width="0.7305555555555555in"
 height="0.5125in"}![A black arrow with a circle and a dot AI-generated
 content may be
-incorrect.](media/image60.png){width="0.7048611111111112in"
+incorrect.](exercises/media/image60.png){width="0.7048611111111112in"
 height="0.5in"}![A black arrow with a circle and a circle AI-generated
 content may be
-incorrect.](media/image61.png){width="0.7819444444444444in"
+incorrect.](exercises/media/image61.png){width="0.7819444444444444in"
 height="0.5256944444444445in"}![A black square with two lines
 AI-generated content may be
-incorrect.](media/image62.png){width="0.7694444444444445in"
+incorrect.](exercises/media/image62.png){width="0.7694444444444445in"
 height="0.5125in"}![A black and white logo AI-generated content may be
-incorrect.](media/image63.png){width="0.75625in"
+incorrect.](exercises/media/image63.png){width="0.75625in"
 height="0.5770833333333333in"}
 
 A B C D E F G H
 
 ![A black arrow with a white background AI-generated content may be
-incorrect.](media/image64.png){width="0.7305555555555555in"
+incorrect.](exercises/media/image64.png){width="0.7305555555555555in"
 height="0.5256944444444445in"}![A black and white logo AI-generated
 content may be
-incorrect.](media/image65.png){width="0.7819444444444444in"
+incorrect.](exercises/media/image65.png){width="0.7819444444444444in"
 height="0.5513888888888889in"}![A black arrow pointing to the right
 AI-generated content may be
-incorrect.](media/image66.png){width="0.7048611111111112in"
+incorrect.](exercises/media/image66.png){width="0.7048611111111112in"
 height="0.47430555555555554in"}![A black arrow with a rectangle
 AI-generated content may be
-incorrect.](media/image67.png){width="0.7819444444444444in"
+incorrect.](exercises/media/image67.png){width="0.7819444444444444in"
 height="0.4618055555555556in"}
 
 I J K L
@@ -3693,10 +4149,10 @@ f.  Kationer stabiliserer strukturen
 g.  Quadruplex
 
 ![A structure of a molecule AI-generated content may be
-incorrect.](media/image68.png){width="2.7559055118110236in"
+incorrect.](exercises/media/image68.png){width="2.7559055118110236in"
 height="2.1981157042869643in"}![A close-up of a molecule AI-generated
 content may be
-incorrect.](media/image69.png){width="2.7559055118110236in"
+incorrect.](exercises/media/image69.png){width="2.7559055118110236in"
 height="1.789238845144357in"}
 
 **A B**
@@ -3713,23 +4169,23 @@ c.  Loop E med tWH
 
 d.  Kink-turn med tHS
 
-  --------------------------------------------------------------------------
+  -------------------------------------------------------------------------------
   **A**   ![A black and white diagram AI-generated content may be
-          incorrect.](media/image70.png){width="1.3715277777777777in"
+          incorrect.](exercises/media/image70.png){width="1.3715277777777777in"
           height="0.9875in"}
-  ------- ------------------------------------------------------------------
+  ------- -----------------------------------------------------------------------
   **B**   ![A black text with black letters AI-generated content may be
-          incorrect.](media/image71.png){width="4.0125in"
+          incorrect.](exercises/media/image71.png){width="4.0125in"
           height="1.1460673665791776in"}
 
   **C**   ![A black and white diagram AI-generated content may be
-          incorrect.](media/image72.png){width="3.397222222222222in"
+          incorrect.](exercises/media/image72.png){width="3.397222222222222in"
           height="1.2951388888888888in"}
 
   **D**   ![A black text with black letters AI-generated content may be
-          incorrect.](media/image73.png){width="3.1284722222222223in"
+          incorrect.](exercises/media/image73.png){width="3.1284722222222223in"
           height="1.1284722222222223in"}
-  --------------------------------------------------------------------------
+  -------------------------------------------------------------------------------
 
 10. Hvad er et ribozym?
 
@@ -3869,7 +4325,7 @@ manuelle måde at gøre det samme, som det man kan med
 distance-kommandoen.\
 \*
 ![Text Description automatically
-generated](media/image74.png){width="4.623655949256343in"
+generated](exercises/media/image74.png){width="4.623655949256343in"
 height="3.107879483814523in"}
 
 5.  Identificer aminosyrer der binder til midterste position i anticodon
@@ -3906,7 +4362,7 @@ den sekundære struktur med angivelse af enkelte non-Watson-Crick basepar
 (markeret med åbne cirkler). Interne loops i RNA struktur er beskrevet i
 afsnit 5.3.7.2 (side 135) i Liljas \"Textbook of Structural Biology\".
 
-![5S rRNA 1](media/image75.png){width="6.263888888888889in"
+![5S rRNA 1](exercises/media/image75.png){width="6.263888888888889in"
 height="2.4743055555555555in"}
 
 1.  Beskriv de navngivne elementer i den sekundære struktur for 5S rRNA
@@ -3934,7 +4390,7 @@ grønne og ikke-polære hydrogenatomer gule. Proteinet kan fjernes ved at
 trykke **F10**.
 
 ![A close-up of a dna molecule AI-generated content may be
-incorrect.](media/image76.png){width="1.9525054680664917in"
+incorrect.](exercises/media/image76.png){width="1.9525054680664917in"
 height="5.858803587051619in"}
 
 4.  Hvordan ser deep og shallow groove ud ved protein-bindingsstedet i
@@ -4200,7 +4656,7 @@ d.  Antal sekvenser der findes i databasen med samme sekvens.
     identity matrix.
 
 > ![A number with numbers on it AI-generated content may be
-> incorrect.](media/image77.jpeg){width="4.286821959755031in"
+> incorrect.](exercises/media/image77.jpeg){width="4.286821959755031in"
 > height="0.9042880577427822in"}
 >
 > Hvilke af følgende statements er sande?
@@ -4220,7 +4676,7 @@ d.  Hæmoglobin og leghemoglobin er tættest beslægtede.
     fået følgende sekvens-struktur-alignment:
 
 > ![A close-up of a number AI-generated content may be
-> incorrect.](media/image78.jpeg){width="5.658251312335958in"
+> incorrect.](exercises/media/image78.jpeg){width="5.658251312335958in"
 > height="3.4597703412073493in"}
 >
 > Hvilken basepar-ændring, der bevarer struktur, observeres i stem, der
@@ -4242,7 +4698,7 @@ e.  G-C til C-G
     programmet RNAalifold og har fået følgende resultat:
 
 > ![A close-up of a dna sequence AI-generated content may be
-> incorrect.](media/image79.jpeg){width="5.670422134733158in"
+> incorrect.](exercises/media/image79.jpeg){width="5.670422134733158in"
 > height="2.1705424321959756in"}
 >
 > Hvilken bevarende basepar-ændring findes på position 10 og 27?
@@ -4332,42 +4788,41 @@ alignment af alle kendte tRNA-sekvenser i RNA familie-databasen
     adskiller nogle tRNA-sekvenser fra andre? Hint: Læs om Rchie plots i
     boksen herunder.
 
-+----------------------------------------------------------------------+
-| **Rchie-plots**                                                      |
-|                                                                      |
-| Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra     |
-| [e-RNA.org](https://www.e-rna.org/r-chie/faq.cgi))                   |
-|                                                                      |
-| ![Et billede, der indeholder tekst, skærmbillede, design Automatisk  |
-| genereret                                                            |
-| beskrivelse](media/image80.png){width="2.3194291338582675in"         |
-| height="2.63670384951881in"} ![Et billede, der indeholder tekst,     |
-| skærmbillede, design Automatisk genereret                            |
-| beskrivelse](media/image80.png){width="1.7529768153980751in"         |
-| height="2.5084284776902885in"}                                       |
-|                                                                      |
-| **Covariation** (correlated variation): refererer til ethvert validt |
-| basepar (A:U, G:C, G:U) som adskiller sig fra det mest gængse        |
-| observerede valide basepar. Det vil sige at der er kompensatoriske   |
-| baseparændringer (mutationer), som stadig muliggør baseparring samt  |
-| sekundær struktur.                                                   |
-|                                                                      |
-| - **One-sided covariation:** Den ene base i baseparret skifter, men  |
-|   baseparret kan stadig dannes, hvilket er muligt grundet GU wobble. |
-|   Altså vi har en ændring fra G:C til G:U, fra A:U til G:U eller     |
-|   vice versa.                                                        |
-|                                                                      |
-| - **Two-sided covariation:** Begge baser i baseparret adskiller sig  |
-|   fra det mest gængse observerede basepar på denne position. Her er  |
-|   der mange muligheder. Kan både være transitioner og                |
-|   transversioner.                                                    |
-|                                                                      |
-| **Invalid:** alle basepar der ikke er enten A:U, G:C eller G:U       |
-|                                                                      |
-| **Ambiguous:** Enhver base, som ikke er A, C, G, T eller U.          |
-|                                                                      |
-| **Unpaired:** De uparrede. Loops eller bulges.                       |
-+======================================================================+
++------------------------------------------------------------------------+
+| **Rchie-plots**                                                        |
+|                                                                        |
+| Om de forskellige nukleotidfarver som skrevet i Rchie plots (fra       |
+| [e-RNA.org](https://www.e-rna.org/r-chie/faq.cgi))                     |
+|                                                                        |
+| ![Et billede, der indeholder tekst, skærmbillede, design Automatisk    |
+| genereret                                                              |
+| beskrivelse](exercises/media/image80.png){width="2.3194291338582675in" |
+| height="2.63670384951881in"} ![Et billede, der indeholder tekst,       |
+| skærmbillede, design Automatisk genereret                              |
+| beskrivelse](exercises/media/image80.png){width="1.7529768153980751in" |
+| height="2.5084284776902885in"}                                         |
+|                                                                        |
+| **Covariation** (correlated variation): refererer til ethvert validt   |
+| basepar (A:U, G:C, G:U) som adskiller sig fra det mest gængse          |
+| observerede valide basepar. Det vil sige at der er kompensatoriske     |
+| baseparændringer (mutationer), som stadig muliggør baseparring samt    |
+| sekundær struktur.                                                     |
+|                                                                        |
+| - **One-sided covariation:** Den ene base i baseparret skifter, men    |
+|   baseparret kan stadig dannes, hvilket er muligt grundet GU wobble.   |
+|   Altså vi har en ændring fra G:C til G:U, fra A:U til G:U eller vice  |
+|   versa.                                                               |
+|                                                                        |
+| - **Two-sided covariation:** Begge baser i baseparret adskiller sig    |
+|   fra det mest gængse observerede basepar på denne position. Her er    |
+|   der mange muligheder. Kan både være transitioner og transversioner.  |
+|                                                                        |
+| **Invalid:** alle basepar der ikke er enten A:U, G:C eller G:U         |
+|                                                                        |
+| **Ambiguous:** Enhver base, som ikke er A, C, G, T eller U.            |
+|                                                                        |
+| **Unpaired:** De uparrede. Loops eller bulges.                         |
++========================================================================+
 
 Vi skal nu undersøge de tRNA sekvenser der adskiller sig. Følgende
 tRNA-sekvenser er downloadet fra Rfam: 
@@ -4406,21 +4861,24 @@ GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCG-UGCCGGUUCAAGUCCGGC
 | (((((((..((((\...\...\....))))((((((\...\....))))))(((((\....)))))..(((((\...\....)))))))))))).. |
 |                                                                                                  |
 | ![Et billede, der indeholder tekst, skærmbillede, software Automatisk genereret                  |
-| beskrivelse](media/image81.png){width="6.044407261592301in" height="3.281363735783027in"}De      |
-| sorte basepar på strukturen vist under **Graphical output**, betyder at der kan forekomme        |
-| inkompatible basepar (mismatches) på denne position i mindst én af sekvenserne og ikke           |
-| nødvendigvis at der er mismatches i alle sekvenserne.                                            |
+| beskrivelse](exercises/media/image81.png){width="6.044407261592301in"                            |
+| height="3.281363735783027in"}De sorte basepar på strukturen vist under **Graphical output**,     |
+| betyder at der kan forekomme inkompatible basepar (mismatches) på denne position i mindst én af  |
+| sekvenserne og ikke nødvendigvis at der er mismatches i alle sekvenserne.                        |
 |                                                                                                  |
 | ![Et billede, der indeholder Perle, Smykkedesign, kunst Automatisk genereret                     |
-| beskrivelse](media/image82.png){width="2.1418788276465444in" height="2.3409733158355204in"}\     |
+| beskrivelse](exercises/media/image82.png){width="2.1418788276465444in"                           |
+| height="2.3409733158355204in"}\                                                                  |
 | En bedre og mere detaljeret præsentation af tRNA-femkløveren kan ses ved at vælge PDF under      |
 | **Download options** ud for '*structure drawing with conservation annotation'* under **Image     |
 | description**, som det ses herunder:                                                             |
 |                                                                                                  |
 | ![Et billede, der indeholder clipart, illustration/afbildning Automatisk genereret               |
-| beskrivelse](media/image83.png){width="2.4730708661417324in" height="3.0030139982502186in"} ![Et |
-| billede, der indeholder tekst, skærmbillede, Farverigt, Font/skrifttype Automatisk genereret     |
-| beskrivelse](media/image84.png){width="2.1795833333333334in" height="1.0123567366579178in"}      |
+| beskrivelse](exercises/media/image83.png){width="2.4730708661417324in"                           |
+| height="3.0030139982502186in"} ![Et billede, der indeholder tekst, skærmbillede, Farverigt,      |
+| Font/skrifttype Automatisk genereret                                                             |
+| beskrivelse](exercises/media/image84.png){width="2.1795833333333334in"                           |
+| height="1.0123567366579178in"}                                                                   |
 |                                                                                                  |
 | Herved fås en repræsentation med farvning efter antal af forskellige basepar på hver position    |
 | samt en graduering i gennemsigtighed efter antallet af inkompatible basepar.                     |
@@ -4429,7 +4887,7 @@ GCCGGGGUGGUGGAAUUGGCA-GACACACAGGACUUAAAAUCCUGCGGUAGGUGACUACCG-UGCCGGUUCAAGUCCGGC
 | at vælge PDF ud for **structure annotated alignment**.                                           |
 |                                                                                                  |
 | ![Et billede, der indeholder tekst, skærmbillede, Font/skrifttype, linje/række Automatisk        |
-| genereret beskrivelse](media/image85.png){width="6.362213473315835in"                            |
+| genereret beskrivelse](exercises/media/image85.png){width="6.362213473315835in"                  |
 | height="1.7086187664041994in"}                                                                   |
 +==================================================================================================+
 
@@ -4524,7 +4982,7 @@ markeret i rød i PyMOL.
     Mg^2+^-ion, C30, C47 og vand-molekylet?
 
 ![A collage of a diagram of a molecule Description automatically
-generated](media/image86.png){width="5.315115923009624in"
+generated](exercises/media/image86.png){width="5.315115923009624in"
 height="6.75290791776028in"}
 
 **Officielt svar**
@@ -4543,7 +5001,7 @@ height="6.75290791776028in"}
     arrangeret i en 3-way junction og en 4-way junction.\
     \
     ![Screen Shot 2017-10-24 at
-    19.30.02](media/image87.png){width="2.3650120297462816in"
+    19.30.02](exercises/media/image87.png){width="2.3650120297462816in"
     height="1.9007086614173228in"}
 
 3.  P1-P2, P4-P5, P3-P6-P7
@@ -5183,9 +5641,9 @@ over flere timer ved temperaturer op til 40 °C og ved pH værdier mellem
 
 Du starter med at køre en 1D og 2D PAGE og får følgende resultater:
 
-![](media/image88.png){width="1.2916666666666667in"
+![](exercises/media/image88.png){width="1.2916666666666667in"
 height="3.1219510061242346in"}
-![](media/image89.png){width="4.589557086614173in"
+![](exercises/media/image89.png){width="4.589557086614173in"
 height="3.182926509186352in"}
 
 1.  Brug resultaterne til at estimere MW og pI for hvert af de tre
@@ -5232,7 +5690,7 @@ Healthcare Bio-Sciences AB.\
 
 Du kører nu din gelfiltreringssøjle og får følgende kromatogram:
 
-![](media/image90.png){width="6.268055555555556in"
+![](exercises/media/image90.png){width="6.268055555555556in"
 height="3.9005008748906387in"}
 
 3.  Kromatogrammet angiver absorbans ved 280 nm som funktion af
@@ -5249,9 +5707,9 @@ Du analyserer nu indholdet i de to toppe ved at udtage fraktion 45 og
 68. Du kører SDS-PAGE på begge fraktioner og 2D-PAGE på fraktion 68 og
 får følgende resultater:
 
-![](media/image91.png){width="1.3027099737532808in"
+![](exercises/media/image91.png){width="1.3027099737532808in"
 height="3.16836176727909in"}
-![](media/image92.png){width="4.220778652668416in"
+![](exercises/media/image92.png){width="4.220778652668416in"
 height="3.1704932195975504in"}
 
 6.  Kan kromatogrammet nu forklares éntydigt?
@@ -5334,7 +5792,7 @@ saltgradient. Bufferens pH-værdi sættes til 7.0 og gradienten til at
 køre fra 0.0 - 0.5 M salt. Eksperimentet giver dig følgende kromatogram
 med absorptionen ved 280 nm i blåt og gradienten i pink:
 
-![](media/image93.png){width="6.268055555555556in"
+![](exercises/media/image93.png){width="6.268055555555556in"
 height="3.9145833333333333in"}
 
 3.  Hvorfor eluerer de bundne proteiner når saltkoncentrationen hæves?
@@ -5345,9 +5803,9 @@ Du analyserer nu de to toppe ved at udtage fraktion 20 og 107 og kører
 begge på 1D SDS-PAGE og fraktion 20 på 2D SDS-PAGE. Du får følgende
 resultat:
 
-![](media/image94.png){width="1.384022309711286in"
+![](exercises/media/image94.png){width="1.384022309711286in"
 height="3.304877515310586in"}
-![](media/image95.png){width="4.35365813648294in"
+![](exercises/media/image95.png){width="4.35365813648294in"
 height="3.2881550743657044in"}
 
 4.  Hvilke proteiner er i hvilke toppe? Er det som forventet?
@@ -5357,10 +5815,10 @@ i fraktion 20, der jo har to proteiner. Du forsøger nu i desperation at
 køre søjlen ved både pH 6 og pH 8 for at se om du kan adskille
 proteinerne. Du får følgende resultater:
 
-![](media/image96.png){width="6.268055555555556in"
+![](exercises/media/image96.png){width="6.268055555555556in"
 height="4.019444444444445in"}
 
-![](media/image97.png){width="6.268055555555556in"
+![](exercises/media/image97.png){width="6.268055555555556in"
 height="3.907638888888889in"}
 
 5.  Hvordan ændrer kromatogrammet sig når pH varierer og kan du forklare
@@ -5453,7 +5911,7 @@ Cost: 0.251 hours/100 Units
 
 Du kører nu DEAE-søjlen og får følgende resultat:
 
-![](media/image98.png){width="6.268055555555556in"
+![](exercises/media/image98.png){width="6.268055555555556in"
 height="3.984722222222222in"}
 
 5.  Ser kromatogrammet anderledes ud end da du kørte søjlen med alle tre
@@ -5475,9 +5933,9 @@ Cost: 0.503 hours/100 Units
 Til slut kører du en SDS-PAGE for at bekræfte at der kun er ét bånd på
 gelen.
 
-![](media/image99.png){width="1.0812117235345582in"
+![](exercises/media/image99.png){width="1.0812117235345582in"
 height="2.8958333333333335in"}
-![](media/image100.png){width="3.8333333333333335in"
+![](exercises/media/image100.png){width="3.8333333333333335in"
 height="2.880308398950131in"}
 
 Det er endelig lykkedes - og chefen roser dit gode arbejde og
@@ -5543,7 +6001,7 @@ formål at kunne kalibrere gelfiltreringssøjler.
 
 Du kører nu din valgte gelfiltreringssøjle og får følgende resultat:
 
-![](media/image101.png){width="6.263888888888889in"
+![](exercises/media/image101.png){width="6.263888888888889in"
 height="3.8683945756780402in"}
 
 2.  Notér elueringsvolumenet (fraktionsnummeret) for hvert top (midten
@@ -5557,7 +6015,7 @@ height="3.8683945756780402in"}
 Du analyserer nu en ny prøve kaldet \"GF Test Mixture\" med samme
 gelfiltreringssøjle:
 
-![](media/image102.png){width="6.268055555555556in"
+![](exercises/media/image102.png){width="6.268055555555556in"
 height="3.829861111111111in"}
 
 4.  Brug fittet fra Excel til at estimere den native MW af det ukendte
@@ -5568,7 +6026,7 @@ height="3.829861111111111in"}
     monomermassen af proteinet. Hvor mange forskellige subunits består
     dette protein af?
 
-> ![](media/image103.png){width="1.405696631671041in"
+> ![](exercises/media/image103.png){width="1.405696631671041in"
 > height="3.682926509186352in"}
 
 **Officielt svar**
@@ -5605,7 +6063,7 @@ height="3.829861111111111in"}
 > \
 > fraktionsnummer = -53.417 \* log(MW) + 310.12
 >
-> ![](media/image104.png){width="5.402438757655293in"
+> ![](exercises/media/image104.png){width="5.402438757655293in"
 > height="3.1953444881889763in"}
 
 4.  Det ukendte protein eluerer ved fraktion 52. Da vi har log(MW) =
@@ -5624,7 +6082,7 @@ mængde protein samt at proteinet er så rent som muligt!
 
 Du starter med at køre en 2D SDS-PAGE gel:
 
-![](media/image105.png){width="6.268055555555556in"
+![](exercises/media/image105.png){width="6.268055555555556in"
 height="4.329166666666667in"}
 
 1.  Identificer proteinet på gelen og noter dets MW og pI.
@@ -5643,7 +6101,7 @@ height="4.329166666666667in"}
 Du starter med en gelfiltrering med det valgte søjle materiale og får
 følgende kromatogram:
 
-![](media/image106.png){width="6.268055555555556in"
+![](exercises/media/image106.png){width="6.268055555555556in"
 height="3.819570209973753in"}
 
 4.  Hvilken top og hvilke fraktioner vil du vælge at poole for at
@@ -5661,9 +6119,9 @@ Cost: 0.022 hours/100 Units
 
 Du kører 1D og 2D SDS-PAGE for at undersøge renheden af din prøve:
 
-![SDS-PAGE_after_GF](media/image107.png){width="1.2620100612423446in"
+![SDS-PAGE_after_GF](exercises/media/image107.png){width="1.2620100612423446in"
 height="3.2521008311461066in"}
-![2D-gel_after_GF](media/image108.png){width="4.655606955380577in"
+![2D-gel_after_GF](exercises/media/image108.png){width="4.655606955380577in"
 height="3.2615551181102362in"}
 
 5.  1D-gelen afslører at prøven er kontamineret. Hvordan kan der være
@@ -5679,7 +6137,7 @@ mellem (pH 5.8-6.8) burde det altså kun være vores protein, der binder.
 Du kører nu en ionbyttekromatografi søjle med DEAE-cellulose ved pH 6.5
 og får følgende resultat:
 
-![](media/image109.png){width="6.268055555555556in"
+![](exercises/media/image109.png){width="6.268055555555556in"
 height="4.066666666666666in"}
 
 6.  Hvilken top og hvilke fraktioner vil du vælge at poole for at
@@ -5697,7 +6155,7 @@ Cost: 0.044 hours/100 Units
 
 Du kører 1D SDS-PAGE for at se om dit protein er helt rent!
 
-![SDS-PAGE_after_DEAE-cellulose](media/image110.png){width="1.2696314523184602in"
+![SDS-PAGE_after_DEAE-cellulose](exercises/media/image110.png){width="1.2696314523184602in"
 height="3.1428576115485565in"}
 
 7.  Er du tilfreds med resultatet? Hvad kunne du gøre for at få et endnu
@@ -5853,14 +6311,14 @@ Fremstilling af teoretiske bindingskurver.
     udgangspunkt i en simpel binding af substrat S til protein X:
 
 ![A black and white text AI-generated content may be
-incorrect.](media/image111.png){width="5.697915573053368in"
+incorrect.](exercises/media/image111.png){width="5.697915573053368in"
 height="0.78125in"}
 
 Her gælder at mætningsgraden Y (altså hvor stor en brøkdel af X
 proteinerne har bundet S) kan skrives som:
 
 ![A black and orange math equation AI-generated content may be
-incorrect.](media/image112.png){width="3.8645833333333335in"
+incorrect.](exercises/media/image112.png){width="3.8645833333333335in"
 height="0.875in"}
 
 Vi udvider nu denne simple bindingsmodel til at involvere binding af op
@@ -5868,10 +6326,10 @@ til *n* molekyler S per X. Vi antager at hvert S kan binde uafhængigt af
 de andre S'ere:
 
 ![A math equations and symbols AI-generated content may be
-incorrect.](media/image113.png){width="6.260415573053368in"
+incorrect.](exercises/media/image113.png){width="6.260415573053368in"
 height="1.65625in"}Vis hvordan dette fører til Hill-ligningen:
 
-![](media/image114.png){width="6.260415573053368in"
+![](exercises/media/image114.png){width="6.260415573053368in"
 height="0.7708333333333334in"}
 
 2.  Brug Hill ligningen til at plotte en ilt-bindings kurve for et
@@ -5887,7 +6345,7 @@ hemoglobin with physiological con- centrations of C02 and 2,3-BPG at pH
 7. XVhich curves represent each of the following perturbations? 2 3 4 p
 02 (a) Decrease in C02 (b) Increase in -BPG (c) Increase in pH (d) Loss
 of quaternary structure
-](media/image115.png){width="3.1399125109361328in"
+](exercises/media/image115.png){width="3.1399125109361328in"
 height="2.7017541557305336in"}
 
 3.  Hvilke kurver svarer til de følgende ændringer i
@@ -5907,7 +6365,7 @@ d.  Tab af kvarternær struktur.
 
 1.  Dette følger af det simple sammenhæng ![A black and white math
     equation AI-generated content may be
-    incorrect.](media/image116.png){width="1.4791666666666667in"
+    incorrect.](exercises/media/image116.png){width="1.4791666666666667in"
     height="0.6051137357830271in"}
 
 2.  Det udføres bedst i Excel med brug af ligningerne i appendix.\
@@ -5915,7 +6373,8 @@ d.  Tab af kvarternær struktur.
     = 1.8\*p(O~2~)-1.8\*log(10), men hvis man blot skal plotte den
     oprindelige ilt-bindings kurve, benyttes at *Y* = p(O~2~)*^n^*/(
     p(O~2~)*^n^*+ *P*~50~*^n^*). Herved fås:\
-    ![TØ uge 43 excel 3](media/image117.png){width="5.531010498687664in"
+    ![TØ uge 43 excel
+    3](exercises/media/image117.png){width="5.531010498687664in"
     height="3.1734995625546807in"}\
     Man ser godt kooperativiteten ved de lave ilt koncentrationer.
 
@@ -6004,7 +6463,8 @@ form. Tilførende data for lampret Hb ilt binding findes i TØ mappen:
 
 1.  Plot Y (brøken af lampret Hb der har bundet ilt) versus p(O~2~) i
     Excel ark:\
-    ![TØ uge 43 excel 1](media/image118.png){width="5.507042869641295in"
+    ![TØ uge 43 excel
+    1](exercises/media/image118.png){width="5.507042869641295in"
     height="3.3063003062117233in"}\
     Der er 50% mætning ved 10 torr ilt (det kan nu også aflæses i
     tabellen!).\
@@ -6012,7 +6472,8 @@ form. Tilførende data for lampret Hb ilt binding findes i TØ mappen:
 
 2.  Her skal log (Y/(1-Y)) plottes mod log (p(O~2~)) hvor hældningen
     giver kooperativitetskoefficienten *n*.\
-    ![TØ uge 43 excel 2](media/image119.png){width="5.064000437445319in"
+    ![TØ uge 43 excel
+    2](exercises/media/image119.png){width="5.064000437445319in"
     height="3.0403094925634297in"}\
     Hældningen bliver 1.2 så den er svagt kooperativ!
 
@@ -6029,7 +6490,8 @@ form. Tilførende data for lampret Hb ilt binding findes i TØ mappen:
     kooperativitet.\
     \
     \
-    ![TØ uge 43 lampret](media/image120.png){width="5.516056430446194in"
+    ![TØ uge 43
+    lampret](exercises/media/image120.png){width="5.516056430446194in"
     height="1.9904494750656168in"}
 
 ## Opgave 5. Allosterispørgsmål
@@ -6046,7 +6508,8 @@ form. Tilførende data for lampret Hb ilt binding findes i TØ mappen:
     som funktion af substratkoncentration. Hvilken model, MWC eller
     sekventiel, kan bedst forklare disse resultater?
 
-![Y versus substrate](media/image121.png){width="5.319888451443569in"
+![Y versus
+substrate](exercises/media/image121.png){width="5.319888451443569in"
 height="4.081333114610674in"}
 
 ATCase blev reageret med tetra-nitromethan (TNM) for at danne en farvet
@@ -6061,7 +6524,7 @@ sidekæden blev til sidst målt ved titrering af substratanalogen
 succinate som vist i figuren nedenfor:
 
 ![succinate versus
-wavelength](media/image122.png){width="4.292507655293089in"
+wavelength](exercises/media/image122.png){width="4.292507655293089in"
 height="2.8791207349081365in"}
 
 5.  Hvad er betydningen af ændringen i 430 nm signalet?
@@ -6075,7 +6538,7 @@ man for CTP, hvor titrering af stoffet i fravær af substrate forårsagede
 et fald i 430 nm absorption:
 
 ![ATP and CTP versus
-wavelength](media/image123.png){width="4.42321084864392in"
+wavelength](exercises/media/image123.png){width="4.42321084864392in"
 height="2.9304997812773403in"}
 
 6.  Hvad er betydningen af disse ændringer i absorbtionen af
@@ -6217,7 +6680,8 @@ type inhibitor der er tale om.
 
 **Officielt svar**
 
-![Inhibition correct](media/image124.jpeg){width="6.268055555555556in"
+![Inhibition
+correct](exercises/media/image124.jpeg){width="6.268055555555556in"
 height="3.93125in"}
 
 Skæringen med y-aksen varierer mens linjerne samles (mere eller mindre)
@@ -6260,7 +6724,7 @@ blive endnu hurtigere end methylaser.
 2.  Endnu værre. Så er der slet ingen methylase til at beskytte
     bakterien mod sin egen RE.
 
-## ![A structure of a chemical formula AI-generated content may be incorrect.](media/image125.png){width="1.0979166666666667in" height="0.8958333333333334in"}Opgave 6. Cheleringsagenter
+## ![A structure of a chemical formula AI-generated content may be incorrect.](exercises/media/image125.png){width="1.0979166666666667in" height="0.8958333333333334in"}Opgave 6. Cheleringsagenter
 
 EDTA (ethylene diamine tetra eddike syre, jf. struktur til højre)
 chelerer (binder kraftigt) en bestemt type molekyler. Hvilke enzymer fra
@@ -6282,7 +6746,7 @@ hvor det langsomt bliver fysisk nedbrudt til mindre partikler. Der
 finder meget lidt enzym-drevet nedbrydning af plastik sted. Strukturerne
 af de mest udbredte klasser af plastik er vist nedenunder.
 ![D:\\Daniel\\Undervisning Aarhus\\BMSF\\Eksamen Dec
-2020\\1a.jpg](media/image126.jpeg){width="6.44375in"
+2020\\1a.jpg](exercises/media/image126.jpeg){width="6.44375in"
 height="3.1479166666666667in"}
 
 1.  Ud fra et kemisk perspektiv, hvorfor er det en udfordring for
@@ -6296,13 +6760,13 @@ Et enzym (PETase) nedbryder PET til MHET, mens et andet enzym (en
 MHETase) nedbryder MHET til PTA og EG (se reaktionsskema nedenfor).
 
 ![D:\\Daniel\\Undervisning Aarhus\\BMSF\\Eksamen Dec
-2020\\1b.jpg](media/image127.jpeg){width="6.6930555555555555in"
+2020\\1b.jpg](exercises/media/image127.jpeg){width="6.6930555555555555in"
 height="2.8746194225721786in"}
 
 Strukturen af MHETase løses i nærvær af stoffet benzoat (se nedenfor).
 
 ![D:\\Daniel\\Undervisning Aarhus\\BMSF\\Eksamen Dec
-2020\\1c.jpg](media/image128.jpeg){width="6.6930555555555555in"
+2020\\1c.jpg](exercises/media/image128.jpeg){width="6.6930555555555555in"
 height="3.0531911636045495in"}
 
 Det aktive site i MHETase virker ligesom flere proteaser mm. gennem en
@@ -6311,7 +6775,7 @@ serin-rest. Skriv et kort script, der henter MHETase (PDB-ID: 6QGA) og
 PETase (PDB-ID: 5XH3) og fjerner overskydende versioner af proteinerne.
 Align de to strukturer med super.
 
-2.  ![C:\\Users\\au82595\\Downloads\\MHETase.jpg](media/image129.jpeg){width="2.7159722222222222in"
+2.  ![C:\\Users\\au82595\\Downloads\\MHETase.jpg](exercises/media/image129.jpeg){width="2.7159722222222222in"
     height="1.9479166666666667in"}Beskriv forskellen mellem de to
     strukturer, find det aktive site og kom med et bud på, hvorfor
     MHETasen har et domæne som PETasen ikke har, når det oplyses at
@@ -6507,7 +6971,7 @@ Stimulering af ATCase-aktiviteten kan observeres under visse
 eksperimentelle betingelser, som vist nedenfor.\
 \
 ![Chart Description automatically
-generated](media/image130.png){width="4.092971347331583in"
+generated](exercises/media/image130.png){width="4.092971347331583in"
 height="2.341176727909011in"}
 
 2.  Beskriv kurven og forklar hvad der foregår.
@@ -6546,7 +7010,7 @@ vækstrate. (Hint: Læs om homoserine dehydrogenase på wikipedia)
     for både UTP og CTP. Når der tilsættes uracil til vækstmediet er
     ATCase reaktionen unødvendig og væksten normal.
 
-![Regulation_of_Homoserine_Dehydrogenase_and_Aspartate_Kinase](media/image131.jpeg){width="5.444444444444445in"
+![Regulation_of_Homoserine_Dehydrogenase_and_Aspartate_Kinase](exercises/media/image131.jpeg){width="5.444444444444445in"
 height="6.154589895013124in"}
 
 Stryer s. 314 (Fig. 10.8) viser det aktive site af ATCase. En lysin
@@ -6623,7 +7087,7 @@ additiv til donorblod, for at modvirke koagulation under oplagring. Den
 kemiske struktur af en heparinenhed er vist nedenfor.
 
 ![Diagram, schematic Description automatically
-generated](media/image132.png){width="3.0987653105861765in"
+generated](exercises/media/image132.png){width="3.0987653105861765in"
 height="1.8850174978127734in"}
 
 3.  Hvilken gruppe af stoffer tilhører heparin og hvilke funktionelle
@@ -6640,7 +7104,7 @@ height="1.8850174978127734in"}
 PyMOL-interface bruges Action menuen: A\>generate\>vacuum
 electrostatics\>protein contact potential (local). Se figuren forneden.*
 
-![](media/image133.png){width="6.268055555555556in"
+![](exercises/media/image133.png){width="6.268055555555556in"
 height="4.786111111111111in"}\
 \
 *Men vi vil ikke bare gøre det i vores PyMOL session. Vi vil have det
@@ -6652,10 +7116,10 @@ neden ved at gå ind på undermenuen \"File\", derefter på \"Log File\" og
 til sidst \"New\...\". Så gemmer du det under det ønskede navn, f.eks.
 \"Log-file.pml\".*
 
-![](media/image134.png){width="2.4255314960629923in"
+![](exercises/media/image134.png){width="2.4255314960629923in"
 height="3.06382874015748in"} ![Graphical user interface, application
 Description automatically
-generated](media/image135.png){width="3.2905610236220473in"
+generated](exercises/media/image135.png){width="3.2905610236220473in"
 height="1.590559930008749in"}
 
 *Herefter bruger du A\>generate\>vacuum electrostatics\>protein contact
@@ -6663,14 +7127,14 @@ potential (local) igen.*
 
 *Herefter går du ind og lukker logfilen, som du ser i figuren forneden.*
 
-![](media/image136.png){width="2.4491983814523186in"
+![](exercises/media/image136.png){width="2.4491983814523186in"
 height="3.085106080489939in"}
 
 *Herefter vil du kunne gå ind på log-filen og se kommandoen for den
 aktion du lige har udført. Denne kan bruges i dit script.*
 
 ![Graphical user interface, text, application Description automatically
-generated](media/image137.png){width="6.268055555555556in"
+generated](exercises/media/image137.png){width="6.268055555555556in"
 height="1.0756944444444445in"}
 
 *Positionen af den elektrostatiske overflade beregnes ligesom den
@@ -6727,7 +7191,7 @@ antithrombin III på factor XIa\'s proteolytiske funktion blev målt, med
 og uden heparin tilstede.
 
 ![Text Description automatically generated with low
-confidence](media/image138.png){width="4.897222222222222in"
+confidence](exercises/media/image138.png){width="4.897222222222222in"
 height="3.0in"}
 
 *Effekten af antithrombin III (x-aksen, µM) på factor XIa\'s
@@ -6872,31 +7336,31 @@ fra L-Ala og dens inhibering (ved cycloserin) bruges som antibiotika
 For følgende 5 stoffer angives log(P). Bestem om de overholder
 Lipinski's regler.
 
-  ---------------------------------------------------------------------------------------------------------------------
-  Navn            Struktur                                                      Log    Mwt   \#          \#
-                                                                                (P)          H-donorer   H-acceptorer
-  --------------- ------------------------------------------------------------- ------ ----- ----------- --------------
-  Atorvastatin    ![Atorvastatin -                                              4.1    558   4           6
-  (4.1)           Wikipedia](media/image139.png){width="2.159724409448819in"                             
-                  height="1.1145833333333333in"}                                                         
+  -------------------------------------------------------------------------------------------------------------------------------
+  Navn            Struktur                                                                Log    Mwt   \#          \#
+                                                                                          (P)          H-donorer   H-acceptorer
+  --------------- ----------------------------------------------------------------------- ------ ----- ----------- --------------
+  Atorvastatin    ![Atorvastatin -                                                        4.1    558   4           6
+  (4.1)           Wikipedia](exercises/media/image139.png){width="2.159724409448819in"                             
+                  height="1.1145833333333333in"}                                                                   
 
-  Acetaminophen   ![](media/image140.png){width="1.4583333333333333in"          0.5    151   2           2
-  (0.5)           height="0.781667760279965in"}                                                          
+  Acetaminophen   ![](exercises/media/image140.png){width="1.4583333333333333in"          0.5    151   2           2
+  (0.5)           height="0.781667760279965in"}                                                                    
 
-  Ibuprofen (3.5) ![Chemical structure of Ibuprofen \| Download Scientific      3.5    206   1           2
-                  Diagram](media/image141.png){width="2.4270833333333335in"                              
-                  height="1.2886472003499563in"}                                                         
+  Ibuprofen (3.5) ![Chemical structure of Ibuprofen \| Download Scientific                3.5    206   1           2
+                  Diagram](exercises/media/image141.png){width="2.4270833333333335in"                              
+                  height="1.2886472003499563in"}                                                                   
 
-  Sorbitol (-3.1) ![Sorbitol, chemical formula and skeletal structure. Also     -3.1   182   6           6
-                  called glucitol. Sugar alcohol, used as sweetener, sugar                               
-                  substitute and in medicine Stock Photo -                                               
-                  Alamy](media/image142.png){width="2.28125in"                                           
-                  height="0.7569367891513561in"}                                                         
+  Sorbitol (-3.1) ![Sorbitol, chemical formula and skeletal structure. Also called        -3.1   182   6           6
+                  glucitol. Sugar alcohol, used as sweetener, sugar substitute and in                              
+                  medicine Stock Photo -                                                                           
+                  Alamy](exercises/media/image142.png){width="2.28125in"                                           
+                  height="0.7569367891513561in"}                                                                   
 
-  Methotrexate    ![Methotrexate -                                              -1.8   454   5           12
-  (-1.8)          Wikipedia](media/image143.png){width="2.3333333333333335in"                            
-                  height="0.8061843832020997in"}                                                         
-  ---------------------------------------------------------------------------------------------------------------------
+  Methotrexate    ![Methotrexate -                                                        -1.8   454   5           12
+  (-1.8)          Wikipedia](exercises/media/image143.png){width="2.3333333333333335in"                            
+                  height="0.8061843832020997in"}                                                                   
+  -------------------------------------------------------------------------------------------------------------------------------
 
 Svar: Lipinski: log(P) \<5, mwt \< 500 Da, \# H-donors \< 5, \#
 H-acceptors \< 10. Kun acetacetaminophen og ibuprofen overholder dette.
@@ -6948,7 +7412,7 @@ Svar:
     giver K~I~ = 2.5 nM. For bakteriehæmningen, aflæses IC~50~ (værdien
     omkring 190 a.u. kolonier; a.u. = arbitrary units) til omkring 30
     nM, altså 6 gange højere end den rene enzym aktivitet.\
-    ![](media/image144.wmf)![](media/image145.wmf)
+    ![](exercises/media/image144.wmf)![](exercises/media/image145.wmf)
 
 2.  En højere IC~50~ værdi er forventelig i et levende system da XYZ kan
     binde til andre biomolekyler end polymerasen.
@@ -7982,7 +8446,7 @@ hydrophobe aminosyrer og derefter større hydrofile aminosyrer. Tryk done
 når du har ændret alle aminosyrer.*\
 \
 ![A screenshot of a computer AI-generated content may be
-incorrect.](media/image146.png){width="5.936679790026247in"
+incorrect.](exercises/media/image146.png){width="5.936679790026247in"
 height="3.3984962817147855in"}
 
 5.  Kig alle aminosyreresterne igennem og find nogle, der ikke passer så
@@ -8481,7 +8945,7 @@ typen (og dermed udtrykke antigenerne) 0, A, B eller AB.
 2.  Beskriv det genetiske og biokemiske grundlag for at netop disse tre
     varianter dannes i det konkrete tilfælde med blodsystemet?
 
-![To7peer1](media/image147.png){width="5.777777777777778in"
+![To7peer1](exercises/media/image147.png){width="5.777777777777778in"
 height="4.143275371828522in"}
 
 Erythropoeitin (EPO) er et glycoprotein der sitmulerer dannelse af røde
@@ -8665,7 +9129,7 @@ beta-D-mannopyranose og kifunensin.
 5.  Vil du forvente at kifunensin er en kompetitiv, non-kompetitiv eller
     un-kompetitiv inhibitor?
 
-![mannokifu](media/image148.png){width="5.731481846019247in"
+![mannokifu](exercises/media/image148.png){width="5.731481846019247in"
 height="2.233498468941382in"}
 
 I billedet nedenfor er vist kifunensin bundet i en lomme i mannosidase
@@ -8675,7 +9139,7 @@ oxygen atomer.
 
 6.  Forklar hvorfor Mannosidase I er specifik for α-glycosid bindinger.
 
-![kifcomplex](media/image149.png){width="3.2235290901137357in"
+![kifcomplex](exercises/media/image149.png){width="3.2235290901137357in"
 height="2.3786931321084865in"}
 
 **Officielt svar**
@@ -8820,7 +9284,7 @@ da proteinet ikke blot er et membranprotein, men heller ikke tåler lys.
 Derfor skal oprensningen ske i mørke.
 
 ![A diagram of a diagram of a diagram AI-generated content may be
-incorrect.](media/image150.png){width="3.7303958880139985in"
+incorrect.](exercises/media/image150.png){width="3.7303958880139985in"
 height="2.807217847769029in"}
 
 1.  Lav et script, der henter krystalstrukturen af bovine rhodopsin
@@ -8866,13 +9330,13 @@ Beskriv den overordnede foldningsklasse og struktur af rhodopsin.
     (alpha-D-mannopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose):\
     \
     ![A diagram of a diagram Description automatically
-    generated](media/image151.png){width="3.34in"
+    generated](exercises/media/image151.png){width="3.34in"
     height="1.129352580927384in"}\
     Kæde D
     (2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose)\
     ![A blue square with black lines and black text Description
     automatically
-    generated](media/image152.png){width="2.463781714785652in"
+    generated](exercises/media/image152.png){width="2.463781714785652in"
     height="1.06in"}
 
 3.  Palmitat. Binder (og stabiliserer formentlig) det transmembrane,
@@ -8886,7 +9350,7 @@ Beskriv den overordnede foldningsklasse og struktur af rhodopsin.
     \
     ![A diagram of a chemical formula Description automatically
     generated with medium
-    confidence](media/image153.png){width="4.020618985126859in"
+    confidence](exercises/media/image153.png){width="4.020618985126859in"
     height="1.4757709973753281in"}
 
 5.  Se sidste del af script og scene F3.\
@@ -8921,7 +9385,7 @@ fedtsyrer og inkorporerer derfor fedtsyrer fra mediet i deres membraner.
     visse planter. En typisk hopanoidstruktur er vist nedenfor.
     Sammenlign strukturen med kolesterol.\
     \
-    ![bacteriohopanetetrol](media/image154.png){width="3.46875in"
+    ![bacteriohopanetetrol](exercises/media/image154.png){width="3.46875in"
     height="2.2134831583552055in"}
 
 4.  Hvilken effekt vil du forvente at hopanoid har på den bakterielle
@@ -8972,7 +9436,7 @@ der viser positionen af hver aminosyrerest rundt om helicens akse.
 
 **Ser-Val-Tyr-Asp-Ile-Leu-Glu-Arg-Phe-Asn-Glu-Thr-Met-Asn-His-Ala-Val-Ser-Gly**
 
-![1](media/image155.png){width="4.648148512685914in"
+![1](exercises/media/image155.png){width="4.648148512685914in"
 height="4.819119641294838in"}
 
 4.  Lav en scene, kaldet F1, der viser prostaglandin (PDB-ID: 1PTH).
@@ -9000,7 +9464,7 @@ height="4.819119641294838in"}
 3.  De hydrofobe sidekæder vender mod højre i figuren mens de hydrofile
     peger mod venstre. Dvs. at helixen er amfiphatisk.
 
-![](media/image156.png){width="2.4907403762029747in"
+![](exercises/media/image156.png){width="2.4907403762029747in"
 height="2.478500656167979in"}
 
 4.  Ligander:\
@@ -9027,11 +9491,11 @@ height="2.478500656167979in"}
 1.  Analysér nedenstående hydropatiplot for tilstedeværelse af
     transmembrane segmenter:\
     \
-    ![hydropatiplot1](media/image157.png){width="5.1875in"
+    ![hydropatiplot1](exercises/media/image157.png){width="5.1875in"
     height="2.5in"}\
-    ![hydropatiplot2](media/image158.png){width="5.125in"
+    ![hydropatiplot2](exercises/media/image158.png){width="5.125in"
     height="2.4375in"}\
-    ![hydropatiplot3](media/image159.png){width="5.0in"
+    ![hydropatiplot3](exercises/media/image159.png){width="5.0in"
     height="2.3125in"}
 
 2.  Hvilke usikkerheder ligger der i analysen?
@@ -9102,7 +9566,7 @@ NPCNYATCTG EEYLVKQGID LSPWGLWKNH VALACMIVIF LTIAYLKLLF LKKYS
 
 Hydrofobicitetsanalyse af BCRP giver desuden følgende resultat:
 
-![2.1](media/image160.png){width="6.268055555555556in"
+![2.1](exercises/media/image160.png){width="6.268055555555556in"
 height="2.2284722222222224in"}
 
 1.  Hvilke egenskaber af hydropatiplottet understøtter idéen om at BCRP
@@ -9172,7 +9636,7 @@ specifikke asparaginrester. Proteinekstrakter fra celler transfekteret
 med mutant BCRP blev derefter analyseret ved SDS-PAGE før og efter
 behandling med PNGase F. Resultatet af analysen vises nedenfor.
 
-![2.2](media/image161.png){width="4.969231189851269in"
+![2.2](exercises/media/image161.png){width="4.969231189851269in"
 height="2.5925929571303588in"}
 
 6.  Hvad fortæller analysen om glycosyleringerne i BCRP? Begrund dit
@@ -9192,7 +9656,7 @@ height="2.5925929571303588in"}
 4.  Peptidet reagerer ikke med antistof hverken i N- eller C-terminalen,
     der må altså være et helt antal helicer. Position 420, 500 og 575 må
     desuden være udenfor membranen, idet de opmærkes.\
-    ![](media/image162.png){width="2.6902777777777778in"
+    ![](exercises/media/image162.png){width="2.6902777777777778in"
     height="3.1574070428696412in"}
 
 5.  N338 (NAS) er et site, men formentlig ikke modificeret, da
@@ -9216,7 +9680,7 @@ under tilstedeværelse af 0.1% Triton X-100 (detergent), eluerer enzymet
 svarende til et 150 kDa protein. Uden detergent eluerer enzymet i
 void-volumen som vist nedenfor.
 
-![3.1](media/image163.png){width="6.268055555555556in"
+![3.1](exercises/media/image163.png){width="6.268055555555556in"
 height="3.86875in"}
 
 *Gelfiltrering af 5'-nucleotidase med (fyldte cirkler) eller uden (hule
@@ -9287,11 +9751,11 @@ dipeptid fra interfasen.
     hexanfasen og den vandige fase?\
     \
     ![Table Description automatically
-    generated](media/image164.png){width="5.2647058180227475in"
+    generated](exercises/media/image164.png){width="5.2647058180227475in"
     height="4.072103018372704in"}
 
 > ![Table Description automatically
-> generated](media/image165.png){width="5.617646544181977in"
+> generated](exercises/media/image165.png){width="5.617646544181977in"
 > height="4.956792432195975in"}
 
 Aminosyresekvensen af CNBr-fragmentet og dipeptidet kan ses i Tabel 1
@@ -9393,7 +9857,7 @@ mængder af den sarco(endo)plasmatiske reticulum calcium ATPase (SERCA).
 
 Nedenfor vises et hydropatiplot for SERCA.
 
-![3.1](media/image166.png){width="6.268055555555556in"
+![3.1](exercises/media/image166.png){width="6.268055555555556in"
 height="2.247916666666667in"}
 
 2.  Estimér antallet af transmembrane helicer i SERCA og deres
@@ -9546,7 +10010,7 @@ identifikation af enkelte proteinspots ved trypsinering og
 massespektrometrisk analyse. En del af den todimensionelle gel er vist
 nedenfor.
 
-![5.1](media/image167.png){width="6.35294072615923in"
+![5.1](exercises/media/image167.png){width="6.35294072615923in"
 height="2.7865387139107614in"}
 
 Både spots A og B matchede aminosyresekvensen for Na+-K+-ATPasen, men en
@@ -9594,7 +10058,7 @@ ATP Binding Cassette (ABC)-transportere bruges til næringsimport i
 bakterier og generelt til eksport i eukaryoter og forbrænder ét
 ATP-molekyle hver gang der transporteres et substratmolekyle:
 
-![nrm2646-f1](media/image168.jpeg){width="6.263888888888889in"
+![nrm2646-f1](exercises/media/image168.jpeg){width="6.263888888888889in"
 height="2.7291666666666665in"}
 
 For at vise konformationerne af ABC-transporteren kan man bruge
@@ -9713,7 +10177,7 @@ ionkanaler. Binding af melatonin til den G-koblede receptor leder til
 inhibering af adenylyl cyclase via Gαs og dermed formindsket
 cAMP-syntese.
 
-![5.1](media/image169.png){width="5.84799978127734in"
+![5.1](exercises/media/image169.png){width="5.84799978127734in"
 height="4.3131102362204725in"}
 
 1.  cAMP påvirker Protein Kinase A (PKA). Hvilken effekt har cAMP på PKA
@@ -9792,7 +10256,7 @@ kommandoen: symexp sym, 2A79, (2A79), 50
 
 3.  KV1.2 har 4 identiske kæder (tetramer).
 
-![page6image27938048](media/image170.jpeg){width="2.4074070428696412in"
+![page6image27938048](exercises/media/image170.jpeg){width="2.4074070428696412in"
 height="2.4211646981627295in"}
 
 4.  Disse aminosyere udgør selektivitetsfilter (TVGYG) som gør kanalen
@@ -9809,7 +10273,7 @@ og krystalliseret proteinet, derefter indsamlet røntgendiffraktionsdata
 og beregnet et elektrontæthedskort, hvoraf et udsnit vises nedenfor.
 
 ![A picture containing art, screenshot Description automatically
-generated](media/image171.jpeg){width="2.8102187226596675in"
+generated](exercises/media/image171.jpeg){width="2.8102187226596675in"
 height="2.6142672790901136in"}
 
 2.  Beskriv foldningen af peptidkæden, der observeres, herunder om der
@@ -9856,12 +10320,12 @@ K^+^-kanal.
     positionen af carbonylgrupper:
 
 ![A close-up of a blue object AI-generated content may be
-incorrect.](media/image172.png){width="3.8659109798775155in"
+incorrect.](exercises/media/image172.png){width="3.8659109798775155in"
 height="3.512430008748906in"}
 
 3.  ![A picture containing darkness, art, light Description
     automatically
-    generated](media/image173.png){width="1.5798611111111112in"
+    generated](exercises/media/image173.png){width="1.5798611111111112in"
     height="2.627083333333333in"}Svar: Et Fab-fragment er den
     epitopbindende del af et antistof, der binder med meget høj
     affinitet til target og dermed stabiliserer dette. I figuren ses
@@ -9933,9 +10397,9 @@ overflade, hvilket muliggør optagelsen af bakterierne.
     receptor til disse to signaler og hvorfor?
 
 ![Diagram Description automatically
-generated](media/image174.png){width="1.6720133420822396in"
+generated](exercises/media/image174.png){width="1.6720133420822396in"
 height="1.1130544619422573in"} ![Penta-N-acetylchitopentaose ≥95% \|
-36467-68-2](media/image175.png){width="2.4786329833770777in"
+36467-68-2](exercises/media/image175.png){width="2.4786329833770777in"
 height="1.8716699475065617in"}\
 **Figur 1**
 
@@ -9971,7 +10435,7 @@ Der laves to mutanter i CERK6 for at undersøge ligand-bindingsdomænerne.
 I LysM1 muteres I79W og i LysM2 muteres I141W og det observeres at kun
 mutationen I79W ødelægger signalering i planter.
 
-![](media/image176.emf){width="4.333421916010499in"
+![](exercises/media/image176.emf){width="4.333421916010499in"
 height="1.0028794838145232in"}\
 **Figur 2:** Aminosyrene der definerer grænserne mellem domænerne er
 vist. TJ=transmembrane og juxa-membrane domæner. KD = kinase domæne.
@@ -10019,13 +10483,13 @@ del af molekylet der skal overlejret mest eksakt.*
 > på position 1052 og 1072.
 >
 > ![A structure of a molecule AI-generated content may be
-> incorrect.](media/image177.png){width="2.686363735783027in"
+> incorrect.](exercises/media/image177.png){width="2.686363735783027in"
 > height="2.561062992125984in"}.
 
 4.  Der er plads til chitin liganden (sukkermolekylet) i CERK6 LysM2 dog
     er der et par sidekæder (Asp143) som sterisk clasher med liganden.
     ![A structure of a molecule AI-generated content may be
-    incorrect.](media/image178.png){width="2.3592683727034123in"
+    incorrect.](exercises/media/image178.png){width="2.3592683727034123in"
     height="2.4706900699912513in"}
 
 5.  Introduktion af en stor aminosyre som tryptophan vil blokere for
@@ -10046,7 +10510,7 @@ del af molekylet der skal overlejret mest eksakt.*
     Hvilken effekt vil man forvente stoffet har på muskelcellers respons
     på adrenalin?
 
-![4](media/image179.png){width="4.625in" height="2.15625in"}
+![4](exercises/media/image179.png){width="4.625in" height="2.15625in"}
 
 3.  Lægemidlet Propranolon binder beta-adrenergicreceptoren. Hvorfor
     kaldes denne klasse af lægemidler populært for "beta-blokkere"?
@@ -10057,9 +10521,9 @@ del af molekylet der skal overlejret mest eksakt.*
 
 Propranolon Adrenalin
 
-![5](media/image180.png){width="2.703999343832021in"
+![5](exercises/media/image180.png){width="2.703999343832021in"
 height="1.2268143044619422in"}
-![6](media/image181.png){width="2.584000437445319in"
+![6](exercises/media/image181.png){width="2.584000437445319in"
 height="1.429446631671041in"}
 
 **Officielt svar**
@@ -10110,7 +10574,7 @@ height="1.429446631671041in"}
     være en fosforylerings-efterligning (mimic) som holder kinasen
     konstitutiv aktiv.
 
-![7](media/image182.png){width="3.875in" height="2.25in"}
+![7](exercises/media/image182.png){width="3.875in" height="2.25in"}
 
 3.  Mutationen i Q61 som stabiliserer transition state gør Ras
     GTP-hydrolyse langsom. Mutationen holder derved Ras på aktiveret
@@ -10135,7 +10599,7 @@ aktiverer et hetero-trimeriske G-protein.
     Forklar hvorfor stoffet stimulerer fosforylerings-aktiviteten af
     Protein kinase A.
 
-![Picture1](media/image183.png){width="4.8157895888014in"
+![Picture1](exercises/media/image183.png){width="4.8157895888014in"
 height="2.2304713473315836in"}
 
 4.  Ved mutation af konserverede serine- og theronine-rester i den
@@ -10225,7 +10689,7 @@ indeholde script og strukturfigur på hvid baggrund og propionat skal
 kunne ses. Forklar kort hvilke proteiner kæderne A, X, Y og Z
 repræsenterer.
 
-![](media/image1380.png)Svar:
+![](exercises/media/image1380.png)Svar:
 
 reinitialize
 
@@ -10275,7 +10739,7 @@ Figuren nedenfor viser et såkaldt \"heat map\" over hvilke
 aminosyrerester i receptoren, der interagerer med hvilke atomer i
 odoranten (propionate) i et simuleringsforsøg.
 
-![](media/image187.png)
+![](exercises/media/image187.png)
 
 **Spørgsmål 4.** Brug strukturen til at forklare observationerne for
 R262 og H180 med speciel fokus på O^α^-, O^β^- og C^α^-atomernes
@@ -10289,7 +10753,7 @@ en direkte binding med denne. Sammen med bindingslommens størrelse er
 disse interaktioner med til at gøre receptoren specifik for propionate.
 
 ![A green and blue molecule Description automatically
-generated](media/image189.png){width="3.038461286089239in"
+generated](exercises/media/image189.png){width="3.038461286089239in"
 height="2.147726377952756in"}
 
 ------------------------------------------------------------------------
@@ -10373,7 +10837,7 @@ mutationer R107G (bane 3), R104A (bane 4) samt aktiv site-mutanten D153N
 (bane 5). På SDS-PAGE gelen vises resultaterne af disse forsøg samt
 trunkeret furin alene (bane 1).
 
-![](media/image192.png)
+![](exercises/media/image192.png)
 
 **Spørgsmål 4.** Fastslå først om furin er i stand til at kløve sin egen
 pro-form og forklar hvordan du ser det. Foregår kløvningen som en
@@ -10452,7 +10916,7 @@ med et andet protein, 9-*cis* retinsyrereceptor (RXR), og sammen binder
 de to proteiner sig til DNA, som vist på figuren nedenfor.
 
 ![A diagram of a dna molecule Description automatically
-generated](media/image193.png){width="6.268055555555556in"
+generated](exercises/media/image193.png){width="6.268055555555556in"
 height="2.454861111111111in"}
 
 **Spørgsmål 1.** Find de to ens bindingsområder i DNA-sekvensen, hvortil
@@ -10502,7 +10966,7 @@ Esterase (AXE) fraspalter acetylgruppen bundet i 2-positionen, så der
 frigives en acetation. Nedenfor ses reaktionen katalyseret af AXE.
 
 ![A diagram of a chemical formula Description automatically
-generated](media/image194.png){width="6.263888888888889in"
+generated](exercises/media/image194.png){width="6.263888888888889in"
 height="1.2763888888888888in"}
 
 **Spørgsmål 1.** Angiv konformation og kobling for glycosidbindingen
@@ -10510,8 +10974,9 @@ mellem de to xylose-enheder i xylan som vist ovenfor.
 
 Svar: Det er en β-1-4 glycosidbinding.
 
-![](media/image197.png)Strukturen af det aktive AXE er vist nedenfor i
-to orienteringer med de enkelte protomerer i forskellige farver.
+![](exercises/media/image197.png)Strukturen af det aktive AXE er vist
+nedenfor i to orienteringer med de enkelte protomerer i forskellige
+farver.
 
 **Spørgsmål 2.** Beskriv den kvaternære struktur af AXE, herunder de
 symmetrielementer, enzymet indeholder.
@@ -10522,7 +10987,8 @@ siden (højre) observeres en 2-talssymmetri.
 Monomerstrukturen af AXE er vist nedenfor:
 
 ![A structure of a protein Description automatically generated with
-medium confidence](media/image199.png){width="4.068975284339458in"
+medium
+confidence](exercises/media/image199.png){width="4.068975284339458in"
 height="3.054054024496938in"}
 
 **Spørgsmål 3.** Beskriv β-pladens opbygning og angiv foldningsklassen
@@ -10538,7 +11004,7 @@ Paraoxon-[ethyl]{.underline} en K~i~ værdi på 5,1 mM mens K~i~ for
 paraoxon-[methyl]{.underline} er 13,4 𝜇M. DIPF-inhibering er ikke
 målbar.
 
-![](media/image201.png)
+![](exercises/media/image201.png)
 
 Ved binding af paraoxon-ethyl fraspaltes en del af inhibitoren og
 nedenfor ses et udsnit af strukturen af det inhiberede enzym. Til
@@ -10550,8 +11016,9 @@ binding mellem Ser Cβ, Oγ og P er vist.
 
 ![A colorful structure with red blue and yellow lines Description
 automatically generated with medium
-confidence](media/image202.png){width="2.9320253718285216in"
-height="2.15625in"} ![](media/image203.emf){width="2.847014435695538in"
+confidence](exercises/media/image202.png){width="2.9320253718285216in"
+height="2.15625in"}
+![](exercises/media/image203.emf){width="2.847014435695538in"
 height="2.160117016622922in"}
 
 **Spørgsmål 4.** Angiv først en liste med de tre inhibitorer (DIPF,
@@ -10592,7 +11059,7 @@ receptor i plasmamembranen og aktiverer signaltransduktion via G
 proteiner, som det ses på figuren herunder.
 
 ![A close-up of several protein structures AI-generated content may be
-incorrect.](media/image204.tiff){width="3.141155949256343in"
+incorrect.](exercises/media/image204.tiff){width="3.141155949256343in"
 height="2.8717946194225723in"}
 
 **Spørgsmål 1.** Lav et PyMOL script der sammenligner inaktiv receptor
@@ -10602,7 +11069,7 @@ strukturel alignment. Vis kun selve receptor proteinet og ligand
 skal indeholde script og resulterende billede.
 
 ![A close-up of a dna model AI-generated content may be
-incorrect.](media/image205.png){width="1.1729166666666666in"
+incorrect.](exercises/media/image205.png){width="1.1729166666666666in"
 height="2.2868055555555555in"}
 
 Svar:
@@ -10657,7 +11124,8 @@ Gliaøglen, der udskiller Extendin-4, der er en GLP-1 receptor agonist.
 Herunder vises en Clustal Omega alignment mellem de to peptider, hvor
 trekant viser hvor dipeptidyl peptidase-4 (DPP-4) kløver GLP-1.
 
-![](media/image206.png){width="6.268055555555556in" height="0.75in"}
+![](exercises/media/image206.png){width="6.268055555555556in"
+height="0.75in"}
 
 **Spørgsmål 3.** Beregn identitetsscore for hele peptidet og
 similaritetsscore for de første 10 positioner i alignment og diskutér
@@ -10682,7 +11150,7 @@ substitutioner og modifikationer (se figur herunder), der gør det mere
 resistent mod proteolytisk kløvning og forsinker udskillelse fra
 kroppen, hvilket gør at man kun skal tage en dosis en gang om ugen.
 
-![](media/image208.svg){width="6.268055555555556in"
+![](exercises/media/image208.svg){width="6.268055555555556in"
 height="1.6354166666666667in"}
 
 **Semaglutid**
@@ -10706,7 +11174,7 @@ bakterier, der består af et RNA (rød) og et protein (blå), der binder
 til tRNA (gul). Figur 1B viser den sekundære struktur af RNase P RNA.
 
 ![A diagram of a structure AI-generated content may be
-incorrect.](media/image209.tif){width="6.268055555555556in"
+incorrect.](exercises/media/image209.tif){width="6.268055555555556in"
 height="2.817361111111111in"}
 
 **Figur 1.** (A) Kvarternær struktur af RNase P med bundet tRNA. (B)
@@ -10817,7 +11285,7 @@ Active site indeholder Mg ion (MG903). Som i andre ribozymer må man
 antage at en OH gruppe har lavet en S~N~2-type nukleofilt angreb på
 fosfat-rygrad katalyseret af Mg ioner.
 
-## ![The reaction catalyzed by triose-phosphate isomerase, and the covalent\... \| Download Scientific Diagram](media/image210.png){width="2.5625in" height="1.8583333333333334in"}Opgave 3
+## ![The reaction catalyzed by triose-phosphate isomerase, and the covalent\... \| Download Scientific Diagram](exercises/media/image210.png){width="2.5625in" height="1.8583333333333334in"}Opgave 3
 
 Enzymet triose fosfat isomerase (TPI) katalyserer omdannelse af
 glyceraldehyde 3-fosfat (GAP) til di-hydroxyacetone fosfat (DHAP)
@@ -10831,7 +11299,7 @@ Absorptionsspektrene for 10 mM GAP, DHAP, NADH og NAD^+^ er vist
 nedenunder.
 
 ![A graph of a normal distribution AI-generated content may be
-incorrect.](media/image211.png){width="6.268055555555556in"
+incorrect.](exercises/media/image211.png){width="6.268055555555556in"
 height="3.917361111111111in"}
 
 **Spørgsmål 1.** Hvorfor er det nødvendigt at bruge G3PDH for at måle
@@ -10865,7 +11333,7 @@ forskellige stoffer for deres evne til at inhibere TPI. Vi identificerer
 bl.a. to hits:
 
 ![A chemical formula of a molecule AI-generated content may be
-incorrect.](media/image212.jpeg){width="3.59375in"
+incorrect.](exercises/media/image212.jpeg){width="3.59375in"
 height="2.1872069116360455in"}
 
 **Spørgsmål 3.** Diskuter hvilken ADME profil disse to stoffer har,
@@ -11020,7 +11488,7 @@ Efter 3D-rekonstruktion blev følgende Fourier Shell Correlation
 (FSC)-kurver beregnet fra to uafhængige half-maps for hver konformation:
 
 ![A graph of a number of objects AI-generated content may be
-incorrect.](media/image213.png){width="6.268055555555556in"
+incorrect.](exercises/media/image213.png){width="6.268055555555556in"
 height="3.736111111111111in"}
 
 **Figur 1.** FSC-kurver for de tre konformationsklasser.
@@ -11088,7 +11556,7 @@ b\) Kort B matcher Class 1, kort C matcher Class 2, og kort A matcher
 Class 3.
 
 ![A close-up of a map AI-generated content may be
-incorrect.](media/image214.png){width="6.268055555555556in"
+incorrect.](exercises/media/image214.png){width="6.268055555555556in"
 height="1.788888888888889in"}
 
 **Figur 2.** 3D density maps (vist i gul) fra de tre cryo-EM
@@ -11142,7 +11610,7 @@ ikke tilberedes korrekt. Dette skyldes tilstedeværelsen af tetrodotoksin
 natriumkanal (Na~V~1.4). Strukturen af TTX er vist nedenfor.
 
 ![Tetrodotoxin -
-Wikipedia](media/image215.png){width="2.5742574365704285in"
+Wikipedia](exercises/media/image215.png){width="2.5742574365704285in"
 height="1.4272430008748906in"}
 
 **Tetrodotoksin (TTX)**
@@ -11161,10 +11629,10 @@ mM og udenfor cellen på 145 mM.
 
 Svar:
 
-![](media/image216.png){width="3.543732502187227in"
+![](exercises/media/image216.png){width="3.543732502187227in"
 height="0.43226706036745405in"}
 
-![](media/image217.emf){width="2.9829593175853018in"
+![](exercises/media/image217.emf){width="2.9829593175853018in"
 height="0.5350557742782153in"}
 
 Eₙₐ = 60.6 mV, (ved 37 °C = 310 K, z = +1)
