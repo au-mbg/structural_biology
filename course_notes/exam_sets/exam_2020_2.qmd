@@ -272,7 +272,7 @@ bindingslommen på proteinet med sphingosine-delen i blå-grøn og
 fedtsyredelen i gul-rød. Søjlediagrammet viser binding af ceramider med
 forskellig fedtsyrelængde til CERT.
 
-![](media/image88.tiff){.lightbox width="90%" fig-align="center"}
+![](media/image88_tiff.png){.lightbox width="90%" fig-align="center"}
 
 ![](media/image89.jpeg){.lightbox width="90%" fig-align="center"}
 
@@ -293,7 +293,7 @@ I et andet forsøg målte man binding af N-stearyl ceramide til CERT under
 tilstedeværelse af fire punktmutationer i CERT (E446A, Q467A, N504A,
 Y553F).
 
-![](media/image90.tiff){.lightbox width="90%" fig-align="center"}
+![](media/image90_tiff.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hvorfor bindingen er reduceret for de fire
 mutationer og foreslå hvorfor binding til N504A og Y553F er væsentligt

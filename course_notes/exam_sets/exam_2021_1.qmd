@@ -384,7 +384,7 @@ Besvarelsen skal indeholde både script og tilhørende billede.
 
 Svar:
 
-![](media/image103.tiff){.lightbox width="90%" fig-align="center"}reinitialize
+![](media/image103_tiff.png){.lightbox width="90%" fig-align="center"}reinitialize
 
 fetch 5nzn
 
@@ -435,7 +435,7 @@ create 5nznA, /5nzn/A/A
 
 enable 5nznA
 
-![](media/image104.tiff){.lightbox width="90%" fig-align="center"}show cartoon, 5nznA
+![](media/image104_tiff.png){.lightbox width="90%" fig-align="center"}show cartoon, 5nznA
 
 color magenta, 5nznA
 

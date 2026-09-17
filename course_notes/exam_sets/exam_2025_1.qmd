@@ -11,7 +11,7 @@ central rolle i at regulere appetit og metabolisme. Det binder til GLP-1
 receptor i plasmamembranen og aktiverer signaltransduktion via G
 proteiner, som det ses på figuren herunder.
 
-![](media/image195.tiff){.lightbox width="90%" fig-align="center"}
+![](media/image195_tiff.png){.lightbox width="90%" fig-align="center"}
 
 **Spørgsmål 1.** Lav et PyMOL script der sammenligner inaktiv receptor
 (PDB 6LN2) med GLP-1 bundet receptor (PDB 6X18) ved at lave en
@@ -120,7 +120,7 @@ korrekt 5' ende på tRNAet. I figur 1A herunder vises RNase P fra
 bakterier, der består af et RNA (rød) og et protein (blå), der binder
 til tRNA (gul). Figur 1B viser den sekundære struktur af RNase P RNA.
 
-![](media/image201.tif){.lightbox width="90%" fig-align="center"}
+![](media/image201_tif.png){.lightbox width="90%" fig-align="center"}
 
 **Figur 1.** (A) Kvarternær struktur af RNase P med bundet tRNA. (B)
 Sekundær struktur af RNase P RNA.
