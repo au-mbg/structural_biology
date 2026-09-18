@@ -1,0 +1,9 @@
+---
+title: "Videor"
+sidebar: videor-sidebar
+listing:
+    contents: video*.qmd
+    type: table
+    fields: [title, description]
+---
+

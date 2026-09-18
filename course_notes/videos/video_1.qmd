@@ -1,0 +1,7 @@
+---
+title: "Introduction to PyMOL"
+sidebar: videor-sidebar
+description: Denne videor giver en introduktion til brugen af PyMOL
+---
+
+{{< video https://youtu.be/4YoLTP5TZGE?si=h7PXy-khvXbhJHjG >}}

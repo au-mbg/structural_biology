@@ -1,0 +1,7 @@
+---
+title: "PyMOL Wiki"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/AkaXqfDXyOQ >}}

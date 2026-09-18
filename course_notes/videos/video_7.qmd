@@ -1,0 +1,9 @@
+---
+title: "Python scripts in PyMOL"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/zwNvj0VhjIU >}}
+
+
