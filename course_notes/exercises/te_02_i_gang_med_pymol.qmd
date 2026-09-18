@@ -1,5 +1,5 @@
 ---
-title: "TØ 2 - I gang med PyMOL"
+title: "TØ 2 -- I gang med PyMOL"
 ---
 
 I dette TØ sæt skal I arbejde med PyMOL. Det forudsættes at PyMOL er
