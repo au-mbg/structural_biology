@@ -3,19 +3,61 @@ title: "Strukturbiologi TØ"
 format-links: false
 ---
 
-Velkomst til øvelsessiderne for strukturbiologi. 
+*Velkommen til øvelsessiderne for Strukturbiologi 2026!*
 
-## Øvelser
+På dette site kan du finde teoretiske øvelser (TØ), guides og eksamenssæt for kurset, der kan findes i menuen i toppen af siden.
+TØ sæt bliver frigivet sammen med ugesedlen om mandagen en uge før den uge hvor de bruges til TØ.
+Svarene bliver frigivet fredag i den uge hvor TØ undervisningen foregår.
+Skemaet her under viser datoer for hvornår de enkelte opgavesæt og de tilhørende svar bliver frigivet.
 
-Øvelserne til TØ kan findes [her](exercises/index.qmd) eller ved at klikke på banneret i toppen af siden. 
-
-## Guides
-
-Guides til opsætning og brug af PyMOL kan findes [her](other_notes/guides.qmd).
-
-## Eksamenssæt 
-
-Gamle eksamenssæt kan findes [her](exam_sets/index.qmd).
-
-
-
++---------+-------------------------+----------+---------------+
+| TØ sæt  | Emne                    | Frigives | Svar frigives | 
++:=======:+:=======================:+:========:+:=============:+
+| TØ1     | Introduktion til kurset | 17/8     | 28/8          | 
++---------+-------------------------+----------+---------------+
+| TØ2     | Igang med PyMOL         | 17/8     | 28/8          | 
++---------+-------------------------+----------+---------------+
+| TØ3     | PyMOL scripting         | 24/8     | 4/9           | 
++---------+-------------------------+----------+---------------+
+| TØ4     | Proteinstruktur 1       | 24/8     | 4/9           | 
++---------+-------------------------+----------+---------------+
+| TØ5     | Proteinstruktur 2       | 31/8     | 11/9          | 
++---------+-------------------------+----------+---------------+
+| TØ6     | Nukleinsyrestruktur 1   | 31/8     | 11/9          | 
++---------+-------------------------+----------+---------------+
+| TØ7     | Nukleinsyrestruktur 2   | 7/9      | 25/9          | 
++---------+-------------------------+----------+---------------+
+| TØ8     | Evolution               | 7/9      | 25/9          | 
++---------+-------------------------+----------+---------------+
+| TØ9     | Protein oprensning      | 21/9     | 2/10          | 
++---------+-------------------------+----------+---------------+
+| TØ10    | Binding                 | 21/9     | 2/10          | 
++---------+-------------------------+----------+---------------+
+| TØ11    | Enzymmekanismer         | 28/9     | 9/10          | 
++---------+-------------------------+----------+---------------+
+| TØ12    | Enzymregulering         | 28/9     | 9/10          | 
++---------+-------------------------+----------+---------------+
+| TØ13    | Drug design.            | 5/10     | 23/10         | 
++---------+-------------------------+----------+---------------+
+| TØ14    | LØ forberedelse         | 5/10     | 23/10         | 
++---------+-------------------------+----------+---------------+
+| TØ15    | MS                      | 19/10    | 6/11          | 
++---------+-------------------------+----------+---------------+
+| TØ16    | Strukturmetoder         | 19/10    | 6/11          | 
++---------+-------------------------+----------+---------------+
+| TØ17    | AI og modellering       | 2/11     | 13/11         | 
++---------+-------------------------+----------+---------------+
+| TØ18    | Kulhydrater             | 2/11     | 13/11         | 
++---------+-------------------------+----------+---------------+
+| TØ19    | Lipider                 | 9/11     | 20/11         | 
++---------+-------------------------+----------+---------------+
+| TØ20    | Pumper                  | 9/11     | 20/11         | 
++---------+-------------------------+----------+---------------+
+| TØ21    | Kanaler og porer        | 16/11    | 27/11         | 
++---------+-------------------------+----------+---------------+
+| TØ22    | Signal transduktion     | 16/11    | 27/11         | 
++---------+-------------------------+----------+---------------+
+| TØ23    | Eksamensopgaver 2024    | 23/11    | 4/12          | 
++---------+-------------------------+----------+---------------+
+| TØ24    | Eksamensopgaver 2025    | 23/11    | 4/12          | 
++---------+-------------------------+----------+---------------+
