@@ -11,43 +11,37 @@ website:
       - href: other_notes/guides.qmd
         text: Guides
         icon: book
-      - href: videos/videor.qmd
+      - href: videos/index.qmd
         text: Videoer
         icon: youtube
       - href: exam_sets/index.qmd
         text: Eksamenssæt
         icon: file-earmark-text
+
   sidebar:
     - id: exercises-sidebar
       style: "docked"
-      collapse-level: 3
-      contents:
-        - section: "Øvelser"
-          contents:
-            - auto: "exercises/te_*.qmd"
+      contents: exercises
+
     - id: pymol-sidebar
       style: "docked"
+      title: "Guides"
       contents:
-        - section: "Guides"
-          contents:
-            - other_notes/installation_pixi.qmd
-            - other_notes/installation_pymol.qmd
-            - other_notes/installation_vscode.qmd
-            - other_notes/pymol_guide_1.qmd
-            - other_notes/pymol_guide_2.qmd
+          - other_notes/installation_pixi.qmd
+          - other_notes/installation_pymol.qmd
+          - other_notes/installation_vscode.qmd
+          - other_notes/pymol_guide_1.qmd
+          - other_notes/pymol_guide_2.qmd
+          - other_notes/pymol_learning_path.qmd
+
     - id: videor-sidebar
       style: "docked"
-      contents:
-        - section: "Videor"
-          contents:
-            - auto: videos/video_*.qmd
+      contents: videos
+
     - id: exam_sets-sidebar
       style: "docked"
-      collapse-level: 3
-      contents:
-        - section: "Eksamenssæt"
-          contents:
-            - auto: "exam_sets/exam_*.qmd"
+      contents: exam_sets
+
 
 filters:
   - callout-solution
