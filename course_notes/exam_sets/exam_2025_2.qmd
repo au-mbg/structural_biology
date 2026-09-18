@@ -20,6 +20,7 @@ og viste sig at danne hhv. dimer, 8-mer og 14-mer (med PDB-ID 9LCR,
 monomerer i forskellige farver. Farvelæg desuden strukturen med B-faktor
 og svar på hvilke helicer, der har høj B-faktor, og hvad det betyder.
 
+::: {.callout-solution}
 Svar:
 
 reinit
@@ -41,12 +42,15 @@ scene F2, store
 ![](figures/exam_2025_2/opgave-1-figur-3.png){.lightbox width="90%" fig-align="center"}
 
 De nederste helicer har høj B-faktor, hvilket betyder at de er flexible.
+:::
 
 **Spørgsmål 2:** Bestem non-Watson-Crick basepar interaktionen (ifgl.
 Leontis-Westhof annotation) for det intramolekylære basepar G71-A176 og
 det intermolekylære basepar C99-G146.
 
+::: {.callout-solution}
 Svar: G71-A176 er trans-HS. C99-G146 er cis-WW
+:::
 
 Følgende viser sekvens-alignment af hairpin 5 og hairpin 6 i OLE RNA
 strukturen med basepar vist som dot-bracket annotation og annoteret med
@@ -58,6 +62,7 @@ basepar.
 **Spørgsmål 3:** Beskriv strukturbevarelse i de intra- og
 intermolekylære basepar interaktioner?
 
+::: {.callout-solution}
 Svar:\
 Der er strukturbevarelse af intramolekylære basepar interaktioner på
 position:
@@ -73,6 +78,7 @@ position:
 - 158-173 (UA-CG) kompenserende base ændring bevarer basepar.
 
 Der er ikke ændringer af intermolekylære basepar interaktioner.
+:::
 
 Funktionerne af OLE, ROOL og GOLLD er stadig ukendte. OLE binder et
 membran protein, hvilket medfører at OLE RNA går igennem cellemembranen,
@@ -84,16 +90,15 @@ herunder.
 **Spørgsmål 4:** Foreslå mulige funktioner af OLE, ROOL og GOLLD ud fra
 din viden om transmembrane proteiner og protein kapsler.
 
+::: {.callout-solution}
 Svar:
-
 OLE er formodentlig en form for kanal til transport. Eller en receptor,
 der binder noget på ydersiden og transducerer signal til indersiden.
 
 ROOL og GOLLD har store interne volumener, der må antages at indkapsle
 andre komponenter. Protein kapsler bruges ofte til at indkapsle virus
 DNA/RNA eller som jern storage ved Ferritin eller som enzymer.
-
-**\**
+:::
 
 ## Opgave 2
 
@@ -112,6 +117,7 @@ DNA streng (rød), og DNA-sekvensen der bindes.
 Lac-repressor binder til og forklar hvorfor man mener at DNAet danner et
 loop.
 
+::: {.callout-solution}
 Svar: Sekvens-motivet er et afbrudt palindrom (eller inverted repeat)
 med 9 bp imellem, 13 imellem lignende positioner i palindromerne.
 
@@ -124,6 +130,7 @@ med et fuldt turn af en DNA helix, så homodimer binder i major groove på
 samme side. Det vil derfor føre til en bøjning af helicen. Som det ses
 på billedet binder tetramer til to afbrudte palindromer, der ligger
 langt fra hinanden og derved dannes loopet.
+:::
 
 Åben strukturen for homodimer af Lac-repressor med PDB-ID = 1EFA i
 PyMOL. Strukturen indeholder to 2-nitrophenyl beta-D-fucopyranoside
@@ -132,6 +139,8 @@ PyMOL. Strukturen indeholder to 2-nitrophenyl beta-D-fucopyranoside
 **Spørgsmål 2:** Skriv et PyMOL script, der fjerner chain C, farvelægger
 chain A,B,D,E i forskellige farver, og viser liganderne som spheres.
 Svar skal indeholde script og billede fra PyMOL.
+
+::: {.callout-solution}
 
 Svar:\
 reinit\
@@ -145,17 +154,21 @@ show spheres, resn NPF
 
 ![](figures/exam_2025_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
 ![](figures/exam_2025_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
+:::
 
 **Spørgsmål 3:** Hvilken type protein-bindings-motiv er der tale om,
 hvilken groove af DNA\'et bindes, og hvordan påvirkes DNA helixen?
 
+::: {.callout-solution}
 Svar: Helix-turn-helix. Binder i major groove. DNA helix bøjer.\
 Der er også to helixer, der binder i minor groove, men dette er ikke
 kendt motiv.
+:::
 
 **Spørgsmål 4:** Find specifikke interaktioner mellem liganden og
 Lac-repressor. Hvilke aminosyrer interagerer med liganden?
 
+::: {.callout-solution}
 Svar:\
 Tryk på ligand og brug \"Find polar contacts to other atoms in
 object\".\
@@ -170,7 +183,8 @@ Asn246\
 Asp274
 
 Forskel på om man kigger på den ene eller anden ligand. Leu149 mangler i
-den ene.**\**
+den ene.
+:::
 
 ## Opgave 3
 
@@ -205,11 +219,13 @@ tilsætter et ligand L og får følgende resultat:
 
 **Spørgsmål 1:** Bestem den (omtrentlige) K~D~.
 
+::: {.callout-solution}
 Svar:
 
 Tallene er beregnet ud fra en K~D~ på 7,9 µM og det ses at ved 7,9 µM er
 vi omtrent halvvejs mellem start (7,5) og slut (3,3). Der er det lille
 benspænd at signalet falder ved ligand binding.
+:::
 
 **Spørgsmål 2:** Nu tilfører vi en konkurrerende ligand M, som når den
 er bundet til receptoren, giver et signal på 12. Det viser sig at M har
@@ -218,6 +234,7 @@ sig, hvis man først tilfører 10 µM L (i trin af 2 µM, dvs. 0-2-4-6-8-10
 µM) og derefter tilfører M til 100 µM i trin af 10 µM. Kom med en
 omtrentlig vurdering af slutniveauet af signalet ved 100 µM M.
 
+::: {.callout-solution}
 Svar:
 
 Signalet falder som i tabellen til 5,16 og vil så langsomt stige mod 12
@@ -225,6 +242,7 @@ men vil ikke nå i mål. Ved 100 µM M er der 10 gange så meget M som L men
 L er 10 gange så stærk til at binde så receptoren vil være bundet lige
 meget til hver, dvs. signalet vil være gennemsnittet af 3,3 og 12, altså
 ca. 7,6 (som det startede med!).
+:::
 
 **Spørgsmål 3:** Et protein har følgende sekvens:
 
@@ -232,15 +250,18 @@ MQLSAKTVREWNYGAPHDLCRSVQETKAMGIPRLDFGHTQWVFSNARLDYQKPTMSTWGHQLTAREGNASPYLCQAHRD
 
 Hvilket peptid herfra vil blive fremvist af MHC proteinet HLA-A2?
 
+::: {.callout-solution}
 Svar:
 
 Motivet er LX~7~V, altså LDFGHTQWV.
+:::
 
 **Spørgsmål 4:** Vi har en mutant af hæmoglobin hvor Lys82 erstattes af
 Leu i β1 kæden. Skitser grafisk hvilken indflydelse det har på
 iltbindingskurven? Hvilke konsekvenser har det mere generelt? Begrund
 dit svar.
 
+::: {.callout-solution}
 Svar:
 
 Lys82 er involveret i at binde BPG via elektrostatiske interaktioner
@@ -254,8 +275,7 @@ betyder at der ikke kan leveres så meget ilt til de forskellige væv, så
 man kommer til at lide af åndedrætsbesvær og generel anoxi. Ikke godt!
 
 ![](figures/exam_2025_2/opgave-3-figur-1.jpeg){.lightbox width="90%" fig-align="center"}
-
-**\**
+:::
 
 ## Opgave 4
 
@@ -272,12 +292,14 @@ tre krystaller:
 indikerer at krystallen diffrakterer til højeste opløsning? Begrund dit
 svar.
 
+::: {.callout-solution}
 Svar: Mønster B indikerer højeste opløsning fordi reflektionerne
 strækker sig længst ud fra centrum. I krystallografi gælder at høj
 opløsning (små d-værdier) svarer til store diffraktionsvinkler, hvilket
 betyder at reflektionerne placeres langt fra centrum på detektoren.
 Mønster C har kun reflektioner tæt på centrum, hvilket svarer til lav
 opløsning.
+:::
 
 ![](figures/exam_2025_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
 
@@ -294,12 +316,14 @@ i figur 2.
 b\) Beregn den højeste opløsning (mindste d-værdi) for datasættet,
 bestemt af denne yderste synlige reflektion.
 
+::: {.callout-solution}
 Svar:\
 a) tan(2θ) = 95 mm / 200 mm = 0.475 2θ = 25.4°\
 b) θ = 25.4° / 2 = 12.7°\
 Fra Bragg's lov:\
 2d·sin(12.7°) = 1.0 Å d = 1.0 / (2 × 0.220) = 2.27 Å\
 Altså en opløsning på cirka 2.3 Å.
+:::
 
 **Spørgsmål 3:** En struktur af human tyrosine-protein kinase C-SRC
 (PDB: 1FMK) er blevet bestemt ved røntgenkrystallografi til 1,7 Å
@@ -310,6 +334,7 @@ hvilke typer af strukturelle elementer, der har henholdsvis lav og høj
 B-faktor. Hvad fortæller B-faktorerne om disse regioners struktur og
 dynamik?
 
+::: {.callout-solution}
 Svar: I PyMOL:
 
 - **Lav B-faktor (blå):** De strukturerede domæner (SH3, SH2, kinase)
@@ -323,6 +348,7 @@ Svar: I PyMOL:
 B-faktoren kvantificerer atomernes termiske bevægelser og positionel
 usikkerhed. Høje værdier indikerer fleksibilitet eller at regionen kan
 indtage flere konformationer i krystallet.
+:::
 
 b\) Figur 3 nedenfor viser pLDDT-profilen fra en AlphaFold forudsigelse
 af samme protein. pLDDT (predicted Local Distance Difference Test) er
@@ -331,6 +357,7 @@ med B-faktorerne du observerede i PyMOL. Er der korrelation mellem
 regioner med høj B-faktor og lav pLDDT? Hvad fortæller denne sammenhæng
 om proteinets struktur og dynamik?
 
+::: {.callout-solution}
 Svar: Ja, tydelig **omvendt korrelation;** Lav B-faktor → høj pLDDT
 (\>90), hvorimod Høj B-faktor → lav pLDDT (\<70). Regioner der er
 fleksible i krystaller (høj B-faktor) mangler også stærke
@@ -338,10 +365,12 @@ co-evolutionære signaler, hvilket AlphaFold detekterer som lav konfidens
 (lav pLDDT). Begge metoder er enige om proteinets dynamiske egenskaber.
 AlphaFolds pLDDT kan forudsige hvilke regioner der vil have høj
 B-faktor.
+:::
 
 c\) Hvad er sammenhængen mellem de manglede residues i krystal
 strukturen og pLDDT værdierne fra AlphaFold strukturforudsigelsen?
 
+::: {.callout-solution}
 Svar:
 
 **Manglende regioner i krystal:**
@@ -358,6 +387,7 @@ eller meget fleksible. Lav pLDDT betyder at AlphaFold ikke kan forudsige
 krystaller giver sådanne regioner ingen veldefineret elektrontæthed, da
 atomerne indtager mange forskellige positioner og kan derfor ikke
 modelleres.
+:::
 
 ![](figures/exam_2025_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
@@ -372,20 +402,24 @@ C-SRC.
 **a)** Hvad fortæller PAE plottet om sikkerheden i den forudsagte
 relative position af de foldede domæner i C-SRC?
 
+::: {.callout-solution}
 Svar: Det mørke grønne kvadrat (residue \~90-450): PAE \~5 Å → AlphaFold
 er meget sikker på den relative orientering af disse strukturerede
 domæner. De har veldefineret indbyrdes position.
+:::
 
 **b)** Hvad viser PAE-plottet om de første ca. 90 rester (N-terminalen)?
 Beskriv både PAE inden for denne region og PAE mellem denne region og
 resten af proteinet. Hvad betyder dette for N-terminalens struktur og
 den relative position i forhold til de foldede domæner?
 
+::: {.callout-solution}
 Svar: Kun diagonalen er mørkegrøn (lav PAE hvor hvert residue til sig
 selv), hvorimod resten af regionen 1-90 har høj PAE og også høj PAE i
 forhold til resten af proteinet. N-terminalen er intrisically disordered
 og har ingen velbestemt struktur eller veldefineret position i forhold
 til protein domænerne.
+:::
 
 ![](figures/exam_2025_2/opgave-4-figur-4.png){.lightbox width="90%" fig-align="center"}
 
@@ -404,12 +438,14 @@ APPRLICDSRVLERYLLEAKEAENITTGCAEHCSLNENITVPDTKVNFYAWKRMEVGQQAVEVWQGLALLSEAVLRGQAL
 
 **Spørgsmål 1:** Angiv de mulige N-glykosyleringssite i sekvensen.
 
+::: {.callout-solution}
 Svar: Signaturesequence for N-glycosyleringer: [N]{.underline}-X-S/T,
 hvor X ≠ Prolin
 
 APPRLICDSRVLERYLLEAKEAE**[N]{.underline}IT**TGCAEHCSLNE**[N]{.underline}IT**VPDTKVNFYAWKRMEVGQQAVEVWQGLALLSEAVLRGQALLV**[N]{.underline}SS**QPWEPLQLHVDKAVSGLRSLTTLLRALGAQKEAISPPDAASAAPLRTITADTFRKLFRVYSNFLRGKLKLYTGEACRTGD
 
 N24, N38, N83
+:::
 
 Forskere oprensede Erythropoietin fra en patient og analyserede det på
 en SDS-PAGE efter de har tilsat enzymet X med forskellige
@@ -428,12 +464,14 @@ inkubationstider (se nedenfor).
 **Spørgsmål 2:** Forklar forskellene i migration for Erythropoietin på
 SDS-PAGE, og angiv hvilken type enzym X er.
 
+::: {.callout-solution}
 Svar: Erythropoietin er et glykoprotein, som migrerer langsommere på
 SDS-PAGE end den teoretiske molekylvægt på 18,2 kDa, fordi
 kulhydratkæderne øger den apparente størrelse. Enzymet X er et
 deglykosylerende enzym, der gradvist fjerner glykosyleringerne, så
 Erythropoietin efter længere inkubationstid nærmer sig sin teoretiske
 molekylvægt.
+:::
 
 Erythropoietin produceres naturligt i nyrerne, men oprenses også
 rekombinant og anvendes som lægemiddel til behandling af anæmi.
@@ -442,10 +480,12 @@ rekombinant og anvendes som lægemiddel til behandling af anæmi.
 (f.eks. CHO-celler), men ikke i *E. coli*. Forklar hvorfor bakterier
 ikke egner sig til produktion af funktionelt Erythropoietin.
 
+::: {.callout-solution}
 Svar: Bakterier mangler det endoplasmatiske retikulum og
 Golgi-apparatet, hvor N- og O-glykosylering foregår. De kan derfor ikke
 danne de komplekse kulhydratstrukturer, som er nødvendige for
 Erythropoietin stabilitet og aktivitet.
+:::
 
 For at oprense og krystallisere Erythropoietin var forskerne nødt til at
 lave aminosyre ændringer i glykosyleringssites i Erythropoietin.
@@ -456,6 +496,7 @@ N-glykosyleringerne i Erythropoietin involveret i receptorbinding?
 Begrund dit svar og lav en figur, der viser strukturen og de
 modificerede glykosyleringssites.
 
+::: {.callout-solution}
 Svar: Erythropoietin har tre N-glycosyleringer (N24, N38, N83), disse er
 dog muteret til K i strukturen. I PDB 1EER overlapper eller indgår disse
 ikke i de aminosyrekontakter, der medieres mod receptoren; derfor er
@@ -466,3 +507,4 @@ Receptor (blå), Erythropoietin (grøn), N-glycosyleringerne (K24, K38,
 K83) (rød)
 
 ![](figures/exam_2025_2/opgave-5-figur-2.png){.lightbox width="90%" fig-align="center"}
+:::
