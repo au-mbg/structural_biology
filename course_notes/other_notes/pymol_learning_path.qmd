@@ -122,7 +122,7 @@ I nedenstående liste kan I få et overblik over hvornår forskellige begreber o
   - Have set Video 7: PyMOL API
   - Introduktion til PyMOL-udvidelser i python gennem PyMOLs API
   - Import af PyMOL-API'en: from pymol import cmd
-  - Funktionsdefinition i udvidelser; @cmd.extend
+  - Funktionsdefinition i udvidelser; `@cmd.extend`
   - API-kommandoerne; cmd.color, cmd.iterate
   - Skrive mere avancerede udvidelser til PyMOL gennem eksisterende, basale Python-kundskaber. API-kommandoen; cmd.get_distance Disse funktioner bruges ikke til eksamen og opgaven er derfor frivillig.
 
