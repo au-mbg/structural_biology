@@ -10,65 +10,17 @@ TØ sæt bliver frigivet sammen med ugesedlen om mandagen en uge før den uge hv
 Svarene bliver frigivet fredag i den uge hvor TØ undervisningen foregår.
 Skemaet her under viser datoer for hvornår de enkelte opgavesæt og de tilhørende svar bliver frigivet.
 
-+---------+-------------------------+----------+---------------+
-| TØ sæt  | Emne                    | Frigives | Svar frigives | 
-+:=======:+:=======================:+:========:+:=============:+
-| TØ1     | Introduktion til TØ     | 17/8     | 28/8          | 
-+---------+-------------------------+----------+---------------+
-| TØ2     | Igang med PyMOL         | 17/8     | 28/8          | 
-+---------+-------------------------+----------+---------------+
-| TØ3     | PyMOL scripting         | 24/8     | 4/9           | 
-+---------+-------------------------+----------+---------------+
-| TØ4     | Proteinstruktur 1       | 24/8     | 4/9           | 
-+---------+-------------------------+----------+---------------+
-| TØ5     | Proteinstruktur 2       | 31/8     | 11/9          | 
-+---------+-------------------------+----------+---------------+
-| TØ6     | Nukleinsyrestruktur 1   | 31/8     | 11/9          | 
-+---------+-------------------------+----------+---------------+
-| TØ7     | Nukleinsyrestruktur 2   | 7/9      | 25/9          | 
-+---------+-------------------------+----------+---------------+
-| TØ8     | Evolution               | 7/9      | 25/9          | 
-+---------+-------------------------+----------+---------------+
-| TØ9     | Protein oprensning      | 21/9     | 2/10          | 
-+---------+-------------------------+----------+---------------+
-| TØ10    | Binding                 | 21/9     | 2/10          | 
-+---------+-------------------------+----------+---------------+
-| TØ11    | Enzymmekanismer         | 28/9     | 9/10          | 
-+---------+-------------------------+----------+---------------+
-| TØ12    | Enzymregulering         | 28/9     | 9/10          | 
-+---------+-------------------------+----------+---------------+
-| TØ13    | Drug design             | 5/10     | 23/10         | 
-+---------+-------------------------+----------+---------------+
-| TØ14    | LØ forberedelse         | 5/10     | 23/10         | 
-+---------+-------------------------+----------+---------------+
-| TØ15    | MS                      | 19/10    | 6/11          | 
-+---------+-------------------------+----------+---------------+
-| TØ16    | Strukturmetoder         | 19/10    | 6/11          | 
-+---------+-------------------------+----------+---------------+
-| TØ17    | AI og modellering       | 2/11     | 13/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ18    | Kulhydrater             | 2/11     | 13/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ19    | Lipider                 | 9/11     | 20/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ20    | Pumper                  | 9/11     | 20/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ21    | Kanaler og porer        | 16/11    | 27/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ22    | Signal transduktion     | 16/11    | 27/11         | 
-+---------+-------------------------+----------+---------------+
-| TØ23    | Eksamensopgaver 2024    | 23/11    | 4/12          | 
-+---------+-------------------------+----------+---------------+
-| TØ24    | Eksamensopgaver 2025    | 23/11    | 4/12          | 
-+---------+-------------------------+----------+---------------+
-
-
 ```{python}
 #| echo: false
-#| output: asis
 import yaml
-from IPython.display  import Markdown
 from tabulate import tabulate
+from pathlib import Path
+from datetime import date
+
+today = date.today()
+
+def is_released(release_date: str) -> bool:
+    return date.fromisoformat(release_date) <= today
 
 def convert_date(date: str) -> str:
     year, month, day = date.split('-')
@@ -85,7 +37,11 @@ def find_title(file_name: str) -> str:
             if "title" in line:
                 return line.split(':')[1].split('--')[-1].strip().replace('"', '')
     return "No title found"
+```
 
+```{python}
+#| echo: false
+#| output: asis
 with open('_schedule.yml') as f:
     schedule = yaml.safe_load(f)['scheduled-docs']['docs']
 
@@ -96,20 +52,34 @@ combined_schedule = {}
 
 for index, item in enumerate(schedule):
     file_name = item['href']
-    date = convert_date(item['date'])
-    subject = find_title(file_name)
-    combined_schedule[file_name] = {'date': date, 'subject': subject}
+    if Path(file_name).parent == Path('exercises/'):
+        subject = find_title(file_name)
+        combined_schedule[file_name] = {
+            "date": item["date"], 
+            "subject": subject, 
+            "href": file_name}
 
 for index, item in enumerate(schedule_solution):
     file_name = item['href']
     if file_name in combined_schedule.keys():
-        combined_schedule[file_name]['release-date'] = convert_date(item['date'])
+        combined_schedule[file_name]['release-date'] = item['date']
 
 
 # Byg output der bliver vist som tabellen.
 table_rows = []
-for index, entry in enumerate(combined_schedule.values()):
-    row = [f'TØ{index+1}', entry['subject'], entry['date'], entry['release-date']]
+for index, entry in enumerate(combined_schedule.values(), start=1):
+
+    label = f"TØ{index}"
+    subject = entry['subject']
+    if is_released(entry["date"]):
+        subject = f"[{subject}]({entry["href"]})"
+
+    row = [
+            label, 
+            subject,
+            convert_date(entry['date']), 
+            convert_date(entry['release-date'])
+        ]
     table_rows.append(row)
 
 
