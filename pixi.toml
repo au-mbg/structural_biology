@@ -13,13 +13,13 @@ default = {features=[]}
 dev = {features=["git-tools"]}
 
 [tasks.preview]
-args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
 cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author"
 description = "Reuse the existing authoring preview in exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.preview-rebuild]
-args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
 cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author --render html"
 description = "Rebuild HTML before previewing in exercise or solution mode"
 depends-on = ["fetch-fonts"]
