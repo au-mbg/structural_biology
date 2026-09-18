@@ -118,29 +118,32 @@ With `pixi` installed the site can be rendered or previewed using the commands
 
 - `pixi run preview exercise`: Opens a live preview of the student facing version of the site.
 - `pixi run preview solution`: Opens a live preview of the public instructor/solution version of the site.
+- `pixi run preview-rebuild exercise`: Rebuilds the student-facing HTML before opening its preview.
+- `pixi run preview-rebuild solution`: Rebuilds the solution HTML before opening its preview.
 - `pixi run render exercise`: Renders only the student-facing version (also the default for `pixi run render`).
 - `pixi run render solution`: Renders only the public solution version using its own release calendar.
 - `pixi run render-all`: Renders both public site versions (not live).
-- `pixi run clean`: Cleans up any site artifacts. 
+- `pixi run clean`: Removes publication and authoring-preview artifacts.
 
-Direct Quarto commands are also supported. From the repository root, use
-`quarto render course_notes --profile exercise` or
-`quarto render course_notes --profile solution`; from `course_notes/`, omit the
-project path. The scheduling extension selects the applicable calendar without
-moving or replacing files.
+Direct publication commands are also supported. From the repository root, use
+`quarto render course_notes --profile exercise,publish` or
+`quarto render course_notes --profile solution,publish`; from `course_notes/`,
+omit the project path. The scheduling extension selects the applicable calendar
+without moving or replacing files.
 
-`pixi run preview` combines the selected release profile with the `preview`
-profile and performs an initial HTML-only rebuild. This makes scheduled pages
-visible for authoring, including pages that a previous publication render left
-as blank draft shells, without rebuilding the PDF and Word formats. The
-equivalent direct commands are
-`quarto preview course_notes --profile exercise,preview --render html` and
-`quarto preview course_notes --profile solution,preview --render html`.
+`pixi run preview` combines the selected content profile with the `author`
+profile and writes to a persistent authoring site under `course_notes/_preview`.
+The exercise preview uses `_preview`, while the solution preview uses
+`_preview/instructor`. It reuses existing output for fast startup. Run
+`pixi run preview-rebuild exercise` or `pixi run preview-rebuild solution` to
+perform a full HTML rebuild after cleaning or whenever the cached preview needs
+to be refreshed. Publication renders write to `course_notes/_site` and do not
+invalidate this authoring cache.
 
 Release behaviour must be checked with a complete render and the generated
-`_site` directory. Only complete project renders run the final cleanup of
-unreleased HTML, PDF, and Word outputs; the `preview` profile must not be used
-for publication renders.
+`_site` directory. The `publish` profile hides drafts and registers the final
+cleanup of unreleased HTML, PDF, and Word outputs. Only complete project renders
+perform that cleanup; the `author` profile must not be used for publication.
 
 ### Manual installation
 

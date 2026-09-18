@@ -2,7 +2,7 @@ from pathlib import Path
 import re
 
 EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg"]
-EXCLUDE = ['_site']
+EXCLUDE = ['_site', '_preview']
 
 ROOT = Path.cwd() / 'course_notes'
 
@@ -29,4 +29,3 @@ class QMDDocument:
             download_path = (self.path.resolve().parent / match).resolve()
             download_paths.append(download_path)
         return download_paths
-

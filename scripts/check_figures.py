@@ -3,7 +3,7 @@ from helpers import QMDDocument, ROOT
 from rich.console import Console
 
 EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg", ".gif"]
-EXCLUDE = ['_site', '.quarto']
+EXCLUDE = ['_site', '_preview', '.quarto']
 
 def relative_to_root(path: Path) -> Path:
     return path.relative_to(ROOT.resolve())
