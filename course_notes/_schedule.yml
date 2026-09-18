@@ -3,9 +3,9 @@ scheduled-docs:
   timezone: "+00:00"
   docs:
     - href: exercises/te_01_introduktion_til_te.qmd
-      date: "2020-01-01"
+      date: "2020-08-17"
     - href: exercises/te_02_i_gang_med_pymol.qmd
-      date: "2020-01-01"
+      date: "2020-08-17"
     - href: exercises/te_03_pymol_scripting.qmd
       date: "2026-08-24"
     - href: exercises/te_04_proteinstruktur_1.qmd

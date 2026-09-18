@@ -115,8 +115,9 @@ for index, entry in enumerate(combined_schedule.values()):
 
 table = tabulate(
     table_rows,
-    headers=['TØ sæt', " Emne ", "Frigives", "Svar frigives"],
-    tablefmt="grid",
+    headers=["TØ sæt", "Emne", "Frigives", "Svar frigives"],
+    tablefmt="pipe",
+    colalign=("center", "center", "center", "center"),
 )
 
 print(table)
