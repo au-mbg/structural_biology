@@ -1,0 +1,7 @@
+---
+title: "Scripting in PyMOL"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/B0GI-v27OiM >}}

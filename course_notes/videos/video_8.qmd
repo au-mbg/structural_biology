@@ -1,0 +1,7 @@
+---
+title: "PyMOL API"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/AdexmH262bY >}}

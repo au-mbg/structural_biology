@@ -1,0 +1,7 @@
+---
+title: "UniProt and Protparam"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/_rQesmoHeLA >}}

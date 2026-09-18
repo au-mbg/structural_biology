@@ -40,15 +40,13 @@ website:
       contents:
         - section: "Videor"
           contents:
-            - videos/videor_1.qmd
-            - videos/videor_2.qmd
+            - auto: videos/video_*.qmd
     - id: exam_sets-sidebar
       style: "docked"
       collapse-level: 3
       contents:
         - section: "Eksamenssæt"
           contents:
-            - exam_sets/index.qmd
             - auto: "exam_sets/exam_*.qmd"
 
 filters:

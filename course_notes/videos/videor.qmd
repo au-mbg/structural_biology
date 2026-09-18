@@ -2,7 +2,7 @@
 title: "Videor"
 sidebar: videor-sidebar
 listing:
-    contents: videor*.qmd
+    contents: video*.qmd
     type: table
     fields: [title, description]
 ---

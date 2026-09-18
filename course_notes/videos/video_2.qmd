@@ -1,0 +1,7 @@
+---
+title: "RCSB Database Introduction"
+sidebar: videor-sidebar
+description: Placeholder beskrivelse!
+---
+
+{{< video https://youtu.be/FxDvD03oGxs >}}
