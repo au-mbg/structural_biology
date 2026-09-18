@@ -23,9 +23,13 @@ course_notes
 │  │  └── website.yml    # Main Quarto website/navigation configuration
 ├── _extensions          # Quarto extensions (kept at the top level for Quarto)
 ├── _quarto-exercise.yml # Exercise profile configuration
+├── _quarto-author.yml   # Authoring settings that make drafts visible
+├── _quarto-author-*.yml # Exercise/solution preview output locations
+├── _quarto-publish.yml  # Publication settings and release cleanup
 ├── _quarto-solution.yml # Solution profile configuration
 ├── _quarto.yml          # Small Quarto entry point that loads config/quarto/website.yml
-├── _site                # Rendered site / The product of a render/preview command
+├── _preview             # Persistent local authoring preview
+├── _site                # Publication output
 ├── exercises            # Directory with the exercise files
 │  ├── index.qmd 
 │  ├── media             # Contains figures
@@ -45,6 +49,26 @@ course_notes
 ```
 
 Most contributors will only need to work in `exercises/`, `other_notes/`, `videos/`, or occasionally `index.qmd`. The files in `config/`, plus the `_quarto...` files, mainly control how the site is rendered.
+
+## Previewing changes
+
+Start the student-facing preview with:
+
+```sh
+pixi run preview exercise
+```
+
+Use `pixi run preview solution` to include solutions. Preview output is kept in
+`course_notes/_preview`, so restarting a preview normally reuses the existing
+HTML. After `pixi run clean`, start with `pixi run preview-rebuild exercise` or
+`pixi run preview-rebuild solution` to rebuild the applicable HTML. Publication
+output is separate in `course_notes/_site`, and publishing does not remove the
+preview cache.
+
+Use `pixi run render exercise`, `pixi run render solution`, or
+`pixi run render-all` when checking the actual release build. These commands
+activate the `publish` profile, hide scheduled drafts, and remove unreleased
+rendered files after a complete project render.
 
 ## Exercise vs. solution
 

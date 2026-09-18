@@ -14,18 +14,24 @@ dev = {features=["git-tools"]}
 
 [tasks.preview]
 args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
-cmd = "quarto preview course_notes --profile {{mode}},preview --render html"
-description = "Preview the course notes in either exercise or solution mode"
+cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author"
+description = "Reuse the existing authoring preview in exercise or solution mode"
+depends-on = ["fetch-fonts"]
+
+[tasks.preview-rebuild]
+args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author --render html"
+description = "Rebuild HTML before previewing in exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render]
 args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
-cmd = "quarto render course_notes --profile {{mode}}"
+cmd = "quarto render course_notes --profile {{mode}},publish"
 description = "Render the course notes in either exercise or solution mode"
 depends-on = ["fetch-fonts"]
 
 [tasks.render-all]
-cmd = "quarto render course_notes --profile exercise && quarto render course_notes --profile solution"
+cmd = "quarto render course_notes --profile exercise,publish && quarto render course_notes --profile solution,publish"
 depends-on = ["clean", "fetch-fonts"]
 description = "Clean and render the course notes in both exercise and solution mode"
 
@@ -59,7 +65,7 @@ cmd = """python scripts/check_quarto.py"""
 description = "Check the Quarto configuration for the course notes"
 
 [tasks]
-clean = { cmd = ["rm", "-rf", "course_notes/_site"], description = "Clean the rendered course notes"}
+clean = { cmd = ["rm", "-rf", "course_notes/_site", "course_notes/_preview"], description = "Clean publication and preview output"}
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
 
 fetch-fonts = { cmd = """
@@ -86,3 +92,4 @@ numpy = ">=2.4.4, <3"
 matplotlib = ">=3.10.8, <4"
 pandas = ">=3.0.2, <4"
 scipy = ">=1.17.1, <2"
+tabulate = ">=0.10.0, <0.11"

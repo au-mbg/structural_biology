@@ -1,0 +1,7 @@
+# Publication-only settings. This profile is combined with exercise or solution.
+project:
+  post-render:
+    - python ../scripts/purge_unreleased.py
+
+website:
+  draft-mode: gone

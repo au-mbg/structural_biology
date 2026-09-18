@@ -1,5 +1,5 @@
 ---
-title: TØ 3 - PyMOL-scripting
+title: TØ 3 -- PyMOL-scripting
 ---
 {{< pagebreak >}}
 

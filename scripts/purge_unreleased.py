@@ -19,10 +19,6 @@ FORMATS = (".html", ".pdf", ".docx")
 def purge_unreleased(profile: str | None = None) -> list[Path]:
     profile_value = profile if profile is not None else os.environ.get("QUARTO_PROFILE", "")
     active_profiles = parse_profiles(profile_value)
-    if "preview" in active_profiles:
-        print("Preview render: keeping draft outputs")
-        return []
-
     if os.environ.get("QUARTO_PROJECT_RENDER_ALL") != "1":
         print("Incremental render: keeping draft outputs")
         return []

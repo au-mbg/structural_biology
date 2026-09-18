@@ -61,3 +61,65 @@ Skemaet her under viser datoer for hvornår de enkelte opgavesæt og de tilhøre
 +---------+-------------------------+----------+---------------+
 | TØ24    | Eksamensopgaver 2025    | 23/11    | 4/12          | 
 +---------+-------------------------+----------+---------------+
+
+
+```{python}
+#| echo: false
+#| output: asis
+import yaml
+from IPython.display  import Markdown
+from tabulate import tabulate
+
+def convert_date(date: str) -> str:
+    year, month, day = date.split('-')
+    return f"{day}/{month}"
+
+def find_title(file_name: str) -> str:
+    """
+    Forventer at yaml title feltet har formen
+    title: "TØ -- Title"
+    Vigtigt at der er to "--"
+    """
+    with open(file_name, "r", encoding="utf-8") as f:
+        for line in f:
+            if "title" in line:
+                return line.split(':')[1].split('--')[-1].strip().replace('"', '')
+    return "No title found"
+
+with open('_schedule.yml') as f:
+    schedule = yaml.safe_load(f)['scheduled-docs']['docs']
+
+with open('_schedule-solution.yml') as f:
+    schedule_solution = yaml.safe_load(f)['scheduled-docs']['docs']
+
+combined_schedule = {}
+
+for index, item in enumerate(schedule):
+    file_name = item['href']
+    date = convert_date(item['date'])
+    subject = find_title(file_name)
+    combined_schedule[file_name] = {'date': date, 'subject': subject}
+
+for index, item in enumerate(schedule_solution):
+    file_name = item['href']
+    if file_name in combined_schedule.keys():
+        combined_schedule[file_name]['release-date'] = convert_date(item['date'])
+
+
+# Byg output der bliver vist som tabellen.
+table_rows = []
+for index, entry in enumerate(combined_schedule.values()):
+    row = [f'TØ{index+1}', entry['subject'], entry['date'], entry['release-date']]
+    table_rows.append(row)
+
+
+table = tabulate(
+    table_rows,
+    headers=["TØ sæt", "Emne", "Frigives", "Svar frigives"],
+    tablefmt="pipe",
+    colalign=("center", "center", "center", "center"),
+)
+
+print(table)
+print(": TØ skema {.striped .hover}")
+```

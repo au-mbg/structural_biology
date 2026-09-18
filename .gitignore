@@ -3,6 +3,7 @@ original_materials/
 
 # Quarto stuff:
 course_notes/_site
+course_notes/_preview
 course_notes/.quarto
 fonts/
 course_notes/*/*quarto_ipynb*
