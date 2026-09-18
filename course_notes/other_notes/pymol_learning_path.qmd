@@ -1,0 +1,168 @@
+---
+title: "Læringssti til PyMOL"
+author: "Ebbe S. Andersen and Johan N. Vinther"
+---
+
+```{=html}
+<style>
+  .display-panel { color: #e6c01dff; font-weight: bold; }
+  .editor { color: #2c6b2aff; font-weight: bold; }
+  .command-line { color: #1693daff; font-weight: bold; }
+  .log-window { color: #ea1111ff; font-weight: bold; }
+  .button-menu { color: #c96906ff; font-weight: bold; }
+</style>
+```
+
+Vi har udviklet materiale til at introducere jer til anvendelse af PyMOL i form af tutorials, TØ opgaver og videoer. For at bygge jeres viden om PyMOL anvendelse gradvist op, har vi udviklet følgende læringssti. Tutorials er udviklet og vedligeholdt af Ebbe Sloth Andersen (PyMOL guide 1 og PyMOL guide 2). Læringsstien er indbygget i TØ opgaverne og understøttes af videoer lavet af Johan Nygaard Vinther og Laura Skak Rasmussen:
+
+- Video 1: PyMOL
+- Video 2: RCSB Database
+- Video 3: Property Selectors
+- Video 4: PyMOL scripting
+- Video 5: UniProt and Protparam
+- Video 6: PyMOL wiki
+- Video 7: PyMOL API
+
+I nedenstående liste kan I få et overblik over hvornår forskellige begreber og kommandoer blive introduceret første gang undervejs i kurset:
+
+## TØ 1: Introduktion til TØ
+
+- Installation af PyMOL
+- Have læst: PyMOL guide 1
+- Opgave 6
+  - Brug af pse fil
+  - Brug af objekt-panelet
+  - Brug af "Scenes" i PyMOL og F1 taster til at skifte scener
+  - Brug af "SEQ" knappen og sekvens-panelet.
+
+## TØ 2: Igang med PyMOL
+
+- Have set: Video 1: PyMOL
+- Have set: Video 2: RCSB Database
+- Opgave 1
+  - Kunne bruge kommandoen; fetch
+  - Kunne åbne en PDB-fil i PyMOL
+  - Kende til licorice- og cartoon-repræsentationerne
+  - Kunne gemme scener
+  - Kunne navigere i objekt-menuerne
+- Opgave 2
+  - Være bekendt med PDB-ID og hjemmesiden RCSB.org
+  - Navigere ligander
+- Opgave 3
+  - Være bekendt med Wizard measurement.
+  - Kunne ekspandere en krystal-struktur med menuen generate > symmetry mates
+- Opgave 4
+  - Kende menuen: A > align > to molecule
+- Opgave 5
+  - Kende menuen: C > by element > CHNOS 
+  - Kende menuen: A > find > polar contacts > to other atoms in object
+  - Kopiere script til kommandolinje.
+  - Bruge menuen: Plugin > Morphing til at se på en konformationsændring.
+
+## TØ 3: PyMOL-scripting
+
+- Have læst: PyMOL guide 2
+- Installation af Visual Studio Code 
+- Have set Video 3: Property Selectors 
+- Have set Video 4: PyMOL scripting 
+- Opgave 1
+  - Kunne bruge kommandoen; fetch
+  - Kende til objekter og selektioner (create, select)
+- Opgave 2
+  - Kende menuen: File > Reinitialize > Everything 
+  - Kende kommandoen: reinitialize
+- Opgave 4
+  - Køre script via pml fil
+  - Kunne danne simple PyMOL scripts og lave scener (reinitialize, get_view/set_view, "scene, store")
+  - Kende til boolske operatorer (and, or, not)
+  - Kende til property selectorerne; segi, chain, resi, resn, name, elem, formal_charge, partial_charge, sidechain, mainchain
+  - Være bekendt med kommandoerne; deselect, hide, show, as, remove, color, bg_color, Utility-funktionerne (util.cbc, util.cnc & util.cba)
+
+## TØ 4: Proteinstruktur 1
+
+- Have set Video 5: UniProt og Protparam
+- Være i stand til at indhente information om strukturer i UniProt og Protparam.
+- Kende til kommandoerne; select "", byres within "" of "" og distance
+
+## TØ 5: Proteinstruktur 2
+
+- Have set Video 6: PyMOL-wiki
+- Være i stand til at indhente information om strukturer i CATH.
+- Have en forståelse for hvornår surface-repræsentationen er brugbar, show surface.
+- Være bekendt med kommandoen; spectrum count
+
+## TØ 6: Nukleinsyrestruktur 1
+
+- Vide hvordan man identificerer major og minor groove i PyMOL
+- Have en forståelse for hvornår sphere-repræsentationen er brugbar.
+- Kunne farve efter sekundær struktur (h, s, l+"")
+- Kunne finde polære bindinger med distance-kommandoen (distance >selektion<, >selektion<, mode=2)
+
+## TØ 7: Nukleinsyrestruktur 2
+
+- Være bekendt med "find"-funktionen (Action > find > polar contacts)
+- Være bekendt med kommandoerne; zoom
+
+## TØ 8: Evolution
+
+- Opgave 6
+  - Kunne finde en PyMOL-fil og fremkalde den via en folder path.
+  - Kunne bruge kommandoerne: pwd, ls, cd [folder path]
+- Opgave 7
+  - Kunne bruge kommandoerne: align, super
+
+## TØ 9: Metoder og analyse
+
+- Kunne tilføje en beskrivelse til en scene
+- Kende til brugen af asterisk(*)
+
+## TØ 10: Binding og genkendelse
+
+- OPTIONAL:
+  - Have set Video 7: PyMOL API
+  - Introduktion til PyMOL-udvidelser i python gennem PyMOLs API
+  - Import af PyMOL-API'en: from pymol import cmd
+  - Funktionsdefinition i udvidelser; @cmd.extend
+  - API-kommandoerne; cmd.color, cmd.iterate
+  - Skrive mere avancerede udvidelser til PyMOL gennem eksisterende, basale Python-kundskaber. API-kommandoen; cmd.get_distance Disse funktioner bruges ikke til eksamen og opgaven er derfor frivillig.
+
+## TØ 11: Enzymmekanismer
+
+- OPTIONAL:
+  - Viderebygning af frivillig Python opgave fra TØ 10.
+  - Sammenfatte kommandoer fra TØ 10 til et fuldendt Python script.
+
+## TØ 12: Enzymregulering
+
+- Introduceres for PyMOL funktionen Action > Generate > vacuum electrostatics > protein contact potential (local)
+- Kunne bruge en log file til at danne en kommando, der kan bruges i et script.
+- Kunne bruge den elektrostatiske overflade til at undersøge interaktionsoverflader.
+
+## TØ 13: Drug design
+
+## TØ 14: LØ forberedelse
+
+## TØ 15: Massespektroskopi
+
+## TØ 16: Strukturmetoder
+
+- Test dine PyMOL skills
+- Få en bedre forståelse af forskellen på en biologisk samling og et asymmetrisk unit.
+- Kend til kommandoerne; alter og symexp.
+- Introduceres kort for en biologisk samling (type=pdb1).
+
+## TØ17: AI og modellering
+
+## TØ18: Kulhydrater
+
+## TØ19: Lipider 
+
+## TØ20: Membranpumper
+
+## TØ21: Kanaler og porer
+
+- Der bruges et PyMOL API script kaldes Findseq. Dette er for at introducere de studerende for de mange API'er, der kan findes på bl.a. PyMOL wiki
+
+## TØ 22: Signaltransduktion
+
+- At bruge align til selektioner

@@ -19,3 +19,4 @@ These guides provide an introduction to molecular visualization and scripting wi
 |---|---|
 | [Biomolecular visualization with PyMOL 3](pymol_guide_1.qmd) | Introduction to the PyMOL GUI, molecular representations, atom selections, and making publication-quality figures. |
 | [Commands and scripting in PyMOL 3](pymol_guide_2.qmd) | Using the PyMOL command line and scripts for advanced visualization, including a full reference card. |
+| [Learning path for PyMOL](pymol_learning_path.qmd) | Learning path that explains the progression of PyMOL skills throughout the theoretical exercises. |
