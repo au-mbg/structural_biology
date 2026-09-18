@@ -13,7 +13,7 @@ Skemaet her under viser datoer for hvornår de enkelte opgavesæt og de tilhøre
 +---------+-------------------------+----------+---------------+
 | TØ sæt  | Emne                    | Frigives | Svar frigives | 
 +:=======:+:=======================:+:========:+:=============:+
-| TØ1     | Introduktion til kurset | 17/8     | 28/8          | 
+| TØ1     | Introduktion til TØ.    | 17/8     | 28/8          | 
 +---------+-------------------------+----------+---------------+
 | TØ2     | Igang med PyMOL         | 17/8     | 28/8          | 
 +---------+-------------------------+----------+---------------+
