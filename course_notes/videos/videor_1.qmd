@@ -1,6 +1,7 @@
 ---
 title: "Video 1: Introduktion to PyMOL"
 sidebar: videor-sidebar
+description: Introduktion til PyMOL 
 ---
 
-{{< video videos/video1.mp4 >}}
+{{< video https://youtu.be/4YoLTP5TZGE?si=h7PXy-khvXbhJHjG >}}

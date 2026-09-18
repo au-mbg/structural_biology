@@ -1,6 +1,5 @@
 ---
 title: "Video 2: PDB-ID og property selectors"
 sidebar: videor-sidebar
+description: Brug af PBD-ID og property selectors
 ---
-
-{{< video videos/video2.mp4 >}}
