@@ -45,20 +45,36 @@ def find_pymol_executable() -> str | None:
     return None
 
 
+def find_scripts(
+    file: str | None = None,
+    directory: str | None = None,
+    skip_pse: bool = False,
+) -> list[Path]:
+    if file:
+        return [Path(file)]
+
+    script_dir = Path(directory) if directory else Path(".")
+    scripts = list(sorted(script_dir.rglob("*.pml")))
+    if not skip_pse:
+        scripts.extend(sorted(script_dir.rglob("*.pse")))
+    return scripts
+
+
 def check_script(pymol_bin: str, script_path: Path, console: Console) -> bool:
     try:
-        with tempfile.TemporaryDirectory() as tmp:
-            # Symlink every sibling file into the temp dir
-            for f in script_path.parent.iterdir():
-                os.symlink(f.resolve(), Path(tmp) / f.name)
+        with console.status(f"Checking {script_path.name}...", spinner="dots"):
+            with tempfile.TemporaryDirectory() as tmp:
+                # Symlink every sibling file into the temp dir
+                for f in script_path.parent.iterdir():
+                    os.symlink(f.resolve(), Path(tmp) / f.name)
 
-            output = subprocess.run(
-                [pymol_bin, "-cq", str(script_path)],
-                check=True,
-                capture_output=True,
-                text=True,
-                cwd=tmp,
-            )
+                output = subprocess.run(
+                    [pymol_bin, "-cq", str(script_path)],
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                    cwd=tmp,
+                )
 
         if "Error" in output.stdout:
             panel = Panel(
@@ -101,17 +117,13 @@ def main(args):
     )
     console.print(f"Using PyMOL executable: {pymol_bin}", style="bold green")
 
-    if args.file:
-        scripts = [Path(args.file)]
-    else:
-        script_dir = Path(args.directory) if args.directory else Path(".")
-        scripts = list(sorted(script_dir.rglob("*.pml"))) + list(
-            sorted(script_dir.rglob("*.pse"))
-        )
+    scripts = find_scripts(args.file, args.directory, args.skip_pse)
 
     if not scripts:
+        script_dir = Path(args.directory) if args.directory else Path(".")
+        extensions = ".pml" if args.skip_pse else ".pml or .pse"
         console.print(
-            f"No .pml or .pse files found in: {script_dir}", style="bold yellow"
+            f"No {extensions} files found in: {script_dir}", style="bold yellow"
         )
         return
 
@@ -153,6 +165,11 @@ if __name__ == "__main__":
         type=str,
         help="Specific .pml file to check (overrides --directory)",
         default=None,
+    )
+    parser.add_argument(
+        "--skip-pse",
+        action="store_true",
+        help="Skip .pse session files during directory searches.",
     )
     args = parser.parse_args()
 

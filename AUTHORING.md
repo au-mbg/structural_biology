@@ -131,6 +131,15 @@ To wrap text around a floating figure it can be wrapped in float div, like below
 
 ### Checking figure references 
 
+Run all local project checks and display a combined pass/fail summary with:
+
+```sh
+pixi run check-all
+```
+
+The individual checks below remain available when working on a specific type of
+content.
+
 The command 
 
 ```sh
@@ -193,6 +202,11 @@ To run the check on both directories use
 ```sh
 pixi run check-pymol-scripts
 ```
+The checker displays a spinner with the file currently being processed. The comprehensive
+`check-all` task checks only `.pml` scripts so that slow saved `.pse` sessions do not block
+the other project checks. When running `check_scripts.py` directly, pass `--skip-pse` to
+apply the same PML-only behavior to a directory.
+
 This requires having PyMOL installed and discoverable. For checking just a single script one 
 can use 
 

@@ -40,7 +40,7 @@ cmd = "python -m unittest tests/test_scheduling.py"
 description = "Test release calendars, profile selection, and output purging"
 
 [tasks.check-pymol-scripts]
-cmd = """python scripts/check_scripts.py --directory course_notes/exercises/pymol_scripts;
+cmd = """python scripts/check_scripts.py --directory course_notes/exercises/pymol_scripts &&
 python scripts/check_scripts.py --directory course_notes/files/"""
 
 [tasks.check-script]
@@ -63,6 +63,10 @@ description = "Check the schedule for the course notes"
 [tasks.check-quarto]
 cmd = """python scripts/check_quarto.py"""
 description = "Check the Quarto configuration for the course notes"
+
+[tasks.check-all]
+cmd = """python scripts/check_all.py"""
+description = "Run all local project checks and summarize the results"
 
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site", "course_notes/_preview"], description = "Clean publication and preview output"}
