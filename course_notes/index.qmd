@@ -91,5 +91,5 @@ table = tabulate(
 )
 
 print(table)
-print(": TØ skema {.striped .hover}")
+print(": {.striped .hover}")
 ```
