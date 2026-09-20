@@ -8,7 +8,8 @@ format-links: false
 På dette site kan du finde teoretiske øvelser (TØ), guides og eksamenssæt for kurset, der kan findes i menuen i toppen af siden.
 TØ sæt bliver frigivet sammen med ugesedlen om mandagen en uge før den uge hvor de bruges til TØ.
 Svarene bliver frigivet fredag i den uge hvor TØ undervisningen foregår.
-Skemaet her under viser datoer for hvornår de enkelte opgavesæt og de tilhørende svar bliver frigivet.
+Skemaet herunder viser datoer for hvornår de enkelte opgavesæt og de tilhørende svar bliver frigivet.
+Svar til alle tidligere eksamensopgaver frigives 4/12-2026.
 
 ```{python}
 #| echo: false

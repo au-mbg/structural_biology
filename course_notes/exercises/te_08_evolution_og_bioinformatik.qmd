@@ -37,12 +37,12 @@ a
 d
 :::
 
-4.  Match følgende algoritmer med deres beskrivelser
+4.  Match følgende algoritmer med deres beskrivelser:
 
     A.	BLAST
     B.	Clustal Omega
     C.	Foldalign
-    D.	RNAlifold
+    D.	RNAalifold
     E.	HotKnots
     F.	Alphafold
     
@@ -115,7 +115,7 @@ e
 e
 :::
 
-9.  AlphaFold forudsiger protein struktur fra sekvens ved at bruge en multiple sequence alignment. Hvilken evolutionær information bruges til at forudsige 3D strukturen?
+9.  AlphaFold forudsiger protein struktur fra sekvens ved at bruge en multipel sekvensalignment. Hvilken evolutionær information bruges til at forudsige 3D strukturen?
 
     a.	Bevarelse af sekvenser hjælper med foldingen.
     b.	Evolutionære matricer med scores for aminosyre-aminosyre kontakter.
@@ -249,10 +249,10 @@ Hairpin er indsat mellem anticodon loop og T-psi-C loop.
 
 {{< pagebreak >}}
 
-## Opgave 2. Den forsvundne RNA replikase
+## Opgave 3. Den forsvundne RNA replikase
 
-"RNA world" hypotesen foreslår at livets oprindelse startede med at RNA molekyler begyndte at kopiere sig selv.
-For at sandsynliggøre "RNA world" hypotesen forsøgte forskere omkring 1993 at skabe et RNA polymerase ribozym ([**Bartel & Szostak, 1993**](https://www.ncbi.nlm.nih.gov/pubmed/7690155)) ved at bruge en selektionsmetode, hvor man laver et bibliotek af sekvenser og selekterer for funktion (se Berg, udgave 10, afsnit 10.4). Ved at selektere for ligeringsaktivitet fandt de en RNA ligase, der senere er blevet udviklet til at syntetisere længere RNA-sekvenser ([**Horning & Joyce, 2016**](https://www.ncbi.nlm.nih.gov/pubmed/27528667)). Til selektionseksperimentet blev der indsat en tilfældig sekvens (et bibliotek) på 220 nukleotider, der syntetiseres kemisk ved tilfældigt at indsætte en af de fire baser på hver af 220 positioner. Figuren herunder viser en oversigt over dette eksperiment, hvor den tilfældige sekvens er annoteret som N220.
+"RNA world" hypotesen foreslår at livets oprindelse startede med at et RNA molekyle begyndte at kopiere sig selv.
+For at sandsynliggøre "RNA world" hypotesen forsøgte forskere omkring 1993 at skabe et RNA polymerase ribozym ([**Bartel & Szostak, 1993**](https://www.ncbi.nlm.nih.gov/pubmed/7690155)) ved at bruge *in vitro* selektion (også kaldet SELEX). Med denne metode laver man et DNA bibliotek af sekvenser ved at tilfældigt at indsætte en af de fire baser på hver position under kemisk DNA syntese. DNA biblioteket afskrives så til RNA, hvorefter man selekterer for RNA funktion (se Berg, udgave 10, afsnit 10.4). Ved at selektere for ligeringsaktivitet fandt de en RNA ligase, der senere er blevet udviklet til at syntetisere længere RNA-sekvenser ([**Horning & Joyce, 2016**](https://www.ncbi.nlm.nih.gov/pubmed/27528667)). Til selektionseksperimentet blev der indsat et bibliotek på 220 nukleotider (N220). Figuren herunder viser en oversigt over selektions-eksperiment.
 
 ![](figures/te_08/opgave-2-figur-1.png){width="50%" fig-align="center" .lightbox}
 
@@ -349,9 +349,9 @@ Mg ion koordinerer de negativt ladede grupper - særligt fosforyl-grupperne så 
 
 {{< pagebreak >}}
 
-## Opgave 3. Globin sekvensalignment 
+## Opgave 4. Globin sekvensalignment 
 
-Hæmoglobin alpha (HGA) og Myoglobin (MYG) fra menneske og Leghæmoglobin-1 (LHG) fra blomsten [**Lupin**](https://en.wikipedia.org/wiki/Lupinus) er fremhævet som eksempel i Berg `Biochemistry`, udgave 10, kapitel 10. Følgende sekvenser er hentet fra UniProt i fasta-format.  
+Hæmoglobin alpha (HGA) og Myoglobin (MYG) fra menneske og Leghæmoglobin-1 (LHG) fra blomsten [**Lupin**](https://en.wikipedia.org/wiki/Lupinus) er fremhævet som eksempel i Berg Biochemistry, udgave 10, kapitel 10. Følgende sekvenser er hentet fra UniProt i fasta-format.  
 
 ```default
 >HGA
@@ -482,7 +482,7 @@ Svagt bevaret (.):        Kolonne 19 = 2*-1 (F-V) + 4 (V-V) = 2
 
 {{< pagebreak >}}
 
-## Opgave 4. Globin strukturalignment
+## Opgave 5. Globin strukturalignment
 
 ::: {.callout-note}
 **PyMOL-scripting opgave**: I denne opgave skal i lære at bruge kommandoerne `align` og `super`.
@@ -541,7 +541,7 @@ Bindingen mellem proximal histidine og jern-atomet vises ikke da det er længere
 :::
 {{< pagebreak >}}
 
-## Opgave 5. Globin strukturbevarelse
+## Opgave 6. Globin strukturbevarelse
 
 ::: {.callout-note}
 **PyMOL-scripting opgave**: I denne PyMOL opgave skal I lære at plotte sekvensbevarelse på protein struktur vha. et Python script, der hedder `colCons.py`.
@@ -655,7 +655,7 @@ Alfa helix 4 er forlænget i C-terminal.
 
 {{< pagebreak >}}
 
-## Opgave 6. Heat shock protein 70 evolution
+## Opgave 7. Heat shock protein 70 evolution
 
 ::: {.callout-note}
 **PyMOL scripting opgave**: I denne PyMOL opgave skal I lave en strukturel alignment imellem homologe proteiner og bruge informationer fra Interpro databasen til at analysere evolutionære forskelle.

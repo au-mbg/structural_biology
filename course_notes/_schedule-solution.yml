@@ -49,4 +49,40 @@ scheduled-docs:
     - href: exercises/te_23_eksamensopgaver.qmd
       date: "2026-12-02"
     - href: exercises/te_24_eksamensopgaver.qmd
-      date: "2026-12-03"
+      date: "2026-12-04"
+    - href: exam_sets/exam_2017_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2017_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2018_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2018_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2019_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2019_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2020_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2020_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2021_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2021_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2022_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2022_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2023_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2023_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2024_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2024_2.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2025_1.qmd
+      date: "2026-12-04"
+    - href: exam_sets/exam_2025_2.qmd
+      date: "2026-12-04"
