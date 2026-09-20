@@ -6,6 +6,7 @@ format-links: false
 *Velkommen til øvelsessiderne for Strukturbiologi 2026!*
 
 På dette site kan du finde teoretiske øvelser (TØ), guides og eksamenssæt for kurset, der kan findes i menuen i toppen af siden.
+TØ sæt indeholder, udover opgaver i pensum, en [PyMOL læringssti](https://au-mbg.github.io/structural_biology/other_notes/pymol_learning_path.html), der er specielt udviklet til dette kursus.
 TØ sæt bliver frigivet sammen med ugesedlen om mandagen en uge før den uge hvor de bruges til TØ.
 Svarene bliver frigivet fredag i den uge hvor TØ undervisningen foregår.
 Skemaet herunder viser datoer for hvornår de enkelte opgavesæt og de tilhørende svar bliver frigivet.

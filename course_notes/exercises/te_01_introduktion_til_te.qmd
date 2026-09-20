@@ -195,13 +195,13 @@ I denne opgave skal vi bruge PyMOL til at kigge på strukturen af chymotrypsin, 
 Pse-filer er PyMOL session filer, som du kan dobbeltklikke på for at åbne filen i PyMOL såfremt programmet er installeret.Denne pse-fil indeholder "Scener", der er udvalgte views af strukturen. I PyMOL 3 findes disse scener under "Scenes" knappen øverst til højre. Scenerne har her fået navnene F1-F4, hvilket gør at man også kan trykke dem frem med Funktions-tasterne F1 på dit tastatur. OBS: Mac-brugere skal **holde *fn*-tasten nede** når de trykker på F1, F2, F3 osv, da disse taster også bruges til at styre skærmens lysstyrke etc. på MacBooks.
 :::
 
-1.	Tryk på **F1**, hvor det ses at chymotrypsin består af to β-barrels kaldet domæne 1 og 2 vist med henholdsvis blåt og rødt. Lokalisér de to domæner og prøv at tænde og slukke for dem med knapperne Domain 1 og Domain 2 i listen til højre. Kan du finde β-barrel ved at navigere med musen? Hvad karakteriserer en β-barrel?
+1.	Tryk på **F1**, hvor det ses at chymotrypsin består af to β-barrels kaldet domæne 1 og 2 vist med henholdsvis blåt og rødt. Lokalisér de to domæner og prøv at tænde og slukke for dem med knapperne `Domain 1` og `Domain 2` i listen til højre. Kan du finde β-barrel ved at navigere med musen? Hvad karakteriserer en β-barrel?
 
 ::: {.callout-solution}
 En β-barrel er et kurvet β-sheet, der folder rundt således at den sidste strand hydrogenbinder til den første.
 :::
 
-2.	Den katalytiske triade bestående af Ser195, His57 og Asp102 befinder sig i området mellem de to domæner og er vist med grønne streger (sticks) i objektet Triad. Tryk **F2** for at se disse aminosyrer tæt på. Hvilken rolle spiller disse for enzymet?
+2.	Den katalytiske triade bestående af Ser195, His57 og Asp102 befinder sig i området mellem de to domæner og er vist med grønne streger (sticks) i objektet `Triad`. Tryk **F2** for at se disse aminosyrer tæt på. Hvilken rolle spiller disse for enzymet?
 
 ::: {.callout-solution}
 De tre aminosyrer er vigtige for den enzymatiske reaktion. Kort fortalt hjælper Asp og His med til at Ser bliver deprotoneret og danner en alkoxidion, der kan angribe peptidbindingen under kløvningsreaktionen (se Fig. 9.8, Berg et al. 10. udgave, s. 279).
@@ -210,11 +210,11 @@ De tre aminosyrer er vigtige for den enzymatiske reaktion. Kort fortalt hjælper
 3.	De to domæner ligner meget hinanden og er arrangeret med en såkaldt "pseudo-2-talssymmetri". Tryk **F1** på keyboardet for at se ned langs denne akse og **F3** og **F4** for at se ned langs hvert β-barrel domæne. Hvad tror du en "pseudo-2-talssymmetri" er?
 
 ::: {.callout-solution}
-En `pseudo-symmetri` er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have `pseudo-totalssymmetri`, mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
+En "pseudo-symmetri" er en ikke helt streng symmetri, dvs. vil to forskellige proteiner, der har lignende fold og er arrangeret 180 grader i forhold til hinanden kunne siges at have "pseudo-totalssymmetri", mens det ville være en egentlig totalssymmetri, hvis det drejede sig om to helt ens molekyler:
 ![](figures/te_01/opgave-5-figur-1.jpg){.lightbox width="90%" fig-align="center"}
 :::
 
-4.	Når chymotrypsinogen aktiveres til chymotrypsin så bliver molekylet kløvet to steder for at producere kæderne, der her hedder A, B og C (se figur 7.17, s. 224 i Berg 10. udgave). Stykket, der forsvinder mellem kæde B og C er vist med prikker i strukturen (*Loop*) og er ikke så vigtigt for aktivering. Derimod er skæringen ved residue 16 kritisk. Find residue 16 og forklar hvorfor denne aminosyre er vigtig for aktivering af chymotrypsin (se figur 7.18, s. 224 i Berg 10. udgave).
+4.	Når chymotrypsinogen aktiveres til chymotrypsin så bliver molekylet kløvet to steder for at producere kæderne, der her hedder A, B og C (se figur 7.17, s. 224 i Berg 10. udgave). Stykket, der forsvinder mellem kæde B og C er vist med prikker i objektet `Loop` og er ikke så vigtigt for aktivering. Derimod er skæringen ved residue 16 kritisk. Find residue 16 og forklar hvorfor denne aminosyre er vigtig for aktivering af chymotrypsin (se figur 7.18, s. 224 i Berg 10. udgave).
 
 ::: {.callout-tip title="PyMOL hint"}
 Sekvens-panel kan åbnes med "SEQ" knappen, nederst til højre, hvilket kan hjælpe dig med at identificere residue 16.
