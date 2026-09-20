@@ -1,7 +1,7 @@
 ---
-title: "RCSB Database Introduction"
+title: "Video 2 – RCSB Database Introduction"
 sidebar: videor-sidebar
-description: Placeholder beskrivelse!
+description: Denne video introducerer RCSB databasen og PDB filerne og deres indhold. Videoen er lavet af Laura Skak Rasmussen i 2021 og bruger PyMOL 2 i slutningen af videoen.
 ---
 
 {{< video https://youtu.be/FxDvD03oGxs >}}

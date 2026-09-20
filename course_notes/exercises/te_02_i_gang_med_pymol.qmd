@@ -2,6 +2,7 @@
 title: "TØ 2 -- I gang med PyMOL"
 ---
 
+::: {.callout-note}
 I dette TØ sæt skal I arbejde med PyMOL. Det forudsættes at PyMOL er
 installeret og at I har fulgt PyMOL guide 1 og set Video 1 og 2. TØ
 timerne kan bruges til at sikre at alle har fået installeret PyMOL og
@@ -10,8 +11,9 @@ Opgaverne giver jer mulighed for at kigge på forskellige strukturer fra
 Protein Data Bank (PDB) og træne jeres evner til at visualisere og
 analysere dem. TØ opgave 1-2 gennemgås af instruktor på tavlen. TØ
 opgave 3-5 laves i grupper af de studerende.
+:::
 
-## PyMOL og K^+^-kanalen
+## Opgave 1. PyMOL og K^+^-kanalen
 
 PyMOL er et fantastisk værktøj til analyse af biologiske molekyler, både
 til hurtige kig og mere dybdegående analyse. I denne opgave skal vi
@@ -30,11 +32,12 @@ Sådanne USB-mus koster typisk under 100 kr
 
 1.  Hent strukturen af K^+^-kanalen fra *Streptomyces lividans* bestemt
     med krystallografi med PDB-kode 1BL8 ved at skrive kommandoen
-    \"fetch 1BL8\". Gem scenen. Hint: Brug menuen \"Scenes\" øverst til
+    `fetch 1BL8`. Gem scenen. Hint: Brug menuen `Scenes` øverst til
     højre.
 
 ::: {.callout-solution}
-1.  Se scene 001 i PyMOL session fil: 1_K+-kanalen.pse
+Se scene 001 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 Den højre side af Viewer-vinduet viser den hentede PDB-fil som et
@@ -47,7 +50,7 @@ atomerne. Det svarer lidt til at vælge noget tekst i Word med musen. Der
 skal altså være et objekt før man kan lave en selektion. Objekter kan
 tændes og slukkes ved at klikke på navnet.
 
-Øverst findes altid et globalt objekt \"All\", der dækker alle objekter
+Øverst findes altid et globalt objekt `All`, der dækker alle objekter
 og selektioner i PyMOL. Dvs. laver man en ændring her vil det påvirke
 alle objekter nedenfor.
 
@@ -55,21 +58,19 @@ For strukturer bestemt med NMR vil der typisk være flere tilstande af
 proteinet.
 
 2.  Hent strukturen af PAS-domænet fra HERG K^+^-kanalen bestemt med NMR
-    via PDB-kode 2L0W. Efter objektnavnet står der \"1/20\", hvilket
+    via PDB-kode 2L0W. Efter objektnavnet står der `1/20`, hvilket
     betyder at vi kigger på tilstand 1 ud af i alt 20 tilstande af
     strukturen. Gem scenen.
 
 ::: {.callout-solution}
-Se scene 002 i PyMOL session fil: 1_K+-kanalen.pse
+Se scene 002 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 3.  Prøv at skifte mellem visning af de forskellige tilstande vha.
     knapperne i bunden af vinduet:
 
-    ![](figures/te_02/pymol-og-k-kanalen-figur-1.png){width="30%"}
-
-::: {.callout-solution}
-:::
+    ![](figures/te_02/opgave-1-pymol.png){width="30%"}
 
 Ud for hvert objekt eller selektion ses 5 menuer angivet med bogstaverne
 **A** (Action), **S** (Show), **H** (Hide), **L** (Label) og
@@ -91,9 +92,6 @@ Ovenstående actions vil alle blive gennemgået i løbet af kurset.
 
 4.  Brug Objekt menuen til at fravælge NMR-strukturen og Action-menuen
     til at flytte 1BL8 ind midt i synsfeltet med center-action.
-
-::: {.callout-solution}
-:::
 
 Menuen **S** (Show) bruges til at vise objekter/selektioner med
 forskellige grafiske repræsentationer, hvor af de vigtigste er:
@@ -118,18 +116,16 @@ gøres vha. Hide-menuen. I version 3 af PyMOL vises alle nye strukturer,
 der åbnes, som en flot cartoon-repræsentation med ligander i sticks og
 ioner i spheres.
 
-5.  Benyt Hide-menuen udfor det globale \"All\"-objekt til at gemme alt
+5.  Benyt Hide-menuen udfor det globale `All`-objekt til at gemme alt
     (H-\>Hide: everything).
-
-::: {.callout-solution}
-:::
 
 6.  Eksperimentér med de forskellige repræsentationer af 1BL8 vha.
     Show-menuen. Brug Hide-menuen til at fjerne en repræsentation før en
     ny vises. Gem scenen for din foretrukne repræsentation.
 
 ::: {.callout-solution}
-Se scene 003 i PyMOL session fil: 1_K+-kanalen.pse
+Se scene 003 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 Color-menuen bruges som navnet antyder til at sætte en farve for et
@@ -151,36 +147,49 @@ funktioner er:
     carbon i gult. Gem scenen.
 
 ::: {.callout-solution}
-Se scene 004 i PyMOL session fil: 1_K+-kanalen.pse
+Se scene 004 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 8.  Brug menuerne til at vise 1BL8 kun i cartoon og vælg farver efter
     sekundær struktur. Gem scenen.
 
 ::: {.callout-solution}
-Se scene 006 i PyMOL session fil: 1_K+-kanalen.pse
+Se scene 006 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 9.  Farv med rainbow og identificér proteinets rigtige N-terminal. Gem
     scenen. Hvorfor er der så mange andre \"terminaler\"?
 
 ::: {.callout-solution}
-Se scene 007 i PyMOL session fil: 1_K+-kanalen.pse. N-terminal er ved ALA23. Der er mange terminaler, da der er mange kæder.
+Se scene 007 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
+
+N-terminal er ved ALA23. Der er mange terminaler, da der er mange kæder.
 :::
 
 10. Brug kæde-specifik rainbow farvning til at forstå den kvarternære opbygning af K^+^-kanalen. Gem scenen.
 
 ::: {.callout-solution}
-Se scene 008 i PyMOL session fil: 1_K+-kanalen.pse. K^+^-kanalen er en tetramer.
+Se scene 008 i PyMOL session fil:
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
+
+K^+^-kanalen er en tetramer.
 :::
 
-11. Gem din session som \"1_K+-kanalen.pse\" i STRBIO mappen, så du kan vise svarene frem senere.
+11. Gem din session som `K+-kanalen.pse` i STRBIO mappen, så du kan vise svarene frem senere.
 
 ::: {.callout-solution}
+{{< download-button path="../files/TE2-O1-K+-kanalen.pse" filename="K+-kanalen.pse" >}}
 :::
 
 
-## Den første proteinstruktur
+## Opgave 2. Den første proteinstruktur
+
+::: {.img-float}
+![](figures/te_02/opgave-2-Myoglobin.png){style="float: right; margin: 5px; width: 40%;"}
+:::
 
 Enhver diskussion om proteinstruktur må nødvendigvis begynde med
 myoglobin, fordi det er her, videnskaben om proteinstruktur begyndte.
@@ -197,7 +206,10 @@ kompleksitet i dette protein. Læs evt. mere
     scene.
 
 ::: {.callout-solution}
-8
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
+8 alpha-helicer
 :::
 
 2.  Find information om 1MBN på RCSB-website (<https://www.rcsb.org/>).
@@ -209,57 +221,73 @@ kompleksitet i dette protein. Læs evt. mere
 1976, X-ray krystallografi, 2 Å
 :::
 
-3.  Zoom ind på liganden med menuen Zoom \> Next ligand. Gem scene. Hvad
+3.  Zoom ind på liganden med menuen `Zoom > Next ligand`. Gem scene. Hvad
     hedder denne ligand og hvilket atom er bundet i midten?
 
 ::: {.callout-solution}
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
 Heme, Fe
 :::
 
 4.  Find aminosyrerne i bindingsstedet for liganden. Brug Action-menuen
-    A \> preset \> ligands. Gem scene. Hvilke aminosyrer binder direkte
+    `A > preset > ligands`. Gem scene. Hvilke aminosyrer binder direkte
     til liganden med hydrogen bindinger?
 
 ::: {.callout-solution}
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
 Arg45, His97, Ser92
 :::
 
-5.  Vis bindingslommen i surface repræsentation. Brug Action-menuen A \>
-    preset \> ligand site \> surface. Farv protein C \> by element \>
-    CHNOS\... med C i grå. Gem scene. Beskriv bindings-interaktioner
+5.  Vis bindingslommen i surface repræsentation. Brug Action-menuen 
+    `A > preset > ligand site > surface`. Farv protein 
+    `C > by element > CHNOS...` med C i grå. Gem scene. Beskriv bindings-interaktioner
     mellem protein og ligand ud over hydrogen bindinger.
 
 ::: {.callout-solution}
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
 Bindingslommen er hydrofob. Der er mange C-C og få N og O interaktioner.
 :::
 
 6.  Sammenlign myoglobin fra hval (1MBN) og gris (1PMB). Brug
-    Action-menuen A \> align \> to molecule for at overlejre de to
+    Action-menuen `A > align > to molecule` for at overlejre de to
     proteiner. Gem scene. Hvor ens er de to proteiner? Kan vurderes med
     Root Mean Square Deviation (RMSD), hvilket er et mål for hvor meget
     de to protein-strukturer adskiller sig fra hinanden.
 
 ::: {.callout-solution}
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
 Meget ens. RMSD = 0.48
 :::
 
 7.  Sammenlign myoglobin (1MBN) med myoglobin, der har ilt bundet
-    (1MBO). Brug Action-menuen A \> preset \> ligands. Gem scene. Hvor
+    (1MBO). Brug Action-menuen `A > preset > ligands`. Gem scene. Hvor
     binder ilt atomet?
 
 ::: {.callout-solution}
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
+
 Binder på Fe og His.
 :::
 
-8.  Gem din session som \"2_Myoglobin.pse\" i STRBIO mappen, så du kan
+8.  Gem din session som `Myoglobin.pse` i STRBIO mappen, så du kan
     vise svarene frem senere.
 
 ::: {.callout-solution}
-PyMOL session fil: 2_Myoglobin.pse
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O2-Myoglobin.pse" filename="Myoglobin.pse" >}}
 :::
 
 
-## Ikonisk DNA og designede krystaller 
+## Opgave 3. Ikonisk DNA og designede krystaller 
 
 DNA er uden tvivl et af de smukkeste molekyler i levende celler. Dens
 yndefulde helix er behagelig for øjet. DNA er også et af de mest
@@ -270,24 +298,24 @@ grundlæggende mekanisme, hvorigennem DNA lagrer og transmitterer
 genetisk information, blev opdaget i 1950\'erne af Watson og Crick. Læs
 evt. mere [her](https://pdb101.rcsb.org/motm/23).
 
-![DNA double helix.](figures/te_02/ikonisk-dna-og-designede-krystaller-figur-1.gif){width="100%"}
+![DNA double helix.](figures/te_02/opgave-3-figur-1.gif){width="100%"}
 
-1.  Reinitialiser PyMOL med menuen File \> Reinitialize \> Everything.
-    Alternativt kan du åbne et nyt PyMOL vindue med menuen File \> New
-    Window (Default).
-
-::: {.callout-solution}
-:::
+1.  Reinitialiser PyMOL med menuen `File > Reinitialize > Everything`.
+    Alternativt kan du åbne et nyt PyMOL vindue med menuen `File > New Window (Default)`.
 
 2.  Åben DNA helix med PBD-ID 1BNA. Fjern vand. Vis DNA helix med
     spheres repræsentation. Mål afstand over major og minor groove med
     distance Wizard. Gem scene.
 
 ::: {.callout-solution}
-Se scene 001 i PyMOL session fil: 3_DNA.pse. Major groove ca. 19 Å. Minor grove ca. 11 Å.
+Se scene 001 i PyMOL session fil:
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+Major groove ca. 19 Å. Minor grove ca. 11 Å.
 :::
 
-***PyMOL info**: PyMOL er udstyret med en funktion til interaktivt at
+::: {.callout-note title="PyMOL info"}
+PyMOL er udstyret med en funktion til interaktivt at
 måle afstanden mellem to atomer i strukturen. Under fanebladet "Wizard"
 ligger værktøjet "Measurement", der tillader brugeren at finde afstanden
 mellem to atomer i 3D-strukturen blot ved at klikke på først det ene og
@@ -295,14 +323,18 @@ så det andet atom. Når der klikkes på et atom, anføres dette i logbogen
 øverst og et objekt ved navn measure## i objektoversigten til højre
 (hvor \## er nummeret på målingen). For at afslutte brugen af værktøjet
 klikkes på "Done" i nederste højre hjørne.*
+:::
 
-3.  Udvælg et basepar og gem resten med H \> unselected. Vis basepar i
-    stick-repræsentation med (sele) S \> as \> sticks. Zoom ind på det
-    med (sele) A \> zoom. Mål bredden af helix med distance Wizard. Gem
+3.  Udvælg et basepar og gem resten med `H > unselected`. Vis basepar i
+    stick-repræsentation med `(sele) S > as > sticks`. Zoom ind på det
+    med `(sele) A > zoom`. Mål bredden af helix med distance Wizard. Gem
     scene.
 
 ::: {.callout-solution}
-Se scene 003 i PyMOL session fil: 3_DNA.pse. B-form bredde ca. 17 Å.
+Se scene 003 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+B-form bredde ca. 17 Å.
 :::
 
 4.  DNA findes hovedsagelig i B-form, men optræder også i A-form (1ANA)
@@ -310,15 +342,25 @@ Se scene 003 i PyMOL session fil: 3_DNA.pse. B-form bredde ca. 17 Å.
     Wizard. Gem scene for hver.
 
 ::: {.callout-solution}
-Se scene 004 i PyMOL session fil: 3_DNA.pse. A-form bredde ca. 17.7 Å.\
-Se scene 005 i PyMOL session fil: 3_DNA.pse. Z-form bredde ca. 16.2 Å.
+Se scene 004 og 005 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+A-form bredde ca. 17.7 Å.\
+Z-form bredde ca. 16.2 Å.
 :::
 
 5.  RNA helicer findes kun i A-form. Åben tRNA-strukturen (4TNA) og mål
     bredden af helix. Gem scene. Stemmer bredden overens med A-form?
 
 ::: {.callout-solution}
-Se scene 006 i PyMOL session fil: 3_DNA.pse. A-form RNA ca. 17.9 Å.
+Se scene 006 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+A-form RNA ca. 17.9 Å.
+:::
+
+::: {.img-float}
+![Three engineered strands of DNA assemble into a triangular module (top) that self-assembles into a two-dimensional lattice (bottom).](figures/te_02/opgave-3-figur-2.jpeg){style="float: right; margin: 5px; width: 40%;"}
 :::
 
 DNA er et perfekt råmateriale til at konstruere nanoskalastrukturer. Da
@@ -336,8 +378,6 @@ fra PDB-indgang
 den første krystalstruktur i et DNA-gitter, der er fuldstændig designet
 fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
 
-![Three engineered strands of DNA assemble into atriangular module (top) that self-assembles into a two-dimensionallattice (bottom).](figures/te_02/ikonisk-dna-og-designede-krystaller-figur-2.jpeg){width="90%"}
-
 6.  Find information om 3GBI på RCSB-website (<https://www.rcsb.org/>).
     Hvilken opløsning blev den bestemt ved? Hvor mange DNA-strenge er
     der i strukturen?
@@ -347,23 +387,29 @@ fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
 :::
 
 7.  Åben DNA designer krystalstruktur (3GBI) i PyMOL. Man ser kun den
-    asymmetriske enhed. Ekspandér krystallen med objektmenuen A \>
-    generate \> symmetry mates \> within 4 A og fjern de to objekter,
+    asymmetriske enhed. Ekspandér krystallen med objektmenuen `A > generate > symmetry mates > within 4 A` 
+    og fjern de to objekter,
     der ikke er en del af DNA-trekanten. Farvelæg strengene i
-    DNA-strukturen, som vist i figuren oven for. Gem scene. Hint: Brug
-    \"Selection \> Chains\" og udvælg strenge i Display panel eller
-    Sekvens panel (vælges med SEQ knap).
+    DNA-strukturen, som vist i figuren oven for. Gem scene. 
 
-::: {.callout-solution}
-Se scene 007 i PyMOL session fil: 3_DNA.pse.
+::: {.callout-tip title="PyMOL hint"}
+Brug `Selection > Chains` og udvælg strenge i Display panel eller
+Sekvens panel (vælges med SEQ knap).
 :::
 
-8.  Ekspandér krystallen med objektmenuen A \> generate \> symmetry
-    mates \> within 100 A. Mål afstanden imellem parallelle DNA-helicer
-    i krystallen. Gem scene.
+::: {.callout-solution}
+Se scene 007 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+:::
+
+8.  Ekspandér krystallen med objektmenuen `A \> generate \> symmetry mates \> within 100 A`. 
+    Mål afstanden imellem parallelle DNA-helicer i krystallen. Gem scene.
 
 ::: {.callout-solution}
-Se scene 008 i PyMOL session fil: 3_DNA.pse. 50 Å.
+Se scene 008 i PyMOL session fil:
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+50 Å.
 :::
 
 9.  Man kan desuden designe RNA nanostrukturer. Åben RNA lattice element
@@ -372,19 +418,25 @@ Se scene 008 i PyMOL session fil: 3_DNA.pse. 50 Å.
     denne RNA-struktur dannet af?
 
 ::: {.callout-solution}
-Se scene 009 i PyMOL session fil: 3_DNA.pse. Een streng.
+Se scene 009 i PyMOL session fil:
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
+
+Een streng.
 :::
 
-10. Gem din session som \"3_DNA.pse\" i STRBIO mappen, så du kan vise
+10. Gem din session som `3_DNA.pse` i STRBIO mappen, så du kan vise
     svarene frem senere.
 
 ::: {.callout-solution}
-Se PyMOL session fil: 3_DNA.pse
+Se PyMOL session fil: 
+{{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
 :::
 
-## Insulin
+## Opgave 4. Insulin
 
-![Insulin and proinsulin, with A-chain in green, B-chain in blue and disulfide linkages in yellow.](figures/te_02/insulin-figur-1.jpeg){width="80%"}
+::: {.img-float}
+![Insulin og proinsulin, med A-kæde i grøn, B-kæde i blå og disulfid bro i gul.](figures/te_02/opgave-4-insulin-figur-1.jpeg){style="float: right; margin: 5px; width: 40%;"}
+:::
 
 Vores celler kommunikerer via et molekylært postsystem: blodet er
 postvæsenet, og hormonerne er brevene. Insulin er et af de vigtigste
@@ -397,22 +449,28 @@ fedtceller. Insulin fortæller disse organer at de skal tage glukose ud
 af blodet og lagre det i form af glykogen eller fedt. Læs evt. mere
 [her](https://pdb101.rcsb.org/motm/14).
 
-1.  Hent strukturen 4INS i PyMOL. Brug action menuen A \> remove waters.
+1.  Hent strukturen 4INS i PyMOL. Brug action menuen `A > remove waters`.
     Gem kæde C og D ved at selektere dem med \"Chains selector\" og
-    bruge (sele) H \> everything. Farv chain A cyan og chain B grøn. Gem
+    bruge `(sele) H > everything`. Farv chain A cyan og chain B grøn. Gem
     scene. Hvor mange alpha-helicer og hvor mange beta-strenge er der i
     insulin?
 
 ::: {.callout-solution}
-Se scene 001 i PyMOL session fil: 4_Insulin.pse. 3 alpha-helicer, 1 beta-streng
+Se scene 001 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+3 alpha-helicer, 1 beta-streng
 :::
 
-2.  Vis struktur som sticks via Show menuen S \> as \> sticks. Gem
+2.  Vis struktur som sticks via Show menuen `S > as > sticks`. Gem
     scene. Hvor mange svovlbroer er der i insulin? Hvor mange er
     indenfor en kæde og hvor mange er imellem kæder?
 
 ::: {.callout-solution}
-Se scene 003 i PyMOL session fil: 4_Insulin.pse. 3 = 2 mellem kæde A og B + 1 intern i kæde A.
+Se scene 003 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+3 = 2 mellem kæde A og B + 1 intern i kæde A.
 :::
 
 Når insulinfunktionen er nedsat, enten på grund af skade på
@@ -423,14 +481,17 @@ mangler i blodet med insulin fra gris eller ko, eller produceret i
 mikroorganismer.
 
 3.  Sammenlign insulin fra gris (4INS) med insulin fra menneske (2HIU).
-    Farv dem i to forskellige farver. Brug objektmenuen A \> align \> to
-    molecule for at overlejre de to proteiner. Gem scene. Har de samme
+    Farv dem i to forskellige farver. Brug objektmenuen `A > align > to molecule` 
+    for at overlejre de to proteiner. Gem scene. Har de samme
     struktur og sekvens? Hint: Brug \"SEQ\" knappen til at se de to
     sekvenser ved siden af hinanden.
 
 ::: {.callout-solution}
-Se scene 004 i PyMOL session fil: 4_Insulin.pse. Struktur er meget ens med RMSD = 0.9\
-    Sekvens er ens på nær A30T
+Se scene 004 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+Struktur er meget ens med RMSD = 0.9\
+Sekvens er ens på nær A30T
 :::
 
 Insulin lagres i bugspytkirtlen som et hexamerisk kompleks, som falder
@@ -442,11 +503,14 @@ fleste celler i menneskekroppen.
     [1trz](http://www.rcsb.org/pdb/explore/explore.do?structureId=1trz)
     af det første rekombinante humane insulin, markedsført som Humulin.
     Ekspandér krystallen og vis kun de elementer, der udgør det
-    hexameriske kompleks. Farv kæder med C \> by chain \> by chain. Gem
+    hexameriske kompleks. Farv kæder med `C > by chain > by chain`. Gem
     scene. Hvilke typer interaktioner og ioner stabiliserer hexameren?
 
 ::: {.callout-solution}
-Se scene 006 i PyMOL session fil: 4_Insulin.pse. Na og Cl ioner og protein-protein interaktioner.
+Se scene 006 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+Na og Cl ioner og protein-protein interaktioner.
 :::
 
 Insulin kan designes til at være langtids-virkende ved at stabilisere
@@ -456,33 +520,43 @@ glargine (Lantus ®). Læs mere [her](https://pdb101.rcsb.org/motm/194).
 5.  Åben strukturen af glargine
     ([4iyf](http://www.rcsb.org/pdb/explore/explore.do?structureId=4iyf))
     og undersøg hvilke aminosyrer, som er blevet ændret og hvor de
-    sidder i proteinet. Gem scene. Hint: Brug Sekvens panel og A \>
-    align \> to molecule.
+    sidder i proteinet. Gem scene. Hint: Brug Sekvens panel og 
+    `A > align > to molecule`.
 
 ::: {.callout-solution}
-Se scene 007 i PyMOL session fil: 4_Insulin.pse.\
-    N21G (C-term kæde A)\
-    T30delta (C-term deletion i kæde B)
+Se scene 007 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+N21G (C-term kæde A)\
+T30delta (C-term deletion i kæde B)
 :::
 
 6.  Åben desuden designer insulin ved navn degludec (Tresiba ®) (PDB
     entry [4ajx](http://www.rcsb.org/pdb/explore/explore.do?structureId=4ajx)).
-    Ekspandér krystallen med objektmenuen A \> generate \> symmetry
-    mates \> within 4 A og find interaktion mellem to hexamerer. Gem
+    Ekspandér krystallen med objektmenuen `A > generate > symmetry mates > within 4 A` 
+    og find interaktion mellem to hexamerer. Gem
     scene. Hvilke ligander fremmer hexamer-hexamer binding?
 
 ::: {.callout-solution}
-Se scene 009 i PyMOL session fil: 4_Insulin.pse. Hydrocarbon danner bro mellem hexamerer.
+Se scene 009 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
+
+Hydrocarbon danner bro mellem hexamerer.
 :::
 
 7.  Gem din session som \"4_Insulin.pse\" i STRBIO mappen, så du kan
     vise svarene frem senere.
 
 ::: {.callout-solution}
-Se PyMOL session fil: 4_Insulin.pse
+Se PyMOL session fil:
+{{< download-button path="../files/TE2-O4-Insulin.pse" filename="Insulin.pse" >}}
 :::
 
-## Calciumpumpen
+## Opgave 5. Calciumpumpen
+
+::: {.img-float}
+![Calcium pumpe med to bundne calcium ioner i turkis. Membranen er vist skematisk i grå.](figures/te_02/opgave-5-ca-pumpen.gif){style="float: right; margin: 5px; width: 50%;"}
+:::
 
 Calciumpumpen er en fantastisk maskine med flere bevægelige dele. Den
 findes i membranen, som vist her fra PDB-indgang
@@ -494,41 +568,49 @@ blåt) gennem membranen, og to eller tre hydrogenioner overføres tilbage
 i modsat retning. Læs evt. mere [her](https://pdb101.rcsb.org/motm/51).
 
 1.  Åben 1SU4 i PyMOL. Orientér modellen på samme måde som i figuren.
-    Farv modellen med C \> by element \> CHNOS (med C i hvid). Find
+    Farv modellen med `C > by element > CHNOS` (med C i hvid). Find
     Ca^2+^ ioner og farv dem cyan. Hint: Lettest at fjerne vand og
     dernæst finde ioner i Sekvens panel - helt til højre, udvælge dem og
     farve dem som (sele). Gem scene.
 
 ::: {.callout-solution}
-Se scene 002 i PyMOL session fil: 5_Ca-pumpen.pse.
+Se scene 002 i PyMOL session fil:
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
 :::
 
 2.  Zoom ind på Calcium kanalen, hvor to Ca ioner er bundet. Vis Ca
-    ioner som nb_spheres. Vælg A \> find \> polar contacts \> to other
-    atoms in object. Vis 1SU4 som lines. Vælg menuen Zoom \> Active
-    Selection. Gem scene. Hvilke aminosyrer binder Ca ionerne med deres
+    ioner som nb_spheres. Vælg `A > find > polar contacts > to other atoms in object`. 
+    Vis 1SU4 som lines. Vælg menuen `Zoom > Active Selection`. 
+    Gem scene. Hvilke aminosyrer binder Ca ionerne med deres
     sidekæder?
 
 ::: {.callout-solution}
-Se scene 004 i PyMOL session fil: 5_Ca-pumpen.pse. Asp, Asn, Glu, Glu, Thr, Glu, Asn
+Se scene 004 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
+
+Asp, Asn, Glu, Glu, Thr, Glu, Asn
 :::
 
 3.  Åben 1IWO i PyMOL. Denne indeholder 2 strukturer i den asymmetriske
     enhed. Slet den ene af strukturene med kommandoen: remove chain B.
-    Brug objektmenuen A \> align \> to molecule for at overlejre de to
+    Brug objektmenuen `A > align > to molecule` for at overlejre de to
     proteiner. Gem scene.
 
 ::: {.callout-solution}
-Se scene 005 i PyMOL session fil: 5_Ca-pumpen.pse.
+Se scene 005 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
 :::
 
-4.  Vis kun 1IWO. Zoom ind på Inhibitor ved brug af menuen Zoom \> Next
-    Ligand \[CTRL-L\]. Brug nu objekt-menuen (1IWO) A \> preset \>
-    ligands og beskriv hvordan denne ligand er bundet til de centrale
+4.  Vis kun 1IWO. Zoom ind på Inhibitor ved brug af menuen `Zoom > Next Ligand [CTRL-L]`. 
+    Brug nu objekt-menuen (1IWO) `A > preset > ligands` 
+    og beskriv hvordan denne ligand er bundet til de centrale
     alpha-helicer i kanalen. Gem scene.
 
 ::: {.callout-solution}
-Se scene 006 i PyMOL session fil: 5_Ca-pumpen.pse. Binder imellem alpha-helicer, men uden hydrogen bindinger.
+Se scene 006 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
+
+Binder imellem alpha-helicer, men uden hydrogen bindinger.
 :::
 
 5.  Vis både 1SU4 og 1IWO som cartoon. Farvelæg domæner i begge modeller
@@ -543,24 +625,30 @@ Se scene 006 i PyMOL session fil: 5_Ca-pumpen.pse. Binder imellem alpha-helicer,
     Gem scene.
 
 ::: {.callout-solution}
-Se scene 007 i PyMOL session fil: 5_Ca-pumpen.pse.
+Se scene 007 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
 :::
 
 6.  For at visualisere hvordan de to modeller kan bevæge sig over i
     hinanden skal vi bruge Morphing funktionen. Den findes under menuen
-    Plugin \> Morphing. For ikke at bruge for meget regnekraft på din
-    computer anbefales følgende settings: Refinement cycles = 0, Number
-    of output states = 20, Interpolation Method = Linear. Gem scene.
+    `Plugin > Morphing`. For ikke at bruge for meget regnekraft på din
+    computer anbefales følgende settings: 
+    `Refinement cycles = 0, Number of output states = 20, Interpolation Method = Linear.` 
+    Gem scene.
     Afspil Morph movie. Hvilke domæner bevæger sig mest og hvad sker der
     med de transmembrane helicer?
 
 ::: {.callout-solution}
-Se scene 008 i PyMOL session fil: 5_Ca-pumpen.pse. Gul og lilla domæne bevæger sig mest. Små bevægelser i de transmembrane.
+Se scene 008 i PyMOL session fil: 
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
+
+Gul og lilla domæne bevæger sig mest. Små bevægelser i de transmembrane.
 :::
 
-7.  Gem din session som \"5_Ca-pumpen.pse\" i STRBIO mappen, så du kan
+7.  Gem din session som `Ca-pumpen.pse` i STRBIO mappen, så du kan
     vise svarene frem senere.
 
 ::: {.callout-solution}
-PyMOL session fil: 5_Ca-pumpen.pse.cd..
+PyMOL session fil:
+{{< download-button path="../files/TE2-O5-Ca-pumpen.pse" filename="Ca-pumpen.pse" >}}
 :::

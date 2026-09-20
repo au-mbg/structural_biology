@@ -1,7 +1,7 @@
 ---
-title: "Scripting in PyMOL"
+title: "Video 4 – Scripting in PyMOL"
 sidebar: videor-sidebar
-description: Placeholder beskrivelse!
+description: Denne video giver en introduktion til scripting i PyMOL. Videoen er lavet af Johan Nygaard Vinther i 2025 med PyMOL 3.
 ---
 
 {{< video https://youtu.be/B0GI-v27OiM >}}

@@ -6,6 +6,7 @@ date: 12-1-2025
 
 ## Opgave 1
 
+
 Glucagon-like peptide-1 (GLP-1) er et peptid-hormon, der spiller en
 central rolle i at regulere appetit og metabolisme. Det binder til GLP-1
 receptor i plasmamembranen og aktiverer signaltransduktion via G

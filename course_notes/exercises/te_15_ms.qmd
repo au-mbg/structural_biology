@@ -1,243 +1,605 @@
 ---
-title: "TØ 15 -- LØ-forberedelse 2"
+title: "TØ 15 -- Massespektrometri"
 ---
 {{< pagebreak >}}
 
-## Opgave 1. RNase-assayet
+::: {.callout-note}
+I dette TØ-sæt arbejder vi med massespektrometri (MS), som er beskrevet
+i Berg, *Biochemistry*, 10. udgave, kapitel 4.3. Formålet er at forstå,
+hvad et massespektrometer egentlig måler, hvordan man regner fra et målt
+m/z til en molekylmasse, og hvordan MS bruges til at identificere og
+sekventere proteiner og til at finde de kemiske detaljer
+(modifikationer, disulfidbroer), som man ikke kan læse ud af en
+DNA-sekvens. Der forudsættes ingen forudgående erfaring med MS.
 
-I denne opgave skal vi arbejde med teorien bag det RNase-assay, der benyttes ved laboratorieøvelserne. De fleste af den slags assays er baseret på frigivelse af radioaktivt mærkede nukleotider fra et oligonukleotid (RNA eller DNA), hvilket er det mest nøjagtige og følsomme. Kløvning af RNA kan dog også måles spektrofotometrisk vha. methylenblåt, hvilket er mindre følsomt og nøjagtigt, men tilstrækkeligt til vores formål.
+Opgaverne løses med papir, lommeregner og eventuelt et gratis
+web-værktøjer:
 
-Strukturen af methylenblåt samt stoffets udseende er vist nedenfor.
+- **ExPASy PeptideMass** -- in silico-fordøjelse og peptidmasser:
+  <https://web.expasy.org/peptide_mass/>
 
-![](figures/te_15/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}            ![methylene-blue-powder-500x500](figures/te_15/opgave-1-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
+Til opgaverne skal I bruge Tabel 1 og Tabel 2 nedenfor. Bemærk
+forskellen på **[monoisotopisk masse]{.underline}** (beregnet med den
+letteste isotop af hvert grundstof, ^12^C, ^1^H, ^14^N, ^16^O) og
+**[gennemsnitlig masse]{.underline}** (vægtet efter isotopernes
+naturlige forekomst). Denne monoisotopiske og gennemsnitlige masse
+betegnes også aminosyrerestmasse når aminosyren indgår i en
+polypeptidkæde eller et protein. Denne aminosyrerestmasse er lig med den
+frie aminosyres molare masse minus massen af et fraspaltet vandmolekyle,
+fordi der afgives vand ved dannelsen af hver peptidbinding. Massen af et
+peptid (M) er derfor summen af aminosyrerestmasserne + 18.011 Da
+(H~2~O), og den ion man ser i spektret er \[M+H\]^+^ = M + 1.007 Da.
 
- 
+**Tabel 1. Aminosyrernes restmasser (Da).**
 
-### Vurder methylenblåts absorption
+  --------------------------------------------------------------------------------------
+  **Aminosyre**     **3-bogstav**   **1-bogstav**     **Monoisotopisk**   **Gennemsnit**
+  ----------------- --------------- --------------- ------------------- ----------------
+  Glycin            Gly             G                          57.02146           57.052
 
-Absorberer methylenblåt i det synlige område? Forklar baseret på stoffets kemiske struktur hvorfor/hvorfor ikke. Angiv, baseret på stoffets udseende, hvor det må forventes at absorbere.
+  Alanin            Ala             A                          71.03711           71.079
 
-### Forklar methylenblåts RNA-interaktion
+  Serin             Ser             S                          87.03203           87.078
 
-Methylenblåt interagerer kraftigt med nukleinsyrer, men kun når disse er strukturerede. Forklar hvorfor og kom med et forslag til hvordan methylenblåt interagerer med RNA.
+  Prolin            Pro             P                          97.05276           97.117
 
-Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som vist i figuren nedenfor, hvor den lille, indsatte figur viser spektre for RNA-bundet (II) og frit methylenblåt (I) og den store figur differensspektre for forskellige koncentrationer af RNA (tallene 1-8 på graferne angiver at der er tilsat mellem 0.1 og 0.8 mg/ml):
+  Valin             Val             V                          99.06841           99.133
 
-![methylenblue_absorption](figures/te_15/opgave-1-figur-3.gif){.lightbox width="90%" fig-align="center"}
+  Threonin          Thr             T                         101.04768          101.105
 
- 
+  Cystein           Cys             C                         103.00919          103.139
 
-### Beskriv absorptionsændring ved RNA
+  Leucin            Leu             L                         113.08406          113.159
 
-Hvad sker der med methyleneblåts absorption, når RNA tilsættes? De tre bølgelængder A, B og C viser hhv. methyleneblåt dimer, methyleneblåt monomer og interaktionen med RNA. Hvad sker der med stoffet når RNA tilsættes?
+  Isoleucin         Ile             I                         113.08406          113.159
 
-### Forudsig spektrumændring under assayet
+  Asparagin         Asn             N                         114.04293          114.104
 
-RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes. I starten af forsøges tilsættes methyleneblåt til intakt RNA. Hvordan vil du forvente at spektret løbende ændres efter RNase A tilsættes?
+  Aspartat          Asp             D                         115.02694          115.089
 
-### Vælg optimal målebølgelængde
+  Glutamin          Gln             Q                         128.05858          128.131
 
-Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
+  Lysin             Lys             K                         128.09496          128.174
 
-::: {.callout-solution}
+  Glutamat          Glu             E                         129.04259          129.116
 
-**1.**  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
+  Methionin         Met             M                         131.04049          131.193
 
-**2.**  Methylenblåt interagerer både via interkalation mellem baserne i strukturerede nukleinsyrer (dvs. RNA/DNA på helixform) på samme måde som ethidiumbromid samt elektrostatisk via den positive ladning, der interagerer uspecifikt med nukleinsyrer. Formentlig vil elektrostatisk interaktion være fremherskende ved lav ionstyrke, mens interkalation (hydrofob) interaktion vil være mere tydelig ved høj ionstyrke. Der findes dog ikke en højtopløst struktur af komplekset mellem methylenblåt og nukleinsyre, så der er tale om en vis spekulation. 
+  Histidin          His             H                         137.05891          137.141
 
-**3.**  Absorptionen stiger kraftigt ved C (ca. 680 nm) mens den falder ved A (600 nm). B er et såkaldt isosbektisk punkt, hvor absorptionen er konstant. Det A falder må der bliver mindre dimer, mens C stiger, hvilket betyder at monomeren (formentlig) interagerer med RNA.
+  Phenylalanin      Phe             F                         147.06841          147.177
 
-**4.**  Først vil der være en kraftig absorption omkring 680 nm, der så aftager efterhånden som RNA nedbrydes.
+  Arginin           Arg             R                         156.10111          156.188
 
-**5.**  688 nm.
+  Tyrosin           Tyr             Y                         163.06333          163.176
+
+  Tryptofan         Trp             W                         186.07931          186.213
+  --------------------------------------------------------------------------------------
+
+*H~2~O = 18.01056 (mono) / 18.015 (gns.) Da · proton (H^+^) = 1.00728 Da
+· H-atom = 1.00794 Da*
+
+**Tabel 2. Almindelige massetilvækster.**
+
+  --------------------------------------------------------------------
+  **Ændring**             **Δ masse (Da, **Typisk årsag**
+                                 mono)** 
+  ----------------------- -------------- -----------------------------
+  Fosforylering (+HPO~3~)        +79.966 PTM på Ser/Thr/Tyr
+
+  Acetylering                    +42.011 PTM, fx N-terminal eller Lys
+
+  Methylering                    +14.016 PTM på Lys/Arg
+
+  Hexose (fx                    +162.053 Glykosylering (ofte mange
+  glukose/mannose)                       enheder)
+
+  Gly-Gly-rest                  +114.043 Ubiquitineret Lys efter
+                                         trypsinkløvning
+
+  Carbamidomethyl                +57.021 Alkylering af Cys med
+                                         iodoacetamid
+
+  Oxidation af Met               +15.995 Artefakt fra prøvebehandling
+
+  Disulfidbro (pr. bro)           −2.016 Tab af 2 H ved S--S-dannelse
+
+  Tab af initiator-Met          −131.040 Proteolytisk processering
+  --------------------------------------------------------------------
 :::
 
-## Opgave 2. Støkiometriske beregninger
+## Opgave 1. Hvad måler et massespektrometer egentlig?
 
-I Eksperiment 3 under laboratorieøvelserne skal vi arbejde med hybridformen af RNase S, der dannes ved støkiometrisk blanding af S-protein og H6-Ubi-S15 S-peptidfragmentet.
+Denne opgave er en repetition af de grundlæggende begreber i Berg
+kapitel 4.3. Svar kort med egne ord.
 
-Som nævnt i LØ-vejledningens appendix er sekvenserne som følger:
+1.  Et massespektrometer består altid af tre dele: en **ionkilde**, en
+    **masseanalysator** og en **detektor**. Forklar hvad hver del gør.
 
-**H6-Ubi-S15**
+2.  Beskriv kort forskellen mellem MALDI og ESI, og angiv hvilken af de
+    to der typisk giver overvejende enkeltladede ioner.
 
-MGS[HHHHHH]{.underline}G S[QIFVKTLTG KTITLEVEPS DTIENVKAKI QDKEGIPPDQ QRLIFAGKQL EDGRTLSDYN IQKESTLHLV LRLRGG]{.underline}SM[KE TAAAKFERQH LDS]{.underline}
+3.  Et massespektrometer måler ikke masse, men forholdet m/z
+    (mass-to-charge). Peptidet TLSDYNIQK har den monoisotopiske masse M
+    = 1080.55 Da. Beregn m/z for \[M+H\]^+^ og \[M+2H\]^2+^ ionerne der
+    detekteres i MS.
 
-hvor sekvensen på blå baggrund er His-tagget, sekvensen på gul baggrund er ubiquitin og sekvensen på lyserød baggrund er S-peptidfragmentet 1-15.
-
-**S-protein**
-
-SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS KYPNCAYKTT QANKHIIVAC EGNPYVPVHF DASV 
-
-### Beregn molekylære masser med ProtParam
-
-Beregn de præcise molekylære masser af H6-Ubi-S15 og S-proteinet, f.eks. vha. ProtParam-serveren.
-
-### Beregn mængde H6-Ubi-S15 til blanding
-
-I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes for at danne et hybrid RNase S-enzym. Her starter man med 10 μl af en opløsning af S-protein, der er 5 mg/ml. Omregn denne værdi til en molær koncentration og beregn herefter hvor meget H6-Ubi-S15, der skal tilsættes fra en opløsning, der også er 5 mg/ml for at proteinerne er tilstede i et 1:1 molært forhold. Dette resultat skal bruges under LØ.
-
-### Beregn endelig koncentration af RNase S
-
-Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
+4.  I en TOF-analysator accelereres ionerne gennem en fast
+    spændingsforskel U og flyver derefter en strækning L uden felt. Ud
+    fra energibetragtningen zeU = ½mv² er flyvetiden i TOF analysatoren
+    betegnet som: t = L·√(m/(2zeU)), altså at flyvetiden (t) er
+    proportional med √(m/z) (kvadratroden af m/z)\
+    \
+    To peptider med samme ladning (+1) har masserne 1000 Da og 4000 Da.
+    Hvor mange gange længere tid er det tunge peptid om at nå
+    detektoren?
 
 ::: {.callout-solution}
+1.  **Ionkilden** omdanner analytten til ioner i gasfase -- det er det
+    svære trin for store, ikke-flygtige molekyler. **Masseanalysatoren**
+    adskiller ionerne efter deres masse-ladningsforhold m/z; i en
+    TOF-analysator sker det ved at måle, hvor lang tid ionen er om at
+    flyve gennem et rør. **Detektoren** registrerer, hvornår og hvor
+    mange ioner der ankommer, og omsætter det til et spektrum med
+    intensitet som funktion af m/z.
 
-**1.**  H6-Ubi-S15: 11607.11 Da\
-    S-protein: 11541.96 Da
+2.  Proteiner er store, polære, ikke-flygtige og termolabile -- de går i
+    stykker, længe før de fordamper. Løsningen er \"blød\" ionisering:
 
-**2.**  S-protein:\
-    5 mg/ml = 5 g/L\
-    5 g/L / 11541.96 g/mol = 0.000433 mol/L = 0.43 mM\
-    \
-    H6-Ubi-S15\
-    5 g/L / 11607.11 g/mol = 0.000431 mol/L = 0.43 mM\
-    \
-    Da koncentrationerne er næsten ens, skal vi altså tilsætte samme volumen H6-Ubi-S15 (10 μl) for at opnå 1:1 molært forhold.
+    a.  **MALDI**: prøven tørres ind sammen med et stort overskud af en
+        lille, aromatisk matrix, der absorberer laserlys. En laserpuls
+        fordamper matrixen eksplosivt og river analytten med op i
+        gasfasen, hvorefter protoner overføres ved kollisioner. Giver
+        overvejende enkeltladede ioner, \[M+H\]^+^ (jf. Berg Fig. 4.24).
 
-**3.**  Da vi har blandet 10 μl S-protein med samme volumen H6-Ubi-S15 er koncentrationen af S-protein (= aktive sites) altså halveret\
-    Dvs. \[S-protein\] = 0.215 mM.\
-    \
-    S-protein har sekvensen:\
-    [KE TAAAKFERQH LDS ]{.underline}SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS KYPNCAYKTT QANKHIIVAC EGNPYVPVHF DASV\
-    \
-    hvor den understregede del er S15 og resten er S-proteinet.\
-    Den molære masse af det samlede RNase S er derfor 13254.84 Da\
-    \
-    Den molære koncentration svarer altså til 0.215 mmol/L \* 13254.83 g/mol = 2.87 g/L = **2.87 mg/mL**
+    b.  **ESI**: prøveopløsningen sprøjtes ud af en nål på høj spænding
+        som en tåge af ladede dråber. Opløsningsmidlet fordamper,
+        dråberne skrumper og deler sig, og til sidst står de nøgne,
+        multiprotonerede ioner tilbage -- deraf giver de resulterede
+        ioner under ESI en hel **ladningsserie** \[M+nH\]^n+^ i forhold
+        til MALDI som kun giver \[M+H\]^+^
+
+3.  \[M+H\]^+^ = (1080.55 + 1.007)/1 = **1081.56**. \[M+2H\]^2+^ =
+    (1080.55 + 2·1.007)/2 = 1082.56/2 = **541.28**. Bemærk at den
+    dobbeltladede ion optræder ved ca. den halve m/z -- ikke ved den
+    halve masse.
+
+4.  Ved samme z er t ∝ √m, så t~2~/t~1~ = √(4000/1000) = √4 = **2**. Det
+    tunge peptid er dobbelt så lang tid undervejs. (Bemærk: forholdet
+    mellem tiderne er kvadratroden af masseforholdet, ikke
+    masseforholdet selv.)
 :::
 
-## Opgave 3. Øvelse i fortyndingsrækker
+## Opgave 2. Ladningsserier -- fra m/z til molekylmasse
 
-I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige prøver, både proteinprøver og andre opløsninger. Derfor er det vigtigt at I har helt styr på hvordan man opstiller fortyndingsrækker samt i praksis hvordan man blander opløsningerne.
+Et oprenset protein analyseres ved ESI-MS, og spektret viser den række
+toppe, der er gengivet i Tabel 3. Det er en lignende situation, som Berg
+beskriver for β-lactoglobulin i Fig. 4.24, hvor toppene ved m/z 18364
+(+1) og m/z 9183 (+2) hører til det samme molekyle.
 
-### Omregn enheder for enzymkoncentration
+**Tabel 3. Toppe i ESI-spektret af det ukendte protein.**
 
-De fleste enzymopløsninger leveres med en koncentration på 5 mg/mL ("stock-opløsningen"). Hvad er dette i μg/μL og ng/μL?
+  ---------------------------------------------------------------------------
+  **Top**        **A**      **B**      **C**      **D**      **E**      **F**
+  --------- ---------- ---------- ---------- ---------- ---------- ----------
+  m/z          1131.11    1211.83    1304.97    1413.63    1542.05    1696.16
 
-### Beregn molær koncentration af RNase A
+  ---------------------------------------------------------------------------
 
-Hvad er den molære koncentration af en opløsning af nativt bovine RNase A, der er 5 mg/mL? Hint: Sekvensen for bovine RNase A kan findes i LØ-manualens appendix.
+1.  Forklar, hvorfor ét og samme protein giver anledning til flere toppe
+    i et ESI-spektrum. Hvorfor bliver afstanden mellem nabotoppene
+    mindre, jo længere mod venstre (lavere m/z værdier) man kommer?
 
-### Beregn nødvendig fortyndingsfaktor
+2.  Kald m/z for to nabotoppe m~1~ (den letteste af de to) og m~2~. Hvis
+    m~2~ svarer til ladningen n, må m~1~ svare til n+1. Opstil de to
+    udtryk for M og vis, at n = (m~1~ − 1.008)/(m~2~ − m~1~).
 
-I laboratorieøvelsen giver det praktisk mening at arbejde med en koncentration af RNase A på 1 ng/μL. Hvor mange gange skal stock-opløsningen fortyndes for at nå denne koncentration?
+3.  Brug formlen på toppene D og E og bestem n samt proteinets masse M.
 
-### Beskriv praktisk fortyndingsprocedure
-
-Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 100 μL RNase A ved 5 mg/mL samt 5 mL buffer, der er magen til den buffer, enzymet er opløst i, samt 10 mL rent vand. Efter fortyndingen skal enzymet være ved samme bufferbetingelser som før fortyndingen. Til rådighed har du 1.5 mL Eppendorfrør og Pipetman P2, P10, P200 og P1000. Beskriv hvordan du i praksis vil udføre fortyndingen af enzymet inden forsøget, herunder hvilket pipetter der skal bruges og hvordan de skal indstilles.
-
-### Overvej alternativer til fortyndingen
-
-Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
+4.  Bestem ladningstallet for alle seks toppe og beregn M ud fra hver
+    enkelt top. Hvad er gennemsnittet? Hvorfor er det ifølge Berg en
+    fordel at have mange toppe?
 
 ::: {.callout-solution}
+1.  Under ESI protoneres proteinet på sine basiske grupper (Lys, Arg,
+    His og N-terminalen) i varierende grad. Der dannes derfor en familie
+    af ioner \[M+nH\]^n+^ med **samme masse, men forskellig ladning**.
+    Da spektrometret adskiller efter m/z og ikke efter m, får hver
+    ladningstilstand sin egen top: m/z = M/n + 1.008. Afstanden mellem
+    to nabotoppe er M/n − M/(n+1) = M/(n(n+1)), som falder hurtigt når n
+    vokser. Høje ladninger ligger ved lav m/z, og derfor \"klumper\"
+    serien sig sammen mod venstre i spektret.
 
-**1.**  5 μg/μL og 5000 ng/μL
+2.  m~1~ = (M + (n+1)·1.008)/(n+1) ⇒ M = (n+1)(m~1~ − 1.008). m~2~ =
+    (M + n·1.008)/n ⇒ M = n(m~2~ − 1.008). Sæt lig hinanden: (n+1)(m~1~
+    − 1.008) = n(m~2~ − 1.008) ⇒ n·m~1~ + m~1~ − 1.008n − 1.008 = n·m~2~
+    − 1.008n ⇒ m~1~ − 1.008 = n(m~2~ − m~1~) ⇒ n = (m~1~ − 1.008)/(m~2~
+    − m~1~).
 
-**2.**  5 mg/mL = 5 g/L\
-    5 g/L / 13700 g/mol = 0.000364 M = 364 μM
+3.  n = (1413.63 − 1.008)/(1542.05 − 1413.63) = 1412.62/128.42 = 11.00.
+    Top E er altså 11+ og top D er 12+. M = 11 · (1542.05 − 1.008) = 11
+    · 1541.04 = **16951.5 Da**.
 
-**3.**  5000 gange
+4.  Ladningerne løber fra 10+ (F) til 15+ (A):
 
-**4.**  Dette virker:\
-    10 μL (5 mg/mL) + 490 μL buffer -> 0.1 mg/mL = 100 μg/mL\
-    10 μL (100 μg/μL) + 990 μL buffer ->  1 μg/mL\
-    \
-    Dette virker også:\
-    10 μL (5 mg/mL) + 990 μL buffer -> 0.05 mg/mL = 50 μg/mL\
-    10 μL (50 μg/μL) + 490 μL buffer -> 1 μg/mL\
-    \
-    Dette virker ikke:\
-    1 μL (5 mg/mL) + 4999 μL buffer -> 0.001 mg/mL = 1 μg/mL
+    --------------------------------------------------------
+    **Top**   **m/z**       **n**     **M = n(m/z − 1.008)**
+    --------- ------------- --------- ----------------------
+    A         1131.11       15+       16951.5
 
-**5.**  Se ovenfor.
+    B         1211.83       14+       16951.5
+
+    C         1304.97       13+       16951.5
+
+    D         1413.63       12+       16951.5
+
+    E         1542.05       11+       16951.5
+
+    F         1696.16       10+       16951.5
+    --------------------------------------------------------
+
+    Gennemsnittet er 16951.5 Da. Hver top er en **uafhængig måling af den
+    samme masse**, så gennemsnittet af de seks reducerer den tilfældige
+    måleusikkerhed -- præcis den pointe Berg gør: de mange toppe er ikke
+    et irritationsmoment, men en gratis gentagelse af eksperimentet.
+    Samtidig er det en indbygget kontrol: hvis én top gav en anden masse,
+    ville det afsløre enten en forkert tildelt ladning eller en ekstra
+    komponent i prøven.
+
 :::
 
-## Opgave 4. Opsætning af dataark til LØ
+## Opgave 3. Peptide mass fingerprinting -- hvilket protein er det?
 
-I denne opgave skal vi opstille et eksperimentelt dataark i Excel til brug i LØ. I skal bruge dette ark til indsamling og behandling af data under laboratoriekurset.
+I et co-immunopræcipitationsforsøg (Berg afsnit 4.2) med jeres
+yndlingsprotein dukker der et uventet bånd op på gelen ved ca. 8 kDa. I
+skærer båndet ud, fordøjer det i gelen med trypsin og kører peptiderne
+på en MALDI-TOF. Resultatet er peak-listen i Tabel 5.
 
-### Opret og gem Excel-workbook
+Databasesøgningen af MALDI fingerprint eksperiment for det ukendte
+protein peger på protein sekvensen i Tabel 4, og den skal I nu selv
+kontrollere.
 
-Åbn en ny workbook i Excel og gem den med et beskrivende navn, f.eks. "LØ data analysis.xlsx".
+**Tabel 4. Sekvensen af kandidatproteinet (76 rester).**
 
-### Opstil tabel til absorptionsmålinger
+> MQIFVKTLTG KTITLEVEPS DTIENVKAKI QDKEGIPPDQ QRLIFAGKQL
+>
+> EDGRTLSDYN IQKESTLHLV LRLRGG
 
-Opstil nu en tabel på første faneblad, der har plads til 10 absorptionsmålepunkter (nedad) for hver af 10 prøver med stigende enzymkoncentration (henad). Første søjle skal angive tidsintervallerne for de 10 målepunkter, der er 0, 5, 10\...60 sekunder og for hver prøve skal man kunne angive enzymets koncentration øverst.
+**Tabel 5. Målte toppe, \[M+H\]^+^ (monoisotopisk).**
 
-### Importér LØ-data til Excel
+  --------------------------------------------------------------------
+  **Nr.**        **m/z** **Nr.**        **m/z** **Nr.**        **m/z**
+  --------- ------------ --------- ------------ --------- ------------
+  1               503.28 5               765.43 9              1081.55
 
-Download dataark for LØ, som findes under denne uge i Brightspace. Kolonnerne i excelfilen er tilsvarende koncentrationerne 0, 5, 10, 20, 30, 40, 50, 60, 80, 100 ng tilsat RNase. Kopiér absorptionsmålingerne ind i din egen excelfil for at have noget at arbejde med under opbygningen af Excel-arket:
+  2               519.31 6               842.51 10             1265.74
 
-### Opret grafer for absorptionsdata
+  3               648.41 7              1039.52 11             1787.93
 
-Opret nu en graf for hver af de 10 prøver, der viser absorptionen som funktion af tiden i sekunder. Hint: Brug command (Mac) eller CTRL-knappen (PC) til at vælge både x- og y-akseværdier på. Er graferne lineære? Hvad indikerer det? Hvordan er udviklingen i grafernes hældning når enzymkoncentrationen stiger? Kommentér.
+  4               717.35 8              1067.62 12             2211.10
+  --------------------------------------------------------------------
 
-### Beregn hældninger med LINEST-funktion
+1.  Trypsin kløver på carboxylsiden af Lys (K) og Arg (R) -- men
+    **ikke**, hvis den næste rest er prolin. Klip ovenstående
+    proteinsekvens op i hånden og skriv alle teoretisk forventede
+    peptider op med deres positionsnumre. Hvor mange bliver der? Er der
+    nogen K-P- eller R-P-steder?
 
-Brug nu Excel-funktionen LINEST (LINREGR på dansk Excel) til at beregne hældningen for bedste rette linje for hver enzymkoncentration. Brug Excels hjælpefunktion samt internettet til at finde ud af hvordan funktionen bruges. Hældningerne skal stå i rækken under sidste målepunkt for hver enzymkoncentration. Hvordan udvikler hældningerne sig med højere enzymkoncentration? Er det forventeligt og hvorfor/hvorfor ikke? Hvad er enheden for disse hældninger?
+2.  Beregn massen af peptidet LIFAGK i hånden ud fra Tabel 1. Husk at
+    addere H20, og husk, at spektret viser \[M+H\]^+^. Kontrollér
+    resultatet med ExPASy PeptideMass.
 
-### Opret standardkurve i Excel
+3.  Beregn \[M+H\]^+^ for alle de ovenævnte peptider (vælg
+    monoisotopiske masser). Benyt evt ExPASy PeptideMass til at Matche
+    dem mod Tabel 5.
 
-Opret nu en standardkurve ved at plotte hældningen for hver enzymkoncentration som funktion af enzymkoncentrationen (antal ng enzym tilsat). Kommentér på grafen. Er den lineær og i givet fald i hvilket område? Hvad ville du vælge som konfidensinterval for måling af enzymaktivitet, hvis dette var din målte standardkurve?
+4.  Tre af de forventede peptider optræder slet ikke i spektret. Hvilke
+    -- og hvorfor ikke?
 
-### Ryd testdata til forsøget
+5.  Toppene ved 842.51 og 2211.10 stammer ikke fra jeres protein. Hvad
+    kommer de så fra, og kan man bruge dem til noget?
 
-Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standardkurven. Disse vil blive erstattet med dine egne værdier i forsøgets eksperiment 1.
+6.  Beregn sekvensdækningen: hvor stor en andel af de 76 rester er
+    dækket af de matchede peptider?
 
-### Planlæg behandling af ukendte prøver
+7.  Hvorfor virker peptide mass fingerprinting kun, hvis organismens
+    genom er sekventeret? Hvad ville I gøre, hvis proteinet kom fra en
+    organisme uden sekventeret genom?
 
-Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
+8.  Hvilket protein er det? Hvorfor er det især interessant at finde
+    netop dette protein i en co-immunopræcipitation?
 
 ::: {.callout-solution}
+1.  Der er 11 kløvningssteder (K6, K11, K27, K29, K33, R42, K48, R54,
+    K63, R72, R74) og ingen K-P- eller R-P-sekvenser, så alle 11 kløves.
+    Det giver **12 peptider**:
 
-Intet svar angivet.
+    -------------------------------------------------------------------------------------------
+    **Position**   **Peptid**         **\[M+H\]^+^   **Position**   **Peptid**   **\[M+H\]^+^
+                                      (mono)**                                   (mono)**
+    -------------- ------------------ -------------- -------------- ------------ --------------
+    1--6           MQIFVK             765.43         43--48         LIFAGK       648.41
+
+    7--11          TLTGK              519.31         49--54         QLEDGR       717.35
+
+    12--27         TITLEVEPSDTIENVK   1787.93        55--63         TLSDYNIQK    1081.55
+
+    28--29         AK                 218.15         64--72         ESTLHLVLR    1067.62
+
+    30--33         IQDK               503.28         73--74         LR           288.20
+
+    34--42         EGIPPDQQR          1039.52        75--76         GG           133.06
+    -------------------------------------------------------------------------------------------
+
+2.  L 113.084 + I 113.084 + F 147.068 + A 71.037 + G 57.021 + K 128.095
+    = 629.390 Da. Læg vand til: 629.390 + 18.011 = **647.40 Da** (den
+    neutrale peptidmasse M). Ionen er \[M+H\]^+^ = 647.40 + 1.007 =
+    **648.41**, dvs. top nr. 3.
+
+3.  Ni af de tolv peptider genfindes: 765.43, 519.31, 1787.93, 503.28,
+    1039.52, 648.41, 717.35, 1081.55 og 1067.62 (se tabellen ovenfor).
+
+4.  AK (218.15), LR (288.20) og GG (133.06). De er simpelthen for korte:
+    de ligger under det m/z-område, man normalt registrerer (typisk fra
+    ca. 500-700 og opefter, hvor matrix-ionerne holder op med at
+    dominere spektret), de bindes dårligt og vaskes væk under
+    afsaltningen inden analysen, og de ioniserer ineffektivt. Det gør
+    ikke noget: så korte sekvenser er alligevel ikke unikke og ville
+    ikke bidrage til identifikationen. Det er en generel og vigtig
+    pointe -- man ser **aldrig** alle peptider fra et protein.
+
+5.  Det er de klassiske **autolyseprodukter fra trypsin selv** --
+    trypsin er en protease og fordøjer sine egne artsfæller. De to toppe
+    er så forudsigelige, at man i praksis bruger dem som intern
+    kalibrering af massekalen i hvert enkelt spektrum. Den anden
+    notoriske forurening er keratin fra hud, hår og støv, som man undgår
+    med handsker og rene reagenser.
+
+6.  De matchede peptider dækker 1--6, 7--11, 12--27, 30--33, 34--42,
+    43--48, 49--54, 55--63 og 64--72, i alt 6+5+16+4+9+6+6+9+9 = 70
+    rester. Dækningen er 70/76 = **92 %**, hvilket er usædvanligt højt
+    og gør identifikationen meget sikker. I praksis er 20--40 % typisk.
+
+7.  Fingerprinting går ud på at sammenligne den målte liste af masser
+    med **teoretiske** peptidmasser, der er beregnet ud fra alle kendte
+    proteinsekvenser -- og de sekvenser kommer fra genomet (Berg:
+    \"sammenlignet med aminosyresekvenser udledt af gærgenomet\"). Uden
+    database er der ikke noget at matche imod: en masse alene fortæller
+    ikke hvilken sekvens den kommer fra, for mange forskellige sekvenser
+    har samme masse. For en organisme uden sekventeret genom må man i
+    stedet lave **de novo-sekventering med MS/MS** (opgave 4) og
+    derefter søge med den aflæste sekvens (BLAST) mod beslægtede arter
+    -- eller sekventere genomet først.
+
+8.  Det er **ubiquitin** (76 rester, gennemsnitsmasse 8564.8 Da,
+    monoisotopisk 8559.6 Da). Fundet er interessant, fordi det ofte
+    betyder, at jeres protein er **ubiquitineret** -- enten som mærkning
+    til nedbrydning i proteasomet eller som en regulatorisk
+    modifikation. Bemærk også, at co-immunopræcipitation netop er den
+    situation, Berg bruger som motivation for MS: man fisker en uventet
+    partner op, og uden MS ville man kun kunne identificere den, hvis
+    man i forvejen havde et antistof mod den. Vi vender tilbage til
+    ubiquitin i opgave 5.
 :::
 
-## Opgave 5. Flowchart til LØ
+## Opgave 4. De novo-sekventering med tandem-MS
 
-Dette er en åben opgave, der tjener til forberedelse til LØ. For hvert eksperiment i LØ-vejledningen skal du tegne et flowchart, der angiver hvilke trin, der skal gennemføres og i hvilken rækkefølge samt hvilke resultater, der kommer ud. Husk at angive parallelle forsøg i dit flowchart.
+Toppen ved m/z 1081.55 fra opgave 3 vælges ud under MS analyse til
+peptid sekventering via MS/MS, og sendes derved ind i et
+kollisionskammer med argon og fragmenteres. Masserne på petid
+fragmenterne måles efterfølgende. Det er princippet beskrevet i Berg
+Fig. 4.26.
 
-### Tegn flowchart for Eksperiment 1
+Peptidbindingen brækker fortrinsvis mellem carbonyl-C og amid-N. Hvis
+det **C-terminale** fragment ladningen beholder ladningen (H^+^) (og
+dermed muligheden for detektion i MS), kaldes ionen en **y-ion**;
+beholder det **N-terminale** fragment ladningen, kaldes den en
+**b-ion**. y-ionerne vist i Tabel 6 er dem som bliver målt, og svarer
+pricipielt til dem Berg viser i sin figur 4.26b.
 
-Eksperiment 1 - Måling af standardkurve
+**Tabel 6. Observerede y-ioner (m/z) ved fragmentering af precursoren
+1081.55.**
 
-### Tegn flowchart for Eksperiment 2
+  ---------------------------------------------------------------------------------------------------
+  **y-ion**     **y~1~**   **y~2~**   **y~3~**   **y~4~**   **y~5~**   **y~6~**   **y~7~**   **y~8~**
+  ----------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------
+  m/z             147.11     275.17     388.26     502.30     665.36     780.39     867.42     980.51
 
-Eksperiment 2 - Delvis proteolyse af RNase A
+  ---------------------------------------------------------------------------------------------------
 
-### Tegn flowchart for Eksperiment 3
+1.  Forklar med egne ord, hvad en **precursor-ion** og en
+    **product-ion** er.
 
-Eksperiment 3 - Aktivitet af RNase S og varianter
+2.  Beregn differencerne mellem nabotoppene i serien, slå dem op i Tabel
+    1 og læs ud fra dette sekvensen af det analyserede peptid. Pas på
+    med retningen: y-ioner vokser fra C-terminalen og mod N-terminal.
 
-### Tegn flowchart for Eksperiment 4
+3.  Den mindste ion i serien er 147.11. Hvilken aminosyre svarer den
+    til, og hvorfor er det lige præcis den, man forventer som y~1~ i et
+    tryptisk peptid? Hvad ville y~1~ være, hvis peptidet endte på Arg?
 
-Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-protein vha. immobiliseret H6-Ubi-S15
+4.  To af resterne har massen 113.084. Hvorfor kan massespektrometri
+    principielt ikke afgøre, om det er Leu eller Ile?
 
-### Tegn flowchart for Eksperiment 5
+5.  Sammenlign jeres aflæste sekvens med resultatet fra opgave 3. Passer
+    det?
 
-Eksperiment 5 - Kemisk krydsbinding af RNase S
+::: {.callout-solution}
+1.  **Precursor-ionen** er den intakte peptid-ion, som den første
+    masseanalysator vælger ud af blandingen -- den fungerer altså som et
+    massefilter. Ionen ledes ind i et kollisionskammer og støder sammen
+    med atomer af en inert gas (He, Ar eller N~2~); støddene omsættes
+    til indre energi, og peptidet knækker på peptidbindingerne. De
+    resulterende fragmenter er **product-ioner**, og de måles i den
+    anden masseanalysator.
+
+2.  Differencerne læses direkte som restmasser:
+
+    ------------------------------------------------------------------------
+    **Differens**   **Δ      **Rest**    **Differens**   **Δ      **Rest**
+                    (Da)**                               (Da)**   
+    --------------- -------- ----------- --------------- -------- ----------
+    y~2~ − y~1~     128.06   Gln (Q)     y~6~ − y~5~     115.03   Asp (D)
+
+    y~3~ − y~2~     113.08   Leu/Ile     y~7~ − y~6~     87.03    Ser (S)
+
+    y~4~ − y~3~     114.04   Asn (N)     y~8~ − y~7~     113.08   Leu/Ile
+
+    y~5~ − y~4~     163.06   Tyr (Y)     MH^+^ − y~8~    101.05   Thr (T)
+    ------------------------------------------------------------------------
+
+    y~1~ er C-terminalen, så resterne læses her fra C mod N: K, Q, L/I, N,
+    Y, D, S, L/I, T. Vendt om giver det sekvensen fra N til C:
+    **T-L-S-D-Y-N-I-Q-K**, altså TLSDYNIQK.
+
+3.  y~1~ = restmassen + H~2~O + H^+^ = 128.095 + 18.011 + 1.007 = 147.11
+    → **Lys**. Det er den forventede C-terminale rest, fordi trypsin per
+    definition kløver **efter** K og R -- alle tryptiske peptider
+    (bortset fra proteinets egen C-terminal) ender derfor på K eller R.
+    Hvis peptidet endte på Arg, ville y~1~ være 156.101 + 18.011 + 1.007
+    = 175.12. De to værdier 147.11 og 175.12 er så karakteristiske, at
+    man kan bruge dem til at genkende tryptiske MS/MS-spektre.
+
+4.  Leu og Ile er strukturisomerer: de har nøjagtig samme
+    atomsammensætning (C~6~H~11~NO) og dermed nøjagtig samme masse.
+    Ingen massespektrometer kan skelne dem via masse, uanset hvor høj
+    opløsning den har. Man afgør spørgsmålet ud fra
+    genomsekvensen/databasen, eller med særlige fragmenteringsteknikker
+    (ETD/EThcD eller høj-energi-fragmentering, der giver w- og d-ioner
+    fra sidekæderne -- dette ligger uden for pensum).
+
+5.  Ja. TLSDYNIQK er rest 55--63 i ubiquitin, og \[M+H\]^+^ = 1081.55
+    svarer til top nr. 9 i Tabel 5. Bemærk styrken ved kombinationen:
+    fingerprinting alene giver et statistisk match mod en database, mens
+    MS/MS leverer en faktisk **sekvens**, der kan bruges uden database.
+:::
+
+## Opgave 5. Når den målte masse ikke passer med genet
+
+Berg gør et vigtigt forbehold: den aminosyresekvens man udleder af en
+DNA-sekvens, er sekvensen af det *nascente* protein -- ikke nødvendigvis
+af det modne. I denne opgave bruger vi MS til at finde forskellen. Alle
+massetilvækster findes i Tabel 2; de forventes ikke at være kendt
+udenad.
+
+I udtrykker protein X både i *E. coli* og i humane HEK293-celler. Ud fra
+gensekvensen beregnes en gennemsnitlig masse på 24530.0 Da. Målingerne
+på intakt protein (ESI-MS) er samlet i Tabel 7.
+
+**Tabel 7. Målt masse af intakt protein X under forskellige
+betingelser.**
+
+  --------------------------------------------------------------------
+  **Prøve**   **Kilde og behandling**                     **Målt masse
+                                                                (Da)**
+  ----------- ---------------------------------------- ---------------
+  A           *E. coli*, ubehandlet                            24530.0
+
+  B           HEK293, ubehandlet                               24526.0
+
+  C           HEK293, reduceret med DTT                        24530.0
+
+  D           HEK293, reduceret med DTT + iodoacetamid         24758.1
+
+  E           HEK293 stimuleret med vækstfaktor,               24605.9
+              ubehandlet                               
+  --------------------------------------------------------------------
+
+1.  Nævn tre generelle grunde til, at den målte masse af et modent
+    protein kan afvige fra den masse man beregner ud fra genet.
+
+2.  Forklar hvad der kan skyldes masseforskellene af de fem målinger
+    A--E beskrevet i tabel 7. Brug hertil info fra Tabel 2.
+
+3.  Hvorfor bruger man DTT og iodoacetamid i prøveforberedelsen -- og
+    hvorfor er alkyleringstrinnet nødvendigt (jf. Berg Fig. 4.28)?
+
+4.  Målingerne fortæller, at der er to disulfidbroer, men ikke
+    **hvilke** cysteiner der er parret. Beskriv en MS-strategi, der kan
+    bestemme forbindelserne (disulfide mapping). Hvorfor er den
+    oplysning interessant strukturbiologisk?
 
 ::: {.callout-solution}
 
-Få inspiration fra LØ-vejledningens side 7:
+1.  \(i\) **Proteolytisk processering**: fjernelse af
+    initiator-methionin, kløvning af signalpeptid, trimning af
+    propeptider -- Berg nævner netop, at nogle proteiner \"får trimmet
+    enderne\". (ii) **Posttranslationelle modifikationer**:
+    fosforylering, acetylering, methylering, glykosylering,
+    ubiquitinering osv. (iii) **Disulfidbroer**: hver S--S koster to
+    brintatomer, altså −2.016 Da. Hertil kommer i praksis (iv)
+    artefakter fra prøvebehandlingen (Met-oxidation,
+    carbamidomethylering) og (v) rester af affinitets-tags fra
+    ekspressionskonstruktet.
 
-Time Plan\
-Day 1: Brief instructions followed by Experiments 1-2
+2.  Målingerne skal tolkes sådan:
 
-Experiment 1: Determination of a dose-response curve and linearity range of the ribonuclease assay.
+    a.  **A = 24530.0**: præcis den beregnede masse. Cytoplasmaet i *E.
+        coli* er reducerende, så alle cysteiner er frie SH-grupper, og
+        der er ingen modifikationer. Det er referencemålingen.
 
-Experiment 2: Limited proteolysis of RNase A with subtilisin.
+    b.  **B = 24526.0**: 24530.0 − 4.03 = 2 × (−2.016). Der er dannet
+        **to disulfidbroer** i den sekretoriske vej i pattedyrcellen.
 
-The instructors recommend that you start Experiment 1, then get started on Experiment 2 as soon as possible. Use some time to get to get familiar with the measurements performed in Experiment 1, but be aware that during Experiment 2 it will take at least an hour before all your samples are ready for activity measurements.
+    c.  **C = 24530.0**: DTT har reduceret de to S--S til fire frie
+        SH-grupper; massen stiger med 4 H og passer igen med den
+        beregnede masse. Det bekræfter, at forskellen i B skyldtes
+        disulfidbroer og ikke en modifikation.
 
-Day 2: Brief instructions followed by Experiments 3-5
+    d.  **D = 24758.1**: 24530.0 + 228.1 = 4 × 57.021. Iodoacetamid har
+        alkyleret **fire** cysteiner. Antallet af alkyleringer tæller
+        altså direkte antallet af frie SH-grupper og bekræfter
+        uafhængigt, at der var fire cysteiner i to broer.
 
-Experiment 3: Determination of the activity of RNase S and several hybrid RNase S types.
+    e.  **E = 24605.9**: skal sammenlignes med B (den disulfidbundne
+        form), ikke med den beregnede masse: 24605.9 − 24526.0 = 79.97 =
+        **én fosforylering**. Vækstfaktoren har aktiveret en kinase, der
+        fosforylerer protein X. Bemærk at man kun kan se, at der er
+        præcis én -- ikke hvor den sidder.
 
-Experiment 4: Isolation of H6-Ubi-S15 fusion protein and demonstration of purification by interaction with S protein on Ni-NTA.
+3.  DTT (eller β-mercaptoethanol) reducerer disulfidbroerne, så
+    polypeptidkæderne kan skilles ad, og proteasen kan komme til hele
+    kæden. Uden alkylering ville de frie cysteiner reoxidere under
+    prøvebehandlingen og danne nye -- og typisk forkerte --
+    disulfidbroer, som ville give uforklarlige toppe i spektret.
+    Iodoacetamid (eller iodoeddikesyre, som Berg bruger i Fig. 4.28)
+    blokerer SH-grupperne irreversibelt som stabile carbamidomethyl-
+    henholdsvis S-carboxymethyl-derivater. En praktisk bonus er, at
+    modifikationen er en kendt, fast massetilvækst (+57.021), som man
+    angiver som \"fixed modification\" i databasesøgningen -- ellers
+    matcher ingen af de cystein-holdige peptider.
 
-Experiment 5: Chemical cross-linking of hybrid S protein.
+4.  Strategien er at fordøje proteinet **uden** at reducere det, og køre
+    samme fordøjelse med og uden reduktion:
 
-The instructors recommend: As you will be busy doing three separate experiments on day 2, you should start out by focusing on Experiment 4, as collecting samples for SDS-PAGE from the columns will be the bottleneck for completing all experiments. While the columns are running, you should also start the crosslinking reactions for Experiment 5, as these also produce samples to go onto the gel. Finally, initiate Experiment 3 when the crosslinking is running, as you will have time to measure the activities of the complexes while your SDS-PAGE gel is running.
+    a.  Fordøj det ikke-reducerede protein med trypsin ved svagt sur pH
+        (ca. 6.5), så man undgår disulfid-ombytning under selve
+        forsøget.
+
+    b.  To peptider, der stadig hænger sammen via en S--S, optræder som
+        **ét** ion med en masse svarende til summen af de to
+        peptidmasser minus 2.016 Da. Man leder altså efter toppe, der
+        ikke passer med nogen enkelt peptidsekvens, men med en sum af
+        to.
+
+    c.  Kør en parallel prøve, der reduceres inden LC-MS. De
+        \"sammensatte\" toppe forsvinder og erstattes af de to
+        enkeltpeptider -- det identificerer parret entydigt.
+
+    d.  Bekræft med MS/MS af den ikke-reducerede art, eventuelt med ETD,
+        der spalter S--S-bindingen selektivt og dermed direkte frigiver
+        de to peptider inde i instrumentet.
+
+    Strukturbiologisk er svaret værdifuldt af to grunde. For det første er
+    disulfidbroer kovalente krydsbindinger, der låser tertiær- og
+    kvaternærstrukturen fast og bidrager stærkt til stabiliteten; et
+    forkert broemønster betyder et fejlfoldet protein, hvilket er en
+    rutinekontrol for fx terapeutiske antistoffer. For det andet er hvert
+    par en **direkte afstandsbetingelse**: to cysteiner, der danner en
+    bro, har Sγ--Sγ ≈ 2.05 Å og skal altså ligge lige op ad hinanden i
+    strukturen. Det er nøjagtig samme logik som i crosslinking-MS (XL-MS),
+    hvor man med kemiske krydsbindere indfører kunstige
+    afstandsbetingelser og bruger dem til at bygge eller validere
+    strukturmodeller.
+
 :::

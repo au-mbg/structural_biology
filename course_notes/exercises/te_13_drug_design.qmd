@@ -1,243 +1,218 @@
 ---
-title: "TØ 13 -- LØ-forberedelse 2"
+title: "TØ 13 -- Drug design"
 ---
 {{< pagebreak >}}
 
-## Opgave 1. RNase-assayet
+## Opgave 1. 
 
-I denne opgave skal vi arbejde med teorien bag det RNase-assay, der benyttes ved laboratorieøvelserne. De fleste af den slags assays er baseret på frigivelse af radioaktivt mærkede nukleotider fra et oligonukleotid (RNA eller DNA), hvilket er det mest nøjagtige og følsomme. Kløvning af RNA kan dog også måles spektrofotometrisk vha. methylenblåt, hvilket er mindre følsomt og nøjagtigt, men tilstrækkeligt til vores formål.
-
-Strukturen af methylenblåt samt stoffets udseende er vist nedenfor.
-
-![](figures/te_13/opgave-1-figur-1.png){.lightbox width="90%" fig-align="center"}            ![methylene-blue-powder-500x500](figures/te_13/opgave-1-figur-2.jpeg){.lightbox width="90%" fig-align="center"}
-
- 
-
-### Vurder methylenblåts absorption
-
-Absorberer methylenblåt i det synlige område? Forklar baseret på stoffets kemiske struktur hvorfor/hvorfor ikke. Angiv, baseret på stoffets udseende, hvor det må forventes at absorbere.
-
-### Forklar methylenblåts RNA-interaktion
-
-Methylenblåt interagerer kraftigt med nukleinsyrer, men kun når disse er strukturerede. Forklar hvorfor og kom med et forslag til hvordan methylenblåt interagerer med RNA.
-
-Methylenblåts absorptionsspektrum ændres markant når det binder til RNA, som vist i figuren nedenfor, hvor den lille, indsatte figur viser spektre for RNA-bundet (II) og frit methylenblåt (I) og den store figur differensspektre for forskellige koncentrationer af RNA (tallene 1-8 på graferne angiver at der er tilsat mellem 0.1 og 0.8 mg/ml):
-
-![methylenblue_absorption](figures/te_13/opgave-1-figur-3.gif){.lightbox width="90%" fig-align="center"}
-
- 
-
-### Beskriv absorptionsændring ved RNA
-
-Hvad sker der med methyleneblåts absorption, når RNA tilsættes? De tre bølgelængder A, B og C viser hhv. methyleneblåt dimer, methyleneblåt monomer og interaktionen med RNA. Hvad sker der med stoffet når RNA tilsættes?
-
-### Forudsig spektrumændring under assayet
-
-RNase-assayet er baseret på måling af ændring i absorption når RNA nedbrydes. I starten af forsøges tilsættes methyleneblåt til intakt RNA. Hvordan vil du forvente at spektret løbende ændres efter RNase A tilsættes?
-
-### Vælg optimal målebølgelængde
-
-Hvilken bølgelænge ville du vælge til mest præcis måling af absorptionsændringen? Notér dit svar, da det skal bruges til indstilling af spektrofotometret under LØ.
+Udfra Berg 10, figur 32.3, foreslå en strategi til at udvikle et antibiotikum der
+virker på et tidligere stadium i cellevægssyntesen end penicillin og
+diskutér hvor godt den måtte virke.
 
 ::: {.callout-solution}
-
-**1.**  Ja, da stoffet er farvet må det naturligvis absorbere i det synlige område. Dette skyldes den konjugerede, heteroaromatiske ringstruktur. Stoffet er blåt og det blå lys ligger ved 300-500 nm i det synlige spektrum (300-800 nm). Derfor må det transmitere 300-400 nm og altså absorbere bølgelængder over dette, i området 500-800 nm.
-
-**2.**  Methylenblåt interagerer både via interkalation mellem baserne i strukturerede nukleinsyrer (dvs. RNA/DNA på helixform) på samme måde som ethidiumbromid samt elektrostatisk via den positive ladning, der interagerer uspecifikt med nukleinsyrer. Formentlig vil elektrostatisk interaktion være fremherskende ved lav ionstyrke, mens interkalation (hydrofob) interaktion vil være mere tydelig ved høj ionstyrke. Der findes dog ikke en højtopløst struktur af komplekset mellem methylenblåt og nukleinsyre, så der er tale om en vis spekulation. 
-
-**3.**  Absorptionen stiger kraftigt ved C (ca. 680 nm) mens den falder ved A (600 nm). B er et såkaldt isosbektisk punkt, hvor absorptionen er konstant. Det A falder må der bliver mindre dimer, mens C stiger, hvilket betyder at monomeren (formentlig) interagerer med RNA.
-
-**4.**  Først vil der være en kraftig absorption omkring 680 nm, der så aftager efterhånden som RNA nedbrydes.
-
-**5.**  688 nm.
+Penicillin hæmmer transpeptidasen der kobler D-Ala til den
+voksende cellevæg. Hvis man inhiberer syntesen af D-Ala, fjerner man
+substratet for cellevægsdannelse. Enzymet alanine racemase laver D-Ala
+fra L-Ala og dens inhibering (ved cycloserin) bruges som antibiotika
+("second line of defence") mod tuberkulose.
 :::
 
-## Opgave 2. Støkiometriske beregninger
+## Opgave 2. 
 
-I Eksperiment 3 under laboratorieøvelserne skal vi arbejde med hybridformen af RNase S, der dannes ved støkiometrisk blanding af S-protein og H6-Ubi-S15 S-peptidfragmentet.
+For følgende 5 stoffer angives log(P). Bestem om de overholder Lipinski's regler.
 
-Som nævnt i LØ-vejledningens appendix er sekvenserne som følger:
+  -------------------------------------------------------------------------------------------------------------------------------
+  Navn            Struktur                                                                Log    Mwt   \#          \#
+                                                                                          (P)          H-donorer   H-acceptorer
+  --------------- ----------------------------------------------------------------------- ------ ----- ----------- --------------
+  Atorvastatin    ![](figures/te_13/opgave-2-1n.png){width="100%"}                        4.1    558   4           6
+  (4.1)                                                                              
 
-**H6-Ubi-S15**
+  Acetaminophen   ![](figures/te_13/opgave-2-2n.png){width="50%"}                         0.5    151   2           2
+  (0.5)                                                                               
 
-MGS[HHHHHH]{.underline}G S[QIFVKTLTG KTITLEVEPS DTIENVKAKI QDKEGIPPDQ QRLIFAGKQL EDGRTLSDYN IQKESTLHLV LRLRGG]{.underline}SM[KE TAAAKFERQH LDS]{.underline}
+  Ibuprofen (3.5) ![](figures/te_13/opgave-2-3n.png){width="80%"}                         3.5    206   1           2
 
-hvor sekvensen på blå baggrund er His-tagget, sekvensen på gul baggrund er ubiquitin og sekvensen på lyserød baggrund er S-peptidfragmentet 1-15.
+  Sorbitol (-3.1) ![](figures/te_13/opgave-2-4n.png){width="60%"}                         -3.1   182   6           6
 
-**S-protein**
-
-SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS KYPNCAYKTT QANKHIIVAC EGNPYVPVHF DASV 
-
-### Beregn molekylære masser med ProtParam
-
-Beregn de præcise molekylære masser af H6-Ubi-S15 og S-proteinet, f.eks. vha. ProtParam-serveren.
-
-### Beregn mængde H6-Ubi-S15 til blanding
-
-I eksperiment 3 skal ækvimolære mængder af S-protein og H6-Ubi-S15 blandes for at danne et hybrid RNase S-enzym. Her starter man med 10 μl af en opløsning af S-protein, der er 5 mg/ml. Omregn denne værdi til en molær koncentration og beregn herefter hvor meget H6-Ubi-S15, der skal tilsættes fra en opløsning, der også er 5 mg/ml for at proteinerne er tilstede i et 1:1 molært forhold. Dette resultat skal bruges under LØ.
-
-### Beregn endelig koncentration af RNase S
-
-Beregn endelige molære koncentration af RNase aktive sites i opløsningen (dvs. den endelige molære koncentration af S-proteinet efter blanding med H6-Ubi-S15) og regn dette tilbage til en tilsvarende koncentration i mg/ml havde det været ren RNase S. I din beregning skal RNase S regnes til at bestå af S-protein + S-peptidfragmentet 1-15. På denne måde kan vi lave en fortynding af hybrid RNase S-enzymet så det kan sammenlignes med ren RNase S.
+  Methotrexate    ![](figures/te_13/opgave-2-5n.png){width="100%"}                        -1.8   454   5           12
+  (-1.8)                                  
+  -------------------------------------------------------------------------------------------------------------------------------
 
 ::: {.callout-solution}
-
-**1.**  H6-Ubi-S15: 11607.11 Da\
-    S-protein: 11541.96 Da
-
-**2.**  S-protein:\
-    5 mg/ml = 5 g/L\
-    5 g/L / 11541.96 g/mol = 0.000433 mol/L = 0.43 mM\
-    \
-    H6-Ubi-S15\
-    5 g/L / 11607.11 g/mol = 0.000431 mol/L = 0.43 mM\
-    \
-    Da koncentrationerne er næsten ens, skal vi altså tilsætte samme volumen H6-Ubi-S15 (10 μl) for at opnå 1:1 molært forhold.
-
-**3.**  Da vi har blandet 10 μl S-protein med samme volumen H6-Ubi-S15 er koncentrationen af S-protein (= aktive sites) altså halveret\
-    Dvs. \[S-protein\] = 0.215 mM.\
-    \
-    S-protein har sekvensen:\
-    [KE TAAAKFERQH LDS ]{.underline}SSSNYCNQMM KSRNLTKDRC KPVNTFVHES LADVQAVCSQ KNVACKNGQT NCYQSYSTMS ITDCRETGSS KYPNCAYKTT QANKHIIVAC EGNPYVPVHF DASV\
-    \
-    hvor den understregede del er S15 og resten er S-proteinet.\
-    Den molære masse af det samlede RNase S er derfor 13254.84 Da\
-    \
-    Den molære koncentration svarer altså til 0.215 mmol/L \* 13254.83 g/mol = 2.87 g/L = **2.87 mg/mL**
+Lipinski: log(P) \<5, mwt \< 500 Da, \# H-donors \< 5, \#
+H-acceptors \< 10. Kun acetacetaminophen og ibuprofen overholder dette.
 :::
 
-## Opgave 3. Øvelse i fortyndingsrækker
+## Opgave 3. 
 
-I laboratoriet er der meget ofte brug for at udregne fortyndinger af forskellige prøver, både proteinprøver og andre opløsninger. Derfor er det vigtigt at I har helt styr på hvordan man opstiller fortyndingsrækker samt i praksis hvordan man blander opløsningerne.
+Stoffet XYZ hæmmer et bakteriums DNA polymerase. Vi tester XYZ's
+molekylære effektivitet ved at måle enzymets aktivitet ved forskellige
+XYZ-koncentrationer og en DNA-koncentration svarende til substratets
+K~M~. Desuden beregner vi dets biologiske effektivitet ved at måle hvor
+mange bakteriekolonier dannes ved forskellige XYZ-koncentrationer.
 
-### Omregn enheder for enzymkoncentration
+1.  Beregn XYZ's K~I~ værdi overfor proteasen og dens IC~50~ overfor
+    bakterien udfra følgende tabel.
 
-De fleste enzymopløsninger leveres med en koncentration på 5 mg/mL ("stock-opløsningen"). Hvad er dette i μg/μL og ng/μL?
+2.  Kommenter forskellen mellem de to værdier.
 
-### Beregn molær koncentration af RNase A
+3.  Rotter behandles med en dosis på 30 mg/kg, hvilket giver en
+    XYZ-koncentration på ca. 0.5 µM. Forventes det at være en effektiv
+    koncentration?
 
-Hvad er den molære koncentration af en opløsning af nativt bovine RNase A, der er 5 mg/mL? Hint: Sekvensen for bovine RNase A kan findes i LØ-manualens appendix.
-
-### Beregn nødvendig fortyndingsfaktor
-
-I laboratorieøvelsen giver det praktisk mening at arbejde med en koncentration af RNase A på 1 ng/μL. Hvor mange gange skal stock-opløsningen fortyndes for at nå denne koncentration?
-
-### Beskriv praktisk fortyndingsprocedure
-
-Du skal bruge 1 mL RNase A ved 1 ng/μL til dit forsøg. Til rådighed har du 100 μL RNase A ved 5 mg/mL samt 5 mL buffer, der er magen til den buffer, enzymet er opløst i, samt 10 mL rent vand. Efter fortyndingen skal enzymet være ved samme bufferbetingelser som før fortyndingen. Til rådighed har du 1.5 mL Eppendorfrør og Pipetman P2, P10, P200 og P1000. Beskriv hvordan du i praksis vil udføre fortyndingen af enzymet inden forsøget, herunder hvilket pipetter der skal bruges og hvordan de skal indstilles.
-
-### Overvej alternativer til fortyndingen
-
-Overvej om der er andre måder at foretage fortyndingen på, der minimerer usikkerheden.
++-------------+-------------+---------+--------------+
+| \[XYZ\](nM) | Enzym       | \[XYZ\] | Antal        |
+|             | aktivitet   |         | kolonier     |
+|             |             | (nM)    |              |
+|             | (µM^-1^     |         | (relative    |
+|             | s^-1^)      |         | enheder)     |
++:===========:+:===========:+:=======:+:============:+
+| 0           | 150.00      | 0       | 379.00       |
++-------------+-------------+---------+--------------+
+| 1           | 125.00      | 10      | 284.25       |
++-------------+-------------+---------+--------------+
+| 2           | 107.14      | 20      | 227.40       |
++-------------+-------------+---------+--------------+
+| 4           | 83.333      | 40      | 162.43       |
++-------------+-------------+---------+--------------+
+| 6           | 68.182      | 60      | 126.33       |
++-------------+-------------+---------+--------------+
+| 10          | 50.000      | 100     | 87.462       |
++-------------+-------------+---------+--------------+
+| 20          | 30.000      | 200     | 49.435       |
++-------------+-------------+---------+--------------+
 
 ::: {.callout-solution}
+1.  Det gælder at IC~50~=K~I~\*(1+\[S\]/K~M~). Da \[S\] = K~M~ ⬄ K~I~ =
+    IC~50~/2. For enzym aktiviteten, aflæses IC~50~ fra grafen til at
+    være omkring en aktivitet på 75 enheder, altså ca. 5 nM, hvilket
+    giver K~I~ = 2.5 nM. For bakteriehæmningen, aflæses IC~50~ (værdien
+    omkring 190 a.u. kolonier; a.u. = arbitrary units) til omkring 30
+    nM, altså 6 gange højere end den rene enzym aktivitet.\
+    ![](figures/te_13/opgave-3.png){width="100%"}
 
-**1.**  5 μg/μL og 5000 ng/μL
+2.  En højere IC~50~ værdi er forventelig i et levende system da XYZ kan
+    binde til andre biomolekyler end polymerasen.
 
-**2.**  5 mg/mL = 5 g/L\
-    5 g/L / 13700 g/mol = 0.000364 M = 364 μM
-
-**3.**  5000 gange
-
-**4.**  Dette virker:\
-    10 μL (5 mg/mL) + 490 μL buffer -> 0.1 mg/mL = 100 μg/mL\
-    10 μL (100 μg/μL) + 990 μL buffer ->  1 μg/mL\
-    \
-    Dette virker også:\
-    10 μL (5 mg/mL) + 990 μL buffer -> 0.05 mg/mL = 50 μg/mL\
-    10 μL (50 μg/μL) + 490 μL buffer -> 1 μg/mL\
-    \
-    Dette virker ikke:\
-    1 μL (5 mg/mL) + 4999 μL buffer -> 0.001 mg/mL = 1 μg/mL
-
-**5.**  Se ovenfor.
+3.  Ja, 500 nM er ca. 13 gange IC~50~ så det skulle holde bakterierne
+    nede effektivt.
 :::
 
-## Opgave 4. Opsætning af dataark til LØ
+## Opgave 4. 
 
-I denne opgave skal vi opstille et eksperimentelt dataark i Excel til brug i LØ. I skal bruge dette ark til indsamling og behandling af data under laboratoriekurset.
-
-### Opret og gem Excel-workbook
-
-Åbn en ny workbook i Excel og gem den med et beskrivende navn, f.eks. "LØ data analysis.xlsx".
-
-### Opstil tabel til absorptionsmålinger
-
-Opstil nu en tabel på første faneblad, der har plads til 10 absorptionsmålepunkter (nedad) for hver af 10 prøver med stigende enzymkoncentration (henad). Første søjle skal angive tidsintervallerne for de 10 målepunkter, der er 0, 5, 10\...60 sekunder og for hver prøve skal man kunne angive enzymets koncentration øverst.
-
-### Importér LØ-data til Excel
-
-Download dataark for LØ, som findes under denne uge i Brightspace. Kolonnerne i excelfilen er tilsvarende koncentrationerne 0, 5, 10, 20, 30, 40, 50, 60, 80, 100 ng tilsat RNase. Kopiér absorptionsmålingerne ind i din egen excelfil for at have noget at arbejde med under opbygningen af Excel-arket:
-
-### Opret grafer for absorptionsdata
-
-Opret nu en graf for hver af de 10 prøver, der viser absorptionen som funktion af tiden i sekunder. Hint: Brug command (Mac) eller CTRL-knappen (PC) til at vælge både x- og y-akseværdier på. Er graferne lineære? Hvad indikerer det? Hvordan er udviklingen i grafernes hældning når enzymkoncentrationen stiger? Kommentér.
-
-### Beregn hældninger med LINEST-funktion
-
-Brug nu Excel-funktionen LINEST (LINREGR på dansk Excel) til at beregne hældningen for bedste rette linje for hver enzymkoncentration. Brug Excels hjælpefunktion samt internettet til at finde ud af hvordan funktionen bruges. Hældningerne skal stå i rækken under sidste målepunkt for hver enzymkoncentration. Hvordan udvikler hældningerne sig med højere enzymkoncentration? Er det forventeligt og hvorfor/hvorfor ikke? Hvad er enheden for disse hældninger?
-
-### Opret standardkurve i Excel
-
-Opret nu en standardkurve ved at plotte hældningen for hver enzymkoncentration som funktion af enzymkoncentrationen (antal ng enzym tilsat). Kommentér på grafen. Er den lineær og i givet fald i hvilket område? Hvad ville du vælge som konfidensinterval for måling af enzymaktivitet, hvis dette var din målte standardkurve?
-
-### Ryd testdata til forsøget
-
-Forbered til sidst Excel-workbook'en til LØ ved at slette testdata for standardkurven. Disse vil blive erstattet med dine egne værdier i forsøgets eksperiment 1.
-
-### Planlæg behandling af ukendte prøver
-
-Tænk slutteligt over hvordan du vil behandle data fra de ukendte prøver under forsøget. Se Appendix A i LØ-vejledningen for nogle tips til databehandling. Det kan f.eks. være en god idé at oprette ekstra tabeller til måling af de forskellige, ukendte prøver under forsøg 2-5. Studér LØ-vejledningen og opret de påkrævede tabeller. Måske kan du også finde en smart måde at aflæse den tilsvarende mængde RNase A fra standardkurven udfra hældningerne fra de ukendte prøver\...?
+Du undersøger et antal forskellige stoffer for deres evne til at hæmme
+et bestemt enzyms nedbrydning af et bestemt substrat for hvilket K~M~ =
+76 nM. I første omgang har du masser af substrat og kører derfor dine
+assays ved 1 µM substrat, hvilket giver et bestemt sæt IC~50~ værdier.
+For at validere dine resultater, vil du gentage dine forsøg men bliver
+nødt til at begrænse dig til 100 nM da du ikke har meget substrat
+tilbage. Til din ærgrelse finder du at det nye sæt IC~50~ værdier er ca.
+6 gange lavere. Har du grund til at være vred?
 
 ::: {.callout-solution}
-
-Intet svar angivet.
+Nej! Eftersom IC~50~=K~I~\*(1+\[S\]/K~M~), gælder at ved hhv. 1000
+og 100 nM substrat er IC~50~/K~I~ hhv. 14.1 og 2.3, dvs. det er en
+simpel konsekvens af Cheng-Prusoff ligningen.
 :::
 
-## Opgave 5. Flowchart til LØ
+## Opgave 5. 
 
-Dette er en åben opgave, der tjener til forberedelse til LØ. For hvert eksperiment i LØ-vejledningen skal du tegne et flowchart, der angiver hvilke trin, der skal gennemføres og i hvilken rækkefølge samt hvilke resultater, der kommer ud. Husk at angive parallelle forsøg i dit flowchart.
+Denne opgave fokuserer på effekten af PEGylering på halveringstiden af
+et rekombinant protein
 
-### Tegn flowchart for Eksperiment 1
+En medicinalvirksomhed er ved at udvikle et rekombinant terapeutisk
+protein. Det umodificerede protein fjernes hurtigt fra blodbanen.
+Forskerne kobler derfor kæder af **polyethylenglycol (PEG)** kovalent
+til proteinet for at øge dets cirkulerende halveringstid. Følgende data
+blev opnået for forskellige varianter af proteinet:
 
-Eksperiment 1 - Måling af standardkurve
+  --------------------------------------------------------------------
+  **Protein**   **Antal      **Molekylmasse af hver  **Halveringstid
+                PEGkæder**   PEG-kæde (kDa)**        (timer)**
+  ------------- ------------ ----------------------- -----------------
+  A             0            --                      3,7
 
-### Tegn flowchart for Eksperiment 2
+  B             1            10                      8,3
 
-Eksperiment 2 - Delvis proteolyse af RNase A
+  C             1            20                      15,6
 
-### Tegn flowchart for Eksperiment 3
+  D             1            40                      29,8
 
-Eksperiment 3 - Aktivitet af RNase S og varianter
+  E             2            10                      13,9
 
-### Tegn flowchart for Eksperiment 4
+  F             2            20                      27,4
+  --------------------------------------------------------------------
 
-Eksperiment 4 - Oprensning af H6-Ubi-S15 fra crude extract samt oprensning af S-protein vha. immobiliseret H6-Ubi-S15
+Antag, at eliminationen af proteinet følger **førsteordenskinetik**.
 
-### Tegn flowchart for Eksperiment 5
+1.  Med hvilken faktor øges proteinets halveringstid, når der kobles én
+    20-kDa PEG-kæde til proteinet sammenlignet med det umodificerede
+    protein?
 
-Eksperiment 5 - Kemisk krydsbinding af RNase S
+2.  Sammenlign proteinerne B, C og D. Hvilken sammenhæng antyder dataene
+    mellem PEG-kædens længde og proteinets halveringstid?
+
+3.  Sammenlign proteinerne B og E. Hvilken effekt har det på
+    halveringstiden at øge antallet af 10-kDa PEG-kæder fra én til to?
+
+4.  Umiddelbart efter injektion er plasmakoncentrationen af protein A
+    **76 µg/mL**. Beregn plasmakoncentrationen efter **12 timer**.
+
+5.  Protein F administreres med den samme initiale plasmakoncentration
+    på **76 µg/mL**. Beregn plasmakoncentrationen efter **24 timer**.
+
+6.  Der kræves en plasmakoncentration på mindst **9,5 µg/mL** for at
+    opnå en terapeutisk effekt. Hvor længe vil henholdsvis protein A og
+    protein F have en plasmakoncentration på mindst 9,5 µg/mL?
+
+7.  Forklar kort, hvorfor PEGylering kan øge den cirkulerende
+    halveringstid af et rekombinant protein.
 
 ::: {.callout-solution}
+> Det vides at $C_{t} = C_{0}(½)^{\frac{t}{t_{½}}}$ hvor *C* er
+> koncentration og *t* er tiden.
 
-Få inspiration fra LØ-vejledningens side 7:
+1.  PEGylering med én 20-kDa PEG-kæde øger halveringstiden med cirka 4,2
+    gange.
 
-Time Plan\
-Day 1: Brief instructions followed by Experiments 1-2
+2.  Halveringstiden stiger, når PEG-kædens størrelse øges. Sammenhængen
+    er omtrent proportional med kædestørrelsen. Større PEG-kæder øger
+    proteinets hydrodynamiske størrelse og dermed reducerer clearance,
+    blandt andet via nyrerne.
 
-Experiment 1: Determination of a dose-response curve and linearity range of the ribonuclease assay.
+3.  To PEG-kæder giver en cirka 1,7 gange længere halveringstid end én
+    PEG-kæde af samme størrelse. Det er værd at bemærke, at
+    halveringstiden ikke fordobles. Effekten af PEGylering behøver
+    derfor ikke være lineær.
 
-Experiment 2: Limited proteolysis of RNase A with subtilisin.
+4.  For protein A er plasmakoncentrationen efter 12 timer cirka 8,0
+    µg/mL.
 
-The instructors recommend that you start Experiment 1, then get started on Experiment 2 as soon as possible. Use some time to get to get familiar with the measurements performed in Experiment 1, but be aware that during Experiment 2 it will take at least an hour before all your samples are ready for activity measurements.
+5.  For protein F er plasmakoncentrationen efter 24 timer cirka 41,4
+    µg/mL.\
+    \
+    Det illustrerer tydeligt effekten af PEGyleringen: selv efter et
+    døgn er mere end halvdelen af den oprindelige koncentration af
+    protein F tilbage.
 
-Day 2: Brief instructions followed by Experiments 3-5
+6.  Den terapeutiske minimumskoncentration er 9,5 µg/mL.
+    Startkoncentrationen er 76 µg/mL. Der skal altså gå præcis tre
+    halveringstider, før koncentrationen falder til 9,5 µg/mL.\
+    \
+    Protein A ligger derfor på eller over den terapeutiske koncentration
+    i cirka 11,1 timer, mens Protein F ligger derfor på eller over den
+    terapeutiske koncentration i cirka 82,2 timer, svarende til cirka
+    3,4 døgn.
 
-Experiment 3: Determination of the activity of RNase S and several hybrid RNase S types.
-
-Experiment 4: Isolation of H6-Ubi-S15 fusion protein and demonstration of purification by interaction with S protein on Ni-NTA.
-
-Experiment 5: Chemical cross-linking of hybrid S protein.
-
-The instructors recommend: As you will be busy doing three separate experiments on day 2, you should start out by focusing on Experiment 4, as collecting samples for SDS-PAGE from the columns will be the bottleneck for completing all experiments. While the columns are running, you should also start the crosslinking reactions for Experiment 5, as these also produce samples to go onto the gel. Finally, initiate Experiment 3 when the crosslinking is running, as you will have time to measure the activities of the complexes while your SDS-PAGE gel is running.
+7.  PEGylering kan forlænge et proteins halveringstid af flere årsager.
+    PEG-kæderne øger proteinets hydrodynamiske størrelse, hvilket kan
+    mindske filtration og udskillelse gennem nyrerne. PEG kan samtidig
+    delvist beskytte proteinets overflade mod proteolytiske enzymer og
+    mod andre mekanismer, der bidrager til clearance. Resultatet er, at
+    proteinet fjernes langsommere fra blodbanen, og dets cirkulerende
+    halveringstid bliver længere. En vigtig farmakologisk konsekvens er,
+    at et PEGyleret protein potentielt kan doseres sjældnere, samtidig
+    med at den terapeutiske plasmakoncentration opretholdes i længere
+    tid.
 :::

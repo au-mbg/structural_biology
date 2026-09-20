@@ -1,9 +1,7 @@
 ---
-title: "Python scripts in PyMOL"
+title: "Video 7 – PyMOL API"
 sidebar: videor-sidebar
-description: Placeholder beskrivelse!
+description: Denne video giver en introduktion til PyMOLs API. Videoen er lavet af Johan Nygaard Vinther i 2021 med PyMOL 2.
 ---
 
-{{< video https://youtu.be/zwNvj0VhjIU >}}
-
-
+{{< video https://youtu.be/AdexmH262bY >}}

@@ -15,12 +15,14 @@ subunits*.
 de associerede subunits Rrp44 og Rrp6 i mennesker, herunder hvilke dele
 af komplekset, der er aktive i nedbrydning af RNA.
 
+::: {.callout-solution}
 Ringstrukturen består af RNase PH-domæner, der dog er inaktive i
 mennesker. Disse organiserer resten af strukturen, herunder
 cap-strukturen, der indeholder flere RNA-bindende proteiner samt Rrp44
 og Rrp6, der er de aktive subunits. Rrp44 indeholder både endo- og
 exo-nukleaseaktivitet, mens Rrp6 kun indeholder 3\'-5\'
 exonukleaseaktivitet.
+:::
 
 I archaea består den centrale ringstruktur af blot to forskellige
 proteiner, *Rrp41* og *Rrp42*. Brug fetch-funktionen i PyMOL til at
@@ -29,25 +31,15 @@ RNA (fetch 4BA2). Opret herefter objekter for Rrp41 og RNA og vis
 nærliggende aminosyresidekæder med følgende kommandoer:
 
 create rrp41, chain B
-
 create RNA, chain R
-
 create rrp41_resi, (byres RNA around 3.5 and rrp41)
-
 center RNA
-
 orient RNA
-
 hide all
-
 show cartoon, rrp41
-
 show sticks, rrp41_resi or RNA
-
 color forest, rrp41
-
 color skyblue, RNA
-
 util.cnc rrp41 or RNA
 
 Start med at undersøge protein-RNA interaktionen.
@@ -57,17 +49,21 @@ genkendelsen af RNA? Hvilken del af RNA-molekylet genkendes (baser,
 sukkergrupper eller phosphatgrupper) og hvad betyder dette for exosomets
 evne til at nedbryde RNA-molekyler med varierende sekvens?
 
+::: {.callout-solution}
 To basiske argininsidekæder, der kun interagerer med phosphat-backbone.
 Hermed er exosomet ikke sekvensspecifikt og vil kunne nedbryde alle
 typer sekvenser.
+:::
 
 **Spørgsmål 3.** I hvilken retning vil du forvente at exosomet nedbryder
 RNA (5\'→3\' eller 3\'→5\')? Identificér i strukturen hvilken ende af
 RNA\'et, der ligger inde i det aktive site. Passer dette med det
 forventede? Forklar dit svar.
 
+::: {.callout-solution}
 3\'-enden findes inde i enzymets aktive site, så retningen er 3\'-5\'.
 Det stemmer overens.
+:::
 
 Rrp41 benytter en *phosphorolytisk* reaktionsmekanisme til kløvning af
 RNA, hvor en phosphat-ion aktiveres til at foretage et nukleofilt angreb
@@ -79,9 +75,11 @@ indeholder både RNA samt den angribende phosphat-ion.
 atomer må være involverede i det nukleofile angreb under reaktionen for
 at der kan produceres et 5\'-diphosphatnukleotid?
 
+::: {.callout-solution}
 Det er det ene iltatom bundet til phosphatgruppen, der foretager et
 nukleofilt angreb på phosphoratomet mellem de to sidste nukleotider.
 Hermed dannes det 5\'-diphosphatnukleotid, der frigives.
+:::
 
 ## Opgave 2
 
@@ -89,10 +87,12 @@ Hermed dannes det 5\'-diphosphatnukleotid, der frigives.
 aminosyrerester i serinproteasens katalytisk triade under kløvning af et
 peptid.
 
+::: {.callout-solution}
 Serine foretager det nukleofile angreb på peptidbindingens
 carbonylcarbon. Serine aktiveres af histidine, der fungerer som en
 generel base ved at abstrahere -OH protonen fra Ser. Histidins baseevne
 forbedres af den nærliggende Asp, der forøger pKa.
+:::
 
 Man ønsker at undersøge en serinproteases aktivitet ved brug af et
 kromogent substrat (tilsvarende LØ), hvor produktet har en
@@ -108,11 +108,13 @@ antagelse at substrat-koncentrationen er konstant under de givne
 betingelser? Det kan antages at koncentrationen er konstant indtil den
 er faldet til 95% af den originale værdi.
 
+::: {.callout-solution}
 Forsøget udføres ved mættende betingelser da \[substrat\]\>\>K~M~.
 Derfor forløber reaktionen ved Vmax = kcat\*\[enzym\] = 50 s-1 \* 1 nM =
 50 nM/s. Vi antager at reaktionshastigheden er konstant indtil
 \[substrat\]= 0.95 mM, dvs. at der er forbrugt 0.05 mM substrat, og
 reaktion vil derfor være konstant i: t = 0.05e-3 M / 50e-9 M/s = 1000 s
+:::
 
 Absorbansen måles med et spektrofotometer med en lysvej på 1 cm, der kan
 måle præcise absorbanser fra 0,05 til 1,5.
@@ -122,11 +124,13 @@ længste reaktionstid beregnet ovenfor? Bliver lineariteten af den målte
 absorbans først begrænset af substrat-koncentrationen eller af
 spektrofotometeret?
 
+::: {.callout-solution}
 Absorbansen af 0.05 mM produkt: A = 67000 M-1cm-1 \* 1 cm \* 0.05e-3 M =
 3.35
 
 Vi vil altså forvente at lineariteten først begrænses af
 spektrofotometeret.
+:::
 
 Efterfølgende oprensede man et muteret enzym fra en patient og målte
 dannelsen af produkt fra 1 nM enzym ved forskellige
@@ -135,8 +139,10 @@ tabel i vedhæftede fil.
 
 **Spørgsmål 4.** Bestem K~M~ og k~cat~ for mutanten.
 
+::: {.callout-solution}
 K~M~ = 8.9\*10^-4^ M, k~cat~ = 8.9\*10^5^ 1/s (se vedhæftede svar i
 Excel)
+:::
 
 ## Opgave 3
 
@@ -156,21 +162,27 @@ de hydrolytiske produkter, *galactose*, er blevet bestemt ved pH 7.6:
 **Spørgsmål 1.** Hvilket foldningsmotiv ses i hydrolasens katalytiske
 domæne?
 
+::: {.callout-solution}
 TIM barrel
+:::
 
 **Spørgsmål 2.** Angiv hvilke sidekæder der indgår i genkendelsen af O3
 og O6 i galactose.
 
+::: {.callout-solution}
 O3 vekselvirker med R197, H393, O6 vekselvirker med S568, W600
+:::
 
 **Spørgsmål 3.** Beskriv i det omfang det er muligt hydrogenbindingerne
 mellem galactose og aminosyreresterne R197, H393, N478 og W600 med
 hensyn til ladninger, donor- og acceptoratomer.
 
+::: {.callout-solution}
 Da strukturen er løst ved pH 7.6, er R197 protoneret og bærer en positiv
 ladning medens H393 sandsynligvis vil være neutral da
 histidine-sidekæden har en pKa-værdi omkring 6.  De to øvrige sidekæder,
 asparagine og tryptophan, er begge uden ladning.
+:::
 
 Hydrogen-binding R197-O3: R197 er donor og O3 acceptor
 
@@ -195,11 +207,13 @@ de 100 C-terminale aminosyrer.
 **Spørgsmål 4.** Foreslå en subcellulær placering af bbgIII og begrund
 dit forslag.
 
+::: {.callout-solution}
 Sandsynligvis forankret i cellemembranen i det periplasmiske rum.
 Hydropati-plottet viser at der både N- og C-terminalt er hydrofobe
 områder. N-terminalt er det formodentligt del af et signalpeptid, der er
 karakteriseret ved et hydrofobt område. C-terminalt er der tale om en
 transmembran helix, der forankrer proteinet i membranen.
+:::
 
 ## Opgave 4
 
@@ -216,8 +230,10 @@ er desuden vist i detaljer med angivelse af polære interaktioner i B.
 **Spørgsmål 1.** Beskriv triplet-interaktionen i figur B. Hvilke kanter
 af baserne interagerer og hvad kaldes denne type interaktion?
 
+::: {.callout-solution}
 GC er cWW. GA er WS og SS. CA er SS. A interagerer i minor groove af GC
 basepar. Pseudoknot, A minor interaction.
+:::
 
 Vi skal nu kigge på en version af molekylet, der også indeholder det
 katalytiske site:
@@ -235,7 +251,9 @@ afstand (målt i Å) mellem det pågældende basepar og nucleotidet i
 3\'-enden af strukturen? Brug menuen \"Wizard \> Measurement\" til at
 måle.
 
+::: {.callout-solution}
 5.2 Å
+:::
 
 I figuren herunder er den tilhørende sekundærstruktur vist, hvor man kan
 se \"G site\" hvor \"guanosine co-factor\" bindes.
@@ -249,7 +267,9 @@ med \"guanosin cofaktor\" via en transesterficeringsreaktion.
 sekundær struktur er U'et placeret i? Hvilken stem (P1-9) i strukturen i
 figuren ses en pseudoknot?
 
+::: {.callout-solution}
 GU wobble basepar. Hairpin. P3.
+:::
 
 I andet trin af splejsningsprocessen reagerer G414 med 3\'-OH på 5\'
 exon via en ny transesterficeringsreaktion. G414 er ikke baseparret, men
@@ -265,10 +285,12 @@ molekylet med \"lines\" eller \"sticks\" og brug menuen \"A \> find \>
 polar contacts \> to other atoms in object\" på det valgte nukleotid til
 at finde interaktioner.
 
+::: {.callout-solution}
 U305 3'-O interaktion med G414 backbone 3'-OH, A306 fosfatinteraktion
 med G414 backbone 3'-OH, G313 interaktion med G414 sukker 2\'-OH, C413
 interaktion med G414 fosfat, C413 interaktion med G414 base og C262
 interaktion med G414 base.
+:::
 
 ![](figures/exam_2017_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
 
@@ -282,10 +304,12 @@ ikke en direkte sammenhæng mellem genprodukter og reaktioner.
 **Spørgsmål 1.** Giv to eksempler på hvordan der er en manglende direkte
 sammenhæng mellem genprodukter og reaktioner i *trp* operon.
 
+::: {.callout-solution}
 trpE og trpD koder hver for en halvdel af én enzym, anthranilate
 synthetase, trpC koder for ét enzym, der katalyserer to separate
 reaktioner og endelig koder trpB og trpA også for hver en halvdel af
 tryptophan synthetase.
+:::
 
 Enzymet *tryptophan synthase* er det sidste del af pathway\'en fra
 stoffet *indole 3-glycerol phosphate* til slutproduktet tryptophan og
@@ -296,10 +320,12 @@ udviser fænomenet *\"substrate channeling\"*:
 **Spørgsmål 2.** Forklar kort, hvad *\"substate channeling\"* dækker
 over samt hvorfor det er nødvendigt for enzymet i dette tilfælde.
 
+::: {.callout-solution}
 Substrate channeling dækker over det fænomen at et mellemprodukt
 kanaliseres inde i enzymet fra ét aktivt site til det næste. Det kan
 være nødvendigt hvis mellemproduktet er meget reaktivt eller giftigt for
 cellen. Endelig kan det være med til at effektivisere processen.
+:::
 
 Nedenfor ses strukturen af tryptophan synthase bundet til en substratet
 indole 3-glycerol phosphate (grønt).
@@ -311,11 +337,13 @@ hvilken af enzymets to reaktioner, der katalyseres i domænet med
 substrat bundet. Hvad er produktet af denne reaktion og hvorledes indgår
 dette i \"substrate channeling\"?
 
+::: {.callout-solution}
 Der er to domæner i hver af to subunits. Indole 3-glycerol phosphate er
 udgangsstoffet for de to reaktioner katalyseret af enzymet (jvf.
 ovenfor), så det må være den første reaktion, der katalyseres i det
 viste domæne. Produktet er indole, der beskyttes via substrate
 channeling under transport til det andet domæne.
+:::
 
 Tabellen nedenfor angiver reaktionshastigheder for tryptophan synthase
 målt i nM/min for tre forskellige koncentrationer af indole 3-glycerol
@@ -338,5 +366,7 @@ målt i mM.
 og angiv hvilken type inhibitor, indole udgør. Kom med en biokemisk
 forklaring på dette ud fra din viden om enzymet.
 
+::: {.callout-solution}
 Skæringen med y-aksen varierer mens linjerne samles i et punkt på den
 negative x-akse. Indole er en non-kompetitiv inhibitor.
+:::

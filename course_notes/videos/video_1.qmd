@@ -1,7 +1,7 @@
 ---
-title: "Introduction to PyMOL"
+title: "Video 1 – Introduction to PyMOL"
 sidebar: videor-sidebar
-description: Denne videor giver en introduktion til brugen af PyMOL
+description: Denne video giver en introduktion til brugen af PyMOL. Videoen er lavet af Johan Nygaard Vinther i 2025 med PyMOL 3.
 ---
 
 {{< video https://youtu.be/4YoLTP5TZGE?si=h7PXy-khvXbhJHjG >}}
