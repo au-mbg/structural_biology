@@ -1,36 +1,65 @@
 from pathlib import Path
-from helpers import QMDDocument, ROOT
+
+try:
+    from .helpers import QMDDocument, ROOT
+except ImportError:
+    from helpers import QMDDocument, ROOT
 from rich.console import Console
 
-EXTENSIONS = [".png", ".jpg", ".jpeg", ".svg", ".gif"]
-EXCLUDE = ['_site', '_preview', '.quarto']
+ALLOWED_EXTENSIONS = {".png", ".jpg", ".jpeg", ".svg", ".gif"}
+EXCLUDE = {"_site", "_preview", ".quarto"}
 
-def relative_to_root(path: Path) -> Path:
-    return path.relative_to(ROOT.resolve())
+
+def relative_to_root(path: Path, root: Path) -> Path:
+    return path.relative_to(root.resolve())
+
 
 def find_figures(directory: Path) -> list[Path]:
     paths = []
     for path in directory.rglob("*"):
-        if path.suffix in EXTENSIONS and not any(exclude in path.parts for exclude in EXCLUDE):
+        if (
+            path.suffix.lower() in ALLOWED_EXTENSIONS
+            and not EXCLUDE.intersection(path.parts)
+        ):
             paths.append(path.resolve())
     return paths
 
-def main():    
-    console = Console()
-    figure_files = find_figures(ROOT)
+
+def check_figures(root: Path = ROOT, console: Console | None = None) -> int:
+    console = console or Console()
+    figure_files = find_figures(root)
     figure_ref_count = {path: 0 for path in figure_files}
+    error_count = 0
 
     # Loop over all .qmd files and count references to each figure
-    console.rule("Figures referenced in Quarto documents NOT found in the figure files:")
-    print("These are figures referenced in Quarto documents but not found in the figure files.")
-    print("These will cause compilation errors in the Quarto documents.")
-    for qmd_file in ROOT.rglob("*.qmd"):
+    console.rule("Figure reference errors")
+    console.print(
+        "Referenced figures with unsupported formats or missing files will cause "
+        "compilation errors in Quarto documents."
+    )
+    for qmd_file in root.rglob("*.qmd"):
         qmd_document = QMDDocument(qmd_file)
         for figure_path in qmd_document.find_figures():
+            figure_path = figure_path.resolve()
+            if figure_path.suffix.lower() not in ALLOWED_EXTENSIONS:
+                console.print(
+                    f"Error: Figure {relative_to_root(figure_path, root)} referenced in "
+                    f"{relative_to_root(qmd_file.resolve(), root)} uses unsupported "
+                    f"file format '{figure_path.suffix or '<none>'}'.",
+                    style="bold red",
+                )
+                error_count += 1
+                continue
+
             if figure_path in figure_ref_count:
                 figure_ref_count[figure_path] += 1
             else:
-                console.print(f"Warning: Figure {relative_to_root(figure_path)} referenced in {relative_to_root(qmd_file.resolve())} not found in figure files.", style="bold red")
+                console.print(
+                    f"Error: Figure {relative_to_root(figure_path, root)} referenced in "
+                    f"{relative_to_root(qmd_file.resolve(), root)} not found in figure files.",
+                    style="bold red",
+                )
+                error_count += 1
 
     # Print the results
     console.rule("Figures not referenced in any Quarto documents:")
@@ -41,13 +70,31 @@ def main():
                 continue
 
             # Check if its referenced wtih another extension:
-            for ext in EXTENSIONS:
+            for ext in sorted(ALLOWED_EXTENSIONS):
                 alt_figure_path = figure_path.with_suffix(ext)
-                if alt_figure_path in figure_ref_count and figure_ref_count[alt_figure_path] > 0:
-                    console.print(f"Figure {relative_to_root(figure_path)} is not referenced, but {relative_to_root(alt_figure_path)} is referenced.", style="bold yellow")
+                if (
+                    alt_figure_path in figure_ref_count
+                    and figure_ref_count[alt_figure_path] > 0
+                ):
+                    console.print(
+                        f"Figure {relative_to_root(figure_path, root)} is not "
+                        f"referenced, but {relative_to_root(alt_figure_path, root)} "
+                        "is referenced.",
+                        style="bold yellow",
+                    )
                     break
-            else:                
-                console.print(f"Figure {relative_to_root(figure_path)} is not referenced in any .qmd file.", style="bold yellow")
+            else:
+                console.print(
+                    f"Figure {relative_to_root(figure_path, root)} is not referenced "
+                    "in any .qmd file.",
+                    style="bold yellow",
+                )
+
+    return 1 if error_count else 0
+
+
+def main() -> None:
+    raise SystemExit(check_figures())
 
 if __name__ == "__main__":
     main()
