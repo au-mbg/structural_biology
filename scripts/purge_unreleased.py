@@ -14,6 +14,7 @@ except ImportError:  # Executed as a repository script by Quarto.
 ROOT = Path(__file__).resolve().parent.parent
 COURSE_ROOT = ROOT / "course_notes"
 FORMATS = (".html", ".pdf", ".docx")
+DISABLED_PROFILES = frozenset({"instructor"})
 
 
 def purge_unreleased(profile: str | None = None) -> list[Path]:
@@ -23,11 +24,15 @@ def purge_unreleased(profile: str | None = None) -> list[Path]:
         print("Incremental render: keeping draft outputs")
         return []
 
+    if DISABLED_PROFILES.intersection(active_profiles):
+        print("Scheduling disabled for this profile: keeping all outputs")
+        return []
+
     schedule_path = resolve_schedule_path(COURSE_ROOT / "_schedule.yml", profile_value)
     schedule = read_schedule(schedule_path)
     output_root = COURSE_ROOT / "_site"
     if "solution" in active_profiles:
-        output_root /= "instructor"
+        output_root /= "solution"
 
     removed: list[Path] = []
     for document in schedule.documents:

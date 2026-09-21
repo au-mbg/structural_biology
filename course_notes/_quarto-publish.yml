@@ -1,4 +1,4 @@
-# Publication-only settings. This profile is combined with exercise or solution.
+# Publication-only settings. This profile is combined with a content profile.
 project:
   post-render:
     - python ../scripts/purge_unreleased.py

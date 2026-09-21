@@ -116,27 +116,31 @@ For slightly more detailed instructions see [git - the simple guide](https://rog
 
 With `pixi` installed the site can be rendered or previewed using the commands 
 
-- `pixi run preview exercise`: Opens a live preview of the student facing version of the site.
-- `pixi run preview solution`: Opens a live preview of the public instructor/solution version of the site.
-- `pixi run preview-rebuild exercise`: Rebuilds the student-facing HTML before opening its preview.
+- `pixi run preview student`: Opens a live preview of the scheduled student version.
+- `pixi run preview solution`: Opens a live preview of the scheduled public solution version.
+- `pixi run preview instructor`: Opens the complete instructor version locally without password protection.
+- `pixi run preview-rebuild student`: Rebuilds the student-facing HTML before opening its preview.
 - `pixi run preview-rebuild solution`: Rebuilds the solution HTML before opening its preview.
-- `pixi run render exercise`: Renders only the student-facing version (also the default for `pixi run render`).
+- `pixi run preview-rebuild instructor`: Rebuilds the complete instructor HTML before opening its preview.
+- `pixi run render student`: Renders only the student-facing version (also the default for `pixi run render`).
 - `pixi run render solution`: Renders only the public solution version using its own release calendar.
-- `pixi run render-all`: Renders both public site versions (not live).
+- `pixi run render instructor`: Renders the complete, HTML-only instructor version without local encryption.
+- `pixi run render-all`: Renders all three site versions (not live).
 - `pixi run clean`: Removes publication and authoring-preview artifacts.
 
 Direct publication commands are also supported. From the repository root, use
-`quarto render course_notes --profile exercise,publish` or
-`quarto render course_notes --profile solution,publish`; from `course_notes/`,
+`quarto render course_notes --profile student,publish`,
+`quarto render course_notes --profile solution,publish`, or
+`quarto render course_notes --profile instructor,publish`; from `course_notes/`,
 omit the project path. The scheduling extension selects the applicable calendar
-without moving or replacing files.
+or bypasses scheduling for the instructor profile.
 
 `pixi run preview` combines the selected content profile with the `author`
 profile and writes to a persistent authoring site under `course_notes/_preview`.
-The exercise preview uses `_preview`, while the solution preview uses
-`_preview/instructor`. It reuses existing output for fast startup. Run
-`pixi run preview-rebuild exercise` or `pixi run preview-rebuild solution` to
-perform a full HTML rebuild after cleaning or whenever the cached preview needs
+The student preview uses `_preview`, the solution preview uses
+`_preview/solution`, and the instructor preview uses `_preview/instructor`.
+They reuse existing output for fast startup. Run the corresponding
+`preview-rebuild` command after cleaning or whenever the cached preview needs
 to be refreshed. Publication renders write to `course_notes/_site` and do not
 invalidate this authoring cache.
 
@@ -144,6 +148,7 @@ Release behaviour must be checked with a complete render and the generated
 `_site` directory. The `publish` profile hides drafts and registers the final
 cleanup of unreleased HTML, PDF, and Word outputs. Only complete project renders
 perform that cleanup; the `author` profile must not be used for publication.
+Scheduling and cleanup are disabled for the complete instructor profile.
 
 ### Manual installation
 
@@ -175,8 +180,9 @@ are included with the vendored extension. The editable release calendars are:
 - `course_notes/_schedule-solution.yml` for the public solution profile.
 
 For each active profile the extension looks for `_schedule-<profile>.yml` and
-falls back to `_schedule.yml`. Thus the exercise profile uses the base calendar
-and the solution profile automatically uses `_schedule-solution.yml`.
+falls back to `_schedule.yml`. Thus the student profile uses the base calendar,
+the solution profile uses `_schedule-solution.yml`, and the instructor profile
+bypasses calendars.
 
 Dates use ISO `YYYY-MM-DD` notation and UTC. In the provisional 2026 calendar,
 each pair of exercises is released to students one week before its course-plan
@@ -187,8 +193,12 @@ adding `draft: false` or `draft: true` to its calendar entry.
 The extension controls pages and generated HTML/PDF/Word documents. The homepage
 is an always-visible overview with plain-text exercise titles; links to released
 exercises appear in the sidebar. Files under `course_notes/files/` remain public,
-as does the linked `/instructor/` site; profiles and schedules are content
-separation, not access control.
+and the scheduled solution site is published under `/solution/`. The complete
+instructor site is published under `/instructor/`; GitHub Actions encrypts its
+HTML with StatiCrypt, while local renders and previews remain unencrypted. The
+instructor profile is HTML-only. Because the repository source is public, the
+password prompt is a convenience gate rather than protection for confidential
+source material.
 
 For reproducible date testing, temporarily replace `draft-after: "system-time"`
 with an ISO date in the relevant calendar, run the corresponding Pixi render,

@@ -10,7 +10,7 @@ metadata-files:
 
 profile:
   group:
-    - [exercise, solution]
+    - [student, solution, instructor]
 
 website:
   draft-mode: gone

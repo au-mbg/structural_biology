@@ -18,7 +18,10 @@ const tempFilesDir = configParams['temp-files-dir'];
 // configured base schedule. The placeholder satisfies metadata-files.
 if (!existsSync(ymlPath)) {
     ensureDirSync(tempFilesDir);
-    Deno.writeTextFileSync(`${tempFilesDir}/draft-list.yml`, "# No _schedule.yml found\n");
+    Deno.writeTextFileSync(
+        `${tempFilesDir}/draft-list.yml`,
+        "# Scheduling disabled or no _schedule.yml found\nwebsite:\n  drafts: []\n",
+    );
     Deno.exit(0);
 }
 

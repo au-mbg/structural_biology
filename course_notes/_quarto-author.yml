@@ -1,3 +1,3 @@
-# Authoring-only settings. This profile is combined with exercise or solution.
+# Authoring-only settings. This profile is combined with a content profile.
 website:
   draft-mode: visible
