@@ -69,7 +69,7 @@ def check_script(pymol_bin: str, script_path: Path, console: Console) -> bool:
                     os.symlink(f.resolve(), Path(tmp) / f.name)
 
                 output = subprocess.run(
-                    [pymol_bin, "-cq", str(script_path)],
+                    [pymol_bin, "-cqk", str(script_path)],
                     check=True,
                     capture_output=True,
                     text=True,
