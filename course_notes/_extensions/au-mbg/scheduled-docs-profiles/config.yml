@@ -3,3 +3,5 @@ scheduled-docs-key: 'scheduled-docs'
 docs-key: 'docs'
 temp-files-dir: './scheduled-docs_files'
 date-format: 'yyyy-MM-dd'
+disabled-profiles:
+  - instructor

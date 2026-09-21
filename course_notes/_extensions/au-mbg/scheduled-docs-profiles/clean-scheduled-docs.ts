@@ -11,7 +11,7 @@ if (!existsSync(ymlPath)) {
     if (existsSync("scheduled-docs_files/draft-list.yml")) {
         try {
             const content = Deno.readTextFileSync("scheduled-docs_files/draft-list.yml");
-            if (content.trim() === "# No _schedule.yml found") {
+            if (content.startsWith("# Scheduling disabled or no _schedule.yml found")) {
                 Deno.removeSync("scheduled-docs_files/draft-list.yml");
                 // Also remove directory if empty
                 try {

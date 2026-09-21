@@ -22,9 +22,10 @@ course_notes
 │  │  ├── styling        # CSS/SCSS for the website
 │  │  └── website.yml    # Main Quarto website/navigation configuration
 ├── _extensions          # Quarto extensions (kept at the top level for Quarto)
-├── _quarto-exercise.yml # Exercise profile configuration
+├── _quarto-student.yml  # Scheduled student profile configuration
 ├── _quarto-author.yml   # Authoring settings that make drafts visible
-├── _quarto-author-*.yml # Exercise/solution preview output locations
+├── _quarto-author-*.yml # Profile-specific preview output locations
+├── _quarto-instructor.yml # Complete HTML-only instructor profile
 ├── _quarto-publish.yml  # Publication settings and release cleanup
 ├── _quarto-solution.yml # Solution profile configuration
 ├── _quarto.yml          # Small Quarto entry point that loads config/quarto/website.yml
@@ -55,22 +56,24 @@ Most contributors will only need to work in `exercises/`, `other_notes/`, `video
 Start the student-facing preview with:
 
 ```sh
-pixi run preview exercise
+pixi run preview student
 ```
 
-Use `pixi run preview solution` to include solutions. Preview output is kept in
-`course_notes/_preview`, so restarting a preview normally reuses the existing
-HTML. After `pixi run clean`, start with `pixi run preview-rebuild exercise` or
-`pixi run preview-rebuild solution` to rebuild the applicable HTML. Publication
+Use `pixi run preview solution` for the scheduled public solutions and
+`pixi run preview instructor` for all content and solutions. Instructor previews
+are not password protected. Preview output is kept in `course_notes/_preview`,
+so restarting a preview normally reuses the existing HTML. After
+`pixi run clean`, use the corresponding `preview-rebuild` command. Publication
 output is separate in `course_notes/_site`, and publishing does not remove the
 preview cache.
 
-Use `pixi run render exercise`, `pixi run render solution`, or
-`pixi run render-all` when checking the actual release build. These commands
-activate the `publish` profile, hide scheduled drafts, and remove unreleased
-rendered files after a complete project render.
+Use `pixi run render student`, `pixi run render solution`,
+`pixi run render instructor`, or `pixi run render-all` when checking release
+builds. Student and solution renders hide scheduled drafts and remove unreleased
+files. Instructor renders include everything, emit HTML only, and are encrypted
+only later in the GitHub Actions publication workflow.
 
-## Exercise vs. solution
+## Student, solution, and instructor profiles
 
 The project uses a set of *filters* in `_extensions` to control the visibility of solutions - specifically 
 callout blocks which are specified with 
@@ -81,10 +84,11 @@ Content...
 :::
 ```
 
-This content will only be visible when viewing the public instructor/solution version of the site.
-Both versions are rendered as ordinary HTML without password protection, but the content is
-contained in the same document as the exercise. This makes it much simpler to keep exercises and
-solutions up to date.
+This content is hidden from the student profile and visible in both the solution
+and instructor profiles. The public solution profile follows its release
+calendar. The instructor profile always includes all pages and solutions; its
+published HTML is processed by StatiCrypt in CI. The source content remains in
+the same document, making exercises and solutions easier to keep synchronized.
 
 ## Figures
 

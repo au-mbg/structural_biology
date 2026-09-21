@@ -7,6 +7,14 @@ export function parseProfiles(profileValue: string | undefined): string[] {
     .filter((profile) => profile.length > 0);
 }
 
+export function hasDisabledProfile(
+  profileValue: string | undefined,
+  disabledProfiles: string[] | undefined,
+): boolean {
+  const disabled = new Set(disabledProfiles ?? []);
+  return parseProfiles(profileValue).some((profile) => disabled.has(profile));
+}
+
 export function profileSchedulePath(basePath: string, profile: string): string {
   const slashIndex = Math.max(basePath.lastIndexOf("/"), basePath.lastIndexOf("\\"));
   const dotIndex = basePath.lastIndexOf(".");

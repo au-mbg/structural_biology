@@ -28,6 +28,31 @@ jobs:
           cache: true
       - run: pixi run render-all
 
+      - name: Set up Node for StatiCrypt
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Encrypt instructor site
+        env:
+          STATICRYPT_PASSWORD: "strukturbiologi-instructor"
+        run: |
+          test -n "$STATICRYPT_PASSWORD"
+          test -f course_notes/_site/instructor/index.html
+          npx --yes staticrypt@3.5.4 course_notes/_site/instructor/* \
+            --recursive \
+            --directory course_notes/_site/instructor \
+            --config .staticrypt.json \
+            --short \
+            --template-title "Strukturbiologi — instructor"
+
+      - name: Verify encrypted output
+        run: |
+          grep -q 'staticrypt' course_notes/_site/instructor/index.html
+          ! grep -q 'complete instructor version' course_notes/_site/instructor/index.html
+          ! grep -q 'staticrypt' course_notes/_site/index.html
+          ! grep -q 'staticrypt' course_notes/_site/solution/index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

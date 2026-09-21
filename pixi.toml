@@ -13,27 +13,27 @@ default = {features=[]}
 dev = {features=["git-tools"]}
 
 [tasks.preview]
-args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
+args = [{ "arg" = "mode", default = "solution", choices=["student", "solution", "instructor"]}]
 cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author"
-description = "Reuse the existing authoring preview in exercise or solution mode"
+description = "Reuse the existing authoring preview for a selected site profile"
 depends-on = ["fetch-fonts"]
 
 [tasks.preview-rebuild]
-args = [{ "arg" = "mode", default = "solution", choices=["exercise", "solution"]}]
+args = [{ "arg" = "mode", default = "solution", choices=["student", "solution", "instructor"]}]
 cmd = "quarto preview course_notes --profile author-{{mode}},{{mode}},author --render html"
-description = "Rebuild HTML before previewing in exercise or solution mode"
+description = "Rebuild HTML before previewing a selected site profile"
 depends-on = ["fetch-fonts"]
 
 [tasks.render]
-args = [{ "arg" = "mode", default = "exercise", choices=["exercise", "solution"]}]
+args = [{ "arg" = "mode", default = "student", choices=["student", "solution", "instructor"]}]
 cmd = "quarto render course_notes --profile {{mode}},publish"
-description = "Render the course notes in either exercise or solution mode"
+description = "Render the course notes for a selected site profile"
 depends-on = ["fetch-fonts"]
 
 [tasks.render-all]
-cmd = "quarto render course_notes --profile exercise,publish && quarto render course_notes --profile solution,publish"
+cmd = "quarto render course_notes --profile student,publish && quarto render course_notes --profile solution,publish && quarto render course_notes --profile instructor,publish"
 depends-on = ["clean", "fetch-fonts"]
-description = "Clean and render the course notes in both exercise and solution mode"
+description = "Clean and render the student, solution, and instructor sites"
 
 [tasks.test-scheduling]
 cmd = "python -m unittest tests/test_scheduling.py"

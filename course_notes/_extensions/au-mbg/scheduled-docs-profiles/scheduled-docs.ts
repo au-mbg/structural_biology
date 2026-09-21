@@ -3,7 +3,7 @@ import { parse, stringify } from "https://deno.land/std/yaml/mod.ts";
 import { join } from "https://deno.land/std/path/mod.ts";
 import { existsSync } from "https://deno.land/std/fs/mod.ts";
 import { format, parse as parseDate } from "https://deno.land/std/datetime/mod.ts";
-import { resolveSchedulePath } from "./profile-schedule.ts";
+import { hasDisabledProfile, profileSchedulePath, resolveSchedulePath } from "./profile-schedule.ts";
 
 
 // ---------------------- //
@@ -479,11 +479,19 @@ export async function readConfig(): Promise<any> {
   const configUrl = new URL("./config.yml", import.meta.url);
   const yamlContent = await Deno.readTextFile(configUrl);
   const parsedYaml = parse(yamlContent);
-  parsedYaml['path-to-yaml'] = resolveSchedulePath(
-    parsedYaml['path-to-yaml'],
-    Deno.env.get("QUARTO_PROFILE"),
-    existsSync,
-  );
+  const profileValue = Deno.env.get("QUARTO_PROFILE");
+  if (hasDisabledProfile(profileValue, parsedYaml['disabled-profiles'])) {
+    parsedYaml['path-to-yaml'] = profileSchedulePath(
+      parsedYaml['path-to-yaml'],
+      "disabled",
+    );
+  } else {
+    parsedYaml['path-to-yaml'] = resolveSchedulePath(
+      parsedYaml['path-to-yaml'],
+      profileValue,
+      existsSync,
+    );
+  }
   return parsedYaml
 }
 

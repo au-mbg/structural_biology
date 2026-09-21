@@ -1,0 +1,26 @@
+# Complete instructor site. HTML is encrypted only in the publication workflow.
+project:
+  output-dir: _site/instructor
+
+website:
+  navbar:
+    right:
+      - href: ../index.html
+        text: Go to student version
+        icon: book
+      - href: ../solution/index.html
+        text: Go to solution version
+        icon: book-fill
+
+  announcement:
+    icon: lock-fill
+    dismissable: false
+    content: "You are viewing the complete instructor version of the course notes. All content and solutions are available."
+    type: warning
+    position: below-navbar
+
+format-links: false
+
+teaching:
+  show-solutions: true
+  default-solution-title: "Svar"
