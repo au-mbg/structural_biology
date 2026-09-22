@@ -106,13 +106,13 @@ A,B,E
 
 2.	Nedenfor vises et udsnit af en peptidkæde, der har sekvensen DKCQGG. Hvilke af følgende udsagn er korrekte:
 
-    a.	Den blå streg omgiver kun hovedkæden for CQG.
-    b.	Den gule stregomgiver kun cystein aminosyreresten
-    c.	Den grønne stregomgiver kun lysine sidekæden
-    d.	Den røde stregomgiver kun glutamin sidekæden
-    e.	Den violette stregomgiver kun aspartat aminosyreresten
+    a.	Den blå streg omgiver kun hovedkæden for CQG
+    b.	Den gule streg omgiver kun cystein aminosyreresten
+    c.	Den grønne streg omgiver kun lysine sidekæden
+    d.	Den røde streg omgiver kun glutamin sidekæden
+    e.	Den violette streg omgiver kun aspartat aminosyreresten
 
-![](figures/te_01/opgave-4-figur-2.png){width="80%" .lightbox fig-align="center"}
+![](figures/te_01/opgave-4-figur-2.png){width="60%" .lightbox fig-align="center"}
 
 ::: {.callout-solution}
 a,b,d
@@ -145,9 +145,9 @@ a,c
 
 5.	Hvilke af følgende påstande om peptidbindinger er korrekte:
 
-    a.	Peptidbindingen har et dipol-moment.
+    a.	Peptidbindingen har et dipol-moment
     b.	Afstanden mellem de to Cα atomer er ca. 4.3 Å
-    c.	Der findes tre resonans strukturer for peptidbindingen.
+    c.	Der findes tre resonans strukturer for peptidbindingen
     d.	ω kan kun have værdierne 0°, 120° og 240°
     e.	Oxygen-atomet har en partiel negativ ladning
 
@@ -160,10 +160,10 @@ a,e
 6.	Hvilke af følgende påstande om peptidbindinger er korrekte:
 
     a.	For prolin er ψ-vinklen altid -60° ±10°
-    b.	Ca. 5% af peptidbindinger, hvor prolin er den C-terminale aminosyre, har cis konfiguration.
+    b.	Ca. 5% af peptidbindinger, hvor prolin er den C-terminale aminosyre, har cis konfiguration
     c.	I de fleste peptidbindinger er Cα atomerne i trans konfiguration
     d.	Peptidbindinger, hvor glycin indgår, har oftere cis konfiguration
-    e.	Når man betragter alle aminosyrerester under et, er φ-vinklen oftest positiv.
+    e.	Når man betragter alle aminosyrerester under et, er φ-vinklen oftest positiv
 
 ::: {.callout-solution}
 b,c

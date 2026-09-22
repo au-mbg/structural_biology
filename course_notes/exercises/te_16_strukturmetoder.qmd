@@ -21,7 +21,7 @@ title: "TØ 16 -- Strukturmetoder"
 
 6. Vis også strukturen af [LeuT2]{.underline} som "cartoon" og foretag et strukturelt alignment af denne over på LeuT1.
 
-7. Vis LeuT2 med en overflade farvet efter "b-faktor".
+7. Skjul LeuT1 og farv backbone efter B-faktor med en gradient fra blå til hvid til rød.
 
 8. Vis LeuT2 med en overflade farvet efter "vacuum electrostatics".
 
@@ -237,7 +237,7 @@ Man trykker på protein under `Wizard > mutagenesis`, så ses på figuren forned
 5. Kig alle aminosyreresterne igennem og find nogle, der ikke passer så godt i tætheden. Er der en fejl i sekvensen eller hvad kan dette mon skyldes?
 
 ::: {.callout-tip title="Hint"}
-Tænk over hvilken type af aminosyrerester, disse tilhører og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
+Tænk over hvilken type af aminosyrerester, disse tilhører, og hvor de normalt findes i et protein. Evt. brug en log-file til at gemme dit arbejde.
 ::: 
 
 ::: {.callout-solution}

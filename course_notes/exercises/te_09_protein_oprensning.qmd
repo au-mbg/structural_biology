@@ -103,10 +103,10 @@ c,d
     Omarranger trinene i sekventiel rækkefølge for at bruge denne teknik til dette formål.
 
     a.	Antistoffet binder sig til det ønskede protein.
-    b.	Et antistof mod det ønskede protein tilsættes blandingen.
-    c.	Proteinblandingen centrifugeres, supernatanten fjernes, og pelletsen vaskes.
+    b.	Et monoklonalt antistof mod det ønskede protein tilsættes blandingen.
+    c.	Proteinblandingen centrifugeres, supernatanten fjernes, og pelleten vaskes.
     d.	Antistof-protein-komplekserne bliver uopløselige.
-    e.	Protein A-perler tilsættes blandingen.
+    e.	Protein A-beads tilsættes blandingen.
 
 ::: {.callout-solution}
 b,a,e,d,c
