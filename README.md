@@ -170,7 +170,7 @@ This is configured through Github Actions, see [publish.yml](.github/workflows/p
 
 ### Scheduled exercise releases
 
-The course uses `scheduled-docs-profiles` 1.0.0, an MIT-licensed derivative of
+The course uses `scheduled-docs-profiles` 1.1.0, an MIT-licensed derivative of
 `qmd-lab/scheduled-docs` 0.6.0 maintained in
 [`au-mbg/quarto-teaching-tools`](https://github.com/au-mbg/quarto-teaching-tools/tree/main/extensions/scheduled-docs-profiles).
 The original extension was created by Andrew Bray; its license and attribution
