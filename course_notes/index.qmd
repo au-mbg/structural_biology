@@ -15,14 +15,21 @@ Svar til alle tidligere eksamensopgaver frigives 4/12-2026.
 ```{python}
 #| echo: false
 import yaml
+import os
 from tabulate import tabulate
 from pathlib import Path
 from datetime import date
 
 today = date.today()
+active_profiles = {
+    profile.strip()
+    for profile in os.environ.get("QUARTO_PROFILE", "").split(",")
+    if profile.strip()
+}
+show_all_exercises = "instructor" in active_profiles
 
 def is_released(release_date: str) -> bool:
-    return date.fromisoformat(release_date) <= today
+    return show_all_exercises or date.fromisoformat(release_date) <= today
 
 def convert_date(date: str) -> str:
     year, month, day = date.split('-')
