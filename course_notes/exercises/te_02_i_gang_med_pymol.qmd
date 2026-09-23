@@ -450,7 +450,7 @@ af blodet og lagre det i form af glykogen eller fedt. Læs evt. mere
 [her](https://pdb101.rcsb.org/motm/14).
 
 1.  Hent strukturen 4INS i PyMOL. Brug action menuen `A > remove waters`.
-    Gem kæde C og D ved at selektere dem med \"Chains selector\" og
+    Gem kæde C og D ved at selektere dem med "Chains selector" og
     bruge `(sele) H > everything`. Farv chain A cyan og chain B grøn. Gem
     scene. Hvor mange alpha-helicer og hvor mange beta-strenge er der i
     insulin?
