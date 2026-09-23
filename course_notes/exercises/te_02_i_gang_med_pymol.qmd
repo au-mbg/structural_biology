@@ -402,7 +402,7 @@ Se scene 007 i PyMOL session fil:
 {{< download-button path="../files/TE2-O3-DNA.pse" filename="DNA.pse" >}}
 :::
 
-8.  Ekspandér krystallen med objektmenuen `A \> generate \> symmetry mates \> within 100 A`. 
+8.  Ekspandér krystallen med objektmenuen `A > generate > symmetry mates > within 100 A`. 
     Mål afstanden imellem parallelle DNA-helicer i krystallen. Gem scene.
 
 ::: {.callout-solution}
@@ -616,11 +616,12 @@ Binder imellem alpha-helicer, men uden hydrogen bindinger.
 5.  Vis både 1SU4 og 1IWO som cartoon. Farvelæg domæner i begge modeller
     ved at kopiere følgende kommandoer til kommandolinjen og trykke
     return:
+
     ```default
-    color purple, resi 1-41+125-243\
-    color yellow, resi 350-600\
-    color orange, resi 601-742\
-    color red, resi 42-124+244-349+743-994\
+    color purple, resi 1-41+125-243
+    color yellow, resi 350-600
+    color orange, resi 601-742
+    color red, resi 42-124+244-349+743-994
     ```
     Gem scene.
 
