@@ -84,7 +84,7 @@ Dette følger af det simple sammenhæng
 ![](figures/te_10/opgave-3-figur-5.png){width="60%" fig-align="center" .lightbox}
 :::
 
-2. Brug Hill ligningen til at plotte en ilt-bindings kurve for et hypotetisk two-subunit hemoglobin med kooperativitstallet *n* = 1.8 og p(O~2~) = 10 torr.
+2. Plot en iltbindingskurve for et hypotetisk two-subunit hæmoglobin med kooperativitstallet *n* = 1.8 og p(O~2~) = 10 torr.
 
 ::: {.callout-solution}
 Det udføres bedst i Python eller Excel med brug af ligningerne i appendix.
