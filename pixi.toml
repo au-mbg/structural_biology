@@ -71,6 +71,7 @@ description = "Run all local project checks and summarize the results"
 [tasks]
 clean = { cmd = ["rm", "-rf", "course_notes/_site", "course_notes/_preview"], description = "Clean publication and preview output"}
 github-auth = { cmd = "gh auth login && gh auth setup-git", default-environment = "dev"}
+publish = { cmd = ["gh", "workflow", "run", "publish.yml"], description = "Manually trigger the website publish workflow", default-environment = "dev" }
 
 fetch-fonts = { cmd = """
   echo "Checking for Font Awesome 6 fonts..." &&
