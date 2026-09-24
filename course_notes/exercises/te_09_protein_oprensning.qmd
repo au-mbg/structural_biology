@@ -173,7 +173,7 @@ de tre proteiner ligger indenfor. Hvad skal man være specielt
 opmærksom på ifm. multimere proteiner?
 
 ::: {.callout-solution}
-Vi har tre proteiner med forventet MW på ca. 20 kDa og ca. 40 kDa, så Ultrogel AcA 54 eller Bio-Gel P-60 passer umiddelbart bedst. Her skal man være opmærksom på at proteinernes evt. oligomere tilstand (dimer, trimer, tetramer, etc.) ikke ses SDS-PAGE eller 2D-PAGE, da prøverne denatureres i begge tilfælde. Man kunne derfor vælge et materiale, der også ville tillade separation af f.eks. en dimer af 40 kDa, hvis man mistænker dette, f.eks. Sephadex G-100.
+Vi har tre proteiner med forventet MW på ca. 20 kDa og ca. 40 kDa, så Ultrogel AcA 54 eller Bio-Gel P-60 passer umiddelbart bedst. Her skal man være opmærksom på at proteinernes evt. oligomere tilstand (dimer, trimer, tetramer, etc.) ikke ses på SDS-PAGE eller 2D-PAGE, da prøverne denatureres i begge tilfælde. Man kunne derfor vælge et materiale, der også ville tillade separation af f.eks. en dimer af 40 kDa, hvis man mistænker dette, f.eks. Sephadex G-100.
 :::
 
 Du kører nu din gelfiltreringssøjle og får følgende kromatogram:
@@ -209,7 +209,7 @@ får følgende resultater:
 6. Kan kromatogrammet nu forklares éntydigt?
 
 ::: {.callout-solution}
-Vi et bånd ved ca. 40 kDa for den første top (ca. fraktion 44 på Ultrogel AcA 54) og et bånd ved ca. 20 kDa for den anden top (fraktion 68). Vi kan nu sige med en vis sikkerhed at de tre proteiner ikke danner multimerer og eluerer som forventet. Der er dog en teoretisk mulighed for at de alle tre danner f.eks. dimerer, så det vi faktisk ser er én top svarende til 80 kDa og to proteiner svarende til 40 kDa. For at afklare dette er man nødt til at kalibrere sin søjle med kendte proteiner (se senere opgave).
+Vi ser et bånd ved ca. 40 kDa for den første top (ca. fraktion 44 på Ultrogel AcA 54) og et bånd ved ca. 20 kDa for den anden top (fraktion 68). Vi kan nu sige med en vis sikkerhed at de tre proteiner ikke danner multimerer og eluerer som forventet. Der er dog en teoretisk mulighed for at de alle tre danner f.eks. dimerer, så det vi faktisk ser er én top svarende til 80 kDa og to proteiner svarende til 40 kDa. For at afklare dette er man nødt til at kalibrere sin søjle med kendte proteiner (se senere opgave).
 :::
 
 Du tester nu enzym aktiviteten i fraktion 45 og 68 og finder ud af at
@@ -225,7 +225,7 @@ dage til at fixe det (se opgave 3).
 
 Du vil nu forsøge dig igen med at oprense enzymet fra protein-prøven og
 vælger i denne omgang ionbyttekromatografi. Du vælger at benytte mediet
-DEAE-cellulose, der står for diethylaminoethyl-, en tertiær aminogruppe,
+DEAE-cellulose, hvor DEAE står for diethylaminoethyl, en tertiær aminogruppe,
 der har en positiv ladning undtaget ved meget basiske pH-værdier. Mediet
 vil altså være positivt ladet og binde proteiner, der har en negativ
 nettoladning. Det er derfor nyttigt at overveje hvilken pI-værdi,
@@ -251,26 +251,27 @@ pI \~7.5. Ved pH 7.0 vil proteinet med pI \~6 altså være negativt
 ladet mens de to andre vil være positivt ladede. Det er altså kun
 det første protein, vi vil forvente binder til søjlen (da den også
 er positivt ladet). Ved pH 6 vil alle tre proteiner være positivt
-ladede og ingen af dem vil binde, mens ved de ved pH 8 alle vil være
+ladede og ingen af dem vil binde, mens de ved pH 8 alle vil være
 negativt ladede og dermed binde søjlematerialet.
 :::
 
 Du opsætter nu din søjle med \"DEAE-sepharose\" og eluering med en
-saltgradient. Bufferens pH-værdi sættes til 7.0 og gradienten til at
-køre fra 0.0 - 0.5 M salt. Eksperimentet giver dig følgende kromatogram
+saltgradient. Bufferens pH-værdi sættes til 7,0 og gradienten til at
+køre fra 0,0 - 0,5 M salt. Eksperimentet giver dig følgende kromatogram
 med absorptionen ved 280 nm i blåt og gradienten i pink:
 
 ![](figures/te_09/opgave-2-4.png){width="100%" fig-align="center"} 
 
 3. Hvorfor eluerer de bundne proteiner når saltkoncentrationen hæves?
 Hvad kan man sige om de proteiner, der eluerer før gradienten? Hvor
-mange toppe er der ved pH 7.0?
+mange toppe er der ved pH 7,0?
 
 ::: {.callout-solution}
-Når saltkoncentrationen stiger vil de små ioner efterhåndne
+Når saltkoncentrationen stiger vil de små ioner efterhånden
 udkonkurere proteinerne fra materialet, hvorved de slipper og
 eluerer. Området før gradienten kalder man populært for \"vasken\",
 da det er det område, hvor ubundne proteiner eluerer.
+Der er to toppe ved pH 7,0.
 :::
 
 Du analyserer nu de to toppe ved at udtage fraktion 20 og 107 og kører
@@ -282,7 +283,7 @@ resultat:
 4. Hvilke proteiner er i hvilke toppe? Er det som forventet?
 
 ::: {.callout-solution}
-Vi observerer to toppe ved pH 7.0, én i vasken og én sentgradienten. I den første top (vask, fraktion 20) observerer vi proteiner ved 20 og 40 kDa, mens vi fra toppen i gradient(fraktion 106) kun ser et protein ved 20 kDa. Dette er sforventet, da to proteiner ikke skulle binde ved pH 7.0. Vi haltså fået separeret de to proteiner ved 20 kDa på baggrund af derforskellige pI-værdier, hvilket ikke var muligt med gelfiltrering.
+Vi observerer to toppe ved pH 7,0, én i vasken og én sent i gradienten. I den første top (vask, fraktion 20) observerer vi proteiner ved 20 og 40 kDa, mens vi fra toppen i gradient (fraktion 106) kun ser et protein ved 20 kDa. Dette er forventet, da to proteiner ikke skulle binde ved pH 7.0. Vi har altså fået separeret de to proteiner ved 20 kDa på baggrund af deres forskellige pI-værdier, hvilket ikke var muligt med gelfiltrering.
 :::
 
 Du måler enzym aktiviteten i fraktion 20 og 107 og finder at enzymet er
@@ -313,8 +314,8 @@ oprensningsprotokol.
 Du har igen fejlet, har ikke fået oprenset dit enzym og har brugt hele
 den dyrebare prøve. Din projekt-økonom er frustreret og siger at firmaet
 ikke længere kan betale for dit ineffektive arbejde og vil have dig
-fyret. Din chef støtter dig dog under den betingelse af du forsikre dem
-om at du vil gøre en ekstra indsats (se opgave 4).
+fyret. Din chef støtter dig dog under den betingelse, at du forsikrer dem
+om, at du vil gøre en ekstra indsats (se opgave 4).
 
 {{< pagebreak >}}
 
@@ -339,9 +340,11 @@ udleveret af chefen.
 
 ::: {.callout-solution}
 pI er ca. 7.4 for de to proteiner, der har samme pI (6.1 for det
-    andet protein). MW er ca. 20 kDa for de to proteiner, der har samme
-    MW (og ca. 40 kDa for det andet). Protein 2 må derfor have MW 20 kDa
-    og pI 7.4, så det overlapper med begge de to andre på én parameter.
+andet protein). MW er ca. 20 kDa for de to proteiner, der har samme
+MW (og ca. 40 kDa for det andet). 
+Da enzym aktivitet blev målt i fraktionerne med to proteiner, 
+må enzymet derfor have MW 20 kDa
+og pI 7.4, så det overlapper med begge de to andre på én parameter.
 :::
 
 2.  Du kører gelfiltreringssøjlen igen og satser ved at loade hele din
@@ -363,11 +366,11 @@ Der er 20 mg protein tilbage efter pooling.
 
 Du måler protein koncentration og enzymaktivitet:
 
-    Total protein: 19.9 mg\
-    Total enzyme: 1989.9 Units\
-    Enrichment: 1.5\
-    Yield: 99.5%\
-    Cost: 0.251 hours/100 Units
+Total protein: 19.9 mg\
+Total enzyme: 1989.9 Units\
+Enrichment: 1.5\
+Yield: 99.5%\
+Cost: 0.251 hours/100 Units
 
 4.  Brug nu resultatet fra spørgsmål 2 til at regne ud, hvilket af de to
     resterende proteiner, der vil binde til DEAE-søjlen ved pH 7.
@@ -392,7 +395,7 @@ Ja, der er nu to toppe af samme størrelse, hvor der før var én stor
 :::
 
 Du pooler nu alle fraktionerne 10-30 fra den valgte top og måler protein
-koncentration of enzymaktivitet:
+koncentration og enzymaktivitet:
 
 Total protein: 9.9 mg\
 Total enzyme: 1989.8 Units\
@@ -400,7 +403,7 @@ Enrichment: 3.0\
 Yield: 99.5%\
 Cost: 0.503 hours/100 Units
 
-Til slut kører du en SDS-PAGE for at bekræfte at der kun er ét bånd på
+Til slut kører du en SDS-PAGE for at bekræfte, at der kun er ét bånd på
 gelen.
 
 ![](figures/te_09/opgave-2-9.png){width="100%" fig-align="center"} 
@@ -413,15 +416,15 @@ til dig (se opgave 5 og 6).
 
 ## Opgave 5. Kalibrering af gelfiltrering
 
-Din næste er at kalibrere en gelfiltreringssøjle, hvilket gøres ved at
-analysere en blanding af proteiner med kendte masser. Dette et meget
+Din næste opgave er at kalibrere en gelfiltreringssøjle, hvilket gøres ved at
+analysere en blanding af proteiner med kendte masser. Dette er et meget
 vigtigt eksperiment i et hvert proteinbiokemisk laboratorium, da man
 ikke på forhånd kan vide hvilket elueringsvolumen, der svarer til
 hvilken MW for en ukendt søjle. Som nævnt i en tidligere opgave kunne vi
-f.eks. ikke være sikre på om vi havde to monomere proteiner på 20 kDa og
+f.eks. ikke være sikre på, om vi havde to monomere proteiner på 20 kDa og
 ét på 40 kDa eller f.eks. to dimerer på hhv. 2\*20 kDa og 2\*40 kDa.
 
-Du får udleveret en \"GF Calibration Mixture\", der indeholder 6
+Du får udleveret en "GF Calibration Mixture", der indeholder 6
 proteiner med forskellige MW, der alle er på monomer form:
 
   -----------------------
@@ -448,21 +451,21 @@ formål at kunne kalibrere gelfiltreringssøjler.
     opgave 2) vil bedst være i stand til at separere alle 6 proteiner?
 
 ::: {.callout-solution}
-Gel viser de 6 proteiner.
+Sephacryl S-200 HR er det eneste materiale, der kan separere hele
+    vejen fra 5000-250.000 kDa. Her antager vi at alle proteinerne er
+    monomerer eller i hvert fald har en oligomer-MW, der svarer til det
+    angivne.
 :::
 
 Du kører nu din valgte gelfiltreringssøjle og får følgende resultat:
 
 ![](figures/te_09/opgave-2-10.png){width="100%" fig-align="center"} 
 
-2.  Notér elueringsvolumenet (fraktionsnummeret) for hvert top (midten
+2.  Notér elueringsvolumenet (fraktionsnummeret) for hver top (midten
     af peaken).
 
 ::: {.callout-solution}
-Sephacryl S-200 HR er det eneste materiale, der kan separere hele
-    vejen fra 5000-250.000 kDa. Her antager vi at alle proteinerne er
-    monomerer eller i hvert fald har en oligomer-MW, der svarer til det
-    angivne.
+Vi observerer 6 toppe ved ca. 27, 43, 59, 75, 92 og 103 ml (eller fraktionsnummer).
 :::
 
 3.  Tilordn hver top til den korrekte MW og brug Excel til at plotte
@@ -471,7 +474,6 @@ Sephacryl S-200 HR er det eneste materiale, der kan separere hele
     sidst i gennem en gelfiltreringssøjle.
 
 ::: {.callout-solution}
-Vi observerer 6 toppe ved ca. 27, 43, 59, 75, 92 og 103 ml (eller fraktionsnummer).\
 Vi antager at proteinerne eluerer efter størrelse med det største først:
 
   -------------------------------------
@@ -512,7 +514,7 @@ Det ukendte protein eluerer ved fraktion 52. Da vi har log(MW) = (fraktionsnumme
 
 ::: {.callout-solution}
 Proteinet har en masse baseret på SDS-PAGE på 18-20 kDa og må derfor
-være en trimer bestående af 3 subunits på hver denne masse.
+være en trimer bestående af 3 subunits med hver denne masse.
 :::
 
 ![](figures/te_09/opgave-2-12.png){width="30%" fig-align="center"} 
@@ -530,7 +532,7 @@ Du starter med at køre en 2D SDS-PAGE gel:
 
 ![](figures/te_09/opgave-2-14.png){width="100%" fig-align="center"} 
 
-1.  Identificer proteinet på gelen og noter dets MW og pI.
+1.  Identificér proteinet på gelen og notér dets MW og pI.
 
 ::: {.callout-solution}
 MW = 116 kDa, pI = 5.3.
@@ -561,7 +563,7 @@ Der vil mistes protein for hver oprensnings-søjle. Med erfaring fra
 > Hint: Selv med denne komplekse proteinblanding er det muligt at
 > oprense enzymet i to trin, hvis det gøres med omhu!
 
-Du starter med en gelfiltrering med det valgte søjle materiale og får
+Du starter med en gelfiltrering med det valgte søjlemateriale og får
 følgende kromatogram:
 
 ![](figures/te_09/opgave-2-15.png){width="100%" fig-align="center"} 
@@ -585,7 +587,7 @@ Du kører 1D og 2D SDS-PAGE for at undersøge renheden af din prøve:
 ![](figures/te_09/opgave-2-16.png){width="100%" fig-align="center"} 
 
 5.  1D-gelen afslører at prøven er kontamineret. Hvordan kan der være
-    kontaminering, når ved at alle de andre proteiner i prøven er meget
+    kontaminering, når du ved at alle de andre proteiner i prøven er meget
     mindre?
 
 ::: {.callout-solution}
@@ -601,7 +603,7 @@ ved pH-værdier over 5.8 mens de to kontaminanter vil være positivt
 ladede op til pH 6.8. Så hvis vi kører en anionbytter i intervallet
 mellem (pH 5.8-6.8) burde det altså kun være vores protein, der binder.
 
-Du kører nu en ionbyttekromatografi søjle med DEAE-cellulose ved pH 6.5
+Du kører nu en ionbyttekromatografi-søjle med DEAE-cellulose ved pH 6.5
 og får følgende resultat:
 
 ![](figures/te_09/opgave-2-17.png){width="100%" fig-align="center"} 
@@ -628,13 +630,11 @@ Du kører 1D SDS-PAGE for at se om dit protein er helt rent!
     højere udbytte?
 
 ::: {.callout-solution}
-Vælger fraktion 15-35 på gelfiltreringssøjlenfor at få mere af den rigtige peak med i første omgang.
+Nej, vil gerne have højere udbytte. Vælger fraktion 15-35 på gelfiltreringssøjlen for at få mere af den rigtige peak med i første omgang.
 :::
 
-### Oligomer
-
 Du kører en gelkalibrering af din søjle med proteiner med standard masse
-(som i opgave 5) og estimer massen af dit nyoprensede protein til at
+(som i opgave 5) og estimerer massen af dit nyoprensede protein til at
 være 465 kDa.
 
 8.  Hvilken oligomer form har dit oprensede protein?
@@ -647,44 +647,42 @@ Tetramer.
 
 ## Opgave 7. Strukturbestemmelse af det oprensede protein (PyMOL)
 
-Du har nu endelig fået oprenset dit protein arbejder over de kommende
+Du har nu endelig fået oprenset dit protein og arbejder over de kommende
 måneder i afdelingen for strukturbestemmelse, hvor du (med god
 vejledning) står for hele processen med prøveforberedelse, X-ray
 krystallografi og cryo-elektron mikroskopi, og den efterfølgende
 modellering.
 
-1.  Dit protein er blevet undersøgt med røntgenkrystallografi og en
-    Denne struktur er baseret på en højopløsnings (1,5 Ångström)
-    røntgenkrystallografisk undersøgelse. Åben modellen, der er blevet
-    bestemt med X-ray krystallografi til 1,5 Å, i PyMOL med `fetch 1JZ8` 
-    og farv kæder. Hvor mange kæder er der i proteinet?
+1.  Røntgenkrystallografi af din proteinkrystal giver en opløsning på 1,5 Ångström, 
+    hvilket tillader dig at bygge en præcis atomar model (X-ray.pdb). 
+    Åbn modellen i PyMOL og farv kæder. Hvor mange kæder er der i proteinet?
+
+{{< download-button path="../files/TE9-X-ray.pdb" filename="X-ray.pdb" >}}
 
 ::: {.callout-solution}
 4 kæder
 :::
 
-2.  Dit protein er også blevet undersøgt ved hjælp af
-    kryo-elektronmikroskopi. Et cryo-EM-kort blev bygget ud fra over
-    90.000 billeder af molekylet frosset i is, som var detaljeret nok
-    til at give en atommodel. Du kan åbne cryo-EM kortet med `fetch EMD-2984` 
-    og modellen med `fetch 5A1A`. Hvilket område er mest flexibelt?
+2.  Dit protein er også blevet undersøgt ved hjælp af kryo-elektronmikroskopi 
+    og gav et cryo-EM-kort med 2,2 Å opløsning. Du bygger også modellen ihht. dette kort. 
+    Åbn modellen (Cryo-EM.pdb) og sammenlign X-ray data ved at aligne de to proteiner. 
+    Hvad er RMSD? Hvor er der fleksible domæner i proteinet?
+
+{{< download-button path="../files/TE9-Cryo-EM.pdb" filename="Cryo-EM.pdb" >}}
 
 ::: {.callout-solution}
+Svar: RMSD = 20.415
+
 Fleksibelt område er rødt. Områder omkring 687 og 732.
 :::
 
-3.  Du vælger at studere det fleksibele domæne nærmere med NMR. Åben
-    NMR-strukturen med `fetch 5IAZ`. Hvilket område er mest flexibelt?
-    Hint: Afspil de forskellige frames, der viser forskellige modeller
-    der passer til NMR data, og find det mest fleksible domæne.
-
-::: {.callout-solution}
-Område 738-758 og område omkring 823.
-:::
-
-4.  Søg med en del af sekvensen med Protein BLAST
+3.  Søg med en del af sekvensen (som I kan aflæse i PyMOLs SEQ panel) med Protein BLAST
     (<https://blast.ncbi.nlm.nih.gov/>) for at finde ud af hvilket
-    protein det er?
+    protein det er? (se note)
+
+::: {.callout-tip title="Note"}
+Dette scenarie er ikke realistisk, da man, som I vil lære om senere, vil bruge massespektrometri til at identificere proteinet på et tidligt tidspunkt.
+:::
 
 ::: {.callout-solution}
 Det er beta-galactosidase.
@@ -694,6 +692,6 @@ Du finder ud af at proteinet du har oprenset og bestemt strukturen af er
 et helt standard *E. coli* protein og ikke et nyt og interessant protein,
 som din chef havde sat dig i udsigt. Nu bliver cheffen fyret fordi han
 ikke har styr på de prøver han udleverer. Du bliver til gengæld hædret
-for dine evner indenfor protein oprensning, X-ray, cryo-EM og NMR og får
+for dine evner indenfor protein oprensning, X-ray og cryo-EM og får
 en glorværdig karriere med løsning af nye og interessante biomolekylære
 strukturer.
