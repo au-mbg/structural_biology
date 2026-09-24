@@ -23,7 +23,7 @@ I denne opgave skal I lave en AlphaFold-forudsigelse selv og sammenligne den med
 
 **Hent krystalstruktur af Parkin (1.8Å opløsning)**
 
-Åben krystalstrukturen af Parkin i PyMOL: **PDB-kode** `5C1Z` (`fetch 5c1z, type=pdb1` for at hente den biologiske enhed). Farv strukturen efter B-factor.
+Åbn krystalstrukturen af Parkin i PyMOL: **PDB-kode** `5C1Z` (`fetch 5c1z, type=pdb1` for at hente den biologiske enhed). Farv strukturen efter B-factor.
 
 Brug
 

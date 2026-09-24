@@ -102,7 +102,7 @@ Højt antal Cys skyldes at det er et ekstracellulært, kløvet enzym, der holdes
 5.	Hvor mange α-helixer er der i α-Chymotrypsin? Hvilke aminosyre-rester er i disse helixer?
 
 ::: {.callout-tip}
-Klik på ”Structure” til venstre på UniProt-siden og find PDB ID. Åben strukturen i PyMOL, aktiver `C > by ss > Helix Sheet Loop` og brug Sequence viewer til at finde helix regionerne. Alternativt kan man finde helix annotationen på RCSB under "Sequence" tab.
+Klik på ”Structure” til venstre på UniProt-siden og find PDB ID. Åbn strukturen i PyMOL, aktiver `C > by ss > Helix Sheet Loop` og brug Sequence viewer til at finde helix regionerne. Alternativt kan man finde helix annotationen på RCSB under "Sequence" tab.
 
 Sekundær-strukturen der vises i PyMOL og på RCSB er baseret på annotation af forskerne, der løste strukturen af α-Chymotrypsin. 
 :::
@@ -330,7 +330,7 @@ Asparagine har en amidgruppe i stedet for en carboxylsyregruppe på sin sidekæd
 
 I denne opgave skal vi kigge på nukleotid binding af Elongerings Faktor Tu (EF-Tu) og sammenligne GDP-binding til EF-Tu fra *E. coli* (PDB-ID: 1EFC) med GDPNP-binding til EF-Tu fra den termofile bakterie *T. aquaticus* (PDB-ID: 1EFT).
 
-1.	Åben de to strukturer i PyMOL, fjern vand med `remove solvent`, slet kæde B med `remove chain B` og align strukturerne med `align 1efc, 1eft` kommando. Hvad er RMSD mellem de to proteiner?
+1.	Åbn de to strukturer i PyMOL, fjern vand med `remove solvent`, slet kæde B med `remove chain B` og align strukturerne med `align 1efc, 1eft` kommando. Hvad er RMSD mellem de to proteiner?
 
 ::: {.callout-solution}
 RMSD = 9,4.

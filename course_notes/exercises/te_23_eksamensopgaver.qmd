@@ -186,7 +186,7 @@ I vinterhalvåret er det en god idé at tage vitamin D, da der ikke er nok solly
 Der er to områder med sekvensen AGGTCA. Der er tale om et "direct repeat". Altså ikke et "inverted repeat" eller palindrom, som man ofte ser. "Direct repeat" termen er ikke nævnt direkte i pensum, så det er ok ikke at bruge termen, og i stedet beskrive det med ord. Duplikeret motiv er også korrekt svar.
 :::
 
-Åben strukturen med PDB 1YNW i PyMOL og undersøg de DNA-bindende domæner på VDR og RXR.
+Åbn strukturen med PDB 1YNW i PyMOL og undersøg de DNA-bindende domæner på VDR og RXR.
 
 **Spørgsmål 2.** Hvilken type strukturmotiv indeholder de to DNA-bindende domæner og hvilken groove af DNA binder de til?
 
