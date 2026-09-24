@@ -124,7 +124,7 @@ With `pixi` installed the site can be rendered or previewed using the commands
 - `pixi run preview-rebuild instructor`: Rebuilds the complete instructor HTML before opening its preview.
 - `pixi run render student`: Renders only the student-facing version (also the default for `pixi run render`).
 - `pixi run render solution`: Renders only the public solution version using its own release calendar.
-- `pixi run render instructor`: Renders the complete, HTML-only instructor version without local encryption.
+- `pixi run render instructor`: Renders the complete instructor version, including PDF and Word downloads, without local encryption.
 - `pixi run render-all`: Renders all three site versions (not live).
 - `pixi run clean`: Removes publication and authoring-preview artifacts.
 
@@ -196,9 +196,10 @@ exercises appear in the sidebar. Files under `course_notes/files/` remain public
 and the scheduled solution site is published under `/solution/`. The complete
 instructor site is published under `/instructor/`; GitHub Actions encrypts its
 HTML with StatiCrypt, while local renders and previews remain unencrypted. The
-instructor profile is HTML-only. Because the repository source is public, the
-password prompt is a convenience gate rather than protection for confidential
-source material.
+instructor PDF and Word files are published alongside the encrypted HTML and can
+be downloaded without entering the password. Because the repository source is
+public, the password prompt is a convenience gate rather than protection for
+confidential source material.
 
 For reproducible date testing, temporarily replace `draft-after: "system-time"`
 with an ISO date in the relevant calendar, run the corresponding Pixi render,

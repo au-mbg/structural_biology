@@ -25,7 +25,7 @@ course_notes
 ├── _quarto-student.yml  # Scheduled student profile configuration
 ├── _quarto-author.yml   # Authoring settings that make drafts visible
 ├── _quarto-author-*.yml # Profile-specific preview output locations
-├── _quarto-instructor.yml # Complete HTML-only instructor profile
+├── _quarto-instructor.yml # Complete instructor profile with PDF/Word downloads
 ├── _quarto-publish.yml  # Publication settings and release cleanup
 ├── _quarto-solution.yml # Solution profile configuration
 ├── _quarto.yml          # Small Quarto entry point that loads config/quarto/website.yml
@@ -70,8 +70,9 @@ preview cache.
 Use `pixi run render student`, `pixi run render solution`,
 `pixi run render instructor`, or `pixi run render-all` when checking release
 builds. Student and solution renders hide scheduled drafts and remove unreleased
-files. Instructor renders include everything, emit HTML only, and are encrypted
-only later in the GitHub Actions publication workflow.
+files. Instructor renders include everything and emit HTML, PDF, and Word files.
+Only the HTML is encrypted later in the GitHub Actions publication workflow;
+the PDF and Word downloads remain directly accessible.
 
 ## Student, solution, and instructor profiles
 
@@ -87,8 +88,9 @@ Content...
 This content is hidden from the student profile and visible in both the solution
 and instructor profiles. The public solution profile follows its release
 calendar. The instructor profile always includes all pages and solutions; its
-published HTML is processed by StatiCrypt in CI. The source content remains in
-the same document, making exercises and solutions easier to keep synchronized.
+published HTML is processed by StatiCrypt in CI, while its PDF and Word files
+remain directly downloadable. The source content remains in the same document,
+making exercises and solutions easier to keep synchronized.
 
 ## Figures
 
