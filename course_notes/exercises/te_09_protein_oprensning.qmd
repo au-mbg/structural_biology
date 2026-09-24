@@ -666,17 +666,23 @@ modellering.
 2.  Dit protein er også blevet undersøgt ved hjælp af kryo-elektronmikroskopi 
     og gav et cryo-EM-kort med 2,2 Å opløsning. Du bygger også modellen ihht. dette kort. 
     Åbn modellen (Cryo-EM.pdb) og sammenlign X-ray data ved at aligne de to proteiner. 
-    Hvad er RMSD? Hvor er der fleksible domæner i proteinet?
+    Hvad er RMSD? 
 
 {{< download-button path="../files/TE9-Cryo-EM.pdb" filename="Cryo-EM.pdb" >}}
 
 ::: {.callout-solution}
-Svar: RMSD = 20.415
-
-Fleksibelt område er rødt. Områder omkring 687 og 732.
+RMSD = 20.415
 :::
 
-3.  Søg med en del af sekvensen (som I kan aflæse i PyMOLs SEQ panel) med Protein BLAST
+3.  Farvelæg de to modeller ihht. B-faktor. Viser de to modeller fleksibilitet i de samme områder
+    og hvad kan være årsagen til forskelle?
+
+::: {.callout-solution}
+Ja, de er overordnet fleksible i de samme områder. Dog er der nogle områder, hvor krystalstrukturen
+er mere stabil, hvilket kan skyldes krystalkontakter.
+:::
+
+4.  Søg med en del af sekvensen (som I kan aflæse i PyMOLs SEQ panel) med Protein BLAST
     (<https://blast.ncbi.nlm.nih.gov/>) for at finde ud af hvilket
     protein det er? (se note)
 
