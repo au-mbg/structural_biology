@@ -76,7 +76,7 @@ Berg 10. udgave s. 214 (Fig. 7.7) viser det aktive site af ATCase. En lysin side
 
 ## Opgave 3. ATCase
 
-ATCase er et eksempel på et vigtigt allosterisk reguleret enzym. Åben filen ATCase.pml, der findes i mappen for denne uge i Brightspace. Knapperne T_trimer1, T_trimer2, T_dimer1, T_dimer2, and T_dimer3 kan bruges til at tænde og slukke for enkelte subunits i T-tilstanden (F1). Tryk på F2 for at skifte til R-tilstanden. F3 og F4 er side-views af hver tilstand. F5 og F6 viser backbone i T- og R-tilstanden. F7 er et overlay af T- og R-trimer backbone.
+ATCase er et eksempel på et vigtigt allosterisk reguleret enzym. Åbn filen ATCase.pml, der findes i mappen for denne uge i Brightspace. Knapperne T_trimer1, T_trimer2, T_dimer1, T_dimer2, and T_dimer3 kan bruges til at tænde og slukke for enkelte subunits i T-tilstanden (F1). Tryk på F2 for at skifte til R-tilstanden. F3 og F4 er side-views af hver tilstand. F5 og F6 viser backbone i T- og R-tilstanden. F7 er et overlay af T- og R-trimer backbone.
 
 1. Beskriv de strukturelle ændringer, der finder sted i ATCase når enzymet skifter mellem T- og R-tilstanden.
 

@@ -170,7 +170,7 @@ Groove-koden kan være lidt svært at få øje på når man analyserer en DNA do
 Sphere-repræsentationen viser Van der Waals-radius af atomer og giver dermed et billede af molekylets realistiske form og fylde. Farvning af atomerne ses tydeligere pga. deres størrelse. Til gengæld er det ikke let at aflæse den kemisk sammensætning (som man ser det med sticks) eller den sekundære struktur (som man ser det med cartoon).
 :::
 
-Åben DNA dobbelthelix med PDB-ID: 1BNA i PyMOL og fjern vand-molekyler med PyMOL kommandoen "remove solvent". Brug nu `DNA-groove.pml` script til at ændre på repræsentationen og farvelægge donorer- og acceptorer i grooves. Rotér molekylet, så du ser ned i major groove (så symmetrien bliver tydelig).
+Åbn DNA dobbelthelix med PDB-ID: 1BNA i PyMOL og fjern vand-molekyler med PyMOL kommandoen "remove solvent". Brug nu `DNA-groove.pml` script til at ændre på repræsentationen og farvelægge donorer- og acceptorer i grooves. Rotér molekylet, så du ser ned i major groove (så symmetrien bliver tydelig).
 
 3. Hvad er specielt ved groove-kode-mønstret for denne DNA dobbelthelix?
 
@@ -230,7 +230,7 @@ Mekanismen er at ligand-binding påvirker konformationen af proteinet, så det f
 
 Det TATA-box bindende protein (TBP) er involveret i promoter-genkendelse mht. at starte RNA polymerase transskription. TATA-boksen er en 8-basepar del af promoteren, der normalt er lokaliseret 30 nukleotider før transskription start site (TSS). Konsensus-sekvensen er `TATA(A/T)A(A/T)(G/A)`.
 
-Åben `TATA.pml` scriptet i PyMOL. **F1** viser bindingen af TBP langs den heliske akse for DNA-dobbelthelix.
+Åbn `TATA.pml` scriptet i PyMOL. **F1** viser bindingen af TBP langs den heliske akse for DNA-dobbelthelix.
 
 {{< download-button path="../files/TE6-TATA.pml" filename="TATA.pml" >}}
 
@@ -319,7 +319,7 @@ Transskriptionsfaktor-lignende effector nukleaser (TALENs) binder specifikke DNA
 
 ![](figures/te_06/opgave-5-figur-1.png){width="80%" fig-align="center" .lightbox}
 
-Download og åben scriptet `TALE.pml` i PyMOL. Tryk **F1** og **F2** for at se DNA-protein komplekset hhv. fra siden og langs helix aksen. Tryk **F3** for at se sphere-repræsentation, hvor man lettere kan se repeat-strukturen. Tryk **F4** for at se en specifik interaktion mellem protein og DNA. 
+Download og åbn scriptet `TALE.pml` i PyMOL. Tryk **F1** og **F2** for at se DNA-protein komplekset hhv. fra siden og langs helix aksen. Tryk **F3** for at se sphere-repræsentation, hvor man lettere kan se repeat-strukturen. Tryk **F4** for at se en specifik interaktion mellem protein og DNA. 
 
 {{< download-button path="../files/TE6-TALE.pml" filename="TALE.pml" >}}
 
@@ -349,7 +349,7 @@ Nuklease-domæne giver specifik kløvning af DNA, hvilket kan bruges til genom-r
 
 ## Opgave 7. Trp trap træsko 
 
-I *E. coli* binder Trp-repressor en specifik DNA-sekvens under tilstedeværelse af aminosyren tryptofan (Trp) og hæmmer dermed udtryk af fem gener i *trp-*operon. Trp-repressor danner en homodimer, der binder til DNA-dobbelthelix via to alpha-helicer (kaldet "genkendelseshelicer"). Åben PyMOL-scriptet `Trp.pml` i PyMOL, der laver en strukturel alignment af Trp-repressor (bundet til Trp og DNA) med *apo*-formen af proteinet (ikke bundet til Trp eller DNA). **F1** viser denne alignment.
+I *E. coli* binder Trp-repressor en specifik DNA-sekvens under tilstedeværelse af aminosyren tryptofan (Trp) og hæmmer dermed udtryk af fem gener i *trp-*operon. Trp-repressor danner en homodimer, der binder til DNA-dobbelthelix via to alpha-helicer (kaldet "genkendelseshelicer"). Åbn PyMOL-scriptet `Trp.pml` i PyMOL, der laver en strukturel alignment af Trp-repressor (bundet til Trp og DNA) med *apo*-formen af proteinet (ikke bundet til Trp eller DNA). **F1** viser denne alignment.
 
 {{< download-button path="../files/TE6-Trp.pml" filename="Trp.pml" >}}
 

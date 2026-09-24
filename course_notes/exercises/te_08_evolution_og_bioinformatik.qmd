@@ -241,7 +241,7 @@ Denne kan ydermere akkompagneres med alignment i samme farvekodning og dot-brack
 ![](figures/te_08/opgave-1-figur-6.png){width="95%" fig-align="center" .lightbox}
 :::
 
-4. Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åben strukturen i PyMOL med `fetch 3a3a`. Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
+4. Selenocysteine tRNA har en lignende struktur. Kig på `tRNA-Sec` familie på Rfam og sammenlign R-chie plottet. Undersøg nu hvordan den 3-dimensionelle struktur af dette tRNA ser ud. Klik på "Structures" menu-punktet og klik på en af PDB ID'erne (f.eks. 3a3a), der tager dig til PDB. Åbn strukturen i PyMOL med `fetch 3a3a`. Hvor sidder den extra hairpin på den klassiske L-form af tRNA?
 
 ::: {.callout-solution}
 Hairpin er indsat mellem anticodon loop og T-psi-C loop.
@@ -300,7 +300,7 @@ P2,4,6 støttes af kompenserende baseændringer.\
 PX har 2 mismatches. P5 og P7 har 1 mismatch (sortfarvede basepar).
 :::
 
-I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt med røntgen krystallografi ([**Shechner *et al.,* 2009**](https://www.ncbi.nlm.nih.gov/pubmed/19965478)) og i 2011 blev den bestemt i "pre-ligation-state" ([**Shechner & Bartel, 2011**](https://www.nature.com/articles/nsmb.2107)). Åben scriptet `RNA-ligase.pml` i PyMOL. **F1** viser RNA strukturen med samme farver som vist i nedenstående figur - dog er pseudoknuden P3 markeret i rød i PyMOL.
+I 2009 blev strukturen af RNA ligase klasse I i "post-ligation-state" bestemt med røntgen krystallografi ([**Shechner *et al.,* 2009**](https://www.ncbi.nlm.nih.gov/pubmed/19965478)) og i 2011 blev den bestemt i "pre-ligation-state" ([**Shechner & Bartel, 2011**](https://www.nature.com/articles/nsmb.2107)). Åbn scriptet `RNA-ligase.pml` i PyMOL. **F1** viser RNA strukturen med samme farver som vist i nedenstående figur - dog er pseudoknuden P3 markeret i rød i PyMOL.
 
 {{< download-button path="../files/TE8-RNA-ligase.pml" filename="RNA-ligase.pml" >}}
 
@@ -490,7 +490,7 @@ Svagt bevaret (.):        Kolonne 19 = 2*-1 (F-V) + 4 (V-V) = 2
 
 I denne opgave skal vi aligne strukturer (i stedet for sekvenser). Når man aligner strukturer bruges Root Mean Square Deviation (RMSD) målet, der er beskrevet [**her**](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions). RMSD måler middel-afstanden i mellem atomer af to overlejrede molekyler og kan derfor bruges til at vurdere hvor ens to strukturer er.
 
-Åben pml filen `Globin.pml` i PyMOL, hvor **F1** viser en strukturel alignment af Hæmoglobin alfa kæde (PDB-ID: `1HBB`), Myoglobin (PDB-ID: `1MBD`) og Leghæmoglobin (PDB-ID: `1GDJ`).
+Åbn pml filen `Globin.pml` i PyMOL, hvor **F1** viser en strukturel alignment af Hæmoglobin alfa kæde (PDB-ID: `1HBB`), Myoglobin (PDB-ID: `1MBD`) og Leghæmoglobin (PDB-ID: `1GDJ`).
 
 {{< download-button path="../files/TE8-Globin.pml" filename="Globin.pml" >}}
 
@@ -559,7 +559,7 @@ I denne opgave bruger vi alignment af Hæmoglobin, Myoglobin og Leghæmoglobin 
 
 {{< download-button path="../files/globin-aln-fasta.txt" >}}
 
-- Åben nu PyMOL, navigér til colCons mappen, sæt PyMOL-parametre, og aktivér colCons.py scriptet:
+- Åbn nu PyMOL, navigér til colCons mappen, sæt PyMOL-parametre, og aktivér colCons.py scriptet:
 
 ```default
 reinitialize
@@ -612,7 +612,7 @@ Vis proteinet med `sphere`-repræsentation og svar på følgende spørgsmål.
 Overfladen er blå (dvs. <= 50% bevaret). Der er mange røde residues omkring hæmgruppen (dvs. <= 100% bevaret).
 :::
 
-Åben nu alle globinerne og farvelæg dem med colCons:
+Åbn nu alle globinerne og farvelæg dem med colCons:
 
 ```default
 reinit
@@ -671,11 +671,11 @@ Stort insert omkring position 550.
 
 2. Lav et PyMOL-script, der gør følgende:
 
-- Åben HSP7F med PDB-ID: 2QXL. Hint: Sørg for kun at vise én monomer. Gem som F1.
-- Åben DNAK fra E. coli med PDB-ID: 4B9Q. Hint: Sørg for kun at vise én monomer.
+- Åbn HSP7F med PDB-ID: 2QXL. Hint: Sørg for kun at vise én monomer. Gem som F1.
+- Åbn DNAK fra E. coli med PDB-ID: 4B9Q. Hint: Sørg for kun at vise én monomer.
 - Align HSP7F og DNAK. Gem som F2.
-- Åben HSP med PDB-ID: 1ATR.
-- Åben Actin fra E. coli med PDB-ID: 1ATN.
+- Åbn HSP med PDB-ID: 1ATR.
+- Åbn Actin fra E. coli med PDB-ID: 1ATN.
 - Align HSP og Actin.
 - Gem som F3.
 

@@ -202,7 +202,7 @@ vil blive forbløffet, ligesom verden var i 1960, over den smukke
 kompleksitet i dette protein. Læs evt. mere
 [her](https://pdb101.rcsb.org/motm/1).
 
-1.  Åben 1MBN i PyMOL. Hvor mange alpha-helicer har proteinet? Gem
+1.  Åbn 1MBN i PyMOL. Hvor mange alpha-helicer har proteinet? Gem
     scene.
 
 ::: {.callout-solution}
@@ -303,7 +303,7 @@ evt. mere [her](https://pdb101.rcsb.org/motm/23).
 1.  Reinitialiser PyMOL med menuen `File > Reinitialize > Everything`.
     Alternativt kan du åbne et nyt PyMOL vindue med menuen `File > New Window (Default)`.
 
-2.  Åben DNA helix med PBD-ID 1BNA. Fjern vand. Vis DNA helix med
+2.  Åbn DNA helix med PBD-ID 1BNA. Fjern vand. Vis DNA helix med
     spheres repræsentation. Mål afstand over major og minor groove med
     distance Wizard. Gem scene.
 
@@ -349,7 +349,7 @@ A-form bredde ca. 17.7 Å.\
 Z-form bredde ca. 16.2 Å.
 :::
 
-5.  RNA helicer findes kun i A-form. Åben tRNA-strukturen (4TNA) og mål
+5.  RNA helicer findes kun i A-form. Åbn tRNA-strukturen (4TNA) og mål
     bredden af helix. Gem scene. Stemmer bredden overens med A-form?
 
 ::: {.callout-solution}
@@ -386,7 +386,7 @@ fra bunden. Læs evt. mere [her](https://pdb101.rcsb.org/motm/119).
 4 Å, 4 strenge
 :::
 
-7.  Åben DNA designer krystalstruktur (3GBI) i PyMOL. Man ser kun den
+7.  Åbn DNA designer krystalstruktur (3GBI) i PyMOL. Man ser kun den
     asymmetriske enhed. Ekspandér krystallen med objektmenuen `A > generate > symmetry mates > within 4 A` 
     og fjern de to objekter,
     der ikke er en del af DNA-trekanten. Farvelæg strengene i
@@ -412,7 +412,7 @@ Se scene 008 i PyMOL session fil:
 50 Å.
 :::
 
-9.  Man kan desuden designe RNA nanostrukturer. Åben RNA lattice element
+9.  Man kan desuden designe RNA nanostrukturer. Åbn RNA lattice element
     (9R7Q). Farvelæg RNA strukturen med regnbue farver, der viser forløb
     fra 5\'- til 3\'-ende af strenge. Gem scene. Hvor mange strenge er
     denne RNA-struktur dannet af?
@@ -499,7 +499,7 @@ fra hinanden og danner den aktive monomer, når det frigives i blodbanen
 og binder sig til insulinreceptorer, som findes på overfladen af de
 fleste celler i menneskekroppen.
 
-4.  Åben strukturen
+4.  Åbn strukturen
     [1trz](http://www.rcsb.org/pdb/explore/explore.do?structureId=1trz)
     af det første rekombinante humane insulin, markedsført som Humulin.
     Ekspandér krystallen og vis kun de elementer, der udgør det
@@ -517,7 +517,7 @@ Insulin kan designes til at være langtids-virkende ved at stabilisere
 hexameren. Forskere muterede insulin for at gøre det mere stabilt og fik
 glargine (Lantus ®). Læs mere [her](https://pdb101.rcsb.org/motm/194).
 
-5.  Åben strukturen af glargine
+5.  Åbn strukturen af glargine
     ([4iyf](http://www.rcsb.org/pdb/explore/explore.do?structureId=4iyf))
     og undersøg hvilke aminosyrer, som er blevet ændret og hvor de
     sidder i proteinet. Gem scene. Hint: Brug Sekvens panel og 
@@ -531,7 +531,7 @@ N21G (C-term kæde A)\
 T30delta (C-term deletion i kæde B)
 :::
 
-6.  Åben desuden designer insulin ved navn degludec (Tresiba ®) (PDB
+6.  Åbn desuden designer insulin ved navn degludec (Tresiba ®) (PDB
     entry [4ajx](http://www.rcsb.org/pdb/explore/explore.do?structureId=4ajx)).
     Ekspandér krystallen med objektmenuen `A > generate > symmetry mates > within 4 A` 
     og find interaktion mellem to hexamerer. Gem
@@ -567,7 +567,7 @@ side. For hver ATP, der brydes, overføres to calciumioner (vist her i
 blåt) gennem membranen, og to eller tre hydrogenioner overføres tilbage
 i modsat retning. Læs evt. mere [her](https://pdb101.rcsb.org/motm/51).
 
-1.  Åben 1SU4 i PyMOL. Orientér modellen på samme måde som i figuren.
+1.  Åbn 1SU4 i PyMOL. Orientér modellen på samme måde som i figuren.
     Farv modellen med `C > by element > CHNOS` (med C i hvid). Find
     Ca^2+^ ioner og farv dem cyan. Hint: Lettest at fjerne vand og
     dernæst finde ioner i Sekvens panel - helt til højre, udvælge dem og
@@ -591,7 +591,7 @@ Se scene 004 i PyMOL session fil:
 Asp, Asn, Glu, Glu, Thr, Glu, Asn
 :::
 
-3.  Åben 1IWO i PyMOL. Denne indeholder 2 strukturer i den asymmetriske
+3.  Åbn 1IWO i PyMOL. Denne indeholder 2 strukturer i den asymmetriske
     enhed. Slet den ene af strukturene med kommandoen: remove chain B.
     Brug objektmenuen `A > align > to molecule` for at overlejre de to
     proteiner. Gem scene.
