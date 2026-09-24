@@ -3,7 +3,7 @@ title: "TØ 9 -- Protein oprensning og analyse"
 ---
 
 ::: {.callout-note}
-Dette TØ sæt relaterer sig til Berg kapitel 4 om protein metoder. I opgave 2-6 gennemgås eksempler på virtuel protein oprensning, der er baseret på programmet "Protein purification" udviklet af Andrew Booth. Disse opgaver gør det muligt at illustrere nogle pointer om serielle oprensningsmetoder. I opgave 7 kigger vi så på strukturbestemmelses-data fra X-ray krystallografi, cryo-elektron mikroskopi og nuklear magnetisk resonans.
+Dette TØ sæt relaterer sig til Berg kapitel 4 om protein metoder. I opgave 2-6 gennemgås eksempler på virtuel protein oprensning, der er baseret på programmet "Protein purification" udviklet af Andrew Booth. Disse opgaver gør det muligt at illustrere nogle pointer om serielle oprensningsmetoder. I opgave 7 kigger vi så på strukturbestemmelses-data fra X-ray krystallografi og cryo-elektron mikroskopi.
 :::
 
 ## Opgave 1. Metode quiz
@@ -671,6 +671,12 @@ modellering.
 {{< download-button path="../files/TE9-Cryo-EM.pdb" filename="Cryo-EM.pdb" >}}
 
 ::: {.callout-solution}
+```default
+load X-ray.pdb
+load Cryo-EM.pdb
+align X-ray, Cryo-EM
+```
+
 RMSD = 20.415
 :::
 
@@ -678,6 +684,11 @@ RMSD = 20.415
     og hvad kan være årsagen til forskelle?
 
 ::: {.callout-solution}
+```default
+spectrum b, blue_cyan_green_yellow_orange_red, X-ray, minimum=0, maximum=100
+spectrum b, blue_cyan_green_yellow_orange_red, Cryo-EM, minimum=0, maximum=100
+```
+
 Ja, de er overordnet fleksible i de samme områder. Dog er der nogle områder, hvor krystalstrukturen
 er mere stabil, hvilket kan skyldes krystalkontakter.
 :::
