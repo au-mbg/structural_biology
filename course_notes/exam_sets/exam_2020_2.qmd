@@ -17,12 +17,14 @@ tre kæder A, H og L udgør. Indsæt en simpel figur, der viser kæderne og
 placeringen af de seks komplementaritetsbestemmende områder (CDR) med
 forskellige farver.
 
+::: {.callout-solution}
 Svar: F~ab~-fragmentet består af two IgG-domæner fra den tunge kæde (H,
 cyan) og to fra den lette kæde (L, magenta). Protein G har kæde A
 (grøn). Nedenfor er CDR markeret med rødt, men det er OK blot med en
 angivelse (cirkel el. lign.).
 
-CDR
+![](figures/exam_2020_2/opgave-1-figur-2.png){.lightbox width="90%" fig-align="center"}
+:::
 
 Forskere har målt affiniteten mellem human IgG og Protein G vha. et
 *competition assay*, hvor man undersøger hvor godt ikke-radioaktivt
@@ -34,6 +36,7 @@ ved omkring typiske antistof:antigen-interaktioner? Forklar ud fra
 strukturen hvordan de to domæner (IgG og protein G) interagerer,
 herunder hvilke typer af interaktioner, der er fremherskende.
 
+::: {.callout-solution}
 Svar: Antistof:antigen-interaktioner (via CDR) varierer bredt mellem pM
 og flere hundrede nM, i Stryer er der et eksempel på en affinitet
 omkring 20 nM. Derfor er dette en ret stærk interaktion, selv om den
@@ -41,6 +44,7 @@ ikke involverer CDR. Affiniteten er drevet af stor
 overfladekomplementaritet og mange H-bindinger, herunder at β
 foldepladen i Protein G forlænger det tilsvarende i det bageste
 IgG-domæne i H-kæden med fire strenge.
+:::
 
 Efterfølgende målte man affiniteten mellem fuldlængde Protein G fra tre
 forskellige bakteriestammer, G148, C40 og G43 til både human IgG og
@@ -65,18 +69,22 @@ samme elementer:
 **Spørgsmål 3.** Forklar ud fra disse data hvilke områder i Protein G,
 der bidrager væsentlig til binding af henholdsvis IgG og HSA.
 
+::: {.callout-solution}
 Svar: Vi kan se at affiniteten for IgG falder 10 gange i C40 og G43, der
 mangler elementerne C2 og D2, dermed må disse repræsentere bindingen af
 IgG. Ligeledes mistes binding til HSA i G43, hvor A1-B2-elementer
 mangler, hvormed disse må stå for bindingen til HSA.
+:::
 
 **Spørgsmål 4.** Binder Protein G til de konstante eller variable dele
 af IgG? Forklar hvorfor Protein G kan være en udfordring for
 immunsystemet.
 
+::: {.callout-solution}
 Svar: Protein G binder meget stærkt til den konstante del af den tunge
 kæde (heavy chain), hvor med antistoffer sættes ud af spil uden at
 immunsystemet aktiveres.
+:::
 
 ## Opgave 2
 
@@ -85,13 +93,24 @@ Enzymet threonin deaminase (TD) omdanner aminosyren Thr til
 reducerer enzymets aktivitet, mens aminosyren Val (som dannes via et
 ubeslægtet sæt af metaboliske reaktioner) øger aktiviteten.
 
-![](figures/exam_2020_2/opgave-2-figur-1.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-1.png){.lightbox width="50%" fig-align="center"}
 
 **Spørgsmål 1.** Fordel de tre begreber *heterotrop allosterisk
 aktivering*, *heterotrop allosterisk inhibering* eller *homotrop
 kooperativitet* i tabellen nedenfor og forklar den fysiologiske relevans
 af de tre effekter.
 
+  --------------------------------------------------
+  **Aminosyre**   **Effekt på TD**
+  --------------- ----------------------------------
+  Thr             
+
+  Ile             
+
+  Val             
+  --------------------------------------------------
+
+::: {.callout-solution}
   --------------------------------------------------
   **Aminosyre**   **Effekt på TD**
   --------------- ----------------------------------
@@ -107,6 +126,7 @@ aktivering/inhibering mht Val/Ile. Thr er substrat så det skal gerne
 aktivere proteinet. Ile er slut produkt så det skal give negativ
 feedback, mens Val skal give positiv feedback da der nok er brug for Ile
 når der er brug for Val.
+:::
 
 TD danner en tetramer, hvor hver monomer består af hhv. et katalytisk og
 et regulatorisk domæne. Enzymaktiviteten som funktion af \[Thr\]
@@ -119,17 +139,19 @@ På figuren nedenfor (A) er data tilpasset enten ligning 1 ( ) eller
 ligning 2 ( ). Den indsatte figur fokuserer på de laveste \[Thr\]
 værdier.
 
-![](figures/exam_2020_2/opgave-2-figur-2.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-2.png){.lightbox width="60%" fig-align="center"}
 
 **Spørgsmål 2.** Hvilken ligning passer bedst og hvad fortæller det om
 reaktionen? Tilpasning til ligning 1 giver *n* = 1,27 ± 0,10 og *K* =
 9,6 ± 0,7 mM. Er *n*-værdien højere eller lavere end hvad proteinets
 kvarternære struktur giver mulighed for?
 
+::: {.callout-solution}
 Svar: Ligning 1 passer bedst. Ligning 1 er ligningen for en kooperativ
 proces men der er tale om meget svag kooperativitet (ikke stor forskel
 til MM ligningen i ligning 2). Man ville forvente en *n*-værdi på op til
 4 (jf. 2.8 for hæmoglobin som også er en tetramer).
+:::
 
 I et andet forsøg tilsættes stoffet α-aminobutyrat (αAB). Dette udløser
 en strukturændring i enzymet, der kan måles som en ændring i proteinets
@@ -142,18 +164,20 @@ reaktionshastighed. Δ*F*/*F*~max~ antager værdier mellem 0 og 1 og
 $\frac{\mathrm{\Delta}F}{F_{\max}} = \frac{{\lbrack\alpha AB\rbrack}^{n}}{{\lbrack\alpha AB\rbrack}^{n} + {K_{D}}^{n}}$
 (1b)
 
-![](figures/exam_2020_2/opgave-2-figur-3.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-3.png){.lightbox width="80%" fig-align="center"}
 
-![](figures/exam_2020_2/opgave-2-figur-4.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-4.png){.lightbox width="20%" fig-align="center"}
 
 **Spørgsmål 3.** Hvad minder αAB mest om, substrat eller produkt?
 Forklar ud fra (A) og (B) ligheder og forskelle i hvordan αAB og Thr
 binder til enzymet.
 
+::: {.callout-solution}
 Svar: α-aminobutyrat er tæt på substratet Thr; der er kun en forskel i
 enden fjernest fra COOH-gruppen (OH=\>CH~3~). K~D~ er øget fordi der
 trods alt er en molekylær forskel mellem αAB og Thr, men den kooperative
 evne er bibeholdt da *n* er uændret.
+:::
 
 Endelig undersøges hvordan Val og Ile påvirker enzymet. Først gentages
 forsøget ovenfor med 0,1 mM Ile (C). Derefter måles aktiviteten som
@@ -161,20 +185,22 @@ funktion af \[Val\] ved forskellige faste koncentrationer af Ile (D).
 Der kan ses bort fra nedgangen i aktivitet ved høj \[Val\] og antages at
 aktivitet er konstant.
 
-![](figures/exam_2020_2/opgave-2-figur-5.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-5.png){.lightbox width="80%" fig-align="center"}
 
-![](figures/exam_2020_2/opgave-2-figur-6.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-2-figur-6.png){.lightbox width="60%" fig-align="center"}
 
 **Spørgsmål 4.** Estimér den nye værdi for *K*~D~ ud fra data i (C) og
 forklar ud fra din viden om enzymet hvorfor Ile har denne effekt på
 affiniteten. Forklar dernæst ud fra (D) hvorfor Val påvirker effekten af
 Ile. Hvad fortæller det om de to stoffers bindingssteder?
 
+::: {.callout-solution}
 Svar: Ile er en allosterisk inhibitor som reducerer aktiviteten ved at
 reducere affiniteten af "pseudosubstratet" α-aminobutyrat for TD (*K*~D~
 stiger fra ca. 50 til ca. 105 mM). Val modvirker dette som allosterisk
 aktivator. Ile og Val konkurrerer om det samme bindingssted. Jo højere
 \[Ile\], jo mere Val skal der til for at modvirke Ile.
+:::
 
 ## Opgave 3
 
@@ -186,10 +212,12 @@ helicer har pI på mellem 6,7 og 7,9.
 fysiologiske betingelser og hvorfor er det vigtigt at S4 har en høj
 pI-værdi?
 
+::: {.callout-solution}
 Svar: S4 vil være positivt ladet ved fysiologiske betingelser (ca. pH
 7.4). S4 er en positiv ladet helix som gør kanalen spændingstyret. S4 er
 en del af kanal padlerne som skifter konformation når membranen
 depolariseres og åbner kanalen.
+:::
 
 **Spørgsmål 2**. De første 60 aminosyrer i N-terminalen af KV1.2 er ikke
 synlige i krystalstrukturen, men når disse trunkeres (KV1.2-delta60)
@@ -197,28 +225,34 @@ lukker kanalen ikke som normalt. Hvad kan være forklaringen på at de
 første 60 aminosyrer ikke ses, og hvad er funktionen af disse aminosyrer
 i kanalen?
 
+::: {.callout-solution}
 Svar: De N-terminal 60 aminosyrer udgør "ball-and-chain" delen af
 kanalen som er fleksibel og derfor ikke synlige i krystalstrukturen.
 Denne del af er i stand til at inaktivere kanalen og lukke for
 iontransporten.
+:::
 
 Hent strukturen af ionkanalen (PDB 2A79) i PyMOL og udfør kommandoen:
 
-symexp sym, 2A79, (2A79), 50
+`symexp sym, 2A79, (2A79), 50`
 
 **Spørgsmål 3**. Angiv som dit svar en PyMOL-figur, der viser de kæder,
 der udgør en funktionel kanal og angiv den kvaternære struktur.
 
+::: {.callout-solution}
 Svar: KV1.2 har 4 identiske kæder (tetramer).
 
-![](figures/exam_2020_2/opgave-3-figur-1.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-3-figur-1.png){.lightbox width="50%" fig-align="center"}
+:::
 
 **Spørgsmål 4**. Analyser strukturen, identificér og opskriv de
 aminosyrer som binder kalium. Hvilken rolle har disse aminosyrer for
 kanalens funktion?
 
+::: {.callout-solution}
 Svar: Disse aminosyere udgør selektivitetsfilter (TVGYG) som gør kanalen
 selektiv for kun kalium.
+:::
 
 ## Opgave 4
 
@@ -235,23 +269,26 @@ ceramid-bindende domæne i CERT med N-stearyl-ceramid bundet.
 **Spørgsmål 1.** Anslå hvor mange aminosyrerester, der indgår i den
 lange α-helix (orange) og herfra dens længde målt i Å.
 
+::: {.callout-solution}
 Svar: Der tælles 7 fulde omdrejninger i helixen. Hver omdrejning svarer
 til 3.6 aminosyrerester, altså 25 aminosyrerester i alt. Hver omdrejning
 svarer til 5.4 Å eller 1.5 Å pr aminosyrerest.
 
 Længden af helixen må derfor være 37,8Å.
+:::
 
 Nedenfor ses den polære ende af ceramidet bundet til CERT med
 hydrogenbindinger som stiplede linjer og sidekæder med grøn
 énbogstavskode og sekvensnummer. Atomer i ceramidet er angivet med sort
 skrift.
 
-![](figures/exam_2020_2/opgave-4-figur-2.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-2.png){.lightbox width="50%" fig-align="center"}
 
 **Spørgsmål 2.** Beskriv hvorledes den polære del af ceramidet genkendes
 af CERT, og angiv hvor muligt hvilke atomer der er donorer / acceptorer
 for hydrogenbindingerne.
 
+::: {.callout-solution}
 Svar: Ceramidets polære del genkendes via hydrogen bindinger af fire
 sidekæder; E446, Q467, N504 og Y553.
 
@@ -266,19 +303,21 @@ gruppen kan kun være acceptor.
 
 Oxygen i Y553 er donor i hydrogenbinding til O19, der kun kan være
 acceptor, da det er et carbonyl oxygen.
+:::
 
 Nedenfor er vist hvorledes de alifatiske hydrofobe kæder er placeret i
 bindingslommen på proteinet med sphingosine-delen i blå-grøn og
 fedtsyredelen i gul-rød. Søjlediagrammet viser binding af ceramider med
 forskellig fedtsyrelængde til CERT.
 
-![](figures/exam_2020_2/opgave-4-figur-3.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-3.png){.lightbox width="50%" fig-align="center"}
 
-![](figures/exam_2020_2/opgave-4-figur-4.jpeg){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-4.jpeg){.lightbox width="50%" fig-align="center"}
 
 **Spørgsmål 3.** Giv en sandsynlig forklaring på variationen i
 affiniteten som funktion af fedtsyrekædelængde.
 
+::: {.callout-solution}
 Svar: I N-stearyl-ceramide indgår stearinsyre som er en C18:0 fedtsyre.
 Vi ser at netop for C18:0 har den højeste affinitet. For kortere
 fedtsyre er der en svagt faldende affinitet, hvilket skyldes at den
@@ -288,17 +327,19 @@ bindingslommen til den længere fedtsyre. Den lidt højere affinitet af
 C24:1 sammenlignet med C24:0 kan muligvis skyldes at dobbelbindingen
 giver en struktur på fedtsyrekæden der udnytter pladsen i bindingslommen
 bedre.
+:::
 
 I et andet forsøg målte man binding af N-stearyl ceramide til CERT under
 tilstedeværelse af fire punktmutationer i CERT (E446A, Q467A, N504A,
 Y553F).
 
-![](figures/exam_2020_2/opgave-4-figur-5.png){.lightbox width="90%" fig-align="center"}
+![](figures/exam_2020_2/opgave-4-figur-5.png){.lightbox width="50%" fig-align="center"}
 
 **Spørgsmål 4.** Forklar hvorfor bindingen er reduceret for de fire
 mutationer og foreslå hvorfor binding til N504A og Y553F er væsentligt
 lavere end for de to andre mutanter.
 
+::: {.callout-solution}
 Svar: Vi ser en reduceret affinitet for liganden for hver af de fire
 mutationer, hvilket skyldes at H-bindings potentialet for ceramidets
 polære del ikke bliver opfyldt.
@@ -306,8 +347,7 @@ polære del ikke bliver opfyldt.
 En mulig forklaring på hvorfor mutation af N504 og Y553 har en større
 effekt på affiniteten kan være at de medvirker til at fiksere starten af
 de to lange alifatiske carbon-kæder.
-
-**\**
+:::
 
 ## Opgave 5
 
@@ -321,6 +361,7 @@ variation mellem et betydeligt antal forskellige Spike-sekvenser:
 **Spørgsmål 1.** Forklar hvad skalaen fra \"Conserved\" til \"Variable\"
 betyder og hvorfor S1 domænet er mest variabelt?
 
+::: {.callout-solution}
 Svar:
 
 3 point for at beskrive at skalaen angiver sekvens-bevarelse i en
@@ -340,44 +381,19 @@ bevaret.
 
 2 points for at nævne at antistoffer genkender denne del og at den
 derfor ændrer sig.
+:::
 
 S1 domænet indeholder ACE2-bindingsdomænet. Herunder vises Clustal O
 sekvensalignment af receptor-bindingsmotivet (RBM) for SARS-CoV,
 SARS-CoV-2 og en tæt beslægtet coronavirus fra flagermus:
 
-CLUSTAL O(1.2.4) multiple sequence alignment
-
-SARS-CoV NTRNIDATSTGNYNYKYRYLRHGKLRPFERDISNVPFSPDGKPCT-PPALNCYWPLNDYG 59
-
-SARS-CoV-2 NSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAGSTPCNGVEGFNCYFPLQSYG
-60
-
-bat-SL-RaTG13
-NSKHIDAKEGGNFNYLYRLFRKANLKPFERDISTEIYQAGSKPCNGQTGLNCYYPLYRYG 60
-
-\*:.::\*:. \*\*:\*\* \*\* :\*:.:\*:\*\*\*\*\*\*\*. :. \...\*\*.
-.:\*\*\*:\*\* \*\*
-
-SARS-CoV FYTTTGIGYQPY 71
-
-SARS-CoV-2 FQPTNGVGYQPY 72
-
-bat-SL-RaTG13 FYPTDGVGHQPY 72
-
-\* \* \*:\*:\*\*\*
-
-\# Percent Identity Matrix - created by Clustal2.1
-
-1: SARS-CoV 100.00 50.70 53.52
-
-2: SARS-CoV-2 50.70 100.00 76.39
-
-3: bat-SL-RaTG13 53.52 76.39 100.00
+![](figures/exam_2020_2/opgave-5-figur-2.png){.lightbox width="100%" fig-align="center"}
 
 **Spørgsmål 2.** Hvad betyder symbolerne \* : og . angivet under
 sekvenserne? Hvilken similaritets-score har en S til T og en I til L
 mutation ifølge Blosum62 substitutionsmatricen?
 
+::: {.callout-solution}
 Svar:
 
 5 points for at \* betyder identisk, : betyder høj similaritet, .
@@ -386,10 +402,12 @@ betyder middel similaritet.
 3 points for S til T substitution = +1 score
 
 2 points for I til L substitution = +2 score
+:::
 
 Kør følgende script for at kigge på RBM-domænets interaktion med ACE2
 receptoren:
 
+```default
 reinit\
 fetch 6vxx, async=0\
 fetch 6vsb , async=0\
@@ -432,6 +450,7 @@ zoom sele
 scene F4, store
 
 scene F1
+```
 
 Scene F1 viser Spike med RBM-domæne i lukket form (PDB 6vxx), F2 Spike
 hvor et af RBM-domænerne er åbnet (PDB 6vsb), F3 viser binding af RBM
@@ -446,18 +465,22 @@ for at B.1.1.7 er mere smitsom.
 bundne form (F3/F4) af Spike? Hvordan kan Tyr-substitutionen resultere i
 mere effektiv binding?
 
+::: {.callout-solution}
 Svar:
 
 5 points for at mutation sidder i bindingssite for RBD.
 
 5 points for at Tyrosin er aromatisk og kan stabilisere interaktion både
 ved hydrofob interaktion og hydrogenbindinger.
+:::
 
 **Spørgsmål 4.** Hvordan kan D1118H-mutationen påvirke Spike-proteinets
 evne til at inficere en celle?
 
+::: {.callout-solution}
 Svar:
 
 10 points for at deletionen kan påvirke konformationen af Spike domænet
 generelt og f.eks. påvirke ligevægten mellem den lukkede og åbne
 konformation.
+:::
