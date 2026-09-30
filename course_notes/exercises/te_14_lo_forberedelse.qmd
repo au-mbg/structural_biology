@@ -7,6 +7,8 @@ title: "TØ 14 -- LØ-forberedelse"
 
 During the laboratory exercise, you will become familiar with the three commonly used techniques for protein purification. The following 2h theoretical exercise will prepare you for the laboratory exercise and help you to avoid experimental problem or even failure of a given step. This is important as the program for day 2 and day 3 depend on the prior day being carried out successfully since you continue with the sample obtained the day before. In this way, the laboratory exercise gives you a realistic impression of the experimental work related to purifying a protein that you may become involved in later on in your BSc and MSc study. In all steps, the manual describes procedures that are used routinely in protein science research at MBG and similar institutions.
 
+{{< download-button path="../files/laboratory_exercise_v1_student.docx" filename="laboratory_exercise_v1_student.docx" >}}
+
 1)	Read the instructions to the laboratory exercise carefully. Using a chatbot of your choice, generate a graphical summary of the instructions and generate a presentation with one slide for each day. Then refine the auto-generated draft and validate that it really covers what is described in the text. Notice that you will depend on a clear flow chart to perform the lab exercise efficiently.
 
 ::: {.callout-solution}
