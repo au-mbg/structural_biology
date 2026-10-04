@@ -44,89 +44,10 @@ Analysér de kinetiske data via en grafisk fremstilling og angiv hvilken type in
 Dette er baseret på Berg 10, kapitel 5.
 :::
 
-::: {.callout-tip title="Python Hint"}
-En Pandas dataframe kan laves ud af tabellen således 
-
-```python
-velocities = pd.DataFrame(
-    [
-        [5.39, 4.19, 3.49, 2.81, 2.55],
-        [3.25, 2.45, 2.17, 1.77, 1.65],
-        [1.59, 1.30, 1.08, 0.91, 0.85],
-    ],
-    index=[0.07, 0.03, 0.01],
-    columns=[0.00, 0.25, 0.50, 0.75, 1.00],
-)
-
-velocities.index.name = "[S] (mM)"
-velocities.columns.name = "[I] (mM)"
-```
-:::
-
 ::: {.callout-solution}
-
 ![Inhibition correct](figures/te_11/opgave-3-figur-1.jpeg){width="80%" fig-align="center" .lightbox}
 
 Skæringen med y-aksen varierer mens linjerne samles (mere eller mindre) i et punkt på den negative x-akse. Inhibitoren I er en non-kompetitiv inhibitor (variabel v~max~, uændret *K*~M~).
-
-**Python løsning**
-
-```{python}
-#| fig-align: center
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
-
-# Definer linæer model til fitting
-def linear_model(x, a, b):
-    return a * x + b
-
-# Konstruer dataframe 
-velocities = pd.DataFrame(
-    [
-        [5.39, 4.19, 3.49, 2.81, 2.55],
-        [3.25, 2.45, 2.17, 1.77, 1.65],
-        [1.59, 1.30, 1.08, 0.91, 0.85],
-    ],
-    index=[0.07, 0.03, 0.01],
-    columns=[0.00, 0.25, 0.50, 0.75, 1.00],
-)
-
-velocities.index.name = "[S] (mM)"
-velocities.columns.name = "[I] (mM)"
-
-# Udskriv dataframe så den kan checkes
-print(velocities)
-
-# Brug `.index` til at lave x-aksen (1/S)
-x_data = 1 / velocities.index
-x_eval = np.linspace(-40, x_data.max() + 10, 200)
-
-# Lav figur
-fig, ax = plt.subplots()
-
-# Loop over kolonner (Sæt af 3 målinger ved en [I].)
-for i, inhibitor in enumerate(velocities.columns):
-
-    # Beregn 1/V ved at indeksere med inhibitor concentrationen
-    y_data = 1 / velocities[inhibitor]
-
-    # Plot data
-    ax.plot(x_data, y_data, "o", label=f"[I] = {inhibitor:.2f} mM", color=f"C{i}")
-
-    # Lav curve_fit og plot 
-    popt, _ = curve_fit(linear_model, x_data, y_data)
-    ax.plot(x_eval, linear_model(x_eval, *popt), color=f"C{i}")
-
-ax.axhline(0, linestyle="--", color="gray")
-ax.axvline(0, linestyle="--", color="gray")
-ax.set_xlabel("1/[S] (1/mM)")
-ax.set_ylabel("1/V (min/nM)")
-ax.legend()
-plt.show()
-```
-
 :::
 
 {{< pagebreak >}}
