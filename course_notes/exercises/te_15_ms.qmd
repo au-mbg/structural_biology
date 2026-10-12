@@ -30,6 +30,8 @@ fordi der afgives vand ved dannelsen af hver peptidbinding. Massen af et
 peptid (M) er derfor summen af aminosyrerestmasserne + 18.011 Da
 (H~2~O), og den ion man ser i spektret er \[M+H\]^+^ = M + 1.007 Da.
 
+Bemærk, at kapitel 4.3 beskriver massespektrometri kvalitativt og ikke indeholder et enkelt regneeksempel. Alt det, I skal regne med, står derfor her og ikke i bogen: restmasserne i Tabel 1, massetilvæksterne i Tabel 2, konventionen M = Σ restmasser + H~2~O og [M+H]~+~ = M + 1.007, samt udtrykket for flyvetid i opgave 1.4. Protonens masse er 1.00728 Da; i opgaverne rundes den til 1.007 eller 1.008, hvilket ikke ændrer resultaterne ved den præcision, vi regner med. Begreberne missed cleavage, sekvensdækning og trypsin-autolyse indgår heller ikke i bogen — de gennemgås ved forelæsningen.
+
 **Tabel 1. Aminosyrernes restmasser (Da).**
 
   --------------------------------------------------------------------------------------
@@ -87,13 +89,6 @@ peptid (M) er derfor summen af aminosyrerestmasserne + 18.011 Da
   ----------------------- -------------- -----------------------------
   Fosforylering (+HPO~3~)        +79.966 PTM på Ser/Thr/Tyr
 
-  Acetylering                    +42.011 PTM, fx N-terminal eller Lys
-
-  Methylering                    +14.016 PTM på Lys/Arg
-
-  Hexose (fx                    +162.053 Glykosylering (ofte mange
-  glukose/mannose)                       enheder)
-
   Gly-Gly-rest                  +114.043 Ubiquitineret Lys efter
                                          trypsinkløvning
 
@@ -110,6 +105,8 @@ peptid (M) er derfor summen af aminosyrerestmasserne + 18.011 Da
 
 ## Opgave 1. Hvad måler et massespektrometer egentlig?
 
+*Forventet tid: ~15 min.*
+
 Denne opgave er en repetition af de grundlæggende begreber i Berg
 kapitel 4.3. Svar kort med egne ord.
 
@@ -119,10 +116,10 @@ kapitel 4.3. Svar kort med egne ord.
 2.  Beskriv kort forskellen mellem MALDI og ESI, og angiv hvilken af de
     to der typisk giver overvejende enkeltladede ioner.
 
-3.  Et massespektrometer måler ikke masse, men forholdet m/z
-    (mass-to-charge). Peptidet TLSDYNIQK har den monoisotopiske masse M
-    = 1080.55 Da. Beregn m/z for \[M+H\]^+^ og \[M+2H\]^2+^ ionerne der
-    detekteres i MS.
+3.  Et massespektrometer måler ikke masse, men forholdet m/z (mass-to-charge). 
+    Peptidet GLSDVFEAK har den monoisotopiske masse M = 964.49 Da. 
+    Beregn m/z for [M+H]^+^ (den enkeltladede ion) og [M+2H]^2+^ 
+    (den dobbeltladede ion) der detekteres i MS.
 
 4.  I en TOF-analysator accelereres ionerne gennem en fast
     spændingsforskel U og flyver derefter en strækning L uden felt. Ud
@@ -159,9 +156,9 @@ kapitel 4.3. Svar kort med egne ord.
         ioner under ESI en hel **ladningsserie** \[M+nH\]^n+^ i forhold
         til MALDI som kun giver \[M+H\]^+^
 
-3.  \[M+H\]^+^ = (1080.55 + 1.007)/1 = **1081.56**. \[M+2H\]^2+^ =
-    (1080.55 + 2·1.007)/2 = 1082.56/2 = **541.28**. Bemærk at den
-    dobbeltladede ion optræder ved ca. den halve m/z -- ikke ved den
+3.  \[M+H\]^+^ = (5964.49 + 1.007)/1 = **965.49**. 
+    \[M+2H\]^2+^ = (964.49 + 2·1.007)/2 = 966.504/2 = **483.25**. 
+    Bemærk at den dobbeltladede ion optræder ved ca. den halve m/z -- ikke ved den
     halve masse.
 
 4.  Ved samme z er t ∝ √m, så t~2~/t~1~ = √(4000/1000) = √4 = **2**. Det
@@ -171,6 +168,8 @@ kapitel 4.3. Svar kort med egne ord.
 :::
 
 ## Opgave 2. Ladningsserier -- fra m/z til molekylmasse
+
+*Forventet tid: ~10 min.*
 
 Et oprenset protein analyseres ved ESI-MS, og spektret viser den række
 toppe, der er gengivet i Tabel 3. Det er en lignende situation, som Berg
@@ -184,19 +183,14 @@ beskriver for β-lactoglobulin i Fig. 4.24, hvor toppene ved m/z 18364
   --------- ---------- ---------- ---------- ---------- ---------- ----------
   m/z          1131.11    1211.83    1304.97    1413.63    1542.05    1696.16
 
+  Ladning.     15+        14+        13+        12+        11+        10+
+
   ---------------------------------------------------------------------------
 
 1.  Forklar, hvorfor ét og samme protein giver anledning til flere toppe
-    i et ESI-spektrum. Hvorfor bliver afstanden mellem nabotoppene
-    mindre, jo længere mod venstre (lavere m/z værdier) man kommer?
+    i et ESI-spektrum. 
 
-2.  Kald m/z for to nabotoppe m~1~ (den letteste af de to) og m~2~. Hvis
-    m~2~ svarer til ladningen n, må m~1~ svare til n+1. Opstil de to
-    udtryk for M og vis, at n = (m~1~ − 1.008)/(m~2~ − m~1~).
-
-3.  Brug formlen på toppene D og E og bestem n samt proteinets masse M.
-
-4.  Bestem ladningstallet for alle seks toppe og beregn M ud fra hver
+2.  Beregn M ud fra hver
     enkelt top. Hvad er gennemsnittet? Hvorfor er det ifølge Berg en
     fordel at have mange toppe?
 
@@ -205,40 +199,9 @@ beskriver for β-lactoglobulin i Fig. 4.24, hvor toppene ved m/z 18364
     His og N-terminalen) i varierende grad. Der dannes derfor en familie
     af ioner \[M+nH\]^n+^ med **samme masse, men forskellig ladning**.
     Da spektrometret adskiller efter m/z og ikke efter m, får hver
-    ladningstilstand sin egen top: m/z = M/n + 1.008. Afstanden mellem
-    to nabotoppe er M/n − M/(n+1) = M/(n(n+1)), som falder hurtigt når n
-    vokser. Høje ladninger ligger ved lav m/z, og derfor \"klumper\"
-    serien sig sammen mod venstre i spektret.
+    ladningstilstand sin egen top: m/z = M/n + 1.008.
 
-2.  m~1~ = (M + (n+1)·1.008)/(n+1) ⇒ M = (n+1)(m~1~ − 1.008). m~2~ =
-    (M + n·1.008)/n ⇒ M = n(m~2~ − 1.008). Sæt lig hinanden: (n+1)(m~1~
-    − 1.008) = n(m~2~ − 1.008) ⇒ n·m~1~ + m~1~ − 1.008n − 1.008 = n·m~2~
-    − 1.008n ⇒ m~1~ − 1.008 = n(m~2~ − m~1~) ⇒ n = (m~1~ − 1.008)/(m~2~
-    − m~1~).
-
-3.  n = (1413.63 − 1.008)/(1542.05 − 1413.63) = 1412.62/128.42 = 11.00.
-    Top E er altså 11+ og top D er 12+. M = 11 · (1542.05 − 1.008) = 11
-    · 1541.04 = **16951.5 Da**.
-
-4.  Ladningerne løber fra 10+ (F) til 15+ (A):
-
-    --------------------------------------------------------
-    **Top**   **m/z**       **n**     **M = n(m/z − 1.008)**
-    --------- ------------- --------- ----------------------
-    A         1131.11       15+       16951.5
-
-    B         1211.83       14+       16951.5
-
-    C         1304.97       13+       16951.5
-
-    D         1413.63       12+       16951.5
-
-    E         1542.05       11+       16951.5
-
-    F         1696.16       10+       16951.5
-    --------------------------------------------------------
-
-    Gennemsnittet er 16951.5 Da. Hver top er en **uafhængig måling af den
+2.  Gennemsnittet er 16951.5 Da. Hver top er en **uafhængig måling af den
     samme masse**, så gennemsnittet af de seks reducerer den tilfældige
     måleusikkerhed -- præcis den pointe Berg gør: de mange toppe er ikke
     et irritationsmoment, men en gratis gentagelse af eksperimentet.
@@ -250,8 +213,10 @@ beskriver for β-lactoglobulin i Fig. 4.24, hvor toppene ved m/z 18364
 
 ## Opgave 3. Peptide mass fingerprinting -- hvilket protein er det?
 
+*Forventet tid: ~30 min, forudsat at I bruger PeptideMass i 3.3.*
+
 I et co-immunopræcipitationsforsøg (Berg afsnit 4.2) med jeres
-yndlingsprotein dukker der et uventet bånd op på gelen ved ca. 8 kDa. I
+yndlingsprotein dukker der et uventet bånd op på SDS gelen ved ca. 8 kDa. I
 skærer båndet ud, fordøjer det i gelen med trypsin og kører peptiderne
 på en MALDI-TOF. Resultatet er peak-listen i Tabel 5.
 
@@ -270,13 +235,12 @@ kontrollere.
   --------------------------------------------------------------------
   **Nr.**        **m/z** **Nr.**        **m/z** **Nr.**        **m/z**
   --------- ------------ --------- ------------ --------- ------------
-  1               503.28 5               765.43 9              1081.55
+  1               503.28 4               717.35 7              1067.62
 
-  2               519.31 6               842.51 10             1265.74
+  2               519.31 5               765.43 8              1081.55
 
-  3               648.41 7              1039.52 11             1787.93
+  3               648.41 6              1039.52 9              1787.93
 
-  4               717.35 8              1067.62 12             2211.10
   --------------------------------------------------------------------
 
 1.  Trypsin kløver på carboxylsiden af Lys (K) og Arg (R) -- men
@@ -285,29 +249,24 @@ kontrollere.
     peptider op med deres positionsnumre. Hvor mange bliver der? Er der
     nogen K-P- eller R-P-steder?
 
-2.  Beregn massen af peptidet LIFAGK i hånden ud fra Tabel 1. Husk at
-    addere H20, og husk, at spektret viser \[M+H\]^+^. Kontrollér
-    resultatet med ExPASy PeptideMass.
+2.  Beregn massen af peptidet LIFAGK i hånden ud fra Tabel 1. 
+    Husk at addere vand molekyle (H~2~0), og husk, at peptider skal være protoneret, så spektret viser [M+H]^+^. 
 
-3.  Beregn \[M+H\]^+^ for alle de ovenævnte peptider (vælg
-    monoisotopiske masser). Benyt evt ExPASy PeptideMass til at Matche
-    dem mod Tabel 5.
+3.  Beregn \[M+H\]^+^ for de resterende peptider. 
+    Regn ét langt peptid (TITLEVEPSDTIENVK) i hånden som kontrol af jeres metode, 
+    og brug derefter ExPASy PeptideMass til resten — vælg monoisotopiske masser.
+    Match dem mod Tabel 5.
 
-4.  Tre af de forventede peptider optræder slet ikke i spektret. Hvilke
-    -- og hvorfor ikke?
+4.  Tre af de forventede peptider optræder slet ikke i spektret. Hvilke – og hvorfor ikke? 
+    (Tænk på, hvor små de er, og på hvad der sker med meget små peptider under afsaltning og ionisering.)
 
-5.  Toppene ved 842.51 og 2211.10 stammer ikke fra jeres protein. Hvad
-    kommer de så fra, og kan man bruge dem til noget?
+5.  Beregn sekvensdækningen: hvor stor en andel af de 76 rester er dækket af de matchede peptider?
 
-6.  Beregn sekvensdækningen: hvor stor en andel af de 76 rester er
-    dækket af de matchede peptider?
-
-7.  Hvorfor virker peptide mass fingerprinting kun, hvis organismens
+6.  Hvorfor virker peptide mass fingerprinting kun, hvis organismens
     genom er sekventeret? Hvad ville I gøre, hvis proteinet kom fra en
     organisme uden sekventeret genom?
 
-8.  Hvilket protein er det? Hvorfor er det især interessant at finde
-    netop dette protein i en co-immunopræcipitation?
+7.  Hvilket protein er det? Hvorfor er det især interessant at finde netop dette protein i en co-immunopræcipitation?
 
 ::: {.callout-solution}
 1.  Der er 11 kløvningssteder (K6, K11, K27, K29, K33, R42, K48, R54,
@@ -336,8 +295,9 @@ kontrollere.
     neutrale peptidmasse M). Ionen er \[M+H\]^+^ = 647.40 + 1.007 =
     **648.41**, dvs. top nr. 3.
 
-3.  Ni af de tolv peptider genfindes: 765.43, 519.31, 1787.93, 503.28,
+3.  Ni af de tolv forventede peptider genfindes i Tabel 5: 765.43, 519.31, 1787.93, 503.28,
     1039.52, 648.41, 717.35, 1081.55 og 1067.62 (se tabellen ovenfor).
+    De tre øvrige mangler – se spørgsmål 4.
 
 4.  AK (218.15), LR (288.20) og GG (133.06). De er simpelthen for korte:
     de ligger under det m/z-område, man normalt registrerer (typisk fra
@@ -348,19 +308,12 @@ kontrollere.
     ikke bidrage til identifikationen. Det er en generel og vigtig
     pointe -- man ser **aldrig** alle peptider fra et protein.
 
-5.  Det er de klassiske **autolyseprodukter fra trypsin selv** --
-    trypsin er en protease og fordøjer sine egne artsfæller. De to toppe
-    er så forudsigelige, at man i praksis bruger dem som intern
-    kalibrering af massekalen i hvert enkelt spektrum. Den anden
-    notoriske forurening er keratin fra hud, hår og støv, som man undgår
-    med handsker og rene reagenser.
-
-6.  De matchede peptider dækker 1--6, 7--11, 12--27, 30--33, 34--42,
+5.  De matchede peptider dækker 1--6, 7--11, 12--27, 30--33, 34--42,
     43--48, 49--54, 55--63 og 64--72, i alt 6+5+16+4+9+6+6+9+9 = 70
     rester. Dækningen er 70/76 = **92 %**, hvilket er usædvanligt højt
     og gør identifikationen meget sikker. I praksis er 20--40 % typisk.
 
-7.  Fingerprinting går ud på at sammenligne den målte liste af masser
+6.  Fingerprinting går ud på at sammenligne den målte liste af masser
     med **teoretiske** peptidmasser, der er beregnet ud fra alle kendte
     proteinsekvenser -- og de sekvenser kommer fra genomet (Berg:
     \"sammenlignet med aminosyresekvenser udledt af gærgenomet\"). Uden
@@ -371,18 +324,19 @@ kontrollere.
     derefter søge med den aflæste sekvens (BLAST) mod beslægtede arter
     -- eller sekventere genomet først.
 
-8.  Det er **ubiquitin** (76 rester, gennemsnitsmasse 8564.8 Da,
+7.  Det er **ubiquitin** (76 rester, gennemsnitsmasse 8564.8 Da,
     monoisotopisk 8559.6 Da). Fundet er interessant, fordi det ofte
     betyder, at jeres protein er **ubiquitineret** -- enten som mærkning
     til nedbrydning i proteasomet eller som en regulatorisk
     modifikation. Bemærk også, at co-immunopræcipitation netop er den
     situation, Berg bruger som motivation for MS: man fisker en uventet
     partner op, og uden MS ville man kun kunne identificere den, hvis
-    man i forvejen havde et antistof mod den. Vi vender tilbage til
-    ubiquitin i opgave 5.
+    man i forvejen havde et antistof mod den.
 :::
 
 ## Opgave 4. De novo-sekventering med tandem-MS
+
+*Forventet tid: ~20 min.*
 
 Toppen ved m/z 1081.55 fra opgave 3 vælges ud under MS analyse til
 peptid sekventering via MS/MS, og sendes derved ind i et
@@ -469,12 +423,14 @@ pricipielt til dem Berg viser i sin figur 4.26b.
     fra sidekæderne -- dette ligger uden for pensum).
 
 5.  Ja. TLSDYNIQK er rest 55--63 i ubiquitin, og \[M+H\]^+^ = 1081.55
-    svarer til top nr. 9 i Tabel 5. Bemærk styrken ved kombinationen:
+    svarer til top nr. 8 i Tabel 5. Bemærk styrken ved kombinationen:
     fingerprinting alene giver et statistisk match mod en database, mens
     MS/MS leverer en faktisk **sekvens**, der kan bruges uden database.
 :::
 
 ## Opgave 5. Når den målte masse ikke passer med genet
+
+*Forventet tid: ~12 min.*
 
 Berg gør et vigtigt forbehold: den aminosyresekvens man udleder af en
 DNA-sekvens, er sekvensen af det *nascente* protein -- ikke nødvendigvis
@@ -501,23 +457,19 @@ betingelser.**
 
   D           HEK293, reduceret med DTT + iodoacetamid         24758.1
 
-  E           HEK293 stimuleret med vækstfaktor,               24605.9
-              ubehandlet                               
   --------------------------------------------------------------------
 
 1.  Nævn tre generelle grunde til, at den målte masse af et modent
     protein kan afvige fra den masse man beregner ud fra genet.
 
-2.  Forklar hvad der kan skyldes masseforskellene af de fem målinger
-    A--E beskrevet i tabel 7. Brug hertil info fra Tabel 2.
-
-3.  Hvorfor bruger man DTT og iodoacetamid i prøveforberedelsen -- og
+2.  Hvorfor bruger man DTT og iodoacetamid i prøveforberedelsen -- og
     hvorfor er alkyleringstrinnet nødvendigt (jf. Berg Fig. 4.28)?
+    Bemærk, at Berg bruger iodoeddikesyre i figuren, mens vi her bruger iodoacetamid, 
+    som er standard i dag; massetilvæksten pr. cystein er derfor 
+    +57.021 (carbamidomethyl) og ikke +58.005 (carboxymethyl).
 
-4.  Målingerne fortæller, at der er to disulfidbroer, men ikke
-    **hvilke** cysteiner der er parret. Beskriv en MS-strategi, der kan
-    bestemme forbindelserne (disulfide mapping). Hvorfor er den
-    oplysning interessant strukturbiologisk?
+3.  Forklar, hvad masseforskellene mellem de fire målinger A–D i Tabel 7 kan skyldes. 
+    Brug hertil Tabel 2. (Bemærk, at måling D skal sammenlignes med den reducerede form.)
 
 ::: {.callout-solution}
 
@@ -532,32 +484,7 @@ betingelser.**
     carbamidomethylering) og (v) rester af affinitets-tags fra
     ekspressionskonstruktet.
 
-2.  Målingerne skal tolkes sådan:
-
-    a.  **A = 24530.0**: præcis den beregnede masse. Cytoplasmaet i *E.
-        coli* er reducerende, så alle cysteiner er frie SH-grupper, og
-        der er ingen modifikationer. Det er referencemålingen.
-
-    b.  **B = 24526.0**: 24530.0 − 4.03 = 2 × (−2.016). Der er dannet
-        **to disulfidbroer** i den sekretoriske vej i pattedyrcellen.
-
-    c.  **C = 24530.0**: DTT har reduceret de to S--S til fire frie
-        SH-grupper; massen stiger med 4 H og passer igen med den
-        beregnede masse. Det bekræfter, at forskellen i B skyldtes
-        disulfidbroer og ikke en modifikation.
-
-    d.  **D = 24758.1**: 24530.0 + 228.1 = 4 × 57.021. Iodoacetamid har
-        alkyleret **fire** cysteiner. Antallet af alkyleringer tæller
-        altså direkte antallet af frie SH-grupper og bekræfter
-        uafhængigt, at der var fire cysteiner i to broer.
-
-    e.  **E = 24605.9**: skal sammenlignes med B (den disulfidbundne
-        form), ikke med den beregnede masse: 24605.9 − 24526.0 = 79.97 =
-        **én fosforylering**. Vækstfaktoren har aktiveret en kinase, der
-        fosforylerer protein X. Bemærk at man kun kan se, at der er
-        præcis én -- ikke hvor den sidder.
-
-3.  DTT (eller β-mercaptoethanol) reducerer disulfidbroerne, så
+2.  DTT (eller β-mercaptoethanol) reducerer disulfidbroerne, så
     polypeptidkæderne kan skilles ad, og proteasen kan komme til hele
     kæden. Uden alkylering ville de frie cysteiner reoxidere under
     prøvebehandlingen og danne nye -- og typisk forkerte --
@@ -569,37 +496,23 @@ betingelser.**
     angiver som \"fixed modification\" i databasesøgningen -- ellers
     matcher ingen af de cystein-holdige peptider.
 
-4.  Strategien er at fordøje proteinet **uden** at reducere det, og køre
-    samme fordøjelse med og uden reduktion:
+3.  Målingerne skal tolkes sådan:
 
-    a.  Fordøj det ikke-reducerede protein med trypsin ved svagt sur pH
-        (ca. 6.5), så man undgår disulfid-ombytning under selve
-        forsøget.
+    -  **A = 24530.0**: præcis den beregnede masse. Cytoplasmaet i *E.
+        coli* er reducerende, så alle cysteiner er frie SH-grupper, og
+        der er ingen modifikationer. Det er referencemålingen.
 
-    b.  To peptider, der stadig hænger sammen via en S--S, optræder som
-        **ét** ion med en masse svarende til summen af de to
-        peptidmasser minus 2.016 Da. Man leder altså efter toppe, der
-        ikke passer med nogen enkelt peptidsekvens, men med en sum af
-        to.
+    -  **B = 24526.0**: 24530.0 − 4.03 = 2 × (−2.016). Der er dannet
+        **to disulfidbroer** i den sekretoriske vej i pattedyrcellen.
 
-    c.  Kør en parallel prøve, der reduceres inden LC-MS. De
-        \"sammensatte\" toppe forsvinder og erstattes af de to
-        enkeltpeptider -- det identificerer parret entydigt.
+    -  **C = 24530.0**: DTT har reduceret de to S--S til fire frie
+        SH-grupper; massen stiger med 4 H og passer igen med den
+        beregnede masse. Det bekræfter, at forskellen i B skyldtes
+        disulfidbroer og ikke en modifikation.
 
-    d.  Bekræft med MS/MS af den ikke-reducerede art, eventuelt med ETD,
-        der spalter S--S-bindingen selektivt og dermed direkte frigiver
-        de to peptider inde i instrumentet.
-
-    Strukturbiologisk er svaret værdifuldt af to grunde. For det første er
-    disulfidbroer kovalente krydsbindinger, der låser tertiær- og
-    kvaternærstrukturen fast og bidrager stærkt til stabiliteten; et
-    forkert broemønster betyder et fejlfoldet protein, hvilket er en
-    rutinekontrol for fx terapeutiske antistoffer. For det andet er hvert
-    par en **direkte afstandsbetingelse**: to cysteiner, der danner en
-    bro, har Sγ--Sγ ≈ 2.05 Å og skal altså ligge lige op ad hinanden i
-    strukturen. Det er nøjagtig samme logik som i crosslinking-MS (XL-MS),
-    hvor man med kemiske krydsbindere indfører kunstige
-    afstandsbetingelser og bruger dem til at bygge eller validere
-    strukturmodeller.
+    -  **D = 24758.1**: 24530.0 + 228.1 = 4 × 57.021. Iodoacetamid har
+        alkyleret **fire** cysteiner. Antallet af alkyleringer tæller
+        altså direkte antallet af frie SH-grupper og bekræfter
+        uafhængigt, at der var fire cysteiner i to broer.
 
 :::
