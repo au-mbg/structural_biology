@@ -30,7 +30,7 @@ fordi der afgives vand ved dannelsen af hver peptidbinding. Massen af et
 peptid (M) er derfor summen af aminosyrerestmasserne + 18.011 Da
 (H~2~O), og den ion man ser i spektret er \[M+H\]^+^ = M + 1.007 Da.
 
-Bemærk, at kapitel 4.3 beskriver massespektrometri kvalitativt og ikke indeholder et enkelt regneeksempel. Alt det, I skal regne med, står derfor her og ikke i bogen: restmasserne i Tabel 1, massetilvæksterne i Tabel 2, konventionen M = Σ restmasser + H~2~O og [M+H]~+~ = M + 1.007, samt udtrykket for flyvetid i opgave 1.4. Protonens masse er 1.00728 Da; i opgaverne rundes den til 1.007 eller 1.008, hvilket ikke ændrer resultaterne ved den præcision, vi regner med. Begreberne missed cleavage, sekvensdækning og trypsin-autolyse indgår heller ikke i bogen — de gennemgås ved forelæsningen.
+Bemærk, at kapitel 4.3 beskriver massespektrometri kvalitativt og ikke indeholder et enkelt regneeksempel. Alt det, I skal regne med, står derfor her og ikke i bogen: restmasserne i Tabel 1, massetilvæksterne i Tabel 2, konventionen M = Σ restmasser + H~2~O og [M+H]^+^ = M + 1.007, samt udtrykket for flyvetid i opgave 1.4. Protonens masse er 1.00728 Da; i opgaverne rundes den til 1.007 eller 1.008, hvilket ikke ændrer resultaterne ved den præcision, vi regner med. Begreberne missed cleavage, sekvensdækning og trypsin-autolyse indgår heller ikke i bogen — de gennemgås ved forelæsningen.
 
 **Tabel 1. Aminosyrernes restmasser (Da).**
 
