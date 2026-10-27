@@ -352,7 +352,7 @@ tHS.
 
 ## Opgave 6. Argonaut 
 
-::: {.callout-solution}
+::: {.callout-note}
 **PyMOL scripting opgave**: I denne opgave skal I analysere en RNA-protein binding i PyMOL og dokumentere jeres analyse med scripting af scener (som I blev introduceret til i TØ 2).
 :::
 
